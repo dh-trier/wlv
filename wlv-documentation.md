@@ -3,46 +3,81 @@
 wlv
 
 - metadata
+
 -- title
--- editor
+
+-- editor @ref
+
 -- institution
--- location
+
+-- location @ref
+
 -- date
--- licence
+
+-- licence @url
+
 -- curators
---- curatorID
+
+--- curatorID @ref
 
 - labels
+
 -- label
+
 --- part
+
 ---- physical
------ shape
+
+----- shape @sizeH @sizeV
+
 ----- material
+
 ---- visual
------ frame
------ background
+
+----- frame @frameStyle @frameType
+
+----- background @backgroundStyle
+
 ----- figure
+
 ---- textual
+
 ----- millesime
------ grape-variety
------ quality-statement
+
+----- grape-variety @ref
+
+----- qualityIndicator @qualityIndicatorType
+
 ----- wineCharacter
+
 ----- wineColor
------ agent
------ location
+
+----- agent @ref
+
+----- location @ref
+
 ----- motto
------ alcohol
------ volume
------ control-number
+
+----- alcohol @alcoholNorm
+
+----- volume @volumeNorm
+
+----- controlNumber @controlNumberType
+
 ----- barrelNumber
------ otherText
+
+----- otherText @otherTextType
 
 Attributes
 
 @fonttype: ["Antiqua-Sans","Antiqua-Serif","Fraktur","Cursive"]
+
 @fontstyle: ["recte", "italic", "bold", "smallcaps", "allcaps"]
+
 @fontcolor: 
+
 @intialcolor
+
 @fontsize: { "larger" | "normal" | "smaller" }
 
 
