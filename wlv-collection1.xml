@@ -14,35 +14,35 @@
   </metadata>
   <labels>
     <label curatorid="#cs" curationDate="2020-08-10" id="label-0001">
-      <part partNum="1" partT="front">
+      <part partNum="1" partType="front">
         <physical shape="rectangle" material="paper" sizeH="128" sizeV="89">
         </physical>
         <visual>
-          <frame frameColor="gold" frameType="other"></frame>
+          <frame frameColor="gold" frameStyle="other" frameType="outer"></frame>
           <background backgroundStyle="pattern"></background>
           <figure figureNum="1" figureType="realistic" figurePosition="upper-across">Landscape with village, river, vineyards.</figure>
           <figure figureNum="2" figureType="coat-of-arms" figurePosition="center-left">Red ground with three white S-shapes.</figure>
         </visual>
         <textual>
-        <location locationType="region" locationRole="producer" ref="wikidata:Q672776" fontStyle="all-caps">Mosel-Saar-Ruwer</location>
-        <origin originType="vineyard" fontType="Fraktur" fontSize="larger" ref="wikidata:Q375762">Piesporter Lay [Auslese]</origin>
-        <qualityIndicator qualityIndicatorType="grapes">Auslese</qualityIndicator>
-        <qualityIndicator qualityIndicatorType="vinification">naturrein</qualityIndicator>
-        <qualityIndicator qualityIndicatorType="vinification">Eigenes Wachstum</qualityIndicator>
-        <qualityIndicator qualityIndicatorType="bottling">Original=Abfüllung</qualityIndicator>
-        <agent agentRole="producer">Joh. Koenen-Veit, Weinbau - Weinversand</agent>
-        <location locationRole="producer-distributor" locationType="village">Minheim</location>
-        <location locationRole="producer-distributor" locationType="region">Mosel</location>
-        <agent agentRole="printer" fontSize="smaller">Verlag Bastian Neumagen</agent>
-      </textual>
+          <location locationType="region" locationRole="producer" ref="wikidata:Q672776" fontStyle="all-caps">Mosel-Saar-Ruwer</location>
+          <origin originType="vineyard" fontType="Fraktur" fontSize="larger" ref="wikidata:Q375762">Piesporter Lay [Auslese]</origin>
+          <qualityIndicator qualityIndicatorType="grapes">Auslese</qualityIndicator>
+          <qualityIndicator qualityIndicatorType="vinification">naturrein</qualityIndicator>
+          <qualityIndicator qualityIndicatorType="vinification">Eigenes Wachstum</qualityIndicator>
+          <qualityIndicator qualityIndicatorType="bottling">Original=Abfüllung</qualityIndicator>
+          <agent agentRole="producer">Joh. Koenen-Veit, Weinbau - Weinversand</agent>
+          <location locationRole="producer-distributor" locationType="village">Minheim</location>
+          <location locationRole="producer-distributor" locationType="region">Mosel</location>
+          <agent agentRole="printer" fontSize="smaller">Verlag Bastian Neumagen</agent>
+        </textual>
       </part>
     </label>
     <label curatorid="#cs" curationDate="2020-08-09" id="label-0002">
-      <part partNum="1" partT="front">
+      <part partNum="1" partType="front">
         <physical material="paper" shape="rectangle" sizeH="128" sizeV="89">
         </physical>
         <visual>
-          <frame frameColor="gold" frameType="band">Large golden band.</frame>
+          <frame frameColor="gold" frameStyle="band" frameType="outer">Large golden band.</frame>
           <background backgroundStyle="pattern">Yellow and green.</background>
           <figure figureNum="1" figureType="realistic" figurePosition="upper-across">Landscape with vineyard, village and river. Osterlämmchen, Feuerberg, Pfaffenberg, Elzogberg.</figure>
           <figure figureNum="2" figureType="symbolic" figurePosition="center-left">Sheep, book, flagpole, flag.</figure>
@@ -62,6 +62,29 @@
           <qualityIndicator qualityIndicatorType="classification" ref="wikidata:Q353275">Qualitätswein mit Prädikat</qualityIndicator>
           <controlNumber controlNumberType="Amtliche Prüfnummer (Q480240)">Amtl. Prüf.-Nr. 1 625 130 4 76</controlNumber>
           <qualityIndicator qualityIndicatorType="bottling">Erzeugerabfüllung</qualityIndicator>
+        </textual>
+      </part>
+    </label>
+    <label curatorid="#cs" curationDate="2020-08-10" id="label-0003">
+      <part partType="front" partNum="1">
+        <physical sizeH="128" sizeV="89" shape="rectangle" material="paper" />
+        <visual>
+          <frame frameColor="gold" frameType="outer" frameStyle="band">Golden band with black and grey lines.</frame>
+          <frame frameStyle="floral" frameColor="gold" frameType="inner">Golden floral decor.</frame>
+          <background backgroundStyle="color">Green and white.</background>
+          <figure figureType="realistic" figureNum="1" figurePosition="upper-left">Grape plant.</figure>
+          <figure figureType="realistic" figureNum="2" figurePosition="upper-center">Landscape with river and vineyard framed by window in stone wall.</figure>
+          <figure figureType="realistic" figureNum="3" figurePosition="upper-right">Grape plant.</figure>
+        </visual>
+        <textual>
+          <location locationRole="producer" locationType="region">Mosel-Saar-Ruwer</location>
+          <millesime millesimeNorm="1965">1965er</millesime>
+          <location locationType="vineyard" locationRole="origin">Wittlicher Bottchen</location>
+          <grapeVariety>Riesling</grapeVariety>
+          <agent agentRole="producer">Weinbau Marzen-Musseleck</agent>
+          <location locationRole="producer" locationType="city" ref="wikidata:Q559514">Wittlich</location>
+          <agent agentRole="printer">Caesar</agent>
+          <otherText otherTextType="administrative">3244</otherText>
         </textual>
       </part>
     </label>
