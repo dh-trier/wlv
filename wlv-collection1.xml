@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="wlv-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv id="collection1" url="https://github.com/dh-trier/wlv/collection1">
+  <metadata>
+    <title>Testsammlung TCDH</title>
+    <editor ref="gnd:12345678">Christof Schöch</editor>
+    <institution url="https://kompetenzzentrum.uni-trier.de">Trier Center for Digital Humanities</institution>
+    <location ref="wikidata:Q1234">Trier</location>
+    <date>2020</date>
+    <licence url="https://creativecommons.org/licenses/by/4.0/" key="CC-BY">Creative Commons Attribution</licence>
+    <curators>
+      <curator id="cs" ref="gnd:12345">Christof Schöch</curator>
+    </curators>
+  </metadata>
+  <labels>
+    <label curatorid="#cs" curationDate="2020-08-10" id="label-0001">
+      <part partNum="1" partT="front">
+        <physical shape="rectangle" material="paper" sizeH="128" sizeV="89">
+        </physical>
+        <visual>
+          <frame frameColor="gold" frameType="other"></frame>
+          <background backgroundStyle="pattern"></background>
+          <figure figureNum="1" figureType="realistic" figurePosition="upper-across">Landscape with village, river, vineyards.</figure>
+          <figure figureNum="2" figureType="coat-of-arms" figurePosition="center-left">Red ground with three white S-shapes.</figure>
+        </visual>
+        <textual>
+        <location locationType="region" locationRole="producer" fontStyle="all-caps">Mosel-Saar-Ruwer</location>
+        <wineName fontType="Fraktur" fontSize="larger">Piesporter Lay [Auslese]</wineName>
+        <qualityIndicator qualityIndicatorType="grapes">Auslese</qualityIndicator>
+        <qualityIndicator qualityIndicatorType="vinification">naturrein</qualityIndicator>
+        <qualityIndicator qualityIndicatorType="vinification">Eigenes Wachstum</qualityIndicator>
+        <qualityIndicator qualityIndicatorType="bottling">Original=Abfüllung</qualityIndicator>
+        <agent agentRole="producer">Joh. Koenen-Veit, Weinbau - Weinversand</agent>
+        <location locationRole="producer-distributor" locationType="village">Minheim</location>
+        <location locationRole="producer-distributor" locationType="region">Mosel</location>
+        <agent agentRole="printer" fontSize="smaller">Verlag Bastian Neumagen</agent>
+      </textual>
+      </part>
+    </label>
+    <label curatorid="#cs" curationDate="2020-08-09" id="label-0002">
+      <part partNum="1" partT="front">
+        <physical material="paper" shape="rectangle" sizeH="128" sizeV="89">
+        </physical>
+        <visual>
+          <frame frameColor="gold" frameType="band">Large golden band with black line.</frame>
+          <background backgroundStyle="none"></background>
+          <figure figureNum="1" figureType="realistic" figurePosition="upper-center">Landscape with vineyard, village and river seen through window in wall.</figure>
+          <figure figureNum="2" figureType="seal" figurePosition="upper-left"></figure>
+        </visual>
+        <textual>
+          <millesime millesimeNorm="1965" fontColor="red">1965er</millesime>
+          <origin ref="wikidata:Q1234" originType="wine-region" fontColor="red" fontType="Fraktur">Mosel-Saar-Ruwer</origin>
+          <wineName ref="wikidata:Q9876">Kaseler Katzenberg</wineName>
+          <grapeVariety ref="wikidata:Q0022">Riesling</grapeVariety>
+          <agent agentRole="bottler" ref="wikidata:Q1928">Weingut Kasel</agent>
+          <qualityIndicator qualityIndicatorType="bottling">Gutsabfüllung</qualityIndicator>
+          <qualityIndicator qualityIndicatorType="vinification">barrique-Ausbau</qualityIndicator>
+          <qualityIndicator qualityIndicatorType="classification">Qualitätswein</qualityIndicator>
+          <alcohol alcoholNorm="12">12%</alcohol>
+          <controlNumber controlNumberType="Amtliche Prüfnummer (Q480240)" fontStyle="small-caps"></controlNumber>
+          <motto mottoType="in-figure">in vino veritas</motto>
+          <barrelNumber></barrelNumber>
+        </textual>
+      </part>
+    </label>
+  </labels>
+</wlv>
