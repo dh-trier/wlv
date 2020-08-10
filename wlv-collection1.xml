@@ -2,14 +2,14 @@
 <?xml-model href="wlv-schema.rnc" type="application/relax-ng-compact-syntax"?>
 <wlv id="collection1" url="https://github.com/dh-trier/wlv/collection1">
   <metadata>
-    <title>Testsammlung TCDH</title>
-    <editor ref="gnd:12345678">Christof Schöch</editor>
+    <title>Test Collection 1 (WLV-TCDH)</title>
+    <editor ref="wikidata:Q57917455">Christof Schöch</editor>
     <institution url="https://kompetenzzentrum.uni-trier.de">Trier Center for Digital Humanities</institution>
-    <location ref="wikidata:Q1234">Trier</location>
+    <location ref="wikidata:Q3138">Trier</location>
     <date>2020</date>
-    <licence url="https://creativecommons.org/licenses/by/4.0/" key="CC-BY">Creative Commons Attribution</licence>
+    <licence url="https://creativecommons.org/licenses/by/4.0/" key="CC-BY">Creative Commons Attribution 4.0 International</licence>
     <curators>
-      <curator id="cs" ref="gnd:12345">Christof Schöch</curator>
+      <curator id="cs" ref="wikidata:Q57917455">Christof Schöch</curator>
     </curators>
   </metadata>
   <labels>
@@ -24,8 +24,8 @@
           <figure figureNum="2" figureType="coat-of-arms" figurePosition="center-left">Red ground with three white S-shapes.</figure>
         </visual>
         <textual>
-        <location locationType="region" locationRole="producer" fontStyle="all-caps">Mosel-Saar-Ruwer</location>
-        <wineName fontType="Fraktur" fontSize="larger">Piesporter Lay [Auslese]</wineName>
+        <location locationType="region" locationRole="producer" ref="wikidata:Q672776" fontStyle="all-caps">Mosel-Saar-Ruwer</location>
+        <origin originType="vineyard" fontType="Fraktur" fontSize="larger" ref="wikidata:Q375762">Piesporter Lay [Auslese]</origin>
         <qualityIndicator qualityIndicatorType="grapes">Auslese</qualityIndicator>
         <qualityIndicator qualityIndicatorType="vinification">naturrein</qualityIndicator>
         <qualityIndicator qualityIndicatorType="vinification">Eigenes Wachstum</qualityIndicator>
@@ -42,24 +42,26 @@
         <physical material="paper" shape="rectangle" sizeH="128" sizeV="89">
         </physical>
         <visual>
-          <frame frameColor="gold" frameType="band">Large golden band with black line.</frame>
-          <background backgroundStyle="none"></background>
-          <figure figureNum="1" figureType="realistic" figurePosition="upper-center">Landscape with vineyard, village and river seen through window in wall.</figure>
-          <figure figureNum="2" figureType="seal" figurePosition="upper-left"></figure>
+          <frame frameColor="gold" frameType="band">Large golden band.</frame>
+          <background backgroundStyle="pattern">Yellow and green.</background>
+          <figure figureNum="1" figureType="realistic" figurePosition="upper-across">Landscape with vineyard, village and river. Osterlämmchen, Feuerberg, Pfaffenberg, Elzogberg.</figure>
+          <figure figureNum="2" figureType="symbolic" figurePosition="center-left">Sheep, book, flagpole, flag.</figure>
+          <figure figureType="realistic" figureNum="3">House.</figure>
+          <figure figureType="seal" figureNum="4">Red seal.</figure>
+          <figure figureType="realistic" figurePosition="lower-right" figureNum="5">Grapes.</figure>
         </visual>
         <textual>
-          <millesime millesimeNorm="1965" fontColor="red">1965er</millesime>
-          <origin ref="wikidata:Q1234" originType="wine-region" fontColor="red" fontType="Fraktur">Mosel-Saar-Ruwer</origin>
-          <wineName ref="wikidata:Q9876">Kaseler Katzenberg</wineName>
-          <grapeVariety ref="wikidata:Q0022">Riesling</grapeVariety>
-          <agent agentRole="bottler" ref="wikidata:Q1928">Weingut Kasel</agent>
-          <qualityIndicator qualityIndicatorType="bottling">Gutsabfüllung</qualityIndicator>
-          <qualityIndicator qualityIndicatorType="vinification">barrique-Ausbau</qualityIndicator>
-          <qualityIndicator qualityIndicatorType="classification">Qualitätswein</qualityIndicator>
-          <alcohol alcoholNorm="12">12%</alcohol>
-          <controlNumber controlNumberType="Amtliche Prüfnummer (Q480240)" fontStyle="small-caps"></controlNumber>
-          <motto mottoType="in-figure">in vino veritas</motto>
-          <barrelNumber></barrelNumber>
+          <location locationType="region" locationRole="producer" ref="wikidata:Q672776">Mosel-Saar-Ruwer</location>
+          <agent agentRole="producer">Weingut Walter Oster</agent>
+          <location locationType="village" locationRole="producer" ref="wikidata:Q547805">5591 Ediger</location>
+          <location locationType="region" locationRole="producer">Mosel</location>
+          <otherText otherTextType="administrative">Tel.02675-235</otherText>
+          <origin originType="vineyard" fontType="Fraktur">Ediger Pfaffenberg</origin>
+          <grapeVariety ref="wikidata:Q456471">Riesling</grapeVariety>
+          <qualityIndicator qualityIndicatorType="grapes">Spätlese</qualityIndicator>
+          <qualityIndicator qualityIndicatorType="classification" ref="wikidata:Q353275">Qualitätswein mit Prädikat</qualityIndicator>
+          <controlNumber controlNumberType="Amtliche Prüfnummer (Q480240)">Amtl. Prüf.-Nr. 1 625 130 4 76</controlNumber>
+          <qualityIndicator qualityIndicatorType="bottling">Erzeugerabfüllung</qualityIndicator>
         </textual>
       </part>
     </label>
