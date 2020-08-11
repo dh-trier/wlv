@@ -87,7 +87,7 @@ wineOtherType = attribute wineOtherType { "additives" | "usage" | "other" }
 # wine quality indicators
 
 qualityGrapes = element qualityGrapes { text, ref?, wdw?, qualityGrapesNorm?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
-qualityGrapesNorm = attribute qualityGrapesNorm { "Kabinett" | "Spätlese" | "Auslese" | "Beerenauslese" | "Trockenbeerenauslese" | "Eiswein" | "other" }
+qualityGrapesNorm = attribute qualityGrapesNorm { "Kabinett" | "Spätlese" | "Auslese" | "Beerenauslese" | "Trockenbeerenauslese" | "Eiswein" | "other" } # deu:Traubenqualität
 qualityLevel = element qualityLevel { text, ref?, wdw?, qualityLevelNorm? } # deu:Qualitätsstufen
 qualityLevelNorm = attribute qualityLevelNorm { "Tafelwein/Wein" | "Landwein" | "Qualitätswein" | "Prädikatswein" | "other" }
 qualityAward = element qualityAward { text, ref?, wdw?, qualityAwardNorm? } # deu:Auszeichung
