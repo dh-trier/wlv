@@ -79,9 +79,9 @@
         </visual>
         <textual>
           <wineOrigin wineOriginType="region (Gebiet)">Mosel-Saar-Ruwer</wineOrigin>
-          <millesime millesimeNorm="1965">1965er</millesime>
+          <wineMillesime wineMillesimeNorm="1965">1965er</wineMillesime>
           <wineOrigin wineOriginType="vineyard (Lage)">Wittlicher Bottchen</wineOrigin>
-          <grapeVariety grapeVarietyNorm="Riesling">Riesling</grapeVariety>
+          <wineGrapes wineGrapesNorm="Riesling">Riesling</wineGrapes>
           <agent agentRole="producer/bottler">Weinbau Marzen-Musseleck</agent>
           <location locationRole="producer/bottler" locationType="locality" ref="wikidata:Q559514">Wittlich</location>
           <agent agentRole="printer">Caesar</agent>

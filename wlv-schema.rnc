@@ -7,6 +7,7 @@ start = wlv
 wlv = element wlv { id, url, metadata, labels }
 id = attribute id { text }
 url = attribute url { text }
+wdw = attribute wdw { text }
 
 # === metadata ===
 
@@ -56,12 +57,9 @@ figurePosition = attribute figurePosition { "upper-left" | "upper-right" | "uppe
 
 # === textual ===
 
-textual = element textual { wineMillesime? & wineOrigin* & wineType* & wineGrapes* & wineTaste* & wineAging* & wineOther* & qualityGrapes* & qualityLevel* & qualityAward* & qualityProduction* & qualityHistorical* & agent* & location* & alcohol? & volume? & controlNumber? & barrelNumber? & labelNumber? & motto* & coatText* & otherText* }
+textual = element textual { wineMillesime? & wineOrigin* & wineType* & wineGrapes* & wineTaste* & wineAging* & wineOther* & qualityGrapes* & qualityLevel* & qualityAward* & qualityLabel* & qualityProduction* & qualityHistorical* & agent* & location* & alcohol? & volume? & controlNumber? & barrelNumber? & labelNumber? & motto* & coatText* & otherText* }
 
-wineMillesime = element wineMillesime { text, wineMillesimeNorm, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
-wineMillesimeNorm = attribute wineMillesimeNorm { xsd:int }
-
-# font
+# font attributes
 
 fontType = attribute fontType { "Fraktur" | "Antiqua-Sans" | "Antiqua-Serif" | "Cursive" }
 fontStyle = attribute fontStyle { "recte" | "italics" | "small-caps" | "all-caps" }
@@ -71,35 +69,39 @@ fontSize = attribute fontSize { "larger" | "normal" | "smaller" }
 
 # wine description
 
-wineOrigin = element wineOrigin {text, wineOriginType, ref?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+wineMillesime = element wineMillesime { text, wineMillesimeNorm, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+wineMillesimeNorm = attribute wineMillesimeNorm { xsd:int }
+wineOrigin = element wineOrigin {text, wineOriginType, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineOriginType = attribute wineOriginType { "country (Land)" | "region (Gebiet)" | "area (Bereich)" | "locality (Ort)" | "vineyard (Lage)" | "other" }
-wineType = element wineType { text, wineTypeNorm, ref?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+wineType = element wineType { text, wineTypeNorm, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineTypeNorm = attribute wineTypeNorm { "red (Rotwein)" | "white (Weisswein)" | "rose (Rosé/Rotling)" | "other" }
-wineGrapes = element wineGrapes { text, wineGrapesNorm, ref?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+wineGrapes = element wineGrapes { text, wineGrapesNorm, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineGrapesNorm = attribute wineGrapesNorm { "Riesling" | "other" }
-wineTaste = element wineTaste { text, wineTasteNorm, ref?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
-wineTasteNorm = attribute tasteGroupNorm { "dry (trocken)" | "semi-dry (halbtrocken feinherb)" | "semi-sweet (lieblich) | "sweet (süß)" | "other" }
-wineAging = element wineAging { text, wineAgingNorm, ref?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+wineTaste = element wineTaste { text, wineTasteNorm, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+wineTasteNorm = attribute tasteGroupNorm { "dry (trocken)" | "semi-dry (halbtrocken feinherb)" | "semi-sweet (lieblich)" | "sweet (süß)" | "other" }
+wineAging = element wineAging { text, wineAgingNorm, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineAgingNorm = attribute wineAgingNorm { "barrique" | "other" }
-wineOther = element wineOther { text, wineOtherType?, ref?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+wineOther = element wineOther { text, wineOtherType?, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineOtherType = attribute wineOtherType { "additives" | "usage" | "other" }
 
 # wine quality indicators
 
-qualityGrapes = element qualityGrapes { text, ref?, qualityGrapesNorm?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+qualityGrapes = element qualityGrapes { text, ref?, wdw?, qualityGrapesNorm?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 qualityGrapesNorm = attribute qualityGrapesNorm { "Kabinett" | "Spätlese" | "Auslese" | "Beerenauslese" | "Trockenbeerenauslese" | "Eiswein" | "other" }
-qualityLevel = element qualityLevel { text, ref?, qualityLevelNorm? }
+qualityLevel = element qualityLevel { text, ref?, wdw?, qualityLevelNorm? } # deu:Qualitätsstufen
 qualityLevelNorm = attribute qualityLevelNorm { "Tafelwein/Wein" | "Landwein" | "Qualitätswein" | "Prädikatswein" | "other" }
-qualityAward = element qualityAward { text, ref?, qualityAwardNorm? }
+qualityAward = element qualityAward { text, ref?, wdw?, qualityAwardNorm? } # deu:Auszeichung
 qualityAwardNorm = attribute qualityAwardNorm { "Weinprämierung" | "Gütezeichen" | "other" }
-qualityProduction = element qualityProduction { text, ref?, qualityProductionNorm? }
+qualityLabel = element qualityLabel { text, ref?, wdw?, qualityLabelType? } # deu:Qualitätsbezeichnungen (andere)
+qualityLabelType = attribute qualityLabelType { "vineyard" | "grapes" | "other" } 
+qualityProduction = element qualityProduction { text, ref?, wdw?, qualityProductionNorm? } # deu:Prädikat
 qualityProductionNorm = attribute qualityProductionNorm { "on-location" | "other" }
 qualityHistorical = element qualityHistorical { text, ref? }
 
 # agent
 
 agent = element agent { text, agentRole, ref?, url?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
-agentRole = attribute agentRole { "producer/bottler" | "distributor/importer" | "cooperative/association" | "printer" | "artist" | "other" }
+agentRole = attribute agentRole { "producer/bottler" | "distributor/importer/exporter" | "cooperative/association" | "printer" | "artist" | "other" }
 location = element location { text, locationRole, locationType, ref?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 locationRole = attribute locationRole { "producer/bottler" | "distributor/importer" | "cooperative/association" | "printer" | "artist" | "other" }
 locationType = attribute locationType { "locality" | "region" | "country" | "other" }
@@ -107,9 +109,9 @@ locationType = attribute locationType { "locality" | "region" | "country" | "oth
 # numerical
 
 alcohol = element alcohol { text, alcoholNorm, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle?  }
-alcoholNorm = attribute alcoholNorm { xsd:int } 
+alcoholNorm = attribute alcoholNorm { xsd:int } # unit:percent
 volume = element volume { text, volumeNorm, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
-volumeNorm = attribute volumeNorm { xsd:int } 
+volumeNorm = attribute volumeNorm { xsd:int } # unit:milliliter
 controlNumber = element controlNumber { text, ref?, controlNumberType?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 controlNumberType = attribute controlNumberType { text | "Amtliche Prüfnummer (Q480240)" | "Losnummer" | "other" }
 barrelNumber = element barrelNumber { text, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
@@ -121,3 +123,4 @@ motto = element motto { text, mottoType, figureNum?, fontType?, fontColor?, font
 mottoType = attribute mottoType { "stand-alone" | "in-figure" }
 coatText = element coatText { text, figureNum?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 otherText = element otherText { text, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+
