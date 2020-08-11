@@ -24,17 +24,17 @@
           <figure figureNum="2" figureType="coat-of-arms" figurePosition="center-left">Red ground with three white S-shapes.</figure>
         </visual>
         <textual>
-          <wineOrigin wineOriginType="region (Gebiet)" fontStyle="all-caps">Mosel-Saar-Ruwer</wineOrigin>
-          <wineOrigin wineOriginType="vineyard (Lage)" fontSize="larger" fontType="Fraktur">Piesporter Lay</wineOrigin>
-          <qualityGrapes fontSize="larger" fontType="Fraktur">Auslese</qualityGrapes>
+          <wineOrigin wineOriginType="region (Gebiet)" ref="wikidata:Q672776" fontStyle="all-caps">Mosel-Saar-Ruwer</wineOrigin>
+          <wineOrigin wineOriginType="vineyard (Lage)" ref="wikidata:Q375762" fontSize="larger" fontType="Fraktur">Piesporter Lay</wineOrigin>
+          <qualityGrapes qualityGrapesNorm="Auslese" ref="enwp:Auslese" wdw="id=52403" fontSize="larger" fontType="Fraktur">Auslese</qualityGrapes>
           <qualityHistorical>naturrein</qualityHistorical>
           <qualityHistorical>Eigenes Wachstum</qualityHistorical>
-          <qualityProduction>Original=Abfüllung</qualityProduction>
+          <qualityProduction qualityProductionNorm="on-location">Original=Abfüllung</qualityProduction>
           <agent agentRole="producer/bottler">Joh. Koenen-Veit, Weinbau - Weinversand</agent>
-          <location locationRole="producer/bottler" locationType="locality">Minheim</location>
+          <location locationRole="producer/bottler" locationType="locality" ref="wikidata:Q524796">Minheim</location>
           <location locationRole="producer/bottler" locationType="region">Mosel</location>
-          <agent agentRole="printer" fontSize="smaller">Verlag Bastian</agent>
-          <location locationRole="printer" locationType="locality">Neumagen</location>
+          <agent agentRole="printer" fontSize="smaller" url="https://www.bastian-druck.de/">Verlag Bastian</agent>
+          <location locationRole="printer" locationType="locality" ref="wikidata:Q572352">Neumagen</location>
         </textual>
       </part>
     </label>
@@ -53,13 +53,13 @@
         </visual>
         <textual>
           <wineOrigin wineOriginType="region (Gebiet)" ref="wikidata:Q672776">Mosel-Saar-Ruwer</wineOrigin>
-          <agent agentRole="producer/bottler">Weingut Walter Oster</agent>
+          <agent agentRole="producer/bottler" url="https://www.weingutoster.de/">Weingut Walter Oster</agent>
           <location locationRole="producer/bottler" locationType="locality" ref="wikidata:Q547805">5591 Ediger</location>
           <location locationType="region" locationRole="producer/bottler">Mosel</location>
           <otherText>Tel.02675-235</otherText>
           <wineOrigin wineOriginType="vineyard (Lage)" fontType="Fraktur">Ediger Pfaffenberg</wineOrigin>
           <wineGrapes wineGrapesNorm="Riesling" ref="wikidata:Q456471">Riesling</wineGrapes>
-          <qualityGrapes qualityGrapesNorm="Auslese">Auslese</qualityGrapes>
+          <qualityGrapes qualityGrapesNorm="Auslese" ref="enwp:Auslese" wdw="id=52403">Auslese</qualityGrapes>
           <qualityLevel qualityLevelNorm="Prädikatswein" ref="wikidata:Q353275">Qualitätswein mit Prädikat</qualityLevel>
           <controlNumber controlNumberType="Amtliche Prüfnummer (Q480240)">Amtl. Prüf.-Nr. 1 625 130 4 76</controlNumber>
           <qualityProduction qualityProductionNorm="on-location">Erzeugerabfüllung</qualityProduction>
@@ -78,9 +78,9 @@
           <figure figureType="realistic" figureNum="3" figurePosition="upper-right">Grape plant.</figure>
         </visual>
         <textual>
-          <wineOrigin wineOriginType="region (Gebiet)">Mosel-Saar-Ruwer</wineOrigin>
+          <wineOrigin wineOriginType="region (Gebiet)" ref="wikidata:Q672776">Mosel-Saar-Ruwer</wineOrigin>
           <wineMillesime wineMillesimeNorm="1965">1965er</wineMillesime>
-          <wineOrigin wineOriginType="vineyard (Lage)">Wittlicher Bottchen</wineOrigin>
+          <wineOrigin wineOriginType="vineyard (Lage)" ref="Q559514">Wittlicher Bottchen</wineOrigin>
           <wineGrapes wineGrapesNorm="Riesling">Riesling</wineGrapes>
           <agent agentRole="producer/bottler">Weinbau Marzen-Musseleck</agent>
           <location locationRole="producer/bottler" locationType="locality" ref="wikidata:Q559514">Wittlich</location>

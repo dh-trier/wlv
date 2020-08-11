@@ -7,7 +7,7 @@ start = wlv
 wlv = element wlv { id, url, metadata, labels }
 id = attribute id { text }
 url = attribute url { text }
-wdw = attribute wdw { text }
+wdw = attribute wdw { text } # http://wdw.uni-trier.de/onlinewb/index.php3?{ID}
 
 # === metadata ===
 
