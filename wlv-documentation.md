@@ -47,9 +47,9 @@ wlv
 
 ---- visual
 
------ frame @frameStyle @frameType
+----- frame
 
------ background @backgroundStyle
+----- background
 
 ----- figure
 
@@ -57,32 +57,60 @@ wlv
 
 ----- millesime
 
------ grape-variety @ref
+----- wineOrigin
 
------ qualityIndicator @qualityIndicatorType
+----- wineType
 
------ wineCharacter
+----- wineGrapes
 
------ wineColor
+----- wineTaste
 
------ agent @ref
+----- wineAging
 
------ location @ref
+----- wineOther
 
------ motto
+----- qualityGrapes
+
+----- qualityLevel
+
+----- qualityAward
+
+----- qualityProduction
+
+----- qualityHistorical
+
+
+
+----- agent
+
+----- location
+
+
 
 ----- alcohol @alcoholNorm
 
 ----- volume @volumeNorm
 
------ controlNumber @controlNumberType
+----- controlNumber
 
 ----- barrelNumber
 
------ otherText @otherTextType
+----- labelNumber 
+
+
+----- motto
+
+----- coatText
+
+----- otherText
+
 
 
 ## Attributes present on most elements inside the element textual
+
+@{elementname}Norm or @{elementname}Type
+
+@ref: For a reference to an authority such as GND, Geonames or Wikidata
 
 @fontType: { "Antiqua-Sans" | "Antiqua-Serif" | "Fraktur" | "Cursive" }
 
