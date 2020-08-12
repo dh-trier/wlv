@@ -11,10 +11,11 @@ wdw = attribute wdw { text } # http://wdw.uni-trier.de/onlinewb/index.php3?{ID}
 
 # === metadata ===
 
-metadata = element metadata { title, editor, institution?, city?, date, licence+, curators? }
+metadata = element metadata { title & owner* & editor* & institution* & city* & date & licence+ & curators? }
 title = element title { text }
 editor = element editor { text, ref? }
-ref = attribute ref { text }
+ref = attribute ref { text | "wikidata" | "gnd" | "enwiki" | "dewiki" | "frwiki" }  
+owner = element owner { text, ref? }
 institution = element institution { text, url? }
 city = element location { text, ref? }
 date = element date { xsd:int | xsd:date }
@@ -73,8 +74,9 @@ fontSize = attribute fontSize { "larger" | "normal" | "smaller" }
 
 wineMillesime = element wineMillesime { text, wineMillesimeNorm, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineMillesimeNorm = attribute wineMillesimeNorm { xsd:int }
-wineOrigin = element wineOrigin {text, wineOriginType, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+wineOrigin = element wineOrigin {text, wineOriginType, wineOriginNorm?, ref?, url?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineOriginType = attribute wineOriginType { "country (Land)" | "region (Gebiet)" | "area (Bereich)" | "locality (Ort)" | "vineyard (Lage)" | "other" }
+wineOriginNorm = attribute wineOriginNorm { text } 
 wineType = element wineType { text, wineTypeNorm, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineTypeNorm = attribute wineTypeNorm { "red (Rotwein)" | "white (Weisswein)" | "rose (Rosé/Rotling)" | "other" }
 wineGrapes = element wineGrapes { text, wineGrapesNorm, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
@@ -105,7 +107,7 @@ qualityHistorical = element qualityHistorical { text, ref? }
 agent = element agent { text, agentRole, ref?, url?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 agentRole = attribute agentRole { "producer/bottler" | "distributor/importer/exporter" | "cooperative/association" | "printer" | "artist" | "other" }
 location = element location { text, locationRole, locationType, ref?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
-locationRole = attribute locationRole { "producer/bottler" | "distributor/importer" | "cooperative/association" | "printer" | "artist" | "other" }
+locationRole = attribute locationRole { "producer/bottler" | "distributor/importer/exporter" | "cooperative/association" | "printer" | "artist" | "other" }
 locationType = attribute locationType { "locality" | "region" | "country" | "other" }
 
 # numerical

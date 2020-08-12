@@ -2,7 +2,8 @@
 <?xml-model href="wlv-schema.rnc" type="application/relax-ng-compact-syntax"?>
 <wlv id="collection1" url="https://github.com/dh-trier/wlv/collection1">
   <metadata>
-    <title>Test Collection 1 (WLV-TCDH)</title>
+    <title>Sammlung Christof Schöch (SCS)</title>
+    <owner> ref="wikidata:Q57917455">Christof Schöch</owner>
     <editor ref="wikidata:Q57917455">Christof Schöch</editor>
     <institution url="https://kompetenzzentrum.uni-trier.de">Trier Center for Digital Humanities</institution>
     <location ref="wikidata:Q3138">Trier</location>
@@ -15,7 +16,42 @@
     </curators>
   </metadata>
   <labels>
-    <label curatorid="#cs" curationDate="2020-08-10" id="label-0001">
+    <label curatorid="#cs" curationDate="2020-08-11" id="scs-0001">
+      <part partType="front" partNum="1">
+        <physical sizeH="129" sizeV="85" shape="rectangle" material="paper"/>
+        <visual>
+          <background backgroundStyle="color">white</background>
+          <frame frameStyle="band" frameColor="gold" frameType="outer"></frame>
+          <figure figureType="symbolic" figureNum="1" figurePosition="upper-left">Stylised grapevine.</figure>
+          <figure figureType="realistic" figureNum="2" figurePosition="upper-center">Black cat with shadow.</figure>
+          <figure figureType="symbolic" figureNum="3" figurePosition="upper-right">Stylised grapevine.</figure>
+        </visual>
+        <textual>
+          <wineOrigin wineOriginType="region (Gebiet)">Mosel-Saar-Ruwer</wineOrigin>
+          <wineMillesime wineMillesimeNorm="1957">1957er</wineMillesime>
+          <wineOrigin wineOriginType="locality (Ort)" wineOriginNorm="Zell" ref="gnd:4067530-0">Zeller</wineOrigin>
+          <wineOrigin wineOriginType="vineyard (Lage)" url="https://de.wikipedia.org/wiki/Schwarze_Katz" ref="wikidata:Q2253665">schwarze Katz</wineOrigin>
+        </textual>
+      </part>
+    </label>
+    <label curatorid="#cs" curationDate="2020-08-11" id="scs-0002">
+      <part partType="front" partNum="1">
+        <physical sizeH="137" sizeV="89" shape="rectangle" material="paper"/>
+        <visual>
+          <background backgroundStyle="color">uniform light green</background>
+          <figure figureType="coat-of-arms" figureNum="1" figurePosition="upper-center">Red and white checkered coat of arms, sword on black ground, ornamental leaves to the sides, wings and castle on top.</figure>
+        </visual>
+        <textual>
+          <wineOrigin wineOriginType="region (Gebiet)" ref="wikidata:" fontType="Antiqua-Sans">Mosel-Saar-Ruwer</wineOrigin>
+          <wineMillesime wineMillesimeNorm="1939" fontStyle="italics" fontType="Cursive" fontSize="larger">1939er</wineMillesime>
+          <agent agentRole="distributor/importer/exporter">Karl Ziegler, Weinhandlung</agent>
+          <location locationRole="distributor/importer/exporter" locationType="locality">Freudenberg</location>
+          <agent agentRole="printer" fontSize="smaller">Bastian</agent>
+          <location locationRole="printer" locationType="locality" ref="wikidata:Q822358">Winningen</location>
+        </textual>
+      </part>
+    </label>
+    <label curatorid="#cs" curationDate="2020-08-10" id="scs-0003">
       <part partNum="1" partType="front">
         <physical shape="rectangle" material="paper" sizeH="128" sizeV="89">
         </physical>
@@ -40,7 +76,7 @@
         </textual>
       </part>
     </label>
-    <label curatorid="#cs" curationDate="2020-08-09" id="label-0002">
+    <label curatorid="#cs" curationDate="2020-08-09" id="scs-004">
       <part partNum="1" partType="front">
         <physical material="paper" shape="rectangle" sizeH="128" sizeV="89">
         </physical>
@@ -68,7 +104,7 @@
         </textual>
       </part>
     </label>
-    <label curatorid="#cs" curationDate="2020-08-10" id="label-0003">
+    <label curatorid="#cs" curationDate="2020-08-10" id="scs-005">
       <part partType="front" partNum="1">
         <physical sizeH="128" sizeV="89" shape="rectangle" material="paper" />
         <visual>
