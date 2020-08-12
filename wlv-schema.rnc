@@ -29,12 +29,14 @@ curator = element curator { text, id, ref? }
 # === labels ===
 
 labels = element labels { label+ }
-label = element label { id, curatorid, curationDate, licence*, url?, part+ }
+label = element label { id, curatorid, curationDate, licence*, url?, labelType, comments?, part+ }
+labelType = attribute labelType { "Lageetikett" | "Gutsetikett" | "Ortsetikett" | "tbc" | "other" | text }
 curatorid = attribute curatorid { text }
 curationDate = attribute curationDate { xsd:int | xsd:date }
+comments = element comments { text }
 part = element part { partNum, partType, physical, visual, textual }
 partNum = attribute partNum { xsd:int }
-partType = attribute partType { "front" | "back" | "neck" | "band" }
+partType = attribute partType { "front" | "back" | "neck" | "wraparound" | "band" }
 
 # === physical ===
 
