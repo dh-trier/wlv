@@ -14,7 +14,7 @@ wdw = attribute wdw { text } # http://wdw.uni-trier.de/onlinewb/index.php3?{ID}
 metadata = element metadata { title & owner* & editor* & institution* & city* & date & licence+ & curators? }
 title = element title { text }
 editor = element editor { text, ref? }
-ref = attribute ref { text | "wikidata" | "gnd" | "enwiki" | "dewiki" | "frwiki" }  
+ref = attribute ref { text | "wikidata:" | "gnd:" | "enwiki:" | "dewiki:" | "frwiki:" }  # separate several entries by ";"
 owner = element owner { text, ref? }
 institution = element institution { text, url? }
 city = element location { text, ref? }
@@ -85,7 +85,7 @@ wineTaste = element wineTaste { text, wineTasteNorm, ref?, wdw?, fontType?, font
 wineTasteNorm = attribute tasteGroupNorm { "dry (trocken)" | "semi-dry (halbtrocken feinherb)" | "semi-sweet (lieblich)" | "sweet (süß)" | "other" }
 wineAging = element wineAging { text, wineAgingNorm, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineAgingNorm = attribute wineAgingNorm { "barrique" | "other" }
-wineOther = element wineOther { text, wineOtherType?, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+wineOther = element wineOther { text, wineOtherType?, ref?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineOtherType = attribute wineOtherType { "additives" | "usage" | "other" }
 
 # wine quality indicators
