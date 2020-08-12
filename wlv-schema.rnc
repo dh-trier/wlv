@@ -6,27 +6,29 @@
 start = wlv
 wlv = element wlv { id, url, metadata, labels }
 id = attribute id { text }
-url = attribute url { text }
+url = attribute url { text | "https://creativecommons.org/licenses/by/4.0/" }
 wdw = attribute wdw { text } # http://wdw.uni-trier.de/onlinewb/index.php3?{ID}
 
 # === metadata ===
 
-metadata = element metadata { title, editor, institution?, city?, date, licence, curators? }
+metadata = element metadata { title, editor, institution?, city?, date, licence+, curators? }
 title = element title { text }
 editor = element editor { text, ref? }
 ref = attribute ref { text }
 institution = element institution { text, url? }
 city = element location { text, ref? }
 date = element date { xsd:int | xsd:date }
-licence = element licence { text, url, key? }
-key = attribute key { text }
+licence = element licence { text, url?, licenceAbbr?, licenceScope }
+licenceAbbr = attribute licenceAbbr { text | "CC BY" | "public domain" }
+licenceScope = attribute licenceScope { text | "markup" | "visual" | "metadata" | "textual" }
+
 curators = element curators { curator+ }
 curator = element curator { text, id, ref? }
 
 # === labels ===
 
 labels = element labels { label+ }
-label = element label { id, curatorid, curationDate, url?, part+ }
+label = element label { id, curatorid, curationDate, licence*, url?, part+ }
 curatorid = attribute curatorid { text }
 curationDate = attribute curationDate { xsd:int | xsd:date }
 part = element part { partNum, partType, physical, visual, textual }

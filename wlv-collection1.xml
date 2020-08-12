@@ -7,7 +7,9 @@
     <institution url="https://kompetenzzentrum.uni-trier.de">Trier Center for Digital Humanities</institution>
     <location ref="wikidata:Q3138">Trier</location>
     <date>2020</date>
-    <licence url="https://creativecommons.org/licenses/by/4.0/" key="CC-BY">Creative Commons Attribution 4.0 International</licence>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+    <licence licenceScope="textual">public domain</licence>
+    <licence licenceScope="visual">to be determined.</licence>
     <curators>
       <curator id="cs" ref="wikidata:Q57917455">Christof Schöch</curator>
     </curators>
