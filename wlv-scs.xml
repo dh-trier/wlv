@@ -16,7 +16,7 @@
     </curators>
   </metadata>
   <labels>
-    <label curatorid="#cs" curationDate="2020-08-11" id="scs-0001">
+    <label labelType="Lageetikett" curatorid="#cs" curationDate="2020-08-11" id="scs-0001">
       <part partType="front" partNum="1">
         <physical sizeH="129" sizeV="85" shape="rectangle" material="paper"/>
         <visual>
@@ -34,7 +34,7 @@
         </textual>
       </part>
     </label>
-    <label curatorid="#cs" curationDate="2020-08-11" id="scs-0002">
+    <label labelType="Ortsetikett" curatorid="#cs" curationDate="2020-08-11" id="scs-0002">
       <part partType="front" partNum="1">
         <physical sizeH="137" sizeV="89" shape="rectangle" material="paper"/>
         <visual>
@@ -53,7 +53,7 @@
         </textual>
       </part>
     </label>
-    <label curatorid="#cs" curationDate="2020-08-10" id="scs-0003">
+    <label labelType="Lageetikett" curatorid="#cs" curationDate="2020-08-10" id="scs-0003">
       <part partNum="1" partType="front">
         <physical shape="rectangle" material="paper" sizeH="128" sizeV="89">
         </physical>
@@ -78,7 +78,7 @@
         </textual>
       </part>
     </label>
-    <label curatorid="#cs" curationDate="2020-08-09" id="scs-004">
+    <label labelType="Gutsetikett" curatorid="#cs" curationDate="2020-08-09" id="scs-004">
       <part partNum="1" partType="front">
         <physical material="paper" shape="rectangle" sizeH="128" sizeV="89">
         </physical>
@@ -106,7 +106,7 @@
         </textual>
       </part>
     </label>
-    <label curatorid="#cs" curationDate="2020-08-10" id="scs-005">
+    <label labelType="tbc" curatorid="#cs" curationDate="2020-08-10" id="scs-005">
       <part partType="front" partNum="1">
         <physical sizeH="128" sizeV="89" shape="rectangle" material="paper" />
         <visual>
@@ -126,6 +126,32 @@
           <location locationRole="producer/bottler" locationType="locality" ref="wikidata:Q559514">Wittlich</location>
           <agent agentRole="printer">Caesar</agent>
           <labelNumber>3244</labelNumber>
+        </textual>
+      </part>
+    </label>
+    <label curatorid="#cs" labelType="tbc" curationDate="2020-10-13" id="scs-0006">
+      <comments>The frame is generally speaking an outer frame, but the region name stands outside of it.</comments>
+      <part partType="front" partNum="1">
+        <physical sizeH="130" sizeV="92" shape="rectangle" material="paper"/>
+        <visual>
+          <background backgroundStyle="none"></background>
+          <frame frameStyle="other" frameColor="gold" frameType="outer">Ornamental frame.</frame>
+          <figure figureType="coat-of-arms" figureNum="1">Two coat of arms with decoration.</figure>
+        </visual>
+        <textual>
+          <wineOrigin wineOriginType="region (Gebiet)" fontType="Antiqua-Sans" fontStyle="all-caps">Mosel · Saar · Ruwer</wineOrigin>
+          <motto mottoPosition="in-figure" figureNum="1" fontStyle="all-caps">in hoc vino vinces</motto>
+          <location locationPosition="in-figure" fontStyle="all-caps" fontSize="smaller" fontType="Antiqua-Sans" locationRole="other" locationType="locality">Piesport</location>
+          <location locationPosition="in-figure" fontStyle="all-caps" fontSize="smaller" fontType="Antiqua-Sans" locationRole="other" locationType="locality">Brauneberg</location>
+          <wineMillesime wineMillesimeNorm="1953">1953er</wineMillesime>
+          <wineOrigin wineOriginType="locality (Ort)" wineOriginNorm="Piesport" fontSize="larger">Piesporter</wineOrigin>
+          <wineOrigin wineOriginType="vineyard (Lage)" fontSize="larger">Goldtröpfchen</wineOrigin>
+          <agent agentRole="producer/bottler" fontStyle="all-caps">Wachstum Weingut Notar Dr. Kirch</agent>
+          <agent agentRole="producer/bottler">vorm. Erbhof Georg Kirch, Weingutsbesitzer</agent>
+          <location locationType="locality" locationRole="producer/bottler">Piesport</location>
+          <location locationType="region" locationRole="producer/bottler">(Mosel)</location>
+          <agent agentRole="printer" fontSize="smaller">Dackweiler &amp; Co.</agent>
+          <location locationRole="printer" locationType="locality" fontSize="smaller">Trier</location>
         </textual>
       </part>
     </label>

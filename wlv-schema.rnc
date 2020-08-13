@@ -108,9 +108,10 @@ qualityHistorical = element qualityHistorical { text, ref? }
 
 agent = element agent { text, agentRole, ref?, url?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 agentRole = attribute agentRole { "producer/bottler" | "distributor/importer/exporter" | "cooperative/association" | "printer" | "artist" | "other" }
-location = element location { text, locationRole, locationType, ref?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+location = element location { text, locationRole, locationType, locationPosition?, figureNum?, ref?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 locationRole = attribute locationRole { "producer/bottler" | "distributor/importer/exporter" | "cooperative/association" | "printer" | "artist" | "other" }
 locationType = attribute locationType { "locality" | "region" | "country" | "other" }
+locationPosition = attribute locationPosition { "standalone" | "in-figure" }
 
 # numerical
 
@@ -125,8 +126,9 @@ labelNumber = element labelNumber { text, fontType?, fontColor?, fontSize?, font
 
 # other text 
 
-motto = element motto { text, mottoType, figureNum?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
-mottoType = attribute mottoType { "stand-alone" | "in-figure" }
+motto = element motto { text, mottoPosition, figureNum?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+mottoPosition = attribute mottoPosition { "stand-alone" | "in-figure" }
 coatText = element coatText { text, figureNum?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
-otherText = element otherText { text, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+otherText = element otherText { text, otherTextPosition?, figureNum?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+otherTextPosition = attribute otherTextPosition { "stand-alone" | "in-figure" }
 
