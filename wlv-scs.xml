@@ -122,7 +122,7 @@
           <wineMillesime wineMillesimeNorm="1965">1965er</wineMillesime>
           <wineOrigin wineOriginType="vineyard (Lage)" ref="Q559514">Wittlicher Bottchen</wineOrigin>
           <wineGrapes wineGrapesNorm="Riesling">Riesling</wineGrapes>
-          <agent agentRole="producer/bottler">Weinbau Marzen-Musseleck</agent>motto
+          <agent agentRole="producer/bottler">Weinbau Marzen-Musseleck</agent>
           <location locationRole="producer/bottler" locationType="locality" ref="wikidata:Q559514">Wittlich</location>
           <agent agentRole="printer">Caesar</agent>
           <labelNumber>3244</labelNumber>
