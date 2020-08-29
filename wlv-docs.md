@@ -19,35 +19,31 @@ wlv
 
 -- title
 
--- editor @ref
+-- editor 
 
 -- institution
 
--- location @ref
+-- location
 
--- date @dateNorm
+-- date 
 
--- licence @url
+-- licence @short
 
 -- curators
 
---- curatorID @ref
+--- curatorID 
 
 - labels
 
--- label
+-- label @curatorID @curationDate @comment
 
 --- part
 
----- physical
-
------ shape @sizeH @sizeV
-
------ material
+---- physical @shape @sizeH @sizeV @material
 
 ---- visual
 
------ frame
+----- frame @frameType
 
 ----- background
 
@@ -87,9 +83,9 @@ wlv
 
 
 
------ alcohol @alcoholNorm
+----- alcohol
 
------ volume @volumeNorm
+----- volume 
 
 ----- controlNumber
 
@@ -110,7 +106,9 @@ wlv
 
 @{elementname}Norm or @{elementname}Type
 
-@ref: For a reference to an authority such as GND, Geonames or Wikidata
+@ref: For a reference to an authority such as GND, Geonames, Wikidata or a Wikipedia page.
+
+@url: For a reference to a website about or by the instance mentioned.  
 
 @fontType: { "Antiqua-Sans" | "Antiqua-Serif" | "Fraktur" | "Cursive" }
 

@@ -42,7 +42,7 @@
           <figure figureType="coat-of-arms" figureNum="1" figurePosition="upper-center">Red and white checkered coat of arms, sword on black ground, ornamental leaves to the sides, wings and castle on top.</figure>
         </visual>
         <textual>
-          <coatText fontType="Antiqua-Sans" fontStyle="all-caps">seit 1846</coatText>
+          <otherText textType="coat-text" textPosition="in-figure" fontType="Antiqua-Sans" fontStyle="all-caps">seit 1846</otherText>
           <wineOrigin wineOriginType="region (Gebiet)" ref="wikidata:" fontType="Antiqua-Sans">Mosel-Saar-Ruwer</wineOrigin>
           <wineMillesime wineMillesimeNorm="1939" fontStyle="italics" fontType="Cursive" fontSize="larger">1939er</wineMillesime>
           <wineOrigin wineOriginType="locality (Ort)" wineOriginNorm="Wiltingen">Wiltinger</wineOrigin>
@@ -96,7 +96,7 @@
           <agent agentRole="producer/bottler" url="https://www.weingutoster.de/">Weingut Walter Oster</agent>
           <location locationRole="producer/bottler" locationType="locality" ref="wikidata:Q547805">5591 Ediger</location>
           <location locationType="region" locationRole="producer/bottler">Mosel</location>
-          <otherText>Tel.02675-235</otherText>
+          <otherText textPosition="stand-alone" textType="other">Tel.02675-235</otherText>
           <wineOrigin wineOriginType="vineyard (Lage)" fontType="Fraktur">Ediger Pfaffenberg</wineOrigin>
           <wineGrapes wineGrapesNorm="Riesling" ref="wikidata:Q456471">Riesling</wineGrapes>
           <qualityGrapes qualityGrapesNorm="Auslese" ref="enwp:Auslese" wdw="id=52403">Auslese</qualityGrapes>
@@ -122,7 +122,7 @@
           <wineMillesime wineMillesimeNorm="1965">1965er</wineMillesime>
           <wineOrigin wineOriginType="vineyard (Lage)" ref="Q559514">Wittlicher Bottchen</wineOrigin>
           <wineGrapes wineGrapesNorm="Riesling">Riesling</wineGrapes>
-          <agent agentRole="producer/bottler">Weinbau Marzen-Musseleck</agent>
+          <agent agentRole="producer/bottler">Weinbau Marzen-Musseleck</agent>motto
           <location locationRole="producer/bottler" locationType="locality" ref="wikidata:Q559514">Wittlich</location>
           <agent agentRole="printer">Caesar</agent>
           <labelNumber>3244</labelNumber>
@@ -140,7 +140,7 @@
         </visual>
         <textual>
           <wineOrigin wineOriginType="region (Gebiet)" fontType="Antiqua-Sans" fontStyle="all-caps">Mosel · Saar · Ruwer</wineOrigin>
-          <motto mottoPosition="in-figure" figureNum="1" fontStyle="all-caps">in hoc vino vinces</motto>
+          <otherText textPosition="in-figure" textType="motto" figureNum="1" fontStyle="all-caps">in hoc vino vinces</otherText>
           <location locationPosition="in-figure" fontStyle="all-caps" fontSize="smaller" fontType="Antiqua-Sans" locationRole="other" locationType="locality">Piesport</location>
           <location locationPosition="in-figure" fontStyle="all-caps" fontSize="smaller" fontType="Antiqua-Sans" locationRole="other" locationType="locality">Brauneberg</location>
           <wineMillesime wineMillesimeNorm="1953">1953er</wineMillesime>
