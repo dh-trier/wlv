@@ -155,5 +155,28 @@
         </textual>
       </part>
     </label>
+    <label curatorid="#cs" labelType="Lageetikett" curationDate="2020-09-01" id="scs-0011">
+      <collectionContext>Das Etikett gehört zur Rheinhessen-Kapitel der Sammlung.</collectionContext>
+      <part partType="front" partNum="1">
+        <physical sizeH="119" sizeV="84" shape="rectangle" material="paper"/>
+        <visual>
+          <background backgroundStyle="none"></background>
+          <frame frameStyle="pattern" frameColor="gold" frameType="outer">Very large ornamental pattern frame.</frame>
+        </visual>
+        <textual>
+          <wineMillesime wineMillesimeNorm="1927">1927er</wineMillesime>
+          <wineOrigin wineOriginType="locality (Ort)" wineOriginNorm="Nierstein" ref="wikidata:Q680403" fontType="Fraktur" fontSize="larger">Niersteiner</wineOrigin>
+          <wineOrigin wineOriginType="vineyard (Lage)" fontType="Fraktur" fontSize="larger">Nockenberg</wineOrigin>
+          <agent agentRole="distributor/importer/exporter" fontType="Fraktur" fontSize="normal">Wilhelm Ziegler</agent>
+          <location locationRole="distributor/importer/exporter" locationType="locality" ref="wikidata:Q82838" fontType="Fraktur" fontSize="normal">Freudenstadt</location>
+          <agent agentRole="printer" fontSize="smaller" fontStyle="all-caps" fontType="Antiqua-Sans">Gerstung</agent>
+          <labelNumber fontSize="smaller" fontType="Antiqua-Sans">1384 DEP.</labelNumber>
+        </textual>
+      </part>
+      <provenance>
+        <source>Ebay im September 2020, von Nutzer "old labels and more". </source>
+        <conservation conservationNorm="very good">Nur ein kleiner Knick im rechten oberen Bereich.</conservation>
+      </provenance>
+    </label>
   </labels>
 </wlv>

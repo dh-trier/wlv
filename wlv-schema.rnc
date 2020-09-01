@@ -68,17 +68,6 @@ figurePosition = attribute figurePosition { "upper-left" | "upper-right" | "uppe
 
 textual = element textual { wineMillesime? & wineOrigin* & wineType* & wineGrapes* & wineTaste* & wineAging* & wineOther* & qualityGrapes* & qualityLevel* & qualityAward* & qualityLabel* & qualityProduction* & qualityHistorical* & agent* & location* & alcohol? & volume? & controlNumber? & barrelNumber? & labelNumber? & otherText* }
 
-# === provenance ===
-
-provenance = element provenance { dating?, source?, scan? }
-dating = element dating { year?, notBefore?, notAfter?, certainty?, curatorID?, text? }
-year = attribute year { xsd:int }
-notBefore = attribute notBefore { xsd:int }
-notAfter = attribute notAfter { xsd:int }
-certainty = attribute certainty { "source" | "evidence" | "estimate" | "low" }
-source = element source { text, year? }
-scan = element scan { scanID, text? }
-
 # font attributes
 
 fontType = attribute fontType { "Fraktur" | "Antiqua-Sans" | "Antiqua-Serif" | "Cursive" | "Handwritten" }
@@ -144,5 +133,18 @@ labelNumber = element labelNumber { text, fontType?, fontColor?, fontSize?, font
 otherText = element otherText { textType, textPosition, text, figureNum?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 textType = attribute textType { "coat-text" | "motto" | "quotation" | "slogan" | "statement" | "copyright" | "vineyard (Lage)" | "other" }
 textPosition = attribute textPosition { "stand-alone" | "in-figure" }
+
+# === provenance ===
+
+provenance = element provenance { dating?, source?, scan?, conservation? }
+dating = element dating { year?, notBefore?, notAfter?, certainty?, curatorID?, text? }
+year = attribute year { xsd:int }
+notBefore = attribute notBefore { xsd:int }
+notAfter = attribute notAfter { xsd:int }
+certainty = attribute certainty { "source" | "evidence" | "estimate" | "low" }
+source = element source { text, year? }
+scan = element scan { scanID, text? }
+conservation = element conservation { conservationNorm, text }
+conservationNorm = attribute conservationNorm { "new" | "like new" | "very good" | "good" | "acceptable" | "damaged" | "incomplete" } 
 
 
