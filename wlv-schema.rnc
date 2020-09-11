@@ -81,8 +81,8 @@ wineMillesimeNorm = attribute wineMillesimeNorm { xsd:int }
 wineOrigin = element wineOrigin {text, wineOriginType, wineOriginNorm?, ref?, url?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineOriginType = attribute wineOriginType { "country (Land)" | "region (Gebiet)" | "area (Bereich)" | "locality (Ort)" | "vineyard (Lage)" | "other" }
 wineOriginNorm = attribute wineOriginNorm { text } 
-wineType = element wineType { text, wineTypeNorm, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
-wineTypeNorm = attribute wineTypeNorm { "red (Rotwein)" | "white (Weisswein)" | "rose (Rosé/Rotling)" | "other" }
+wineColor = element wineColor { text, wineColorNorm, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+wineColorNorm = attribute wineColorNorm { "red (Rotwein)" | "white (Weisswein)" | "rose (Rosé/Rotling)" | "other" }
 wineGrapes = element wineGrapes { text, wineGrapesNorm, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineGrapesNorm = attribute wineGrapesNorm { "Riesling" | "other" }
 wineTaste = element wineTaste { text, wineTasteNorm, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
@@ -105,7 +105,7 @@ qualityLabel = element qualityLabel { text, ref?, wdw?, qualityLabelType? } # de
 qualityLabelType = attribute qualityLabelType { "vineyard" | "grapes" | "other" } 
 qualityProduction = element qualityProduction { text, ref?, wdw?, qualityProductionNorm? } # deu:Prädikat
 qualityProductionNorm = attribute qualityProductionNorm { "on-location" | "other" }
-qualityHistorical = element qualityHistorical { text, ref? }
+qualityHistorical = element qualityHistorical { text, wdw?, ref? }
 
 # agent
 
