@@ -70,8 +70,8 @@ textual = element textual { wineMillesime? & wineOrigin* & wineType* & wineGrape
 
 fontType = attribute fontType { "Fraktur" | "Antiqua-Sans" | "Antiqua-Serif" | "Cursive" | "Handwritten" }
 fontStyle = attribute fontStyle { "recte" | "italics" | "small-caps" | "all-caps" }
-fontColor = attribute fontColor { "red" | "black" | text } 
-fontInitials = attribute fontInitials { "red" | "black" | text } 
+fontColor = attribute fontColor { "red" | "black" | "larger" | text } 
+fontInitials = attribute fontInitials { "color:red" | "color:black" | "color:other" | "size:larger" | "other" } 
 fontSize = attribute fontSize { "larger" | "normal" | "smaller" } 
 
 # wine description
