@@ -6,7 +6,7 @@
     <owner> ref="">M.W. (Trier)</owner>
     <editor ref="wikidata:Q57917455">Christof Schöch</editor>
     <institution url="https://kompetenzzentrum.uni-trier.de">Trier Center for Digital Humanities</institution>
-    <location ref="wikidata:Q3138">Trier</location>
+    <address ref="wikidata:Q3138">Trier</address>
     <date>2020</date>
     <licence licenceScope="metadata" licenceAbbr="CC0" url="https://creativecommons.org/publicdomain/zero/1.0/deed.en">Public Domain Dedication</licence>
     <licence licenceScope="textual">public domain</licence>
@@ -16,8 +16,8 @@
     </curators>
   </metadata>
   <labels>
-    <label curatorid="#cs" labelType="Gutsetikett" curationDate="2020-08-29" id="smw-0001">
-      <part partType="front" partNum="1">
+    <label curatorID="#cs" labelType="Gutsetikett" curationDate="2020-08-29" id="smw-0001">
+      <labelPart partType="front" partNum="1">
         <physical sizeH="110" sizeV="69" shape="other" material="paper" printingTechnique="litho+type"/>
         <visual>
           <background backgroundStyle="color">white</background>
@@ -30,14 +30,14 @@
           <agent agentRole="distributor/importer/exporter">E. F. Cronenbold</agent>
           <location locationRole="distributor/importer/exporter" locationType="locality" ref="wikidata:Q3138">Trier</location>
         </textual>
-      </part>
+      </labelPart>
       <provenance>
-        <dating notBefore="1850" notAfter="1900" certainty="low" curatorid="#cs"></dating>
+        <dating notBefore="1850" notAfter="1900" certainty="low" curatorID="#cs"></dating>
       </provenance>
     </label>
-    <label curatorid="#cs" labelType="Lageetikett" curationDate="2020-08-29" id="smw-0002">
+    <label curatorID="#cs" labelType="Lageetikett" curationDate="2020-08-29" id="smw-0002">
       <comments>The label has a blank area where specific information could have been added. All text mentioned below is located inside the area of the figures. (Add @location as an attribute to all element in textual?) note MW: "Signatur Schlösser Haus Brbrg."</comments>
-      <part partType="front" partNum="1">
+      <labelPart partType="front" partNum="1">
         <physical sizeH="145" sizeV="104" shape="rectangle" material="paper"/>
         <visual>
         <frame frameStyle="band" frameColor="gold" frameType="outer">Wide golden band.</frame>
@@ -51,13 +51,13 @@
         <wineOrigin wineOriginType="locality (Ort)" wineOriginNorm="Mülheim" ref="gnd:4742397-3;wikidata:Q667192"></wineOrigin>
         <wineOrigin wineOriginType="vineyard (Lage)" url="https://www.riesling.de/de/lage/mulheimer-sonnenlay/53_735.html"></wineOrigin>
       </textual>
-      </part>
+    </labelPart>
       <provenance>
-        <dating notBefore="1929" notAfter="1960" certainty="low" curatorid="#cs">Probably in the early 1930s.</dating>
+        <dating notBefore="1929" notAfter="1960" certainty="low" curatorID="#cs">Probably in the early 1930s.</dating>
       </provenance>
     </label>
-    <label curatorid="#cs" labelType="Lageetikett" curationDate="2020-08-29" id="smw-0003">
-      <part partType="front" partNum="1">
+    <label curatorID="#cs" labelType="Lageetikett" curationDate="2020-08-29" id="smw-0003">
+      <labelPart partType="front" partNum="1">
         <physical sizeH="140" sizeV="89" shape="rectangle" material="paper"/>
         <visual>
           <frame frameStyle="band" frameColor="gold" frameType="outer">Thin golden-brown band.</frame>
@@ -81,7 +81,7 @@
           <otherText textPosition="in-figure" figureNum="2" textType="other">Trierer Südbahnhof</otherText>
           <otherText textPosition="in-figure" figureNum="3" textType="vineyard (Lage)">Scharzhofber Oberemmel Holgent</otherText>
         </textual>
-      </part>
+      </labelPart>
     </label>
   </labels>
 </wlv>

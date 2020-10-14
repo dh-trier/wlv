@@ -10,12 +10,13 @@ url = attribute url { text | "https://creativecommons.org/licenses/by/4.0/" }
 
 # === metadata ===
 
-metadata = element metadata { title & owner* & editor* & institution* & location* & date & licence+ & curators? & description? }
+metadata = element metadata { title & owner* & editor* & institution* & address* & date & licence+ & curators? & description? }
 title = element title { text }
 editor = element editor { text, ref? }
 ref = attribute ref { text | "wikidata:" | "gnd:" | "enwiki:" | "dewiki:" | "frwiki:" }  # separate several entries by ";"
 owner = element owner { text, ref? }
 institution = element institution { text, url? }
+address = element address { text, ref? }
 date = element date { xsd:int | xsd:date }
 licence = element licence { text, url?, licenceAbbr?, licenceScope }
 licenceAbbr = attribute licenceAbbr { text | "CC BY" | "public domain" }
@@ -43,8 +44,8 @@ partType = attribute partType { "front" | "back" | "neck" | "wraparound" | "band
 
 physical = element physical { shape, sizeH, sizeV, material, printingTechnique? }
 shape = attribute shape { "square" | "circle" | "rectangle" | "oval" | "diamond" | "trapezoid" | "octogon" | "other" }
-sizeH = attribute sizeH { xsd:int } 
-sizeV = attribute sizeV { xsd:int } 
+sizeH = attribute sizeH { xsd:int }
+sizeV = attribute sizeV { xsd:int }
 material = attribute material { "paper" | "plastic" | "metal" }
 printingTechnique = attribute printingTechnique { "lithograph" | "offset" | "moving-type" | "litho+type" | "mixed" | "other" }
 
@@ -64,15 +65,15 @@ figurePosition = attribute figurePosition { "upper-left" | "upper-right" | "uppe
 
 # === textual ===
 
-textual = element textual { wineMillesime? & wineOrigin* & wineType* & wineGrapes* & wineTaste* & wineAging* & wineOther* & qualityGrapes* & qualityLevel* & qualityAward* & qualityLabel* & qualityProduction* & qualityHistorical* & agent* & location* & alcohol? & volume? & controlNumber? & barrelNumber? & labelNumber? & otherText* }
+textual = element textual { wineMillesime? & wineOrigin* & wineGrapes* & wineTaste* & wineAging* & wineOther* & qualityGrapes* & qualityLevel* & qualityAward* & qualityLabel* & qualityProduction* & qualityHistorical* & agent* & location* & alcohol? & volume? & controlNumber? & barrelNumber? & labelNumber? & otherText* }
 
 # font attributes
 
 fontType = attribute fontType { "Fraktur" | "Antiqua-Sans" | "Antiqua-Serif" | "Cursive" | "Handwritten" }
 fontStyle = attribute fontStyle { "recte" | "italics" | "small-caps" | "all-caps" }
-fontColor = attribute fontColor { "red" | "black" | "larger" | text } 
-fontInitials = attribute fontInitials { "color:red" | "color:black" | "color:other" | "size:larger" | "other" } 
-fontSize = attribute fontSize { "larger" | "normal" | "smaller" } 
+fontColor = attribute fontColor { "red" | "black" | "larger" | text }
+fontInitials = attribute fontInitials { "color:red" | "color:black" | "color:other" | "size:larger" | "other" }
+fontSize = attribute fontSize { "larger" | "normal" | "smaller" }
 
 # wine description
 
@@ -80,7 +81,7 @@ wineMillesime = element wineMillesime { text, wineMillesimeNorm, fontType?, font
 wineMillesimeNorm = attribute wineMillesimeNorm { xsd:int }
 wineOrigin = element wineOrigin {text, wineOriginType, wineOriginNorm?, ref?, url?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineOriginType = attribute wineOriginType { "country (Land)" | "region (Gebiet)" | "area (Bereich)" | "locality (Ort)" | "vineyard (Lage)" | "other" }
-wineOriginNorm = attribute wineOriginNorm { text } 
+wineOriginNorm = attribute wineOriginNorm { text }
 wineColor = element wineColor { text, wineColorNorm, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineColorNorm = attribute wineColorNorm { "red (Rotwein)" | "white (Weisswein)" | "rose (Rosé/Rotling)" | "other" }
 wineGrapes = element wineGrapes { text, wineGrapesNorm, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
@@ -102,7 +103,7 @@ qualityLevelNorm = attribute qualityLevelNorm { "Tafelwein/Wein" | "Landwein" | 
 qualityAward = element qualityAward { text, ref?, wdw?, qualityAwardNorm? } # deu:Auszeichung
 qualityAwardNorm = attribute qualityAwardNorm { "Weinprämierung" | "Gütezeichen" | "other" }
 qualityLabel = element qualityLabel { text, ref?, wdw?, qualityLabelType? } # deu:Qualitätsbezeichnungen (andere)
-qualityLabelType = attribute qualityLabelType { "vineyard" | "grapes" | "other" } 
+qualityLabelType = attribute qualityLabelType { "vineyard" | "grapes" | "other" }
 qualityProduction = element qualityProduction { text, ref?, wdw?, qualityProductionNorm? } # deu:Prädikat
 qualityProductionNorm = attribute qualityProductionNorm { "on-location" | "other" }
 qualityHistorical = element qualityHistorical { text, wdw?, ref? }
@@ -127,7 +128,7 @@ controlNumberType = attribute controlNumberType { text | "Amtliche Prüfnummer (
 barrelNumber = element barrelNumber { text, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 labelNumber = element labelNumber { text, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 
-# other text 
+# other text
 
 otherText = element otherText { textType, textPosition, text, figureNum?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 textType = attribute textType { "coat-text" | "motto" | "quotation" | "slogan" | "statement" | "copyright" | "vineyard (Lage)" | "other" }
@@ -144,6 +145,4 @@ certainty = attribute certainty { "source" | "evidence" | "estimate" | "low" }
 source = element source { text, year? }
 scan = element scan { scanID, text? }
 conservation = element conservation { conservationNorm, text }
-conservationNorm = attribute conservationNorm { "new" | "like new" | "very good" | "good" | "acceptable" | "damaged" | "incomplete" } 
-
-
+conservationNorm = attribute conservationNorm { "new" | "like new" | "very good" | "good" | "acceptable" | "damaged" | "incomplete" }
