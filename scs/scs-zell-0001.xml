@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="scs-zell-0001" collectionID="scs">
+    <curator curatorID="#cs"></curator>
+    <curationDate>2020-11-18</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"></licence>
+  </metadata>
+  <label labelType="Gutsetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="110" sizeV="69" shape="other" material="paper" printingTechnique="litho+type" />
+      <visual>
+        <background backgroundStyle="color">white</background>
+        <frame frameStyle="pattern" frameColor="light blue" frameType="outer"></frame>
+        <frame frameStyle="floral" frameColor="grey" frameType="outer"></frame>
+        <figure figureType="realistic" figureNum="1" figurePosition="upper-center">Grapes</figure>
+      </visual>
+      <textual>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginNorm="Dhron" url="https://www.riesling.de/de/lage/dhroner-hofberger/53_184.html">Thronhofberger</wineOrigin>
+        <agent agentRole="distributor/importer/exporter">E. F. Cronenbold</agent>
+        <location locationRole="distributor/importer/exporter" locationType="locality" ref="wikidata:Q3138">Trier</location>
+      </textual>
+    </labelPart>
+    <provenance>
+      <dating notBefore="1850" notAfter="1900" certainty="low"></dating>
+    </provenance>
+  </label>
+</wlv>

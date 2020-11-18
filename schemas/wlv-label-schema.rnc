@@ -4,37 +4,29 @@
 # ================================================
 
 start = wlv
-wlv = element wlv { id, url, metadata, labels }
-id = attribute id { text }
-url = attribute url { text | "https://creativecommons.org/licenses/by/4.0/" }
+wlv = element wlv { metadata, label }
+ref = attribute ref { text | "wikidata:" | "gnd:" | "enwiki:" | "dewiki:" | "frwiki:" }  # separate several entries by ";"
+url = attribute url { text | "https://creativecommons.org/licenses/by/4.0/" | "https://github.com/dh-trier/wlv" }
 
 # === metadata ===
 
-metadata = element metadata { title & owner* & editor* & institution* & address* & date & licence+ & curators? & description? }
-title = element title { text }
-editor = element editor { text, ref? }
-ref = attribute ref { text | "wikidata:" | "gnd:" | "enwiki:" | "dewiki:" | "frwiki:" }  # separate several entries by ";"
-owner = element owner { text, ref? }
-institution = element institution { text, url? }
-address = element address { text, ref? }
-date = element date { xsd:int | xsd:date }
-licence = element licence { text, url?, licenceAbbr?, licenceScope }
-licenceAbbr = attribute licenceAbbr { text | "CC BY" | "public domain" }
-licenceScope = attribute licenceScope { text | "markup" | "visual" | "metadata" | "textual" }
-curators = element curators { curator+ }
-curator = element curator { text, id, ref? }
-description = element description { text }
-
-# === labels ===
-
-labels = element labels { label+ }
-label = element label { id, curatorID, curationDate, licence*, url?, labelType, collectionContext?, comments?, labelPart+, provenance? }
-labelType = attribute labelType { "Lageetikett" | "Gutsetikett" | "Ortsetikett" | "tbc" | "other" | text }
+metadata = element metadata { collectionID, curator*, curationDate, url?, licence*, labelID, collectionContext?, comments? }
+labelID = attribute labelID { text }
+collectionID = attribute collectionID { text } # links label to collection
+curator = element curator { curatorID, text }
 curatorID = attribute curatorID { text }
-curationDate = attribute curationDate { xsd:int | xsd:date }
+curationDate = element curationDate { xsd:int | xsd:date }
 collectionContext = element collectionContext { pageID?, scanID?, text? }
 pageID = attribute pageID { text }
 scanID = attribute scanID { text }
+licence = element licence { text, url?, licenceAbbr?, licenceScope }
+licenceAbbr = attribute licenceAbbr { text | "CC BY" | "public domain" }
+licenceScope = attribute licenceScope { text | "all" | "markup" | "visual" | "metadata" | "textual" }
+
+# === label ===
+
+label = element label { labelType, comments?, labelPart+, provenance? }
+labelType = attribute labelType { "Lageetikett" | "Gutsetikett" | "Ortsetikett" | "tbc" | "other" | text }
 comments = element comments { text }
 labelPart = element labelPart { partNum, partType, physical, visual, textual }
 partNum = attribute partNum { xsd:int }
@@ -79,9 +71,10 @@ fontSize = attribute fontSize { "larger" | "normal" | "smaller" }
 
 wineMillesime = element wineMillesime { text, wineMillesimeNorm, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineMillesimeNorm = attribute wineMillesimeNorm { xsd:int }
-wineOrigin = element wineOrigin {text, wineOriginType, wineOriginNorm?, ref?, url?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+wineOrigin = element wineOrigin {text, wineOriginType, wineOriginNorm?, wineOriginLocality?, ref?, url?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineOriginType = attribute wineOriginType { "country (Land)" | "region (Gebiet)" | "area (Bereich)" | "locality (Ort)" | "vineyard (Lage)" | "other" }
 wineOriginNorm = attribute wineOriginNorm { text }
+wineOriginLocality = attribute wineOriginLocality { text }
 wineColor = element wineColor { text, wineColorNorm, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 wineColorNorm = attribute wineColorNorm { "red (Rotwein)" | "white (Weisswein)" | "rose (Rosé/Rotling)" | "other" }
 wineGrapes = element wineGrapes { text, wineGrapesNorm, ref?, wdw?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
@@ -112,9 +105,10 @@ qualityHistorical = element qualityHistorical { text, wdw?, ref? }
 
 agent = element agent { text, agentRole, ref?, url?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 agentRole = attribute agentRole { "producer/bottler" | "distributor/importer/exporter" | "cooperative/association" | "printer" | "artist" | "other" }
-location = element location { text, locationRole, locationType, locationPosition?, figureNum?, ref?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
+location = element location { text, locationRole, locationType, locationNorm?, locationPosition?, figureNum?, ref?, fontType?, fontColor?, fontSize?, fontInitials?, fontStyle? }
 locationRole = attribute locationRole { "producer/bottler" | "distributor/importer/exporter" | "cooperative/association" | "printer" | "artist" | "other" }
 locationType = attribute locationType { "locality" | "region" | "country" | "other" }
+locationNorm = attribute locationNorm { text }
 locationPosition = attribute locationPosition { "standalone" | "in-figure" }
 
 # numerical
@@ -137,7 +131,7 @@ textPosition = attribute textPosition { "stand-alone" | "in-figure" }
 # === provenance ===
 
 provenance = element provenance { dating?, source?, scan?, conservation? }
-dating = element dating { year?, notBefore?, notAfter?, certainty?, curatorID?, text? }
+dating = element dating { year?, notBefore?, notAfter?, certainty?, text? }
 year = attribute year { xsd:int }
 notBefore = attribute notBefore { xsd:int }
 notAfter = attribute notAfter { xsd:int }

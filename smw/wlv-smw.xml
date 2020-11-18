@@ -13,6 +13,7 @@
     <licence licenceScope="visual">to be determined.</licence>
     <curators>
       <curator id="cs" ref="wikidata:Q57917455">Christof Schöch</curator>
+      <curator id="ef">Evegnia Fileva</curator>
     </curators>
   </metadata>
   <labels>
@@ -82,6 +83,32 @@
           <otherText textPosition="in-figure" figureNum="3" textType="vineyard (Lage)">Scharzhofber Oberemmel Holgent</otherText>
         </textual>
       </labelPart>
+    </label>
+    <label curatorID="#cs" labelType="Lageetikett" curationDate="2020-11-11" id="smw-0004">
+      <comments>Textfläche ist als gemalte Wand stilisiert.</comments>
+      <labelPart partType="front" partNum="1">
+        <physical sizeH="999" sizeV="777" shape="rectangle" material="paper"/>
+        <visual>
+          <frame frameStyle="band" frameColor="silver" frameType="outer"></frame>
+          <background backgroundStyle="none"></background>
+          <figure figureType="realistic" figureNum="1" figurePosition="upper-across">Landschaft mit Weinbergen; Wand, Schmetterling, Schnecke.</figure>
+          <figure figureType="abstract" figureNum="2" figurePosition="upper-center">Stilisiertes Schloss, Weintrauben, Firmenlogo.</figure>
+        </visual>
+        <textual>
+          <otherText textPosition="stand-alone" textType="other">53,000 m</otherText>
+          <agent agentRole="producer/bottler">Weingut Marienlay</agent>
+          <agent agentRole="producer/bottler">Weingut Walzlay</agent>
+          <otherText textPosition="stand-alone" textType="other">44,000 m</otherText>
+          <otherText textPosition="in-figure" textType="vineyard (Lage)">Marienlay</otherText>
+          <agent agentRole="distributor/importer/exporter">Wachstum: Gustav Schieffer Weingutsbesitzer</agent>
+          <location locationType="locality" locationRole="producer/bottler" ref="wikidata:Q3138">Trier, Fausenburg</location>
+          <wineOrigin wineOriginType="vineyard (Lage)">Walzlayer im Blenter</wineOrigin>
+          <agent agentRole="printer">Schaaf &amp; Dathe Trier</agent>
+        </textual>
+      </labelPart>
+      <provenance>
+        <scan scanID="smw-0004">Scan von Farbkopie</scan>
+      </provenance>
     </label>
   </labels>
 </wlv>

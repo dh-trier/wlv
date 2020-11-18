@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="" collectionID="scs">
+    <curator curatorID="#cs" />
+    <curationDate></curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="" sizeV="" shape="" material="paper" />
+      <visual>
+      </visual>
+      <textual>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>
