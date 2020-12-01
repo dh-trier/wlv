@@ -8,16 +8,16 @@
   </metadata>
   <label labelType="Ortsetikett">
     <labelPart partType="front" partNum="1">
-      <physical sizeH="" sizeV="" shape="rectangle" material="paper" />
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <background backgroundStyle="color">uniform light ocher</background>
-        <figure figureType="symbolic" figureNum="1" figurePosition="center-left">Goblet on pedestal, grapewines grow around it</figure>
-        <figure figureType="symbolic" figureNum="2" figurePosition="center-right">Goblet on pedestal, grapewines grow around it</figure>
-        <figure figureType="abstract" figureNum="3" figurePosition="lower-center">Ornament: roots of grapewines interweaving</figure>
+        <figure figureType="symbolic" figureNum="1">Becher auf Podest mit Weinreben und Weinblättern. </figure>
+        <figure figureType="symbolic" figureNum="2">Becher auf Podest mit Weinreben und Weinblättern. </figure>
+        <figure figureType="abstract" figureNum="3">Ornament: Wurzeln von Weinreben. </figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="locality (Ort)"  wineOriginLocality="Graach" ref="wikidata:Q648808" fontColor="red" fontSize="normal" fontStyle="recte" fontType="Antiqua-Sans">Graacher</wineOrigin>
-        <qualityGrapes qualityGrapesNorm="Auslese" fontColor="red" fontSize="normal" fontStyle="recte" fontType="Antiqua-Sans">Auslese</qualityGrapes>
+        <wineOrigin wineOriginType="locality (Ort)"  wineOriginLocality="Graach" ref="wikidata:Q648808">Graacher</wineOrigin>
+        <qualityGrapes qualityGrapesNorm="Auslese">Auslese</qualityGrapes>
       </textual>
     </labelPart>
   </label>
