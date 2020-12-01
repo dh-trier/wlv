@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-collection-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv collectionID="mwa" url="https://github.com/dh-trier/wlv/smw">
+  <metadata>
+    <title>Sammlung M. W. (Abzüge) (MWA)</title>
+    <owner> ref="">M.W. (Trier)</owner>
+    <editor ref="wikidata:Q57917455">Christof Schöch</editor>
+    <institution url="https://tcdh.uni-trier.de">Trier Center for Digital Humanities</institution>
+    <address ref="wikidata:Q3138">Trier</address>
+    <date>2020</date>
+    <licence licenceScope="metadata" licenceAbbr="CC0" url="https://creativecommons.org/publicdomain/zero/1.0/deed.en">Public Domain Dedication</licence>
+    <licence licenceScope="textual">public domain</licence>
+    <licence licenceScope="visual">to be determined.</licence>
+    <curators>
+      <curator curatorID="cs" ref="wikidata:Q57917455">Christof Schöch</curator>
+      <curator curatorID="ef">Evegnia Fileva</curator>
+      <curator curatorID="sts">Stefan Schug</curator>
+    </curators>
+  </metadata>
+  <labels>
+    <label labelID="mwa-graach-0001" />
+    <label labelID="mwa-graach-0002" />
+    <label labelID="mwa-graach-0003" />
+    <label labelID="mwa-graach-0004" />
+    <label labelID="mwa-graach-0005" />
+    <label labelID="mwa-graach-0006" />
+    <label labelID="mwa-graach-0007" />
+    <label labelID="mwa-graach-0008" />
+    <label labelID="mwa-graach-0009" />
+    <label labelID="mwa-graach-0010" />
+  </labels>
+</wlv>

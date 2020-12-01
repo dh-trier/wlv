@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-graach-0005" collectionID="mwa">
+    <curator curatorID="#sts" />
+    <curationDate>2020-11-05</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Ortsetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="" sizeV="" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="band" frameColor="blue" frameType="outer">light blue</frame>
+        <frame frameStyle="pattern" frameColor="brown" frameType="inner">dark brown</frame>
+        <background backgroundStyle="color">light blue</background>
+        <figure figureType="abstract" figureNum="1">Ornaments on the four corners of the inner frame</figure>
+        <figure figureType="abstract" figureNum="2" figurePosition="center-across">Floral ornament</figure>
+        <figure figureType="abstract" figureNum="3" figurePosition="lower-across">Two floral ornaments on the left and right side</figure>
+      </visual>
+      <textual>
+        <wineMillesime wineMillesimeNorm="1874" fontColor="brown" fontSize="normal" fontStyle="recte" fontType="Antiqua-Serif">1874r.</wineMillesime>
+        <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Graach" ref="wikidata:Q648808" fontColor="brown" fontSize="normal" fontStyle="recte" fontType="Antiqua-Serif">Graacher</wineOrigin>
+        <qualityGrapes qualityGrapesNorm="Auslese" fontColor="brown" fontSize="normal" fontStyle="recte" fontType="Antiqua-Serif">Auslese</qualityGrapes>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>

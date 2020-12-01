@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-graach-0007" collectionID="mwa">
+    <curator curatorID="#sts" />
+    <curationDate>2020-11-25</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Gutsetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="" sizeV="" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="band" frameColor="white" frameType="outer"></frame>
+        <frame frameStyle="lines" frameColor="gold" frameType="inner"></frame>
+        <frame frameStyle="floral" frameColor="white-ocher" frameType="inner"></frame>
+        <background backgroundStyle="color">white</background>
+        <figure figureType="abstract" figureNum="1" figurePosition="center-center">Floral ornaments with grapes and grapewines, building second frame for text</figure>
+      </visual>
+      <textual>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Graach" ref="wikidata:Q648808" fontColor="red" fontSize="normal" fontStyle="recte" fontType="Antiqua-Serif">Josephshöfer.</wineOrigin>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>

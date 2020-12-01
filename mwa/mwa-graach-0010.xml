@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-graach-0010" collectionID="mwa">
+    <curator curatorID="#sts" />
+    <curationDate>2020-11-25</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Gutsetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="" sizeV="" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="band" frameColor="white" frameType="outer"></frame>
+        <frame frameStyle="floral" frameColor="brown and red" frameType="inner">Winegrape stems building frame </frame>
+        <frame frameStyle="floral" frameColor="brown" frameType="inner">Winegrape stems building frame</frame>
+        <frame frameStyle="band" frameColor="red" frameType="inner"></frame>
+        <background backgroundStyle="pattern">Light blue with longitudinal black stripes on the left and right</background>
+        <figure figureType="symbolic" figureNum="1" figurePosition="left-across">Colored grapewines</figure>
+        <figure figureType="symbolic" figureNum="2" figurePosition="right-across">Colored grapewines</figure>
+      </visual>
+      <textual>
+        <wineMillesime wineMillesimeNorm="1868" fontColor="sepia" fontSize="normal" fontStyle="recte" fontType="Antiqua-Serif">1868r.</wineMillesime>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Graach" ref="wikidata:Q648808" fontColor="sepia" fontSize="normal" fontStyle="recte" fontType="Antiqua-Serif">Josephshöfer.</wineOrigin>
+        <agent agentRole="producer/bottler" fontColor="sepia" fontSize="normal" fontStyle="italics" fontType="Antiqua-Serif">P. Junk</agent>
+        <location locationType="locality" locationRole="producer/bottler" locationNorm="Trier" ref="wikidata:Q3138" fontColor="sepia" fontSize="normal" fontStyle="italics" fontType="Antiqua-Serif"></location>
+        <otherText textPosition="stand-alone" textType="other" fontColor="black" fontSize="smaller" fontStyle="italics" fontType="Cursive">81</otherText>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>

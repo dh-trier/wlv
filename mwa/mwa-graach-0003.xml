@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-graach-0003" collectionID="mwa">
+    <curator curatorID="#sts" />
+    <curationDate>2020-11-24</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Ortsetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="" sizeV="" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="band" frameColor="white" frameType="outer"></frame>
+        <frame frameStyle="lines" frameColor="blue" frameType="outer"></frame>
+        <frame frameStyle="lines" frameColor="gold" frameType="outer"></frame>
+        <frame frameStyle="lines" frameColor="black" frameType="outer"></frame>
+        <background backgroundStyle="none">none</background>
+      </visual>
+      <textual>
+        <wineMillesime wineMillesimeNorm="1875" fontColor="red" fontSize="normal" fontStyle="recte" fontType="Fraktur">1875r</wineMillesime>
+        <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Graach" ref="wikidata:Q648808" fontColor="red" fontSize="normal" fontStyle="recte" fontType="Fraktur" >Graacher-</wineOrigin>
+        <qualityGrapes qualityGrapesNorm="Auslese" fontColor="red" fontSize="normal" fontStyle="recte" fontType="Fraktur" >Auslese</qualityGrapes>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Graach" ref="wikidata:Q648808" fontColor="red" fontSize="smaller" fontStyle="recte" fontType="Antiqua-Serif">(Himmelreich.)</wineOrigin>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>
