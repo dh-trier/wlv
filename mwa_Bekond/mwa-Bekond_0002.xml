@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Bekold_0001" collectionID="mwa">
+    <curator curatorID="#ef" />
+    <curationDate>2020-12-02</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Ortsetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="band" frameColor="white" frameType="outer" />
+        <frame frameStyle="band" frameColor="black" frameType="inner" />
+        <frame frameStyle="floral" frameColor="green, black and yellow" frameType="inner">Grüne Weinrebe mit gelben Weintrauben auf dem schwarzen Hintergrund.</frame>
+        <background backgroundStyle="color">white</background>
+        <figure figureType="realistic" figureNum="1">Landschaft: Hügel, Fluss, ein kleines Boot, Schloss, grüne Weinblätter</figure>
+        <figure figureType="realistic" figureNum="2">Eine schwarze Säule umflochten mit grünen Strähnen und mit gelben Weintrauben drauf.</figure>
+      </visual>
+      <textual>
+        <wineOrigin wineOriginType="locality (Ort)" fontColor="black">Brauneberger</wineOrigin>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>

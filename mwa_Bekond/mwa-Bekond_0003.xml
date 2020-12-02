@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Bekold_0001" collectionID="mwa">
+    <curator curatorID="#ef" />
+    <curationDate>2020-12-02</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Ortsetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameType="outer" frameColor="gold" frameStyle="band" />
+        <frame frameStyle="floral" frameColor="black" frameType="inner">Grüner Traubenstiel als Rahmen.</frame>
+        <background backgroundStyle="color">white text background</background>
+        <figure figureType="realistic" figureNum="1">Landschaft: Weinberger, Fluss, Schiff, Zug, Boote, Uferpromenade, Häuser.</figure>
+        <figure figureType="coat-of-arms" figureNum="2">Wappen mit einer Abbildung von der Sonne auf dem roten Hintergrund. Goldener Rahmen.</figure>
+      </visual>
+      <textual>
+        <wineMillesime wineMillesimeNorm="1917" fontColor="black">1917er</wineMillesime>
+        <wineOrigin wineOriginType="locality (Ort)" fontColor="black">Brauneberger</wineOrigin>
+        <wineOrigin wineOriginType="region (Gebiet)" fontColor="black">Brauneberger Nonnenlay</wineOrigin>
+        <qualityGrapes qualityGrapesNorm="Auslese" fontColor="blue">Auslese</qualityGrapes>
+        <qualityProduction>Wachstum</qualityProduction>
+        <agent agentRole="producer/bottler">Zach. Bergweiler-Prüm, Wehlen a. M.</agent>
+        <otherText textType="other" textPosition="stand-alone">Dep.195</otherText>
+        <otherText textType="vineyard (Lage)" textPosition="stand-alone">Zeltingen, Sonnenuhr, Wehlen, Josefshof, Graach</otherText>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>

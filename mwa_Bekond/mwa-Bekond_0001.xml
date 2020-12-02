@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Bekold_0001" collectionID="mwa">
+    <curator curatorID="#ef" />
+    <curationDate>2020-12-02</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Ortsetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="band" frameColor="gold" frameType="outer" />
+        <background backgroundStyle="pattern">light pattern</background>
+        <figure figureType="realistic" figureNum="1" figurePosition="upper-across">Landschaft: Fluss, Dampfschiff, Weinberge, Dorf, ein großes weißes Haus im Vordergrund, ein kleines Dorf auf dem Hügel.</figure>
+        <figure figureType="realistic" figureNum="2" figurePosition="lower-left">Trauben und Weinblätter.</figure>
+        <figure figureType="coat-of-arms" figureNum="3" figurePosition="lower-left">Ein Heiliger auf dem schwarz gepunkteten roten Hintergrund mit einer goldenen Band.</figure>
+      </visual>
+      <textual>
+        <otherText textType="vineyard (Lage)" textPosition="stand-alone" fontStyle="small-caps">Brauneberg</otherText>
+        <wineMillesime wineMillesimeNorm="1921" fontType="Antiqua-Sans" fontSize="larger">1921er</wineMillesime>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Brauneberg" fontType="Antiqua-Sans" fontColor="black">Brauneberger Hasenläufer</wineOrigin>
+        <qualityProduction>Original-Kellerabzug</qualityProduction>
+        <agent agentRole="producer/bottler">Weingut P.Licht-Bergweiler</agent>
+        <location locationType="locality" locationRole="producer/bottler">Filzen</location>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>
