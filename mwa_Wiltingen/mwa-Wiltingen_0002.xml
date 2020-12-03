@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
 <wlv>
-  <metadata labelID="mwa-Wiltingen_0001" collectionID="mwa">
+  <metadata labelID="mwa-Wiltingen_0002" collectionID="mwa">
     <curator curatorID="#so" />
     <curationDate>2020-12-02</curationDate>
     <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
   </metadata>
-  <label labelType="Lageetikett">+
+  <label labelType="Lageetikett">
     <labelPart partType="front" partNum="1">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
-        <frame frameStyle="floral" frameColor="green" frameType="outer">Weinreben und -Blätter</frame>
-        <frame frameStyle="pattern" frameColor="grey" frameType="outer"></frame>
+        <frame frameStyle="pattern" frameColor="gold" frameType="outer">Verschnörkelung</frame>
+        <frame frameStyle="floral" frameColor="green" frameType="outer">Weinblätter</frame>
         <background backgroundStyle="color">beige coloring</background>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Antiqua-Sans" fontColor="black">Scharfzhofberger</wineOrigin>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontStyle="all-caps" fontType="Antiqua-Sans" fontColor="orange">Scharfzhofberger</wineOrigin>
+        <wineMillesime wineMillesimeNorm="1865">1865r</wineMillesime>
       </textual>
     </labelPart>
   </label>
