@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Wiltingen_0009" collectionID="mwa">
+    <curator curatorID="#so" />
+    <curationDate>2020-12-08</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Lageetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="lines" frameColor="gold" frameType="outer"></frame>
+        <frame frameStyle="pattern" frameColor="gold" frameType="inner">Verschnörkelungen in den Ecken</frame>
+        <background backgroundStyle="color" backgroundColor="white"></background>
+        <figure figureType="coat-of-arms" figureNum="001" figurePosition="upper-left">Heiliger Stadtpatron Petrus mit goldenem Stadtschlüssel in der rechten Hand, auf Wolke schwebend, Hintergrund ist ein Kreuz, Schrift ist Capitulum Cathedralis Eccl. Treverensis</figure>
+      </visual>
+      <textual>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Fraktur" fontColor="black">Dom Scharfzhofberger</wineOrigin>
+        <wineMillesime wineMillesimeNorm="1917">1917er</wineMillesime>
+        <agent agentRole="producer/bottler" url="https://www.bischoeflicheweingueter.de/weingut/historie/hohe-domkirche.html">Hohe Domkirche Trier</agent>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>
