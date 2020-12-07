@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Wiltingen_0005" collectionID="mwa">
+    <curator curatorID="#so" />
+    <curationDate>2020-12-08</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Lageetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="lines" frameColor="gold" frameType="outer"></frame>
+        <frame frameStyle="lines" frameColor="gold" frameType="inner">Ellipse um den Titel</frame>
+        <background backgroundStyle="color" backgroundColor="beige"></background>
+        <figure figureType="realistic" figureNum="001" figurePosition="upper-left">Porta Nigra</figure>
+        <figure figureType="realistic" figureNum="002" figurePosition="upper-right">Rothes Haus</figure>
+        <figure figureType="realistic" figureNum="003" figurePosition="lower-left">Kaiserthermen</figure>
+        <figure figureType="realistic" figureNum="004" figurePosition="lower-right">Dom</figure>
+        <figure figureType="realistic" figureNum="006" figurePosition="lower-center">Panorama von Trier</figure>
+        <figure figureType="abstract" figureNum="005" figurePosition="center-left">Weinreben, vergoldet</figure>
+        <figure figureType="abstract" figureNum="007" figurePosition="center-center">Weinreben, blau</figure>
+      </visual>
+      <textual>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Antiqua-Sans" fontColor="blue" fontStyle="all-caps">Scharfzhofberger</wineOrigin>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Wiltingen_0004" collectionID="mwa">
+    <curator curatorID="#so" />
+    <curationDate>2020-12-07</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Lageetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="pattern" frameColor="gold" frameType="outer">Verschnörkelung und Weinreben</frame>
+        <frame frameStyle="other" frameColor="beige" frameType="inner">Säulen</frame>
+        <background backgroundStyle="color" backgroundColor="beige" >Schriftrollen-artige Darstellung</background>
+        <figure figureType="realistic" figureNum="001" figurePosition="center-center">Landschaft Weinberg und Weingut</figure>
+        <figure figureType="abstract" figureNum="002" figurePosition="center-left">Bacchia/Mänade</figure>
+        <figure figureType="abstract" figureNum="003" figurePosition="center-right">Bacchus</figure>
+        <figure figureType="coat-of-arms" figureNum="004" figurePosition="upper-left">Weinflasche und Korkenzieher</figure>
+        <figure figureType="coat-of-arms" figureNum="005" figurePosition="upper-right">Weinglas und drei Sternenstäbe</figure>
+      </visual>
+      <textual>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Fraktur" fontColor="blue">Scharfzhofberger</wineOrigin>
+        <labelNumber fontColor="blue">Wein = Etiquette Nr. 615.</labelNumber>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>

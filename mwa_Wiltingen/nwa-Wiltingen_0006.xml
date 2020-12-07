@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Wiltingen_0006" collectionID="mwa">
+    <curator curatorID="#so" />
+    <curationDate>2020-12-08</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Lageetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="lines" frameColor="gold" frameType="outer"></frame>
+        <frame frameStyle="pattern" frameColor="beige" frameType="inner">Verschnörkelung und Bogen</frame>
+        <background backgroundStyle="color" backgroundColor="beige"></background>
+        <figure figureType="abstract" figureNum="001" figurePosition="center-left">Dame füttert Burschen mit Trauben</figure>
+        <figure figureType="abstract" figureNum="002" figurePosition="center-right">Zwei Männer prosten sich mit Wein zu</figure>
+        <figure figureType="abstract" figureNum="003" figurePosition="lower-left">Engelskopf mit Flügeln</figure>
+        <figure figureType="abstract" figureNum="004" figurePosition="lower-right">Engelskopf mit Flügeln</figure>
+      </visual>
+      <textual>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Fraktur" fontColor="black" >Scharfzhofberger</wineOrigin>
+        <wineMillesime wineMillesimeNorm="1875">1875er</wineMillesime>
+        <otherText textPosition="in-figure" textType="motto">Den Knaben mag die Traube letzen, Am Wein die Männer sich ergötzen</otherText>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>
