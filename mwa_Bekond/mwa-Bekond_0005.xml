@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Bekold_0005" collectionID="mwa">
+    <curator curatorID="#ef" />
+    <curationDate>2020-12-08</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Ortsetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="band" frameColor="gold" frameType="outer" />
+        <frame frameStyle="band" frameColor="white" frameType="outer" />
+        <background backgroundStyle="color">white</background>
+        <figure figureType="abstract" figureNum="1" figurePosition="center-center">Muster mit Weinblättern, das einen zweiten Rahmen für den Text bildet.</figure>
+      </visual>
+      <textual>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Brauneberg" fontColor="red">Brauneberger, Auslese.</wineOrigin>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>

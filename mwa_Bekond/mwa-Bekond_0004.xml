@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Bekold_0004" collectionID="mwa">
+    <curator curatorID="#ef" />
+    <curationDate>2020-12-08</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Ortsetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="band" frameColor="gold" frameType="outer" />
+        <frame frameStyle="band" frameColor="gold" frameType="inner" />
+        <frame frameStyle="floral" frameColor="gold" frameType="inner" />
+        <background backgroundStyle="color">light-beige</background>
+        <figure figureNum="1" figureType="abstract" figurePosition="center-left">Säule umflochten mit Weintrauben und Weinblättern</figure>
+        <figure figureNum="2" figureType="abstract" figurePosition="center-right">Säule umflochten mit Weintrauben und Weinblättern</figure>
+        <figure figureNum="3" figureType="abstract" figurePosition="upper-center">Stäbe, Weintrauben, Weinblätter</figure>
+        <figure figureNum="4" figureType="realistic" figurePosition="center-center">Im Vordergrund: Fluss, Schiffe, Kajak. Im Hintergrund: Dorf, Flußufer, Menschen, Weinberge.</figure>
+      </visual>
+      <textual>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Beauneberg" fontColor="red">Brauneberger</wineOrigin>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>
