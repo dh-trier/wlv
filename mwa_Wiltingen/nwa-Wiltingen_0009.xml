@@ -16,7 +16,7 @@
         <figure figureType="coat-of-arms" figureNum="001" figurePosition="upper-left">Heiliger Stadtpatron Petrus mit goldenem Stadtschlüssel in der rechten Hand, auf Wolke schwebend, Hintergrund ist ein Kreuz, Schrift ist Capitulum Cathedralis Eccl. Treverensis</figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Fraktur" fontColor="black">Dom Scharfzhofberger</wineOrigin>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Handwritten" fontColor="black">Dom Scharfzhofberger</wineOrigin>
         <wineMillesime wineMillesimeNorm="1917">1917er</wineMillesime>
         <agent agentRole="producer/bottler" url="https://www.bischoeflicheweingueter.de/weingut/historie/hohe-domkirche.html">Hohe Domkirche Trier</agent>
       </textual>
