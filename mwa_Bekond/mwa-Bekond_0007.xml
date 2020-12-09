@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Bekond_0007" collectionID="mwa">
+    <curator curatorID="#ef" />
+    <curationDate>2020-12-09</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Ortsetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="other" material="paper" />
+      <visual>
+        <frame frameStyle="band" frameColor="brown" frameType="outer" />
+        <frame frameStyle="pattern" frameColor="brown" frameType="inner" />
+        <background backgroundStyle="color">light-beige</background>
+      </visual>
+      <textual>
+        <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Brauneberg" fontColor="brown" fontSize="normal">Brauneberger.</wineOrigin>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>

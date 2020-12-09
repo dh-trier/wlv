@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
 <wlv>
-  <metadata labelID="mwa-Bekold_0005" collectionID="mwa">
+  <metadata labelID="mwa-Bekond_0005" collectionID="mwa">
     <curator curatorID="#ef" />
     <curationDate>2020-12-08</curationDate>
     <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
@@ -16,7 +16,8 @@
         <figure figureType="abstract" figureNum="1" figurePosition="center-center">Muster mit Weinblättern, das einen zweiten Rahmen für den Text bildet.</figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Brauneberg" fontColor="red">Brauneberger, Auslese.</wineOrigin>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Brauneberg" fontColor="red">Brauneberger.</wineOrigin>
+        <qualityGrapes qualityGrapesNorm="Auslese" fontColor="brown">Auslese.</qualityGrapes>
       </textual>
     </labelPart>
   </label>

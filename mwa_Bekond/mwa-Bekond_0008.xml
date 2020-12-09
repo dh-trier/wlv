@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Bekond_0008" collectionID="mwa">
+    <curator curatorID="#ef" />
+    <curationDate>2020-12-09</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Ortsetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="other" material="paper" />
+      <visual>
+        <background backgroundStyle="color">white</background>
+        <figure figureNum="1" figureType="abstract">Das goldene und blaue Ornament im roten Hintergrund, das einen Rahmen für den Text bildet.</figure>
+      </visual>
+      <textual>
+        <wineMillesime wineMillesimeNorm="1862" fontColor="blue" fontSize="normal" fontStyle="recte" fontType="Fraktur">1862er</wineMillesime>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Brauneberg" fontColor="blue" fontSize="normal" fontStyle="recte" fontType="Fraktur">Brauneberger</wineOrigin>
+        <qualityGrapes qualityGrapesNorm="Auslese" fontColor="blue">Auslese</qualityGrapes>
+        <agent agentRole="producer/bottler" fontColor="blue" fontSize="normal" fontType="Fraktur" fontStyle="recte">eigenes Wachsthum von F. B. Moog Wwe.</agent>
+        <location locationType="locality" locationRole="producer/bottler" locationNorm="Mülheim" fontColor="blue" fontSize="normal">in Mülheim an der Mosel.</location>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>

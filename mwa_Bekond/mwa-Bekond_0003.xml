@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
 <wlv>
-  <metadata labelID="mwa-Bekold_0001" collectionID="mwa">
+  <metadata labelID="mwa-Bekond_0001" collectionID="mwa">
     <curator curatorID="#ef" />
     <curationDate>2020-12-02</curationDate>
     <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
