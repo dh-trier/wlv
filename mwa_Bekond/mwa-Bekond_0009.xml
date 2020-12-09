@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Bekond_0009" collectionID="mwa">
+    <curator curatorID="#ef" />
+    <curationDate>2020-12-09</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Ortsetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="band" frameColor="gold" frameType="outer" />
+        <frame frameStyle="band" frameColor="gold" frameType="inner" />
+        <background backgroundStyle="color">light-yellow</background>
+      </visual>
+      <textual>
+        <wineMillesime wineMillesimeNorm="1862" fontColor="gold" fontSize="normal" fontStyle="recte">1862r.</wineMillesime>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Brauneberg" fontColor="gold" fontSize="larger" fontStyle="all-caps">Brauneberger</wineOrigin>
+        <otherText textType="other" figureNum="1" fontColor="black" fontStyle="italics" fontSize="normal" fontType="Cursive" textPosition="in-figure">Crescenz vom Bishöfl. Priester Seminar.</otherText>
+        <agent agentRole="producer/bottler" fontColor="black" fontSize="normal">J. H. Müller and Cie</agent>
+        <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Trier" ref="enwiki:Q3138">Trier</wineOrigin>
+        <agent agentRole="printer" fontColor="black" fontSize="smaller">F. J. Schmitt</agent>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>
