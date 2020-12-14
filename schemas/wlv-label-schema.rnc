@@ -4,18 +4,19 @@
 # ================================================
 
 start = wlv
-wlv = element wlv { metadata, label }
+wlv = element wlv { labelID, metadata, label }
+labelID = attribute labelID { text }
 ref = attribute ref { text | "wikidata:" | "gnd:" | "enwiki:" | "dewiki:" | "frwiki:" }  # separate several entries by ";"
 url = attribute url { text | "https://creativecommons.org/licenses/by/4.0/" | "https://github.com/dh-trier/wlv" }
 
 # === metadata ===
 
-metadata = element metadata { collectionID, curator*, curationDate, url?, licence*, labelID, collectionContext?, comments? }
-labelID = attribute labelID { text }
+metadata = element metadata { collection, curation, url?, licence*, collectionContext?, comments? }
+collection = element collection { collectionID, text? }
 collectionID = attribute collectionID { text } # links label to collection
-curator = element curator { curatorID, text }
+curation = element curation { curatorID+, curationDate }
 curatorID = attribute curatorID { text }
-curationDate = element curationDate { xsd:int | xsd:date }
+curationDate = attribute curationDate { xsd:int | xsd:date }
 collectionContext = element collectionContext { pageID?, scanID?, text? }
 pageID = attribute pageID { text }
 scanID = attribute scanID { text }
