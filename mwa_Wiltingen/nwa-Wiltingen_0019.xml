@@ -13,7 +13,7 @@
         <frame frameStyle="pattern" frameColor="green" frameType="outer">Punkte</frame>
         <frame frameStyle="pattern" frameColor="white" frameType="outer">Rauten</frame>
         <frame frameStyle="other" frameColor="black" frameType="inner">Weinreben</frame>
-        <background backgroundStyle="color" backgroundColor="blue"></background>
+        <background backgroundStyle="color" backgroundColor="gold"></background>
         <figure figureType="abstract" figureNum="001">Segelschiffe auf der Mosel, die vor dem Weinberg anliegen</figure>
         <figure figureType="abstract" figureNum="002" figurePosition="center-left">Krone unter Weinrebe</figure>
         <figure figureType="abstract" figureNum="003" figurePosition="center-right">Krone unter Weinrebe</figure>
@@ -22,7 +22,7 @@
         <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Antiqua-Sans" fontColor="black" fontStyle="all-caps">Scharzhofberger</wineOrigin>
         <wineMillesime wineMillesimeNorm="1915">1915er</wineMillesime>
         <agent agentRole="producer/bottler">Wachstum Egon Müller, Scharzhof</agent>
-        <agent agentRole="printer">Schaar &amps; Orth, Trier</agent>
+        <agent agentRole="printer">Schaar &amps; Dathe, Trier</agent>
       </textual>
     </labelPart>
   </label>

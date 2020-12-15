@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Wiltingen_0020" collectionID="mwa">
+    <curator curatorID="#so" />
+    <curationDate>2020-12-08</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Lageetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="floral" frameColor="gold" frameType="inner">Weinreben</frame>
+        <background backgroundStyle="color" backgroundColor="white"></background>
+        <figure figureType="abstract" figureNum="001" figurePosition="upper-left">Weingut und Landschaft in schwarz-weiß</figure>
+        <figure figureType="coat-of-arms" figureNum="002" figurePosition="lower-right">Adler mit Weintrauben und den Kürzeln VDNV (Verband Deutscher Naturwein-Versteigerer)</figure>
+      </visual>
+      <textual>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Handwritten" fontColor="black" fontStyle="italics">Scharzhofberger.</wineOrigin>
+        <wineOrigin wineOriginType="region (Gebiet)">Mosel - Saar - Ruwer</wineOrigin>
+        <wineMillesime wineMillesimeNorm="1937">1937r.</wineMillesime>
+        <agent agentRole="producer/bottler">Gewächs von Egon Müller zu Scharzhof</agent>
+        <qualityProduction>Original Kellerabfüllung zu Scharzhof</qualityProduction>
+        <qualityAward>Grand Prix Paris 1900</qualityAward>
+        <qualityAward>Grand Prix St. Louis 1904</qualityAward>
+        <agent agentRole="printer">Dackweiler, Schaar &amp; Dathe, Trier</agent>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>

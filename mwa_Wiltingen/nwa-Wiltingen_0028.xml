@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Wiltingen_0028
+    " collectionID="mwa">
+    <curator curatorID="#so" />
+    <curationDate>2020-12-08</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Lageetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="pattern" frameColor="black" frameType="inner">Stuck</frame>
+        <frame frameStyle="lines" frameColor="black" frameType="outer"></frame>
+        <background backgroundStyle="color" backgroundColor="red"></background>
+      </visual>
+      <textual>
+        <wineMillesime wineMillesimeNorm="1857">1857</wineMillesime>
+        <agent agentRole="producer/bottler">Aus der Crescenz der Geschwister Rautenstrauch Trier.</agent>
+        <wineOrigin wineOriginType="vineyard (Lage)">Scharzer Auslese</wineOrigin>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>
