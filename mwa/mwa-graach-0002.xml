@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
-<wlv>
-  <metadata labelID="mwa-graach-0002" collectionID="mwa">
-    <curator curatorID="#sts" />
-    <curationDate>2020-11-24</curationDate>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-graach-0002">
+  <metadata>
+    <collection collectionID="mwa"/>
+    <curation curatorID="#sts" curationDate="2020-11-24" />
     <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
   </metadata>
   <label labelType="Ortsetikett">
     <labelPart partType="front" partNum="1">
-      <physical sizeH="" sizeV="" shape="rectangle" material="paper" />
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <background backgroundStyle="none"></background>
         <figure figureType="symbolic" figureNum="1" figurePosition="center-left">Angel reaching for the grapes on the grapewines</figure>
@@ -16,8 +16,8 @@
         <figure figureType="abstract" figureNum="3" figurePosition="lower-across">Floral ornament</figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="locality (Ort)" ref="wikidata:Q648808" fontColor="blue" fontSize="normal" fontStyle="recte" fontType="Antiqua-Serif"> Graacher</wineOrigin>
-        <qualityGrapes qualityGrapesNorm="Auslese" fontColor="blue" fontSize="normal" fontStyle="recte" fontType="Antiqua-Serif">Auslese</qualityGrapes>
+        <wineOrigin wineOriginType="locality (Ort)" ref="wikidata:Q648808"> Graacher</wineOrigin>
+        <qualityGrapes qualityGrapesNorm="Auslese">Auslese</qualityGrapes>
       </textual>
     </labelPart>
   </label>

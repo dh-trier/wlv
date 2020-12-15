@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
-<wlv>
-  <metadata labelID="mwa-graach-0005" collectionID="mwa">
-    <curator curatorID="#sts" />
-    <curationDate>2020-11-05</curationDate>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-graach-0005">
+  <metadata>
+    <collection collectionID="mwa"/>
+    <curation curatorID="#sts" curationDate="2020-11-05" />
     <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
   </metadata>
   <label labelType="Ortsetikett">
     <labelPart partType="front" partNum="1">
-      <physical sizeH="" sizeV="" shape="rectangle" material="paper" />
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="band" frameColor="blue" frameType="outer">light blue</frame>
         <frame frameStyle="pattern" frameColor="brown" frameType="inner">dark brown</frame>
@@ -18,9 +18,9 @@
         <figure figureType="abstract" figureNum="3" figurePosition="lower-across">Two floral ornaments on the left and right side</figure>
       </visual>
       <textual>
-        <wineMillesime wineMillesimeNorm="1874" fontColor="brown" fontSize="normal" fontStyle="recte" fontType="Antiqua-Serif">1874r.</wineMillesime>
-        <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Graach" ref="wikidata:Q648808" fontColor="brown" fontSize="normal" fontStyle="recte" fontType="Antiqua-Serif">Graacher</wineOrigin>
-        <qualityGrapes qualityGrapesNorm="Auslese" fontColor="brown" fontSize="normal" fontStyle="recte" fontType="Antiqua-Serif">Auslese</qualityGrapes>
+        <wineMillesime wineMillesimeNorm="1874">1874r.</wineMillesime>
+        <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Graach" ref="wikidata:Q648808">Graacher</wineOrigin>
+        <qualityGrapes qualityGrapesNorm="Auslese">Auslese</qualityGrapes>
       </textual>
     </labelPart>
   </label>

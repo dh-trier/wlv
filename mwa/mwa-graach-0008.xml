@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
-<wlv>
-  <metadata labelID="mwa-graach-0008" collectionID="mwa">
-    <curator curatorID="#sts" />
-    <curationDate>2020-11-25</curationDate>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-graach-0008">
+  <metadata>
+    <collection collectionID="mwa"/>
+    <curation curatorID="#sts" curationDate="2020-11-25" />
     <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
   </metadata>
   <label labelType="Gutsetikett">
     <labelPart partType="front" partNum="1">
-      <physical sizeH="" sizeV="" shape="rectangle" material="paper" />
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="band" frameColor="brown" frameType="outer"></frame>
         <frame frameStyle="other" frameColor="ocher and brown" frameType="inner"></frame>
@@ -20,9 +20,9 @@
         <figure figureType="realistic" figureNum="5" figurePosition="center-center">Landscape: village on Moselle river, boat, people, building with garden and vineyards in the background</figure>
       </visual>
       <textual>
-        <wineMillesime wineMillesimeNorm="1886" fontColor="black" fontStyle="recte" fontType="Antiqua-Serif">1886er</wineMillesime>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Graach" ref="wikidata:Q648808" fontColor="black" fontSize="normal" fontStyle="recte" fontType="Antiqua-Serif">Josephshöfer</wineOrigin>
-        <labelNumber fontColor="black" fontSize="normal" fontStyle="recte" fontType="Antiqua-Serif">Wein=Etiquette Nr. 610.</labelNumber>
+        <wineMillesime wineMillesimeNorm="1886">1886er</wineMillesime>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Graach" ref="wikidata:Q648808">Josephshöfer</wineOrigin>
+        <labelNumber>Wein=Etiquette Nr. 610.</labelNumber>
       </textual>
     </labelPart>
   </label>
