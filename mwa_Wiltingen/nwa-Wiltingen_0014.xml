@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Wiltingen_0014" collectionID="mwa">
+    <curator curatorID="#so" />
+    <curationDate>2020-12-08</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Lageetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="lines" frameColor="silver" frameType="outer"></frame>
+        <background backgroundStyle="color" backgroundColor="gold"></background>
+        <figure figureType="abstract" figureNum="001" figurePosition="center-left">Musterung, ähnlich wie Stuck</figure>
+        <figure figureType="abstract" figureNum="002" figurePosition="center-left">Musterung, ähnlich wie Stuck</figure>
+        <figure figureType="abstract" figureNum="003" figurePosition="center-center">Weinreben auf rotem Hintergrund</figure>
+        <figure figureType="coat-of-arms" figureNum="004" figurePosition="center-center">Frau mit Strauch in der rechten Hand und einem weiteren Wappen in der linken Hand</figure>
+      </visual>
+      <textual>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Antiqua-Serif" fontColor="black">Scharfzhofberger.</wineOrigin>
+        <wineMillesime wineMillesimeNorm="1904">1904.</wineMillesime>
+        <qualityGrapes>feinste Auslese, bestes Fuder</qualityGrapes>
+        <agent agentRole="producer/bottler">Koch, Wiltingen</agent>
+        <agent agentRole="cooperative/association">Katholisches Vereinshaus Trebiris, Trier a.Mosel</agent>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>

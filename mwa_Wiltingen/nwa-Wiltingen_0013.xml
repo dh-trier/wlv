@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Wiltingen_0013" collectionID="mwa">
+    <curator curatorID="#so" />
+    <curationDate>2020-12-08</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Lageetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="lines" frameColor="gold" frameType="outer"></frame>
+        <frame frameStyle="lines" frameColor="gold" frameType="inner"></frame>
+        <background backgroundStyle="color" backgroundColor="beige"></background>
+        <figure figureType="realistic" figureNum="001">Abbildung des Scharzhofberger Hofs mit Scharzhofberg (Weinlage) im Hintergrund</figure>
+      </visual>
+      <textual>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Antiqua-Sans" fontColor="black" fontStyle="all-caps">Scharfzhofberger.</wineOrigin>
+        <labelNumber fontColor="black">Wein-Etiquette Nr. 245.</labelNumber>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>
