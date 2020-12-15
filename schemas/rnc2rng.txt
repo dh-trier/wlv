@@ -1,0 +1,14 @@
+## Purpose
+
+Transform Relax NG compact syntax to Relax NG regular syntax. 
+
+
+
+## Install 
+
+https://github.com/djc/rnc2rng
+
+
+## Run 
+
+python3.8 -m rnc2rng wlv-label-schema.rnc wlv-label-schema.rng

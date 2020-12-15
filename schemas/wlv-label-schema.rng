@@ -589,6 +589,7 @@
         <value>region (Gebiet)</value>
         <value>area (Bereich)</value>
         <value>locality (Ort)</value>
+        <value>winery (Weingut)</value>
         <value>vineyard (Lage)</value>
         <value>other</value>
       </choice>
