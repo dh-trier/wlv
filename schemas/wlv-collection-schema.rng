@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <ref name="wlv"/>
+  </start>
+  <define name="wlv">
+    <element>
+      <name ns="">wlv</name>
+      <ref name="collectionID"/>
+      <ref name="url"/>
+      <ref name="metadata"/>
+      <ref name="labels"/>
+    </element>
+  </define>
+  <define name="collectionID">
+    <attribute>
+      <name ns="">collectionID</name>
+      <text/>
+    </attribute>
+  </define>
+  <define name="url">
+    <attribute>
+      <name ns="">url</name>
+      <choice>
+        <text/>
+        <value>https://creativecommons.org/licenses/by/4.0/</value>
+      </choice>
+    </attribute>
+  </define>
+  <define name="metadata">
+    <element>
+      <name ns="">metadata</name>
+      <interleave>
+        <ref name="title"/>
+        <zeroOrMore>
+          <ref name="owner"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="editor"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="institution"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="address"/>
+        </zeroOrMore>
+        <ref name="date"/>
+        <oneOrMore>
+          <ref name="licence"/>
+        </oneOrMore>
+        <optional>
+          <ref name="description"/>
+        </optional>
+        <optional>
+          <ref name="curators"/>
+        </optional>
+      </interleave>
+    </element>
+  </define>
+  <define name="title">
+    <element>
+      <name ns="">title</name>
+      <text/>
+    </element>
+  </define>
+  <define name="editor">
+    <element>
+      <name ns="">editor</name>
+      <text/>
+      <optional>
+        <ref name="ref"/>
+      </optional>
+    </element>
+  </define>
+  <define name="ref">
+    <attribute>
+      <name ns="">ref</name>
+      <choice>
+        <text/>
+        <value>wikidata:</value>
+        <value>gnd:</value>
+        <value>enwiki:</value>
+        <value>dewiki:</value>
+        <value>frwiki:</value>
+      </choice>
+    </attribute>
+  </define>
+  <define name="owner">
+    <element>
+      <name ns="">owner</name>
+      <text/>
+      <optional>
+        <ref name="ref"/>
+      </optional>
+    </element>
+  </define>
+  <define name="institution">
+    <element>
+      <name ns="">institution</name>
+      <text/>
+      <optional>
+        <ref name="url"/>
+      </optional>
+    </element>
+  </define>
+  <define name="address">
+    <element>
+      <name ns="">address</name>
+      <text/>
+      <optional>
+        <ref name="ref"/>
+      </optional>
+    </element>
+  </define>
+  <define name="date">
+    <element>
+      <name ns="">date</name>
+      <choice>
+        <data type="int"/>
+        <data type="date"/>
+      </choice>
+    </element>
+  </define>
+  <define name="licence">
+    <element>
+      <name ns="">licence</name>
+      <text/>
+      <optional>
+        <ref name="url"/>
+      </optional>
+      <optional>
+        <ref name="licenceAbbr"/>
+      </optional>
+      <ref name="licenceScope"/>
+    </element>
+  </define>
+  <define name="licenceAbbr">
+    <attribute>
+      <name ns="">licenceAbbr</name>
+      <choice>
+        <text/>
+        <value>CC BY</value>
+        <value>public domain</value>
+      </choice>
+    </attribute>
+  </define>
+  <define name="licenceScope">
+    <attribute>
+      <name ns="">licenceScope</name>
+      <choice>
+        <text/>
+        <value>markup</value>
+        <value>visual</value>
+        <value>metadata</value>
+        <value>textual</value>
+      </choice>
+    </attribute>
+  </define>
+  <define name="curators">
+    <element>
+      <name ns="">curators</name>
+      <oneOrMore>
+        <ref name="curator"/>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="curator">
+    <element>
+      <name ns="">curator</name>
+      <text/>
+      <ref name="curatorID"/>
+      <optional>
+        <ref name="ref"/>
+      </optional>
+    </element>
+  </define>
+  <define name="curatorID">
+    <attribute>
+      <name ns="">curatorID</name>
+      <text/>
+    </attribute>
+  </define>
+  <define name="description">
+    <element>
+      <name ns="">description</name>
+      <text/>
+    </element>
+  </define>
+  <define name="labels">
+    <element>
+      <name ns="">labels</name>
+      <zeroOrMore>
+        <ref name="label"/>
+      </zeroOrMore>
+    </element>
+  </define>
+  <define name="label">
+    <element>
+      <name ns="">label</name>
+      <ref name="labelID"/>
+    </element>
+  </define>
+  <define name="labelID">
+    <attribute>
+      <name ns="">labelID</name>
+      <text/>
+    </attribute>
+  </define>
+</grammar>
