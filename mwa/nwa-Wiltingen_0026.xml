@@ -2,8 +2,7 @@
 <?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
 <wlv>
   <metadata labelID="mwa-Wiltingen_0026" collectionID="mwa">
-    <curator curatorID="#so" />
-    <curationDate>2020-12-08</curationDate>
+    <curation>curatorID ="#so" curationDate="2020-12-07"</curation>
     <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
   </metadata>
   <label labelType="Lageetikett">
