@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<wlv>
+  <metadata labelID="mwa-Bernkastel_Kues_0001" collectionID="mwa">
+    <curator curatorID="#so" />
+    <curationDate>2020-12-16</curationDate>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label labelType="Lageetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
+      <visual>
+        <frame frameStyle="lines" frameColor="gold" frameType="outer"></frame>
+        <background backgroundStyle="color"></background>
+        <figure figureType="abstract" figureNum="001" figurePosition="center-center">Figur auf Fass stehend, in rotem Gehrock, verteilt Wein</figure>
+        <figure figureType="abstract" figureNum="002" figurePosition="center-center">Menge umgibt den Herren auf dem Fass und empfängt den Wein</figure>
+
+      </visual>
+      <textual>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Bernkasteler Doktor" ref="enwiki:Q826656" fontType="Fraktur" fontColor="black">Berncastler Doctor</wineOrigin>
+        <otherText textPosition="in-figure" textType="motto">Zapft an den ächten Doctorwein ! Ihr kranken Brüder schenkt Euch ein Der ist der beste Doctor !</otherText>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>
