@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../schemas/wlv-collection-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../schemas/wlv-collection-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <wlv collectionID="mwa" url="https://github.com/dh-trier/wlv/smw">
   <metadata>
     <title>Sammlung M. W. (Abzüge) (MWA)</title>
