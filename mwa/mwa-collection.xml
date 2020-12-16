@@ -18,6 +18,15 @@
     </curators>
   </metadata>
   <labels>
+    <label labelID="mwa-Bekond_0001" />
+    <label labelID="mwa-Bekond_0002" />
+    <label labelID="mwa-Bekond_0003" />
+    <label labelID="mwa-Bekond_0004" />
+    <label labelID="mwa-Bekond_0005" />
+    <label labelID="mwa-Bekond_0006" />
+    <label labelID="mwa-Bekond_0007" />
+    <label labelID="mwa-Bekond_0008" />
+    <label labelID="mwa-Bekond_0009" />
     <label labelID="mwa-graach-0001" />
     <label labelID="mwa-graach-0002" />
     <label labelID="mwa-graach-0003" />
@@ -28,5 +37,32 @@
     <label labelID="mwa-graach-0008" />
     <label labelID="mwa-graach-0009" />
     <label labelID="mwa-graach-0010" />
+    <label labelID="mwa-Wiltingen_0001" />
+    <label labelID="mwa-Wiltingen_0002" />
+    <label labelID="nwa-Wiltingen_0003" />
+    <label labelID="nwa-Wiltingen_0004" />
+    <label labelID="nwa-Wiltingen_0005" />
+    <label labelID="nwa-Wiltingen_0006" />
+    <label labelID="nwa-Wiltingen_0007" />
+    <label labelID="nwa-Wiltingen_0008" />
+    <label labelID="nwa-Wiltingen_0009" />
+    <label labelID="nwa-Wiltingen_0010" />
+    <label labelID="nwa-Wiltingen_0011" />
+    <label labelID="nwa-Wiltingen_0012" />
+    <label labelID="nwa-Wiltingen_0013" />
+    <label labelID="nwa-Wiltingen_0014" />
+    <label labelID="nwa-Wiltingen_0015" />
+    <label labelID="nwa-Wiltingen_0016" />
+    <label labelID="nwa-Wiltingen_0017" />
+    <label labelID="nwa-Wiltingen_0018" />
+    <label labelID="nwa-Wiltingen_0019" />
+    <label labelID="nwa-Wiltingen_0020" />
+    <label labelID="nwa-Wiltingen_0022" />
+    <label labelID="nwa-Wiltingen_0023" />
+    <label labelID="nwa-Wiltingen_0024" />
+    <label labelID="nwa-Wiltingen_0025" />
+    <label labelID="nwa-Wiltingen_0026" />
+    <label labelID="nwa-Wiltingen_0027" />
+    <label labelID="nwa-Wiltingen_0028" />
   </labels>
 </wlv>
