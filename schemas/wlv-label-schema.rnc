@@ -59,7 +59,8 @@ figurePosition = attribute figurePosition { "upper-left" | "upper-right" | "uppe
 # font attributes
 
 fontAttributes =
-  attribute fontType { "Fraktur" | "Antiqua-Sans" | "Antiqua-Serif" | "Cursive" | "Handwritten" }?,
+  attribute fontType { "Fraktur" | "Antiqua-Sans" | "Antiqua-Serif" | "Cursive" | "Altdeutsch" }?,
+  attribute fontManner { "printed" | "handwritten" }?,
   attribute fontStyle { "recte" | "italics" | "small-caps" | "all-caps" }?,
   attribute fontColor { "red" | "black" | "larger" | text }?,
   attribute fontInitials { "color:red" | "color:black" | "color:other" | "size:larger" | "other" }?,

@@ -428,7 +428,16 @@
           <value>Antiqua-Sans</value>
           <value>Antiqua-Serif</value>
           <value>Cursive</value>
-          <value>Handwritten</value>
+          <value>Altdeutsch</value>
+        </choice>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute>
+        <name ns="">fontManner</name>
+        <choice>
+          <value>printed</value>
+          <value>handwritten</value>
         </choice>
       </attribute>
     </optional>
