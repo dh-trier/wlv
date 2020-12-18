@@ -18,7 +18,8 @@
         <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Handwritten" fontColor="black" fontStyle="italics">Scharzhofberger.</wineOrigin>
         <wineOrigin wineOriginType="region (Gebiet)">Mosel - Saar - Ruwer</wineOrigin>
         <wineMillesime wineMillesimeNorm="1937">1937r.</wineMillesime>
-        <agent agentRole="producer/bottler">Gewächs von Egon Müller zu Scharzhof</agent>
+        <qualityHistorical>Gewächs von</qualityHistorical>
+        <agent agentRole="producer/bottler">Egon Müller zu Scharzhof</agent>
         <qualityProduction>Original Kellerabfüllung zu Scharzhof</qualityProduction>
         <qualityAward>Grand Prix Paris 1900</qualityAward>
         <qualityAward>Grand Prix St. Louis 1904</qualityAward>

@@ -15,11 +15,12 @@
         <figure figureType="coat-of-arms" figureNum="002">Adler mit Weintrauben und den Kürzeln VDNV (Verband Deutscher Naturwein-Versteigerer)</figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzberg" fontType="Antiqua-Sans" fontColor="black">Scharzberger Auslese</wineOrigin>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzberg" fontType="Antiqua-Sans" fontColor="black">Scharzberger</wineOrigin>
         <wineMillesime wineMillesimeNorm="1937">1937er</wineMillesime>
         <agent agentRole="producer/bottler">Wachstum Weingut Van Volxem</agent>
         <location locationType="locality" locationRole="producer/bottler" ref="enwiki:Q161930">Wiltingen</location>
         <qualityProduction>Original-Kellerabfüllung</qualityProduction>
+        <qualityGrapes>Auslese</qualityGrapes>
         <agent agentRole="cooperative/association">Trierer Verein von Weingutsbesitzern der Mosel, Saar, Ruwer</agent>
         <qualityLevel>Verband Deutscher Naturwein-Versteigerer e.V., Unsere Mitglieder besitzen Lagen von Weltruf. (Über das Adler-Wappen): Dieses Zeichen in Verbindung mit dem Korkbrand verbürgt naturreinen Wein.</qualityLevel>
       </textual>
