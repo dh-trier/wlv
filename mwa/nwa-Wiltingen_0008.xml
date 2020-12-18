@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <wlv>
   <metadata labelID="mwa-Wiltingen_0008" collectionID="mwa">
     <curation>curatorID ="#so" curationDate="2020-12-07"</curation>
