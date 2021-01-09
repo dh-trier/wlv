@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-zeltingen-0015">
+    <metadata>
+        <collection collectionID="mwa"/>
+        <curation curationDate="2020-12-19" curatorID="#sts"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+    </metadata>
+    <label labelType="Lageetikett">
+        <labelPart partType="front" partNum="1">
+            <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+            <visual>
+              <frame frameStyle="band" frameColor="white" frameType="outer"></frame>
+              <frame frameStyle="band" frameColor="ocher" frameType="inner"></frame>
+              <frame frameStyle="lines" frameColor="black" frameType="inner"></frame>
+              <background backgroundStyle="none">Weiß.</background>
+              <figure figureType="abstract" figureNum="1">Florales Ornament mit Weinreben und Trauben. Die Äste und Stämme bilden eine dekorative Verästelung mit unorganischen Formen</figure>
+              <figure figureType="realistic" figureNum="2">Landschaftsdarstellung: Mit Schiffen befahrene Mosel, Moselufer mit Arbeitern und Weinfässern, mit Bäumen umwachsenes Weingut und Weinerge im Hintergrund</figure>
+            </visual>
+            <textual>
+              <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Zeltingen" ref="wikidata:Q648808">Zeltinger Schlossberg</wineOrigin>
+              <agent agentRole="producer/bottler">Oscar Haussmann</agent>
+              <location locationType="locality" locationRole="producer/bottler">Traben a/d Mosel.</location>
+            </textual>
+        </labelPart>
+    </label>
+</wlv>

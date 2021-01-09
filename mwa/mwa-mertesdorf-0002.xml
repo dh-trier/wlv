@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-mertesdorf-0002">
+    <metadata>
+        <collection collectionID="mwa"/>
+        <curation curationDate="2020-12-16" curatorID="#sts"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+    </metadata>
+    <label labelType="Gutsetikett">
+        <labelPart partType="front" partNum="1">
+            <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+            <visual>
+              <frame frameStyle="band" frameColor="light blue" frameType="outer"></frame>
+              <frame frameStyle="band" frameColor="gold" frameType="inner"></frame>
+              <frame frameStyle="lines" frameColor="gold" frameType="inner"></frame>
+              <background backgroundStyle="color">Hellblau</background>
+              <figure figureType="symbolic" figureNum="1">Gutsangabe umrahmende goldene Weinreben</figure>
+              <figure figureType="abstract" figureNum="2" figurePosition="lower-center">Rotbraunes Ornament</figure>
+            </visual>
+            <textual>
+              <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Mertesdorf" ref="wikidata:Q659878">Grünhäuser</wineOrigin>
+            </textual>
+        </labelPart>
+    </label>
+</wlv>

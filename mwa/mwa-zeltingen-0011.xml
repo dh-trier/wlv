@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-zeltingen-0011">
+    <metadata>
+        <collection collectionID="mwa"/>
+        <curation curationDate="2020-12-19" curatorID="#sts"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+    </metadata>
+    <label labelType="Gutsetikett">
+        <labelPart partType="front" partNum="1">
+            <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+            <visual>
+              <frame frameStyle="band" frameColor="white" frameType="outer"></frame>
+              <frame frameStyle="lines" frameColor="grey" frameType="inner"></frame>
+              <background backgroundStyle="none">Weiß</background>
+              <figure figureType="abstract" figureNum="1">Als Rahmen für die Beschriftung fungierendes Ornament</figure>
+              <figure figureType="abstract" figureNum="2">Als Binnenrahmen für die Beschriftung fungierendes Stuckornament</figure>
+            </visual>
+            <textual>
+              <wineMillesime wineMillesimeNorm="1876">1876r</wineMillesime>
+              <wineOrigin wineOriginType="winery (Weingut)" wineOriginLocality="Zeltingen" ref="wikidata:Q648808">Zeltinger Schloß.</wineOrigin>
+            </textual>
+        </labelPart>
+    </label>
+</wlv>

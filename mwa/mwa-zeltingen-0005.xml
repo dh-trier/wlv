@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-zeltingen-0005">
+    <metadata>
+        <collection collectionID="mwa"/>
+        <curation curationDate="2020-12-19" curatorID="#sts"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+    </metadata>
+    <label labelType="Gutsetikett">
+        <labelPart partType="front" partNum="1">
+            <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+            <visual>
+              <frame frameStyle="band" frameColor="green" frameType="outer"></frame>
+              <frame frameStyle="pattern" frameColor="green and gold" frameType="inner"></frame>
+              <background backgroundStyle="none">Weiß</background>
+            </visual>
+            <textual>
+              <wineMillesime wineMillesimeNorm="1868">1868er.</wineMillesime>
+              <wineOrigin wineOriginType="winery (Weingut)" wineOriginLocality="Zeltingen" ref="wikidata:Q189241">Zeltinger Burg.</wineOrigin>
+              <agent agentRole="printer">J. C. Metz, Frankfurt a. M.</agent>
+            </textual>
+        </labelPart>
+    </label>
+</wlv>

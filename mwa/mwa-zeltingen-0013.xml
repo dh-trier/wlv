@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-zeltingen-0013">
+    <metadata>
+        <collection collectionID="mwa"/>
+        <curation curationDate="2020-12-19" curatorID="#sts"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+    </metadata>
+    <label labelType="Lageetikett">
+        <labelPart partType="front" partNum="1">
+            <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+            <visual>
+              <frame frameStyle="band" frameColor="ocher" frameType="outer"></frame>
+              <background backgroundStyle="color">Ocker</background>
+              <figure figureType="abstract" figureNum="1" figurePosition="upper-left">Quadratisches, viergezacktes Ornament</figure>
+              <figure figureType="abstract" figureNum="2" figurePosition="lower-left">Quadratisches, viergezacktes Ornament</figure>
+              <figure figureType="abstract" figureNum="3" figurePosition="upper-right">Quadratisches, viergezacktes Ornament</figure>
+              <figure figureType="abstract" figureNum="4" figurePosition="lower-right">Quadratisches, viergezacktes Ornament</figure>
+              <figure figureType="abstract" figureNum="5" figurePosition="center-left">Aus drei Dreiecken bestehendes Ornament</figure>
+              <figure figureType="abstract" figureNum="6" figurePosition="center-right">Aus drei Dreiecken bestehendes Ornament</figure>
+              <figure figureType="symbolic" figureNum="7" figurePosition="center-across">Weinreben mit Trauben und Ästen als Dekoration</figure>
+              <figure figureType="coat-of-arms" figureNum="8" figurePosition="center-center">Wappen: Eine gekrönte Frau mit Pflanzen in der linken Hand und weiteres Wappen mit der Darstellung eines Heiligen in der rechten Hand</figure>
+            </visual>
+            <textual>
+              <wineMillesime wineMillesimeNorm="1911">1911.</wineMillesime>
+              <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Zeltingen" ref="wikidata:Q648808">Zeltinger Schlossberg</wineOrigin>
+              <qualityLabel>feinste Auslese</qualityLabel>
+              <qualityLabel>bestes Fuder</qualityLabel>
+              <agent agentRole="cooperative/association">Katholisches Vereins-haus Treviris</agent>
+              <location locationType="locality" locationRole="cooperative/association">Trier a. Mosel.</location>
+              <agent agentRole="producer/bottler">Wachstum: Excellenz Staatsminister Dr. Freiherr von Schorlemer</agent>
+              <location locationType="locality" locationRole="producer/bottler">Lieser</location>
+            </textual>
+        </labelPart>
+    </label>
+</wlv>

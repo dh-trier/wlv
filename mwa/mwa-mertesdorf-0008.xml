@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-mertesdorf-0008">
+    <metadata>
+        <collection collectionID="mwa"/>
+        <curation curationDate="2020-12-16" curatorID="#sts"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+    </metadata>
+    <label labelType="Gutsetikett">
+        <labelPart partType="front" partNum="1">
+            <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+            <visual>
+              <frame frameStyle="band" frameColor="green" frameType="outer"></frame>
+              <frame frameStyle="lines" frameColor="gold" frameType="inner"></frame>
+              <background backgroundStyle="color">Grün</background>
+              <figure figureType="abstract" figureNum="1" figurePosition="center-across">Teils floral inspirierte, goldene Ornamente</figure>
+            </visual>
+            <textual>
+              <wineMillesime wineMillesimeNorm="1859">1859r.</wineMillesime>
+              <wineOrigin wineOriginType="winery (Weingut)" wineOriginLocality="Mertesdorf" ref="wikidata:Q659878">Grünhäsuer.</wineOrigin>
+            </textual>
+        </labelPart>
+    </label>
+</wlv>

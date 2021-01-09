@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-mertesdorf-0007">
+    <metadata>
+        <collection collectionID="mwa"/>
+        <curation curationDate="2020-12-16" curatorID="#sts"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+    </metadata>
+    <label labelType="Gutsetikett">
+        <labelPart partType="front" partNum="1">
+            <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+            <visual>
+              <frame frameStyle="band" frameColor="grey" frameType="outer"></frame>
+              <background backgroundStyle="color">Schwarz</background>
+            </visual>
+            <textual>
+              <wineMillesime wineMillesimeNorm="1868">1868r</wineMillesime>
+              <wineOrigin wineOriginType="winery (Weingut)" wineOriginLocality="Mertesdorf" ref="wikidata:Q659878">Grünhäuser.</wineOrigin>
+              <agent agentRole="cooperative/association">F. Achenbach in Trier.</agent>
+            </textual>
+        </labelPart>
+    </label>
+</wlv>

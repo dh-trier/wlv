@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-mertesdorf-0005">
+    <metadata>
+        <collection collectionID="mwa"/>
+        <curation curationDate="2020-12-16" curatorID="#sts"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+    </metadata>
+    <label labelType="Lageetikett">
+        <labelPart partType="front" partNum="1">
+            <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+            <visual>
+              <frame frameStyle="band" frameColor="white" frameType="outer"></frame>
+              <frame frameStyle="floral" frameColor="black and white" frameType="inner">Holzstangen als Rahmen</frame>
+              <background backgroundStyle="pattern">Landschaftsabbildung</background>
+              <figure figureType="realistic" figureNum="1" figurePosition="center-across">Landschaftsabbildung: ein aus zwei Herrenhäusern bestehendes und mit Bäumen umwachsenes Anwesen mit Weinberg im Hintergrund</figure>
+              <figure figureType="realistic" figureNum="2" figurePosition="left-across">Farbige Abbildung von Weinreben</figure>
+              <figure figureType="realistic" figureNum="3" figurePosition="lower-left">Tablett mit Krug und Weingläsern</figure>
+              <figure figureType="coat-of-arms" figureNum="4" figurePosition="center-left">Wappen mit rotem Löwen umrandet von zwei Engeln</figure>
+            </visual>
+            <textual>
+              <wineOrigin wineOriginType="winery (Weingut)" wineOriginLocality="Mertesdorf" ref="wikidata:Q659878">Maximin Grünhäuser</wineOrigin>
+              <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Mertesdorf" ref="wikidata:Q659878">Herrenberger</wineOrigin>
+              <wineMillesime wineMillesimeNorm="1915">1915er</wineMillesime>
+              <agent agentRole="producer/bottler">Kellerabzug der C.von Schubert'schen vormals Freiherr von Stumm-Halberg'schen Schlosskellerei.</agent>
+            </textual>
+        </labelPart>
+    </label>
+</wlv>

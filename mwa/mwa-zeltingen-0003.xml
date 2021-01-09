@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-zeltingen-0003">
+    <metadata>
+        <collection collectionID="mwa"/>
+        <curation curationDate="2020-12-19" curatorID="#sts"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+    </metadata>
+    <label labelType="Ortsetikett">
+        <labelPart partType="front" partNum="1">
+            <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+            <visual>
+              <frame frameStyle="band" frameColor="black" frameType="outer"></frame>
+              <frame frameStyle="lines" frameColor="white" frameType="inner"></frame>
+              <background backgroundStyle="color">Schwarz</background>
+              <figure figureType="abstract" figureNum="1">Als dritter Binnenrahmen fungierendes, überkreuzendes und überflechtendes Ornament</figure>
+              <figure figureType="abstract" figureNum="2">Als vierter Binnenrahmen fungierendes Stuckornament zur Verzierung der schriftlichen Angaben</figure>
+            </visual>
+            <textual>
+              <wineMillesime wineMillesimeNorm="1862">1862r</wineMillesime>
+              <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Zeltingen" ref="wikidata:Q189241">Zeltinger.</wineOrigin>
+              <otherText textPosition="in-figure" textType="vineyard (Lage)">Crescenz des bischöflichen Priesterseminars.</otherText>
+            </textual>
+        </labelPart>
+    </label>
+</wlv>

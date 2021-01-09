@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-zeltingen-0014">
+    <metadata>
+        <collection collectionID="mwa"/>
+        <curation curationDate="2020-12-19" curatorID="#sts"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+    </metadata>
+    <label labelType="Lageetikett">
+        <labelPart partType="front" partNum="1">
+            <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+            <visual>
+              <frame frameStyle="band" frameColor="ocher" frameType="outer"></frame>
+              <background backgroundStyle="none">Weiß</background>
+              <figure figureType="symbolic" figureNum="1" figurePosition="center-left">Wachssigel mit floralen Ornamenten und der Abbildung im Sigel der Lage Schlossberg mit Pferdekutsche im Vordergrund</figure>
+            </visual>
+            <textual>
+              <wineMillesime wineMillesimeNorm="1915">1915er</wineMillesime>
+              <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Zeltingen" ref="wikidata:Q648808" fontInitials="color:other">Zeltinger Schlossberg</wineOrigin>
+              <agent agentRole="producer/bottler">Wachstum Merrem</agent>
+              <location locationType="locality" locationRole="producer/bottler">Zeltingen</location>
+              <agent agentRole="printer">Kunst- und Verlagsanstalt Schaar und Dathe Komm.</agent>
+              <otherText textPosition="stand-alone" textType="statement">Ges. A. Act.</otherText>
+              <location locationType="locality" locationRole="printer">Trier</location>
+              <labelNumber>DEP. N° 174.</labelNumber>
+            </textual>
+        </labelPart>
+    </label>
+</wlv>

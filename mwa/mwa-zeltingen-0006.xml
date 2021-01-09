@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-zeltingen-0006">
+    <metadata>
+        <collection collectionID="mwa"/>
+        <curation curationDate="2020-12-19" curatorID="#sts"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+    </metadata>
+    <label labelType="Ortsetikett">
+        <labelPart partType="front" partNum="1">
+            <physical sizeH="tbc" sizeV="tbc" shape="octogon" material="paper"/>
+            <visual>
+              <frame frameStyle="band" frameColor="blue" frameType="outer"></frame>
+              <frame frameStyle="lines" frameColor="gold" frameType="inner"></frame>
+              <background backgroundStyle="color">Preußisch blau</background>
+              <figure figureType="abstract" figureNum="1">Goldene Ornamente mit floralen Anklängen: Weinreben, Trauben, Verästelungen.</figure>
+              <figure figureType="symbolic" figureNum="2">Geschlossene und reich verzierte Krone.</figure>
+              <figure figureType="symbolic" figureNum="3">Weintrauben in der Hand haltender Putto</figure>
+              <figure figureType="symbolic" figureNum="4">Weintrauben in der Hand haltender Putto</figure>
+            </visual>
+            <textual>
+              <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Zeltingen" ref="wikidata:Q189241">Zeltinger.</wineOrigin>
+            </textual>
+        </labelPart>
+    </label>
+</wlv>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-zeltingen-0009">
+    <metadata>
+        <collection collectionID="mwa"/>
+        <curation curationDate="2020-12-19" curatorID="#sts"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+    </metadata>
+    <label labelType="Lageetikett">
+        <labelPart partType="front" partNum="1">
+            <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+            <visual>
+              <frame frameStyle="band" frameColor="white" frameType="outer"></frame>
+              <frame frameStyle="pattern" frameColor="white and brown" frameType="inner">Rahmen bestehend aus Weinreben</frame>
+              <background backgroundStyle="none">Weiß</background>
+              <figure figureType="realistic" figureNum="1">Landschaftsabbildung: mit Schiffen befahrene Mosel, Dorf mit Wonhäusern und Kirche, Weingut und Weinberge im Hintergrund.</figure>
+            </visual>
+            <textual>
+              <wineMillesime wineMillesimeNorm="1874">1874er</wineMillesime>
+              <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Zeltingen" ref="wikidata:Q648808">Zeltinger Schlossberger</wineOrigin>
+              <qualityLabel>Auslese.</qualityLabel>
+              <agent agentRole="producer/bottler">Eigenes Wachsthum Franz Merrem</agent>
+              <location locationType="locality" locationRole="producer/bottler">Zeltingen a. d. Mosel.</location>
+            </textual>
+        </labelPart>
+    </label>
+</wlv>

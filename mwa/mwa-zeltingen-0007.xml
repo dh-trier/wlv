@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-zeltingen-0007">
+    <metadata>
+        <collection collectionID="mwa"/>
+        <curation curationDate="2020-12-19" curatorID="#sts"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+    </metadata>
+    <label labelType="Gutsetikett">
+        <labelPart partType="front" partNum="1">
+            <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+            <visual>
+              <frame frameStyle="lines" frameColor="ocher" frameType="inner"></frame>
+              <background backgroundStyle="none"></background>
+              <figure figureType="symbolic" figureNum="1">Zwei Putti auf Weinästen sitzend und Trauben haltend.</figure>
+              <figure figureType="symbolic" figureNum="2">Darstellung von Weinreben mit Ästen, Blättern, Trauben.</figure>
+              <figure figureType="abstract" figureNum="3">Darstellung eines Fischs mit menschenähnlichem Gesicht und Blütenflosse</figure>
+              <figure figureType="abstract" figureNum="4">Darstellung eines Fischs mit menschenähnlichem Gesicht und Blütenflosse</figure>
+              <figure figureType="symbolic" figureNum="5">Abbildung eines an ein Skyphos angelehntes Gefäß mit Weinreben</figure>
+              <figure figureType="abstract" figureNum="6">Florale Ornamente</figure>
+            </visual>
+            <textual>
+              <wineMillesime wineMillesimeNorm="1852">1852r.</wineMillesime>
+              <wineOrigin wineOriginType="winery (Weingut)" wineOriginLocality="Zeltingen" ref="Q648808">Zeltinger-Bourg</wineOrigin>
+              <agent agentRole="producer/bottler">von J. H. Müller, Sohn in Trier.</agent>
+            </textual>
+        </labelPart>
+    </label>
+</wlv>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-zeltingen-0012">
+    <metadata>
+        <collection collectionID="mwa"/>
+        <curation curationDate="2020-12-19" curatorID="#sts"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+    </metadata>
+    <label labelType="Lageetikett">
+        <labelPart partType="front" partNum="1">
+            <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+            <visual>
+              <frame frameStyle="band" frameColor="ocher" frameType="outer"></frame>
+              <frame frameStyle="pattern" frameColor="green" frameType="inner"></frame>
+              <background backgroundStyle="none">Weiß</background>
+              <figure figureType="realistic" figureNum="1">Beschriftete Landschaftsabbildung: Mit Schiffen befahrene Mosel mit Brücke und beide gegenüberliegende Ufer mit Weinbergen sowie Dorfkern</figure>
+              <figure figureType="symbolic" figureNum="2" figurePosition="upper-right">Wappenähnliche Darstellung eines Adlers mit Weintrauben umrandet mit den Buchstaben DVNV</figure>
+              <figure figureType="symbolic" figureNum="3">Wappenähnliche Darstellung einer Sonnenuhr als Verweis auf die Weinlage</figure>
+              <figure figureType="symbolic" figureNum="4">Weinreben mit Trauben, Blättern und Verästelungen als Dekoration</figure>
+            </visual>
+            <textual>
+              <wineMillesime wineMillesimeNorm="1921">1921er</wineMillesime>
+              <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Zeltingen" ref="wikidata:Q648808">Zeltinger Sonnenuhr</wineOrigin>
+              <qualityLabel>Auslese.</qualityLabel>
+              <otherText textPosition="in-figure" textType="copyright">(Eingetragene Marke)</otherText>
+              <agent agentRole="producer/bottler" fontStyle="all-caps">Wachstum: Joh. Jos. Prüm, S.A. Prüm Erben, Wehlen a/d. Mosel</agent>
+            </textual>
+        </labelPart>
+    </label>
+</wlv>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="mwa-zeltingen-0002">
+    <metadata>
+        <collection collectionID="mwa"/>
+        <curation curationDate="2020-12-19" curatorID="#sts"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+    </metadata>
+    <label labelType="Lageetikett">
+        <labelPart partType="front" partNum="1">
+            <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+            <visual>
+              <frame frameStyle="lines" frameColor="ocher" frameType="outer"></frame>
+              <frame frameStyle="pattern" frameColor="white" frameType="inner">Papyrus-Rolle als Rahmen für schhriftliche Angaben</frame>
+              <background backgroundStyle="color">Ocker</background>
+              <figure figureType="symbolic" figureNum="1">Frau mit Toga und Weinreben als Haar</figure>
+              <figure figureType="symbolic" figureNum="2">Baldachin mit Weinreben</figure>
+              <figure figureType="symbolic" figureNum="3">Weinflasche mit zwei überkreuzenden Korkenziehern</figure>
+              <figure figureType="symbolic" figureNum="4">Mann mit Toga, Bart und Weinreben als Haar. Anlehnung an Poseidung durch Attribut Dreizack</figure>
+              <figure figureType="symbolic" figureNum="5">Baldachin mit Weinreben</figure>
+              <figure figureType="symbolic" figureNum="6">Weinglas mit Sternen</figure>
+              <figure figureType="realistic" figureNum="7">Landschaftsdarstellung: Mit Schiffen befahrene Mosel, Moseldorf mit Häusern und Kirche im Dorfkern, Weinhügel mit Abbildung eines Weinguts in den Hügeln</figure>
+            </visual>
+            <textual>
+              <wineMillesime wineMillesimeNorm="1884">1884.</wineMillesime>
+              <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Zeltingen" ref="wikidata:Q189241">Zeltinger Schloßberg</wineOrigin>
+              <labelNumber>Wein=Etiquette Nr. 612.</labelNumber>
+              <otherText textPosition="stand-alone" textType="copyright">GESETZL. GESCHÜTZT.</otherText>
+            </textual>
+        </labelPart>
+    </label>
+</wlv>
