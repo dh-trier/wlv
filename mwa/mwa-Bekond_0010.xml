@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<wlv labelID="mwa-Bekond_0005">
+<wlv labelID="mwa-Bekond_0010">
   <metadata>
     <collection collectionID="mwa" />
-    <curation curationDate="2020-12-02" curatorID="#ef" />
+    <curation curationDate="2020-12-16" curatorID="#ef"/>
     <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
   </metadata>
   <label labelType="Ortsetikett">
@@ -11,13 +11,12 @@
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="band" frameColor="gold" frameType="outer" />
-        <frame frameStyle="band" frameColor="white" frameType="outer" />
-        <background backgroundStyle="color">white</background>
-        <figure figureType="abstract" figureNum="1" figurePosition="center-center">Muster mit Weinblättern, das einen zweiten Rahmen für den Text bildet.</figure>
+        <background backgroundStyle="pattern">light-beige</background>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Brauneberg" fontColor="red">Brauneberger.</wineOrigin>
-        <qualityGrapes qualityGrapesNorm="Auslese" fontColor="brown">Auslese.</qualityGrapes>
+        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Brauneberg" fontColor="black" fontManner="printed" fontType="Antiqua-Serif">Brauneberger.</wineOrigin>
+        <agent agentRole="producer/bottler">Restauration Junk in Trier.</agent>
+        <otherText textPosition="stand-alone" figureNum="1" fontColor="gold" textType="other">104</otherText>
       </textual>
     </labelPart>
   </label>
