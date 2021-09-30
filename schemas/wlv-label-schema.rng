@@ -5,6 +5,7 @@
     <ref name="wlv"/>
   </start>
   <define name="wlv">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The root element in a label description using the Wine Label Vocabulary.</a:documentation>
     <element>
       <name ns="">wlv</name>
       <ref name="labelID"/>
@@ -13,6 +14,7 @@
     </element>
   </define>
   <define name="labelID">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A unique identifier for the label.</a:documentation>
     <attribute>
       <name ns="">labelID</name>
       <text/>
@@ -42,6 +44,7 @@
     </attribute>
   </define>
   <define name="metadata">
+  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">One of two mandatory top-level elements. Contains metadata related to the label description itself.</a:documentation>
     <element>
       <name ns="">metadata</name>
       <ref name="collection"/>
@@ -61,6 +64,7 @@
     </element>
   </define>
   <define name="collection">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The wine label collection the label belongs to.</a:documentation>
     <element>
       <name ns="">collection</name>
       <ref name="collectionID"/>
@@ -70,27 +74,34 @@
     </element>
   </define>
   <define name="collectionID">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A unique identifier for the wine label collection.</a:documentation>
     <attribute>
       <name ns="">collectionID</name>
       <text/>
     </attribute>
   </define>
   <define name="curation">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information on the curation process of the wine label description.</a:documentation>
     <element>
       <name ns="">curation</name>
       <oneOrMore>
         <ref name="curatorID"/>
       </oneOrMore>
       <ref name="curationDate"/>
+      <optional>
+        <ref name="curationUpdate"/>
+      </optional>
     </element>
   </define>
   <define name="curatorID">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A unique identifier for the person that has curated the wine label description.</a:documentation>
     <attribute>
       <name ns="">curatorID</name>
       <text/>
     </attribute>
   </define>
   <define name="curationDate">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The date (or year) when the wine label description was created.</a:documentation>
     <attribute>
       <name ns="">curationDate</name>
       <choice>
@@ -99,7 +110,18 @@
       </choice>
     </attribute>
   </define>
+  <define name="curationUpdate">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The date (or year) when the wine label description was last updated.</a:documentation>
+    <attribute>
+      <name ns="">curationUpdate</name>
+      <choice>
+        <data type="int"/>
+        <data type="date"/>
+      </choice>
+    </attribute>
+  </define>
   <define name="collectionContext">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Any information that describes the individual label in the context of the collection, for example its location in the collection.</a:documentation>
     <element>
       <name ns="">collectionContext</name>
       <optional>
@@ -196,6 +218,7 @@
     </element>
   </define>
   <define name="labelPart">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(label part) Any physically separate part of the label.</a:documentation>
     <element>
       <name ns="">labelPart</name>
       <ref name="partNum"/>
@@ -1122,7 +1145,7 @@
   <define name="year">
     <attribute>
       <name ns="">year</name>
-      <data type="int"/>
+      <data type="gYear"/>
     </attribute>
   </define>
   <define name="notBefore">

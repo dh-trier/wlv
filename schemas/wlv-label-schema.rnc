@@ -39,7 +39,7 @@ physical = element physical { shape, sizeH, sizeV, material, printingTechnique? 
 shape = attribute shape { "square" | "circle" | "rectangle" | "oval" | "diamond" | "trapezoid" | "octogon" | "other" }
 sizeH = attribute sizeH { xsd:int | "tbc" }
 sizeV = attribute sizeV { xsd:int | "tbc" }
-material = attribute material { "paper" | "plastic" | "metal" }
+material = attribute material { "paper" | "plastic" | "metal" | "other" }
 printingTechnique = attribute printingTechnique { "lithograph" | "offset" | "moving-type" | "litho+type" | "mixed" | "other" }
 
 # === visual ===

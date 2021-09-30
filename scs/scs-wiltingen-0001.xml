@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../schemas/wlv-label-schema.rnc" type="application/relax-ng-compact-syntax"?>
-<wlv>
-  <metadata labelID="scs-zell-0001" collectionID="scs">
-    <curator curatorID="#cs"></curator>
-    <curationDate>2020-11-18</curationDate>
+<?xml-model href="../schemas/wlv-label-schema_v2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="scs-wiltingen-0001">
+  <metadata>
+    <collection collectionID="scs"/>
+    <curation curationDate="2020-11-18" curatorID="#cs" curationUpdate="2021-09-30"></curation>
     <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"></licence>
   </metadata>
   <label labelType="Ortsetikett">
