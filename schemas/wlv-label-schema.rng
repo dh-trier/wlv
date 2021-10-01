@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0"
+   		 xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
   <start>
     <ref name="wlv"/>
   </start>
   <define name="wlv">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The root element in a label description using the Wine Label Vocabulary.</a:documentation>
+    <a:documentation>The root element in a label description using the Wine Label Vocabulary.</a:documentation>
     <element>
       <name ns="">wlv</name>
       <ref name="labelID"/>
@@ -357,6 +358,7 @@
       <choice>
         <value>outer</value>
         <value>inner</value>
+        <value>other</value>
       </choice>
     </attribute>
   </define>
@@ -391,6 +393,7 @@
     </attribute>
   </define>
   <define name="figure">
+	<a:documentation>(figure) Any visual, figurative element on the label. The label is classified as to its type and position using the attributes. It can be described in the element content using a simple list of terms mentioning each recognizable element of the figure. (In a future iteration of WLV, a controlled vocabulary of visual elements commonly found on wine labels will be made available for this purpose.) </a:documentation>
     <element>
       <name ns="">figure</name>
       <text/>
@@ -402,27 +405,38 @@
     </element>
   </define>
   <define name="figureNum">
+	<a:documentation>(figure number) Allows to number several figures for better identification. </a:documentation>
     <attribute>
       <name ns="">figureNum</name>
       <data type="int"/>
     </attribute>
   </define>
   <define name="figureType">
+	<a:documentation>(figure type) Allows a simple classification of figures into common types. </a:documentation>
     <attribute>
       <name ns="">figureType</name>
       <choice>
         <value>symbolic</value>
+		<a:documentation>(figure type: symbolic) Used for any figure that uses realistic elements in a stylized manner. </a:documentation>
         <value>realistic</value>
+		<a:documentation>(figure type: realistic) Used for any figure that represents elements from the real world in a recognizable, realistic manner. </a:documentation>
         <value>abstract</value>
+		<a:documentation>(figure type: abstract) Used for any figure that predominantly uses abstract shapes, forms and lines without representing a clearly-recognizable element from the real world. </a:documentation>
         <value>seal</value>
+		<a:documentation>(figure type: seal) Used for any representation of a seal. </a:documentation>
         <value>coat-of-arms</value>
+		<a:documentation>(figure type: coat-of-arms) Used for any representation of a coat of arms. </a:documentation>
+        <value>symbolic</value>
+		<a:documentation>(figure type: other) To be used sparingly for any kind of figure that eludes classification. </a:documentation>
       </choice>
     </attribute>
   </define>
   <define name="figurePosition">
+    <a:documentation>(figure position) The position of the figure on the label surface, in a grid of nine quadrants. The quadrants are numbered like on the number-pad of a phone, starting at the top left with 1 and ending at the bottom right with 9. Any quadrant that the figure covers to a significant extent is included in the position description. (The textual designators are still valid, but will be deprecated.) </a:documentation>
     <attribute>
       <name ns="">figurePosition</name>
       <choice>
+        <data type="int"/>
         <value>upper-left</value>
         <value>upper-right</value>
         <value>upper-center</value>

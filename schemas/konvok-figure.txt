@@ -1,0 +1,45 @@
+# Kontrolliertes Vokabular bildlich dargestellter Elemente für das Wine Label Vocabulary
+
+## Objekte
+
+* Weinglas
+* Weinpresse
+* Weinfass
+* Weinflasche
+
+
+## Flora
+
+* Weinrebe
+* Weintraube
+* Baum
+* Blume
+
+
+## Fauna
+
+* Löwe
+* Katze
+* Adler
+* Spinne
+
+
+## Geographie
+
+* Fließgewässer
+* Standgewässer
+* Berg/Hügel 
+* Gebäude
+* Siedlung
+* Burg
+* Burgturm
+* Zinne
+
+
+## Anderes
+
+* Person
+  * Kind
+  * Erwachsene/r
+* Sonne
+* Weltkugel
