@@ -475,6 +475,7 @@
         <choice>
           <value>printed</value>
           <value>handwritten</value>
+          <value>stamped</value>
         </choice>
       </attribute>
     </optional>

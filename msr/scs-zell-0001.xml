@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="msr-0006">
+  <metadata>
+  <collection collectionID="msr"></collection>
+  <curation curatorID="#cs" curationDate="2021-11-16"></curation>
+  <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"></licence>
+  </metadata>
+  <label labelType="Lageetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="127" sizeV="85" shape="rectangle" material="paper"/>
+      <visual>
+        <frame frameColor="gold" frameStyle="band" frameType="outer"></frame>
+        <frame frameColor="black" frameStyle="lines" frameType="inner"></frame>
+        <figure figureNum="1" figurePosition="upper-across" figureType="realistic">Katze, Weinfass, Wappen, Reben, Blätter, Trauben.</figure>
+        <figure figureNum="2" figurePosition="upper-center" figureType="coat-of-arms">Wappen: Burg, Schlüssel.</figure>
+      </visual>
+      <textual>
+        <location locationType="region" locationRole="other">Mosel-Saar-Ruwer</location>
+        <wineMillesime fontType="Antiqua-Sans" fontManner="stamped" wineMillesimeNorm="1937">1937er</wineMillesime>
+        <location locationType="locality" locationRole="other" locationNorm="Zell" ref="wikidata:Q187500" fontType="Fraktur" fontSize="larger">Zeller schwarze Katz</location>
+        <agent agentRole="distributor/importer/exporter" url="https://www.alrich.eu/seite/394272/p.html">Planitzer Likörfabrik</agent>
+        <agent agentRole="distributor/importer/exporter" ref="Q2098230">Johann Formanowski, Planitz/Sa.</agent>
+        <agent agentRole="printer" fontSize="smaller">Illert</agent>
+        <labelNumber fontSize="smaller">No.7526</labelNumber>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>
