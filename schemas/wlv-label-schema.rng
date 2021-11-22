@@ -437,6 +437,7 @@
       <name ns="">figurePosition</name>
       <choice>
         <data type="int"/>
+		<a:documentation>(figurePosition: integer) Numbers of quadrants covered by the figure. </a:documentation>
         <value>upper-left</value>
         <value>upper-right</value>
         <value>upper-center</value>

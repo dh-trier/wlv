@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="MSR-0001">
+  <metadata>
+  <collection collectionID="MSR"></collection>
+  <curation curatorID="#cs" curationDate="2021-11-22"></curation>
+  <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"></licence>
+  </metadata>
+  <label labelType="Lageetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="130" sizeV="89" shape="rectangle" material="paper"/>
+      <visual>
+          <frame frameStyle="other" frameColor="gold" frameType="outer">Linie mit Ornamenten an den Ecken.</frame>
+      </visual>
+      <textual>
+          <location locationType="region" locationRole="other">MOSEL-SAAR-RUWER</location>
+          <wineMillesime wineMillesimeNorm="1957">1957er</wineMillesime>
+          <wineOrigin wineOriginType="vineyard (Lage)" wineOriginNorm="Zell">Zeller schwarze Katz</wineOrigin>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>

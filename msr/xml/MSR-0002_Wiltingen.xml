@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/wlv-label-schema_v2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="MSR-0002">
+  <metadata>
+    <collection collectionID="MSR"/>
+    <curation curationDate="2020-11-18" curatorID="#cs" curationUpdate="2021-09-30"></curation>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"></licence>
+  </metadata>
+  <label labelType="Ortsetikett">
+    <labelPart partType="front" partNum="1">
+      <physical sizeH="137" sizeV="89" shape="rectangle" material="paper" />
+      <visual>
+        <background backgroundStyle="color">uniform light green</background>
+        <figure figureType="coat-of-arms" figureNum="1" figurePosition="upper-center">Red and white checkered coat of arms, sword on black ground, ornamental leaves to the sides, wings and castle on top.</figure>
+      </visual>
+      <textual>
+        <otherText textType="coat-text" textPosition="in-figure" fontType="Antiqua-Sans" fontStyle="all-caps">seit 1846</otherText>
+        <wineOrigin wineOriginType="region (Gebiet)" ref="wikidata:" fontType="Antiqua-Sans">Mosel-Saar-Ruwer</wineOrigin>
+        <wineMillesime wineMillesimeNorm="1939" fontStyle="italics" fontType="Cursive" fontSize="larger">1939er</wineMillesime>
+        <wineOrigin wineOriginType="locality (Ort)" wineOriginNorm="Wiltingen">Wiltinger</wineOrigin>
+        <agent agentRole="distributor/importer/exporter">Karl Ziegler, Weinhandlung</agent>
+        <location locationRole="distributor/importer/exporter" locationType="locality">Freudenberg</location>
+        <agent agentRole="printer" fontSize="smaller">Bastian</agent>
+        <location locationRole="printer" locationType="locality" ref="wikidata:Q822358">Winningen</location>
+      </textual>
+    </labelPart>
+  </label>
+</wlv>
