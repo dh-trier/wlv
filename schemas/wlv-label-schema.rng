@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<grammar xmlns="http://relaxng.org/ns/structure/1.0"
-   		 xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
   <start>
-    <ref name="wlv"/>
+    <ref name="wlv" />
   </start>
   <define name="wlv">
     <a:documentation>The root element in a label description using the Wine Label Vocabulary.</a:documentation>
     <element>
       <name ns="">wlv</name>
-      <ref name="labelID"/>
-      <ref name="metadata"/>
-      <ref name="label"/>
+      <ref name="labelID" />
+      <ref name="metadata" />
+      <ref name="label" />
     </element>
   </define>
   <define name="labelID">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A unique identifier for the label.</a:documentation>
     <attribute>
       <name ns="">labelID</name>
-      <text/>
+      <text />
     </attribute>
   </define>
   <define name="ref">
     <attribute>
       <name ns="">ref</name>
       <choice>
-        <text/>
+        <text />
         <value>wikidata:</value>
         <value>gnd:</value>
         <value>enwiki:</value>
@@ -38,29 +36,29 @@
     <attribute>
       <name ns="">url</name>
       <choice>
-        <text/>
+        <text />
         <value>https://creativecommons.org/licenses/by/4.0/</value>
         <value>https://github.com/dh-trier/wlv</value>
       </choice>
     </attribute>
   </define>
   <define name="metadata">
-  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">One of two mandatory top-level elements. Contains metadata related to the label description itself.</a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">One of two mandatory top-level elements. Contains metadata related to the label description itself.</a:documentation>
     <element>
       <name ns="">metadata</name>
-      <ref name="collection"/>
-      <ref name="curation"/>
+      <ref name="collection" />
+      <ref name="curation" />
       <optional>
-        <ref name="url"/>
+        <ref name="url" />
       </optional>
       <zeroOrMore>
-        <ref name="licence"/>
+        <ref name="licence" />
       </zeroOrMore>
       <optional>
-        <ref name="collectionContext"/>
+        <ref name="collectionContext" />
       </optional>
       <optional>
-        <ref name="comments"/>
+        <ref name="comments" />
       </optional>
     </element>
   </define>
@@ -68,9 +66,9 @@
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The wine label collection the label belongs to.</a:documentation>
     <element>
       <name ns="">collection</name>
-      <ref name="collectionID"/>
+      <ref name="collectionID" />
       <optional>
-        <text/>
+        <text />
       </optional>
     </element>
   </define>
@@ -78,7 +76,7 @@
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A unique identifier for the wine label collection.</a:documentation>
     <attribute>
       <name ns="">collectionID</name>
-      <text/>
+      <text />
     </attribute>
   </define>
   <define name="curation">
@@ -86,11 +84,11 @@
     <element>
       <name ns="">curation</name>
       <oneOrMore>
-        <ref name="curatorID"/>
+        <ref name="curatorID" />
       </oneOrMore>
-      <ref name="curationDate"/>
+      <ref name="curationDate" />
       <optional>
-        <ref name="curationUpdate"/>
+        <ref name="curationUpdate" />
       </optional>
     </element>
   </define>
@@ -98,7 +96,7 @@
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A unique identifier for the person that has curated the wine label description.</a:documentation>
     <attribute>
       <name ns="">curatorID</name>
-      <text/>
+      <text />
     </attribute>
   </define>
   <define name="curationDate">
@@ -106,8 +104,8 @@
     <attribute>
       <name ns="">curationDate</name>
       <choice>
-        <data type="int"/>
-        <data type="date"/>
+        <data type="int" />
+        <data type="date" />
       </choice>
     </attribute>
   </define>
@@ -116,8 +114,8 @@
     <attribute>
       <name ns="">curationUpdate</name>
       <choice>
-        <data type="int"/>
-        <data type="date"/>
+        <data type="int" />
+        <data type="date" />
       </choice>
     </attribute>
   </define>
@@ -126,46 +124,46 @@
     <element>
       <name ns="">collectionContext</name>
       <optional>
-        <ref name="pageID"/>
+        <ref name="pageID" />
       </optional>
       <optional>
-        <ref name="scanID"/>
+        <ref name="scanID" />
       </optional>
       <optional>
-        <text/>
+        <text />
       </optional>
     </element>
   </define>
   <define name="pageID">
     <attribute>
       <name ns="">pageID</name>
-      <text/>
+      <text />
     </attribute>
   </define>
   <define name="scanID">
     <attribute>
       <name ns="">scanID</name>
-      <text/>
+      <text />
     </attribute>
   </define>
   <define name="licence">
     <element>
       <name ns="">licence</name>
-      <text/>
+      <text />
       <optional>
-        <ref name="url"/>
+        <ref name="url" />
       </optional>
       <optional>
-        <ref name="licenceAbbr"/>
+        <ref name="licenceAbbr" />
       </optional>
-      <ref name="licenceScope"/>
+      <ref name="licenceScope" />
     </element>
   </define>
   <define name="licenceAbbr">
     <attribute>
       <name ns="">licenceAbbr</name>
       <choice>
-        <text/>
+        <text />
         <value>CC BY</value>
         <value>public domain</value>
       </choice>
@@ -175,7 +173,7 @@
     <attribute>
       <name ns="">licenceScope</name>
       <choice>
-        <text/>
+        <text />
         <value>all</value>
         <value>markup</value>
         <value>visual</value>
@@ -187,15 +185,15 @@
   <define name="label">
     <element>
       <name ns="">label</name>
-      <ref name="labelType"/>
+      <ref name="labelType" />
       <optional>
-        <ref name="comments"/>
+        <ref name="comments" />
       </optional>
       <oneOrMore>
-        <ref name="labelPart"/>
+        <ref name="labelPart" />
       </oneOrMore>
       <optional>
-        <ref name="provenance"/>
+        <ref name="provenance" />
       </optional>
     </element>
   </define>
@@ -208,31 +206,31 @@
         <value>Ortsetikett</value>
         <value>tbc</value>
         <value>other</value>
-        <text/>
+        <text />
       </choice>
     </attribute>
   </define>
   <define name="comments">
     <element>
       <name ns="">comments</name>
-      <text/>
+      <text />
     </element>
   </define>
   <define name="labelPart">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(label part) Any physically separate part of the label.</a:documentation>
     <element>
       <name ns="">labelPart</name>
-      <ref name="partNum"/>
-      <ref name="partType"/>
-      <ref name="physical"/>
-      <ref name="visual"/>
-      <ref name="textual"/>
+      <ref name="partNum" />
+      <ref name="partType" />
+      <ref name="physical" />
+      <ref name="visual" />
+      <ref name="textual" />
     </element>
   </define>
   <define name="partNum">
     <attribute>
       <name ns="">partNum</name>
-      <data type="int"/>
+      <data type="int" />
     </attribute>
   </define>
   <define name="partType">
@@ -250,12 +248,12 @@
   <define name="physical">
     <element>
       <name ns="">physical</name>
-      <ref name="shape"/>
-      <ref name="sizeH"/>
-      <ref name="sizeV"/>
-      <ref name="material"/>
+      <ref name="shape" />
+      <ref name="sizeH" />
+      <ref name="sizeV" />
+      <ref name="material" />
       <optional>
-        <ref name="printingTechnique"/>
+        <ref name="printingTechnique" />
       </optional>
     </element>
   </define>
@@ -278,7 +276,7 @@
     <attribute>
       <name ns="">sizeH</name>
       <choice>
-        <data type="int"/>
+        <data type="int" />
         <value>tbc</value>
       </choice>
     </attribute>
@@ -287,7 +285,7 @@
     <attribute>
       <name ns="">sizeV</name>
       <choice>
-        <data type="int"/>
+        <data type="int" />
         <value>tbc</value>
       </choice>
     </attribute>
@@ -320,13 +318,13 @@
       <name ns="">visual</name>
       <interleave>
         <zeroOrMore>
-          <ref name="frame"/>
+          <ref name="frame" />
         </zeroOrMore>
         <optional>
-          <ref name="background"/>
+          <ref name="background" />
         </optional>
         <zeroOrMore>
-          <ref name="figure"/>
+          <ref name="figure" />
         </zeroOrMore>
       </interleave>
     </element>
@@ -334,10 +332,10 @@
   <define name="frame">
     <element>
       <name ns="">frame</name>
-      <text/>
-      <ref name="frameType"/>
-      <ref name="frameStyle"/>
-      <ref name="frameColor"/>
+      <text />
+      <ref name="frameType" />
+      <ref name="frameStyle" />
+      <ref name="frameColor" />
     </element>
   </define>
   <define name="frameStyle">
@@ -371,15 +369,15 @@
         <value>gold</value>
         <value>red</value>
         <value>green</value>
-        <text/>
+        <text />
       </choice>
     </attribute>
   </define>
   <define name="background">
     <element>
       <name ns="">background</name>
-      <text/>
-      <ref name="backgroundStyle"/>
+      <text />
+      <ref name="backgroundStyle" />
     </element>
   </define>
   <define name="backgroundStyle">
@@ -393,51 +391,51 @@
     </attribute>
   </define>
   <define name="figure">
-	<a:documentation>(figure) Any visual, figurative element on the label. The label is classified as to its type and position using the attributes. It can be described in the element content using a simple list of terms mentioning each recognizable element of the figure. (In a future iteration of WLV, a controlled vocabulary of visual elements commonly found on wine labels will be made available for this purpose.) </a:documentation>
+    <a:documentation>(figure) Any visual, figurative element on the label. The label is classified as to its type and position using the attributes. It can be described in the element content using a simple list of terms mentioning each recognizable element of the figure. (In a future iteration of WLV, a controlled vocabulary of visual elements commonly found on wine labels will be made available for this purpose.)</a:documentation>
     <element>
       <name ns="">figure</name>
-      <text/>
-      <ref name="figureNum"/>
-      <ref name="figureType"/>
+      <text />
+      <ref name="figureNum" />
+      <ref name="figureType" />
       <optional>
-        <ref name="figurePosition"/>
+        <ref name="figurePosition" />
       </optional>
     </element>
   </define>
   <define name="figureNum">
-	<a:documentation>(figure number) Allows to number several figures for better identification. </a:documentation>
+    <a:documentation>(figure number) Allows to number several figures for better identification.</a:documentation>
     <attribute>
       <name ns="">figureNum</name>
-      <data type="int"/>
+      <data type="int" />
     </attribute>
   </define>
   <define name="figureType">
-	<a:documentation>(figure type) Allows a simple classification of figures into common types. </a:documentation>
+    <a:documentation>(figure type) Allows a simple classification of figures into common types.</a:documentation>
     <attribute>
       <name ns="">figureType</name>
       <choice>
         <value>symbolic</value>
-		<a:documentation>(figure type: symbolic) Used for any figure that uses realistic elements in a stylized manner. </a:documentation>
+        <a:documentation>(figure type: symbolic) Used for any figure that uses realistic elements in a stylized manner.</a:documentation>
         <value>realistic</value>
-		<a:documentation>(figure type: realistic) Used for any figure that represents elements from the real world in a recognizable, realistic manner. </a:documentation>
+        <a:documentation>(figure type: realistic) Used for any figure that represents elements from the real world in a recognizable, realistic manner.</a:documentation>
         <value>abstract</value>
-		<a:documentation>(figure type: abstract) Used for any figure that predominantly uses abstract shapes, forms and lines without representing a clearly-recognizable element from the real world. </a:documentation>
+        <a:documentation>(figure type: abstract) Used for any figure that predominantly uses abstract shapes, forms and lines without representing a clearly-recognizable element from the real world.</a:documentation>
         <value>seal</value>
-		<a:documentation>(figure type: seal) Used for any representation of a seal. </a:documentation>
+        <a:documentation>(figure type: seal) Used for any representation of a seal.</a:documentation>
         <value>coat-of-arms</value>
-		<a:documentation>(figure type: coat-of-arms) Used for any representation of a coat of arms. </a:documentation>
+        <a:documentation>(figure type: coat-of-arms) Used for any representation of a coat of arms.</a:documentation>
         <value>symbolic</value>
-		<a:documentation>(figure type: other) To be used sparingly for any kind of figure that eludes classification. </a:documentation>
+        <a:documentation>(figure type: other) To be used sparingly for any kind of figure that eludes classification.</a:documentation>
       </choice>
     </attribute>
   </define>
   <define name="figurePosition">
-    <a:documentation>(figure position) The position of the figure on the label surface, in a grid of nine quadrants. The quadrants are numbered like on the number-pad of a phone, starting at the top left with 1 and ending at the bottom right with 9. Any quadrant that the figure covers to a significant extent is included in the position description. (The textual designators are still valid, but will be deprecated.) </a:documentation>
+    <a:documentation>(figure position) The position of the figure on the label surface, in a grid of nine quadrants. The quadrants are numbered like on the number-pad of a phone, starting at the top left with 1 and ending at the bottom right with 9. Any quadrant that the figure covers to a significant extent is included in the position description. (The textual designators are still valid, but will be deprecated.)</a:documentation>
     <attribute>
       <name ns="">figurePosition</name>
       <choice>
-        <data type="int"/>
-		<a:documentation>(figurePosition: integer) Numbers of quadrants covered by the figure. </a:documentation>
+        <data type="int" />
+        <a:documentation>(figurePosition: integer) Numbers of quadrants covered by the figure.</a:documentation>
         <value>upper-left</value>
         <value>upper-right</value>
         <value>upper-center</value>
@@ -498,7 +496,7 @@
           <value>red</value>
           <value>black</value>
           <value>larger</value>
-          <text/>
+          <text />
         </choice>
       </attribute>
     </optional>
@@ -530,64 +528,64 @@
       <name ns="">textual</name>
       <interleave>
         <optional>
-          <ref name="wineMillesime"/>
+          <ref name="wineMillesime" />
         </optional>
         <zeroOrMore>
-          <ref name="wineOrigin"/>
+          <ref name="wineOrigin" />
         </zeroOrMore>
         <zeroOrMore>
-          <ref name="wineGrapes"/>
+          <ref name="wineGrapes" />
         </zeroOrMore>
         <zeroOrMore>
-          <ref name="wineTaste"/>
+          <ref name="wineTaste" />
         </zeroOrMore>
         <zeroOrMore>
-          <ref name="wineAging"/>
+          <ref name="wineAging" />
         </zeroOrMore>
         <zeroOrMore>
-          <ref name="wineOther"/>
+          <ref name="wineOther" />
         </zeroOrMore>
         <zeroOrMore>
-          <ref name="qualityGrapes"/>
+          <ref name="qualityGrapes" />
         </zeroOrMore>
         <zeroOrMore>
-          <ref name="qualityLevel"/>
+          <ref name="qualityLevel" />
         </zeroOrMore>
         <zeroOrMore>
-          <ref name="qualityAward"/>
+          <ref name="qualityAward" />
         </zeroOrMore>
         <zeroOrMore>
-          <ref name="qualityLabel"/>
+          <ref name="qualityLabel" />
         </zeroOrMore>
         <zeroOrMore>
-          <ref name="qualityProduction"/>
+          <ref name="qualityProduction" />
         </zeroOrMore>
         <zeroOrMore>
-          <ref name="qualityHistorical"/>
+          <ref name="qualityHistorical" />
         </zeroOrMore>
         <zeroOrMore>
-          <ref name="agent"/>
+          <ref name="agent" />
         </zeroOrMore>
         <zeroOrMore>
-          <ref name="location"/>
+          <ref name="location" />
         </zeroOrMore>
         <optional>
-          <ref name="alcohol"/>
+          <ref name="alcohol" />
         </optional>
         <optional>
-          <ref name="volume"/>
+          <ref name="volume" />
         </optional>
         <optional>
-          <ref name="controlNumber"/>
+          <ref name="controlNumber" />
         </optional>
         <optional>
-          <ref name="barrelNumber"/>
+          <ref name="barrelNumber" />
         </optional>
         <optional>
-          <ref name="labelNumber"/>
+          <ref name="labelNumber" />
         </optional>
         <zeroOrMore>
-          <ref name="otherText"/>
+          <ref name="otherText" />
         </zeroOrMore>
       </interleave>
     </element>
@@ -595,38 +593,38 @@
   <define name="wineMillesime">
     <element>
       <name ns="">wineMillesime</name>
-      <text/>
-      <ref name="wineMillesimeNorm"/>
-      <ref name="fontAttributes"/>
+      <text />
+      <ref name="wineMillesimeNorm" />
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="wineMillesimeNorm">
     <attribute>
       <name ns="">wineMillesimeNorm</name>
-      <data type="int"/>
+      <data type="int" />
     </attribute>
   </define>
   <define name="wineOrigin">
     <element>
       <name ns="">wineOrigin</name>
-      <text/>
-      <ref name="wineOriginType"/>
+      <text />
+      <ref name="wineOriginType" />
       <optional>
-        <ref name="wineOriginNorm"/>
+        <ref name="wineOriginNorm" />
       </optional>
       <optional>
-        <ref name="wineOriginLocality"/>
+        <ref name="wineOriginLocality" />
       </optional>
       <optional>
-        <ref name="ref"/>
+        <ref name="ref" />
       </optional>
       <optional>
-        <ref name="url"/>
+        <ref name="url" />
       </optional>
       <optional>
-        <ref name="wdw"/>
+        <ref name="wdw" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="wineOriginType">
@@ -646,27 +644,27 @@
   <define name="wineOriginNorm">
     <attribute>
       <name ns="">wineOriginNorm</name>
-      <text/>
+      <text />
     </attribute>
   </define>
   <define name="wineOriginLocality">
     <attribute>
       <name ns="">wineOriginLocality</name>
-      <text/>
+      <text />
     </attribute>
   </define>
   <define name="wineColor">
     <element>
       <name ns="">wineColor</name>
-      <text/>
-      <ref name="wineColorNorm"/>
+      <text />
+      <ref name="wineColorNorm" />
       <optional>
-        <ref name="ref"/>
+        <ref name="ref" />
       </optional>
       <optional>
-        <ref name="wdw"/>
+        <ref name="wdw" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="wineColorNorm">
@@ -683,15 +681,15 @@
   <define name="wineGrapes">
     <element>
       <name ns="">wineGrapes</name>
-      <text/>
-      <ref name="wineGrapesNorm"/>
+      <text />
+      <ref name="wineGrapesNorm" />
       <optional>
-        <ref name="ref"/>
+        <ref name="ref" />
       </optional>
       <optional>
-        <ref name="wdw"/>
+        <ref name="wdw" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="wineGrapesNorm">
@@ -706,15 +704,15 @@
   <define name="wineTaste">
     <element>
       <name ns="">wineTaste</name>
-      <text/>
-      <ref name="wineTasteNorm"/>
+      <text />
+      <ref name="wineTasteNorm" />
       <optional>
-        <ref name="ref"/>
+        <ref name="ref" />
       </optional>
       <optional>
-        <ref name="wdw"/>
+        <ref name="wdw" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="wineTasteNorm">
@@ -732,15 +730,15 @@
   <define name="wineAging">
     <element>
       <name ns="">wineAging</name>
-      <text/>
-      <ref name="wineAgingNorm"/>
+      <text />
+      <ref name="wineAgingNorm" />
       <optional>
-        <ref name="ref"/>
+        <ref name="ref" />
       </optional>
       <optional>
-        <ref name="wdw"/>
+        <ref name="wdw" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="wineAgingNorm">
@@ -755,14 +753,14 @@
   <define name="wineOther">
     <element>
       <name ns="">wineOther</name>
-      <text/>
+      <text />
       <optional>
-        <ref name="wineOtherType"/>
+        <ref name="wineOtherType" />
       </optional>
       <optional>
-        <ref name="ref"/>
+        <ref name="ref" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="wineOtherType">
@@ -779,7 +777,7 @@
     <attribute>
       <name ns="">wdw</name>
       <choice>
-        <text/>
+        <text />
         <value>http://wdw.uni-trier.de/onlinewb/index.php3?ID</value>
       </choice>
     </attribute>
@@ -787,17 +785,17 @@
   <define name="qualityGrapes">
     <element>
       <name ns="">qualityGrapes</name>
-      <text/>
+      <text />
       <optional>
-        <ref name="ref"/>
+        <ref name="ref" />
       </optional>
       <optional>
-        <ref name="wdw"/>
+        <ref name="wdw" />
       </optional>
       <optional>
-        <ref name="qualityGrapesNorm"/>
+        <ref name="qualityGrapesNorm" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="qualityGrapesNorm">
@@ -817,17 +815,17 @@
   <define name="qualityLevel">
     <element>
       <name ns="">qualityLevel</name>
-      <text/>
+      <text />
       <optional>
-        <ref name="ref"/>
+        <ref name="ref" />
       </optional>
       <optional>
-        <ref name="wdw"/>
+        <ref name="wdw" />
       </optional>
       <optional>
-        <ref name="qualityLevelNorm"/>
+        <ref name="qualityLevelNorm" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="qualityLevelNorm">
@@ -845,17 +843,17 @@
   <define name="qualityAward">
     <element>
       <name ns="">qualityAward</name>
-      <text/>
+      <text />
       <optional>
-        <ref name="ref"/>
+        <ref name="ref" />
       </optional>
       <optional>
-        <ref name="wdw"/>
+        <ref name="wdw" />
       </optional>
       <optional>
-        <ref name="qualityAwardNorm"/>
+        <ref name="qualityAwardNorm" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="qualityAwardNorm">
@@ -871,17 +869,17 @@
   <define name="qualityLabel">
     <element>
       <name ns="">qualityLabel</name>
-      <text/>
+      <text />
       <optional>
-        <ref name="ref"/>
+        <ref name="ref" />
       </optional>
       <optional>
-        <ref name="wdw"/>
+        <ref name="wdw" />
       </optional>
       <optional>
-        <ref name="qualityLabelType"/>
+        <ref name="qualityLabelType" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="qualityLabelType">
@@ -897,17 +895,17 @@
   <define name="qualityProduction">
     <element>
       <name ns="">qualityProduction</name>
-      <text/>
+      <text />
       <optional>
-        <ref name="ref"/>
+        <ref name="ref" />
       </optional>
       <optional>
-        <ref name="wdw"/>
+        <ref name="wdw" />
       </optional>
       <optional>
-        <ref name="qualityProductionNorm"/>
+        <ref name="qualityProductionNorm" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="qualityProductionNorm">
@@ -922,28 +920,28 @@
   <define name="qualityHistorical">
     <element>
       <name ns="">qualityHistorical</name>
-      <text/>
+      <text />
       <optional>
-        <ref name="wdw"/>
+        <ref name="wdw" />
       </optional>
       <optional>
-        <ref name="ref"/>
+        <ref name="ref" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="agent">
     <element>
       <name ns="">agent</name>
-      <text/>
-      <ref name="agentRole"/>
+      <text />
+      <ref name="agentRole" />
       <optional>
-        <ref name="ref"/>
+        <ref name="ref" />
       </optional>
       <optional>
-        <ref name="url"/>
+        <ref name="url" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="agentRole">
@@ -962,22 +960,22 @@
   <define name="location">
     <element>
       <name ns="">location</name>
-      <text/>
-      <ref name="locationRole"/>
-      <ref name="locationType"/>
+      <text />
+      <ref name="locationRole" />
+      <ref name="locationType" />
       <optional>
-        <ref name="locationNorm"/>
+        <ref name="locationNorm" />
       </optional>
       <optional>
-        <ref name="locationPosition"/>
+        <ref name="locationPosition" />
       </optional>
       <optional>
-        <ref name="figureNum"/>
+        <ref name="figureNum" />
       </optional>
       <optional>
-        <ref name="ref"/>
+        <ref name="ref" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="locationRole">
@@ -1007,7 +1005,7 @@
   <define name="locationNorm">
     <attribute>
       <name ns="">locationNorm</name>
-      <text/>
+      <text />
     </attribute>
   </define>
   <define name="locationPosition">
@@ -1022,49 +1020,49 @@
   <define name="alcohol">
     <element>
       <name ns="">alcohol</name>
-      <text/>
-      <ref name="alcoholNorm"/>
-      <ref name="fontAttributes"/>
+      <text />
+      <ref name="alcoholNorm" />
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="alcoholNorm">
     <attribute>
       <name ns="">alcoholNorm</name>
-      <data type="int"/>
+      <data type="int" />
     </attribute>
   </define>
   <define name="volume">
     <element>
       <name ns="">volume</name>
-      <text/>
-      <ref name="volumeNorm"/>
-      <ref name="fontAttributes"/>
+      <text />
+      <ref name="volumeNorm" />
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="volumeNorm">
     <attribute>
       <name ns="">volumeNorm</name>
-      <data type="int"/>
+      <data type="int" />
     </attribute>
   </define>
   <define name="controlNumber">
     <element>
       <name ns="">controlNumber</name>
-      <text/>
+      <text />
       <optional>
-        <ref name="ref"/>
+        <ref name="ref" />
       </optional>
       <optional>
-        <ref name="controlNumberType"/>
+        <ref name="controlNumberType" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="controlNumberType">
     <attribute>
       <name ns="">controlNumberType</name>
       <choice>
-        <text/>
+        <text />
         <value>Amtliche Prüfnummer (Q480240)</value>
         <value>Losnummer</value>
         <value>other</value>
@@ -1074,27 +1072,27 @@
   <define name="barrelNumber">
     <element>
       <name ns="">barrelNumber</name>
-      <text/>
-      <ref name="fontAttributes"/>
+      <text />
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="labelNumber">
     <element>
       <name ns="">labelNumber</name>
-      <text/>
-      <ref name="fontAttributes"/>
+      <text />
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="otherText">
     <element>
       <name ns="">otherText</name>
-      <ref name="textType"/>
-      <ref name="textPosition"/>
-      <text/>
+      <ref name="textType" />
+      <ref name="textPosition" />
+      <text />
       <optional>
-        <ref name="figureNum"/>
+        <ref name="figureNum" />
       </optional>
-      <ref name="fontAttributes"/>
+      <ref name="fontAttributes" />
     </element>
   </define>
   <define name="textType">
@@ -1125,16 +1123,16 @@
     <element>
       <name ns="">provenance</name>
       <optional>
-        <ref name="dating"/>
+        <ref name="dating" />
       </optional>
       <optional>
-        <ref name="source"/>
+        <ref name="source" />
       </optional>
       <optional>
-        <ref name="scan"/>
+        <ref name="scan" />
       </optional>
       <optional>
-        <ref name="conservation"/>
+        <ref name="conservation" />
       </optional>
     </element>
   </define>
@@ -1142,38 +1140,38 @@
     <element>
       <name ns="">dating</name>
       <optional>
-        <ref name="year"/>
+        <ref name="year" />
       </optional>
       <optional>
-        <ref name="notBefore"/>
+        <ref name="notBefore" />
       </optional>
       <optional>
-        <ref name="notAfter"/>
+        <ref name="notAfter" />
       </optional>
       <optional>
-        <ref name="certainty"/>
+        <ref name="certainty" />
       </optional>
       <optional>
-        <text/>
+        <text />
       </optional>
     </element>
   </define>
   <define name="year">
     <attribute>
       <name ns="">year</name>
-      <data type="gYear"/>
+      <data type="gYear" />
     </attribute>
   </define>
   <define name="notBefore">
     <attribute>
       <name ns="">notBefore</name>
-      <data type="int"/>
+      <data type="int" />
     </attribute>
   </define>
   <define name="notAfter">
     <attribute>
       <name ns="">notAfter</name>
-      <data type="int"/>
+      <data type="int" />
     </attribute>
   </define>
   <define name="certainty">
@@ -1190,26 +1188,26 @@
   <define name="source">
     <element>
       <name ns="">source</name>
-      <text/>
+      <text />
       <optional>
-        <ref name="year"/>
+        <ref name="year" />
       </optional>
     </element>
   </define>
   <define name="scan">
     <element>
       <name ns="">scan</name>
-      <ref name="scanID"/>
+      <ref name="scanID" />
       <optional>
-        <text/>
+        <text />
       </optional>
     </element>
   </define>
   <define name="conservation">
     <element>
       <name ns="">conservation</name>
-      <ref name="conservationNorm"/>
-      <text/>
+      <ref name="conservationNorm" />
+      <text />
     </element>
   </define>
   <define name="conservationNorm">

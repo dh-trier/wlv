@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="wlv">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="metadata"/>
+        <xs:element ref="label"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="labelID"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="labelID">
+    <xs:annotation>
+      <xs:documentation>A unique identifier for the label.</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="labelID" use="required"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="ref">
+    <xs:attribute name="ref" use="required"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="url">
+    <xs:attribute name="url" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="metadata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="collection"/>
+        <xs:element ref="curation"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="licence"/>
+        <xs:element minOccurs="0" ref="collectionContext"/>
+        <xs:element minOccurs="0" ref="comments"/>
+      </xs:sequence>
+      <xs:attribute name="url"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="collection">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="collectionID"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="collectionID">
+    <xs:annotation>
+      <xs:documentation>A unique identifier for the wine label collection.</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="collectionID" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="curation">
+    <xs:complexType>
+      <xs:attributeGroup ref="curatorID"/>
+      <xs:attributeGroup ref="curationDate"/>
+      <xs:attribute name="curationUpdate">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:int xs:date"/>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="curatorID">
+    <xs:annotation>
+      <xs:documentation>A unique identifier for the person that has curated the wine label description.</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="curatorID" use="required"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="curationDate">
+    <xs:annotation>
+      <xs:documentation>The date (or year) when the wine label description was created.</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="curationDate" use="required">
+      <xs:simpleType>
+        <xs:union memberTypes="xs:int xs:date"/>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="curationUpdate">
+    <xs:annotation>
+      <xs:documentation>The date (or year) when the wine label description was last updated.</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="curationUpdate" use="required">
+      <xs:simpleType>
+        <xs:union memberTypes="xs:int xs:date"/>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="collectionContext">
+    <xs:complexType mixed="true">
+      <xs:attribute name="pageID"/>
+      <xs:attribute name="scanID"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="pageID">
+    <xs:attribute name="pageID" use="required"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="scanID">
+    <xs:attribute name="scanID" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="licence">
+    <xs:complexType mixed="true">
+      <xs:attribute name="url"/>
+      <xs:attribute name="licenceAbbr"/>
+      <xs:attributeGroup ref="licenceScope"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="licenceAbbr">
+    <xs:attribute name="licenceAbbr" use="required"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="licenceScope">
+    <xs:attribute name="licenceScope" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="label">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="comments"/>
+        <xs:element maxOccurs="unbounded" ref="labelPart"/>
+        <xs:element minOccurs="0" ref="provenance"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="labelType"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="labelType">
+    <xs:attribute name="labelType" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="comments" type="xs:string"/>
+  <xs:element name="labelPart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="physical"/>
+        <xs:element ref="visual"/>
+        <xs:element ref="textual"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="partNum"/>
+      <xs:attributeGroup ref="partType"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="partNum">
+    <xs:attribute name="partNum" use="required" type="xs:int"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="partType">
+    <xs:attribute name="partType" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="front"/>
+          <xs:enumeration value="back"/>
+          <xs:enumeration value="neck"/>
+          <xs:enumeration value="wraparound"/>
+          <xs:enumeration value="band"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="physical">
+    <xs:complexType>
+      <xs:attributeGroup ref="shape"/>
+      <xs:attributeGroup ref="sizeH"/>
+      <xs:attributeGroup ref="sizeV"/>
+      <xs:attributeGroup ref="material"/>
+      <xs:attribute name="printingTechnique">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="lithograph"/>
+            <xs:enumeration value="offset"/>
+            <xs:enumeration value="moving-type"/>
+            <xs:enumeration value="litho+type"/>
+            <xs:enumeration value="mixed"/>
+            <xs:enumeration value="other"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="shape">
+    <xs:attribute name="shape" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="square"/>
+          <xs:enumeration value="circle"/>
+          <xs:enumeration value="rectangle"/>
+          <xs:enumeration value="oval"/>
+          <xs:enumeration value="diamond"/>
+          <xs:enumeration value="trapezoid"/>
+          <xs:enumeration value="octogon"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="sizeH">
+    <xs:attribute name="sizeH" use="required">
+      <xs:simpleType>
+        <xs:union memberTypes="xs:int">
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="tbc"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:union>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="sizeV">
+    <xs:attribute name="sizeV" use="required">
+      <xs:simpleType>
+        <xs:union memberTypes="xs:int">
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="tbc"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:union>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="material">
+    <xs:attribute name="material" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="paper"/>
+          <xs:enumeration value="plastic"/>
+          <xs:enumeration value="metal"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="printingTechnique">
+    <xs:attribute name="printingTechnique" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="lithograph"/>
+          <xs:enumeration value="offset"/>
+          <xs:enumeration value="moving-type"/>
+          <xs:enumeration value="litho+type"/>
+          <xs:enumeration value="mixed"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="visual">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="frame"/>
+        <xs:element ref="background"/>
+        <xs:element ref="figure"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frame">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="frameType"/>
+      <xs:attributeGroup ref="frameStyle"/>
+      <xs:attributeGroup ref="frameColor"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="frameStyle">
+    <xs:attribute name="frameStyle" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="lines"/>
+          <xs:enumeration value="floral"/>
+          <xs:enumeration value="pattern"/>
+          <xs:enumeration value="band"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="frameType">
+    <xs:attribute name="frameType" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="outer"/>
+          <xs:enumeration value="inner"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="frameColor">
+    <xs:attribute name="frameColor" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="background">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="backgroundStyle"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="backgroundStyle">
+    <xs:attribute name="backgroundStyle" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="pattern"/>
+          <xs:enumeration value="color"/>
+          <xs:enumeration value="none"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="figure">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="figureNum"/>
+      <xs:attributeGroup ref="figureType"/>
+      <xs:attribute name="figurePosition">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:int">
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="upper-left"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="upper-right"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="upper-center"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="upper-across"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="center-left"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="center-right"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="center-center"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="center-across"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="lower-left"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="lower-right"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="lower-center"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="lower-across"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="left-across"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="center-across"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="right-across"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="full-size"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="figureNum">
+    <xs:annotation>
+      <xs:documentation>(figure number) Allows to number several figures for better identification. </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="figureNum" use="required" type="xs:int"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="figureType">
+    <xs:annotation>
+      <xs:documentation>(figure type) Allows a simple classification of figures into common types. </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="figureType" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="symbolic">
+            <xs:annotation>
+              <xs:documentation>(figure type: symbolic) Used for any figure that uses realistic elements in a stylized manner. </xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="realistic">
+            <xs:annotation>
+              <xs:documentation>(figure type: realistic) Used for any figure that represents elements from the real world in a recognizable, realistic manner. </xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="abstract">
+            <xs:annotation>
+              <xs:documentation>(figure type: abstract) Used for any figure that predominantly uses abstract shapes, forms and lines without representing a clearly-recognizable element from the real world. </xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="seal">
+            <xs:annotation>
+              <xs:documentation>(figure type: seal) Used for any representation of a seal. </xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="coat-of-arms">
+            <xs:annotation>
+              <xs:documentation>(figure type: coat-of-arms) Used for any representation of a coat of arms. </xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="symbolic">
+            <xs:annotation>
+              <xs:documentation>(figure type: other) To be used sparingly for any kind of figure that eludes classification. </xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="figurePosition">
+    <xs:annotation>
+      <xs:documentation>(figure position) The position of the figure on the label surface, in a grid of nine quadrants. The quadrants are numbered like on the number-pad of a phone, starting at the top left with 1 and ending at the bottom right with 9. Any quadrant that the figure covers to a significant extent is included in the position description. (The textual designators are still valid, but will be deprecated.) </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="figurePosition" use="required">
+      <xs:simpleType>
+        <xs:union memberTypes="xs:int">
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="upper-left"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="upper-right"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="upper-center"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="upper-across"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="center-left"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="center-right"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="center-center"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="center-across"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="lower-left"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="lower-right"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="lower-center"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="lower-across"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="left-across"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="center-across"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="right-across"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="full-size"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:union>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="fontAttributes">
+    <xs:attribute name="fontType">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Fraktur"/>
+          <xs:enumeration value="Antiqua-Sans"/>
+          <xs:enumeration value="Antiqua-Serif"/>
+          <xs:enumeration value="Cursive"/>
+          <xs:enumeration value="Altdeutsch"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="fontManner">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="printed"/>
+          <xs:enumeration value="handwritten"/>
+          <xs:enumeration value="stamped"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="fontStyle">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="recte"/>
+          <xs:enumeration value="italics"/>
+          <xs:enumeration value="small-caps"/>
+          <xs:enumeration value="all-caps"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="fontColor"/>
+    <xs:attribute name="fontInitials">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="color:red"/>
+          <xs:enumeration value="color:black"/>
+          <xs:enumeration value="color:other"/>
+          <xs:enumeration value="size:larger"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="fontSize">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="larger"/>
+          <xs:enumeration value="normal"/>
+          <xs:enumeration value="smaller"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="textual">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="wineMillesime"/>
+        <xs:element ref="wineOrigin"/>
+        <xs:element ref="wineGrapes"/>
+        <xs:element ref="wineTaste"/>
+        <xs:element ref="wineAging"/>
+        <xs:element ref="wineOther"/>
+        <xs:element ref="qualityGrapes"/>
+        <xs:element ref="qualityLevel"/>
+        <xs:element ref="qualityAward"/>
+        <xs:element ref="qualityLabel"/>
+        <xs:element ref="qualityProduction"/>
+        <xs:element ref="qualityHistorical"/>
+        <xs:element ref="agent"/>
+        <xs:element ref="location"/>
+        <xs:element ref="alcohol"/>
+        <xs:element ref="volume"/>
+        <xs:element ref="controlNumber"/>
+        <xs:element ref="barrelNumber"/>
+        <xs:element ref="labelNumber"/>
+        <xs:element ref="otherText"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wineMillesime">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="wineMillesimeNorm"/>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="wineMillesimeNorm">
+    <xs:attribute name="wineMillesimeNorm" use="required" type="xs:int"/>
+  </xs:attributeGroup>
+  <xs:element name="wineOrigin">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="wineOriginType"/>
+      <xs:attribute name="wineOriginNorm"/>
+      <xs:attribute name="wineOriginLocality"/>
+      <xs:attribute name="ref"/>
+      <xs:attribute name="url"/>
+      <xs:attribute name="wdw"/>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="wineOriginType">
+    <xs:attribute name="wineOriginType" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="country (Land)"/>
+          <xs:enumeration value="region (Gebiet)"/>
+          <xs:enumeration value="area (Bereich)"/>
+          <xs:enumeration value="locality (Ort)"/>
+          <xs:enumeration value="winery (Weingut)"/>
+          <xs:enumeration value="vineyard (Lage)"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="wineOriginNorm">
+    <xs:attribute name="wineOriginNorm" use="required"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="wineOriginLocality">
+    <xs:attribute name="wineOriginLocality" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="wineColor">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="wineColorNorm"/>
+      <xs:attribute name="ref"/>
+      <xs:attribute name="wdw"/>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="wineColorNorm">
+    <xs:attribute name="wineColorNorm" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="red (Rotwein)"/>
+          <xs:enumeration value="white (Weisswein)"/>
+          <xs:enumeration value="rose (Rosé/Rotling)"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="wineGrapes">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="wineGrapesNorm"/>
+      <xs:attribute name="ref"/>
+      <xs:attribute name="wdw"/>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="wineGrapesNorm">
+    <xs:attribute name="wineGrapesNorm" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Riesling"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="wineTaste">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="wineTasteNorm"/>
+      <xs:attribute name="ref"/>
+      <xs:attribute name="wdw"/>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="wineTasteNorm">
+    <xs:attribute name="tasteGroupNorm" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="dry (trocken)"/>
+          <xs:enumeration value="semi-dry (halbtrocken feinherb)"/>
+          <xs:enumeration value="semi-sweet (lieblich)"/>
+          <xs:enumeration value="sweet (süß)"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="wineAging">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="wineAgingNorm"/>
+      <xs:attribute name="ref"/>
+      <xs:attribute name="wdw"/>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="wineAgingNorm">
+    <xs:attribute name="wineAgingNorm" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="barrique"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="wineOther">
+    <xs:complexType mixed="true">
+      <xs:attribute name="wineOtherType">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="additives"/>
+            <xs:enumeration value="usage"/>
+            <xs:enumeration value="other"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ref"/>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="wineOtherType">
+    <xs:attribute name="wineOtherType" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="additives"/>
+          <xs:enumeration value="usage"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="wdw">
+    <xs:attribute name="wdw" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="qualityGrapes">
+    <xs:complexType mixed="true">
+      <xs:attribute name="ref"/>
+      <xs:attribute name="wdw"/>
+      <xs:attribute name="qualityGrapesNorm">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="Kabinett"/>
+            <xs:enumeration value="Spätlese"/>
+            <xs:enumeration value="Auslese"/>
+            <xs:enumeration value="Beerenauslese"/>
+            <xs:enumeration value="Trockenbeerenauslese"/>
+            <xs:enumeration value="Eiswein"/>
+            <xs:enumeration value="other"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="qualityGrapesNorm">
+    <xs:attribute name="qualityGrapesNorm" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Kabinett"/>
+          <xs:enumeration value="Spätlese"/>
+          <xs:enumeration value="Auslese"/>
+          <xs:enumeration value="Beerenauslese"/>
+          <xs:enumeration value="Trockenbeerenauslese"/>
+          <xs:enumeration value="Eiswein"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="qualityLevel">
+    <xs:complexType mixed="true">
+      <xs:attribute name="ref"/>
+      <xs:attribute name="wdw"/>
+      <xs:attribute name="qualityLevelNorm">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="Tafelwein/Wein"/>
+            <xs:enumeration value="Landwein"/>
+            <xs:enumeration value="Qualitätswein"/>
+            <xs:enumeration value="Prädikatswein"/>
+            <xs:enumeration value="other"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="qualityLevelNorm">
+    <xs:attribute name="qualityLevelNorm" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Tafelwein/Wein"/>
+          <xs:enumeration value="Landwein"/>
+          <xs:enumeration value="Qualitätswein"/>
+          <xs:enumeration value="Prädikatswein"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="qualityAward">
+    <xs:complexType mixed="true">
+      <xs:attribute name="ref"/>
+      <xs:attribute name="wdw"/>
+      <xs:attribute name="qualityAwardNorm">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="Weinprämierung"/>
+            <xs:enumeration value="Gütezeichen"/>
+            <xs:enumeration value="other"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="qualityAwardNorm">
+    <xs:attribute name="qualityAwardNorm" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Weinprämierung"/>
+          <xs:enumeration value="Gütezeichen"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="qualityLabel">
+    <xs:complexType mixed="true">
+      <xs:attribute name="ref"/>
+      <xs:attribute name="wdw"/>
+      <xs:attribute name="qualityLabelType">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="vineyard"/>
+            <xs:enumeration value="grapes"/>
+            <xs:enumeration value="other"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="qualityLabelType">
+    <xs:attribute name="qualityLabelType" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="vineyard"/>
+          <xs:enumeration value="grapes"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="qualityProduction">
+    <xs:complexType mixed="true">
+      <xs:attribute name="ref"/>
+      <xs:attribute name="wdw"/>
+      <xs:attribute name="qualityProductionNorm">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="on-location"/>
+            <xs:enumeration value="other"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="qualityProductionNorm">
+    <xs:attribute name="qualityProductionNorm" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="on-location"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="qualityHistorical">
+    <xs:complexType mixed="true">
+      <xs:attribute name="wdw"/>
+      <xs:attribute name="ref"/>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="agent">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="agentRole"/>
+      <xs:attribute name="ref"/>
+      <xs:attribute name="url"/>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="agentRole">
+    <xs:attribute name="agentRole" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="producer/bottler"/>
+          <xs:enumeration value="distributor/importer/exporter"/>
+          <xs:enumeration value="cooperative/association"/>
+          <xs:enumeration value="printer"/>
+          <xs:enumeration value="artist"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="location">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="locationRole"/>
+      <xs:attributeGroup ref="locationType"/>
+      <xs:attribute name="locationNorm"/>
+      <xs:attribute name="locationPosition">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="standalone"/>
+            <xs:enumeration value="in-figure"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="figureNum" type="xs:int"/>
+      <xs:attribute name="ref"/>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="locationRole">
+    <xs:attribute name="locationRole" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="producer/bottler"/>
+          <xs:enumeration value="distributor/importer/exporter"/>
+          <xs:enumeration value="cooperative/association"/>
+          <xs:enumeration value="printer"/>
+          <xs:enumeration value="artist"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="locationType">
+    <xs:attribute name="locationType" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="locality"/>
+          <xs:enumeration value="region"/>
+          <xs:enumeration value="country"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="locationNorm">
+    <xs:attribute name="locationNorm" use="required"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="locationPosition">
+    <xs:attribute name="locationPosition" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="standalone"/>
+          <xs:enumeration value="in-figure"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="alcohol">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="alcoholNorm"/>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="alcoholNorm">
+    <xs:attribute name="alcoholNorm" use="required" type="xs:int"/>
+  </xs:attributeGroup>
+  <xs:element name="volume">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="volumeNorm"/>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="volumeNorm">
+    <xs:attribute name="volumeNorm" use="required" type="xs:int"/>
+  </xs:attributeGroup>
+  <xs:element name="controlNumber">
+    <xs:complexType mixed="true">
+      <xs:attribute name="ref"/>
+      <xs:attribute name="controlNumberType"/>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="controlNumberType">
+    <xs:attribute name="controlNumberType" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="barrelNumber">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="labelNumber">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="otherText">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="textType"/>
+      <xs:attributeGroup ref="textPosition"/>
+      <xs:attribute name="figureNum" type="xs:int"/>
+      <xs:attributeGroup ref="fontAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="textType">
+    <xs:attribute name="textType" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="coat-text"/>
+          <xs:enumeration value="motto"/>
+          <xs:enumeration value="quotation"/>
+          <xs:enumeration value="slogan"/>
+          <xs:enumeration value="statement"/>
+          <xs:enumeration value="copyright"/>
+          <xs:enumeration value="vineyard (Lage)"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="textPosition">
+    <xs:attribute name="textPosition" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="stand-alone"/>
+          <xs:enumeration value="in-figure"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="provenance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="dating"/>
+        <xs:element minOccurs="0" ref="source"/>
+        <xs:element minOccurs="0" ref="scan"/>
+        <xs:element minOccurs="0" ref="conservation"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dating">
+    <xs:complexType mixed="true">
+      <xs:attribute name="year" type="xs:gYear"/>
+      <xs:attribute name="notBefore" type="xs:int"/>
+      <xs:attribute name="notAfter" type="xs:int"/>
+      <xs:attribute name="certainty">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="source"/>
+            <xs:enumeration value="evidence"/>
+            <xs:enumeration value="estimate"/>
+            <xs:enumeration value="low"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="year">
+    <xs:attribute name="year" use="required" type="xs:gYear"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="notBefore">
+    <xs:attribute name="notBefore" use="required" type="xs:int"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="notAfter">
+    <xs:attribute name="notAfter" use="required" type="xs:int"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="certainty">
+    <xs:attribute name="certainty" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="source"/>
+          <xs:enumeration value="evidence"/>
+          <xs:enumeration value="estimate"/>
+          <xs:enumeration value="low"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="source">
+    <xs:complexType mixed="true">
+      <xs:attribute name="year" type="xs:gYear"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="scan">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="scanID"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="conservation">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="conservationNorm"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="conservationNorm">
+    <xs:attribute name="conservationNorm" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="new"/>
+          <xs:enumeration value="like new"/>
+          <xs:enumeration value="very good"/>
+          <xs:enumeration value="good"/>
+          <xs:enumeration value="acceptable"/>
+          <xs:enumeration value="damaged"/>
+          <xs:enumeration value="incomplete"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+</xs:schema>
