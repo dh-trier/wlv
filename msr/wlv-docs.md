@@ -9,7 +9,7 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 1. [Elements](#Elements)
 2. [Attributes](#Attributes)
 
-## 1. Elements included in the WLV
+##Elements
 
 
 ### agent
@@ -299,7 +299,7 @@ The root element in a label description using the Wine Label Vocabulary.
 - Child element(s): metadata, label
 - Attribute(s): labelID
 
-## 2. Attributes included in the WLV
+##Attributes
 
 
 ### agentRole

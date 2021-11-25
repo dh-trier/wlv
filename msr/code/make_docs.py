@@ -33,9 +33,9 @@ For more information on the WLV, see https://github.com/dh-trier/wlv\n\n\
 ## Contents\n\n\
 1. [Elements](#Elements)\n\
 2. [Attributes](#Attributes)\n\n\
-## 1. Elements included in the WLV\n\n\
+##Elements\n\n\
 <elements/>\n\n\
-## 2. Attributes included in the WLV\n\n\
+##Attributes\n\n\
 <attributes/>\n\
 "
 
