@@ -66,26 +66,41 @@ def get_names(rng, ns):
     return elm_names, att_names
     
 
-def extract_elminfo(rng, elm_names, ns):
+def extract_elminfo(rng, elm_names, ns, att_names):
     """
     Extracts relevant information for each element from the RNG file.
     Returns a dictionary that holds the elements in alphabetical order. 
     TODO: Write the XPath expressions for more pieces of information.
-    -- Which child elements can the element contain?
-    -- Which attributes can the element take?
     -- Is the element mandatory or optional etc.?
     """
     elements = {}
     for elm in elm_names: 
         elements[elm] = {}
+        # documentation
         try: 
             elements[elm]["documentation"] = rng.xpath("//rng:define[@name='"+elm+"']/a:documentation/text()", namespaces=ns)[0]
         except: 
             elements[elm]["documentation"] = "(no data)" 
         
+        # attributes and children
+        try: 
+            hits = rng.xpath("//rng:define[@name='"+elm+"']/rng:element//rng:ref/@name", namespaces=ns)
+            atts = [hit for hit in hits if hit in att_names]
+            elms = [hit for hit in hits if hit in elm_names]
+            # atts
+            elements[elm]["attributes"] = ", ".join(atts)
+            if len(atts) == 0: 
+                elements[elm]["attributes"] = "This element has no attributes."
+            # children
+            elements[elm]["children"] = ", ".join(elms)
+            if len(elms) == 0: 
+                elements[elm]["children"] = "This element has no children."
+        except: 
+            elements[elm]["attributes"] = "No data found."
+            elements[elm]["children"] = "No data found."
+
         elements[elm]["frequency"] = "tbc."
-        elements[elm]["children"] = "tbc."
-        elements[elm]["attributes"] = "tbc."
+        #elements[elm]["children"] = "tbc."
     
     elements_sorted = dict(sorted(elements.items()))
     return elements_sorted
@@ -102,13 +117,25 @@ def extract_attinfo(rng, att_names, ns):
     attributes = {}
     for att in att_names: 
         attributes[att] = {}
+        
+        # documentation
         try: 
             attributes[att]["documentation"] = rng.xpath("//rng:define[@name='"+att+"']/a:documentation/text()", namespaces=ns)[0]
         except: 
             attributes[att]["documentation"] = "(no data)"
+            
+        # values
+        try: 
+            vals = rng.xpath("//rng:define[@name='"+att+"']//rng:value/text()", namespaces=ns)
+            attributes[att]["values"] = ", ".join(vals)
+            if len(vals) == 0: 
+                attributes[att]["values"] = "This element has no default values."
+        except: 
+            attributes[att]["attributes"] = "No data found."
+
         
         attributes[att]["frequency"] = "tbc."
-        attributes[att]["values"] = "tbc."
+        #attributes[att]["values"] = "tbc."
             
     attributes_sorted = dict(sorted(attributes.items()))
     return attributes_sorted
@@ -124,9 +151,8 @@ def format_elements(elements):
     for name,content in elements.items(): 
         elm_md = ["\n### "+name,
                     "\n" + content["documentation"]+"\n",
-                    "- Frequency: "+content["frequency"],
-                    "- Children: "+content["children"],
-                    "- Attributes: "+content["attributes"]]
+                    "- Child element(s): "+content["children"],
+                    "- Attribute(s): "+content["attributes"]]
         elements_md.append("\n".join(elm_md))
     elements_md = "\n".join(elements_md)
     return elements_md
@@ -141,7 +167,6 @@ def format_attributes(attributes):
     for name,content in attributes.items(): 
         att_md = ["\n### "+name,
                     content["documentation"]+"\n",
-                    "- Frequency: "+content["frequency"],
                     "- Values: "+content["values"]]
         attributes_md.append("\n".join(att_md))       
     attributes_md = "\n".join(attributes_md)
@@ -176,7 +201,7 @@ def main():
           'a':'http://relaxng.org/ns/compatibility/annotations/1.0'}
     rng = open_file(rngfile=join("..", "..", "schemas", "wlv-label-schema.rng")) 
     elm_names, att_names = get_names(rng, ns)
-    elements = extract_elminfo(rng, elm_names, ns)
+    elements = extract_elminfo(rng, elm_names, ns, att_names)
     attributes = extract_attinfo(rng, att_names, ns)
     elements = format_elements(elements)
     attributes = format_attributes(attributes)

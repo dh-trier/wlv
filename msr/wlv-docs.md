@@ -11,329 +11,288 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): agentRole, ref, url
 
 ### alcohol
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): alcoholNorm
 
 ### background
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): backgroundStyle
 
 ### barrelNumber
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): This element has no attributes.
 
 ### collection
 
 The wine label collection the label belongs to.
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): collectionID
 
 ### collectionContext
 
 Any information that describes the individual label in the context of the collection, for example its location in the collection.
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): pageID, scanID
 
 ### comments
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): This element has no attributes.
 
 ### conservation
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): conservationNorm
 
 ### controlNumber
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): ref, controlNumberType
 
 ### curation
 
 Information on the curation process of the wine label description.
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): curatorID, curationDate, curationUpdate
 
 ### dating
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): year, notBefore, notAfter, certainty
 
 ### figure
 
 (figure) Any visual, figurative element on the label. The label is classified as to its type and position using the attributes. It can be described in the element content using a simple list of terms mentioning each recognizable element of the figure. (In a future iteration of WLV, a controlled vocabulary of visual elements commonly found on wine labels will be made available for this purpose.)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): figureNum, figureType, figurePosition
 
 ### frame
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): frameType, frameStyle, frameColor
 
 ### label
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): comments, labelPart, provenance
+- Attribute(s): labelType
 
 ### labelNumber
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): This element has no attributes.
 
 ### labelPart
 
 (label part) Any physically separate part of the label.
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): physical, visual, textual
+- Attribute(s): partNum, partType
 
 ### licence
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): url, licenceAbbr, licenceScope
 
 ### location
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): locationRole, locationType, locationNorm, locationPosition, figureNum, ref
 
 ### metadata
 
 One of two mandatory top-level elements. Contains metadata related to the label description itself.
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): collection, curation, licence, collectionContext, comments
+- Attribute(s): url
 
 ### otherText
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): textType, textPosition, figureNum
 
 ### physical
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): shape, sizeH, sizeV, material, printingTechnique
 
 ### provenance
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): dating, source, scan, conservation
+- Attribute(s): This element has no attributes.
 
 ### qualityAward
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): ref, wdw, qualityAwardNorm
 
 ### qualityGrapes
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): ref, wdw, qualityGrapesNorm
 
 ### qualityHistorical
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): wdw, ref
 
 ### qualityLabel
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): ref, wdw, qualityLabelType
 
 ### qualityLevel
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): ref, wdw, qualityLevelNorm
 
 ### qualityProduction
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): ref, wdw, qualityProductionNorm
 
 ### scan
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): scanID
 
 ### source
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): year
 
 ### textual
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): wineMillesime, wineOrigin, wineGrapes, wineTaste, wineAging, wineOther, qualityGrapes, qualityLevel, qualityAward, qualityLabel, qualityProduction, qualityHistorical, agent, location, alcohol, volume, controlNumber, barrelNumber, labelNumber, otherText
+- Attribute(s): This element has no attributes.
 
 ### visual
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): frame, background, figure
+- Attribute(s): This element has no attributes.
 
 ### volume
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): volumeNorm
 
 ### wineAging
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): wineAgingNorm, ref, wdw
 
 ### wineColor
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): wineColorNorm, ref, wdw
 
 ### wineGrapes
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): wineGrapesNorm, ref, wdw
 
 ### wineMillesime
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): wineMillesimeNorm
 
 ### wineOrigin
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): wineOriginType, wineOriginNorm, wineOriginLocality, ref, url, wdw
 
 ### wineOther
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): wineOtherType, ref
 
 ### wineTaste
 
 (no data)
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): This element has no children.
+- Attribute(s): ref, wdw
 
 ### wlv
 
 The root element in a label description using the Wine Label Vocabulary.
 
-- Frequency: tbc.
-- Children: tbc.
-- Attributes: tbc.
+- Child element(s): metadata, label
+- Attribute(s): labelID
 
 ## 2. Attributes included in the WLV
 
@@ -341,371 +300,309 @@ The root element in a label description using the Wine Label Vocabulary.
 ### agentRole
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: producer/bottler, distributor/importer/exporter, cooperative/association, printer, artist, other
 
 ### alcoholNorm
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### backgroundStyle
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: pattern, color, none
 
 ### certainty
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: source, evidence, estimate, low
 
 ### collectionID
 A unique identifier for the wine label collection.
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### conservationNorm
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: new, like new, very good, good, acceptable, damaged, incomplete
 
 ### controlNumberType
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: Amtliche Prüfnummer (Q480240), Losnummer, other
 
 ### curationDate
 The date (or year) when the wine label description was created.
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### curationUpdate
 The date (or year) when the wine label description was last updated.
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### curatorID
 A unique identifier for the person that has curated the wine label description.
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### figureNum
 (figure number) Allows to number several figures for better identification.
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### figurePosition
 (figure position) The position of the figure on the label surface, in a grid of nine quadrants. The quadrants are numbered like on the number-pad of a phone, starting at the top left with 1 and ending at the bottom right with 9. Any quadrant that the figure covers to a significant extent is included in the position description. (The textual designators are still valid, but will be deprecated.)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: upper-left, upper-right, upper-center, upper-across, center-left, center-right, center-center, center-across, lower-left, lower-right, lower-center, lower-across, left-across, center-across, right-across, full-size
 
 ### figureType
 (figure type) Allows a simple classification of figures into common types.
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: symbolic, realistic, abstract, seal, coat-of-arms, symbolic
 
 ### fontColor
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### fontInitials
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### fontManner
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### fontSize
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### fontStyle
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### fontType
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### frameColor
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: black, grey, gold, red, green
 
 ### frameStyle
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: lines, floral, pattern, band, other
 
 ### frameType
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: outer, inner, other
 
 ### labelID
 A unique identifier for the label.
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### labelType
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: Lageetikett, Gutsetikett, Ortsetikett, tbc, other
 
 ### licenceAbbr
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: CC BY, public domain
 
 ### licenceScope
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: all, markup, visual, metadata, textual
 
 ### locationNorm
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### locationPosition
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: standalone, in-figure
 
 ### locationRole
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: producer/bottler, distributor/importer/exporter, cooperative/association, printer, artist, other
 
 ### locationType
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: locality, region, country, other
 
 ### material
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: paper, plastic, metal
 
 ### notAfter
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### notBefore
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### pageID
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### partNum
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### partType
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: front, back, neck, wraparound, band
 
 ### printingTechnique
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: lithograph, offset, moving-type, litho+type, mixed, other
 
 ### qualityAwardNorm
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: Weinprämierung, Gütezeichen, other
 
 ### qualityGrapesNorm
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein, other
 
 ### qualityLabelType
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: vineyard, grapes, other
 
 ### qualityLevelNorm
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: Tafelwein/Wein, Landwein, Qualitätswein, Prädikatswein, other
 
 ### qualityProductionNorm
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: on-location, other
 
 ### ref
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: wikidata:, gnd:, enwiki:, dewiki:, frwiki:
 
 ### scanID
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### shape
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: square, circle, rectangle, oval, diamond, trapezoid, octogon, other
 
 ### sizeH
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: tbc
 
 ### sizeV
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: tbc
 
 ### tasteGroupNorm
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### textPosition
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: stand-alone, in-figure
 
 ### textType
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: coat-text, motto, quotation, slogan, statement, copyright, vineyard (Lage), other
 
 ### url
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: https://creativecommons.org/licenses/by/4.0/, https://github.com/dh-trier/wlv
 
 ### volumeNorm
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### wdw
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: http://wdw.uni-trier.de/onlinewb/index.php3?ID
 
 ### wineAgingNorm
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: barrique, other
 
 ### wineColorNorm
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: red (Rotwein), white (Weisswein), rose (Rosé/Rotling), other
 
 ### wineGrapesNorm
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: Riesling, other
 
 ### wineMillesimeNorm
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### wineOriginLocality
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### wineOriginNorm
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
 
 ### wineOriginType
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: country (Land), region (Gebiet), area (Bereich), locality (Ort), winery (Weingut), vineyard (Lage), other
 
 ### wineOtherType
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: additives, usage, other
 
 ### year
 (no data)
 
-- Frequency: tbc.
-- Values: tbc.
+- Values: This element has no default values.
