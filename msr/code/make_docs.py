@@ -27,14 +27,12 @@ TODO: Add table of contents with links to elements and attributes.
 """
 
 md ="\
-# The Wine Label Vocabulary: Schema Documentation\
-\
-This document documents all elements and attributes included in the Wine Label Vocabulary (WLV) in a human-readable form. This document has been generated automatically from the Relax NG schema.\
-\
-## 1. Elements included in the WLV\
-<elements/>\
-## 2. Attributes included in the WLV</h2>\
-<attributes/>\
+# The Wine Label Vocabulary: Schema Documentation\n\n\
+This document documents all elements and attributes included in the Wine Label Vocabulary (WLV) in a human-readable form. This document has been generated automatically from the Relax NG schema.\n\n\
+## 1. Elements included in the WLV\n\n\
+<elements/>\n\n\
+## 2. Attributes included in the WLV\n\n\
+<attributes/>\n\
 "
 
 
@@ -115,8 +113,8 @@ def format_elements(elements):
     """
     elements_md = []
     for name,content in elements.items(): 
-        elm_md = ["### "+name,
-                    content["documentation"],
+        elm_md = ["\n### "+name,
+                    content["documentation"]+"\n",
                     "- Frequency: "+content["frequency"],
                     "- Children: "+content["children"],
                     "- Attributes: "+content["attributes"]]
@@ -132,8 +130,8 @@ def format_attributes(attributes):
     """
     attributes_md = []
     for name,content in attributes.items(): 
-        att_md = ["### "+name,
-                    content["documentation"],
+        att_md = ["\n### "+name,
+                    content["documentation"]+"\n",
                     "- Frequency: "+content["frequency"],
                     "- Values: "+content["values"]]
         attributes_md.append("\n".join(att_md))       
