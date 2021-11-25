@@ -30,6 +30,9 @@ md ="\
 # The Wine Label Vocabulary: Schema Documentation\n\n\
 This document documents all elements and attributes included in the Wine Label Vocabulary (WLV) in a human-readable form. This document has been generated automatically from the Relax NG schema.\n\n\
 For more information on the WLV, see https://github.com/dh-trier/wlv\n\n\
+## Contents\n\n\
+1. [Elements](#Elements)\n\
+2. [Attributes](#Attributes)\n\n\
 ## 1. Elements included in the WLV\n\n\
 <elements/>\n\n\
 ## 2. Attributes included in the WLV\n\n\

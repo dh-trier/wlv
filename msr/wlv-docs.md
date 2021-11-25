@@ -4,6 +4,11 @@ This document documents all elements and attributes included in the Wine Label V
 
 For more information on the WLV, see https://github.com/dh-trier/wlv
 
+## Contents
+
+1. [Elements](#Elements)
+2. [Attributes](#Attributes)
+
 ## 1. Elements included in the WLV
 
 
