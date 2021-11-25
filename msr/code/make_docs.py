@@ -71,6 +71,9 @@ def extract_elminfo(rng, elm_names, ns):
     Extracts relevant information for each element from the RNG file.
     Returns a dictionary that holds the elements in alphabetical order. 
     TODO: Write the XPath expressions for more pieces of information.
+    -- Which child elements can the element contain?
+    -- Which attributes can the element take?
+    -- Is the element mandatory or optional etc.?
     """
     elements = {}
     for elm in elm_names: 
@@ -93,6 +96,8 @@ def extract_attinfo(rng, att_names, ns):
     Extracts relevant information for each attribute from the RNG file.
     Returns dictionary that holds the attributes in alphabetical order. 
     TODO: Write the XPath expressions for more pieces of information.
+    -- What values are default / mandatory for the attribute?
+    -- Is the attribute mandatory, optional, etc.?
     """
     attributes = {}
     for att in att_names: 
