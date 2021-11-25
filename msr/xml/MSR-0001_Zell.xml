@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+u<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <wlv labelID="MSR-0001">
   <metadata>

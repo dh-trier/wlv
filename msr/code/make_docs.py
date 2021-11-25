@@ -1,7 +1,7 @@
 """
 Script to generate human-readable documentation from the WLV schema. 
 
-Reads a Relax NG schema and builds an HTML page for viewing in the browser. 
+Reads a Relax NG schema and builds a Markdown page for viewing in the browser. 
 
 """
 
@@ -20,34 +20,21 @@ import re
 # === HTML template
 
 """
-This is simply the HTML container document that will hold the information
+This is simply the Markdown container document that will hold the information
 retrieved from the Relax NG schema file. 
+
+TODO: Add table of contents with links to elements and attributes. 
 """
 
-html ="\
-<!doctype html>\
-<html lang=\"en\">\
-<head>\
-<meta charset=\"utf-8\">\
-<title>The Wine Label Vocabulary: Schema Documentation</title>\
-<meta property=\"og:title\" content=\"The Wine Label Vocabulary: Schema Documentation\">\
-<link rel=\"stylesheet\" href=\"style.css\">\
-</head>\
-<body>\
-<h1>The Wine Label Vocabulary: Schema Documentation</h1>\
-<div>\
-<p>This document documents all elements and attributes included in the Wine Label Vocabulary (WLV) in a human-readable form. This document has been generated automatically from the Relax NG schema.</p>\
-</div>\
-<h2>1. Elements included in the WLV</h2>\
-<div>\
+md ="\
+# The Wine Label Vocabulary: Schema Documentation\
+\
+This document documents all elements and attributes included in the Wine Label Vocabulary (WLV) in a human-readable form. This document has been generated automatically from the Relax NG schema.\
+\
+## 1. Elements included in the WLV\
 <elements/>\
-</div>\
-<h2>2. Attributes included in the WLV</h2>\
-<div>\
+## 2. Attributes included in the WLV</h2>\
 <attributes/>\
-</div>\
-</body>\
-</html>\
 "
 
 
@@ -126,18 +113,16 @@ def format_elements(elements):
     Creates the entries, written in HTML, for each element.
     Returns a string that can be inserted into the empty HTML template. 
     """
-    elements_html = []
+    elements_md = []
     for name,content in elements.items(): 
-        elm_html = ["<h3>"+name+"</h3>",
-                    "<p>"+content["documentation"]+"</p>",
-                    "<ul>",
-                    "<li>Frequency: "+content["frequency"]+"</li>",
-                    "<li>Children: "+content["children"]+"</li>",
-                    "<li>Attributes: "+content["attributes"]+"</li>",
-                    "</ul>"]
-        elements_html.append("\n".join(elm_html))       
-    elements_html = "\n".join(elements_html)
-    return elements_html
+        elm_md = ["### "+name,
+                    content["documentation"],
+                    "- Frequency: "+content["frequency"],
+                    "- Children: "+content["children"],
+                    "- Attributes: "+content["attributes"]]
+        elements_md.append("\n".join(elm_md))
+    elements_md = "\n".join(elements_md)
+    return elements_md
 
 
 def format_attributes(attributes): 
@@ -145,34 +130,32 @@ def format_attributes(attributes):
     Creates the entries, written in HTML, for each attributes.
     Returns a string that can be inserted into the empty HTML template. 
     """
-    attributes_html = []
+    attributes_md = []
     for name,content in attributes.items(): 
-        att_html = ["<h3>"+name+"</h3>",
-                    "<p>"+content["documentation"]+"</p>",
-                    "<ul>",
-                    "<li>Frequency: "+content["frequency"]+"</li>",
-                    "<li>Values: "+content["values"]+"</li>",
-                    "</ul>"]
-        attributes_html.append("\n".join(att_html))       
-    attributes_html = "\n".join(attributes_html)
-    return attributes_html
+        att_md = ["### "+name,
+                    content["documentation"],
+                    "- Frequency: "+content["frequency"],
+                    "- Values: "+content["values"]]
+        attributes_md.append("\n".join(att_md))       
+    attributes_md = "\n".join(attributes_md)
+    return attributes_md
 
   
-def inject_data(html, elements, attributes): 
+def inject_data(md, elements, attributes): 
     """
     Integrates the information about elements and attributes into the HTML template.
     Returns a string that is a complete HTML document. 
     """
-    html = re.sub("<elements/>", elements, html)
-    html = re.sub("<attributes/>", attributes, html)
-    return html
+    md = re.sub("<elements/>", elements, md)
+    md = re.sub("<attributes/>", attributes, md)
+    return md
 
 
-def save_html(docs): 
+def save_md(docs): 
     """
     Saves the documentation generated as a HTML document to disk.
     """
-    with open("wlv-docs.html", "w", encoding="utf8") as outfile: 
+    with open("wlv-docs.md", "w", encoding="utf8") as outfile: 
         outfile.write(docs)
  
  
@@ -188,8 +171,8 @@ def main():
     attributes = extract_attinfo(rng, att_names)
     elements = format_elements(elements)
     attributes = format_attributes(attributes)
-    docs = inject_data(html, elements, attributes)
-    save_html(docs)
+    docs = inject_data(md, elements, attributes)
+    save_md(docs)
 
 main()
 
