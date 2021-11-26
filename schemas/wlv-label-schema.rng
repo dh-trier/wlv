@@ -4,7 +4,7 @@
     <ref name="wlv" />
   </start>
   <define name="wlv">
-    <a:documentation>The root element in a label description using the Wine Label Vocabulary.</a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The root element in a label description using the Wine Label Vocabulary.</a:documentation>
     <element>
       <name ns="">wlv</name>
       <ref name="labelID" />
@@ -20,6 +20,7 @@
     </attribute>
   </define>
   <define name="ref">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) Contains authority file data, norm data, other stable and unique identifiers. Sources include: Wikidata, Register-Nummer der Weinlagen, Gemeinsame Normdaten-Datei.</a:documentation>
     <attribute>
       <name ns="">ref</name>
       <choice>
@@ -34,6 +35,7 @@
     </attribute>
   </define>
   <define name="uri">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(uniform resource identifier) Für einen Link zu weiteren Informationen.</a:documentation>
     <attribute>
       <name ns="">uri</name>
       <choice>
@@ -184,6 +186,7 @@
     </attribute>
   </define>
   <define name="label">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The main container for information about the label. A label must have at least one part, but can have several parts.</a:documentation>
     <element>
       <name ns="">label</name>
       <optional>
@@ -201,6 +204,7 @@
     </element>
   </define>
   <define name="labelType">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This describes the label primarily with regard to its geographical scope.</a:documentation>
     <attribute>
       <name ns="">labelType</name>
       <choice>
@@ -220,7 +224,7 @@
     </element>
   </define>
   <define name="labelPart">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(label part) Any physically separate part of the label.</a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(label part) Any physically separate part of the label / labeling.</a:documentation>
     <element>
       <name ns="">labelPart</name>
       <ref name="partNum" />
@@ -231,12 +235,14 @@
     </element>
   </define>
   <define name="partNum">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The number of the label, starting at 1.</a:documentation>
     <attribute>
       <name ns="">partNum</name>
       <data type="int" />
     </attribute>
   </define>
   <define name="partType">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The type of the label part, primarily defined by its supposed location on the bottle.</a:documentation>
     <attribute>
       <name ns="">partType</name>
       <choice>
