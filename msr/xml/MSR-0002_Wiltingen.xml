@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../schemas/wlv-label-schema_v2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <wlv labelID="MSR-0002">
   <metadata>
     <collection collectionID="MSR"/>
@@ -11,17 +11,22 @@
       <physical sizeH="137" sizeV="89" shape="rectangle" material="paper" />
       <visual>
         <background backgroundStyle="color">uniform light green</background>
-        <figure figureType="coat-of-arms" figureNum="1" figurePosition="upper-center">Red and white checkered coat of arms, sword on black ground, ornamental leaves to the sides, wings and castle on top.</figure>
+        <figure figureType="coat-of-arms" figureNum="1" figurePosition="upper-center">
+          <figureItem itemData="eng=coat-of-arms;deu=Wappen;wd=Q14659"></figureItem>
+          <figureItem itemData="eng=sword;deu=Schwert;wd=Q12791"></figureItem>
+          <figureItem itemData="eng=leaves;deu=Blätter;wd="></figureItem>
+          <figureItem itemData="eng=wings;deu=Flügel;wd="></figureItem>
+        </figure>       
       </visual>
       <textual>
         <otherText textType="coat-text" textPosition="in-figure" fontType="Antiqua-Sans" fontStyle="all-caps">seit 1846</otherText>
-        <wineOrigin wineOriginType="region (Gebiet)" ref="wikidata:" fontType="Antiqua-Sans">Mosel-Saar-Ruwer</wineOrigin>
+        <location locationRole="origin" locationType="region (Gebiet)" ref="wikidata:" fontType="Antiqua-Sans">Mosel-Saar-Ruwer</location>
         <wineMillesime wineMillesimeNorm="1939" fontStyle="italics" fontType="Cursive" fontSize="larger">1939er</wineMillesime>
-        <wineOrigin wineOriginType="locality (Ort)" wineOriginNorm="Wiltingen">Wiltinger</wineOrigin>
+        <wineName wineNameType="locality (Ort)" wineNameNorm="Wiltingen">Wiltinger</wineName>
         <agent agentRole="distributor/importer/exporter">Karl Ziegler, Weinhandlung</agent>
-        <location locationRole="distributor/importer/exporter" locationType="locality">Freudenberg</location>
+        <location locationRole="distributor/importer/exporter" locationType="locality (Ort)">Freudenberg</location>
         <agent agentRole="printer" fontSize="smaller">Bastian</agent>
-        <location locationRole="printer" locationType="locality" ref="wikidata:Q822358">Winningen</location>
+        <location locationRole="printer" locationType="locality (Ort)" ref="wikidata:Q822358">Winningen</location>
       </textual>
     </labelPart>
   </label>

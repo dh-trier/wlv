@@ -399,12 +399,12 @@
       <text />
       <ref name="figureNum" />
       <ref name="figureType" />
-      <optional>
-        <ref name="figurePosition" />
-      </optional>
       <zeroOrMore>
         <ref name="figureItem" />
       </zeroOrMore>
+      <optional>
+        <ref name="figurePosition" />
+      </optional>
     </element>
   </define>
   <define name="figureNum">
@@ -481,7 +481,7 @@
     </choice>
   </attribute>
 </define>
-  <define name="fontAttributes">
+<define name="fontAttributes">
     <optional>
       <attribute>
         <name ns="">fontType</name>
@@ -653,7 +653,7 @@
       <ref name="fontAttributes" />
     </element>
   </define>
-  <define name="wineNameType">
+  <define name="wineName">
     <attribute>
       <name ns="">wineNameType</name>
       <choice>
@@ -673,9 +673,9 @@
       <text />
     </attribute>
   </define>
-  <define name="wineNameLocality">
+  <define name="wineNameLocation">
     <attribute>
-      <name ns="">wineNameLocality</name>
+      <name ns="">wineNameLocation</name>
       <text />
     </attribute>
   </define>
@@ -1008,7 +1008,6 @@
     <attribute>
       <name ns="">locationRole</name>
       <choice>
-        <value>origin</value>
         <value>producer/bottler</value>
         <value>distributor/importer/exporter</value>
         <value>cooperative/association</value>
@@ -1022,12 +1021,9 @@
     <attribute>
       <name ns="">locationType</name>
       <choice>
-        <value>country (Land)</value>
-        <value>region (Gebiet)</value>
-        <value>area (Bereich)</value>
-        <value>locality (Ort)</value>
-        <value>winery (Weingut)</value>
-        <value>vineyard (Lage)</value>
+        <value>locality</value>
+        <value>region</value>
+        <value>country</value>
         <value>other</value>
       </choice>
     </attribute>

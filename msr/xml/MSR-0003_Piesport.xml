@@ -15,19 +15,21 @@
         <background backgroundStyle="pattern">light pattern</background>
         <figure figureType="realistic" figureNum="1" figurePosition="upper-across">Landscape: river, vineyards, village.</figure>
         <figure figureType="coat-of-arms" figureNum="2">Red coat of arms.</figure>
-        <figure figureType="symbolic" figureNum="3">wine leaves</figure>
+        <figure figureType="symbolic" figureNum="3">
+          <figureItem itemData="eng=wine-leaves;deu=Weinblätter;wd="></figureItem>
+        </figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="area (Bereich)">Mosel - Saar - Ruwer</wineOrigin>
+        <location locationType="area (Bereich)" locationRole="origin">Mosel - Saar - Ruwer</location>
         <otherText textPosition="stand-alone" textType="coat-text">Wappen der Gemeinde Minheim seit 1575</otherText>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Piesport" wineOriginNorm="Piesport" ref="wikidata:Q375762">Piesporter Lay</wineOrigin>
+        <wineName wineNameType="vineyard (Lage)" wineNameLocality="Piesport" ref="wikidata:Q375762">Piesporter Lay</wineName>
         <qualityGrapes qualityGrapesNorm="Auslese">Auslese</qualityGrapes>
         <qualityGrapes>naturrein</qualityGrapes>
         <qualityProduction>Eigenes Wachstum - Original=Abfüllung</qualityProduction>
         <agent agentRole="producer/bottler">Joh. Koenen-Veit, Weinbau - Weinversand</agent>
-        <location locationType="locality" locationRole="producer/bottler" ref="wikidata:Q524796">Minheim/Mosel</location>
+        <location locationType="locality (Ort)" locationRole="producer/bottler" ref="wikidata:Q524796">Minheim/Mosel</location>
         <agent agentRole="printer">Verlag Bastian</agent>
-        <location locationType="locality" locationRole="printer" locationNorm="Neumagen-Drohn" ref="wikidata:Q572352">Neumagen</location>
+        <location locationType="locality (Ort)"  locationRole="printer" locationNorm="Neumagen-Drohn" ref="wikidata:Q572352">Neumagen</location>
       </textual>
     </labelPart>
     <provenance>
