@@ -4,9 +4,9 @@
   <metadata>
   <collection collectionID="MSR"/>
   <curation curatorID="#cs" curationDate="2020-11-18" curationUpdate="2021-09-29"></curation>
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
   </metadata>
-  <label labelType="">
+  <label>
     <labelPart partType="front" partNum="1">
       <physical sizeH="158" sizeV="89" shape="rectangle" material="paper" />
       <visual>
@@ -20,16 +20,18 @@
         </figure>
       </visual>
       <textual>
-        <location locationType="area (Bereich)" locationRole="origin">Mosel - Saar - Ruwer</location>
+        <location locationType="area / Bereich">Mosel - Saar - Ruwer</location>
         <otherText textPosition="stand-alone" textType="coat-text">Wappen der Gemeinde Minheim seit 1575</otherText>
-        <wineName wineNameType="vineyard (Lage)" wineNameLocality="Piesport" ref="wikidata:Q375762">Piesporter Lay</wineName>
+        <wineName wineNameType="vineyard / Großlage">Piesporter Lay
+          <location locationType="locality / Leitgemeinde" locationNorm="Piesport" ref="Wikidata=Q375762"></location>
+        </wineName>
         <qualityGrapes qualityGrapesNorm="Auslese">Auslese</qualityGrapes>
         <qualityGrapes>naturrein</qualityGrapes>
         <qualityProduction>Eigenes Wachstum - Original=Abfüllung</qualityProduction>
-        <agent agentRole="producer/bottler">Joh. Koenen-Veit, Weinbau - Weinversand</agent>
-        <location locationType="locality (Ort)" locationRole="producer/bottler" ref="wikidata:Q524796">Minheim/Mosel</location>
-        <agent agentRole="printer">Verlag Bastian</agent>
-        <location locationType="locality (Ort)"  locationRole="printer" locationNorm="Neumagen-Drohn" ref="wikidata:Q572352">Neumagen</location>
+        <agent agentRole="production / Weinbau">Joh. Koenen-Veit, Weinbau - Weinversand</agent>
+        <location locationType="locality / Ortsname"  ref="Wikidata=Q524796">Minheim/Mosel</location>
+        <agent agentRole="printer / Drucker">Verlag Bastian</agent>
+        <location locationType="locality / Ortsname" locationRole="printer / Drucker" locationNorm="Neumagen-Drohn" ref="Wikidata=Q572352">Neumagen</location>
       </textual>
     </labelPart>
     <provenance>

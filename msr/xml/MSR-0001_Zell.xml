@@ -4,7 +4,7 @@
   <metadata>
   <collection collectionID="MSR"></collection>
   <curation curatorID="#cs" curationDate="2021-11-22"></curation>
-  <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"></licence>
+  <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"></licence>
   </metadata>
   <label>
     <labelPart partType="front" partNum="1">
@@ -13,9 +13,12 @@
           <frame frameStyle="other" frameColor="gold" frameType="outer">Linie mit Ornamenten an den Ecken.</frame>
       </visual>
       <textual>
-          <location locationType="region (Gebiet)" locationRole="origin">MOSEL-SAAR-RUWER</location>
+          <location locationType="region / Gebiet" fontStyle="all-caps">Mosel-Saar-Ruwer</location>
           <wineMillesime wineMillesimeNorm="1957">1957er</wineMillesime>
-          <wineName wineNameType="vineyard (Lage)" wineNameLocality="Zell" ref="wikidata:" >Zeller schwarze Katz</wineName>
+          <wineName wineNameType="vineyard / Großlage">Zeller schwarze Katz
+            <location locationType="vineyard / Großlage" ref="RegNr=6.3.4"></location>
+            <location locationType="locality / Leitgemeinde" ref="Wikidata:Q187500" ></location>
+          </wineName>
       </textual>
     </labelPart>
   </label>

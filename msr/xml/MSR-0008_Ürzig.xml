@@ -4,28 +4,30 @@
   <metadata>
   <collection collectionID="MSR"></collection>
   <curation curatorID="#cs" curationDate="2021-11-22"></curation>
-  <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"></licence>
+  <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"></licence>
   </metadata>
-  <label labelType="Lageetikett">
+  <label>
     <labelPart partType="front" partNum="1">
       <physical sizeH="130" sizeV="89" shape="rectangle" material="paper"/>
       <visual>
           <frame frameStyle="other" frameColor="gold" frameType="outer">Linie mit Ornamenten an den Ecken.</frame>
       </visual>
       <textual>
-          <location locationType="region" locationRole="other">MOSEL SAAR RUWER</location>
+          <location locationType="region / Gebiet" fontStyle="all-caps">Mosel Saar Ruwer</location>
           <otherText textType="other" textPosition="stand-alone">1742</otherText>
           <wineMillesime wineMillesimeNorm="1983">1983er</wineMillesime>
-          <wineOrigin wineOriginType="vineyard (Lage)">Ürziger Schwarzlay</wineOrigin>
+          <wineName wineNameType="vineyard / Großlage" ref="RegNr:6.1.8">Ürziger Schwarzlay
+            <location locationType="locality / Leitgemeinde" locationNorm="Ürzig" ref="Wikidata:Q335018"></location>
+          </wineName>
           <qualityGrapes qualityGrapesNorm="Kabinett">Kabinett</qualityGrapes>
           <wineGrapes wineGrapesNorm="Riesling">Riesling</wineGrapes>
           <qualityLevel qualityLevelNorm="Prädikatswein">Qualitätswein mit Prädikat</qualityLevel>
           <controlNumber>Amtliche Prüfungsnummer 1 907 135 072 84</controlNumber>
           <alcohol alcoholNorm="7">Alc. 7,2% by Vol.</alcohol>
           <volume volumeNorm="700">e 0,7 L</volume>
-          <wineOrigin wineOriginType="country (Land)" wineOriginNorm="DEU">Deutschland</wineOrigin>
-          <agent agentRole="producer/bottler" ref="">Abfüller: Weinbau Mergler &amp; Engel Wein-Kellerei</agent>
-          <wineOrigin wineOriginNorm="Pünderich" ref="wikidata:Q567287" wineOriginType="locality (Ort)">Pünderich/Mosel</wineOrigin>
+          <location locationNorm="DEU" locationType="country / Land">Deutschland</location>
+          <agent agentRole="production / Weinbau" ref="">Abfüller: Weinbau Mergler &amp; Engel Wein-Kellerei</agent>
+          <location locationType="locality / Leitgemeinde" locationNorm="Pünderich" ref="Wikidata:Q567287">Pünderich/Mosel</location>
       </textual>
     </labelPart>
   </label>

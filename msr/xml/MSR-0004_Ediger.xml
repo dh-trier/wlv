@@ -4,17 +4,19 @@
   <metadata>
   <collection collectionID="MSR"></collection>
   <curation curatorID="#cs" curationDate="2021-11-22"></curation>
-  <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"></licence>
+  <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"></licence>
   </metadata>
-  <label labelType="Lageetikett">
+  <label>
     <labelPart partType="front" partNum="1">
       <physical sizeH="130" sizeV="89" shape="rectangle" material="paper"/>
       <visual>
           <frame frameStyle="other" frameColor="gold" frameType="outer">Linie mit Ornamenten an den Ecken.</frame>
       </visual>
       <textual>
-          <location locationType="region" locationRole="other">MOSEL-SAAR-RUWER</location>
-          <wineOrigin wineOriginType="vineyard (Lage)" wineOriginNorm="Ediger">Ediger Pfefferberg</wineOrigin>
+          <location locationType="region / Gebiet" fontStyle="all-caps">Mosel-Saar-Ruwer</location>
+          <wineName wineNameType="vineyard / historischer Lagenname">Ediger Pfefferberg
+            <location locationType="locality / Leitgemeinde" locationNorm="Ediger" ref="Wikidata=Q547805"></location>
+          </wineName>
       </textual>
     </labelPart>
   </label>

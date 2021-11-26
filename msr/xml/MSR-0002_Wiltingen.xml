@@ -4,29 +4,31 @@
   <metadata>
     <collection collectionID="MSR"/>
     <curation curationDate="2020-11-18" curatorID="#cs" curationUpdate="2021-09-30"></curation>
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"></licence>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"></licence>
   </metadata>
-  <label labelType="Ortsetikett">
+  <label>
     <labelPart partType="front" partNum="1">
       <physical sizeH="137" sizeV="89" shape="rectangle" material="paper" />
       <visual>
         <background backgroundStyle="color">uniform light green</background>
         <figure figureType="coat-of-arms" figureNum="1" figurePosition="upper-center">
-          <figureItem itemData="eng=coat-of-arms;deu=Wappen;wd=Q14659"></figureItem>
-          <figureItem itemData="eng=sword;deu=Schwert;wd=Q12791"></figureItem>
-          <figureItem itemData="eng=leaves;deu=Blätter;wd="></figureItem>
-          <figureItem itemData="eng=wings;deu=Flügel;wd="></figureItem>
+          <figureItem itemData="eng=coat-of-arms;deu=Wappen;Wikidata=Q14659"></figureItem>
+          <figureItem itemData="eng=sword;deu=Schwert;Wikidata=Q12791"></figureItem>
+          <figureItem itemData="eng=leaves;deu=Blätter;Wikidata="></figureItem>
+          <figureItem itemData="eng=wings;deu=Flügel;Wikidata="></figureItem>
         </figure>       
       </visual>
       <textual>
         <otherText textType="coat-text" textPosition="in-figure" fontType="Antiqua-Sans" fontStyle="all-caps">seit 1846</otherText>
-        <location locationRole="origin" locationType="region (Gebiet)" ref="wikidata:" fontType="Antiqua-Sans">Mosel-Saar-Ruwer</location>
+        <location locationType="region / Gebiet" fontType="Antiqua-Sans">Mosel-Saar-Ruwer</location>
         <wineMillesime wineMillesimeNorm="1939" fontStyle="italics" fontType="Cursive" fontSize="larger">1939er</wineMillesime>
-        <wineName wineNameType="locality (Ort)" wineNameNorm="Wiltingen">Wiltinger</wineName>
-        <agent agentRole="distributor/importer/exporter">Karl Ziegler, Weinhandlung</agent>
-        <location locationRole="distributor/importer/exporter" locationType="locality (Ort)">Freudenberg</location>
-        <agent agentRole="printer" fontSize="smaller">Bastian</agent>
-        <location locationRole="printer" locationType="locality (Ort)" ref="wikidata:Q822358">Winningen</location>
+        <wineName wineNameType="locality / Leitgemeinde">Wiltinger
+          <location locationType="locality / Leitgemeinde" ref="Wikidata:Q161930"></location>
+        </wineName>
+        <agent agentRole="distribution / Vertrieb">Karl Ziegler, Weinhandlung</agent>
+        <location locationRole="distribution / Vertrieb" locationType="locality / Ortsname">Freudenberg</location>
+        <agent agentRole="printer / Drucker" fontSize="smaller">Bastian</agent>
+        <location locationRole="printer / Drucker" locationType="locality / Ortsname" ref="Wikidata:Q822358">Winningen</location>
       </textual>
     </labelPart>
   </label>

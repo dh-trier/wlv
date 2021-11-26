@@ -24,17 +24,18 @@
       <name ns="">ref</name>
       <choice>
         <text />
-        <value>wikidata:</value>
-        <value>gnd:</value>
+        <value>RegNr:</value>
+        <value>Wikidata:</value>
+        <value>GND:</value>
         <value>enwiki:</value>
         <value>dewiki:</value>
         <value>frwiki:</value>
       </choice>
     </attribute>
   </define>
-  <define name="url">
+  <define name="uri">
     <attribute>
-      <name ns="">url</name>
+      <name ns="">uri</name>
       <choice>
         <text />
         <value>https://creativecommons.org/licenses/by/4.0/</value>
@@ -49,7 +50,7 @@
       <ref name="collection" />
       <ref name="curation" />
       <optional>
-        <ref name="url" />
+        <ref name="uri" />
       </optional>
       <zeroOrMore>
         <ref name="licence" />
@@ -151,7 +152,7 @@
       <name ns="">licence</name>
       <text />
       <optional>
-        <ref name="url" />
+        <ref name="uri" />
       </optional>
       <optional>
         <ref name="licenceAbbr" />
@@ -472,11 +473,11 @@
   <attribute>
     <name ns="">itemData</name>
     <choice>
-      <value>eng=coat-of-arms;deu=Wappen;wd=Q14659</value>
-      <value>eng=grape;deu=Weintraube;wd=Q10978</value>
-      <value>eng=sword;deu=Schwert;wd=Q12791</value>
-      <value>eng=vineyard;deu=Weinberg;wd=Q22715</value>
-      <value>eng=;deu=;wd=</value>
+      <value>coat-of-arms;deu=Wappen;Wikidata=Q14659</value>
+      <value>eng=grape;deu=Weintraube;Wikidata=Q10978</value>
+      <value>eng=sword;deu=Schwert;Wikidata=Q12791</value>
+      <value>eng=vineyard;deu=Weinberg;Wikidata=Q22715</value>
+      <value>eng=;deu=;Wikidata=</value>
       <text />
     </choice>
   </attribute>
@@ -635,17 +636,17 @@
       <name ns="">wineName</name>
       <text />
       <ref name="wineNameType" />
+      <zeroOrMore>
+        <ref name="location" />
+      </zeroOrMore>
       <optional>
         <ref name="wineNameNorm" />
-      </optional>
-      <optional>
-        <ref name="wineNameLocality" />
       </optional>
       <optional>
         <ref name="ref" />
       </optional>
       <optional>
-        <ref name="url" />
+        <ref name="uri" />
       </optional>
       <optional>
         <ref name="wdw" />
@@ -657,12 +658,16 @@
     <attribute>
       <name ns="">wineNameType</name>
       <choice>
-        <value>country (Land)</value>
-        <value>region (Gebiet)</value>
-        <value>area (Bereich)</value>
-        <value>locality (Ort)</value>
-        <value>winery (Weingut)</value>
-        <value>vineyard (Lage)</value>
+        <value>country / Land</value>
+        <value>region / Gebiet</value>
+        <value>area / Bereich</value>
+        <value>locality / Ortsname</value>
+        <value>locality / Leitgemeinde</value>
+        <value>winery / Weingut</value>
+        <value>vineyard / historischer Lagenname</value>
+        <value>vineyard / Großlage</value>
+        <value>vineyard / Einzellage</value>
+        <value>variety / Rebsorte</value>
         <value>other</value>
       </choice>
     </attribute>
@@ -670,12 +675,6 @@
   <define name="wineNameNorm">
     <attribute>
       <name ns="">wineNameNorm</name>
-      <text />
-    </attribute>
-  </define>
-  <define name="wineNameLocality">
-    <attribute>
-      <name ns="">wineNameLocality</name>
       <text />
     </attribute>
   </define>
@@ -723,7 +722,15 @@
       <name ns="">wineGrapesNorm</name>
       <choice>
         <value>Riesling</value>
+        <value>Müller-Thurgau/Rivaner</value>
+        <value>Elbling</value>
+        <value>Spätburgunder</value>
+        <value>Grauburgunder</value>
+        <value>Chardonnay</value>
+        <value>Auxerrois</value>
+        <value>Weißburgunder</value>
         <value>other</value>
+        <text />
       </choice>
     </attribute>
   </define>
@@ -965,7 +972,7 @@
         <ref name="ref" />
       </optional>
       <optional>
-        <ref name="url" />
+        <ref name="uri" />
       </optional>
       <ref name="fontAttributes" />
     </element>
@@ -974,12 +981,14 @@
     <attribute>
       <name ns="">agentRole</name>
       <choice>
-        <value>producer/bottler</value>
-        <value>distributor/importer/exporter</value>
-        <value>cooperative/association</value>
-        <value>printer</value>
-        <value>artist</value>
-        <value>other</value>
+        <value>cultivation / Anbau</value>
+        <value>production / Weinbau</value>
+        <value>distribution / Vertrieb</value>
+        <value>cooperative / Kooperative</value>
+        <value>printer / Drucker</value>
+        <value>artist / Künstler/in</value>
+        <value>multiple / verschiedene</value>
+        <value>other / andere</value>
       </choice>
     </attribute>
   </define>
@@ -987,19 +996,24 @@
     <element>
       <name ns="">location</name>
       <text />
-      <ref name="locationRole" />
       <ref name="locationType" />
+      <optional>
+        <ref name="locationRole" />
+      </optional>
       <optional>
         <ref name="locationNorm" />
       </optional>
       <optional>
-        <ref name="locationPosition" />
+        <ref name="locationRegNr" />
       </optional>
       <optional>
         <ref name="figureNum" />
       </optional>
       <optional>
         <ref name="ref" />
+      </optional>
+      <optional>
+        <ref name="uri" />
       </optional>
       <ref name="fontAttributes" />
     </element>
@@ -1008,13 +1022,14 @@
     <attribute>
       <name ns="">locationRole</name>
       <choice>
-        <value>origin</value>
-        <value>producer/bottler</value>
-        <value>distributor/importer/exporter</value>
-        <value>cooperative/association</value>
-        <value>printer</value>
-        <value>artist</value>
-        <value>other</value>
+        <value>cultivation / Anbau</value>
+        <value>production / Weinbau</value>
+        <value>distribution / Vertrieb</value>
+        <value>cooperative / Kooperative</value>
+        <value>printer / Drucker</value>
+        <value>artist / Künstler/in</value>
+        <value>multiple / verschiedene</value>
+        <value>other / andere</value>
       </choice>
     </attribute>
   </define>
@@ -1022,12 +1037,15 @@
     <attribute>
       <name ns="">locationType</name>
       <choice>
-        <value>country (Land)</value>
-        <value>region (Gebiet)</value>
-        <value>area (Bereich)</value>
-        <value>locality (Ort)</value>
-        <value>winery (Weingut)</value>
-        <value>vineyard (Lage)</value>
+        <value>country / Land</value>
+        <value>region / Gebiet</value>
+        <value>area / Bereich</value>
+        <value>locality / Ortsname</value>
+        <value>locality / Leitgemeinde</value>
+        <value>winery / Weingut</value>
+        <value>vineyard / historischer Lagenname</value>
+        <value>vineyard / Großlage</value>
+        <value>vineyard / Einzellage</value>
         <value>other</value>
       </choice>
     </attribute>
@@ -1038,13 +1056,10 @@
       <text />
     </attribute>
   </define>
-  <define name="locationPosition">
+  <define name="locationRegNr">
     <attribute>
-      <name ns="">locationPosition</name>
-      <choice>
-        <value>standalone</value>
-        <value>in-figure</value>
-      </choice>
+      <name ns="">locationRegNr</name>
+      <text/>
     </attribute>
   </define>
   <define name="alcohol">
