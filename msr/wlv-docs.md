@@ -17,7 +17,7 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 (no data)
 
 - Child element(s): This element has no children.
-- Attribute(s): agentRole, ref, url
+- Attribute(s): agentRole, ref, uri
 
 ### alcohol
 
@@ -93,8 +93,15 @@ Information on the curation process of the wine label description.
 
 (figure) Any visual, figurative element on the label. The label is classified as to its type and position using the attributes. It can be described in the element content using a simple list of terms mentioning each recognizable element of the figure. (In a future iteration of WLV, a controlled vocabulary of visual elements commonly found on wine labels will be made available for this purpose.)
 
-- Child element(s): This element has no children.
+- Child element(s): figureItem
 - Attribute(s): figureNum, figureType, figurePosition
+
+### figureItem
+
+(figure item) A visual element or depicted object that can be identified in the figure.
+
+- Child element(s): This element has no children.
+- Attribute(s): itemData
 
 ### frame
 
@@ -105,7 +112,7 @@ Information on the curation process of the wine label description.
 
 ### label
 
-(no data)
+The main container for information about the label. A label must have at least one part, but can have several parts.
 
 - Child element(s): comments, labelPart, provenance
 - Attribute(s): labelType
@@ -119,7 +126,7 @@ Information on the curation process of the wine label description.
 
 ### labelPart
 
-(label part) Any physically separate part of the label.
+(label part) Any physically separate part of the label / labeling.
 
 - Child element(s): physical, visual, textual
 - Attribute(s): partNum, partType
@@ -129,21 +136,21 @@ Information on the curation process of the wine label description.
 (no data)
 
 - Child element(s): This element has no children.
-- Attribute(s): url, licenceAbbr, licenceScope
+- Attribute(s): uri, licenceAbbr, licenceScope
 
 ### location
 
 (no data)
 
 - Child element(s): This element has no children.
-- Attribute(s): locationRole, locationType, locationNorm, locationPosition, figureNum, ref
+- Attribute(s): locationType, locationRole, locationNorm, locationRegNr, figureNum, ref, uri
 
 ### metadata
 
 One of two mandatory top-level elements. Contains metadata related to the label description itself.
 
 - Child element(s): collection, curation, licence, collectionContext, comments
-- Attribute(s): url
+- Attribute(s): uri
 
 ### otherText
 
@@ -226,7 +233,7 @@ One of two mandatory top-level elements. Contains metadata related to the label 
 
 (no data)
 
-- Child element(s): wineMillesime, wineOrigin, wineGrapes, wineTaste, wineAging, wineOther, qualityGrapes, qualityLevel, qualityAward, qualityLabel, qualityProduction, qualityHistorical, agent, location, alcohol, volume, controlNumber, barrelNumber, labelNumber, otherText
+- Child element(s): wineMillesime, wineName, wineGrapes, wineTaste, wineAging, wineOther, qualityGrapes, qualityLevel, qualityAward, qualityLabel, qualityProduction, qualityHistorical, agent, location, alcohol, volume, controlNumber, barrelNumber, labelNumber, otherText
 - Attribute(s): This element has no attributes.
 
 ### visual
@@ -271,12 +278,12 @@ One of two mandatory top-level elements. Contains metadata related to the label 
 - Child element(s): This element has no children.
 - Attribute(s): wineMillesimeNorm
 
-### wineOrigin
+### wineName
 
 (no data)
 
-- Child element(s): This element has no children.
-- Attribute(s): wineOriginType, wineOriginNorm, wineOriginLocality, ref, url, wdw
+- Child element(s): location
+- Attribute(s): wineNameType, wineNameNorm, ref, uri, wdw
 
 ### wineOther
 
@@ -305,7 +312,7 @@ The root element in a label description using the Wine Label Vocabulary.
 ### agentRole
 (no data)
 
-- Values: producer/bottler, distributor/importer/exporter, cooperative/association, printer, artist, other
+- Values: cultivation / Anbau, production / Weinbau, distribution / Vertrieb, cooperative / Kooperative, printer / Drucker, artist / Künstler/in, multiple / verschiedene, other / andere
 
 ### alcoholNorm
 (no data)
@@ -412,13 +419,18 @@ A unique identifier for the person that has curated the wine label description.
 
 - Values: outer, inner, other
 
+### itemData
+(item data) This attribute provides a fixed vocabulary, in English (eng) and German (deu), and with a Wikidata identifier (wd), to name the figure item. No text content is allowed here.
+
+- Values: coat-of-arms;deu=Wappen;Wikidata=Q14659, eng=grape;deu=Weintraube;Wikidata=Q10978, eng=sword;deu=Schwert;Wikidata=Q12791, eng=vineyard;deu=Weinberg;Wikidata=Q22715, eng=;deu=;Wikidata=
+
 ### labelID
 A unique identifier for the label.
 
 - Values: This element has no default values.
 
 ### labelType
-(no data)
+This describes the label primarily with regard to its geographical scope.
 
 - Values: Lageetikett, Gutsetikett, Ortsetikett, tbc, other
 
@@ -437,20 +449,20 @@ A unique identifier for the label.
 
 - Values: This element has no default values.
 
-### locationPosition
+### locationRegNr
 (no data)
 
-- Values: standalone, in-figure
+- Values: This element has no default values.
 
 ### locationRole
 (no data)
 
-- Values: producer/bottler, distributor/importer/exporter, cooperative/association, printer, artist, other
+- Values: cultivation / Anbau, production / Weinbau, distribution / Vertrieb, cooperative / Kooperative, printer / Drucker, artist / Künstler/in, multiple / verschiedene, other / andere
 
 ### locationType
 (no data)
 
-- Values: locality, region, country, other
+- Values: country / Land, region / Gebiet, area / Bereich, locality / Ortsname, locality / Leitgemeinde, winery / Weingut, vineyard / historischer Lagenname, vineyard / Großlage, vineyard / Einzellage, other
 
 ### material
 (no data)
@@ -473,12 +485,12 @@ A unique identifier for the label.
 - Values: This element has no default values.
 
 ### partNum
-(no data)
+The number of the label, starting at 1.
 
 - Values: This element has no default values.
 
 ### partType
-(no data)
+The type of the label part, primarily defined by its supposed location on the bottle.
 
 - Values: front, back, neck, wraparound, band
 
@@ -513,9 +525,9 @@ A unique identifier for the label.
 - Values: on-location, other
 
 ### ref
-(no data)
+(reference) Contains authority file data, norm data, other stable and unique identifiers. Sources include: Wikidata, Register-Nummer der Weinlagen, Gemeinsame Normdaten-Datei.
 
-- Values: wikidata:, gnd:, enwiki:, dewiki:, frwiki:
+- Values: RegNr:, Wikidata:, GND:, enwiki:, dewiki:, frwiki:
 
 ### scanID
 (no data)
@@ -552,8 +564,8 @@ A unique identifier for the label.
 
 - Values: coat-text, motto, quotation, slogan, statement, copyright, vineyard (Lage), other
 
-### url
-(no data)
+### uri
+(uniform resource identifier) Für einen Link zu weiteren Informationen.
 
 - Values: https://creativecommons.org/licenses/by/4.0/, https://github.com/dh-trier/wlv
 
@@ -580,27 +592,22 @@ A unique identifier for the label.
 ### wineGrapesNorm
 (no data)
 
-- Values: Riesling, other
+- Values: Riesling, Müller-Thurgau/Rivaner, Elbling, Spätburgunder, Grauburgunder, Chardonnay, Auxerrois, Weißburgunder, other
 
 ### wineMillesimeNorm
 (no data)
 
 - Values: This element has no default values.
 
-### wineOriginLocality
+### wineNameNorm
 (no data)
 
 - Values: This element has no default values.
 
-### wineOriginNorm
+### wineNameType
 (no data)
 
-- Values: This element has no default values.
-
-### wineOriginType
-(no data)
-
-- Values: country (Land), region (Gebiet), area (Bereich), locality (Ort), winery (Weingut), vineyard (Lage), other
+- Values: country / Land, region / Gebiet, area / Bereich, locality / Ortsname, locality / Leitgemeinde, winery / Weingut, vineyard / historischer Lagenname, vineyard / Großlage, vineyard / Einzellage, variety / Rebsorte, other
 
 ### wineOtherType
 (no data)
