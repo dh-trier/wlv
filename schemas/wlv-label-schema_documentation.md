@@ -28,7 +28,7 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 
 ### background
 
-(no data)
+Information about the background of the label. Needs to be filled in only if there is some special background, other than the blank paper, to the visual and/or textual information provided. 
 
 - Child element(s): This element has no children.
 - Attribute(s): backgroundStyle
@@ -105,7 +105,7 @@ Information on the curation process of the wine label description.
 
 ### frame
 
-(no data)
+Information about the frame of the label.
 
 - Child element(s): This element has no children.
 - Attribute(s): frameType, frameStyle, frameColor
@@ -161,7 +161,7 @@ One of two mandatory top-level elements. Contains metadata related to the label 
 
 ### physical
 
-(no data)
+Information regarding the physical aspects of the label, in particular shape, size and material.
 
 - Child element(s): This element has no children.
 - Attribute(s): shape, sizeH, sizeV, material, printingTechnique
@@ -238,7 +238,7 @@ One of two mandatory top-level elements. Contains metadata related to the label 
 
 ### visual
 
-(no data)
+Any visual and non-textual or non-linguistic elements discernible on the label.
 
 - Child element(s): frame, background, figure
 - Attribute(s): This element has no attributes.
@@ -273,14 +273,14 @@ One of two mandatory top-level elements. Contains metadata related to the label 
 
 ### wineMillesime
 
-(no data)
+The year that the wine was harvested in.
 
 - Child element(s): This element has no children.
 - Attribute(s): wineMillesimeNorm
 
 ### wineName
 
-(no data)
+The name of the wine. Typically printed in a somewhat larger font size than other information. For historical wine labels of the Mosel region, the wine name is typically composed of a location  (Ort, Gemeinde, Leitgemeinde) and the name or nickname of the specific vineyard belonging to that location. Note that the element 'wineName' has, as a consequence, an empty child element 'location' that can appear more than once and may hold information about the location and the vineyard separately. 
 
 - Child element(s): location
 - Attribute(s): wineNameType, wineNameNorm, ref, uri, wdw
@@ -465,7 +465,7 @@ This describes the label primarily with regard to its geographical scope.
 - Values: country / Land, region / Gebiet, area / Bereich, locality / Ortsname, locality / Leitgemeinde, winery / Weingut, vineyard / historischer Lagenname, vineyard / Großlage, vineyard / Einzellage, other
 
 ### material
-(no data)
+The material from which the label is made (in most cases, this is paper). 
 
 - Values: paper, plastic, metal
 
@@ -495,7 +495,7 @@ The type of the label part, primarily defined by its supposed location on the bo
 - Values: front, back, neck, wraparound, band
 
 ### printingTechnique
-(no data)
+The technical printing process used for printing the visual and/or textual information onto the base material. 
 
 - Values: lithograph, offset, moving-type, litho+type, mixed, other
 
@@ -535,12 +535,12 @@ The type of the label part, primarily defined by its supposed location on the bo
 - Values: This element has no default values.
 
 ### shape
-(no data)
+Information regarding the shape of the physical label.
 
 - Values: square, circle, rectangle, oval, diamond, trapezoid, octogon, other
 
 ### sizeH
-(no data)
+The height of the label measured in millimeters.
 
 - Values: tbc
 

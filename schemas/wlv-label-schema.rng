@@ -255,6 +255,7 @@
     </attribute>
   </define>
   <define name="physical">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information regarding the physical aspects of the label, in particular shape, size and material.</a:documentation>
     <element>
       <name ns="">physical</name>
       <ref name="shape" />
@@ -267,6 +268,7 @@
     </element>
   </define>
   <define name="shape">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information regarding the shape of the physical label.</a:documentation>
     <attribute>
       <name ns="">shape</name>
       <choice>
@@ -282,6 +284,7 @@
     </attribute>
   </define>
   <define name="sizeH">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The height of the label measured in millimeters.</a:documentation>
     <attribute>
       <name ns="">sizeH</name>
       <choice>
@@ -290,6 +293,7 @@
       </choice>
     </attribute>
   </define>
+  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The width of the label measured in millimeters.</a:documentation>
   <define name="sizeV">
     <attribute>
       <name ns="">sizeV</name>
@@ -300,6 +304,7 @@
     </attribute>
   </define>
   <define name="material">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The material from which the label is made (in most cases, this is paper). </a:documentation>
     <attribute>
       <name ns="">material</name>
       <choice>
@@ -310,6 +315,7 @@
     </attribute>
   </define>
   <define name="printingTechnique">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The technical printing process used for printing the visual and/or textual information onto the base material. </a:documentation>
     <attribute>
       <name ns="">printingTechnique</name>
       <choice>
@@ -323,6 +329,7 @@
     </attribute>
   </define>
   <define name="visual">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Any visual and non-textual or non-linguistic elements discernible on the label.</a:documentation>
     <element>
       <name ns="">visual</name>
       <interleave>
@@ -339,6 +346,7 @@
     </element>
   </define>
   <define name="frame">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information about the frame of the label.</a:documentation>
     <element>
       <name ns="">frame</name>
       <text />
@@ -383,6 +391,7 @@
     </attribute>
   </define>
   <define name="background">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information about the background of the label. Needs to be filled in only if there is some special background, other than the blank paper, to the visual and/or textual information provided. </a:documentation>
     <element>
       <name ns="">background</name>
       <text />
@@ -492,6 +501,7 @@
     <optional>
       <attribute>
         <name ns="">fontType</name>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information regarding class of historical font types such as Fraktur and Antiqua.</a:documentation>
         <choice>
           <value>Fraktur</value>
           <value>Antiqua-Sans</value>
@@ -504,6 +514,7 @@
     <optional>
       <attribute>
         <name ns="">fontManner</name>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information regarding the type of application method of the letters to the paper.</a:documentation>
         <choice>
           <value>printed</value>
           <value>handwritten</value>
@@ -514,6 +525,7 @@
     <optional>
       <attribute>
         <name ns="">fontStyle</name>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information regarding the font variant used, such as italics or small caps. Does not need to be specified if it is recte.</a:documentation>
         <choice>
           <value>recte</value>
           <value>italics</value>
@@ -548,6 +560,7 @@
     <optional>
       <attribute>
         <name ns="">fontSize</name>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information about the approximate, relative font size within the label.</a:documentation>
         <choice>
           <value>larger</value>
           <value>normal</value>
@@ -624,6 +637,7 @@
     </element>
   </define>
   <define name="wineMillesime">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The year that the wine was harvested in.</a:documentation>
     <element>
       <name ns="">wineMillesime</name>
       <text />
@@ -638,6 +652,7 @@
     </attribute>
   </define>
   <define name="wineName">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name of the wine. Typically printed in a somewhat larger font size than other information. For historical wine labels of the Mosel region, the wine name is typically composed of a location  (Ort, Gemeinde, Leitgemeinde) and the name or nickname of the specific vineyard belonging to that location. Note that the element 'wineName' has, as a consequence, an empty child element 'location' that can appear more than once and may hold information about the location and the vineyard separately. </a:documentation>
     <element>
       <name ns="">wineName</name>
       <text />
