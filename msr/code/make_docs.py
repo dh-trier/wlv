@@ -190,7 +190,7 @@ def save_md(docs):
     """
     Saves the documentation generated as a HTML document to disk.
     """
-    with open(join("..", "wlv-docs.md"), "w", encoding="utf8") as outfile: 
+    with open(join("..", "..", "schemas", "wlv-label-schema_documentation.md"), "w", encoding="utf8") as outfile: 
         outfile.write(docs)
  
  
