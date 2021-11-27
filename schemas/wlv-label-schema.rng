@@ -484,15 +484,90 @@
     </element>
   </define>
   <define name="itemData">
-  <a:documentation>(item data) This attribute provides a fixed vocabulary, in English (eng) and German (deu), and with a Wikidata identifier (wd), to name the figure item. No text content is allowed here.</a:documentation>
+  <a:documentation>(item data) This attribute provides a fixed vocabulary, in German only, with a very broad category system (Artefakte, Fauna, Flora, Gebäude, Landschaft, Personen, Sonstiges) and a Wikidata identifier in brackets, to name the figure item. (No text content is allowed here. If there is text on a coat of arms or a banderole, it needs to be added under the heading 'textual'.)</a:documentation>
   <attribute>
     <name ns="">itemData</name>
     <choice>
-      <value>coat-of-arms;deu=Wappen;Wikidata=Q14659</value>
-      <value>eng=grape;deu=Weintraube;Wikidata=Q10978</value>
-      <value>eng=sword;deu=Schwert;Wikidata=Q12791</value>
-      <value>eng=vineyard;deu=Weinberg;Wikidata=Q22715</value>
-      <value>eng=;deu=;Wikidata=</value>
+      <value>Banderole (Artefakte;Q2689628)</value>
+      <value>Brezel (Artefakte;Q160525)</value>
+      <value>Boot (Artefakte;Q35872)</value>
+      <value>Globus (Artefakte;Q133792)</value>
+      <value>Gemälde (Artefakte;Q3305213)</value>
+      <value>Fahrzeug (Artefakte;Q42889)</value>
+      <value>Harfe (Artefakte;Q47369)</value>
+      <value>Harpune (Artefakte;Q207574)</value>
+      <value>Helm (Artefakte;Q910873)</value>
+      <value>Hut (Artefakte;Q80151)</value>
+      <value>Krone (Artefakte;Q170984)</value>
+      <value>Krug (Artefakte;Q766983)</value>
+      <value>Medaille (Artefakte;Q131647)</value>
+      <value>Musikinstrument (Artefakte;Q)</value>
+      <value>Pfeil (Artefakte;Q45922)</value>
+      <value>Rad (Artefakte;Q446)</value>
+      <value>Schiff (Artefakte;Q11446)</value>
+      <value>Siegel (Artefakte;Q162919)</value>
+      <value>Schild (Artefakte;Q131559)</value>
+      <value>Schlüssel (Artefakte;Q132041)</value>
+      <value>Schwert (Artefakte;Q12791)</value>
+      <value>Stoff (Artefakte;Q5849500)</value>
+      <value>Vase (Artefakte;Q191851)</value>
+      <value>Wage (Artefakte;Q134566)</value>
+      <value>Wappen (Artefakte;Q14659)</value>
+      <value>Weinglas (Artefakte;Q1531435)</value>
+      <value>Weinflasche (Artefakte;Q23490)</value>
+      <value>Weinfass (Artefakte;Q10289)</value>
+      <value>Adler (Fauna;Q2092297)</value>
+      <value>Bär (Fauna;Q30090244)</value>
+      <value>Feder (Fauna;Q81025)</value>
+      <value>Flügel (Fauna;Q161358)</value>
+      <value>Hund (Fauna;Q144)</value>
+      <value>Katze (Fauna;Q146)</value>
+      <value>Löwe (Fauna;Q140)</value>
+      <value>Pferd (Fauna;Q726)</value>
+      <value>Ochse (Fauna;Q473194)</value>
+      <value>Reh/Hirsch (Fauna;Q29838690)</value>
+      <value>Schaf (Fauna;Q7368)</value>
+      <value>Spinne (Fauna;Q1357)</value>
+      <value>Vogel (Fauna;Q5113)</value>
+      <value>Baum (Flora;Q10884)</value>
+      <value>Blume (Flora;Q886167)</value>
+      <value>Blüte (Flora;Q506)</value>
+      <value>Pflanze (Flora;Q756)</value>
+      <value>Weintraube (Flora;Q10978)</value>
+      <value>Weinblätter (Flora;Q33971)</value>
+      <value>Weinstock (Flora;Q2135068)</value>
+      <value>Burg (Bauwerke;Q23413)</value>
+      <value>Brücke (Bauwerke;Q12280)</value>
+      <value>Dock (Bauwerke;Q124282)</value>
+      <value>Dorf (Bauwerke;Q532)</value>
+      <value>Gebäude (Bauwerke;Q41176)</value>
+      <value>Fenster (Bauwerke;Q35473)</value>
+      <value>Interieur (Bauwerke;Q2998430)</value>
+      <value>Keller (Bauwerke;Q43275450)</value>
+      <value>Kirchengebäude (Bauwerke;Q16970)</value>
+      <value>Mauer (Bauwerke;Q42948)</value>
+      <value>Stadt (Bauwerke;Q532)</value>
+      <value>Straße (Bauwerke;Q34442)</value>
+      <value>Tor/Türe (Bauwerke;Q36794)</value>
+      <value>Treppe (Bauwerke;Q12511)</value>
+      <value>Turm (Bauwerke;Q12518)</value>
+      <value>Zaun (Bauwerke;Q148571)</value>
+      <value>Ufer (Landschaft;Q468756)</value>
+      <value>Fluss (Landschaft;Q4022)</value>
+      <value>Hügel (Landschaft;Q54050)</value>
+      <value>Weinberg (Landschaft;Q22715)</value>
+      <value>Mann (Personen;Q8441)</value>
+      <value>Frau (Personen;Q467)</value>
+      <value>Kind (Personen;Q7569)</value>
+      <value>Mensch (Personen;Q5)</value>
+      <value>Personengruppe (Personen;Q16334295)</value>
+      <value>Ritter (Sonstiges;Q102083)</value>
+      <value>Satyr (Sonstiges;Q163709)</value>
+      <value>Engel (Sonstiges;Q235113)</value>
+      <value>Drache (Sonstiges;Q7559)</value>
+      <value>Stern (Sonstiges;Q523)</value>
+      <value>Mond (Sonstiges;Q405)</value>
+      <value>Sonne (Sonstiges;Q525)</value>
       <text />
     </choice>
   </attribute>
