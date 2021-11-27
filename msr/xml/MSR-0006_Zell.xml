@@ -16,14 +16,14 @@
         <figure figureNum="2" figurePosition="upper-center" figureType="coat-of-arms">Wappen: Burg, Schlüssel.</figure>
       </visual>
       <textual>
-        <location locationType="region (Gebiet)" locationRole="other">Mosel-Saar-Ruwer</location>
+        <location locationType="region / Gebiet">Mosel-Saar-Ruwer</location>
         <wineMillesime fontType="Antiqua-Sans" fontManner="stamped" wineMillesimeNorm="1937">1937er</wineMillesime>
-        <wineName wineNameType="vineyard (Großlage)" fontType="Fraktur" fontSize="larger">Zeller schwarze Katz
-          <location locationType="locality (Leitgemeinde)" locationNorm="Zell" ref="Wikidata:Q187500"></location>
+        <wineName wineNameType="vineyard / Großlage" fontType="Fraktur" fontSize="larger">Zeller schwarze Katz
+          <location locationType="locality / Leitgemeinde" locationNorm="Zell" ref="Wikidata:Q187500"></location>
         </wineName>
-        <agent agentRole="distribution (Vertrieb)" uri="https://www.alrich.eu/seite/394272/p.html">Planitzer Likörfabrik</agent>
-        <agent agentRole="distribution (Vertrieb)" ref="Q2098230">Johann Formanowski, Planitz/Sa.</agent>
-        <agent agentRole="printer (Drucker)" fontSize="smaller">Illert</agent>
+        <agent agentRole="distribution / Vertrieb" uri="https://www.alrich.eu/seite/394272/p.html">Planitzer Likörfabrik</agent>
+        <agent agentRole="distribution / Vertrieb" ref="Q2098230">Johann Formanowski, Planitz/Sa.</agent>
+        <agent agentRole="printer / Drucker" fontSize="smaller">Illert</agent>
         <labelNumber fontSize="smaller">No.7526</labelNumber>
       </textual>
     </labelPart>

@@ -12,10 +12,10 @@
       <visual>
         <background backgroundStyle="color">uniform light green</background>
         <figure figureType="coat-of-arms" figureNum="1" figurePosition="upper-center">
-          <figureItem itemData="eng=coat-of-arms;deu=Wappen;Wikidata=Q14659"></figureItem>
-          <figureItem itemData="eng=sword;deu=Schwert;Wikidata=Q12791"></figureItem>
-          <figureItem itemData="eng=leaves;deu=Blätter;Wikidata="></figureItem>
-          <figureItem itemData="eng=wings;deu=Flügel;Wikidata="></figureItem>
+          <figureItem itemData="Wappen (Artefakte;Q14659)"></figureItem>
+          <figureItem itemData="Schwert (Artefakte;Q12791)"></figureItem>
+          <figureItem itemData="Weinblätter (Flora;Q33971)"></figureItem>
+          <figureItem itemData="Flügel (Fauna;Q161358)"></figureItem>
         </figure>       
       </visual>
       <textual>

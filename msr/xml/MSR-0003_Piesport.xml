@@ -13,10 +13,16 @@
         <frame frameStyle="band" frameColor="gold" frameType="outer"></frame>
         <frame frameStyle="lines" frameColor="black" frameType="outer"></frame>
         <background backgroundStyle="pattern">light pattern</background>
-        <figure figureType="realistic" figureNum="1" figurePosition="upper-across">Landscape: river, vineyards, village.</figure>
-        <figure figureType="coat-of-arms" figureNum="2">Red coat of arms.</figure>
+        <figure figureType="realistic" figureNum="1" figurePosition="123">
+          <figureItem itemData="Fluss (Landschaft;Q4022)"></figureItem>
+          <figureItem itemData="Weinberg (Landschaft;Q22715)"></figureItem>
+          <figureItem itemData="Dorf (Bauwerke;Q532)"></figureItem>
+        </figure>
+        <figure figureType="coat-of-arms" figureNum="2">
+          <figureItem itemData="Wappen (Artefakte;Q14659)"></figureItem>
+        </figure>
         <figure figureType="symbolic" figureNum="3">
-          <figureItem itemData="eng=wine-leaves;deu=Weinblätter;wd="></figureItem>
+          <figureItem itemData="Weinblätter (Flora;Q33971)"></figureItem>
         </figure>
       </visual>
       <textual>
