@@ -354,309 +354,371 @@ The root element in a label description using the Wine Label Vocabulary.
 ### agentRole
 (no data)
 
-- Values: cultivation / Anbau, production / Weinbau, distribution / Vertrieb, cooperative / Kooperative, printer / Drucker, artist / Künstler/in, multiple / verschiedene, other / andere.
+- Contained by element: agent.
+- Possible values: cultivation / Anbau, production / Weinbau, distribution / Vertrieb, cooperative / Kooperative, printer / Drucker, artist / Künstler/in, multiple / verschiedene, other / andere.
 
 ### alcoholNorm
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: alcohol.
+- Possible values: This element has no default values.
 
 ### backgroundStyle
 (no data)
 
-- Values: pattern, color, none.
+- Contained by element: background.
+- Possible values: pattern, color, none.
 
 ### certainty
 (no data)
 
-- Values: source, evidence, estimate, low.
+- Contained by element: dating.
+- Possible values: source, evidence, estimate, low.
 
 ### collectionID
 A unique identifier for the wine label collection.
 
-- Values: This element has no default values.
+- Contained by element: collection.
+- Possible values: This element has no default values.
 
 ### conservationNorm
 (no data)
 
-- Values: new, like new, very good, good, acceptable, damaged, incomplete.
+- Contained by element: conservation.
+- Possible values: new, like new, very good, good, acceptable, damaged, incomplete.
 
 ### controlNumberType
 (no data)
 
-- Values: Amtliche Prüfnummer (Q480240), Losnummer, other.
+- Contained by element: controlNumber.
+- Possible values: Amtliche Prüfnummer (Q480240), Losnummer, other.
 
 ### curationDate
 The date (or year) when the wine label description was created.
 
-- Values: This element has no default values.
+- Contained by element: curation.
+- Possible values: This element has no default values.
 
 ### curationUpdate
 The date (or year) when the wine label description was last updated.
 
-- Values: This element has no default values.
+- Contained by element: curation.
+- Possible values: This element has no default values.
 
 ### curatorID
 A unique identifier for the person that has curated the wine label description.
 
-- Values: This element has no default values.
+- Contained by element: curation.
+- Possible values: This element has no default values.
 
 ### figureNum
 (figure number) Allows to number several figures for better identification.
 
-- Values: This element has no default values.
+- Contained by element: figure.
+- Possible values: This element has no default values.
 
 ### figurePosition
 (figure position) The position of the figure on the label surface, in a grid of nine quadrants. The quadrants are numbered like on the number-pad of a phone, starting at the top left with 1 and ending at the bottom right with 9. Any quadrant that the figure covers to a significant extent is included in the position description. (The textual designators are still valid, but will be deprecated.)
 
-- Values: upper-left, upper-right, upper-center, upper-across, center-left, center-right, center-center, center-across, lower-left, lower-right, lower-center, lower-across, left-across, center-across, right-across, full-size.
+- Contained by element: figure.
+- Possible values: upper-left, upper-right, upper-center, upper-across, center-left, center-right, center-center, center-across, lower-left, lower-right, lower-center, lower-across, left-across, center-across, right-across, full-size.
 
 ### figureType
 (figure type) Allows a simple classification of figures into common types.
 
-- Values: symbolic, realistic, abstract, seal, coat-of-arms, symbolic.
+- Contained by element: figure.
+- Possible values: symbolic, realistic, abstract, seal, coat-of-arms, symbolic.
 
 ### fontColor
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: (no data).
+- Possible values: This element has no default values.
 
 ### fontInitials
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: (no data).
+- Possible values: This element has no default values.
 
 ### fontManner
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: (no data).
+- Possible values: This element has no default values.
 
 ### fontSize
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: (no data).
+- Possible values: This element has no default values.
 
 ### fontStyle
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: (no data).
+- Possible values: This element has no default values.
 
 ### fontType
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: (no data).
+- Possible values: This element has no default values.
 
 ### frameColor
 (no data)
 
-- Values: black, grey, gold, red, green.
+- Contained by element: frame.
+- Possible values: black, grey, gold, red, green.
 
 ### frameStyle
 (no data)
 
-- Values: lines, floral, pattern, band, other.
+- Contained by element: frame.
+- Possible values: lines, floral, pattern, band, other.
 
 ### frameType
 (no data)
 
-- Values: outer, inner, other.
+- Contained by element: frame.
+- Possible values: outer, inner, other.
 
 ### itemData
 (item data) This attribute provides a fixed vocabulary, in German only, with a very broad category system (Artefakte, Fauna, Flora, Gebäude, Landschaft, Personen, Sonstiges) and a Wikidata identifier in brackets, to name the figure item. (No text content is allowed here. If there is text on a coat of arms or a banderole, it needs to be added under the heading 'textual'.)
 
-- Values: Banderole (Artefakte;Q2689628), Brezel (Artefakte;Q160525), Boot (Artefakte;Q35872), Globus (Artefakte;Q133792), Gemälde (Artefakte;Q3305213), Fahrzeug (Artefakte;Q42889), Harfe (Artefakte;Q47369), Harpune (Artefakte;Q207574), Helm (Artefakte;Q910873), Hut (Artefakte;Q80151), Krone (Artefakte;Q170984), Krug (Artefakte;Q766983), Medaille (Artefakte;Q131647), Musikinstrument (Artefakte;Q), Pfeil (Artefakte;Q45922), Rad (Artefakte;Q446), Schiff (Artefakte;Q11446), Siegel (Artefakte;Q162919), Schild (Artefakte;Q131559), Schlüssel (Artefakte;Q132041), Schwert (Artefakte;Q12791), Stoff (Artefakte;Q5849500), Vase (Artefakte;Q191851), Wage (Artefakte;Q134566), Wappen (Artefakte;Q14659), Weinglas (Artefakte;Q1531435), Weinflasche (Artefakte;Q23490), Weinfass (Artefakte;Q10289), Adler (Fauna;Q2092297), Bär (Fauna;Q30090244), Feder (Fauna;Q81025), Flügel (Fauna;Q161358), Hund (Fauna;Q144), Katze (Fauna;Q146), Löwe (Fauna;Q140), Pferd (Fauna;Q726), Ochse (Fauna;Q473194), Reh/Hirsch (Fauna;Q29838690), Schaf (Fauna;Q7368), Spinne (Fauna;Q1357), Vogel (Fauna;Q5113), Baum (Flora;Q10884), Blume (Flora;Q886167), Blüte (Flora;Q506), Pflanze (Flora;Q756), Weintraube (Flora;Q10978), Weinblätter (Flora;Q33971), Weinstock (Flora;Q2135068), Burg (Bauwerke;Q23413), Brücke (Bauwerke;Q12280), Dock (Bauwerke;Q124282), Dorf (Bauwerke;Q532), Gebäude (Bauwerke;Q41176), Fenster (Bauwerke;Q35473), Interieur (Bauwerke;Q2998430), Keller (Bauwerke;Q43275450), Kirchengebäude (Bauwerke;Q16970), Mauer (Bauwerke;Q42948), Stadt (Bauwerke;Q532), Straße (Bauwerke;Q34442), Tor/Türe (Bauwerke;Q36794), Treppe (Bauwerke;Q12511), Turm (Bauwerke;Q12518), Zaun (Bauwerke;Q148571), Ufer (Landschaft;Q468756), Fluss (Landschaft;Q4022), Hügel (Landschaft;Q54050), Weinberg (Landschaft;Q22715), Mann (Personen;Q8441), Frau (Personen;Q467), Kind (Personen;Q7569), Mensch (Personen;Q5), Personengruppe (Personen;Q16334295), Ritter (Sonstiges;Q102083), Satyr (Sonstiges;Q163709), Engel (Sonstiges;Q235113), Drache (Sonstiges;Q7559), Stern (Sonstiges;Q523), Mond (Sonstiges;Q405), Sonne (Sonstiges;Q525).
+- Contained by element: figureItem.
+- Possible values: Banderole (Artefakte;Q2689628), Brezel (Artefakte;Q160525), Boot (Artefakte;Q35872), Globus (Artefakte;Q133792), Gemälde (Artefakte;Q3305213), Fahrzeug (Artefakte;Q42889), Harfe (Artefakte;Q47369), Harpune (Artefakte;Q207574), Helm (Artefakte;Q910873), Hut (Artefakte;Q80151), Krone (Artefakte;Q170984), Krug (Artefakte;Q766983), Medaille (Artefakte;Q131647), Musikinstrument (Artefakte;Q), Pfeil (Artefakte;Q45922), Rad (Artefakte;Q446), Schiff (Artefakte;Q11446), Siegel (Artefakte;Q162919), Schild (Artefakte;Q131559), Schlüssel (Artefakte;Q132041), Schwert (Artefakte;Q12791), Stoff (Artefakte;Q5849500), Vase (Artefakte;Q191851), Wage (Artefakte;Q134566), Wappen (Artefakte;Q14659), Weinglas (Artefakte;Q1531435), Weinflasche (Artefakte;Q23490), Weinfass (Artefakte;Q10289), Adler (Fauna;Q2092297), Bär (Fauna;Q30090244), Feder (Fauna;Q81025), Flügel (Fauna;Q161358), Hund (Fauna;Q144), Katze (Fauna;Q146), Löwe (Fauna;Q140), Pferd (Fauna;Q726), Ochse (Fauna;Q473194), Reh/Hirsch (Fauna;Q29838690), Schaf (Fauna;Q7368), Spinne (Fauna;Q1357), Vogel (Fauna;Q5113), Baum (Flora;Q10884), Blume (Flora;Q886167), Blüte (Flora;Q506), Pflanze (Flora;Q756), Weintraube (Flora;Q10978), Weinblätter (Flora;Q33971), Weinstock (Flora;Q2135068), Burg (Bauwerke;Q23413), Brücke (Bauwerke;Q12280), Dock (Bauwerke;Q124282), Dorf (Bauwerke;Q532), Gebäude (Bauwerke;Q41176), Fenster (Bauwerke;Q35473), Interieur (Bauwerke;Q2998430), Keller (Bauwerke;Q43275450), Kirchengebäude (Bauwerke;Q16970), Mauer (Bauwerke;Q42948), Stadt (Bauwerke;Q532), Straße (Bauwerke;Q34442), Tor/Türe (Bauwerke;Q36794), Treppe (Bauwerke;Q12511), Turm (Bauwerke;Q12518), Zaun (Bauwerke;Q148571), Ufer (Landschaft;Q468756), Fluss (Landschaft;Q4022), Hügel (Landschaft;Q54050), Weinberg (Landschaft;Q22715), Mann (Personen;Q8441), Frau (Personen;Q467), Kind (Personen;Q7569), Mensch (Personen;Q5), Personengruppe (Personen;Q16334295), Ritter (Sonstiges;Q102083), Satyr (Sonstiges;Q163709), Engel (Sonstiges;Q235113), Drache (Sonstiges;Q7559), Stern (Sonstiges;Q523), Mond (Sonstiges;Q405), Sonne (Sonstiges;Q525).
 
 ### labelID
 A unique identifier for the label.
 
-- Values: This element has no default values.
+- Contained by element: wlv.
+- Possible values: This element has no default values.
 
 ### labelType
 This describes the label primarily with regard to its geographical scope.
 
-- Values: Lageetikett, Gutsetikett, Ortsetikett, tbc, other.
+- Contained by element: label.
+- Possible values: Lageetikett, Gutsetikett, Ortsetikett, tbc, other.
 
 ### licenceAbbr
 (no data)
 
-- Values: CC BY, public domain.
+- Contained by element: licence.
+- Possible values: CC BY, public domain.
 
 ### licenceScope
 (no data)
 
-- Values: all, markup, visual, metadata, textual.
+- Contained by element: licence.
+- Possible values: all, markup, visual, metadata, textual.
 
 ### locationNorm
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: location.
+- Possible values: This element has no default values.
 
 ### locationRegNr
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: location.
+- Possible values: This element has no default values.
 
 ### locationRole
 (no data)
 
-- Values: cultivation / Anbau, production / Weinbau, distribution / Vertrieb, cooperative / Kooperative, printer / Drucker, artist / Künstler/in, multiple / verschiedene, other / andere.
+- Contained by element: location.
+- Possible values: cultivation / Anbau, production / Weinbau, distribution / Vertrieb, cooperative / Kooperative, printer / Drucker, artist / Künstler/in, multiple / verschiedene, other / andere.
 
 ### locationType
 (no data)
 
-- Values: country / Land, region / Gebiet, area / Bereich, locality / Ortsname, locality / Leitgemeinde, winery / Weingut, vineyard / historischer Lagenname, vineyard / Großlage, vineyard / Einzellage, other.
+- Contained by element: location.
+- Possible values: country / Land, region / Gebiet, area / Bereich, locality / Ortsname, locality / Leitgemeinde, winery / Weingut, vineyard / historischer Lagenname, vineyard / Großlage, vineyard / Einzellage, other.
 
 ### material
 The material from which the label is made (in most cases, this is paper). 
 
-- Values: paper, plastic, metal.
+- Contained by element: physical.
+- Possible values: paper, plastic, metal.
 
 ### notAfter
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: dating.
+- Possible values: This element has no default values.
 
 ### notBefore
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: dating.
+- Possible values: This element has no default values.
 
 ### pageID
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: collectionContext.
+- Possible values: This element has no default values.
 
 ### partNum
 The number of the label, starting at 1.
 
-- Values: This element has no default values.
+- Contained by element: labelPart.
+- Possible values: This element has no default values.
 
 ### partType
 The type of the label part, primarily defined by its supposed location on the bottle.
 
-- Values: front, back, neck, wraparound, band.
+- Contained by element: labelPart.
+- Possible values: front, back, neck, wraparound, band.
 
 ### printingTechnique
 The technical printing process used for printing the visual and/or textual information onto the base material. 
 
-- Values: lithograph, offset, moving-type, litho+type, mixed, other.
+- Contained by element: physical.
+- Possible values: lithograph, offset, moving-type, litho+type, mixed, other.
 
 ### qualityAwardNorm
 (no data)
 
-- Values: Weinprämierung, Gütezeichen, other.
+- Contained by element: qualityAward.
+- Possible values: Weinprämierung, Gütezeichen, other.
 
 ### qualityGrapesNorm
 (no data)
 
-- Values: Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein, other.
+- Contained by element: qualityGrapes.
+- Possible values: Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein, other.
 
 ### qualityLabelType
 (no data)
 
-- Values: vineyard, grapes, other.
+- Contained by element: qualityLabel.
+- Possible values: vineyard, grapes, other.
 
 ### qualityLevelNorm
 (no data)
 
-- Values: Tafelwein/Wein, Landwein, Qualitätswein, Prädikatswein, other.
+- Contained by element: qualityLevel.
+- Possible values: Tafelwein/Wein, Landwein, Qualitätswein, Prädikatswein, other.
 
 ### qualityProductionNorm
 (no data)
 
-- Values: on-location, other.
+- Contained by element: qualityProduction.
+- Possible values: on-location, other.
 
 ### ref
 (reference) Contains authority file data, norm data, other stable and unique identifiers. Sources include: Wikidata, Register-Nummer der Weinlagen, Gemeinsame Normdaten-Datei.
 
-- Values: RegNr:, Wikidata:, GND:, enwiki:, dewiki:, frwiki:.
+- Contained by element: wineName, wineColor, wineGrapes, wineTaste, wineAging, wineOther, qualityGrapes, qualityLevel, qualityAward, qualityLabel, qualityProduction, qualityHistorical, agent, location, controlNumber.
+- Possible values: RegNr:, Wikidata:, GND:, enwiki:, dewiki:, frwiki:.
 
 ### scanID
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: scan.
+- Possible values: This element has no default values.
 
 ### shape
 Information regarding the shape of the physical label.
 
-- Values: square, circle, rectangle, oval, diamond, trapezoid, octogon, other.
+- Contained by element: physical.
+- Possible values: square, circle, rectangle, oval, diamond, trapezoid, octogon, other.
 
 ### sizeH
 The height of the label measured in millimeters.
 
-- Values: tbc.
+- Contained by element: physical.
+- Possible values: tbc.
 
 ### sizeV
 (no data)
 
-- Values: tbc.
+- Contained by element: physical.
+- Possible values: tbc.
 
 ### tasteGroupNorm
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: (no data).
+- Possible values: This element has no default values.
 
 ### textPosition
 (no data)
 
-- Values: stand-alone, in-figure.
+- Contained by element: otherText.
+- Possible values: stand-alone, in-figure.
 
 ### textType
 (no data)
 
-- Values: coat-text, motto, quotation, slogan, statement, copyright, vineyard (Lage), other.
+- Contained by element: otherText.
+- Possible values: coat-text, motto, quotation, slogan, statement, copyright, vineyard (Lage), other.
 
 ### uri
 (uniform resource identifier) Für einen Link zu weiteren Informationen.
 
-- Values: https://creativecommons.org/licenses/by/4.0/, https://github.com/dh-trier/wlv.
+- Contained by element: metadata, licence, wineName, agent, location.
+- Possible values: https://creativecommons.org/licenses/by/4.0/, https://github.com/dh-trier/wlv.
 
 ### volumeNorm
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: volume.
+- Possible values: This element has no default values.
 
 ### wdw
 (no data)
 
-- Values: http://wdw.uni-trier.de/onlinewb/index.php3?ID.
+- Contained by element: wineName, wineColor, wineGrapes, wineTaste, wineAging, qualityGrapes, qualityLevel, qualityAward, qualityLabel, qualityProduction, qualityHistorical.
+- Possible values: http://wdw.uni-trier.de/onlinewb/index.php3?ID.
 
 ### wineAgingNorm
 (no data)
 
-- Values: barrique, other.
+- Contained by element: wineAging.
+- Possible values: barrique, other.
 
 ### wineColorNorm
 (no data)
 
-- Values: red (Rotwein), white (Weisswein), rose (Rosé/Rotling), other.
+- Contained by element: wineColor.
+- Possible values: red (Rotwein), white (Weisswein), rose (Rosé/Rotling), other.
 
 ### wineGrapesNorm
 (no data)
 
-- Values: Riesling, Müller-Thurgau/Rivaner, Elbling, Spätburgunder, Grauburgunder, Chardonnay, Auxerrois, Weißburgunder, other.
+- Contained by element: wineGrapes.
+- Possible values: Riesling, Müller-Thurgau/Rivaner, Elbling, Spätburgunder, Grauburgunder, Chardonnay, Auxerrois, Weißburgunder, other.
 
 ### wineMillesimeNorm
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: wineMillesime.
+- Possible values: This element has no default values.
 
 ### wineNameNorm
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: wineName.
+- Possible values: This element has no default values.
 
 ### wineNameType
 (no data)
 
-- Values: country / Land, region / Gebiet, area / Bereich, locality / Ortsname, locality / Leitgemeinde, winery / Weingut, vineyard / historischer Lagenname, vineyard / Großlage, vineyard / Einzellage, variety / Rebsorte, other.
+- Contained by element: wineName.
+- Possible values: country / Land, region / Gebiet, area / Bereich, locality / Ortsname, locality / Leitgemeinde, winery / Weingut, vineyard / historischer Lagenname, vineyard / Großlage, vineyard / Einzellage, variety / Rebsorte, other.
 
 ### wineOtherType
 (no data)
 
-- Values: additives, usage, other.
+- Contained by element: wineOther.
+- Possible values: additives, usage, other.
 
 ### year
 (no data)
 
-- Values: This element has no default values.
+- Contained by element: dating, source.
+- Possible values: This element has no default values.

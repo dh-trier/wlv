@@ -163,7 +163,27 @@ def extract_attinfo(rng, att_names, ns):
         
         attributes[att]["frequency"] = "tbc"
         #attributes[att]["values"] = "tbc"
-            
+
+        # Contained by element
+        
+        try: 
+            containedby = rng.xpath("//rng:element//rng:ref[@name='"+att+"']/../../@name", namespaces=ns)
+            #print("1", elm, containedby)
+            if len(containedby) == 0: 
+                containedby = rng.xpath("//rng:element//rng:ref[@name='"+att+"']/../../../@name", namespaces=ns)
+                #print("2", elm, containedby)
+                if len(containedby) == 0: 
+                    containedby = rng.xpath("//rng:element//rng:ref[@name='"+att+"']/../../../../@name", namespaces=ns)
+                    #print("3", elm, containedby)
+                    if len(containedby) == 0: 
+                        containedby = ["(no data)"]
+                        #print("4", elm, containedby)
+        except: 
+            containedby = ["(no data)"]
+            #print("5", elm, containedby)
+        #print("6", elm, containedby)
+        attributes[att]["containedby"] = ", ".join(containedby)
+           
     attributes_sorted = dict(sorted(attributes.items()))
     return attributes_sorted
 
@@ -195,7 +215,8 @@ def format_attributes(attributes):
     for name,content in attributes.items(): 
         att_md = ["\n### "+name,
                     content["documentation"]+"\n",
-                    "- Values: "+content["values"]+"."]
+                    "- Contained by element: " + content["containedby"] + ".",
+                    "- Possible values: "+content["values"]+"."]
         attributes_md.append("\n".join(att_md))       
     attributes_md = "\n".join(attributes_md)
     return attributes_md
