@@ -428,7 +428,7 @@ The root element in a label description using the Wine Label Vocabulary.
 
 - Status: (no data).
 - Frequency: (no data).
-- Contained by element(s): [This is the root element](#This is the root element).
+- Contained by element(s): This is the root element.
 - Contains element(s): [metadata](#metadata), [label](#label).
 - Has attribute(s): [labelID](#labelID).
 
