@@ -88,8 +88,8 @@ def extract_elminfo(rng, elm_names, ns, att_names):
         # attributes and children
         try: 
             hits = rng.xpath("//rng:define[@name='"+elm+"']/rng:element//rng:ref/@name", namespaces=ns)
-            atts = [hit for hit in hits if hit in att_names]
-            elms = [hit for hit in hits if hit in elm_names]
+            atts = ["["+hit+"](#"+hit+")" for hit in hits if hit in att_names]
+            elms = ["["+hit+"](#"+hit+")" for hit in hits if hit in elm_names]
             # atts
             elements[elm]["attributes"] = ", ".join(atts)
             if len(atts) == 0: 
