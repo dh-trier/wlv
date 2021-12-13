@@ -18,7 +18,7 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [agentRole](#agentRole), [ref](#ref), [uri](#uri).
 
@@ -28,7 +28,7 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [alcoholNorm](#alcoholNorm).
 
@@ -38,7 +38,7 @@ Information about the background of the label. Needs to be filled in only if the
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): visual.
+- Contained by element(s): [visual](#visual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [backgroundStyle](#backgroundStyle).
 
@@ -48,7 +48,7 @@ Information about the background of the label. Needs to be filled in only if the
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): This element has no attributes.
 
@@ -58,7 +58,7 @@ The wine label collection the label belongs to.
 
 - Status: Mandatory.
 - Frequency: Exactly once.
-- Contained by element(s): metadata.
+- Contained by element(s): [metadata](#metadata).
 - Contains element(s): This element has no children.
 - Has attribute(s): [collectionID](#collectionID).
 
@@ -68,7 +68,7 @@ Any information that describes the individual label in the context of the collec
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): metadata.
+- Contained by element(s): [metadata](#metadata).
 - Contains element(s): This element has no children.
 - Has attribute(s): [pageID](#pageID), [scanID](#scanID).
 
@@ -78,7 +78,7 @@ Any information that describes the individual label in the context of the collec
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): metadata, label.
+- Contained by element(s): [metadata](#metadata), [label](#label).
 - Contains element(s): This element has no children.
 - Has attribute(s): This element has no attributes.
 
@@ -88,7 +88,7 @@ Any information that describes the individual label in the context of the collec
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): provenance.
+- Contained by element(s): [provenance](#provenance).
 - Contains element(s): This element has no children.
 - Has attribute(s): [conservationNorm](#conservationNorm).
 
@@ -98,7 +98,7 @@ Any information that describes the individual label in the context of the collec
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [controlNumberType](#controlNumberType).
 
@@ -108,7 +108,7 @@ Information on the curation process of the wine label description.
 
 - Status: Mandatory.
 - Frequency: Exactly once.
-- Contained by element(s): metadata.
+- Contained by element(s): [metadata](#metadata).
 - Contains element(s): This element has no children.
 - Has attribute(s): [curatorID](#curatorID), [curationDate](#curationDate), [curationUpdate](#curationUpdate).
 
@@ -118,7 +118,7 @@ Information on the curation process of the wine label description.
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): provenance.
+- Contained by element(s): [provenance](#provenance).
 - Contains element(s): This element has no children.
 - Has attribute(s): [year](#year), [notBefore](#notBefore), [notAfter](#notAfter), [certainty](#certainty).
 
@@ -128,7 +128,7 @@ Information on the curation process of the wine label description.
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): visual.
+- Contained by element(s): [visual](#visual).
 - Contains element(s): [figureItem](#figureItem).
 - Has attribute(s): [figureNum](#figureNum), [figureType](#figureType), [figurePosition](#figurePosition).
 
@@ -138,7 +138,7 @@ Information on the curation process of the wine label description.
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): figure.
+- Contained by element(s): [figure](#figure).
 - Contains element(s): This element has no children.
 - Has attribute(s): [itemData](#itemData).
 
@@ -148,7 +148,7 @@ Information about the frame of the label.
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): visual.
+- Contained by element(s): [visual](#visual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [frameType](#frameType), [frameStyle](#frameStyle), [frameColor](#frameColor).
 
@@ -158,7 +158,7 @@ The main container for information about the label. A label must have at least o
 
 - Status: Mandatory.
 - Frequency: Exactly once.
-- Contained by element(s): wlv.
+- Contained by element(s): [wlv](#wlv).
 - Contains element(s): [comments](#comments), [labelPart](#labelPart), [provenance](#provenance).
 - Has attribute(s): [labelType](#labelType).
 
@@ -168,7 +168,7 @@ The main container for information about the label. A label must have at least o
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): This element has no attributes.
 
@@ -178,7 +178,7 @@ The main container for information about the label. A label must have at least o
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): label.
+- Contained by element(s): [label](#label).
 - Contains element(s): [physical](#physical), [visual](#visual), [textual](#textual).
 - Has attribute(s): [partNum](#partNum), [partType](#partType).
 
@@ -188,7 +188,7 @@ The main container for information about the label. A label must have at least o
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): metadata.
+- Contained by element(s): [metadata](#metadata).
 - Contains element(s): This element has no children.
 - Has attribute(s): [uri](#uri), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope).
 
@@ -198,7 +198,7 @@ The main container for information about the label. A label must have at least o
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): wineName.
+- Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
 - Has attribute(s): [locationType](#locationType), [locationRole](#locationRole), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [figureNum](#figureNum), [ref](#ref), [uri](#uri).
 
@@ -208,7 +208,7 @@ One of two mandatory top-level elements. Contains metadata related to the label 
 
 - Status: Mandatory.
 - Frequency: Exactly once.
-- Contained by element(s): wlv.
+- Contained by element(s): [wlv](#wlv).
 - Contains element(s): [collection](#collection), [curation](#curation), [licence](#licence), [collectionContext](#collectionContext), [comments](#comments).
 - Has attribute(s): [uri](#uri).
 
@@ -218,7 +218,7 @@ One of two mandatory top-level elements. Contains metadata related to the label 
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [textType](#textType), [textPosition](#textPosition), [figureNum](#figureNum).
 
@@ -228,7 +228,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 
 - Status: Mandatory.
 - Frequency: Exactly once.
-- Contained by element(s): labelPart.
+- Contained by element(s): [labelPart](#labelPart).
 - Contains element(s): This element has no children.
 - Has attribute(s): [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [material](#material), [printingTechnique](#printingTechnique).
 
@@ -238,7 +238,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): label.
+- Contained by element(s): [label](#label).
 - Contains element(s): [dating](#dating), [source](#source), [scan](#scan), [conservation](#conservation).
 - Has attribute(s): This element has no attributes.
 
@@ -248,7 +248,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityAwardNorm](#qualityAwardNorm).
 
@@ -258,7 +258,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityGrapesNorm](#qualityGrapesNorm).
 
@@ -268,7 +268,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [wdw](#wdw), [ref](#ref).
 
@@ -278,7 +278,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityLabelType](#qualityLabelType).
 
@@ -288,7 +288,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityLevelNorm](#qualityLevelNorm).
 
@@ -298,7 +298,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityProductionNorm](#qualityProductionNorm).
 
@@ -308,7 +308,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): provenance.
+- Contained by element(s): [provenance](#provenance).
 - Contains element(s): This element has no children.
 - Has attribute(s): [scanID](#scanID).
 
@@ -318,7 +318,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): provenance.
+- Contained by element(s): [provenance](#provenance).
 - Contains element(s): This element has no children.
 - Has attribute(s): [year](#year).
 
@@ -328,7 +328,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 
 - Status: Mandatory.
 - Frequency: Exactly once.
-- Contained by element(s): labelPart.
+- Contained by element(s): [labelPart](#labelPart).
 - Contains element(s): [wineMillesime](#wineMillesime), [wineName](#wineName), [wineGrapes](#wineGrapes), [wineTaste](#wineTaste), [wineAging](#wineAging), [wineOther](#wineOther), [qualityGrapes](#qualityGrapes), [qualityLevel](#qualityLevel), [qualityAward](#qualityAward), [qualityLabel](#qualityLabel), [qualityProduction](#qualityProduction), [qualityHistorical](#qualityHistorical), [agent](#agent), [location](#location), [alcohol](#alcohol), [volume](#volume), [controlNumber](#controlNumber), [barrelNumber](#barrelNumber), [labelNumber](#labelNumber), [otherText](#otherText).
 - Has attribute(s): This element has no attributes.
 
@@ -338,7 +338,7 @@ Any visual and non-textual or non-linguistic elements discernible on the label.
 
 - Status: Mandatory.
 - Frequency: Exactly once.
-- Contained by element(s): labelPart.
+- Contained by element(s): [labelPart](#labelPart).
 - Contains element(s): [frame](#frame), [background](#background), [figure](#figure).
 - Has attribute(s): This element has no attributes.
 
@@ -348,7 +348,7 @@ Any visual and non-textual or non-linguistic elements discernible on the label.
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [volumeNorm](#volumeNorm).
 
@@ -358,7 +358,7 @@ Any visual and non-textual or non-linguistic elements discernible on the label.
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [wineAgingNorm](#wineAgingNorm), [ref](#ref), [wdw](#wdw).
 
@@ -368,7 +368,7 @@ Any visual and non-textual or non-linguistic elements discernible on the label.
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): (no data).
+- Contained by element(s): [(no data)](#(no data)).
 - Contains element(s): This element has no children.
 - Has attribute(s): [wineColorNorm](#wineColorNorm), [ref](#ref), [wdw](#wdw).
 
@@ -378,7 +378,7 @@ Any visual and non-textual or non-linguistic elements discernible on the label.
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [wineGrapesNorm](#wineGrapesNorm), [ref](#ref), [wdw](#wdw).
 
@@ -388,7 +388,7 @@ The year that the wine was harvested in.
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [wineMillesimeNorm](#wineMillesimeNorm).
 
@@ -398,7 +398,7 @@ The name of the wine. Typically printed in a somewhat larger font size than othe
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): [location](#location).
 - Has attribute(s): [wineNameType](#wineNameType), [wineNameNorm](#wineNameNorm), [ref](#ref), [uri](#uri), [wdw](#wdw).
 
@@ -408,7 +408,7 @@ The name of the wine. Typically printed in a somewhat larger font size than othe
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [wineOtherType](#wineOtherType), [ref](#ref).
 
@@ -418,7 +418,7 @@ The name of the wine. Typically printed in a somewhat larger font size than othe
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): textual.
+- Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw).
 
@@ -428,7 +428,7 @@ The root element in a label description using the Wine Label Vocabulary.
 
 - Status: (no data).
 - Frequency: (no data).
-- Contained by element(s): This is the root element.
+- Contained by element(s): [This is the root element](#This is the root element).
 - Contains element(s): [metadata](#metadata), [label](#label).
 - Has attribute(s): [labelID](#labelID).
 

@@ -124,6 +124,7 @@ def extract_elminfo(rng, elm_names, ns, att_names):
             containedby = ["(no data)"]
             #print("5", elm, containedby)
         #print("6", elm, containedby)
+        containedby = ["["+item+"](#"+item+")" for item in containedby]
         elements[elm]["containedby"] = ", ".join(containedby)
 
 
