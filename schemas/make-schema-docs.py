@@ -176,6 +176,7 @@ def extract_attinfo(rng, att_names, ns):
         # values
         try: 
             vals = rng.xpath("//rng:define[@name='"+att+"']//rng:value/text()", namespaces=ns)
+            #vals = ["["+item+"](#"+item+")" for item in vals]
             attributes[att]["values"] = ", ".join(vals)
             if len(vals) == 0: 
                 attributes[att]["values"] = "This element has no default values"
@@ -200,6 +201,7 @@ def extract_attinfo(rng, att_names, ns):
                     if len(containedby) == 0: 
                         containedby = ["(no data)"]
                         #print("4", elm, containedby)
+            containedby = ["["+item+"](#"+item+")" for item in containedby]
         except: 
             containedby = ["(no data)"]
             #print("5", elm, containedby)
