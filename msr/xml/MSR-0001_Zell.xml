@@ -2,23 +2,25 @@
 <?xml-model href="../../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <wlv labelID="MSR-0001">
   <metadata>
-  <collection collectionID="MSR"></collection>
-  <curation curatorID="#cs" curationDate="2021-11-22"></curation>
-  <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"></licence>
+    <collection collectionID="MSR"></collection>
+    <curation curatorID="#cs" curationDate="2021-11-22"></curation>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"></licence>
   </metadata>
   <label>
     <labelPart partType="front" partNum="1">
       <physical sizeH="130" sizeV="89" shape="rectangle" material="paper"/>
       <visual>
-          <frame frameStyle="other" frameColor="gold" frameType="outer">Linie mit Ornamenten an den Ecken.</frame>
+        <frame frameStyle="other" frameColor="gold" frameType="outer">Linie mit Ornamenten an den Ecken.</frame>
+        <background backgroundStyle="patterns"></background>
       </visual>
       <textual>
-          <location locationType="region / Gebiet" fontStyle="all-caps">Mosel-Saar-Ruwer</location>
-          <wineMillesime wineMillesimeNorm="1957">1957er</wineMillesime>
-          <wineName wineNameType="vineyard / Großlage">Zeller schwarze Katz
-            <location locationType="vineyard / Großlage" ref="RegNr=6.3.4"></location>
-            <location locationType="locality / Leitgemeinde" ref="Wikidata:Q187500" ></location>
-          </wineName>
+        <location locationType="region / Gebiet" fontStyle="all-caps">Mosel-Saar-Ruwer</location>
+        <wineMillesime wineMillesimeNorm="1957">1957er</wineMillesime>
+        <wineName wineNameType="vineyard / Großlage">Zeller schwarze Katz
+          <location locationType="vineyard / Großlage" ref="RegNr=6.3.4"></location>
+          <location locationType="locality / Leitgemeinde" ref="Wikidata:Q187500"></location>
+          <location locationType="country / Land">Deutschland</location>
+        </wineName>
       </textual>
     </labelPart>
   </label>

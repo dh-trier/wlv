@@ -12,11 +12,11 @@
       <visual>
         <background backgroundStyle="color">uniform light green</background>
         <figure figureType="coat-of-arms" figureNum="1" figurePosition="upper-center">
-          <figureItem itemData="Wappen (Artefakte;Q14659)"></figureItem>
+          <figureItem itemData="Wappen (Artefakte;Q14659)"></fig ureItem>
           <figureItem itemData="Schwert (Artefakte;Q12791)"></figureItem>
           <figureItem itemData="Weinblätter (Flora;Q33971)"></figureItem>
           <figureItem itemData="Flügel (Fauna;Q161358)"></figureItem>
-        </figure>       
+        </figure>
       </visual>
       <textual>
         <otherText textType="coat-text" textPosition="in-figure" fontType="Antiqua-Sans" fontStyle="all-caps">seit 1846</otherText>

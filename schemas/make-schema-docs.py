@@ -93,17 +93,41 @@ def extract_elminfo(rng, elm_names, ns, att_names):
             # atts
             elements[elm]["attributes"] = ", ".join(atts)
             if len(atts) == 0: 
-                elements[elm]["attributes"] = "This element has no attributes."
+                elements[elm]["attributes"] = "This element has no attributes"
             # children
             elements[elm]["children"] = ", ".join(elms)
             if len(elms) == 0: 
-                elements[elm]["children"] = "This element has no children."
+                elements[elm]["children"] = "This element has no children"
         except: 
-            elements[elm]["attributes"] = "No data found."
-            elements[elm]["children"] = "No data found."
+            elements[elm]["attributes"] = "(no data)"
+            elements[elm]["children"] = "(no data)"
 
         elements[elm]["frequency"] = "tbc."
         #elements[elm]["children"] = "tbc."
+        
+        # Contained by element
+        
+        try: 
+            if elm == "wlv": 
+                containedby = ["This is the root element"]
+            else: 
+                containedby = rng.xpath("//rng:element//rng:ref[@name='"+elm+"']/../../@name", namespaces=ns)
+                #print("1", elm, containedby)
+                if len(containedby) == 0: 
+                    containedby = rng.xpath("//rng:element//rng:ref[@name='"+elm+"']/../../../@name", namespaces=ns)
+                    #print("2", elm, containedby)
+                    if len(containedby) == 0: 
+                        containedby = rng.xpath("//rng:element//rng:ref[@name='"+elm+"']/../../../../@name", namespaces=ns)
+                        #print("3", elm, containedby)
+                        if len(containedby) == 0: 
+                            containedby = ["(no data)"]
+                            #print("4", elm, containedby)
+        except: 
+            containedby = ["(no data)"]
+            #print("5", elm, containedby)
+        #print("6", elm, containedby)
+        elements[elm]["containedby"] = ", ".join(containedby)
+
     
     elements_sorted = dict(sorted(elements.items()))
     return elements_sorted
@@ -132,13 +156,13 @@ def extract_attinfo(rng, att_names, ns):
             vals = rng.xpath("//rng:define[@name='"+att+"']//rng:value/text()", namespaces=ns)
             attributes[att]["values"] = ", ".join(vals)
             if len(vals) == 0: 
-                attributes[att]["values"] = "This element has no default values."
+                attributes[att]["values"] = "This element has no default values"
         except: 
-            attributes[att]["attributes"] = "No data found."
+            attributes[att]["attributes"] = "No data found"
 
         
-        attributes[att]["frequency"] = "tbc."
-        #attributes[att]["values"] = "tbc."
+        attributes[att]["frequency"] = "tbc"
+        #attributes[att]["values"] = "tbc"
             
     attributes_sorted = dict(sorted(attributes.items()))
     return attributes_sorted
@@ -154,8 +178,9 @@ def format_elements(elements):
     for name,content in elements.items(): 
         elm_md = ["\n### "+name,
                     "\n" + content["documentation"]+"\n",
-                    "- Child element(s): "+content["children"],
-                    "- Attribute(s): "+content["attributes"]]
+                    "- Contained by element(s): " + content["containedby"]+".",
+                    "- Contains element(s): " + content["children"]+".",
+                    "- Has attribute(s): " + content["attributes"]+"."]
         elements_md.append("\n".join(elm_md))
     elements_md = "\n".join(elements_md)
     return elements_md
@@ -170,7 +195,7 @@ def format_attributes(attributes):
     for name,content in attributes.items(): 
         att_md = ["\n### "+name,
                     content["documentation"]+"\n",
-                    "- Values: "+content["values"]]
+                    "- Values: "+content["values"]+"."]
         attributes_md.append("\n".join(att_md))       
     attributes_md = "\n".join(attributes_md)
     return attributes_md
@@ -186,11 +211,11 @@ def inject_data(md, elements, attributes):
     return md
 
 
-def save_md(docs): 
+def save_md(docs, docsfile): 
     """
     Saves the documentation generated as a HTML document to disk.
     """
-    with open(join("..", "..", "schemas", "wlv-label-schema_documentation.md"), "w", encoding="utf8") as outfile: 
+    with open(docsfile, "w", encoding="utf8") as outfile: 
         outfile.write(docs)
  
  
@@ -200,16 +225,18 @@ def main():
     """
     Coordinates the process.
     """
+    rngfile = join("wlv-label-schema.rng")
+    docsfile = join("wlv-label-docs.md")
     ns = {'rng':'http://relaxng.org/ns/structure/1.0',
           'a':'http://relaxng.org/ns/compatibility/annotations/1.0'}
-    rng = open_file(rngfile=join("..", "..", "schemas", "wlv-label-schema.rng")) 
+    rng = open_file(rngfile) 
     elm_names, att_names = get_names(rng, ns)
     elements = extract_elminfo(rng, elm_names, ns, att_names)
     attributes = extract_attinfo(rng, att_names, ns)
     elements = format_elements(elements)
     attributes = format_attributes(attributes)
     docs = inject_data(md, elements, attributes)
-    save_md(docs)
+    save_md(docs, docsfile)
 
 main()
 
