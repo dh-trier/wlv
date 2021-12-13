@@ -102,9 +102,7 @@ def extract_elminfo(rng, elm_names, ns, att_names):
             elements[elm]["attributes"] = "(no data)"
             elements[elm]["children"] = "(no data)"
 
-        elements[elm]["frequency"] = "tbc."
-        #elements[elm]["children"] = "tbc."
-        
+       
         # Contained by element
         
         try: 
@@ -128,6 +126,29 @@ def extract_elminfo(rng, elm_names, ns, att_names):
         #print("6", elm, containedby)
         elements[elm]["containedby"] = ", ".join(containedby)
 
+
+        # Frequency of element
+        try: 
+            result = rng.xpath("name(//rng:element//rng:ref[@name='"+elm+"']/..)", namespaces=ns)
+            if result == "element": 
+                status = "Mandatory"
+                frequency = "Exactly once"
+            elif result == "optional": 
+                status = "Optional"
+                frequency = "Once at most"
+            elif result == "zeroOrMore": 
+                status = "Optional"
+                frequency = "Zero, once or several times"
+            #print("1", elm, frequency)
+            elements[elm]["status"] = status
+            elements[elm]["frequency"] = frequency
+        except: 
+            frequency = "(no data)"
+            status = "(no data)"
+            #print("2", elm, frequency)
+            elements[elm]["status"] = status
+            elements[elm]["frequency"] = frequency
+            
     
     elements_sorted = dict(sorted(elements.items()))
     return elements_sorted
@@ -183,6 +204,23 @@ def extract_attinfo(rng, att_names, ns):
             #print("5", elm, containedby)
         #print("6", elm, containedby)
         attributes[att]["containedby"] = ", ".join(containedby)
+
+        # Status of attribute
+        try: 
+            result = rng.xpath("name(//rng:element//rng:ref[@name='"+att+"']/..)", namespaces=ns)
+            if result == "element": 
+                status = "Mandatory"
+            elif result == "optional": 
+                status = "Optional"
+            elif result == "zeroOrMore": 
+                status = "Optional"
+            #print("1", att, status)
+            attributes[att]["status"] = status
+        except: 
+            status = "(no data)"
+            #print("2", att, status)
+            attributes[att]["status"] = status
+
            
     attributes_sorted = dict(sorted(attributes.items()))
     return attributes_sorted
@@ -198,6 +236,8 @@ def format_elements(elements):
     for name,content in elements.items(): 
         elm_md = ["\n### "+name,
                     "\n" + content["documentation"]+"\n",
+                    "- Status: " + content["status"]+".",
+                    "- Frequency: " + content["frequency"]+".",
                     "- Contained by element(s): " + content["containedby"]+".",
                     "- Contains element(s): " + content["children"]+".",
                     "- Has attribute(s): " + content["attributes"]+"."]
@@ -215,6 +255,7 @@ def format_attributes(attributes):
     for name,content in attributes.items(): 
         att_md = ["\n### "+name,
                     content["documentation"]+"\n",
+                    "- Status: " + content["status"] + ".",
                     "- Contained by element: " + content["containedby"] + ".",
                     "- Possible values: "+content["values"]+"."]
         attributes_md.append("\n".join(att_md))       
