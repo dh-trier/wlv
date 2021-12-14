@@ -31,9 +31,13 @@ md ="\
 This document documents all elements and attributes included in the Wine Label Vocabulary (WLV) in a human-readable form. This document has been generated automatically from the Relax NG schema.\n\n\
 For more information on the WLV, see https://github.com/dh-trier/wlv\n\n\
 ## Contents\n\n\
+1. [Quicklinks](#Quicklinks)\n\
 1. [Elements](#Elements)\n\
 2. [Attributes](#Attributes)\n\n\
-## Elements\n\n\
+## Quicklinks\n\n\
+**Elements**: <list_elements/>\n\n\
+**Attributes**: <list_attributes/>\n\n\
+## Elements\
 <elements/>\n\n\
 ## Attributes\n\n\
 <attributes/>\n\
@@ -266,11 +270,15 @@ def format_attributes(attributes):
     return attributes_md
 
   
-def inject_data(md, elements, attributes): 
+def inject_data(md, elements, attributes, elm_names, att_names): 
     """
     Integrates the information about elements and attributes into the HTML template.
     Returns a string that is a complete HTML document. 
     """
+    elmstring = ", ".join(["["+item+"](#"+item+")" for item in sorted(elm_names)])
+    attstring = ", ".join(["["+item+"](#"+item+")" for item in sorted(att_names)])
+    md = re.sub("<list_elements/>", elmstring, md)
+    md = re.sub("<list_attributes/>", attstring, md)
     md = re.sub("<elements/>", elements, md)
     md = re.sub("<attributes/>", attributes, md)
     return md
@@ -300,7 +308,7 @@ def main():
     attributes = extract_attinfo(rng, att_names, ns)
     elements = format_elements(elements)
     attributes = format_attributes(attributes)
-    docs = inject_data(md, elements, attributes)
+    docs = inject_data(md, elements, attributes, elm_names, att_names)
     save_md(docs, docsfile)
 
 main()

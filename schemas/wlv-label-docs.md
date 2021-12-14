@@ -6,12 +6,17 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 
 ## Contents
 
+1. [Quicklinks](#Quicklinks)
 1. [Elements](#Elements)
 2. [Attributes](#Attributes)
 
+## Quicklinks
+
+**Elements**: [agent](#agent), [alcohol](#alcohol), [background](#background), [barrelNumber](#barrelNumber), [collection](#collection), [collectionContext](#collectionContext), [comments](#comments), [conservation](#conservation), [controlNumber](#controlNumber), [curation](#curation), [dating](#dating), [figure](#figure), [figureItem](#figureItem), [frame](#frame), [label](#label), [labelNumber](#labelNumber), [labelPart](#labelPart), [licence](#licence), [location](#location), [metadata](#metadata), [otherText](#otherText), [physical](#physical), [provenance](#provenance), [qualityAward](#qualityAward), [qualityGrapes](#qualityGrapes), [qualityHistorical](#qualityHistorical), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [qualityProduction](#qualityProduction), [scan](#scan), [source](#source), [textual](#textual), [visual](#visual), [volume](#volume), [wineAging](#wineAging), [wineColor](#wineColor), [wineGrapes](#wineGrapes), [wineMillesime](#wineMillesime), [wineName](#wineName), [wineOther](#wineOther), [wineTaste](#wineTaste), [wlv](#wlv)
+
+**Attributes**: [agentRole](#agentRole), [alcoholNorm](#alcoholNorm), [backgroundStyle](#backgroundStyle), [certainty](#certainty), [collectionID](#collectionID), [conservationNorm](#conservationNorm), [controlNumberType](#controlNumberType), [curationDate](#curationDate), [curationUpdate](#curationUpdate), [curatorID](#curatorID), [figureNum](#figureNum), [figurePosition](#figurePosition), [figureType](#figureType), [fontColor](#fontColor), [fontInitials](#fontInitials), [fontManner](#fontManner), [fontSize](#fontSize), [fontStyle](#fontStyle), [fontType](#fontType), [frameColor](#frameColor), [frameStyle](#frameStyle), [frameType](#frameType), [itemData](#itemData), [labelID](#labelID), [labelType](#labelType), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [locationRole](#locationRole), [locationType](#locationType), [material](#material), [notAfter](#notAfter), [notBefore](#notBefore), [pageID](#pageID), [partNum](#partNum), [partType](#partType), [printingTechnique](#printingTechnique), [qualityAwardNorm](#qualityAwardNorm), [qualityGrapesNorm](#qualityGrapesNorm), [qualityLabelType](#qualityLabelType), [qualityLevelNorm](#qualityLevelNorm), [qualityProductionNorm](#qualityProductionNorm), [ref](#ref), [scanID](#scanID), [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [tasteGroupNorm](#tasteGroupNorm), [textPosition](#textPosition), [textType](#textType), [uri](#uri), [volumeNorm](#volumeNorm), [wdw](#wdw), [wineAgingNorm](#wineAgingNorm), [wineColorNorm](#wineColorNorm), [wineGrapesNorm](#wineGrapesNorm), [wineMillesimeNorm](#wineMillesimeNorm), [wineNameNorm](#wineNameNorm), [wineNameType](#wineNameType), [wineOtherType](#wineOtherType), [year](#year)
+
 ## Elements
-
-
 ### agent
 
 (no data)
