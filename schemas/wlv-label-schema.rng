@@ -747,7 +747,9 @@
       <optional>
         <ref name="wdw" />
       </optional>
-      <ref name="fontAttributes" />
+      <optional>
+        <ref name="fontAttributes" />
+      </optional>
     </element>
   </define>
   <define name="wineNameType">

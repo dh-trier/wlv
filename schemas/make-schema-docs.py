@@ -68,8 +68,6 @@ def get_names(rng, ns):
     att_names = rng.findall(".//rng:attribute/rng:name", namespaces=ns)
     att_names = [att.text for att in att_names]
     
-    #elm_names = ["wlv", "curation", "metadata", "collectionContext", "labelPart", "figure"]
-    #att_names = ["curationDate", "curationUpdate", "labelID", "collectionID", "figureNum"]
     return elm_names, att_names
     
 
@@ -177,56 +175,66 @@ def extract_attinfo(rng, att_names, ns):
         except: 
             attributes[att]["documentation"] = "(no data)"
             
-        # values
+        # attribute values
         try: 
             vals = rng.xpath("//rng:define[@name='"+att+"']//rng:value/text()", namespaces=ns)
-            #vals = ["["+item+"](#"+item+")" for item in vals]
-            attributes[att]["values"] = ", ".join(vals)
             if len(vals) == 0: 
                 attributes[att]["values"] = "This element has no default values"
+            elif len(vals) < 5: 
+                attributes[att]["values"] = ", ".join(vals)
+            else: 
+                attributes[att]["values"] = "\n    * ".join(vals)
+                attributes[att]["values"] = "\n    * " + attributes[att]["values"]
         except: 
             attributes[att]["attributes"] = "No data found"
 
         
-        attributes[att]["frequency"] = "tbc"
-        #attributes[att]["values"] = "tbc"
-
         # Contained by element
         
-        try: 
-            containedby = rng.xpath("//rng:element//rng:ref[@name='"+att+"']/../../@name", namespaces=ns)
-            #print("1", elm, containedby)
-            if len(containedby) == 0: 
-                containedby = rng.xpath("//rng:element//rng:ref[@name='"+att+"']/../../../@name", namespaces=ns)
-                #print("2", elm, containedby)
+        if att[0:4] == "font": 
+            attributes[att]["containedby"] = "All elements contained by [textual](#textual)" 
+        else:
+            try: 
+                containedby = rng.xpath("//rng:element//rng:ref[@name='"+att+"']/../../@name", namespaces=ns)
+                #print("1", elm, containedby)
                 if len(containedby) == 0: 
-                    containedby = rng.xpath("//rng:element//rng:ref[@name='"+att+"']/../../../../@name", namespaces=ns)
-                    #print("3", elm, containedby)
+                    containedby = rng.xpath("//rng:element//rng:ref[@name='"+att+"']/../../../@name", namespaces=ns)
+                    #print("2", elm, containedby)
                     if len(containedby) == 0: 
-                        containedby = ["(no data)"]
-                        #print("4", elm, containedby)
-            containedby = ["["+item+"](#"+item+")" for item in containedby]
-        except: 
-            containedby = ["(no data)"]
-            #print("5", elm, containedby)
-        #print("6", elm, containedby)
-        attributes[att]["containedby"] = ", ".join(containedby)
+                        containedby = rng.xpath("//rng:element//rng:ref[@name='"+att+"']/../../../../@name", namespaces=ns)
+                        #print("3", elm, containedby)
+                        if len(containedby) == 0: 
+                            containedby = ["(no data)"]
+                            #print("4", elm, containedby)
+                containedby = ["["+item+"](#"+item+")" for item in containedby if item != "(no data)"]
+            except: 
+                containedby = ["(no data)"]
+                #print("5", elm, containedby)
+            #print("6", elm, containedby)
+            if len(containedby) < 5: 
+                attributes[att]["containedby"] = ", ".join(containedby)
+            else: 
+                attributes[att]["containedby"] = "\n    * ".join(containedby)
+                attributes[att]["containedby"] = "\n    * " + attributes[att]["containedby"]
 
         # Status of attribute
-        try: 
-            result = rng.xpath("name(//rng:element//rng:ref[@name='"+att+"']/..)", namespaces=ns)
-            if result == "element": 
-                status = "Mandatory"
-            elif result == "optional": 
-                status = "Optional"
-            elif result == "zeroOrMore": 
-                status = "Optional"
-            #print("1", att, status)
-            attributes[att]["status"] = status
-        except: 
-            status = "(no data)"
-            #print("2", att, status)
-            attributes[att]["status"] = status
+        if att[0:4] == "font": 
+            attributes[att]["status"] = "Optional"
+        else: 
+            try: 
+                result = rng.xpath("name(//rng:element//rng:ref[@name='"+att+"']/..)", namespaces=ns)
+                if result == "element": 
+                    status = "Mandatory"
+                elif result == "optional": 
+                    status = "Optional"
+                elif result == "zeroOrMore": 
+                    status = "Optional"
+                #print("1", att, status)
+                attributes[att]["status"] = status
+            except:
+                status = "(no data)"
+                #print("2", att, status)
+                attributes[att]["status"] = status
 
            
     attributes_sorted = dict(sorted(attributes.items()))

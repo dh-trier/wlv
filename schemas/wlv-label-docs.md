@@ -445,7 +445,15 @@ The root element in a label description using the Wine Label Vocabulary.
 
 - Status: Mandatory.
 - Contained by element: [agent](#agent).
-- Possible values: cultivation / Anbau, production / Weinbau, distribution / Vertrieb, cooperative / Kooperative, printer / Drucker, artist / Künstler/in, multiple / verschiedene, other / andere.
+- Possible values: 
+    * cultivation / Anbau
+    * production / Weinbau
+    * distribution / Vertrieb
+    * cooperative / Kooperative
+    * printer / Drucker
+    * artist / Künstler/in
+    * multiple / verschiedene
+    * other / andere.
 
 ### alcoholNorm
 (no data)
@@ -480,7 +488,14 @@ A unique identifier for the wine label collection.
 
 - Status: Mandatory.
 - Contained by element: [conservation](#conservation).
-- Possible values: new, like new, very good, good, acceptable, damaged, incomplete.
+- Possible values: 
+    * new
+    * like new
+    * very good
+    * good
+    * acceptable
+    * damaged
+    * incomplete.
 
 ### controlNumberType
 (no data)
@@ -522,55 +537,77 @@ A unique identifier for the person that has curated the wine label description.
 
 - Status: Optional.
 - Contained by element: [figure](#figure).
-- Possible values: upper-left, upper-right, upper-center, upper-across, center-left, center-right, center-center, center-across, lower-left, lower-right, lower-center, lower-across, left-across, center-across, right-across, full-size.
+- Possible values: 
+    * upper-left
+    * upper-right
+    * upper-center
+    * upper-across
+    * center-left
+    * center-right
+    * center-center
+    * center-across
+    * lower-left
+    * lower-right
+    * lower-center
+    * lower-across
+    * left-across
+    * center-across
+    * right-across
+    * full-size.
 
 ### figureType
 (figure type) Allows a simple classification of figures into common types.
 
 - Status: Mandatory.
 - Contained by element: [figure](#figure).
-- Possible values: symbolic, realistic, abstract, seal, coat-of-arms, symbolic.
+- Possible values: 
+    * symbolic
+    * realistic
+    * abstract
+    * seal
+    * coat-of-arms
+    * symbolic.
 
 ### fontColor
 (no data)
 
-- Status: Mandatory.
-- Contained by element: [(no data)](#(no data)).
+- Status: Optional.
+- Contained by element: All elements contained by [textual](#textual).
 - Possible values: This element has no default values.
 
 ### fontInitials
 (no data)
 
-- Status: Mandatory.
-- Contained by element: [(no data)](#(no data)).
+- Status: Optional.
+- Contained by element: All elements contained by [textual](#textual).
 - Possible values: This element has no default values.
 
 ### fontManner
 (no data)
 
-- Status: Mandatory.
-- Contained by element: [(no data)](#(no data)).
+- Status: Optional.
+- Contained by element: All elements contained by [textual](#textual).
 - Possible values: This element has no default values.
 
 ### fontSize
 (no data)
 
-- Status: Mandatory.
-- Contained by element: [(no data)](#(no data)).
+- Status: Optional.
+- Contained by element: All elements contained by [textual](#textual).
 - Possible values: This element has no default values.
 
 ### fontStyle
 (no data)
 
-- Status: Mandatory.
-- Contained by element: [(no data)](#(no data)).
+- Status: Optional.
+- Contained by element: All elements contained by [textual](#textual).
 - Possible values: This element has no default values.
 
 ### fontType
 (no data)
 
-- Status: Mandatory.
-- Contained by element: [(no data)](#(no data)).
+- Status: Optional.
+- Contained by element: All elements contained by [textual](#textual).
 - Possible values: This element has no default values.
 
 ### frameColor
@@ -578,14 +615,24 @@ A unique identifier for the person that has curated the wine label description.
 
 - Status: Mandatory.
 - Contained by element: [frame](#frame).
-- Possible values: black, grey, gold, red, green.
+- Possible values: 
+    * black
+    * grey
+    * gold
+    * red
+    * green.
 
 ### frameStyle
 (no data)
 
 - Status: Mandatory.
 - Contained by element: [frame](#frame).
-- Possible values: lines, floral, pattern, band, other.
+- Possible values: 
+    * lines
+    * floral
+    * pattern
+    * band
+    * other.
 
 ### frameType
 (no data)
@@ -599,7 +646,87 @@ A unique identifier for the person that has curated the wine label description.
 
 - Status: Mandatory.
 - Contained by element: [figureItem](#figureItem).
-- Possible values: Banderole (Artefakte;Q2689628), Brezel (Artefakte;Q160525), Boot (Artefakte;Q35872), Globus (Artefakte;Q133792), Gemälde (Artefakte;Q3305213), Fahrzeug (Artefakte;Q42889), Harfe (Artefakte;Q47369), Harpune (Artefakte;Q207574), Helm (Artefakte;Q910873), Hut (Artefakte;Q80151), Krone (Artefakte;Q170984), Krug (Artefakte;Q766983), Medaille (Artefakte;Q131647), Musikinstrument (Artefakte;Q), Pfeil (Artefakte;Q45922), Rad (Artefakte;Q446), Schiff (Artefakte;Q11446), Siegel (Artefakte;Q162919), Schild (Artefakte;Q131559), Schlüssel (Artefakte;Q132041), Schwert (Artefakte;Q12791), Stoff (Artefakte;Q5849500), Vase (Artefakte;Q191851), Wage (Artefakte;Q134566), Wappen (Artefakte;Q14659), Weinglas (Artefakte;Q1531435), Weinflasche (Artefakte;Q23490), Weinfass (Artefakte;Q10289), Adler (Fauna;Q2092297), Bär (Fauna;Q30090244), Feder (Fauna;Q81025), Flügel (Fauna;Q161358), Hund (Fauna;Q144), Katze (Fauna;Q146), Löwe (Fauna;Q140), Pferd (Fauna;Q726), Ochse (Fauna;Q473194), Reh/Hirsch (Fauna;Q29838690), Schaf (Fauna;Q7368), Spinne (Fauna;Q1357), Vogel (Fauna;Q5113), Baum (Flora;Q10884), Blume (Flora;Q886167), Blüte (Flora;Q506), Pflanze (Flora;Q756), Weintraube (Flora;Q10978), Weinblätter (Flora;Q33971), Weinstock (Flora;Q2135068), Burg (Bauwerke;Q23413), Brücke (Bauwerke;Q12280), Dock (Bauwerke;Q124282), Dorf (Bauwerke;Q532), Gebäude (Bauwerke;Q41176), Fenster (Bauwerke;Q35473), Interieur (Bauwerke;Q2998430), Keller (Bauwerke;Q43275450), Kirchengebäude (Bauwerke;Q16970), Mauer (Bauwerke;Q42948), Stadt (Bauwerke;Q532), Straße (Bauwerke;Q34442), Tor/Türe (Bauwerke;Q36794), Treppe (Bauwerke;Q12511), Turm (Bauwerke;Q12518), Zaun (Bauwerke;Q148571), Ufer (Landschaft;Q468756), Fluss (Landschaft;Q4022), Hügel (Landschaft;Q54050), Weinberg (Landschaft;Q22715), Mann (Personen;Q8441), Frau (Personen;Q467), Kind (Personen;Q7569), Mensch (Personen;Q5), Personengruppe (Personen;Q16334295), Ritter (Sonstiges;Q102083), Satyr (Sonstiges;Q163709), Engel (Sonstiges;Q235113), Drache (Sonstiges;Q7559), Stern (Sonstiges;Q523), Mond (Sonstiges;Q405), Sonne (Sonstiges;Q525).
+- Possible values: 
+    * Banderole (Artefakte;Q2689628)
+    * Brezel (Artefakte;Q160525)
+    * Boot (Artefakte;Q35872)
+    * Globus (Artefakte;Q133792)
+    * Gemälde (Artefakte;Q3305213)
+    * Fahrzeug (Artefakte;Q42889)
+    * Harfe (Artefakte;Q47369)
+    * Harpune (Artefakte;Q207574)
+    * Helm (Artefakte;Q910873)
+    * Hut (Artefakte;Q80151)
+    * Krone (Artefakte;Q170984)
+    * Krug (Artefakte;Q766983)
+    * Medaille (Artefakte;Q131647)
+    * Musikinstrument (Artefakte;Q)
+    * Pfeil (Artefakte;Q45922)
+    * Rad (Artefakte;Q446)
+    * Schiff (Artefakte;Q11446)
+    * Siegel (Artefakte;Q162919)
+    * Schild (Artefakte;Q131559)
+    * Schlüssel (Artefakte;Q132041)
+    * Schwert (Artefakte;Q12791)
+    * Stoff (Artefakte;Q5849500)
+    * Vase (Artefakte;Q191851)
+    * Wage (Artefakte;Q134566)
+    * Wappen (Artefakte;Q14659)
+    * Weinglas (Artefakte;Q1531435)
+    * Weinflasche (Artefakte;Q23490)
+    * Weinfass (Artefakte;Q10289)
+    * Adler (Fauna;Q2092297)
+    * Bär (Fauna;Q30090244)
+    * Feder (Fauna;Q81025)
+    * Flügel (Fauna;Q161358)
+    * Hund (Fauna;Q144)
+    * Katze (Fauna;Q146)
+    * Löwe (Fauna;Q140)
+    * Pferd (Fauna;Q726)
+    * Ochse (Fauna;Q473194)
+    * Reh/Hirsch (Fauna;Q29838690)
+    * Schaf (Fauna;Q7368)
+    * Spinne (Fauna;Q1357)
+    * Vogel (Fauna;Q5113)
+    * Baum (Flora;Q10884)
+    * Blume (Flora;Q886167)
+    * Blüte (Flora;Q506)
+    * Pflanze (Flora;Q756)
+    * Weintraube (Flora;Q10978)
+    * Weinblätter (Flora;Q33971)
+    * Weinstock (Flora;Q2135068)
+    * Burg (Bauwerke;Q23413)
+    * Brücke (Bauwerke;Q12280)
+    * Dock (Bauwerke;Q124282)
+    * Dorf (Bauwerke;Q532)
+    * Gebäude (Bauwerke;Q41176)
+    * Fenster (Bauwerke;Q35473)
+    * Interieur (Bauwerke;Q2998430)
+    * Keller (Bauwerke;Q43275450)
+    * Kirchengebäude (Bauwerke;Q16970)
+    * Mauer (Bauwerke;Q42948)
+    * Stadt (Bauwerke;Q532)
+    * Straße (Bauwerke;Q34442)
+    * Tor/Türe (Bauwerke;Q36794)
+    * Treppe (Bauwerke;Q12511)
+    * Turm (Bauwerke;Q12518)
+    * Zaun (Bauwerke;Q148571)
+    * Ufer (Landschaft;Q468756)
+    * Fluss (Landschaft;Q4022)
+    * Hügel (Landschaft;Q54050)
+    * Weinberg (Landschaft;Q22715)
+    * Mann (Personen;Q8441)
+    * Frau (Personen;Q467)
+    * Kind (Personen;Q7569)
+    * Mensch (Personen;Q5)
+    * Personengruppe (Personen;Q16334295)
+    * Ritter (Sonstiges;Q102083)
+    * Satyr (Sonstiges;Q163709)
+    * Engel (Sonstiges;Q235113)
+    * Drache (Sonstiges;Q7559)
+    * Stern (Sonstiges;Q523)
+    * Mond (Sonstiges;Q405)
+    * Sonne (Sonstiges;Q525).
 
 ### labelID
 A unique identifier for the label.
@@ -613,7 +740,12 @@ This describes the label primarily with regard to its geographical scope.
 
 - Status: Optional.
 - Contained by element: [label](#label).
-- Possible values: Lageetikett, Gutsetikett, Ortsetikett, tbc, other.
+- Possible values: 
+    * Lageetikett
+    * Gutsetikett
+    * Ortsetikett
+    * tbc
+    * other.
 
 ### licenceAbbr
 (no data)
@@ -627,7 +759,12 @@ This describes the label primarily with regard to its geographical scope.
 
 - Status: Mandatory.
 - Contained by element: [licence](#licence).
-- Possible values: all, markup, visual, metadata, textual.
+- Possible values: 
+    * all
+    * markup
+    * visual
+    * metadata
+    * textual.
 
 ### locationNorm
 (no data)
@@ -648,14 +785,32 @@ This describes the label primarily with regard to its geographical scope.
 
 - Status: Optional.
 - Contained by element: [location](#location).
-- Possible values: cultivation / Anbau, production / Weinbau, distribution / Vertrieb, cooperative / Kooperative, printer / Drucker, artist / Künstler/in, multiple / verschiedene, other / andere.
+- Possible values: 
+    * cultivation / Anbau
+    * production / Weinbau
+    * distribution / Vertrieb
+    * cooperative / Kooperative
+    * printer / Drucker
+    * artist / Künstler/in
+    * multiple / verschiedene
+    * other / andere.
 
 ### locationType
 (no data)
 
 - Status: Mandatory.
 - Contained by element: [location](#location).
-- Possible values: country / Land, region / Gebiet, area / Bereich, locality / Ortsname, locality / Leitgemeinde, winery / Weingut, vineyard / historischer Lagenname, vineyard / Großlage, vineyard / Einzellage, other.
+- Possible values: 
+    * country / Land
+    * region / Gebiet
+    * area / Bereich
+    * locality / Ortsname
+    * locality / Leitgemeinde
+    * winery / Weingut
+    * vineyard / historischer Lagenname
+    * vineyard / Großlage
+    * vineyard / Einzellage
+    * other.
 
 ### material
 The material from which the label is made (in most cases, this is paper). 
@@ -697,14 +852,25 @@ The type of the label part, primarily defined by its supposed location on the bo
 
 - Status: Mandatory.
 - Contained by element: [labelPart](#labelPart).
-- Possible values: front, back, neck, wraparound, band.
+- Possible values: 
+    * front
+    * back
+    * neck
+    * wraparound
+    * band.
 
 ### printingTechnique
 The technical printing process used for printing the visual and/or textual information onto the base material. 
 
 - Status: Optional.
 - Contained by element: [physical](#physical).
-- Possible values: lithograph, offset, moving-type, litho+type, mixed, other.
+- Possible values: 
+    * lithograph
+    * offset
+    * moving-type
+    * litho+type
+    * mixed
+    * other.
 
 ### qualityAwardNorm
 (no data)
@@ -718,7 +884,14 @@ The technical printing process used for printing the visual and/or textual infor
 
 - Status: Optional.
 - Contained by element: [qualityGrapes](#qualityGrapes).
-- Possible values: Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein, other.
+- Possible values: 
+    * Kabinett
+    * Spätlese
+    * Auslese
+    * Beerenauslese
+    * Trockenbeerenauslese
+    * Eiswein
+    * other.
 
 ### qualityLabelType
 (no data)
@@ -732,7 +905,12 @@ The technical printing process used for printing the visual and/or textual infor
 
 - Status: Optional.
 - Contained by element: [qualityLevel](#qualityLevel).
-- Possible values: Tafelwein/Wein, Landwein, Qualitätswein, Prädikatswein, other.
+- Possible values: 
+    * Tafelwein/Wein
+    * Landwein
+    * Qualitätswein
+    * Prädikatswein
+    * other.
 
 ### qualityProductionNorm
 (no data)
@@ -745,8 +923,29 @@ The technical printing process used for printing the visual and/or textual infor
 (reference) Contains authority file data, norm data, other stable and unique identifiers. Sources include: Wikidata, Register-Nummer der Weinlagen, Gemeinsame Normdaten-Datei.
 
 - Status: Optional.
-- Contained by element: [wineName](#wineName), [wineColor](#wineColor), [wineGrapes](#wineGrapes), [wineTaste](#wineTaste), [wineAging](#wineAging), [wineOther](#wineOther), [qualityGrapes](#qualityGrapes), [qualityLevel](#qualityLevel), [qualityAward](#qualityAward), [qualityLabel](#qualityLabel), [qualityProduction](#qualityProduction), [qualityHistorical](#qualityHistorical), [agent](#agent), [location](#location), [controlNumber](#controlNumber).
-- Possible values: RegNr:, Wikidata:, GND:, enwiki:, dewiki:, frwiki:.
+- Contained by element: 
+    * [wineName](#wineName)
+    * [wineColor](#wineColor)
+    * [wineGrapes](#wineGrapes)
+    * [wineTaste](#wineTaste)
+    * [wineAging](#wineAging)
+    * [wineOther](#wineOther)
+    * [qualityGrapes](#qualityGrapes)
+    * [qualityLevel](#qualityLevel)
+    * [qualityAward](#qualityAward)
+    * [qualityLabel](#qualityLabel)
+    * [qualityProduction](#qualityProduction)
+    * [qualityHistorical](#qualityHistorical)
+    * [agent](#agent)
+    * [location](#location)
+    * [controlNumber](#controlNumber).
+- Possible values: 
+    * RegNr:
+    * Wikidata:
+    * GND:
+    * enwiki:
+    * dewiki:
+    * frwiki:.
 
 ### scanID
 (no data)
@@ -760,7 +959,15 @@ Information regarding the shape of the physical label.
 
 - Status: Mandatory.
 - Contained by element: [physical](#physical).
-- Possible values: square, circle, rectangle, oval, diamond, trapezoid, octogon, other.
+- Possible values: 
+    * square
+    * circle
+    * rectangle
+    * oval
+    * diamond
+    * trapezoid
+    * octogon
+    * other.
 
 ### sizeH
 The height of the label measured in millimeters.
@@ -780,7 +987,7 @@ The height of the label measured in millimeters.
 (no data)
 
 - Status: Mandatory.
-- Contained by element: [(no data)](#(no data)).
+- Contained by element: .
 - Possible values: This element has no default values.
 
 ### textPosition
@@ -795,13 +1002,26 @@ The height of the label measured in millimeters.
 
 - Status: Mandatory.
 - Contained by element: [otherText](#otherText).
-- Possible values: coat-text, motto, quotation, slogan, statement, copyright, vineyard (Lage), other.
+- Possible values: 
+    * coat-text
+    * motto
+    * quotation
+    * slogan
+    * statement
+    * copyright
+    * vineyard (Lage)
+    * other.
 
 ### uri
 (uniform resource identifier) Für einen Link zu weiteren Informationen.
 
 - Status: Optional.
-- Contained by element: [metadata](#metadata), [licence](#licence), [wineName](#wineName), [agent](#agent), [location](#location).
+- Contained by element: 
+    * [metadata](#metadata)
+    * [licence](#licence)
+    * [wineName](#wineName)
+    * [agent](#agent)
+    * [location](#location).
 - Possible values: https://creativecommons.org/licenses/by/4.0/, https://github.com/dh-trier/wlv.
 
 ### volumeNorm
@@ -815,7 +1035,18 @@ The height of the label measured in millimeters.
 (no data)
 
 - Status: Optional.
-- Contained by element: [wineName](#wineName), [wineColor](#wineColor), [wineGrapes](#wineGrapes), [wineTaste](#wineTaste), [wineAging](#wineAging), [qualityGrapes](#qualityGrapes), [qualityLevel](#qualityLevel), [qualityAward](#qualityAward), [qualityLabel](#qualityLabel), [qualityProduction](#qualityProduction), [qualityHistorical](#qualityHistorical).
+- Contained by element: 
+    * [wineName](#wineName)
+    * [wineColor](#wineColor)
+    * [wineGrapes](#wineGrapes)
+    * [wineTaste](#wineTaste)
+    * [wineAging](#wineAging)
+    * [qualityGrapes](#qualityGrapes)
+    * [qualityLevel](#qualityLevel)
+    * [qualityAward](#qualityAward)
+    * [qualityLabel](#qualityLabel)
+    * [qualityProduction](#qualityProduction)
+    * [qualityHistorical](#qualityHistorical).
 - Possible values: http://wdw.uni-trier.de/onlinewb/index.php3?ID.
 
 ### wineAgingNorm
@@ -837,7 +1068,16 @@ The height of the label measured in millimeters.
 
 - Status: Mandatory.
 - Contained by element: [wineGrapes](#wineGrapes).
-- Possible values: Riesling, Müller-Thurgau/Rivaner, Elbling, Spätburgunder, Grauburgunder, Chardonnay, Auxerrois, Weißburgunder, other.
+- Possible values: 
+    * Riesling
+    * Müller-Thurgau/Rivaner
+    * Elbling
+    * Spätburgunder
+    * Grauburgunder
+    * Chardonnay
+    * Auxerrois
+    * Weißburgunder
+    * other.
 
 ### wineMillesimeNorm
 (no data)
@@ -858,7 +1098,18 @@ The height of the label measured in millimeters.
 
 - Status: Mandatory.
 - Contained by element: [wineName](#wineName).
-- Possible values: country / Land, region / Gebiet, area / Bereich, locality / Ortsname, locality / Leitgemeinde, winery / Weingut, vineyard / historischer Lagenname, vineyard / Großlage, vineyard / Einzellage, variety / Rebsorte, other.
+- Possible values: 
+    * country / Land
+    * region / Gebiet
+    * area / Bereich
+    * locality / Ortsname
+    * locality / Leitgemeinde
+    * winery / Weingut
+    * vineyard / historischer Lagenname
+    * vineyard / Großlage
+    * vineyard / Einzellage
+    * variety / Rebsorte
+    * other.
 
 ### wineOtherType
 (no data)
