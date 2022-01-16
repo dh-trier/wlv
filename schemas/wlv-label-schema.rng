@@ -230,9 +230,6 @@
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(label) Any single label or physically separate part of the label group.</a:documentation>
     <element>
       <name ns="">label</name>
-      <optional>
-        <ref name="labelNum" />
-      </optional>
       <ref name="labelPosition" />
       <ref name="physical" />
       <ref name="visual" />
@@ -244,13 +241,6 @@
         <ref name="provenance" />
       </optional>
     </element>
-  </define>
-  <define name="labelNum">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The number of the label, starting at 1.</a:documentation>
-    <attribute>
-      <name ns="">labelNum</name>
-      <data type="int" />
-    </attribute>
   </define>
   <define name="labelPosition">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The type of the label part, primarily defined by its supposed location on the bottle.</a:documentation>
