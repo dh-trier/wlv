@@ -12,9 +12,9 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 
 ## Quicklinks
 
-**Elements**: [agent](#agent), [alcohol](#alcohol), [background](#background), [barrelNumber](#barrelNumber), [collection](#collection), [collectionContext](#collectionContext), [comments](#comments), [conservation](#conservation), [controlNumber](#controlNumber), [curation](#curation), [dating](#dating), [figure](#figure), [figureItem](#figureItem), [frame](#frame), [label](#label), [labelNumber](#labelNumber), [labelPart](#labelPart), [licence](#licence), [location](#location), [metadata](#metadata), [otherText](#otherText), [physical](#physical), [provenance](#provenance), [qualityAward](#qualityAward), [qualityGrapes](#qualityGrapes), [qualityHistorical](#qualityHistorical), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [qualityProduction](#qualityProduction), [scan](#scan), [source](#source), [textual](#textual), [visual](#visual), [volume](#volume), [wineAging](#wineAging), [wineColor](#wineColor), [wineGrapes](#wineGrapes), [wineMillesime](#wineMillesime), [wineName](#wineName), [wineOther](#wineOther), [wineTaste](#wineTaste), [wlv](#wlv)
+**Elements**: [agent](#agent), [alcohol](#alcohol), [background](#background), [barrelNumber](#barrelNumber), [collection](#collection), [collectionContext](#collectionContext), [comments](#comments), [conservation](#conservation), [controlNumber](#controlNumber), [curation](#curation), [dating](#dating), [figure](#figure), [figureItem](#figureItem), [frame](#frame), [label](#label), [labelGroup](#labelGroup), [labelNumber](#labelNumber), [licence](#licence), [location](#location), [metadata](#metadata), [otherText](#otherText), [physical](#physical), [provenance](#provenance), [qualityAward](#qualityAward), [qualityGrapes](#qualityGrapes), [qualityHistorical](#qualityHistorical), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [qualityProduction](#qualityProduction), [scan](#scan), [source](#source), [textual](#textual), [visual](#visual), [volume](#volume), [wineAging](#wineAging), [wineColor](#wineColor), [wineGrapes](#wineGrapes), [wineMillesime](#wineMillesime), [wineName](#wineName), [wineOther](#wineOther), [wineTaste](#wineTaste), [wlv](#wlv)
 
-**Attributes**: [agentRole](#agentRole), [alcoholNorm](#alcoholNorm), [backgroundStyle](#backgroundStyle), [certainty](#certainty), [collectionID](#collectionID), [conservationNorm](#conservationNorm), [controlNumberType](#controlNumberType), [curationDate](#curationDate), [curationUpdate](#curationUpdate), [curatorID](#curatorID), [figureNum](#figureNum), [figurePosition](#figurePosition), [figureType](#figureType), [fontColor](#fontColor), [fontInitials](#fontInitials), [fontManner](#fontManner), [fontSize](#fontSize), [fontStyle](#fontStyle), [fontType](#fontType), [frameColor](#frameColor), [frameStyle](#frameStyle), [frameType](#frameType), [itemData](#itemData), [labelID](#labelID), [labelType](#labelType), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [locationRole](#locationRole), [locationType](#locationType), [material](#material), [notAfter](#notAfter), [notBefore](#notBefore), [pageID](#pageID), [partNum](#partNum), [partType](#partType), [printingTechnique](#printingTechnique), [qualityAwardNorm](#qualityAwardNorm), [qualityGrapesNorm](#qualityGrapesNorm), [qualityLabelType](#qualityLabelType), [qualityLevelNorm](#qualityLevelNorm), [qualityProductionNorm](#qualityProductionNorm), [ref](#ref), [scanID](#scanID), [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [tasteGroupNorm](#tasteGroupNorm), [textPosition](#textPosition), [textType](#textType), [uri](#uri), [volumeNorm](#volumeNorm), [wdw](#wdw), [wineAgingNorm](#wineAgingNorm), [wineColorNorm](#wineColorNorm), [wineGrapesNorm](#wineGrapesNorm), [wineMillesimeNorm](#wineMillesimeNorm), [wineNameNorm](#wineNameNorm), [wineNameType](#wineNameType), [wineOtherType](#wineOtherType), [year](#year)
+**Attributes**: [agentRole](#agentRole), [alcoholNorm](#alcoholNorm), [backgroundStyle](#backgroundStyle), [certainty](#certainty), [collectionID](#collectionID), [conservationNorm](#conservationNorm), [controlNumberType](#controlNumberType), [curationDate](#curationDate), [curationUpdate](#curationUpdate), [curatorID](#curatorID), [figureNum](#figureNum), [figurePosition](#figurePosition), [figureType](#figureType), [fontColor](#fontColor), [fontInitials](#fontInitials), [fontManner](#fontManner), [fontSize](#fontSize), [fontStyle](#fontStyle), [fontType](#fontType), [frameColor](#frameColor), [frameStyle](#frameStyle), [frameType](#frameType), [itemData](#itemData), [labelID](#labelID), [labelNum](#labelNum), [labelPosition](#labelPosition), [labelType](#labelType), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [locationRole](#locationRole), [locationType](#locationType), [material](#material), [notAfter](#notAfter), [notBefore](#notBefore), [pageID](#pageID), [printingTechnique](#printingTechnique), [qualityAwardNorm](#qualityAwardNorm), [qualityGrapesNorm](#qualityGrapesNorm), [qualityLabelType](#qualityLabelType), [qualityLevelNorm](#qualityLevelNorm), [qualityProductionNorm](#qualityProductionNorm), [ref](#ref), [scanID](#scanID), [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [tasteGroupNorm](#tasteGroupNorm), [textPosition](#textPosition), [textType](#textType), [uri](#uri), [volumeNorm](#volumeNorm), [wdw](#wdw), [wineAgingNorm](#wineAgingNorm), [wineColorNorm](#wineColorNorm), [wineGrapesNorm](#wineGrapesNorm), [wineMillesimeNorm](#wineMillesimeNorm), [wineNameNorm](#wineNameNorm), [wineNameType](#wineNameType), [wineOtherType](#wineOtherType), [year](#year)
 
 ## Elements
 ### agent
@@ -83,7 +83,7 @@ Any information that describes the individual label in the context of the collec
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): [metadata](#metadata), [label](#label).
+- Contained by element(s): [metadata](#metadata), [labelGroup](#labelGroup), [label](#label).
 - Contains element(s): This element has no children.
 - Has attribute(s): This element has no attributes.
 
@@ -159,13 +159,23 @@ Information about the frame of the label.
 
 ### label
 
+(label) Any single label or physically separate part of the label group.
+
+- Status: Optional.
+- Frequency: Once at most.
+- Contained by element(s): [wlv](#wlv), [labelGroup](#labelGroup).
+- Contains element(s): [physical](#physical), [visual](#visual), [textual](#textual), [comments](#comments), [provenance](#provenance).
+- Has attribute(s): [labelNum](#labelNum), [labelPosition](#labelPosition).
+
+### labelGroup
+
 The main container for information about the label. A label must have at least one part, but can have several parts.
 
-- Status: Mandatory.
-- Frequency: Exactly once.
+- Status: Optional.
+- Frequency: Zero, once or several times.
 - Contained by element(s): [wlv](#wlv).
-- Contains element(s): [comments](#comments), [labelPart](#labelPart), [provenance](#provenance).
-- Has attribute(s): [labelType](#labelType).
+- Contains element(s): [comments](#comments), [label](#label), [provenance](#provenance).
+- Has attribute(s): This element has no attributes.
 
 ### labelNumber
 
@@ -176,16 +186,6 @@ The main container for information about the label. A label must have at least o
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
 - Has attribute(s): This element has no attributes.
-
-### labelPart
-
-(label part) Any physically separate part of the label / labeling.
-
-- Status: Optional.
-- Frequency: Once at most.
-- Contained by element(s): [label](#label).
-- Contains element(s): [physical](#physical), [visual](#visual), [textual](#textual).
-- Has attribute(s): [partNum](#partNum), [partType](#partType).
 
 ### licence
 
@@ -233,7 +233,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 
 - Status: Mandatory.
 - Frequency: Exactly once.
-- Contained by element(s): [labelPart](#labelPart).
+- Contained by element(s): [label](#label).
 - Contains element(s): This element has no children.
 - Has attribute(s): [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [material](#material), [printingTechnique](#printingTechnique).
 
@@ -243,7 +243,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): [label](#label).
+- Contained by element(s): [labelGroup](#labelGroup), [label](#label).
 - Contains element(s): [dating](#dating), [source](#source), [scan](#scan), [conservation](#conservation).
 - Has attribute(s): This element has no attributes.
 
@@ -333,7 +333,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 
 - Status: Mandatory.
 - Frequency: Exactly once.
-- Contained by element(s): [labelPart](#labelPart).
+- Contained by element(s): [label](#label).
 - Contains element(s): [wineMillesime](#wineMillesime), [wineName](#wineName), [wineGrapes](#wineGrapes), [wineTaste](#wineTaste), [wineAging](#wineAging), [wineOther](#wineOther), [qualityGrapes](#qualityGrapes), [qualityLevel](#qualityLevel), [qualityAward](#qualityAward), [qualityLabel](#qualityLabel), [qualityProduction](#qualityProduction), [qualityHistorical](#qualityHistorical), [agent](#agent), [location](#location), [alcohol](#alcohol), [volume](#volume), [controlNumber](#controlNumber), [barrelNumber](#barrelNumber), [labelNumber](#labelNumber), [otherText](#otherText).
 - Has attribute(s): This element has no attributes.
 
@@ -343,7 +343,7 @@ Any visual and non-textual or non-linguistic elements discernible on the label.
 
 - Status: Mandatory.
 - Frequency: Exactly once.
-- Contained by element(s): [labelPart](#labelPart).
+- Contained by element(s): [label](#label).
 - Contains element(s): [frame](#frame), [background](#background), [figure](#figure).
 - Has attribute(s): This element has no attributes.
 
@@ -434,8 +434,8 @@ The root element in a label description using the Wine Label Vocabulary.
 - Status: (no data).
 - Frequency: (no data).
 - Contained by element(s): This is the root element.
-- Contains element(s): [metadata](#metadata), [label](#label).
-- Has attribute(s): [labelID](#labelID).
+- Contains element(s): [metadata](#metadata), [labelGroup](#labelGroup), [label](#label).
+- Has attribute(s): [labelID](#labelID), [labelType](#labelType).
 
 ## Attributes
 
@@ -735,11 +735,30 @@ A unique identifier for the label.
 - Contained by element: [wlv](#wlv).
 - Possible values: This element has no default values.
 
+### labelNum
+The number of the label, starting at 1.
+
+- Status: Optional.
+- Contained by element: [label](#label).
+- Possible values: This element has no default values.
+
+### labelPosition
+The type of the label part, primarily defined by its supposed location on the bottle.
+
+- Status: Mandatory.
+- Contained by element: [label](#label).
+- Possible values: 
+    * front
+    * back
+    * neck
+    * wraparound
+    * band.
+
 ### labelType
 This describes the label primarily with regard to its geographical scope.
 
 - Status: Optional.
-- Contained by element: [label](#label).
+- Contained by element: [wlv](#wlv).
 - Possible values: 
     * Lageetikett
     * Gutsetikett
@@ -839,25 +858,6 @@ The material from which the label is made (in most cases, this is paper).
 - Status: Optional.
 - Contained by element: [collectionContext](#collectionContext).
 - Possible values: This element has no default values.
-
-### partNum
-The number of the label, starting at 1.
-
-- Status: Mandatory.
-- Contained by element: [labelPart](#labelPart).
-- Possible values: This element has no default values.
-
-### partType
-The type of the label part, primarily defined by its supposed location on the bottle.
-
-- Status: Mandatory.
-- Contained by element: [labelPart](#labelPart).
-- Possible values: 
-    * front
-    * back
-    * neck
-    * wraparound
-    * band.
 
 ### printingTechnique
 The technical printing process used for printing the visual and/or textual information onto the base material. 
