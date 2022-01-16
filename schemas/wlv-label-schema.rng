@@ -8,8 +8,14 @@
     <element>
       <name ns="">wlv</name>
       <ref name="labelID" />
+      <optional>
+        <ref name="labelType" />
+      </optional>
       <ref name="metadata" />
-      <ref name="label" />
+      <choice>
+        <ref name="labelGroup" />
+        <ref name="label" />
+      </choice>
     </element>
   </define>
   <define name="labelID">
@@ -185,18 +191,15 @@
       </choice>
     </attribute>
   </define>
-  <define name="label">
+  <define name="labelGroup">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The main container for information about the label. A label must have at least one part, but can have several parts.</a:documentation>
     <element>
-      <name ns="">label</name>
-      <optional>
-        <ref name="labelType" />
-      </optional>
+      <name ns="">labelGroup</name>
       <optional>
         <ref name="comments" />
       </optional>
       <oneOrMore>
-        <ref name="labelPart" />
+        <ref name="label" />
       </oneOrMore>
       <optional>
         <ref name="provenance" />
@@ -223,28 +226,36 @@
       <text />
     </element>
   </define>
-  <define name="labelPart">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(label part) Any physically separate part of the label / labeling.</a:documentation>
+  <define name="label">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(label) Any single label or physically separate part of the label group.</a:documentation>
     <element>
-      <name ns="">labelPart</name>
-      <ref name="partNum" />
-      <ref name="partType" />
+      <name ns="">label</name>
+      <optional>
+        <ref name="labelNum" />
+      </optional>
+      <ref name="labelPosition" />
       <ref name="physical" />
       <ref name="visual" />
       <ref name="textual" />
+      <optional>
+        <ref name="comments" />
+      </optional>
+      <optional>
+        <ref name="provenance" />
+      </optional>
     </element>
   </define>
-  <define name="partNum">
+  <define name="labelNum">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The number of the label, starting at 1.</a:documentation>
     <attribute>
-      <name ns="">partNum</name>
+      <name ns="">labelNum</name>
       <data type="int" />
     </attribute>
   </define>
-  <define name="partType">
+  <define name="labelPosition">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The type of the label part, primarily defined by its supposed location on the bottle.</a:documentation>
     <attribute>
-      <name ns="">partType</name>
+      <name ns="">labelPosition</name>
       <choice>
         <value>front</value>
         <value>back</value>

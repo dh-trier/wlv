@@ -6,8 +6,7 @@
   <curation curatorID="#cs" curationDate="2021-11-16"></curation>
   <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"></licence>
   </metadata>
-  <label labelType="Lageetikett">
-    <labelPart partType="front" partNum="1">
+    <label labelPosition="front">
       <physical sizeH="127" sizeV="85" shape="rectangle" material="paper"/>
       <visual>
         <frame frameColor="gold" frameStyle="band" frameType="outer"></frame>
@@ -26,6 +25,5 @@
         <agent agentRole="printer / Drucker" fontSize="smaller">Illert</agent>
         <labelNumber fontSize="smaller">No.7526</labelNumber>
       </textual>
-    </labelPart>
   </label>
 </wlv>

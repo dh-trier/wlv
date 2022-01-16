@@ -6,8 +6,7 @@
   <curation curatorID="#cs" curationDate="2020-11-18" curationUpdate="2021-09-29"></curation>
     <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
   </metadata>
-  <label>
-    <labelPart partType="front" partNum="1">
+    <label labelPosition="front">
       <physical sizeH="158" sizeV="89" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="band" frameColor="gold" frameType="outer"></frame>
@@ -39,7 +38,6 @@
         <agent agentRole="printer / Drucker">Verlag Bastian</agent>
         <location locationType="locality / Ortsname" locationRole="printer / Drucker" locationNorm="Neumagen-Drohn" ref="Wikidata=Q572352">Neumagen</location>
       </textual>
-    </labelPart>
     <provenance>
     <dating notBefore="1945" notAfter="1975" certainty="estimate">Impression from design.</dating>
   </provenance>

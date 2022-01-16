@@ -6,8 +6,7 @@
   <curation curatorID="#cs" curationDate="2021-11-22"></curation>
   <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"></licence>
   </metadata>
-  <label>
-    <labelPart partType="front" partNum="1">
+    <label labelPosition="front">
       <physical sizeH="130" sizeV="89" shape="rectangle" material="paper"/>
       <visual>
           <frame frameStyle="other" frameColor="gold" frameType="outer">Linie mit Ornamenten an den Ecken.</frame>
@@ -18,6 +17,5 @@
             <location locationType="locality / Leitgemeinde" locationNorm="Ediger" ref="Wikidata=Q547805"></location>
           </wineName>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

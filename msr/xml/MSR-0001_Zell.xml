@@ -6,12 +6,11 @@
     <curation curatorID="#cs" curationDate="2021-11-22"></curation>
     <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"></licence>
   </metadata>
-  <label>
-    <labelPart partType="front" partNum="1">
+    <label labelPosition="front">
       <physical sizeH="130" sizeV="89" shape="rectangle" material="paper"/>
       <visual>
         <frame frameStyle="other" frameColor="gold" frameType="outer">Linie mit Ornamenten an den Ecken.</frame>
-        <background backgroundStyle="patterns"></background>
+        <background backgroundStyle="pattern"></background>
       </visual>
       <textual>
         <location locationType="region / Gebiet" fontStyle="all-caps">Mosel-Saar-Ruwer</location>
@@ -22,6 +21,5 @@
           <location locationType="country / Land">Deutschland</location>
         </wineName>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>
