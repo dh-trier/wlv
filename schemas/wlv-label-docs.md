@@ -6,29 +6,31 @@ The Wine Label Vocabulary (WLV) is formally defined in a Relax NG Schema, where 
 
 ## Introduction 
 
-A collection of wine labels described using the WLV has two elements: A document describing the [collection of labels](#collection), and a set of individual documents each describing one label (or one group of labels). 
+A collection of wine labels described using the WLV has two elements: A document describing the collection of labels (see:  element [collection](#collection), and a set of individual documents each describing one label (see: element [label](#label) or a group of labels (see: element [labelGroup](#labelGroup).  
 
 
 ## Coding the collection document
 
-The root element of an XML-WLV file for the collections is called wlv (see also for wine-labels). For a collection, it contains two main sections: the metadata and the list of labels. The wlv element here has two attributes: the collectionID and an URL.
+The root element of an XML-WLV file for the collections is called [wlv](#wlv) (see also for wine-labels). For a collection, it contains two main sections: the metadata and the list of labels. The wlv element here has two attributes: the collectionID and an URL.
 
 ### The collection metadata
 
-In the metadata, we want to give further information about the collection at hand. We collect the data about the collection title in the element title (which itself is attributed with text). Another element forms the editor who is the person that created the file for the collection. Further elements are the owner, institution, address and a date. To specify the collection, one can also add an address and a date for where the collection comes from and when it was collected. It is also important to mark the license. Other elements are the curator (s) who are responsible for describing the collection as a file. Finally, the description element provides the possibility to add a textual description of the wine label collection.
+In the [metadata](#metadata), we want to give further information about the collection at hand. We collect the data about the collection title in the element [title](#title) (which itself is attributed with text). Another element forms the [editor](#editor) who is the person that created the file for the collection. Further elements are the owner, institution, address and a date. 
+
+To specify the collection, one can also add an address and a date for where the collection comes from and when it was collected. It is also important to mark the license. Other elements are the [curator(s)](#curator) who are responsible for describing the collection as a file. Finally, the description element provides the possibility to add a textual description of the wine label collection.
 
 ### The list of labels
 
-To the collection, we also want to add the labels that are included. Therefore, we add the labels element, which itself contains different `label` elements. A label should be attributed with its labelID so that we can identify it.
+To the collection, we also want to add the labels that are included. Therefore, we add the [label](#label) element. If there is more than one physically distinct label belonging to the same labeling (say, a front label and a separate back label for the same wine), [labelGroup](#labelGroup) can be used: It can contain several `label` elements. A label should be attributed with its [labelID](#labelID) so that we can identify it.
 
 
 ## Coding the label descriptions
 
-The root element of a XML-WLV file is called `wlv`. Each WLV file contains the description of one wine label, with two main sections: the metadata and the label. The `wlv` element only has one attribute: `@labelID`.
+The root element of a XML-WLV file for labels is called [wlv](#wlv). Each WLV file contains the description of one wine label, with two main sections: the metadata and the label. The `wlv` element only has one attribute: [@labelID](#labelID).
 
 ### Metadata
 
-The metadata for a label names the collection the label belongs to, provides information about the curation of the label description, and indicates the licence of the label description. Accordingly, the `metadata` element contains three mandatory elements: [collection](collection), [curation](curation) and [licence](curation): (1) `collection` has a sole attribute `@collectionID` that indicates the identifier of the label's collection. (2) The empty element [[curation]] has the attributes `@curationDate` (mandatory; year or date), `@curator` (mandatory; string) and `@curationUpdate` (optional; year or date). (3) The element [[licence]] has the attributes @licenceScope (mandatory, string), @licenceAbbr and @url (). Optionally, it is also possible to provide context using [[collectionContexts]] or add further information as [[comments]].
+The metadata for a label names the collection the label belongs to, provides information about the curation of the label description, and indicates the licence of the label description. Accordingly, the `metadata` element contains three mandatory elements: [collection](#collection), [curation](#curation) and [licence](#licence): (1) `collection` has a sole attribute `@collectionID` that indicates the identifier of the label's collection. (2) The empty element [curation](#curation) has the attributes `@curationDate` (mandatory; year or date), `@curator` (mandatory; string) and `@curationUpdate` (optional; year or date). (3) The element [[licence]] has the attributes @licenceScope (mandatory, string), @licenceAbbr and @url (). Optionally, it is also possible to provide context using [[collectionContexts]] or add further information as [[comments]].
 
 #### The labels
 
@@ -76,7 +78,7 @@ Any label can have a comment for notes, commentaries, annotations in prose.
 
 The provenance of a label describes several aspects concerning the history of the label as a collection item, using the [[provenance]] element. This includes the estimated date of a label, when the indication of a [[wineMillesime]] is not present, using the [[dating]] element. 
 
-Also, the collection, collector, wine maker or printer where the label was obtained can be noted using the [[source]] element. The identifier of the scan that is the origin of the digital version of the label can also be included in the [[scan]] element. Finally, the state of conservation can be noted using the [[conservation]] element. 
+Also, the collection, collector, wine maker or printer where the label was obtained can be noted using the [[source]] element. The identifier of the scan that is the origin of the digital version of the label can also be included in the [[scan]] element. Finally, the state of conservation can be noted using the [[conservation]] element.
 
 ---
 
