@@ -6,7 +6,7 @@ The Wine Label Vocabulary (WLV) is formally defined in a Relax NG Schema, where 
 
 ## Introduction 
 
-A collection of wine labels described using the WLV has two elements: A document describing the collection of labels, and a set of individual documents each describing one label (or one group of labels). 
+A collection of wine labels described using the WLV has two elements: A document describing the [collection of labels](#collection), and a set of individual documents each describing one label (or one group of labels). 
 
 
 ## Coding the collection document
