@@ -27,24 +27,34 @@ TODO: Add table of contents with links to elements and attributes.
 """
 
 md ="\
-# The Wine Label Vocabulary: Schema Documentation\n\n\
+## WLV Schema Documentation\n\n\
 This document documents all elements and attributes included in the Wine Label Vocabulary (WLV) in a human-readable form. This document has been generated automatically from the Relax NG schema.\n\n\
 For more information on the WLV, see https://github.com/dh-trier/wlv\n\n\
-## Contents\n\n\
+### Contents\n\n\
 1. [Quicklinks](#Quicklinks)\n\
 1. [Elements](#Elements)\n\
 2. [Attributes](#Attributes)\n\n\
-## Quicklinks\n\n\
+### Quicklinks\n\n\
 **Elements**: <list_elements/>\n\n\
 **Attributes**: <list_attributes/>\n\n\
-## Elements\
+### Elements\
 <elements/>\n\n\
-## Attributes\n\n\
+### Attributes\n\n\
 <attributes/>\n\
 "
 
 
 # === Functions
+
+
+def read_md(mdfile): 
+    """
+    Open and read a Markdown file. 
+    Returns the content of the file as a string. 
+    """
+    with open(mdfile, "r", encoding="utf8") as infile: 
+        md = infile.read()
+        return md
 
 
 def open_file(rngfile): 
@@ -249,7 +259,7 @@ def format_elements(elements):
     """
     elements_md = []
     for name,content in elements.items(): 
-        elm_md = ["\n### "+name,
+        elm_md = ["\n#### "+name,
                     "\n" + content["documentation"]+"\n",
                     "- Status: " + content["status"]+".",
                     "- Frequency: " + content["frequency"]+".",
@@ -268,7 +278,7 @@ def format_attributes(attributes):
     """
     attributes_md = []
     for name,content in attributes.items(): 
-        att_md = ["\n### "+name,
+        att_md = ["\n#### "+name,
                     content["documentation"]+"\n",
                     "- Status: " + content["status"] + ".",
                     "- Contained by element: " + content["containedby"] + ".",
@@ -278,7 +288,7 @@ def format_attributes(attributes):
     return attributes_md
 
   
-def inject_data(md, elements, attributes, elm_names, att_names): 
+def inject_data(intro, md, elements, attributes, elm_names, att_names): 
     """
     Integrates the information about elements and attributes into the HTML template.
     Returns a string that is a complete HTML document. 
@@ -289,6 +299,7 @@ def inject_data(md, elements, attributes, elm_names, att_names):
     md = re.sub("<list_attributes/>", attstring, md)
     md = re.sub("<elements/>", elements, md)
     md = re.sub("<attributes/>", attributes, md)
+    md = intro + "\n\n" + md
     return md
 
 
@@ -306,6 +317,7 @@ def main():
     """
     Coordinates the process.
     """
+    mdfile = join("wlv-introduction.md")
     rngfile = join("wlv-label-schema.rng")
     docsfile = join("wlv-label-docs.md")
     ns = {'rng':'http://relaxng.org/ns/structure/1.0',
@@ -316,7 +328,8 @@ def main():
     attributes = extract_attinfo(rng, att_names, ns)
     elements = format_elements(elements)
     attributes = format_attributes(attributes)
-    docs = inject_data(md, elements, attributes, elm_names, att_names)
+    intro = read_md(mdfile)
+    docs = inject_data(intro, md, elements, attributes, elm_names, att_names)
     save_md(docs, docsfile)
 
 main()

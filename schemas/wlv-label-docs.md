@@ -1,23 +1,106 @@
-# The Wine Label Vocabulary: Schema Documentation
+# The Wine Label Vocabulary: Documentation
+
+The following document has two parts: First, a prose description of collections and labels intended to provide an overview. Second, a documentation of all elements and labels generated from the schema file. 
+
+The Wine Label Vocabulary (WLV) is formally defined in a Relax NG Schema, where all definitions of elements and attributes, with their rules of location and frequency of occurrence, their datatypes, their rules for acceptable values and similar information are documented.
+
+## Introduction 
+
+A collection of wine labels described using the WLV has two elements: A document describing the collection of labels, and a set of individual documents each describing one label (or one group of labels). 
+
+
+## Coding the collection document
+
+The root element of an XML-WLV file for the collections is called wlv (see also for wine-labels). For a collection, it contains two main sections: the metadata and the list of labels. The wlv element here has two attributes: the collectionID and an URL.
+
+### The collection metadata
+
+In the metadata, we want to give further information about the collection at hand. We collect the data about the collection title in the element title (which itself is attributed with text). Another element forms the editor who is the person that created the file for the collection. Further elements are the owner, institution, address and a date. To specify the collection, one can also add an address and a date for where the collection comes from and when it was collected. It is also important to mark the license. Other elements are the curator (s) who are responsible for describing the collection as a file. Finally, the description element provides the possibility to add a textual description of the wine label collection.
+
+### The list of labels
+
+To the collection, we also want to add the labels that are included. Therefore, we add the labels element, which itself contains different `label` elements. A label should be attributed with its labelID so that we can identify it.
+
+
+## Coding the label descriptions
+
+The root element of a XML-WLV file is called `wlv`. Each WLV file contains the description of one wine label, with two main sections: the metadata and the label. The `wlv` element only has one attribute: `@labelID`.
+
+### Metadata
+
+The metadata for a label names the collection the label belongs to, provides information about the curation of the label description, and indicates the licence of the label description. Accordingly, the `metadata` element contains three mandatory elements: [collection](collection), [curation](curation) and [licence](curation): (1) `collection` has a sole attribute `@collectionID` that indicates the identifier of the label's collection. (2) The empty element [[curation]] has the attributes `@curationDate` (mandatory; year or date), `@curator` (mandatory; string) and `@curationUpdate` (optional; year or date). (3) The element [[licence]] has the attributes @licenceScope (mandatory, string), @licenceAbbr and @url (). Optionally, it is also possible to provide context using [[collectionContexts]] or add further information as [[comments]].
+
+#### The labels
+
+Each label file includes only the information pertaining to one wine label, although a collection contains more than one wine label. The labels (and their files) are hence always connected to their concerning collection (via the metadata).
+
+#### The parts of a label
+
+Any individual set of labels pertaining to one bottle can have more than one part. In other words, all text-bearing objects found on a given bottle are considered to collectively make up the labeling of the bottle. Each of these text-bearing objects is considered to be a [[labelPart]].
+
+Typical examples are labeling that consists of a front and back label, or of a front label and a top banderole. Older labeling usually consisted of only one part. Label parts are numbered using the [[partNumber]] attribute and classified using the [[partType]] attribute. 
+
+Each [[labelPart]] has three elements to describe it: [[physical]], [[visual]] and [[textual]]. 
+
+In addition, and optionally, each label (as a whole) can have an optional description of its [[provenance]]. 
+
+#### Physical aspects
+
+The physical aspects of the label are encoded as part of the element [[physical]]. They concern the [[shape]], size ([[sizeV]] and [[sizeH]]) and [[material]] of the label as well as the [[printingTechnique]] used. 
+
+#### Visual aspects
+
+The visual aspects of the label concern any kind of visual representation, whether ornamental, symbolic or realistic. These visual elements are encoded in the element [[visual]] using the elements [[frame]], [[background]] and [[figure]]. 
+
+#### Textual aspects
+
+The textual aspects of the label concern any kind of written information that can be discerned, including text embedded within visual areas of the label. The top-level element for this domain is called [[textual]]. 
+
+A first main area of the textual domain are a set of elements pertaining to the factual description of the wine. This includes elements like [[wineMillesime]], [[wineOrigin]], [[wineGrapes]], [[wineColor]], [[wineTaste]], [[wineAging]] and [[wineOther]]. 
+
+A second major area concerns various indicators of the wine quality. This includes elemnets such as [[qualityGrapes]], [[qualityLevel]], [[qualityAward]], [[qualityLabel]], [[qualityProduction]] and [[qualityHistorical]].  
+
+A third major area of the textual domain pertains to the various kinds of agents and locations involved. This involves the [[location]] and [[agent]] elements. 
+
+A fourth major area of the textual domain pertains to any numerical indications included on the label, such as the [[alcohol]] level the [[volume]] of the bottle, any official [[controlNumber]] or [[barrelNumber]] as well as any [[labelNumber]].  
+
+Any other text found on a label can be encoded using the element [[otherText]]. In particular, any text discernible in the figures included on the label will be encoded here, with a reference back to the respective figure. 
+
+In addition, there is a number of attributes that can be used on any of the elements in the textual domain, used to describe the script used for a given piece of information. This concerns aspects like [[fontSize]], [[fontType]] and [[fontStyle]] as well as [[fontColor]] and the treatment of [[fontInitials]]. 
+
+#### Comments for a label
+
+Any label can have a comment for notes, commentaries, annotations in prose. 
+
+#### The provenance of a label
+
+The provenance of a label describes several aspects concerning the history of the label as a collection item, using the [[provenance]] element. This includes the estimated date of a label, when the indication of a [[wineMillesime]] is not present, using the [[dating]] element. 
+
+Also, the collection, collector, wine maker or printer where the label was obtained can be noted using the [[source]] element. The identifier of the scan that is the origin of the digital version of the label can also be included in the [[scan]] element. Finally, the state of conservation can be noted using the [[conservation]] element. 
+
+---
+
+
+## WLV Schema Documentation
 
 This document documents all elements and attributes included in the Wine Label Vocabulary (WLV) in a human-readable form. This document has been generated automatically from the Relax NG schema.
 
 For more information on the WLV, see https://github.com/dh-trier/wlv
 
-## Contents
+### Contents
 
 1. [Quicklinks](#Quicklinks)
 1. [Elements](#Elements)
 2. [Attributes](#Attributes)
 
-## Quicklinks
+### Quicklinks
 
 **Elements**: [agent](#agent), [alcohol](#alcohol), [background](#background), [barrelNumber](#barrelNumber), [collection](#collection), [collectionContext](#collectionContext), [comments](#comments), [conservation](#conservation), [controlNumber](#controlNumber), [curation](#curation), [dating](#dating), [figure](#figure), [figureItem](#figureItem), [frame](#frame), [label](#label), [labelGroup](#labelGroup), [labelNumber](#labelNumber), [licence](#licence), [location](#location), [metadata](#metadata), [otherText](#otherText), [physical](#physical), [provenance](#provenance), [qualityAward](#qualityAward), [qualityGrapes](#qualityGrapes), [qualityHistorical](#qualityHistorical), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [qualityProduction](#qualityProduction), [scan](#scan), [source](#source), [textual](#textual), [visual](#visual), [volume](#volume), [wineAging](#wineAging), [wineColor](#wineColor), [wineGrapes](#wineGrapes), [wineMillesime](#wineMillesime), [wineName](#wineName), [wineOther](#wineOther), [wineTaste](#wineTaste), [wlv](#wlv)
 
 **Attributes**: [agentRole](#agentRole), [alcoholNorm](#alcoholNorm), [backgroundStyle](#backgroundStyle), [certainty](#certainty), [collectionID](#collectionID), [conservationNorm](#conservationNorm), [controlNumberType](#controlNumberType), [curationDate](#curationDate), [curationUpdate](#curationUpdate), [curatorID](#curatorID), [figureNum](#figureNum), [figurePosition](#figurePosition), [figureType](#figureType), [fontColor](#fontColor), [fontInitials](#fontInitials), [fontManner](#fontManner), [fontSize](#fontSize), [fontStyle](#fontStyle), [fontType](#fontType), [frameColor](#frameColor), [frameStyle](#frameStyle), [frameType](#frameType), [itemData](#itemData), [labelID](#labelID), [labelPosition](#labelPosition), [labelType](#labelType), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [locationRole](#locationRole), [locationType](#locationType), [material](#material), [notAfter](#notAfter), [notBefore](#notBefore), [pageID](#pageID), [printingTechnique](#printingTechnique), [qualityAwardNorm](#qualityAwardNorm), [qualityGrapesNorm](#qualityGrapesNorm), [qualityLabelType](#qualityLabelType), [qualityLevelNorm](#qualityLevelNorm), [qualityProductionNorm](#qualityProductionNorm), [ref](#ref), [scanID](#scanID), [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [tasteGroupNorm](#tasteGroupNorm), [textPosition](#textPosition), [textType](#textType), [uri](#uri), [volumeNorm](#volumeNorm), [wdw](#wdw), [wineAgingNorm](#wineAgingNorm), [wineColorNorm](#wineColorNorm), [wineGrapesNorm](#wineGrapesNorm), [wineMillesimeNorm](#wineMillesimeNorm), [wineNameNorm](#wineNameNorm), [wineNameType](#wineNameType), [wineOtherType](#wineOtherType), [year](#year)
 
-## Elements
-### agent
+### Elements
+#### agent
 
 (no data)
 
@@ -27,7 +110,7 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 - Contains element(s): This element has no children.
 - Has attribute(s): [agentRole](#agentRole), [ref](#ref), [uri](#uri).
 
-### alcohol
+#### alcohol
 
 (no data)
 
@@ -37,7 +120,7 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 - Contains element(s): This element has no children.
 - Has attribute(s): [alcoholNorm](#alcoholNorm).
 
-### background
+#### background
 
 Information about the background of the label. Needs to be filled in only if there is some special background, other than the blank paper, to the visual and/or textual information provided. 
 
@@ -47,7 +130,7 @@ Information about the background of the label. Needs to be filled in only if the
 - Contains element(s): This element has no children.
 - Has attribute(s): [backgroundStyle](#backgroundStyle).
 
-### barrelNumber
+#### barrelNumber
 
 (no data)
 
@@ -57,7 +140,7 @@ Information about the background of the label. Needs to be filled in only if the
 - Contains element(s): This element has no children.
 - Has attribute(s): This element has no attributes.
 
-### collection
+#### collection
 
 The wine label collection the label belongs to.
 
@@ -67,7 +150,7 @@ The wine label collection the label belongs to.
 - Contains element(s): This element has no children.
 - Has attribute(s): [collectionID](#collectionID).
 
-### collectionContext
+#### collectionContext
 
 Any information that describes the individual label in the context of the collection, for example its location in the collection.
 
@@ -77,7 +160,7 @@ Any information that describes the individual label in the context of the collec
 - Contains element(s): This element has no children.
 - Has attribute(s): [pageID](#pageID), [scanID](#scanID).
 
-### comments
+#### comments
 
 (no data)
 
@@ -87,7 +170,7 @@ Any information that describes the individual label in the context of the collec
 - Contains element(s): This element has no children.
 - Has attribute(s): This element has no attributes.
 
-### conservation
+#### conservation
 
 (no data)
 
@@ -97,7 +180,7 @@ Any information that describes the individual label in the context of the collec
 - Contains element(s): This element has no children.
 - Has attribute(s): [conservationNorm](#conservationNorm).
 
-### controlNumber
+#### controlNumber
 
 (no data)
 
@@ -107,7 +190,7 @@ Any information that describes the individual label in the context of the collec
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [controlNumberType](#controlNumberType).
 
-### curation
+#### curation
 
 Information on the curation process of the wine label description.
 
@@ -117,7 +200,7 @@ Information on the curation process of the wine label description.
 - Contains element(s): This element has no children.
 - Has attribute(s): [curatorID](#curatorID), [curationDate](#curationDate), [curationUpdate](#curationUpdate).
 
-### dating
+#### dating
 
 (no data)
 
@@ -127,7 +210,7 @@ Information on the curation process of the wine label description.
 - Contains element(s): This element has no children.
 - Has attribute(s): [year](#year), [notBefore](#notBefore), [notAfter](#notAfter), [certainty](#certainty).
 
-### figure
+#### figure
 
 (figure) Any visual, figurative element on the label. The label is classified as to its type and position using the attributes. It can be described in the element content using a simple list of terms mentioning each recognizable element of the figure. (In a future iteration of WLV, a controlled vocabulary of visual elements commonly found on wine labels will be made available for this purpose.)
 
@@ -137,7 +220,7 @@ Information on the curation process of the wine label description.
 - Contains element(s): [figureItem](#figureItem).
 - Has attribute(s): [figureNum](#figureNum), [figureType](#figureType), [figurePosition](#figurePosition).
 
-### figureItem
+#### figureItem
 
 (figure item) A visual element or depicted object that can be identified in the figure.
 
@@ -147,7 +230,7 @@ Information on the curation process of the wine label description.
 - Contains element(s): This element has no children.
 - Has attribute(s): [itemData](#itemData).
 
-### frame
+#### frame
 
 Information about the frame of the label.
 
@@ -157,7 +240,7 @@ Information about the frame of the label.
 - Contains element(s): This element has no children.
 - Has attribute(s): [frameType](#frameType), [frameStyle](#frameStyle), [frameColor](#frameColor).
 
-### label
+#### label
 
 (label) Any single label or physically separate part of the label group.
 
@@ -167,7 +250,7 @@ Information about the frame of the label.
 - Contains element(s): [physical](#physical), [visual](#visual), [textual](#textual), [comments](#comments), [provenance](#provenance).
 - Has attribute(s): [labelPosition](#labelPosition).
 
-### labelGroup
+#### labelGroup
 
 The main container for information about the label. A label must have at least one part, but can have several parts.
 
@@ -177,7 +260,7 @@ The main container for information about the label. A label must have at least o
 - Contains element(s): [comments](#comments), [label](#label), [provenance](#provenance).
 - Has attribute(s): This element has no attributes.
 
-### labelNumber
+#### labelNumber
 
 (no data)
 
@@ -187,7 +270,7 @@ The main container for information about the label. A label must have at least o
 - Contains element(s): This element has no children.
 - Has attribute(s): This element has no attributes.
 
-### licence
+#### licence
 
 (no data)
 
@@ -197,7 +280,7 @@ The main container for information about the label. A label must have at least o
 - Contains element(s): This element has no children.
 - Has attribute(s): [uri](#uri), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope).
 
-### location
+#### location
 
 (no data)
 
@@ -207,7 +290,7 @@ The main container for information about the label. A label must have at least o
 - Contains element(s): This element has no children.
 - Has attribute(s): [locationType](#locationType), [locationRole](#locationRole), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [figureNum](#figureNum), [ref](#ref), [uri](#uri).
 
-### metadata
+#### metadata
 
 One of two mandatory top-level elements. Contains metadata related to the label description itself.
 
@@ -217,7 +300,7 @@ One of two mandatory top-level elements. Contains metadata related to the label 
 - Contains element(s): [collection](#collection), [curation](#curation), [licence](#licence), [collectionContext](#collectionContext), [comments](#comments).
 - Has attribute(s): [uri](#uri).
 
-### otherText
+#### otherText
 
 (no data)
 
@@ -227,7 +310,7 @@ One of two mandatory top-level elements. Contains metadata related to the label 
 - Contains element(s): This element has no children.
 - Has attribute(s): [textType](#textType), [textPosition](#textPosition), [figureNum](#figureNum).
 
-### physical
+#### physical
 
 Information regarding the physical aspects of the label, in particular shape, size and material.
 
@@ -237,7 +320,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 - Contains element(s): This element has no children.
 - Has attribute(s): [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [material](#material), [printingTechnique](#printingTechnique).
 
-### provenance
+#### provenance
 
 (no data)
 
@@ -247,7 +330,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 - Contains element(s): [dating](#dating), [source](#source), [scan](#scan), [conservation](#conservation).
 - Has attribute(s): This element has no attributes.
 
-### qualityAward
+#### qualityAward
 
 (no data)
 
@@ -257,7 +340,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityAwardNorm](#qualityAwardNorm).
 
-### qualityGrapes
+#### qualityGrapes
 
 (no data)
 
@@ -267,7 +350,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityGrapesNorm](#qualityGrapesNorm).
 
-### qualityHistorical
+#### qualityHistorical
 
 (no data)
 
@@ -277,7 +360,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 - Contains element(s): This element has no children.
 - Has attribute(s): [wdw](#wdw), [ref](#ref).
 
-### qualityLabel
+#### qualityLabel
 
 (no data)
 
@@ -287,7 +370,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityLabelType](#qualityLabelType).
 
-### qualityLevel
+#### qualityLevel
 
 (no data)
 
@@ -297,7 +380,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityLevelNorm](#qualityLevelNorm).
 
-### qualityProduction
+#### qualityProduction
 
 (no data)
 
@@ -307,7 +390,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityProductionNorm](#qualityProductionNorm).
 
-### scan
+#### scan
 
 (no data)
 
@@ -317,7 +400,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 - Contains element(s): This element has no children.
 - Has attribute(s): [scanID](#scanID).
 
-### source
+#### source
 
 (no data)
 
@@ -327,7 +410,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 - Contains element(s): This element has no children.
 - Has attribute(s): [year](#year).
 
-### textual
+#### textual
 
 (no data)
 
@@ -337,7 +420,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 - Contains element(s): [wineMillesime](#wineMillesime), [wineName](#wineName), [wineGrapes](#wineGrapes), [wineTaste](#wineTaste), [wineAging](#wineAging), [wineOther](#wineOther), [qualityGrapes](#qualityGrapes), [qualityLevel](#qualityLevel), [qualityAward](#qualityAward), [qualityLabel](#qualityLabel), [qualityProduction](#qualityProduction), [qualityHistorical](#qualityHistorical), [agent](#agent), [location](#location), [alcohol](#alcohol), [volume](#volume), [controlNumber](#controlNumber), [barrelNumber](#barrelNumber), [labelNumber](#labelNumber), [otherText](#otherText).
 - Has attribute(s): This element has no attributes.
 
-### visual
+#### visual
 
 Any visual and non-textual or non-linguistic elements discernible on the label.
 
@@ -347,7 +430,7 @@ Any visual and non-textual or non-linguistic elements discernible on the label.
 - Contains element(s): [frame](#frame), [background](#background), [figure](#figure).
 - Has attribute(s): This element has no attributes.
 
-### volume
+#### volume
 
 (no data)
 
@@ -357,7 +440,7 @@ Any visual and non-textual or non-linguistic elements discernible on the label.
 - Contains element(s): This element has no children.
 - Has attribute(s): [volumeNorm](#volumeNorm).
 
-### wineAging
+#### wineAging
 
 (no data)
 
@@ -367,7 +450,7 @@ Any visual and non-textual or non-linguistic elements discernible on the label.
 - Contains element(s): This element has no children.
 - Has attribute(s): [wineAgingNorm](#wineAgingNorm), [ref](#ref), [wdw](#wdw).
 
-### wineColor
+#### wineColor
 
 (no data)
 
@@ -377,7 +460,7 @@ Any visual and non-textual or non-linguistic elements discernible on the label.
 - Contains element(s): This element has no children.
 - Has attribute(s): [wineColorNorm](#wineColorNorm), [ref](#ref), [wdw](#wdw).
 
-### wineGrapes
+#### wineGrapes
 
 (no data)
 
@@ -387,7 +470,7 @@ Any visual and non-textual or non-linguistic elements discernible on the label.
 - Contains element(s): This element has no children.
 - Has attribute(s): [wineGrapesNorm](#wineGrapesNorm), [ref](#ref), [wdw](#wdw).
 
-### wineMillesime
+#### wineMillesime
 
 The year that the wine was harvested in.
 
@@ -397,7 +480,7 @@ The year that the wine was harvested in.
 - Contains element(s): This element has no children.
 - Has attribute(s): [wineMillesimeNorm](#wineMillesimeNorm).
 
-### wineName
+#### wineName
 
 The name of the wine. Typically printed in a somewhat larger font size than other information. For historical wine labels of the Mosel region, the wine name is typically composed of a location  (Ort, Gemeinde, Leitgemeinde) and the name or nickname of the specific vineyard belonging to that location. Note that the element 'wineName' has, as a consequence, an empty child element 'location' that can appear more than once and may hold information about the location and the vineyard separately. 
 
@@ -407,7 +490,7 @@ The name of the wine. Typically printed in a somewhat larger font size than othe
 - Contains element(s): [location](#location).
 - Has attribute(s): [wineNameType](#wineNameType), [wineNameNorm](#wineNameNorm), [ref](#ref), [uri](#uri), [wdw](#wdw).
 
-### wineOther
+#### wineOther
 
 (no data)
 
@@ -417,7 +500,7 @@ The name of the wine. Typically printed in a somewhat larger font size than othe
 - Contains element(s): This element has no children.
 - Has attribute(s): [wineOtherType](#wineOtherType), [ref](#ref).
 
-### wineTaste
+#### wineTaste
 
 (no data)
 
@@ -427,7 +510,7 @@ The name of the wine. Typically printed in a somewhat larger font size than othe
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw).
 
-### wlv
+#### wlv
 
 The root element in a label description using the Wine Label Vocabulary.
 
@@ -437,10 +520,10 @@ The root element in a label description using the Wine Label Vocabulary.
 - Contains element(s): [metadata](#metadata), [labelGroup](#labelGroup), [label](#label).
 - Has attribute(s): [labelID](#labelID), [labelType](#labelType).
 
-## Attributes
+### Attributes
 
 
-### agentRole
+#### agentRole
 (no data)
 
 - Status: Mandatory.
@@ -455,35 +538,35 @@ The root element in a label description using the Wine Label Vocabulary.
     * multiple / verschiedene
     * other / andere.
 
-### alcoholNorm
+#### alcoholNorm
 (no data)
 
 - Status: Mandatory.
 - Contained by element: [alcohol](#alcohol).
 - Possible values: This element has no default values.
 
-### backgroundStyle
+#### backgroundStyle
 (no data)
 
 - Status: Mandatory.
 - Contained by element: [background](#background).
 - Possible values: pattern, color, none.
 
-### certainty
+#### certainty
 (no data)
 
 - Status: Optional.
 - Contained by element: [dating](#dating).
 - Possible values: source, evidence, estimate, low.
 
-### collectionID
+#### collectionID
 A unique identifier for the wine label collection.
 
 - Status: Mandatory.
 - Contained by element: [collection](#collection).
 - Possible values: This element has no default values.
 
-### conservationNorm
+#### conservationNorm
 (no data)
 
 - Status: Mandatory.
@@ -497,42 +580,42 @@ A unique identifier for the wine label collection.
     * damaged
     * incomplete.
 
-### controlNumberType
+#### controlNumberType
 (no data)
 
 - Status: Optional.
 - Contained by element: [controlNumber](#controlNumber).
 - Possible values: Amtliche Prüfnummer (Q480240), Losnummer, other.
 
-### curationDate
+#### curationDate
 The date (or year) when the wine label description was created.
 
 - Status: Mandatory.
 - Contained by element: [curation](#curation).
 - Possible values: This element has no default values.
 
-### curationUpdate
+#### curationUpdate
 The date (or year) when the wine label description was last updated.
 
 - Status: Optional.
 - Contained by element: [curation](#curation).
 - Possible values: This element has no default values.
 
-### curatorID
+#### curatorID
 A unique identifier for the person that has curated the wine label description.
 
 - Status: Mandatory.
 - Contained by element: [curation](#curation).
 - Possible values: This element has no default values.
 
-### figureNum
+#### figureNum
 (figure number) Allows to number several figures for better identification.
 
 - Status: Mandatory.
 - Contained by element: [figure](#figure).
 - Possible values: This element has no default values.
 
-### figurePosition
+#### figurePosition
 (figure position) The position of the figure on the label surface, in a grid of nine quadrants. The quadrants are numbered like on the number-pad of a phone, starting at the top left with 1 and ending at the bottom right with 9. Any quadrant that the figure covers to a significant extent is included in the position description. (The textual designators are still valid, but will be deprecated.)
 
 - Status: Optional.
@@ -555,7 +638,7 @@ A unique identifier for the person that has curated the wine label description.
     * right-across
     * full-size.
 
-### figureType
+#### figureType
 (figure type) Allows a simple classification of figures into common types.
 
 - Status: Mandatory.
@@ -568,49 +651,49 @@ A unique identifier for the person that has curated the wine label description.
     * coat-of-arms
     * symbolic.
 
-### fontColor
+#### fontColor
 (no data)
 
 - Status: Optional.
 - Contained by element: All elements contained by [textual](#textual).
 - Possible values: This element has no default values.
 
-### fontInitials
+#### fontInitials
 (no data)
 
 - Status: Optional.
 - Contained by element: All elements contained by [textual](#textual).
 - Possible values: This element has no default values.
 
-### fontManner
+#### fontManner
 (no data)
 
 - Status: Optional.
 - Contained by element: All elements contained by [textual](#textual).
 - Possible values: This element has no default values.
 
-### fontSize
+#### fontSize
 (no data)
 
 - Status: Optional.
 - Contained by element: All elements contained by [textual](#textual).
 - Possible values: This element has no default values.
 
-### fontStyle
+#### fontStyle
 (no data)
 
 - Status: Optional.
 - Contained by element: All elements contained by [textual](#textual).
 - Possible values: This element has no default values.
 
-### fontType
+#### fontType
 (no data)
 
 - Status: Optional.
 - Contained by element: All elements contained by [textual](#textual).
 - Possible values: This element has no default values.
 
-### frameColor
+#### frameColor
 (no data)
 
 - Status: Mandatory.
@@ -622,7 +705,7 @@ A unique identifier for the person that has curated the wine label description.
     * red
     * green.
 
-### frameStyle
+#### frameStyle
 (no data)
 
 - Status: Mandatory.
@@ -634,14 +717,14 @@ A unique identifier for the person that has curated the wine label description.
     * band
     * other.
 
-### frameType
+#### frameType
 (no data)
 
 - Status: Mandatory.
 - Contained by element: [frame](#frame).
 - Possible values: outer, inner, other.
 
-### itemData
+#### itemData
 (item data) This attribute provides a fixed vocabulary, in German only, with a very broad category system (Artefakte, Fauna, Flora, Gebäude, Landschaft, Personen, Sonstiges) and a Wikidata identifier in brackets, to name the figure item. (No text content is allowed here. If there is text on a coat of arms or a banderole, it needs to be added under the heading 'textual'.)
 
 - Status: Mandatory.
@@ -728,14 +811,14 @@ A unique identifier for the person that has curated the wine label description.
     * Mond (Sonstiges;Q405)
     * Sonne (Sonstiges;Q525).
 
-### labelID
+#### labelID
 A unique identifier for the label.
 
 - Status: Mandatory.
 - Contained by element: [wlv](#wlv).
 - Possible values: This element has no default values.
 
-### labelPosition
+#### labelPosition
 The type of the label part, primarily defined by its supposed location on the bottle.
 
 - Status: Mandatory.
@@ -747,7 +830,7 @@ The type of the label part, primarily defined by its supposed location on the bo
     * wraparound
     * band.
 
-### labelType
+#### labelType
 This describes the label primarily with regard to its geographical scope.
 
 - Status: Optional.
@@ -759,14 +842,14 @@ This describes the label primarily with regard to its geographical scope.
     * tbc
     * other.
 
-### licenceAbbr
+#### licenceAbbr
 (no data)
 
 - Status: Optional.
 - Contained by element: [licence](#licence).
 - Possible values: CC BY, public domain.
 
-### licenceScope
+#### licenceScope
 (no data)
 
 - Status: Mandatory.
@@ -778,21 +861,21 @@ This describes the label primarily with regard to its geographical scope.
     * metadata
     * textual.
 
-### locationNorm
+#### locationNorm
 (no data)
 
 - Status: Optional.
 - Contained by element: [location](#location).
 - Possible values: This element has no default values.
 
-### locationRegNr
+#### locationRegNr
 (no data)
 
 - Status: Optional.
 - Contained by element: [location](#location).
 - Possible values: This element has no default values.
 
-### locationRole
+#### locationRole
 (no data)
 
 - Status: Optional.
@@ -807,7 +890,7 @@ This describes the label primarily with regard to its geographical scope.
     * multiple / verschiedene
     * other / andere.
 
-### locationType
+#### locationType
 (no data)
 
 - Status: Mandatory.
@@ -824,35 +907,35 @@ This describes the label primarily with regard to its geographical scope.
     * vineyard / Einzellage
     * other.
 
-### material
+#### material
 The material from which the label is made (in most cases, this is paper). 
 
 - Status: Mandatory.
 - Contained by element: [physical](#physical).
 - Possible values: paper, plastic, metal.
 
-### notAfter
+#### notAfter
 (no data)
 
 - Status: Optional.
 - Contained by element: [dating](#dating).
 - Possible values: This element has no default values.
 
-### notBefore
+#### notBefore
 (no data)
 
 - Status: Optional.
 - Contained by element: [dating](#dating).
 - Possible values: This element has no default values.
 
-### pageID
+#### pageID
 (no data)
 
 - Status: Optional.
 - Contained by element: [collectionContext](#collectionContext).
 - Possible values: This element has no default values.
 
-### printingTechnique
+#### printingTechnique
 The technical printing process used for printing the visual and/or textual information onto the base material. 
 
 - Status: Optional.
@@ -865,14 +948,14 @@ The technical printing process used for printing the visual and/or textual infor
     * mixed
     * other.
 
-### qualityAwardNorm
+#### qualityAwardNorm
 (no data)
 
 - Status: Optional.
 - Contained by element: [qualityAward](#qualityAward).
 - Possible values: Weinprämierung, Gütezeichen, other.
 
-### qualityGrapesNorm
+#### qualityGrapesNorm
 (no data)
 
 - Status: Optional.
@@ -886,14 +969,14 @@ The technical printing process used for printing the visual and/or textual infor
     * Eiswein
     * other.
 
-### qualityLabelType
+#### qualityLabelType
 (no data)
 
 - Status: Optional.
 - Contained by element: [qualityLabel](#qualityLabel).
 - Possible values: vineyard, grapes, other.
 
-### qualityLevelNorm
+#### qualityLevelNorm
 (no data)
 
 - Status: Optional.
@@ -905,14 +988,14 @@ The technical printing process used for printing the visual and/or textual infor
     * Prädikatswein
     * other.
 
-### qualityProductionNorm
+#### qualityProductionNorm
 (no data)
 
 - Status: Optional.
 - Contained by element: [qualityProduction](#qualityProduction).
 - Possible values: on-location, other.
 
-### ref
+#### ref
 (reference) Contains authority file data, norm data, other stable and unique identifiers. Sources include: Wikidata, Register-Nummer der Weinlagen, Gemeinsame Normdaten-Datei.
 
 - Status: Optional.
@@ -940,14 +1023,14 @@ The technical printing process used for printing the visual and/or textual infor
     * dewiki:
     * frwiki:.
 
-### scanID
+#### scanID
 (no data)
 
 - Status: Optional.
 - Contained by element: [scan](#scan).
 - Possible values: This element has no default values.
 
-### shape
+#### shape
 Information regarding the shape of the physical label.
 
 - Status: Mandatory.
@@ -962,35 +1045,35 @@ Information regarding the shape of the physical label.
     * octogon
     * other.
 
-### sizeH
+#### sizeH
 The height of the label measured in millimeters.
 
 - Status: Mandatory.
 - Contained by element: [physical](#physical).
 - Possible values: tbc.
 
-### sizeV
+#### sizeV
 (no data)
 
 - Status: Mandatory.
 - Contained by element: [physical](#physical).
 - Possible values: tbc.
 
-### tasteGroupNorm
+#### tasteGroupNorm
 (no data)
 
 - Status: Mandatory.
 - Contained by element: .
 - Possible values: This element has no default values.
 
-### textPosition
+#### textPosition
 (no data)
 
 - Status: Mandatory.
 - Contained by element: [otherText](#otherText).
 - Possible values: stand-alone, in-figure.
 
-### textType
+#### textType
 (no data)
 
 - Status: Mandatory.
@@ -1005,7 +1088,7 @@ The height of the label measured in millimeters.
     * vineyard (Lage)
     * other.
 
-### uri
+#### uri
 (uniform resource identifier) Für einen Link zu weiteren Informationen.
 
 - Status: Optional.
@@ -1017,14 +1100,14 @@ The height of the label measured in millimeters.
     * [location](#location).
 - Possible values: https://creativecommons.org/licenses/by/4.0/, https://github.com/dh-trier/wlv.
 
-### volumeNorm
+#### volumeNorm
 (no data)
 
 - Status: Mandatory.
 - Contained by element: [volume](#volume).
 - Possible values: This element has no default values.
 
-### wdw
+#### wdw
 (no data)
 
 - Status: Optional.
@@ -1042,21 +1125,21 @@ The height of the label measured in millimeters.
     * [qualityHistorical](#qualityHistorical).
 - Possible values: http://wdw.uni-trier.de/onlinewb/index.php3?ID.
 
-### wineAgingNorm
+#### wineAgingNorm
 (no data)
 
 - Status: Mandatory.
 - Contained by element: [wineAging](#wineAging).
 - Possible values: barrique, other.
 
-### wineColorNorm
+#### wineColorNorm
 (no data)
 
 - Status: Mandatory.
 - Contained by element: [wineColor](#wineColor).
 - Possible values: red (Rotwein), white (Weisswein), rose (Rosé/Rotling), other.
 
-### wineGrapesNorm
+#### wineGrapesNorm
 (no data)
 
 - Status: Mandatory.
@@ -1072,21 +1155,21 @@ The height of the label measured in millimeters.
     * Weißburgunder
     * other.
 
-### wineMillesimeNorm
+#### wineMillesimeNorm
 (no data)
 
 - Status: Mandatory.
 - Contained by element: [wineMillesime](#wineMillesime).
 - Possible values: This element has no default values.
 
-### wineNameNorm
+#### wineNameNorm
 (no data)
 
 - Status: Optional.
 - Contained by element: [wineName](#wineName).
 - Possible values: This element has no default values.
 
-### wineNameType
+#### wineNameType
 (no data)
 
 - Status: Mandatory.
@@ -1104,14 +1187,14 @@ The height of the label measured in millimeters.
     * variety / Rebsorte
     * other.
 
-### wineOtherType
+#### wineOtherType
 (no data)
 
 - Status: Optional.
 - Contained by element: [wineOther](#wineOther).
 - Possible values: additives, usage, other.
 
-### year
+#### year
 (no data)
 
 - Status: Optional.
