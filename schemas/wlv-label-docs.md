@@ -114,7 +114,7 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 
 #### alcohol
 
-(no data)
+Information relevant to the alcohol content of the wine.
 
 - Status: Optional.
 - Frequency: Once at most.
@@ -134,7 +134,7 @@ Information about the background of the label. Needs to be filled in only if the
 
 #### barrelNumber
 
-(no data)
+The number of the barrel as mentioned on the label.
 
 - Status: Optional.
 - Frequency: Once at most.
@@ -174,7 +174,7 @@ Any comment on the label or the label description, written in prose by the curat
 
 #### conservation
 
-(no data)
+Information regarding the state of physical conservation of the label, in the form of a prose description.
 
 - Status: Optional.
 - Frequency: Once at most.
@@ -204,7 +204,7 @@ Information on the curation process of the wine label description.
 
 #### dating
 
-(no data)
+Information regarding the supposed time of production of the label (especially relevant if no millesime is present.
 
 - Status: Optional.
 - Frequency: Once at most.
@@ -254,7 +254,7 @@ Information about the frame of the label.
 
 #### labelGroup
 
-The main container for information about the label. A label must have at least one part, but can have several parts.
+A container element to group physically separate labels belonging to one bottle. A label group must have at least one label, but can contain several labels. (If only one label is present, it is recommended not to use labelGroup.)
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
@@ -264,7 +264,7 @@ The main container for information about the label. A label must have at least o
 
 #### labelNumber
 
-(no data)
+The number or identifyer of the label usually assigned by the printer.
 
 - Status: Optional.
 - Frequency: Once at most.
@@ -284,7 +284,7 @@ The name of the licence used for the data.
 
 #### location
 
-(no data)
+Any location, such as the name of a region, city, village, or vineyard mentioned on the label.
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
@@ -324,7 +324,7 @@ Information regarding the physical aspects of the label, in particular shape, si
 
 #### provenance
 
-(no data)
+Information regarding the provenance of the label, in prose. This information can be derived either from the label itself, or from contextual or otherwise external information.
 
 - Status: Optional.
 - Frequency: Once at most.
@@ -434,7 +434,7 @@ Any visual and non-textual or non-linguistic elements discernible on the label.
 
 #### volume
 
-(no data)
+Information regarding the volume of the wine.
 
 - Status: Optional.
 - Frequency: Once at most.
@@ -541,7 +541,7 @@ The root element in a label description using the Wine Label Vocabulary.
     * other / andere.
 
 #### alcoholNorm
-(no data)
+The percentage of alcohol, expressed as number (float).
 
 - Status: Mandatory.
 - Contained by element: [alcohol](#alcohol).
@@ -569,7 +569,7 @@ A unique identifier for the wine label collection.
 - Possible values: This element has no default values.
 
 #### conservationNorm
-(no data)
+Information regarding the state of physical conservation of the label, in short normed form.
 
 - Status: Mandatory.
 - Contained by element: [conservation](#conservation).
@@ -866,21 +866,21 @@ The scope of the licence: The part or aspect of the label or label description t
     * textual.
 
 #### locationNorm
-(no data)
+The name of the location in a normalized form.
 
 - Status: Optional.
 - Contained by element: [location](#location).
 - Possible values: This element has no default values.
 
 #### locationRegNr
-(no data)
+The numerical identifier of a vineyard contained in the official "Lagenliste".
 
 - Status: Optional.
 - Contained by element: [location](#location).
 - Possible values: This element has no default values.
 
 #### locationRole
-(no data)
+The role of the location.
 
 - Status: Optional.
 - Contained by element: [location](#location).
@@ -895,7 +895,7 @@ The scope of the licence: The part or aspect of the label or label description t
     * other / andere.
 
 #### locationType
-(no data)
+The type of the location, in particular with respect to the broader or narrower geographical scope. (Note that when this is part of the wine name, it is correlated, in German wine law, with quality levels.)
 
 - Status: Mandatory.
 - Contained by element: [location](#location).
@@ -1107,7 +1107,7 @@ The height of the label measured in millimeters. (This attribute is mandatory, b
 - Possible values: https://creativecommons.org/licenses/by/4.0/, https://github.com/dh-trier/wlv.
 
 #### volumeNorm
-(no data)
+The indication of the volume of wine, expressed as a number (integer of milliliters).
 
 - Status: Mandatory.
 - Contained by element: [volume](#volume).
