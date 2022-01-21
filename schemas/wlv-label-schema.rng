@@ -195,7 +195,7 @@
     </attribute>
   </define>
   <define name="labelGroup">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The main container for information about the label. A label must have at least one part, but can have several parts.</a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A container element to group physically separate labels belonging to one bottle. A label group must have at least one label, but can contain several labels. (If only one label is present, it is recommended not to use labelGroup.)</a:documentation>
     <element>
       <name ns="">labelGroup</name>
       <optional>
@@ -1105,6 +1105,7 @@
     </attribute>
   </define>
   <define name="location">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Any location, such as the name of a region, city, village, or vineyard mentioned on the label.</a:documentation>
     <element>
       <name ns="">location</name>
       <text />
@@ -1131,6 +1132,7 @@
     </element>
   </define>
   <define name="locationRole">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The role of the location.</a:documentation>
     <attribute>
       <name ns="">locationRole</name>
       <choice>
@@ -1146,6 +1148,7 @@
     </attribute>
   </define>
   <define name="locationType">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The type of the location, in particular with respect to the broader or narrower geographical scope. (Note that when this is part of the wine name, it is correlated, in German wine law, with quality levels.)</a:documentation>
     <attribute>
       <name ns="">locationType</name>
       <choice>
@@ -1163,18 +1166,21 @@
     </attribute>
   </define>
   <define name="locationNorm">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name of the location in a normalized form.</a:documentation>
     <attribute>
       <name ns="">locationNorm</name>
       <text />
     </attribute>
   </define>
   <define name="locationRegNr">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The numerical identifier of a vineyard contained in the official "Lagenliste".</a:documentation>
     <attribute>
       <name ns="">locationRegNr</name>
       <text/>
     </attribute>
   </define>
   <define name="alcohol">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information relevant to the alcohol content of the wine.</a:documentation>
     <element>
       <name ns="">alcohol</name>
       <text />
@@ -1183,12 +1189,14 @@
     </element>
   </define>
   <define name="alcoholNorm">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The percentage of alcohol, expressed as number (float).</a:documentation>
     <attribute>
       <name ns="">alcoholNorm</name>
-      <data type="int" />
+      <data type="float" />
     </attribute>
   </define>
   <define name="volume">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information regarding the volume of the wine.</a:documentation>
     <element>
       <name ns="">volume</name>
       <text />
@@ -1197,6 +1205,7 @@
     </element>
   </define>
   <define name="volumeNorm">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The indication of the volume of wine, expressed as a number (integer of milliliters).</a:documentation>
     <attribute>
       <name ns="">volumeNorm</name>
       <data type="int" />
@@ -1227,6 +1236,7 @@
     </attribute>
   </define>
   <define name="barrelNumber">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The number of the barrel as mentioned on the label.</a:documentation>
     <element>
       <name ns="">barrelNumber</name>
       <text />
@@ -1234,6 +1244,7 @@
     </element>
   </define>
   <define name="labelNumber">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The number or identifyer of the label usually assigned by the printer.</a:documentation>
     <element>
       <name ns="">labelNumber</name>
       <text />
@@ -1277,6 +1288,7 @@
     </attribute>
   </define>
   <define name="provenance">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information regarding the provenance of the label, in prose. This information can be derived either from the label itself, or from contextual or otherwise external information.</a:documentation>
     <element>
       <name ns="">provenance</name>
       <optional>
@@ -1294,6 +1306,7 @@
     </element>
   </define>
   <define name="dating">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information regarding the supposed time of production of the label (especially relevant if no millesime is present.</a:documentation>
     <element>
       <name ns="">dating</name>
       <optional>
@@ -1361,6 +1374,7 @@
     </element>
   </define>
   <define name="conservation">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information regarding the state of physical conservation of the label, in the form of a prose description.</a:documentation>
     <element>
       <name ns="">conservation</name>
       <ref name="conservationNorm" />
@@ -1368,6 +1382,7 @@
     </element>
   </define>
   <define name="conservationNorm">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information regarding the state of physical conservation of the label, in short normed form.</a:documentation>
     <attribute>
       <name ns="">conservationNorm</name>
       <choice>
