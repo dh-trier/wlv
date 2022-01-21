@@ -21,8 +21,8 @@
         <otherText textType="coat-text" textPosition="in-figure" fontType="Antiqua-Sans" fontStyle="all-caps">seit 1846</otherText>
         <location locationType="region / Gebiet" fontType="Antiqua-Sans">Mosel-Saar-Ruwer</location>
         <wineMillesime wineMillesimeNorm="1939" fontStyle="italics" fontType="Cursive" fontSize="larger">1939er</wineMillesime>
-        <wineName wineNameType="locality / Leitgemeinde">Wiltinger
-          <location locationType="locality / Leitgemeinde" ref="Wikidata:Q161930"></location>
+        <wineName wineNameType="locality / Leitgemeinde">
+          <location locationType="locality / Leitgemeinde" ref="Wikidata:Q161930">Wiltinger</location>
         </wineName>
         <agent agentRole="distribution / Vertrieb">Karl Ziegler, Weinhandlung</agent>
         <location locationRole="distribution / Vertrieb" locationType="locality / Ortsname">Freudenberg</location>

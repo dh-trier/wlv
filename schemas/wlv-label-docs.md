@@ -164,7 +164,7 @@ Any information that describes the individual label in the context of the collec
 
 #### comments
 
-(no data)
+Any comment on the label or the label description, written in prose by the curator(s).
 
 - Status: Optional.
 - Frequency: Once at most.
@@ -244,7 +244,7 @@ Information about the frame of the label.
 
 #### label
 
-(label) Any single label or physically separate part of the label group.
+(label) Any single label or physically separate part of a label group.
 
 - Status: Optional.
 - Frequency: Once at most.
@@ -274,7 +274,7 @@ The main container for information about the label. A label must have at least o
 
 #### licence
 
-(no data)
+The name of the licence used for the data. 
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
@@ -696,7 +696,7 @@ A unique identifier for the person that has curated the wine label description.
 - Possible values: This element has no default values.
 
 #### frameColor
-(no data)
+The color of the frame. 
 
 - Status: Mandatory.
 - Contained by element: [frame](#frame).
@@ -705,10 +705,12 @@ A unique identifier for the person that has curated the wine label description.
     * grey
     * gold
     * red
-    * green.
+    * green
+    * blue
+    * silver.
 
 #### frameStyle
-(no data)
+The visual style of the frame. 
 
 - Status: Mandatory.
 - Contained by element: [frame](#frame).
@@ -720,7 +722,7 @@ A unique identifier for the person that has curated the wine label description.
     * other.
 
 #### frameType
-(no data)
+The type of frame, defined based on its position relative to other elements of the label. The value 'outer' means all other elements are within the frame. The value 'inner' means some of the other elements of the label are within, others are outside the frame. 
 
 - Status: Mandatory.
 - Contained by element: [frame](#frame).
@@ -821,7 +823,7 @@ A unique identifier for the label.
 - Possible values: This element has no default values.
 
 #### labelPosition
-The type of the label part, primarily defined by its supposed location on the bottle.
+The position of the label on the bottle, used in particular as a way to disinguish the different labels in a label group.
 
 - Status: Mandatory.
 - Contained by element: [label](#label).
@@ -845,14 +847,14 @@ This describes the label primarily with regard to its geographical scope.
     * other.
 
 #### licenceAbbr
-(no data)
+Abbreviation for the licence. 
 
 - Status: Optional.
 - Contained by element: [licence](#licence).
 - Possible values: CC BY, public domain.
 
 #### licenceScope
-(no data)
+The scope of the licence: The part or aspect of the label or label description to which the licence apply. 
 
 - Status: Mandatory.
 - Contained by element: [licence](#licence).
@@ -1045,10 +1047,12 @@ Information regarding the shape of the physical label.
     * diamond
     * trapezoid
     * octogon
+    * circular
+    * ellipsoid
     * other.
 
 #### sizeH
-The height of the label measured in millimeters.
+The height of the label measured in millimeters. (This attribute is mandatory, but can also take the value "tbc" if the size data is not available.)
 
 - Status: Mandatory.
 - Contained by element: [physical](#physical).
