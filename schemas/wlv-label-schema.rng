@@ -156,7 +156,7 @@
     </attribute>
   </define>
   <define name="licence">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name of the licence used for the data. </a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name of the licence used for the data.</a:documentation>
     <element>
       <name ns="">licence</name>
       <text />
@@ -170,7 +170,7 @@
     </element>
   </define>
   <define name="licenceAbbr">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Abbreviation for the licence. </a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Abbreviation for the licence.</a:documentation>
     <attribute>
       <name ns="">licenceAbbr</name>
       <choice>
@@ -181,7 +181,7 @@
     </attribute>
   </define>
   <define name="licenceScope">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The scope of the licence: The part or aspect of the label or label description to which the licence apply. </a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The scope of the licence: The part or aspect of the label or label description to which the licence apply.</a:documentation>
     <attribute>
       <name ns="">licenceScope</name>
       <choice>
@@ -311,7 +311,7 @@
     </attribute>
   </define>
   <define name="material">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The material from which the label is made (in most cases, this is paper). </a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The material from which the label is made (in most cases, this is paper).</a:documentation>
     <attribute>
       <name ns="">material</name>
       <choice>
@@ -322,7 +322,7 @@
     </attribute>
   </define>
   <define name="printingTechnique">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The technical printing process used for printing the visual and/or textual information onto the base material. </a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The technical printing process used for printing the visual and/or textual information onto the base material.</a:documentation>
     <attribute>
       <name ns="">printingTechnique</name>
       <choice>
@@ -363,7 +363,7 @@
     </element>
   </define>
   <define name="frameStyle">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The visual style of the frame. </a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The visual style of the frame.</a:documentation>
     <attribute>
       <name ns="">frameStyle</name>
       <choice>
@@ -376,7 +376,7 @@
     </attribute>
   </define>
   <define name="frameType">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The type of frame, defined based on its position relative to other elements of the label. The value 'outer' means all other elements are within the frame. The value 'inner' means some of the other elements of the label are within, others are outside the frame. </a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The type of frame, defined based on its position relative to other elements of the label. The value 'outer' means all other elements are within the frame. The value 'inner' means some of the other elements of the label are within, others are outside the frame.</a:documentation>
     <attribute>
       <name ns="">frameType</name>
       <choice>
@@ -387,7 +387,7 @@
     </attribute>
   </define>
   <define name="frameColor">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The color of the frame. </a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The color of the frame.</a:documentation>
     <attribute>
       <name ns="">frameColor</name>
       <choice>
@@ -403,7 +403,7 @@
     </attribute>
   </define>
   <define name="background">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information about the background of the label. Needs to be filled in only if there is some special background, other than the blank paper, to the visual and/or textual information provided. </a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information about the background of the label. Needs to be filled in only if there is some special background, other than the blank paper, to the visual and/or textual information provided.</a:documentation>
     <element>
       <name ns="">background</name>
       <text />
@@ -492,98 +492,98 @@
     <a:documentation>(figure item) A visual element or depicted object that can be identified in the figure.</a:documentation>
     <element>
       <name ns="">figureItem</name>
-        <ref name="itemData" />
+      <ref name="itemData" />
     </element>
   </define>
   <define name="itemData">
-  <a:documentation>(item data) This attribute provides a fixed vocabulary, in German only, with a very broad category system (Artefakte, Fauna, Flora, Gebäude, Landschaft, Personen, Sonstiges) and a Wikidata identifier in brackets, to name the figure item. (No text content is allowed here. If there is text on a coat of arms or a banderole, it needs to be added under the heading 'textual'.)</a:documentation>
-  <attribute>
-    <name ns="">itemData</name>
-    <choice>
-      <value>Banderole (Artefakte;Q2689628)</value>
-      <value>Brezel (Artefakte;Q160525)</value>
-      <value>Boot (Artefakte;Q35872)</value>
-      <value>Globus (Artefakte;Q133792)</value>
-      <value>Gemälde (Artefakte;Q3305213)</value>
-      <value>Fahrzeug (Artefakte;Q42889)</value>
-      <value>Harfe (Artefakte;Q47369)</value>
-      <value>Harpune (Artefakte;Q207574)</value>
-      <value>Helm (Artefakte;Q910873)</value>
-      <value>Hut (Artefakte;Q80151)</value>
-      <value>Krone (Artefakte;Q170984)</value>
-      <value>Krug (Artefakte;Q766983)</value>
-      <value>Medaille (Artefakte;Q131647)</value>
-      <value>Musikinstrument (Artefakte;Q)</value>
-      <value>Pfeil (Artefakte;Q45922)</value>
-      <value>Rad (Artefakte;Q446)</value>
-      <value>Schiff (Artefakte;Q11446)</value>
-      <value>Siegel (Artefakte;Q162919)</value>
-      <value>Schild (Artefakte;Q131559)</value>
-      <value>Schlüssel (Artefakte;Q132041)</value>
-      <value>Schwert (Artefakte;Q12791)</value>
-      <value>Stoff (Artefakte;Q5849500)</value>
-      <value>Vase (Artefakte;Q191851)</value>
-      <value>Wage (Artefakte;Q134566)</value>
-      <value>Wappen (Artefakte;Q14659)</value>
-      <value>Weinglas (Artefakte;Q1531435)</value>
-      <value>Weinflasche (Artefakte;Q23490)</value>
-      <value>Weinfass (Artefakte;Q10289)</value>
-      <value>Adler (Fauna;Q2092297)</value>
-      <value>Bär (Fauna;Q30090244)</value>
-      <value>Feder (Fauna;Q81025)</value>
-      <value>Flügel (Fauna;Q161358)</value>
-      <value>Hund (Fauna;Q144)</value>
-      <value>Katze (Fauna;Q146)</value>
-      <value>Löwe (Fauna;Q140)</value>
-      <value>Pferd (Fauna;Q726)</value>
-      <value>Ochse (Fauna;Q473194)</value>
-      <value>Reh/Hirsch (Fauna;Q29838690)</value>
-      <value>Schaf (Fauna;Q7368)</value>
-      <value>Spinne (Fauna;Q1357)</value>
-      <value>Vogel (Fauna;Q5113)</value>
-      <value>Baum (Flora;Q10884)</value>
-      <value>Blume (Flora;Q886167)</value>
-      <value>Blüte (Flora;Q506)</value>
-      <value>Pflanze (Flora;Q756)</value>
-      <value>Weintraube (Flora;Q10978)</value>
-      <value>Weinblätter (Flora;Q33971)</value>
-      <value>Weinstock (Flora;Q2135068)</value>
-      <value>Burg (Bauwerke;Q23413)</value>
-      <value>Brücke (Bauwerke;Q12280)</value>
-      <value>Dock (Bauwerke;Q124282)</value>
-      <value>Dorf (Bauwerke;Q532)</value>
-      <value>Gebäude (Bauwerke;Q41176)</value>
-      <value>Fenster (Bauwerke;Q35473)</value>
-      <value>Interieur (Bauwerke;Q2998430)</value>
-      <value>Keller (Bauwerke;Q43275450)</value>
-      <value>Kirchengebäude (Bauwerke;Q16970)</value>
-      <value>Mauer (Bauwerke;Q42948)</value>
-      <value>Stadt (Bauwerke;Q532)</value>
-      <value>Straße (Bauwerke;Q34442)</value>
-      <value>Tor/Türe (Bauwerke;Q36794)</value>
-      <value>Treppe (Bauwerke;Q12511)</value>
-      <value>Turm (Bauwerke;Q12518)</value>
-      <value>Zaun (Bauwerke;Q148571)</value>
-      <value>Ufer (Landschaft;Q468756)</value>
-      <value>Fluss (Landschaft;Q4022)</value>
-      <value>Hügel (Landschaft;Q54050)</value>
-      <value>Weinberg (Landschaft;Q22715)</value>
-      <value>Mann (Personen;Q8441)</value>
-      <value>Frau (Personen;Q467)</value>
-      <value>Kind (Personen;Q7569)</value>
-      <value>Mensch (Personen;Q5)</value>
-      <value>Personengruppe (Personen;Q16334295)</value>
-      <value>Ritter (Sonstiges;Q102083)</value>
-      <value>Satyr (Sonstiges;Q163709)</value>
-      <value>Engel (Sonstiges;Q235113)</value>
-      <value>Drache (Sonstiges;Q7559)</value>
-      <value>Stern (Sonstiges;Q523)</value>
-      <value>Mond (Sonstiges;Q405)</value>
-      <value>Sonne (Sonstiges;Q525)</value>
-      <text />
-    </choice>
-  </attribute>
-</define>
+    <a:documentation>(item data) This attribute provides a fixed vocabulary, in German only, with a very broad category system (Artefakte, Fauna, Flora, Gebäude, Landschaft, Personen, Sonstiges) and a Wikidata identifier in brackets, to name the figure item. (No text content is allowed here. If there is text on a coat of arms or a banderole, it needs to be added under the heading 'textual'.)</a:documentation>
+    <attribute>
+      <name ns="">itemData</name>
+      <choice>
+        <value>Banderole (Artefakte;Q2689628)</value>
+        <value>Brezel (Artefakte;Q160525)</value>
+        <value>Boot (Artefakte;Q35872)</value>
+        <value>Globus (Artefakte;Q133792)</value>
+        <value>Gemälde (Artefakte;Q3305213)</value>
+        <value>Fahrzeug (Artefakte;Q42889)</value>
+        <value>Harfe (Artefakte;Q47369)</value>
+        <value>Harpune (Artefakte;Q207574)</value>
+        <value>Helm (Artefakte;Q910873)</value>
+        <value>Hut (Artefakte;Q80151)</value>
+        <value>Krone (Artefakte;Q170984)</value>
+        <value>Krug (Artefakte;Q766983)</value>
+        <value>Medaille (Artefakte;Q131647)</value>
+        <value>Musikinstrument (Artefakte;Q)</value>
+        <value>Pfeil (Artefakte;Q45922)</value>
+        <value>Rad (Artefakte;Q446)</value>
+        <value>Schiff (Artefakte;Q11446)</value>
+        <value>Siegel (Artefakte;Q162919)</value>
+        <value>Schild (Artefakte;Q131559)</value>
+        <value>Schlüssel (Artefakte;Q132041)</value>
+        <value>Schwert (Artefakte;Q12791)</value>
+        <value>Stoff (Artefakte;Q5849500)</value>
+        <value>Vase (Artefakte;Q191851)</value>
+        <value>Wage (Artefakte;Q134566)</value>
+        <value>Wappen (Artefakte;Q14659)</value>
+        <value>Weinglas (Artefakte;Q1531435)</value>
+        <value>Weinflasche (Artefakte;Q23490)</value>
+        <value>Weinfass (Artefakte;Q10289)</value>
+        <value>Adler (Fauna;Q2092297)</value>
+        <value>Bär (Fauna;Q30090244)</value>
+        <value>Feder (Fauna;Q81025)</value>
+        <value>Flügel (Fauna;Q161358)</value>
+        <value>Hund (Fauna;Q144)</value>
+        <value>Katze (Fauna;Q146)</value>
+        <value>Löwe (Fauna;Q140)</value>
+        <value>Pferd (Fauna;Q726)</value>
+        <value>Ochse (Fauna;Q473194)</value>
+        <value>Reh/Hirsch (Fauna;Q29838690)</value>
+        <value>Schaf (Fauna;Q7368)</value>
+        <value>Spinne (Fauna;Q1357)</value>
+        <value>Vogel (Fauna;Q5113)</value>
+        <value>Baum (Flora;Q10884)</value>
+        <value>Blume (Flora;Q886167)</value>
+        <value>Blüte (Flora;Q506)</value>
+        <value>Pflanze (Flora;Q756)</value>
+        <value>Weintraube (Flora;Q10978)</value>
+        <value>Weinblätter (Flora;Q33971)</value>
+        <value>Weinstock (Flora;Q2135068)</value>
+        <value>Burg (Bauwerke;Q23413)</value>
+        <value>Brücke (Bauwerke;Q12280)</value>
+        <value>Dock (Bauwerke;Q124282)</value>
+        <value>Dorf (Bauwerke;Q532)</value>
+        <value>Gebäude (Bauwerke;Q41176)</value>
+        <value>Fenster (Bauwerke;Q35473)</value>
+        <value>Interieur (Bauwerke;Q2998430)</value>
+        <value>Keller (Bauwerke;Q43275450)</value>
+        <value>Kirchengebäude (Bauwerke;Q16970)</value>
+        <value>Mauer (Bauwerke;Q42948)</value>
+        <value>Stadt (Bauwerke;Q532)</value>
+        <value>Straße (Bauwerke;Q34442)</value>
+        <value>Tor/Türe (Bauwerke;Q36794)</value>
+        <value>Treppe (Bauwerke;Q12511)</value>
+        <value>Turm (Bauwerke;Q12518)</value>
+        <value>Zaun (Bauwerke;Q148571)</value>
+        <value>Ufer (Landschaft;Q468756)</value>
+        <value>Fluss (Landschaft;Q4022)</value>
+        <value>Hügel (Landschaft;Q54050)</value>
+        <value>Weinberg (Landschaft;Q22715)</value>
+        <value>Mann (Personen;Q8441)</value>
+        <value>Frau (Personen;Q467)</value>
+        <value>Kind (Personen;Q7569)</value>
+        <value>Mensch (Personen;Q5)</value>
+        <value>Personengruppe (Personen;Q16334295)</value>
+        <value>Ritter (Sonstiges;Q102083)</value>
+        <value>Satyr (Sonstiges;Q163709)</value>
+        <value>Engel (Sonstiges;Q235113)</value>
+        <value>Drache (Sonstiges;Q7559)</value>
+        <value>Stern (Sonstiges;Q523)</value>
+        <value>Mond (Sonstiges;Q405)</value>
+        <value>Sonne (Sonstiges;Q525)</value>
+        <text />
+      </choice>
+    </attribute>
+  </define>
   <define name="fontAttributes">
     <optional>
       <attribute>
@@ -741,7 +741,7 @@
     </attribute>
   </define>
   <define name="wineName">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name of the wine. Typically printed in a somewhat larger font size than other information. For historical wine labels of the Mosel region, the wine name is typically composed of a location  (Ort, Gemeinde, Leitgemeinde) and the name or nickname of the specific vineyard belonging to that location. Note that the element 'wineName' has, as a consequence, an empty child element 'location' that can appear more than once and may hold information about the location and the vineyard separately. </a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name of the wine. Typically printed in a somewhat larger font size than other information. For historical wine labels of the Mosel region, the wine name is typically composed of a location  (Ort, Gemeinde, Leitgemeinde) and the name or nickname of the specific vineyard belonging to that location. Note that the element 'wineName' has, as a consequence, an empty child element 'location' that can appear more than once and may hold information about the location and the vineyard separately.</a:documentation>
     <element>
       <name ns="">wineName</name>
       <text />
@@ -785,12 +785,14 @@
     </attribute>
   </define>
   <define name="wineNameNorm">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name of the wine in normalized form.</a:documentation>
     <attribute>
       <name ns="">wineNameNorm</name>
       <text />
     </attribute>
   </define>
   <define name="wineColor">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The color of the name as mentioned on the label.</a:documentation>
     <element>
       <name ns="">wineColor</name>
       <text />
@@ -1076,6 +1078,7 @@
     </element>
   </define>
   <define name="agent">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Any agent, whether a person (like a wine-maker or trader) or an organization (like a wine trading company or a printing enterprise), mentioned on the label.</a:documentation>
     <element>
       <name ns="">agent</name>
       <text />
@@ -1176,7 +1179,7 @@
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The numerical identifier of a vineyard contained in the official "Lagenliste".</a:documentation>
     <attribute>
       <name ns="">locationRegNr</name>
-      <text/>
+      <text />
     </attribute>
   </define>
   <define name="alcohol">
@@ -1212,6 +1215,7 @@
     </attribute>
   </define>
   <define name="controlNumber">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The control number that is required for more recent labels.</a:documentation>
     <element>
       <name ns="">controlNumber</name>
       <text />

@@ -104,7 +104,7 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 ### Elements
 #### agent
 
-(no data)
+Any agent, whether a person (like a wine-maker or trader) or an organization (like a wine trading company or a printing enterprise), mentioned on the label.
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
@@ -124,7 +124,7 @@ Information relevant to the alcohol content of the wine.
 
 #### background
 
-Information about the background of the label. Needs to be filled in only if there is some special background, other than the blank paper, to the visual and/or textual information provided. 
+Information about the background of the label. Needs to be filled in only if there is some special background, other than the blank paper, to the visual and/or textual information provided.
 
 - Status: Optional.
 - Frequency: Once at most.
@@ -184,7 +184,7 @@ Information regarding the state of physical conservation of the label, in the fo
 
 #### controlNumber
 
-(no data)
+The control number that is required for more recent labels.
 
 - Status: Optional.
 - Frequency: Once at most.
@@ -274,7 +274,7 @@ The number or identifyer of the label usually assigned by the printer.
 
 #### licence
 
-The name of the licence used for the data. 
+The name of the licence used for the data.
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
@@ -454,7 +454,7 @@ Information regarding the volume of the wine.
 
 #### wineColor
 
-(no data)
+The color of the name as mentioned on the label.
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
@@ -484,7 +484,7 @@ The year that the wine was harvested in.
 
 #### wineName
 
-The name of the wine. Typically printed in a somewhat larger font size than other information. For historical wine labels of the Mosel region, the wine name is typically composed of a location  (Ort, Gemeinde, Leitgemeinde) and the name or nickname of the specific vineyard belonging to that location. Note that the element 'wineName' has, as a consequence, an empty child element 'location' that can appear more than once and may hold information about the location and the vineyard separately. 
+The name of the wine. Typically printed in a somewhat larger font size than other information. For historical wine labels of the Mosel region, the wine name is typically composed of a location  (Ort, Gemeinde, Leitgemeinde) and the name or nickname of the specific vineyard belonging to that location. Note that the element 'wineName' has, as a consequence, an empty child element 'location' that can appear more than once and may hold information about the location and the vineyard separately.
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
@@ -696,7 +696,7 @@ A unique identifier for the person that has curated the wine label description.
 - Possible values: This element has no default values.
 
 #### frameColor
-The color of the frame. 
+The color of the frame.
 
 - Status: Mandatory.
 - Contained by element: [frame](#frame).
@@ -710,7 +710,7 @@ The color of the frame.
     * silver.
 
 #### frameStyle
-The visual style of the frame. 
+The visual style of the frame.
 
 - Status: Mandatory.
 - Contained by element: [frame](#frame).
@@ -722,7 +722,7 @@ The visual style of the frame.
     * other.
 
 #### frameType
-The type of frame, defined based on its position relative to other elements of the label. The value 'outer' means all other elements are within the frame. The value 'inner' means some of the other elements of the label are within, others are outside the frame. 
+The type of frame, defined based on its position relative to other elements of the label. The value 'outer' means all other elements are within the frame. The value 'inner' means some of the other elements of the label are within, others are outside the frame.
 
 - Status: Mandatory.
 - Contained by element: [frame](#frame).
@@ -847,14 +847,14 @@ This describes the label primarily with regard to its geographical scope.
     * other.
 
 #### licenceAbbr
-Abbreviation for the licence. 
+Abbreviation for the licence.
 
 - Status: Optional.
 - Contained by element: [licence](#licence).
 - Possible values: CC BY, public domain.
 
 #### licenceScope
-The scope of the licence: The part or aspect of the label or label description to which the licence apply. 
+The scope of the licence: The part or aspect of the label or label description to which the licence apply.
 
 - Status: Mandatory.
 - Contained by element: [licence](#licence).
@@ -912,7 +912,7 @@ The type of the location, in particular with respect to the broader or narrower 
     * other.
 
 #### material
-The material from which the label is made (in most cases, this is paper). 
+The material from which the label is made (in most cases, this is paper).
 
 - Status: Mandatory.
 - Contained by element: [physical](#physical).
@@ -940,7 +940,7 @@ The material from which the label is made (in most cases, this is paper).
 - Possible values: This element has no default values.
 
 #### printingTechnique
-The technical printing process used for printing the visual and/or textual information onto the base material. 
+The technical printing process used for printing the visual and/or textual information onto the base material.
 
 - Status: Optional.
 - Contained by element: [physical](#physical).
@@ -1169,7 +1169,7 @@ The indication of the volume of wine, expressed as a number (integer of millilit
 - Possible values: This element has no default values.
 
 #### wineNameNorm
-(no data)
+The name of the wine in normalized form.
 
 - Status: Optional.
 - Contained by element: [wineName](#wineName).
