@@ -104,7 +104,7 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 ### Elements
 #### agent
 
-Any agent, whether a person (like a wine-maker or trader) or an organization (like a wine trading company or a printing enterprise), mentioned on the label.
+Any agent, whether a person (like a wine-maker or trader) or an organization (like a wine trading company or a printing enterprise), mentioned on the label. 
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
@@ -526,7 +526,7 @@ The root element in a label description using the Wine Label Vocabulary.
 
 
 #### agentRole
-(no data)
+The particular role of the agent, as far as it can be determined from the label itself or from contextual information. (TODO: authority data and definitions for these roles.) 
 
 - Status: Mandatory.
 - Contained by element: [agent](#agent).

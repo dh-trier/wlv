@@ -1078,7 +1078,7 @@
     </element>
   </define>
   <define name="agent">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Any agent, whether a person (like a wine-maker or trader) or an organization (like a wine trading company or a printing enterprise), mentioned on the label.</a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Any agent, whether a person (like a wine-maker or trader) or an organization (like a wine trading company or a printing enterprise), mentioned on the label. </a:documentation>
     <element>
       <name ns="">agent</name>
       <text />
@@ -1093,6 +1093,7 @@
     </element>
   </define>
   <define name="agentRole">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The particular role of the agent, as far as it can be determined from the label itself or from contextual information. (TODO: authority data and definitions for these roles.) </a:documentation>
     <attribute>
       <name ns="">agentRole</name>
       <choice>
