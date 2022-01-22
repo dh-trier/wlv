@@ -457,7 +457,7 @@
         <a:documentation>(figure type: seal) Used for any representation of a seal.</a:documentation>
         <value>coat-of-arms</value>
         <a:documentation>(figure type: coat-of-arms) Used for any representation of a coat of arms.</a:documentation>
-        <value>symbolic</value>
+        <value>other</value>
         <a:documentation>(figure type: other) To be used sparingly for any kind of figure that eludes classification.</a:documentation>
       </choice>
     </attribute>
