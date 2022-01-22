@@ -583,7 +583,7 @@ Information regarding the state of physical conservation of the label, in short 
     * incomplete.
 
 #### controlNumberType
-(no data)
+A legally-defined control number, for example the German "Amtliche Prüfnummer".
 
 - Status: Optional.
 - Contained by element: [controlNumber](#controlNumber).

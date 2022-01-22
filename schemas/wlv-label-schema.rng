@@ -1230,11 +1230,13 @@
     </element>
   </define>
   <define name="controlNumberType">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A legally-defined control number, for example the German "Amtliche Prüfnummer".</a:documentation>
     <attribute>
       <name ns="">controlNumberType</name>
       <choice>
         <text />
         <value>Amtliche Prüfnummer (Q480240)</value>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">See Wikipedia: "Die erste Ziffer kennzeichnet die Prüfstelle, die dem Wein die Amtliche Prüfungsnummer zugeteilt hat (1 = Koblenz; 2 = Wittlich; 3 = Trier; 4 = Alzey; 5 = Neustadt; 6,7 = Bad Kreuznach...). Die nächsten drei Ziffern stehen für die Gemeinde in der der Antragsteller seinen Betriebssitz hat. Die Ziffern fünf bis sieben sind die Betriebsnummer des Abfüllers. Die nächsten drei Ziffern beziffern die Füllung eines Betriebes als laufende Nummer. Aus den letzten zwei Ziffern wird das Jahr der Antragstellung ersichtlich." </a:documentation>
         <value>Losnummer</value>
         <value>other</value>
       </choice>
