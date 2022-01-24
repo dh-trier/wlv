@@ -813,7 +813,18 @@ The type of frame, defined based on its position relative to other elements of t
     * Drache (Sonstiges;Q7559)
     * Stern (Sonstiges;Q523)
     * Mond (Sonstiges;Q405)
-    * Sonne (Sonstiges;Q525).
+    * Sonne (Sonstiges;Q525)
+    * Trichter (Artefakte; Q29957)
+    * Lampe, inkl. Laterne (Artefakte;Q1138737)
+    * Stiefel (Artefakte;Q190868)
+    * Siegel (Artefakte;Q162919)
+    * Stempel (Artefakte;Q57305415)
+    * Schnur (Artefakte;Q31029)
+    * Hase (Fauna;Q46076)
+    * Etikett (Artefakte;Q722218)
+    * Minnesänger (Person;Q841192)
+    * Gitarre, inkl. Mandoline (Artefakt;Q6607)
+    * Kostüm, inkl. Tracht (Artefakte;Q1410477).
 
 #### labelID
 A unique identifier for the label.

@@ -580,6 +580,17 @@
         <value>Stern (Sonstiges;Q523)</value>
         <value>Mond (Sonstiges;Q405)</value>
         <value>Sonne (Sonstiges;Q525)</value>
+        <value>Trichter (Artefakte; Q29957)</value>
+        <value>Lampe, inkl. Laterne (Artefakte;Q1138737)</value>    
+        <value>Stiefel (Artefakte;Q190868)</value>
+        <value>Siegel (Artefakte;Q162919)</value>
+        <value>Stempel (Artefakte;Q57305415)</value>
+        <value>Schnur (Artefakte;Q31029)</value>
+        <value>Hase (Fauna;Q46076)</value>
+        <value>Etikett (Artefakte;Q722218)</value>
+        <value>Minnesänger (Person;Q841192)</value>
+        <value>Gitarre, inkl. Mandoline (Artefakt;Q6607)</value>
+        <value>Kostüm, inkl. Tracht (Artefakte;Q1410477)</value>
         <text />
       </choice>
     </attribute>
