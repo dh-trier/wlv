@@ -1051,6 +1051,7 @@
     </attribute>
   </define>
   <define name="qualityProduction">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Any information describing specific steps in or aspects of the production of the wine that are meant to positively influence the quality of the resulting wine. An example is the mention of the fact that the wine has been bottled at the property.</a:documentation>
     <element>
       <name ns="">qualityProduction</name>
       <text />

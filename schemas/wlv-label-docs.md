@@ -4,12 +4,12 @@ The following document has two parts: First, a prose description of collections 
 
 The Wine Label Vocabulary (WLV) is formally defined in a Relax NG Schema, where all definitions of elements and attributes, with their rules of location and frequency of occurrence, their datatypes, their rules for acceptable values and similar information are documented.
 
-Generally speaking, a collection of wine labels described using the WLV has two elements: One document describing the collection of labels (see: element [collection](#collection), and a set of individual documents each describing one label (see: element [label](#label) or a group of labels (see: element [labelGroup](#labelGroup).  
+Generally speaking, a collection of wine labels described using the WLV has two groups of files: One single file describing the collection of labels (see: element [collection](#collection), and a set of individual files each describing one label (see: element [label](#label) or a group of labels (see: element [labelGroup](#labelGroup).  
 
 
-## Coding the collection document
+## Coding the collection file
 
-The root element of an XML-WLV file for the collections is called [wlv](#wlv) (see also for wine-labels). For a collection, it contains two main sections: the metadata and the list of labels. The wlv element here has two attributes: the collectionID and an URL.
+The collection file describes the collection and lists its contents, i.e. label descriptions. The root element of an XML-WLV file for the collections is called [wlv](#wlv) (see also for wine-labels). For a collection, it contains two main sections: the metadata and the list of labels. The wlv element here has two attributes: the collectionID and an URL.
 
 ### The collection metadata
 
@@ -384,7 +384,7 @@ Information regarding the provenance of the label, in prose. This information ca
 
 #### qualityProduction
 
-(no data)
+Any information describing specific steps in or aspects of the production of the wine that are meant to positively influence the quality of the resulting wine. An example is the mention of the fact that the wine has been bottled at the property.
 
 - Status: Optional.
 - Frequency: Zero, once or several times.

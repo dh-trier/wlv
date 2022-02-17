@@ -4,12 +4,12 @@ The following document has two parts: First, a prose description of collections 
 
 The Wine Label Vocabulary (WLV) is formally defined in a Relax NG Schema, where all definitions of elements and attributes, with their rules of location and frequency of occurrence, their datatypes, their rules for acceptable values and similar information are documented.
 
-Generally speaking, a collection of wine labels described using the WLV has two elements: One document describing the collection of labels (see: element [collection](#collection), and a set of individual documents each describing one label (see: element [label](#label) or a group of labels (see: element [labelGroup](#labelGroup).  
+Generally speaking, a collection of wine labels described using the WLV has two groups of files: One single file describing the collection of labels (see: element [collection](#collection), and a set of individual files each describing one label (see: element [label](#label) or a group of labels (see: element [labelGroup](#labelGroup).  
 
 
-## Coding the collection document
+## Coding the collection file
 
-The root element of an XML-WLV file for the collections is called [wlv](#wlv) (see also for wine-labels). For a collection, it contains two main sections: the metadata and the list of labels. The wlv element here has two attributes: the collectionID and an URL.
+The collection file describes the collection and lists its contents, i.e. label descriptions. The root element of an XML-WLV file for the collections is called [wlv](#wlv) (see also for wine-labels). For a collection, it contains two main sections: the metadata and the list of labels. The wlv element here has two attributes: the collectionID and an URL.
 
 ### The collection metadata
 
@@ -24,7 +24,7 @@ To the collection, we also want to add the labels that are included. Therefore, 
 
 ## Coding the label descriptions
 
-The root element of a XML-WLV file for labels is called [wlv](#wlv). Each WLV file contains the description of one wine label, with two main sections: the metadata and the label. The `wlv` element only has one attribute: [@labelID](#labelID).
+The labels are encoded separately from the collection metadata, and each label is encoded in a separate file. The root element of a XML-WLV file for labels is called [wlv](#wlv). Each WLV file contains the description of one wine label, with two main sections: the metadata and the label. The `wlv` element only has one attribute: [@labelID](#labelID).
 
 ### Metadata
 
@@ -58,11 +58,11 @@ The visual aspects of the label concern any kind of visual representation, wheth
 
 The textual aspects of the label concern any kind of written information that can be discerned, including text embedded within visual areas of the label. The top-level element for this domain is called [textual](#textual). (Note that the textual information present on the label is described, not the properties of the wine.)
 
-A first main area of the textual domain are a set of elements pertaining to the factual description of the wine. This includes elements like [wineMillesime](#wineMillesime), [wineOrigin](#wineOrigin), [wineGrapes](#wineGrapes), [wineColor](#wineColor), [wineTaste](#wineTaste), [wineAging](#wineAging) and [wineOther](#wineOther). 
+A first main area of the textual domain are a set of elements pertaining to the factual description of the wine. This includes elements like [wineMillesime](#wineMillesime), [wineName](#wineName), often combined with [location](#location), [wineGrapes](#wineGrapes), [wineColor](#wineColor), [wineTaste](#wineTaste), [wineAging](#wineAging). 
 
 A second major area concerns various indicators of the wine quality. This includes elements such as [qualityGrapes](#qualityGrapes), [qualityLevel](#qualityLevel), [qualityAward](#qualityAward), [qualityLabel](#qualityLabel), [qualityProduction](#qualityProduction) and [qualityHistorical](#qualityHistorical).  
 
-A third major area of the textual domain pertains to the various kinds of agents and locations involved. This involves the [location](#location) and [agent](#agent) elements. Note that [location](#location) can be used inside [wineName](#wineName) as well as separately. 
+A third major area of the textual domain pertains to the various kinds of agents and locations involved. This involves the [location](#location) and [agent](#agent) elements. Note that [location](#location) can be used as part of [wineName](#wineName) as well as separately. 
 
 A fourth major area of the textual domain pertains to any numerical indications included on the label, such as the [alcohol](#alcohol) level the [volume](#volume) of the bottle, any official [controlNumber](#controlNumber) or [barrelNumber](#barrelNumber) as well as any [labelNumber](#labelNumber).  
 
