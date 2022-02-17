@@ -26,7 +26,7 @@ To the collection, we also want to add the labels that are included. Therefore, 
 
 The labels are encoded separately from the collection metadata, and each label is encoded in a separate file. The root element of a XML-WLV file for labels is called [wlv](#wlv). Each WLV file contains the description of one wine label, with two main sections: the metadata and the label. The `wlv` element only has one attribute: [@labelID](#labelID).
 
-### Metadata
+### The metadata
 
 The metadata for a label names the collection the label belongs to, provides information about the curation of the label description, and indicates the licence of the label description. Accordingly, the [metadata](#metadata) element contains three mandatory elements: [collection](#collection), [curation](#curation) and [licence](#licence): (1) [collection](#collection) has a sole attribute [@collectionID](#collectionID) that indicates the identifier of the label's collection. The collection itself is described in a separate document. (2) The empty element [curation](#curation) is used to indicate when the label description was created and by whom, using [@curationDate](#curationData) and [@curator](#curator). Optionally, the date of an update to the description can be added as well. (3) The element [licence](#licence) serves to indicate the scope (e.g. label description or label itself) and the kind of the licence (e.g. Creative Commons Zero or Attribution) as well as a link to the licence, using the attributes [@licenceScope](#licenceScope), [@licenceAbbr](#licenceAbbr) and [@url](#url). Optionally, it is also possible to provide context using [collectionContexts](#collectionContexts) or to add further general information on the label or the curation as [comments](#comments).
 
