@@ -846,7 +846,7 @@ The position of the label on the bottle, used in particular as a way to disingui
     * band.
 
 #### labelType
-This describes the label primarily with regard to its geographical scope.
+This describes the label primarily with regard to the agent issuing it and the geographical scope.
 
 - Status: Optional.
 - Contained by element: [wlv](#wlv).
@@ -854,6 +854,9 @@ This describes the label primarily with regard to its geographical scope.
     * Lageetikett
     * Gutsetikett
     * Ortsetikett
+    * Weingutsetikett
+    * Händleretikett
+    * Musteretikett
     * tbc
     * other.
 

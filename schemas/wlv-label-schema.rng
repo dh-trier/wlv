@@ -210,13 +210,16 @@
     </element>
   </define>
   <define name="labelType">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This describes the label primarily with regard to its geographical scope.</a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This describes the label primarily with regard to the agent issuing it and the geographical scope.</a:documentation>
     <attribute>
       <name ns="">labelType</name>
       <choice>
         <value>Lageetikett</value>
         <value>Gutsetikett</value>
         <value>Ortsetikett</value>
+        <value>Weingutsetikett</value>
+        <value>Händleretikett</value>
+        <value>Musteretikett</value>
         <value>tbc</value>
         <value>other</value>
         <text />
