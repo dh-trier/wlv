@@ -334,7 +334,7 @@ Information regarding the provenance of the label, in prose. This information ca
 
 #### qualityAward
 
-(no data)
+Indications referring to an award obtained by the wine.
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
@@ -344,7 +344,7 @@ Information regarding the provenance of the label, in prose. This information ca
 
 #### qualityGrapes
 
-(no data)
+Indications referring to the quality of the grapes, like "Spätlese",  "Auslese" or "Trockenbeerenauslese".
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
@@ -374,7 +374,7 @@ Information regarding the provenance of the label, in prose. This information ca
 
 #### qualityLevel
 
-(no data)
+Indications referring to the official quality level of the wine, like "Qualitätswein" or "Prädikatswein".
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
@@ -384,7 +384,7 @@ Information regarding the provenance of the label, in prose. This information ca
 
 #### qualityProduction
 
-Any information describing specific steps in or aspects of the production of the wine that are meant to positively influence the quality of the resulting wine. An example is the mention of the fact that the wine has been bottled at the property.
+Any information describing specific steps in or aspects of the production of the wine that are meant to positively influence the quality of the resulting wine. An example is the mention of the fact that the wine has been bottled at the property. (For the quality specifically of the grapes, including the selection process of the grapes, use 'qualityGrapes' instead.)
 
 - Status: Optional.
 - Frequency: Zero, once or several times.

@@ -944,6 +944,7 @@
     </attribute>
   </define>
   <define name="qualityGrapes">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indications referring to the quality of the grapes, like "Spätlese",  "Auslese" or "Trockenbeerenauslese".</a:documentation>
     <element>
       <name ns="">qualityGrapes</name>
       <text />
@@ -974,6 +975,7 @@
     </attribute>
   </define>
   <define name="qualityLevel">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indications referring to the official quality level of the wine, like "Qualitätswein" or "Prädikatswein".</a:documentation>
     <element>
       <name ns="">qualityLevel</name>
       <text />
@@ -1002,6 +1004,7 @@
     </attribute>
   </define>
   <define name="qualityAward">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indications referring to an award obtained by the wine.</a:documentation>
     <element>
       <name ns="">qualityAward</name>
       <text />
@@ -1054,7 +1057,7 @@
     </attribute>
   </define>
   <define name="qualityProduction">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Any information describing specific steps in or aspects of the production of the wine that are meant to positively influence the quality of the resulting wine. An example is the mention of the fact that the wine has been bottled at the property.</a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Any information describing specific steps in or aspects of the production of the wine that are meant to positively influence the quality of the resulting wine. An example is the mention of the fact that the wine has been bottled at the property. (For the quality specifically of the grapes, including the selection process of the grapes, use 'qualityGrapes' instead.)</a:documentation>
     <element>
       <name ns="">qualityProduction</name>
       <text />
