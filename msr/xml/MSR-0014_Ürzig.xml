@@ -9,16 +9,16 @@
     <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
       <visual>
-        <frame frameStyle="other" frameColor="gold" frameType="outer">Linie mit Ornamenten an den Ecken.</frame>
-        <background backgroundStyle="pattern"></background>
+        <frame frameStyle="other" frameColor="gold" frameType="outer"></frame>
+        <background backgroundStyle="none"></background>
       </visual>
       <textual>
         <location locationType="region / Gebiet" fontStyle="all-caps">Mosel-Saar-Ruwer</location>
-        <wineMillesime wineMillesimeNorm="1957">1957er</wineMillesime>
-        <wineName wineNameType="vineyard / Großlage">Zeller schwarze Katz
-          <location locationType="vineyard / Großlage" ref="RegNr=6.3.4"></location>
-          <location locationType="locality / Leitgemeinde" ref="Wikidata:Q187500"></location>
-          <location locationType="country / Land">Deutschland</location>
+        <wineMillesime wineMillesimeNorm="1983">1983er</wineMillesime>
+        <wineName wineNameType="vineyard / Großlage">Ürziger Schwarzlay Kabinett
+          <location locationType="locality / Ortsname" locationNorm="Ürzig"></location>
+          <location locationType="vineyard / Großlage" locationNorm="Schwarzlay"></location>
+          <qualityLabel qualityLabelNorm="Kabinett"></qualityLabel>
         </wineName>
       </textual>
     </label>

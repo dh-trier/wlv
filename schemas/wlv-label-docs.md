@@ -348,7 +348,7 @@ Indications referring to the quality of the grapes, like "Spätlese",  "Auslese"
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): [textual](#textual).
+- Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityGrapesNorm](#qualityGrapesNorm).
 
@@ -468,7 +468,7 @@ The color of the name as mentioned on the label.
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): [textual](#textual).
+- Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
 - Has attribute(s): [wineGrapesNorm](#wineGrapesNorm), [ref](#ref), [wdw](#wdw).
 
@@ -489,7 +489,7 @@ The name of the wine. Typically printed in a somewhat larger font size than othe
 - Status: Optional.
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
-- Contains element(s): [location](#location).
+- Contains element(s): [location](#location), [qualityGrapes](#qualityGrapes), [wineGrapes](#wineGrapes).
 - Has attribute(s): [wineNameType](#wineNameType), [wineNameNorm](#wineNameNorm), [ref](#ref), [uri](#uri), [wdw](#wdw).
 
 #### wineOther
@@ -1205,6 +1205,7 @@ The name of the wine in normalized form.
     * vineyard / Großlage
     * vineyard / Einzellage
     * variety / Rebsorte
+    * composite
     * other.
 
 #### wineOtherType

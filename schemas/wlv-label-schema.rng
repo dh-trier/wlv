@@ -763,6 +763,18 @@
       <zeroOrMore>
         <ref name="location" />
       </zeroOrMore>
+      <zeroOrMore>
+        <ref name="qualityGrapes" />
+      </zeroOrMore>
+      <zeroOrMore>
+        <ref name="qualityLabel" />
+      </zeroOrMore>
+      <zeroOrMore>
+        <ref name="qualityLevel" />
+      </zeroOrMore>
+      <zeroOrMore>
+        <ref name="wineGrapes" />
+      </zeroOrMore>
       <optional>
         <ref name="wineNameNorm" />
       </optional>
@@ -794,6 +806,7 @@
         <value>vineyard / Großlage</value>
         <value>vineyard / Einzellage</value>
         <value>variety / Rebsorte</value>
+        <value>composite</value>
         <value>other</value>
       </choice>
     </attribute>
