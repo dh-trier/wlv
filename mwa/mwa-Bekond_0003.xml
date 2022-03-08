@@ -4,10 +4,9 @@
   <metadata>
     <collection collectionID="mwa" />
     <curation curationDate="2020-12-02" curatorID="#ef" />
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Ortsetikett">
-    <labelPart partType="front" partNum="1">
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameType="outer" frameColor="gold" frameStyle="band" />
@@ -18,14 +17,13 @@
       </visual>
       <textual>
         <wineMillesime wineMillesimeNorm="1917" fontColor="black">1917er</wineMillesime>
-        <wineOrigin wineOriginType="locality (Ort)" fontColor="black">Brauneberger</wineOrigin>
-        <wineOrigin wineOriginType="region (Gebiet)" fontColor="black">Brauneberger Nonnenlay</wineOrigin>
+        <wineName wineNameType="locality / Ortsname" fontColor="black">Brauneberger</wineName>
+        <wineName wineNameType="region / Gebiet" fontColor="black">Brauneberger Nonnenlay</wineName>
         <qualityGrapes qualityGrapesNorm="Auslese" fontColor="blue">Auslese</qualityGrapes>
         <qualityProduction>Wachstum</qualityProduction>
-        <agent agentRole="producer/bottler">Zach. Bergweiler-Prüm, Wehlen a. M.</agent>
+        <agent agentRole="distribution / Vertrieb">Zach. Bergweiler-Prüm, Wehlen a. M.</agent>
         <otherText textType="other" textPosition="stand-alone">Dep.195</otherText>
         <otherText textType="vineyard (Lage)" textPosition="stand-alone">Zeltingen, Sonnenuhr, Wehlen, Josefshof, Graach</otherText>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

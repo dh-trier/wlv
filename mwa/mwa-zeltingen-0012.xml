@@ -4,10 +4,10 @@
     <metadata>
         <collection collectionID="mwa"/>
         <curation curationDate="2020-12-19" curatorID="#sts"/>
-        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"/>
     </metadata>
-    <label labelType="Lageetikett">
-        <labelPart partType="front" partNum="1">
+    
+        <label labelPosition="front">
             <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
             <visual>
               <frame frameStyle="band" frameColor="ocher" frameType="outer"></frame>
@@ -20,11 +20,10 @@
             </visual>
             <textual>
               <wineMillesime wineMillesimeNorm="1921">1921er</wineMillesime>
-              <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Zeltingen" ref="wikidata:Q648808">Zeltinger Sonnenuhr</wineOrigin>
+              <wineName wineNameType="vineyard / Großlage" ref="wikidata:Q648808">Zeltinger Sonnenuhr</wineName>
               <qualityLabel>Auslese.</qualityLabel>
               <otherText textPosition="in-figure" textType="copyright">(Eingetragene Marke)</otherText>
-              <agent agentRole="producer/bottler" fontStyle="all-caps">Wachstum: Joh. Jos. Prüm, S.A. Prüm Erben, Wehlen a/d. Mosel</agent>
+              <agent agentRole="production / Weinbau" fontStyle="all-caps">Wachstum: Joh. Jos. Prüm, S.A. Prüm Erben, Wehlen a/d. Mosel</agent>
             </textual>
-        </labelPart>
     </label>
 </wlv>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<wlv>
-  <metadata labelID="mwa-Wiltingen_0002" collectionID="mwa">
-    <curation>curatorID ="#so" curationDate="2020-12-07"</curation>
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Lageetikett">
-    <labelPart partType="front" partNum="1">
+<wlv labelID="mwa-Wiltingen_0002">
+  <metadata>
+    <collection collectionID="mwa"></collection>
+    <curation curatorID ="#so" curationDate="2020-12-07"></curation>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="pattern" frameColor="gold" frameType="outer">Verschnörkelung</frame>
@@ -14,10 +14,9 @@
         <background backgroundStyle="color">beige coloring</background>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontStyle="all-caps" fontType="Antiqua-Sans" fontColor="orange">Scharfzhofberger</wineOrigin>
+        <wineName wineNameType="vineyard / Großlage" fontStyle="all-caps" fontType="Antiqua-Sans" fontColor="orange">Scharfzhofberger</wineName>
         <wineMillesime wineMillesimeNorm="1865">1865r.</wineMillesime>
         <qualityLabel>Crescenz des Domkapitels zu Trier</qualityLabel>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

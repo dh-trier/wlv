@@ -4,10 +4,10 @@
   <metadata>
     <collection collectionID="mwa"/>
     <curation curatorID="#sts" curationDate="2020-11-25" />
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
   </metadata>
   <label labelType="Gutsetikett">
-    <labelPart partType="front" partNum="1">
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="lines" frameColor="ocher" frameType="outer"></frame>
@@ -17,8 +17,7 @@
         <figure figureType="abstract" figureNum="1" figurePosition="full-size">Sepia-colored ornament</figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Graach" ref="wikidata:Q648808">Josephshöfer.</wineOrigin>
+        <wineName wineNameType="vineyard / Großlage" ref="wikidata:Q648808">Josephshöfer.</wineName>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

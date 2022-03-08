@@ -4,10 +4,10 @@
   <metadata>
     <collection collectionID="mwa" />
     <curation curationDate="2020-12-02" curatorID="#ef" />
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
   </metadata>
-  <label labelType="Ortsetikett">
-    <labelPart partType="front" partNum="1">
+  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="band" frameColor="white" frameType="outer" />
@@ -18,8 +18,8 @@
         <figure figureType="realistic" figureNum="2">Eine schwarze Säule umflochten mit grünen Strähnen und mit gelben Weintrauben drauf.</figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="locality (Ort)" fontColor="black">Brauneberger</wineOrigin>
+        <wineOrigin wineOriginType="locality (Ort)" fontColor="black">Brauneberger</wineName>
       </textual>
-    </labelPart>
+    </label>
   </label>
 </wlv>

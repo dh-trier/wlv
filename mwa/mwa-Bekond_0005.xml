@@ -4,10 +4,9 @@
   <metadata>
     <collection collectionID="mwa" />
     <curation curationDate="2020-12-02" curatorID="#ef" />
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Ortsetikett">
-    <labelPart partType="front" partNum="1">
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="band" frameColor="gold" frameType="outer" />
@@ -16,9 +15,8 @@
         <figure figureType="abstract" figureNum="1" figurePosition="center-center">Muster mit Weinblättern, das einen zweiten Rahmen für den Text bildet.</figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Brauneberg" fontColor="red">Brauneberger.</wineOrigin>
+        <wineName wineNameType="vineyard / Großlage" fontColor="red">Brauneberger.</wineName>
         <qualityGrapes qualityGrapesNorm="Auslese" fontColor="brown">Auslese.</qualityGrapes>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

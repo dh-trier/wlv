@@ -4,10 +4,9 @@
   <metadata>
     <collection collectionID="mwa"/>
     <curation curatorID="#sts" curationDate="2020-11-24" />
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Ortsetikett">
-    <labelPart partType="front" partNum="1">
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <background backgroundStyle="color">ocher</background>
@@ -17,8 +16,7 @@
       </visual>
       <textual>
         <wineMillesime wineMillesimeNorm="1874">1874r</wineMillesime>
-        <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Graach" ref="wikidata:Q648808">Graacher.</wineOrigin>
+        <wineName wineNameType="locality / Ortsname" ref="wikidata:Q648808">Graacher.</wineName>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

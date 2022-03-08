@@ -4,10 +4,9 @@
     <metadata>
         <collection collectionID="mwa"/>
         <curation curationDate="2020-12-16" curatorID="#sts"/>
-        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"/>
     </metadata>
-    <label labelType="Gutsetikett">
-        <labelPart partType="front" partNum="1">
+    <label labelPosition="front">
             <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
             <visual>
               <frame frameStyle="band" frameColor="white" frameType="outer"></frame>
@@ -18,14 +17,13 @@
             </visual>
             <textual>
               <wineMillesime wineMillesimeNorm="1917">1917er</wineMillesime>
-              <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Mertesdorf" ref="wikidata:Q659878">Grünhäuser</wineOrigin>
+              <wineName wineNameType="locality / Ortsname" ref="wikidata:Q659878">Grünhäuser</wineName>
               <otherText textPosition="stand-alone" textType="other" fontManner="handwritten">Trier N° 280.</otherText>
-              <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Trier" ref="wikidata:Q3138">Hohe Domkirche, Trier</wineOrigin>
+              <wineName wineNameType="vineyard / Großlage" ref="wikidata:Q3138">Hohe Domkirche, Trier</wineName>
               <otherText textPosition="stand-alone" textType="other" fontManner="handwritten">415.</otherText>
-              <agent agentRole="printer">Schaar und Dathe</agent>
-              <location locationType="locality" locationRole="printer" locationNorm="Trier" ref="wikidata:Q3138">Trier</location>
+              <agent agentRole="printer / Drucker">Schaar und Dathe</agent>
+              <location locationType="locality / Ortsname" locationRole="printer / Drucker" locationNorm="Trier" ref="wikidata:Q3138">Trier</location>
               <labelNumber>221</labelNumber>
             </textual>
-        </labelPart>
     </label>
 </wlv>

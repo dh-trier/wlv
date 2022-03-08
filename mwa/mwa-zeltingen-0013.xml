@@ -4,10 +4,10 @@
     <metadata>
         <collection collectionID="mwa"/>
         <curation curationDate="2020-12-19" curatorID="#sts"/>
-        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"/>
     </metadata>
-    <label labelType="Lageetikett">
-        <labelPart partType="front" partNum="1">
+    
+        <label labelPosition="front">
             <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
             <visual>
               <frame frameStyle="band" frameColor="ocher" frameType="outer"></frame>
@@ -23,14 +23,13 @@
             </visual>
             <textual>
               <wineMillesime wineMillesimeNorm="1911">1911.</wineMillesime>
-              <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Zeltingen" ref="wikidata:Q648808">Zeltinger Schlossberg</wineOrigin>
+              <wineName wineNameType="vineyard / Großlage" ref="wikidata:Q648808">Zeltinger Schlossberg</wineName>
               <qualityLabel>feinste Auslese</qualityLabel>
               <qualityLabel>bestes Fuder</qualityLabel>
-              <agent agentRole="cooperative/association">Katholisches Vereins-haus Treviris</agent>
-              <location locationType="locality" locationRole="cooperative/association">Trier a. Mosel.</location>
-              <agent agentRole="producer/bottler">Wachstum: Excellenz Staatsminister Dr. Freiherr von Schorlemer</agent>
-              <location locationType="locality" locationRole="producer/bottler">Lieser</location>
+              <agent agentRole="cooperative / Kooperative">Katholisches Vereins-haus Treviris</agent>
+              <location locationType="locality / Ortsname" locationRole="cooperative / Kooperative">Trier a. Mosel.</location>
+              <agent agentRole="production / Weinbau">Wachstum: Excellenz Staatsminister Dr. Freiherr von Schorlemer</agent>
+              <location locationType="locality / Ortsname" locationRole="producer/bottler">Lieser</location>
             </textual>
-        </labelPart>
     </label>
 </wlv>

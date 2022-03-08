@@ -3,20 +3,18 @@
 <wlv>
   <metadata labelID="mwa-Wiltingen_0003" collectionID="mwa">
     <curation>curatorID ="#so" curationDate="2020-12-07"</curation>
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Lageetikett">
-    <labelPart partType="front" partNum="1">
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="pattern" frameColor="gold" frameType="outer">Verschnörkelung</frame>
         <frame frameStyle="floral" frameColor="gold" frameType="outer">Weinblätter</frame>
-        <background backgroundStyle="color" backgroundColor="green" ></background>
+        <background backgroundStyle="color" backgroundColor="green"></background>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Cursive" fontColor="black">Scharfzhofberger</wineOrigin>
+        <wineName wineNameType="vineyard / Großlage" fontType="Cursive" fontColor="black">Scharfzhofberger</wineName>
         <wineMillesime wineMillesimeNorm="1870">1870r.</wineMillesime>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

@@ -4,10 +4,10 @@
     <metadata>
         <collection collectionID="mwa"/>
         <curation curationDate="2020-11-23" curatorID="#sts"/>
-        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"/>
     </metadata>
-    <label labelType="Ortsetikett">
-        <labelPart partType="front" partNum="1">
+    
+        <label labelPosition="front">
             <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
             <visual>
                 <background backgroundStyle="color">uniform light ocher</background>
@@ -16,9 +16,9 @@
                 <figure figureType="abstract" figureNum="3">Ornament: Wurzeln von Weinreben.</figure>
             </visual>
             <textual>
-                <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Graach" ref="wikidata:Q648808">Graacher</wineOrigin>
+                <wineName wineNameType="locality / Ortsname" ref="wikidata:Q648808">Graacher</wineName>
                 <qualityGrapes qualityGrapesNorm="Auslese">Auslese</qualityGrapes>
             </textual>
-        </labelPart>
+        </label>
     </label>
 </wlv>

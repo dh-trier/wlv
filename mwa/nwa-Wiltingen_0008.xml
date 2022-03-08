@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<wlv>
-  <metadata labelID="mwa-Wiltingen_0008" collectionID="mwa">
-    <curation>curatorID ="#so" curationDate="2020-12-07"</curation>
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Lageetikett">
-    <labelPart partType="front" partNum="1">
+<wlv labelID="mwa-Wiltingen_0008">
+  <metadata>
+    <collection collectionID="mwa"></collection>
+    <curation curatorID ="#so" curationDate="2020-12-07"></curation>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="lines" frameColor="gold" frameType="outer"></frame>
         <frame frameStyle="pattern" frameColor="gold" frameType="inner">Verschnörkelungen in den Ecken</frame>
-        <background backgroundStyle="color" backgroundColor="white"></background>
+        <background backgroundStyle="color"></background>
         <figure figureType="realistic" figureNum="001" figurePosition="center-center">Weinrebe mit Blättern</figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Fraktur" fontColor="black">Scharfzhofberger</wineOrigin>
+        <wineName wineNameType="vineyard / Großlage" fontType="Fraktur" fontColor="black">Scharfzhofberger</wineName>
         <wineMillesime wineMillesimeNorm="1858">1858er</wineMillesime>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

@@ -4,10 +4,10 @@
     <metadata>
         <collection collectionID="mwa"/>
         <curation curationDate="2020-12-19" curatorID="#sts"/>
-        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"/>
     </metadata>
-    <label labelType="Lageetikett">
-        <labelPart partType="front" partNum="1">
+    
+        <label labelPosition="front">
             <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
             <visual>
               <frame frameStyle="band" frameColor="white" frameType="outer"></frame>
@@ -18,10 +18,9 @@
               <figure figureType="realistic" figureNum="2">Landschaftsdarstellung: Mit Schiffen befahrene Mosel, Moselufer mit Arbeitern und Weinfässern, mit Bäumen umwachsenes Weingut und Weinerge im Hintergrund</figure>
             </visual>
             <textual>
-              <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Zeltingen" ref="wikidata:Q648808">Zeltinger Schlossberg</wineOrigin>
-              <agent agentRole="producer/bottler">Oscar Haussmann</agent>
-              <location locationType="locality" locationRole="producer/bottler">Traben a/d Mosel.</location>
+              <wineName wineNameType="vineyard / Großlage" ref="wikidata:Q648808">Zeltinger Schlossberg</wineName>
+              <agent agentRole="production / Weinbau">Oscar Haussmann</agent>
+              <location locationType="locality / Ortsname" locationRole="producer/bottler">Traben a/d Mosel.</location>
             </textual>
-        </labelPart>
     </label>
 </wlv>

@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<wlv>
-  <metadata labelID="mwa-Wiltingen_0027
-    " collectionID="mwa">
-    <curation>curatorID ="#so" curationDate="2020-12-07"</curation>
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Lageetikett">
-    <labelPart partType="front" partNum="1">
+<wlv labelID="mwa-Wiltingen_0027">
+  <metadata>
+    <collection collectionID="mwa"></collection>
+    <curation curatorID ="#so" curationDate="2020-12-07"></curation>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="floral" frameColor="green" frameType="inner">WEINREBEN als Kranz</frame>
         <frame frameStyle="lines" frameColor="gold" frameType="outer"></frame>
-        <background backgroundStyle="color" backgroundColor="red"></background>
+        <background backgroundStyle="color"></background>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzberg" fontType="Fraktur" fontColor="red">Scharzberger.</wineOrigin>
-        <agent agentRole="producer/bottler">Crescenz: Dahm in Wiltingen</agent>
-        <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Wiltingen" ref="enwiki:Q161930">Wiltingen</wineOrigin>
-        <agent agentRole="printer">F. W. Becker, Coblenz</agent>
+        <wineName wineNameType="vineyard / Großlage" fontType="Fraktur" fontColor="red">Scharzberger.</wineName>
+        <agent agentRole="production / Weinbau">Crescenz: Dahm in Wiltingen</agent>
+        <wineName wineNameType="locality / Ortsname" ref="enwiki:Q161930">Wiltingen</wineName>
+        <agent agentRole="printer / Drucker">F. W. Becker, Coblenz</agent>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

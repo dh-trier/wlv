@@ -4,10 +4,10 @@
     <metadata>
         <collection collectionID="mwa"/>
         <curation curationDate="2020-12-16" curatorID="#sts"/>
-        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"/>
     </metadata>
-    <label labelType="Lageetikett">
-        <labelPart partType="front" partNum="1">
+    
+        <label labelPosition="front">
             <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
             <visual>
               <frame frameStyle="band" frameColor="white" frameType="outer"></frame>
@@ -19,11 +19,11 @@
               <figure figureType="coat-of-arms" figureNum="4" figurePosition="center-left">Wappen mit rotem Löwen umrandet von zwei Engeln</figure>
             </visual>
             <textual>
-              <wineOrigin wineOriginType="winery (Weingut)" wineOriginLocality="Mertesdorf" ref="wikidata:Q659878">Maximin Grünhäuser</wineOrigin>
-              <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Mertesdorf" ref="wikidata:Q659878">Herrenberger</wineOrigin>
+              <wineName wineNameType="winery (Weingut)" ref="wikidata:Q659878">Maximin Grünhäuser</wineName>
+              <wineName wineNameType="vineyard / Großlage" ref="wikidata:Q659878">Herrenberger</wineName>
               <wineMillesime wineMillesimeNorm="1915">1915er</wineMillesime>
-              <agent agentRole="producer/bottler">Kellerabzug der C.von Schubert'schen vormals Freiherr von Stumm-Halberg'schen Schlosskellerei.</agent>
+              <agent agentRole="production / Weinbau">Kellerabzug der C.von Schubert'schen vormals Freiherr von Stumm-Halberg'schen Schlosskellerei.</agent>
             </textual>
-        </labelPart>
+        </label>
     </label>
 </wlv>

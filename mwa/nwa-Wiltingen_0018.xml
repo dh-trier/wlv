@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<wlv>
-  <metadata labelID="mwa-Wiltingen_0018" collectionID="mwa">
-    <curation>curatorID ="#so" curationDate="2020-12-07"</curation>
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Lageetikett">
-    <labelPart partType="front" partNum="1">
+<wlv labelID="mwa-Wiltingen_0018">
+  <metadata>
+    <collection collectionID="mwa"></collection>
+    <curation curatorID ="#so" curationDate="2020-12-07"></curation>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="lines" frameColor="gold" frameType="outer"></frame>
         <frame frameStyle="pattern" frameColor="white" frameType="inner">Weinreben</frame>
-        <background backgroundStyle="color" backgroundColor="blue"></background>
+        <background backgroundStyle="color"></background>
         <figure figureType="abstract" figureNum="001">Landschaft und Spaziergänger mit Hund, Abbildung des Wawerner Herrenberger Weinbers mit Sonnenuntergang</figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Fraktur" fontColor="red">Wawerner Herrenberger</wineOrigin>
+        <wineName wineNameType="vineyard / Großlage" fontType="Fraktur" fontColor="red">Wawerner Herrenberger</wineName>
         <wineMillesime wineMillesimeNorm="1915">1915</wineMillesime>
-        <agent agentRole="producer/bottler">Wachstum von F. Lintz, Trier.</agent>
-        <wineOrigin wineOriginType="area (Bereich)" wineOriginLocality="Saar">Saarwein</wineOrigin>
+        <agent agentRole="production / Weinbau">Wachstum von F. Lintz, Trier.</agent>
+        <wineName wineNameType="area / Bereich">Saarwein
+        <location locationNorm="Saar" locationType="area / Bereich"></location>
+      </wineName>
         <qualityProduction>(Eingetragene Marke)</qualityProduction>
         <otherText textPosition="stand-alone" textType="statement">Original Abfüllung mit Korlbrand</otherText>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

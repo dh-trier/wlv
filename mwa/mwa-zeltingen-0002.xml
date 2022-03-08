@@ -4,10 +4,10 @@
     <metadata>
         <collection collectionID="mwa"/>
         <curation curationDate="2020-12-19" curatorID="#sts"/>
-        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"/>
     </metadata>
-    <label labelType="Lageetikett">
-        <labelPart partType="front" partNum="1">
+    
+        <label labelPosition="front">
             <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
             <visual>
               <frame frameStyle="lines" frameColor="ocher" frameType="outer"></frame>
@@ -23,10 +23,9 @@
             </visual>
             <textual>
               <wineMillesime wineMillesimeNorm="1884">1884.</wineMillesime>
-              <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Zeltingen" ref="wikidata:Q189241">Zeltinger Schloßberg</wineOrigin>
+              <wineName wineNameType="vineyard / Großlage" ref="wikidata:Q189241">Zeltinger Schloßberg</wineName>
               <labelNumber>Wein=Etiquette Nr. 612.</labelNumber>
               <otherText textPosition="stand-alone" textType="copyright">GESETZL. GESCHÜTZT.</otherText>
             </textual>
-        </labelPart>
     </label>
 </wlv>

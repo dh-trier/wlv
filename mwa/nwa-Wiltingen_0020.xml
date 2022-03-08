@@ -2,11 +2,10 @@
 <?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <wlv>
   <metadata labelID="mwa-Wiltingen_0020" collectionID="mwa">
-    <curation>curatorID ="#so" curationDate="2020-12-07"</curation>
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Lageetikett">
-    <labelPart partType="front" partNum="1">
+    <curation curatorID ="#so" curationDate="2020-12-07"</curation>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="floral" frameColor="gold" frameType="inner">Weinreben</frame>
@@ -15,16 +14,15 @@
         <figure figureType="coat-of-arms" figureNum="002" figurePosition="lower-right">Adler mit Weintrauben und den Kürzeln VDNV (Verband Deutscher Naturwein-Versteigerer)</figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Handwritten" fontColor="black" fontStyle="italics">Scharzhofberger.</wineOrigin>
-        <wineOrigin wineOriginType="region (Gebiet)">Mosel - Saar - Ruwer</wineOrigin>
+        <wineName wineNameType="vineyard / Großlage" fontType="Handwritten" fontColor="black" fontStyle="italics">Scharzhofberger.</wineName>
+        <wineName wineNameType="region / Gebiet">Mosel - Saar - Ruwer</wineName>
         <wineMillesime wineMillesimeNorm="1937">1937r.</wineMillesime>
         <qualityHistorical>Gewächs von</qualityHistorical>
-        <agent agentRole="producer/bottler">Egon Müller zu Scharzhof</agent>
+        <agent agentRole="production / Weinbau">Egon Müller zu Scharzhof</agent>
         <qualityProduction>Original Kellerabfüllung zu Scharzhof</qualityProduction>
         <qualityAward>Grand Prix Paris 1900</qualityAward>
         <qualityAward>Grand Prix St. Louis 1904</qualityAward>
-        <agent agentRole="printer">Dackweiler, Schaar &amp; Dathe, Trier</agent>
+        <agent agentRole="printer / Drucker">Dackweiler, Schaar &amp; Dathe, Trier</agent>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

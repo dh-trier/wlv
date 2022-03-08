@@ -4,10 +4,9 @@
   <metadata>
     <collection collectionID="mwa" />
     <curation curationDate="2020-12-02" curatorID="#ef" />
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Ortsetikett">
-    <labelPart partType="front" partNum="1">
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="band" frameColor="brown" frameType="outer"></frame>
@@ -20,9 +19,8 @@
         <figure figureType="realistic" figureNum="5" figurePosition="center-center">Landschaft: Fluß, Dampfschiff, Weinberge, Dorf im Hintergrund</figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Brauneberg" fontColor="black">Brauneberger</wineOrigin>
+        <wineName wineNameType="vineyard / Großlage" fontColor="black">Brauneberger</wineName>
         <labelNumber fontColor="black" fontSize="normal" fontStyle="recte" fontType="Antiqua-Serif">Wein=Etiquette Nr. 614.</labelNumber>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

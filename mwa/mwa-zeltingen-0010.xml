@@ -4,10 +4,10 @@
     <metadata>
         <collection collectionID="mwa"/>
         <curation curationDate="2020-12-19" curatorID="#sts"/>
-        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"/>
     </metadata>
-    <label labelType="Ortsetikett">
-        <labelPart partType="front" partNum="1">
+    
+        <label labelPosition="front">
             <physical sizeH="tbc" sizeV="tbc" shape="octogon" material="paper"/>
             <visual>
               <frame frameStyle="lines" frameColor="white" frameType="outer"></frame>
@@ -16,9 +16,8 @@
               <figure figureType="abstract" figureNum="1">Floral inspiriertes Ornament mit Weinreben als Rahmung der Beschriftung</figure>
             </visual>
             <textual>
-              <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Zeltingen" ref="wikidata:Q648808">Zeltinger</wineOrigin>
+              <wineName wineNameType="locality / Ortsname" ref="wikidata:Q648808">Zeltinger</wineName>
               <wineMillesime wineMillesimeNorm="1842">1842.</wineMillesime>
             </textual>
-        </labelPart>
     </label>
 </wlv>

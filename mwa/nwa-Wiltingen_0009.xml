@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<wlv>
-  <metadata labelID="mwa-Wiltingen_0009" collectionID="mwa">
-    <curation>curatorID ="#so" curationDate="2020-12-07"</curation>
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Lageetikett">
-    <labelPart partType="front" partNum="1">
+<wlv labelID="mwa-Wiltingen_0009">
+  <metadata>
+    <collection collectionID="mwa"></collection>
+    <curation curatorID ="#so" curationDate="2020-12-07"></curation>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="lines" frameColor="gold" frameType="outer"></frame>
         <frame frameStyle="pattern" frameColor="gold" frameType="inner">Verschnörkelungen in den Ecken</frame>
-        <background backgroundStyle="color" backgroundColor="white"></background>
+        <background backgroundStyle="color"></background>
         <figure figureType="coat-of-arms" figureNum="001" figurePosition="upper-left">Heiliger Stadtpatron Petrus mit goldenem Stadtschlüssel in der rechten Hand, auf Wolke schwebend, Hintergrund ist ein Kreuz, Schrift ist Capitulum Cathedralis Eccl. Treverensis</figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Handwritten" fontColor="black">Dom Scharfzhofberger</wineOrigin>
+        <wineName wineNameType="vineyard / Großlage" fontType="Cursive" fontColor="black">Dom Scharfzhofberger</wineName>
         <wineMillesime wineMillesimeNorm="1917">1917er</wineMillesime>
-        <agent agentRole="producer/bottler" url="https://www.bischoeflicheweingueter.de/weingut/historie/hohe-domkirche.html">Hohe Domkirche Trier</agent>
+        <agent agentRole="production / Weinbau" uri="https://www.bischoeflicheweingueter.de/weingut/historie/hohe-domkirche.html">Hohe Domkirche Trier</agent>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

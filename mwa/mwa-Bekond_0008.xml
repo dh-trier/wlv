@@ -4,10 +4,9 @@
   <metadata>
     <collection collectionID="mwa" />
     <curation curationDate="2020-12-02" curatorID="#ef" />
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Ortsetikett">
-    <labelPart partType="front" partNum="1">
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="other" material="paper" />
       <visual>
         <background backgroundStyle="color">white</background>
@@ -15,11 +14,10 @@
       </visual>
       <textual>
         <wineMillesime wineMillesimeNorm="1862" fontColor="blue" fontSize="normal" fontStyle="recte" fontType="Fraktur">1862er</wineMillesime>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Brauneberg" fontColor="blue" fontSize="normal" fontStyle="recte" fontType="Fraktur">Brauneberger</wineOrigin>
+        <wineName wineNameType="vineyard / Großlage" fontColor="blue" fontSize="normal" fontStyle="recte" fontType="Fraktur">Brauneberger</wineName>
         <qualityGrapes qualityGrapesNorm="Auslese" fontColor="blue">Auslese</qualityGrapes>
-        <agent agentRole="producer/bottler" fontColor="blue" fontSize="normal" fontType="Fraktur" fontStyle="recte">eigenes Wachsthum von F. B. Moog Wwe.</agent>
-        <location locationType="locality" locationRole="producer/bottler" locationNorm="Mülheim" fontColor="blue" fontSize="normal">in Mülheim an der Mosel.</location>
+        <agent agentRole="production / Weinbau" fontColor="blue" fontSize="normal" fontType="Fraktur" fontStyle="recte">eigenes Wachsthum von F. B. Moog Wwe.</agent>
+        <location locationType="locality / Ortsname" locationRole="production / Weinbau" locationNorm="Mülheim" fontColor="blue" fontSize="normal">in Mülheim an der Mosel.</location>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

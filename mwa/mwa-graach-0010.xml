@@ -4,10 +4,9 @@
   <metadata>
     <collection collectionID="mwa"/>
     <curation curatorID="#sts" curationDate="2020-11-25" />
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
   </metadata>
-  <label labelType="Gutsetikett">
-    <labelPart partType="front" partNum="1">
+  <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="band" frameColor="white" frameType="outer"></frame>
@@ -20,11 +19,10 @@
       </visual>
       <textual>
         <wineMillesime wineMillesimeNorm="1868">1868r.</wineMillesime>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Graach" ref="wikidata:Q648808">Josephshöfer.</wineOrigin>
-        <agent agentRole="producer/bottler">P. Junk</agent>
-        <location locationType="locality" locationRole="producer/bottler" locationNorm="Trier" ref="wikidata:Q3138"></location>
+        <wineName wineNameType="vineyard / Großlage" ref="wikidata:Q648808">Josephshöfer.</wineName>
+        <agent agentRole="production / Weinbau">P. Junk</agent>
+        <location locationType="locality / Ortsname" locationRole="production / Weinbau" locationNorm="Trier" ref="wikidata:Q3138"></location>
         <otherText textPosition="stand-alone" textType="other" fontType="Cursive">81</otherText>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

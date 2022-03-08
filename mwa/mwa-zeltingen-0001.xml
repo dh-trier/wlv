@@ -4,10 +4,10 @@
     <metadata>
         <collection collectionID="mwa"/>
         <curation curationDate="2020-12-19" curatorID="#sts"/>
-        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"/>
     </metadata>
-    <label labelType="Ortsetikett">
-        <labelPart partType="front" partNum="1">
+    
+        <label labelPosition="front">
             <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
             <visual>
               <frame frameStyle="lines" frameColor="white" frameType="outer"></frame>
@@ -17,10 +17,9 @@
             </visual>
             <textual>
               <wineMillesime wineMillesimeNorm="1868">1868er</wineMillesime>
-              <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Zeltingen" ref="wikidata:Q189241">Zeltinger.</wineOrigin>
+              <wineName wineNameType="locality / Ortsname" ref="wikidata:Q189241">Zeltinger.</wineName>
               <agent agentRole="other">Salomon Loeb</agent>
-              <location locationType="locality" locationRole="other">in Trier.</location>
+              <location locationType="locality / Ortsname" locationRole="other">in Trier.</location>
             </textual>
-        </labelPart>
     </label>
 </wlv>

@@ -4,10 +4,10 @@
     <metadata>
         <collection collectionID="mwa"/>
         <curation curationDate="2020-12-19" curatorID="#sts"/>
-        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"/>
     </metadata>
-    <label labelType="Ortsetikett">
-        <labelPart partType="front" partNum="1">
+    
+        <label labelPosition="front">
             <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
             <visual>
               <frame frameStyle="band" frameColor="black" frameType="outer"></frame>
@@ -18,9 +18,8 @@
             </visual>
             <textual>
               <wineMillesime wineMillesimeNorm="1862">1862r</wineMillesime>
-              <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Zeltingen" ref="wikidata:Q189241">Zeltinger.</wineOrigin>
+              <wineName wineNameType="locality / Ortsname" ref="wikidata:Q189241">Zeltinger.</wineName>
               <otherText textPosition="in-figure" textType="vineyard (Lage)">Crescenz des bischöflichen Priesterseminars.</otherText>
             </textual>
-        </labelPart>
     </label>
 </wlv>

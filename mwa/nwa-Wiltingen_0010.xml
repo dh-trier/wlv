@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<wlv>
-  <metadata labelID="mwa-Wiltingen_0010" collectionID="mwa">
-    <curation>curatorID ="#so" curationDate="2020-12-07"</curation>
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Lageetikett">
-    <labelPart partType="front" partNum="1">
+<wlv labelID="mwa-Wiltingen_0010">
+  <metadata>
+    <collection collectionID="mwa"></collection>
+    <curation curatorID ="#so" curationDate="2020-12-07"></curation>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="lines" frameColor="gold" frameType="outer"></frame>
         <frame frameStyle="pattern" frameColor="red" frameType="inner">Ellipse mit Stuck</frame>
-        <background backgroundStyle="color" backgroundColor="orange"></background>
+        <background backgroundStyle="color"></background>
         <figure figureType="abstract" figureNum="001" figurePosition="center-center">Weinblätter und Trauben Musterung</figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Fraktur" fontColor="black">Dom Scharfzhofberger.</wineOrigin>
+        <wineName wineNameType="vineyard / Großlage" fontType="Fraktur" fontColor="black">Dom Scharfzhofberger.</wineName>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

@@ -4,10 +4,9 @@
     <metadata>
         <collection collectionID="mwa"/>
         <curation curationDate="2020-12-19" curatorID="#sts"/>
-        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"/>
     </metadata>
-    <label labelType="Gutsetikett">
-        <labelPart partType="front" partNum="1">
+    <label labelPosition="front">
             <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
             <visual>
               <frame frameStyle="lines" frameColor="ocher" frameType="inner"></frame>
@@ -21,9 +20,8 @@
             </visual>
             <textual>
               <wineMillesime wineMillesimeNorm="1852">1852r.</wineMillesime>
-              <wineOrigin wineOriginType="winery (Weingut)" wineOriginLocality="Zeltingen" ref="Q648808">Zeltinger-Bourg</wineOrigin>
-              <agent agentRole="producer/bottler">von J. H. Müller, Sohn in Trier.</agent>
+              <wineName wineNameType="winery / Weingut" ref="Q648808">Zeltinger-Bourg</wineName>
+              <agent agentRole="production / Weinbau">von J. H. Müller, Sohn in Trier.</agent>
             </textual>
-        </labelPart>
     </label>
 </wlv>

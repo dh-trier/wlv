@@ -4,10 +4,9 @@
     <metadata>
         <collection collectionID="mwa"/>
         <curation curationDate="2020-12-19" curatorID="#sts"/>
-        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"/>
     </metadata>
-    <label labelType="Gutsetikett">
-        <labelPart partType="front" partNum="1">
+    <label labelPosition="front">
             <physical sizeH="tbc" sizeV="tbc" shape="oval" material="paper"/>
             <visual>
               <frame frameStyle="pattern" frameColor="brown" frameType="outer">Geschwungener verästelter Weinstock</frame>
@@ -17,10 +16,9 @@
             </visual>
             <textual>
               <wineMillesime wineMillesimeNorm="1884">1884.</wineMillesime>
-              <wineOrigin wineOriginType="winery (Weingut)" wineOriginLocality="Zeltingen" ref="wikidata:Q189241">Zeltinger Scloss</wineOrigin>
-              <agent agentRole="producer/bottler">Crescenz E. Puricelli.</agent>
+              <wineName wineNameType="winery / Weingut" ref="wikidata:Q189241">Zeltinger Scloss</wineName>
+              <agent agentRole="production / Weinbau">Crescenz E. Puricelli.</agent>
               <labelNumber>210</labelNumber>
             </textual>
-        </labelPart>
     </label>
 </wlv>

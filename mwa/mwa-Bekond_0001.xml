@@ -4,10 +4,9 @@
   <metadata>
     <collection collectionID="mwa" />
     <curation curationDate="2020-12-02" curatorID="#ef"/>
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
   </metadata>
-  <label labelType="Ortsetikett">
-    <labelPart partType="front" partNum="1">
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="metal" />
       <visual>
         <frame frameStyle="band" frameColor="gold" frameType="outer" />
@@ -19,11 +18,11 @@
       <textual>
         <otherText textType="vineyard (Lage)" textPosition="stand-alone" fontStyle="small-caps">Brauneberg</otherText>
         <wineMillesime wineMillesimeNorm="1921" fontType="Antiqua-Sans" fontSize="larger">1921er</wineMillesime>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Brauneberg" fontType="Antiqua-Sans" fontColor="black">Brauneberger Hasenläufer</wineOrigin>
+        <wineName wineNameType="vineyard / Großlage" fontType="Antiqua-Sans" fontColor="black">Brauneberger Hasenläufer</wineName>
+          <location locationNorm="Brauneberg" locationType="locality / Ortsname"></location>
         <qualityProduction>Original-Kellerabzug</qualityProduction>
-        <agent agentRole="producer/bottler">Weingut P.Licht-Bergweiler</agent>
-        <location locationType="locality" locationRole="producer/bottler">Filzen</location>
+        <agent agentRole="production / Weinbau">Weingut P.Licht-Bergweiler</agent>
+        <location locationType="locality / Ortsname" locationRole="production / Weinbau">Filzen</location>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

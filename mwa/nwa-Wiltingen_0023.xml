@@ -2,11 +2,10 @@
 <?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <wlv>
   <metadata labelID="mwa-Wiltingen_0023" collectionID="mwa">
-    <curation>curatorID ="#so" curationDate="2020-12-07"</curation>
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Lageetikett">
-    <labelPart partType="front" partNum="1">
+    <curation curatorID ="#so" curationDate="2020-12-07"</curation>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="lines" frameColor="gold" frameType="outer"></frame>
@@ -15,15 +14,14 @@
         <figure figureType="coat-of-arms" figureNum="002">Adler mit Weintrauben und den Kürzeln VDNV (Verband Deutscher Naturwein-Versteigerer)</figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzberg" fontType="Antiqua-Sans" fontColor="black">Scharzberger</wineOrigin>
+        <wineName wineNameType="vineyard / Großlage" fontType="Antiqua-Sans" fontColor="black">Scharzberger</wineName>
         <wineMillesime wineMillesimeNorm="1937">1937er</wineMillesime>
-        <agent agentRole="producer/bottler">Wachstum Weingut Van Volxem</agent>
-        <location locationType="locality" locationRole="producer/bottler" ref="enwiki:Q161930">Wiltingen</location>
+        <agent agentRole="production / Weinbau">Wachstum Weingut Van Volxem</agent>
+        <location locationType="locality / Ortsname" locationRole="producer/bottler" ref="enwiki:Q161930">Wiltingen</location>
         <qualityProduction>Original-Kellerabfüllung</qualityProduction>
         <qualityGrapes>Auslese</qualityGrapes>
-        <agent agentRole="cooperative/association">Trierer Verein von Weingutsbesitzern der Mosel, Saar, Ruwer</agent>
+        <agent agentRole="cooperative / Kooperative">Trierer Verein von Weingutsbesitzern der Mosel, Saar, Ruwer</agent>
         <qualityLevel>Verband Deutscher Naturwein-Versteigerer e.V., Unsere Mitglieder besitzen Lagen von Weltruf. (Über das Adler-Wappen): Dieses Zeichen in Verbindung mit dem Korkbrand verbürgt naturreinen Wein.</qualityLevel>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

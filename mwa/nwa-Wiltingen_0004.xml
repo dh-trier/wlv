@@ -3,10 +3,9 @@
 <wlv>
   <metadata labelID="mwa-Wiltingen_0004" collectionID="mwa">
     <curation>curatorID ="#so" curationDate="2020-12-07"</curation>
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Lageetikett">
-    <labelPart partType="front" partNum="1">
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="pattern" frameColor="gold" frameType="outer">Verschnörkelung und Weinreben</frame>
@@ -19,9 +18,8 @@
         <figure figureType="coat-of-arms" figureNum="005" figurePosition="upper-right">Weinglas und drei Sternenstäbe</figure>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzhofberg" fontType="Fraktur" fontColor="blue">Scharfzhofberger</wineOrigin>
+        <wineName wineNameType="vineyard / Großlage" fontType="Fraktur" fontColor="blue">Scharfzhofberger</wineName>
         <labelNumber fontColor="blue">Wein = Etiquette Nr. 615.</labelNumber>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>

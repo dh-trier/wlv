@@ -4,10 +4,9 @@
     <metadata>
         <collection collectionID="mwa"/>
         <curation curationDate="2020-12-16" curatorID="#sts"/>
-        <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/"/>
+        <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"/>
     </metadata>
-    <label labelType="Gutsetikett">
-        <labelPart partType="front" partNum="1">
+    <label labelPosition="front">
             <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
             <visual>
               <frame frameStyle="lines" frameColor="gold" frameType="outer"></frame>
@@ -16,11 +15,11 @@
               <figure figureType="realistic" figureNum="1">Landschaftsabbildung: Weingut, Heide, Weinberge</figure>
             </visual>
             <textual>
-              <wineOrigin wineOriginType="locality (Ort)" wineOriginLocality="Mertesdorf" ref="wikidata:Q659878">Grünhäuser</wineOrigin>
-              <wineOrigin wineOriginType="winery (Weingut)">Weingut Maximin Grünhäuser</wineOrigin>
-              <agent agentRole="printer">Gerh. Blümlein</agent>
-              <location locationType="locality" locationRole="printer" locationNorm="Frankfurt am Main" ref="wikidata:Q1794">in Frankfurt a. M.</location>
+              <wineName wineNameType="locality / Ortsname" ref="wikidata:Q659878">Grünhäuser</wineName>
+              <wineName wineNameType="winery / Weingut">Weingut Maximin Grünhäuser</wineName>
+              <agent agentRole="printer / Drucker">Gerh. Blümlein</agent>
+              <location locationType="locality / Ortsname" locationRole="printer / Drucker" locationNorm="Frankfurt am Main" ref="wikidata:Q1794">in Frankfurt a. M.</location>
             </textual>
-        </labelPart>
+        </label>
     </label>
 </wlv>

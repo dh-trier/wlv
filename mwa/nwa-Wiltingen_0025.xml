@@ -3,10 +3,9 @@
 <wlv>
   <metadata labelID="mwa-Wiltingen_0025" collectionID="mwa">
     <curation>curatorID ="#so" curationDate="2020-12-07"</curation>
-    <licence licenceScope="metadata" licenceAbbr="CC BY" url="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  <label labelType="Lageetikett">
-    <labelPart partType="front" partNum="1">
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>  
+    <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="floral" frameColor="gold" frameType="inner">Kranz aus Weinrebem um den Namen</frame>
@@ -14,8 +13,9 @@
         <background backgroundStyle="color" backgroundColor="black"></background>
       </visual>
       <textual>
-        <wineOrigin wineOriginType="vineyard (Lage)" wineOriginLocality="Scharzberg"fontColor="gold">Scharzberger</wineOrigin>
+        <wineName wineNameType="vineyard / Großlage" fontColor="gold">Scharzberger
+          <location locationNorm="Scharzberg" locationType="locality / Ortsname"></location>
+      </wineName>
       </textual>
-    </labelPart>
-  </label>
+    </label>
 </wlv>
