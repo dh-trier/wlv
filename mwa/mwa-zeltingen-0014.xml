@@ -17,7 +17,7 @@
               <wineMillesime wineMillesimeNorm="1915">1915er</wineMillesime>
               <wineName wineNameType="vineyard / Großlage" ref="wikidata:Q648808" fontInitials="color:other">Zeltinger Schlossberg</wineName>
               <agent agentRole="production / Weinbau">Wachstum Merrem</agent>
-              <location locationType="locality / Ortsname" locationRole="producer/bottler">Zeltingen</location>
+              <location locationType="locality / Ortsname" locationRole="production / Weinbau">Zeltingen</location>
               <agent agentRole="printer / Drucker">Kunst- und Verlagsanstalt Schaar und Dathe Komm.</agent>
               <otherText textPosition="stand-alone" textType="statement">Ges. A. Act.</otherText>
               <location locationType="locality / Ortsname" locationRole="printer / Drucker">Trier</location>

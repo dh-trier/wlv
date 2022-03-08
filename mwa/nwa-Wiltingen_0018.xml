@@ -19,8 +19,8 @@
         <wineMillesime wineMillesimeNorm="1915">1915</wineMillesime>
         <agent agentRole="production / Weinbau">Wachstum von F. Lintz, Trier.</agent>
         <wineName wineNameType="area / Bereich">Saarwein
-        <location locationNorm="Saar" locationType="area / Bereich"></location>
-      </wineName>
+          <location locationNorm="Saar" locationType="area / Bereich"></location>
+        </wineName>
         <qualityProduction>(Eingetragene Marke)</qualityProduction>
         <otherText textPosition="stand-alone" textType="statement">Original Abfüllung mit Korlbrand</otherText>
       </textual>

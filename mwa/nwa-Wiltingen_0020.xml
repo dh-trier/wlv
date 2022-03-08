@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<wlv>
-  <metadata labelID="mwa-Wiltingen_0020" collectionID="mwa">
-    <curation curatorID ="#so" curationDate="2020-12-07"</curation>
+<wlv labelID="mwa-Wiltingen_0020">
+  <metadata>
+    <collection collectionID="mwa"></collection>
+    <curation curatorID ="#so" curationDate="2020-12-07"></curation>
     <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
   </metadata>  
     <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>
         <frame frameStyle="floral" frameColor="gold" frameType="inner">Weinreben</frame>
-        <background backgroundStyle="color" backgroundColor="white"></background>
+        <background backgroundStyle="color"></background>
         <figure figureType="abstract" figureNum="001" figurePosition="upper-left">Weingut und Landschaft in schwarz-weiß</figure>
         <figure figureType="coat-of-arms" figureNum="002" figurePosition="lower-right">Adler mit Weintrauben und den Kürzeln VDNV (Verband Deutscher Naturwein-Versteigerer)</figure>
       </visual>
       <textual>
-        <wineName wineNameType="vineyard / Großlage" fontType="Handwritten" fontColor="black" fontStyle="italics">Scharzhofberger.</wineName>
+        <wineName wineNameType="vineyard / Großlage" fontType="Cursive" fontColor="black" fontStyle="italics">Scharzhofberger.</wineName>
         <wineName wineNameType="region / Gebiet">Mosel - Saar - Ruwer</wineName>
         <wineMillesime wineMillesimeNorm="1937">1937r.</wineMillesime>
         <qualityHistorical>Gewächs von</qualityHistorical>

@@ -20,7 +20,7 @@
             <textual>
               <wineName wineNameType="vineyard / Großlage" ref="wikidata:Q648808">Zeltinger Schlossberg</wineName>
               <agent agentRole="production / Weinbau">Oscar Haussmann</agent>
-              <location locationType="locality / Ortsname" locationRole="producer/bottler">Traben a/d Mosel.</location>
+              <location locationType="locality / Ortsname" locationRole="production / Weinbau">Traben a/d Mosel.</location>
             </textual>
     </label>
 </wlv>

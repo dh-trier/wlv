@@ -5,8 +5,7 @@
     <collection collectionID="mwa" />
     <curation curationDate="2020-12-16" curatorID="#ef"/>
     <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
-  </metadata>
-  
+  </metadata> 
     <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper" />
       <visual>

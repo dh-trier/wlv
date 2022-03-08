@@ -29,7 +29,7 @@
               <agent agentRole="cooperative / Kooperative">Katholisches Vereins-haus Treviris</agent>
               <location locationType="locality / Ortsname" locationRole="cooperative / Kooperative">Trier a. Mosel.</location>
               <agent agentRole="production / Weinbau">Wachstum: Excellenz Staatsminister Dr. Freiherr von Schorlemer</agent>
-              <location locationType="locality / Ortsname" locationRole="producer/bottler">Lieser</location>
+              <location locationType="locality / Ortsname" locationRole="production / Weinbau">Lieser</location>
             </textual>
     </label>
 </wlv>

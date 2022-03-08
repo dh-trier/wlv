@@ -15,7 +15,7 @@
         <figure figureType="abstract" figureNum="002" figurePosition="center-left">Weinreben</figure>
       </visual>
       <textual>
-        <wineName wineNameType="vineyard / Großlage" fontType="Handwritten" fontColor="black">Dom Scharfzhofberger.</wineName>
+        <wineName wineNameType="vineyard / Großlage" fontType="Cursive" fontColor="black">Dom Scharfzhofberger.</wineName>
         <wineMillesime wineMillesimeNorm="1915">1915er</wineMillesime>
         <agent agentRole="production / Weinbau" fontColor="red" >Wachstum von Apollinar Joseph Koch</agent>
       </textual>

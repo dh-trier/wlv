@@ -6,7 +6,6 @@
         <curation curationDate="2020-12-16" curatorID="#sts"/>
         <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"/>
     </metadata>
-    
         <label labelPosition="front">
             <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
             <visual>
@@ -19,11 +18,10 @@
               <figure figureType="coat-of-arms" figureNum="4" figurePosition="center-left">Wappen mit rotem Löwen umrandet von zwei Engeln</figure>
             </visual>
             <textual>
-              <wineName wineNameType="winery (Weingut)" ref="wikidata:Q659878">Maximin Grünhäuser</wineName>
+              <wineName wineNameType="winery / Weingut" ref="wikidata:Q659878">Maximin Grünhäuser</wineName>
               <wineName wineNameType="vineyard / Großlage" ref="wikidata:Q659878">Herrenberger</wineName>
               <wineMillesime wineMillesimeNorm="1915">1915er</wineMillesime>
               <agent agentRole="production / Weinbau">Kellerabzug der C.von Schubert'schen vormals Freiherr von Stumm-Halberg'schen Schlosskellerei.</agent>
             </textual>
         </label>
-    </label>
 </wlv>

@@ -11,9 +11,22 @@
       <visual>
         <frame frameStyle="band" frameColor="gold" frameType="outer" />
         <background backgroundStyle="pattern">light pattern</background>
-        <figure figureType="realistic" figureNum="1" figurePosition="upper-across">Landschaft: Fluss, Dampfschiff, Weinberge, Dorf, ein großes weißes Haus im Vordergrund, ein kleines Dorf auf dem Hügel.</figure>
-        <figure figureType="realistic" figureNum="2" figurePosition="lower-left">Trauben und Weinblätter.</figure>
-        <figure figureType="coat-of-arms" figureNum="3" figurePosition="lower-left">Ein Heiliger auf dem schwarz gepunkteten roten Hintergrund mit einer goldenen Band.</figure>
+        <figure figureType="realistic" figureNum="1" figurePosition="456">
+          <figureItem itemData="Fluss (Landschaft;Q4022)"></figureItem>
+          <figureItem itemData="Schiff (Artefakte;Q11446)"></figureItem>
+          <figureItem itemData="Weinberg (Landschaft;Q22715)"></figureItem>
+          <figureItem itemData="Dorf (Bauwerke;Q532)"></figureItem>
+          <figureItem itemData="Gebäude (Bauwerke;Q41176)"></figureItem>
+          <figureItem itemData="Hügel (Landschaft;Q54050)"></figureItem>
+        </figure>
+        <figure figureType="realistic" figureNum="2">
+          <figureItem itemData="Weintraube (Flora;Q10978)"></figureItem>
+          <figureItem itemData="Weinblätter (Flora;Q33971)"></figureItem>
+        </figure>
+        <figure figureType="coat-of-arms" figureNum="3" figurePosition="7">
+          <figureItem itemData="Mann (Personen;Q8441)"></figureItem>
+          <figureItem itemData="Banderole (Artefakte;Q2689628)"></figureItem>
+        </figure>
       </visual>
       <textual>
         <otherText textType="vineyard (Lage)" textPosition="stand-alone" fontStyle="small-caps">Brauneberg</otherText>
