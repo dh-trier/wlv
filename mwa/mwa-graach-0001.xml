@@ -10,10 +10,22 @@
         <label labelPosition="front">
             <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
             <visual>
-                <background backgroundStyle="color">uniform light ocher</background>
-                <figure figureType="symbolic" figureNum="1">Becher auf Podest mit Weinreben und Weinblättern.</figure>
-                <figure figureType="symbolic" figureNum="2">Becher auf Podest mit Weinreben und Weinblättern.</figure>
-                <figure figureType="abstract" figureNum="3">Ornament: Wurzeln von Weinreben.</figure>
+                <background backgroundStyle="color" backgroundColor="yellow"></background>
+                <figure figureType="symbolic" figureNum="1">
+                    <figureItem itemData="Becher (Artefakte;Q81727)"></figureItem>
+                    <figureItem itemData="Weinstock (Flora;Q2135068)"></figureItem>
+                    <figureItem itemData="Weinblätter (Flora;Q33971)"></figureItem>
+                    <figureItem itemData="Sockel/Podest (Artefakte;Q12014132)"></figureItem>
+                </figure>
+                <figure figureType="symbolic" figureNum="2">
+                    <figureItem itemData="Becher (Artefakte;Q81727)"></figureItem>
+                    <figureItem itemData="Weinstock (Flora;Q2135068)"></figureItem>
+                    <figureItem itemData="Weinblätter (Flora;Q33971)"></figureItem>
+                    <figureItem itemData="Sockel/Podest (Artefakte;Q12014132)"></figureItem>
+                </figure>
+                <figure figureType="abstract" figureNum="3">
+                    <figureItem itemData="Weinstock (Flora;Q2135068)"></figureItem>
+                </figure>
             </visual>
             <textual>
                 <wineName wineNameType="locality / Ortsname" ref="wikidata:Q648808">Graacher</wineName>

@@ -99,7 +99,7 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 
 **Elements**: [agent](#agent), [alcohol](#alcohol), [background](#background), [barrelNumber](#barrelNumber), [collection](#collection), [collectionContext](#collectionContext), [comments](#comments), [conservation](#conservation), [controlNumber](#controlNumber), [curation](#curation), [dating](#dating), [figure](#figure), [figureItem](#figureItem), [frame](#frame), [label](#label), [labelGroup](#labelGroup), [labelNumber](#labelNumber), [licence](#licence), [location](#location), [metadata](#metadata), [otherText](#otherText), [physical](#physical), [provenance](#provenance), [qualityAward](#qualityAward), [qualityGrapes](#qualityGrapes), [qualityHistorical](#qualityHistorical), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [qualityProduction](#qualityProduction), [scan](#scan), [source](#source), [textual](#textual), [visual](#visual), [volume](#volume), [wineAging](#wineAging), [wineColor](#wineColor), [wineGrapes](#wineGrapes), [wineMillesime](#wineMillesime), [wineName](#wineName), [wineOther](#wineOther), [wineTaste](#wineTaste), [wlv](#wlv)
 
-**Attributes**: [agentRole](#agentRole), [alcoholNorm](#alcoholNorm), [backgroundStyle](#backgroundStyle), [certainty](#certainty), [collectionID](#collectionID), [conservationNorm](#conservationNorm), [controlNumberType](#controlNumberType), [curationDate](#curationDate), [curationUpdate](#curationUpdate), [curatorID](#curatorID), [figureNum](#figureNum), [figurePosition](#figurePosition), [figureType](#figureType), [fontColor](#fontColor), [fontInitials](#fontInitials), [fontManner](#fontManner), [fontSize](#fontSize), [fontStyle](#fontStyle), [fontType](#fontType), [frameColor](#frameColor), [frameStyle](#frameStyle), [frameType](#frameType), [itemData](#itemData), [labelID](#labelID), [labelPosition](#labelPosition), [labelType](#labelType), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [locationRole](#locationRole), [locationType](#locationType), [material](#material), [notAfter](#notAfter), [notBefore](#notBefore), [pageID](#pageID), [printingTechnique](#printingTechnique), [qualityAwardNorm](#qualityAwardNorm), [qualityGrapesNorm](#qualityGrapesNorm), [qualityLabelType](#qualityLabelType), [qualityLevelNorm](#qualityLevelNorm), [qualityProductionNorm](#qualityProductionNorm), [ref](#ref), [scanID](#scanID), [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [tasteGroupNorm](#tasteGroupNorm), [textPosition](#textPosition), [textType](#textType), [uri](#uri), [volumeNorm](#volumeNorm), [wdw](#wdw), [wineAgingNorm](#wineAgingNorm), [wineColorNorm](#wineColorNorm), [wineGrapesNorm](#wineGrapesNorm), [wineMillesimeNorm](#wineMillesimeNorm), [wineNameNorm](#wineNameNorm), [wineNameType](#wineNameType), [wineOtherType](#wineOtherType), [year](#year)
+**Attributes**: [agentRole](#agentRole), [alcoholNorm](#alcoholNorm), [backgroundColor](#backgroundColor), [backgroundStyle](#backgroundStyle), [certainty](#certainty), [collectionID](#collectionID), [conservationNorm](#conservationNorm), [controlNumberType](#controlNumberType), [curationDate](#curationDate), [curationUpdate](#curationUpdate), [curatorID](#curatorID), [figureNum](#figureNum), [figurePosition](#figurePosition), [figureType](#figureType), [fontColor](#fontColor), [fontInitials](#fontInitials), [fontManner](#fontManner), [fontSize](#fontSize), [fontStyle](#fontStyle), [fontType](#fontType), [frameColor](#frameColor), [frameStyle](#frameStyle), [frameType](#frameType), [itemData](#itemData), [labelID](#labelID), [labelPosition](#labelPosition), [labelType](#labelType), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [locationRole](#locationRole), [locationType](#locationType), [material](#material), [notAfter](#notAfter), [notBefore](#notBefore), [pageID](#pageID), [printingTechnique](#printingTechnique), [qualityAwardNorm](#qualityAwardNorm), [qualityGrapesNorm](#qualityGrapesNorm), [qualityLabelType](#qualityLabelType), [qualityLevelNorm](#qualityLevelNorm), [qualityProductionNorm](#qualityProductionNorm), [ref](#ref), [scanID](#scanID), [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [tasteGroupNorm](#tasteGroupNorm), [textPosition](#textPosition), [textType](#textType), [uri](#uri), [volumeNorm](#volumeNorm), [wdw](#wdw), [wineAgingNorm](#wineAgingNorm), [wineColorNorm](#wineColorNorm), [wineGrapesNorm](#wineGrapesNorm), [wineMillesimeNorm](#wineMillesimeNorm), [wineNameNorm](#wineNameNorm), [wineNameType](#wineNameType), [wineOtherType](#wineOtherType), [year](#year)
 
 ### Elements
 #### agent
@@ -130,7 +130,7 @@ Information about the background of the label. Needs to be filled in only if the
 - Frequency: Once at most.
 - Contained by element(s): [visual](#visual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [backgroundStyle](#backgroundStyle).
+- Has attribute(s): [backgroundStyle](#backgroundStyle), [backgroundColor](#backgroundColor).
 
 #### barrelNumber
 
@@ -368,7 +368,7 @@ Indications referring to the quality of the grapes, like "Spätlese",  "Auslese"
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): [textual](#textual).
+- Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityLabelType](#qualityLabelType).
 
@@ -378,7 +378,7 @@ Indications referring to the official quality level of the wine, like "Qualität
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): [textual](#textual).
+- Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityLevelNorm](#qualityLevelNorm).
 
@@ -489,7 +489,7 @@ The name of the wine. Typically printed in a somewhat larger font size than othe
 - Status: Optional.
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
-- Contains element(s): [location](#location), [qualityGrapes](#qualityGrapes), [wineGrapes](#wineGrapes).
+- Contains element(s): [location](#location), [qualityGrapes](#qualityGrapes), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [wineGrapes](#wineGrapes).
 - Has attribute(s): [wineNameType](#wineNameType), [wineNameNorm](#wineNameNorm), [ref](#ref), [uri](#uri), [wdw](#wdw).
 
 #### wineOther
@@ -547,8 +547,23 @@ The percentage of alcohol, expressed as number (float).
 - Contained by element: [alcohol](#alcohol).
 - Possible values: This element has no default values.
 
+#### backgroundColor
+The dominant color tone, whether it is strong or faint.
+
+- Status: Optional.
+- Contained by element: [background](#background).
+- Possible values: 
+    * red
+    * blue
+    * green
+    * yellow
+    * grey
+    * white
+    * black
+    * gold.
+
 #### backgroundStyle
-(no data)
+The kind of background, whether a pattern, a flat color plane, or an absence of any pattern or color.
 
 - Status: Mandatory.
 - Contained by element: [background](#background).
@@ -735,6 +750,7 @@ The type of frame, defined based on its position relative to other elements of t
 - Contained by element: [figureItem](#figureItem).
 - Possible values: 
     * Banderole (Artefakte;Q2689628)
+    * Becher (Artefakte;Q81727)
     * Brezel (Artefakte;Q160525)
     * Boot (Artefakte;Q35872)
     * Globus (Artefakte;Q133792)
@@ -748,13 +764,16 @@ The type of frame, defined based on its position relative to other elements of t
     * Krug (Artefakte;Q766983)
     * Medaille (Artefakte;Q131647)
     * Musikinstrument (Artefakte;Q)
+    * Ornament (Artefakte;Q335261)
     * Pfeil (Artefakte;Q45922)
     * Rad (Artefakte;Q446)
+    * Säule (Artefakte;Q4817)
     * Schiff (Artefakte;Q11446)
     * Siegel (Artefakte;Q162919)
     * Schild (Artefakte;Q131559)
     * Schlüssel (Artefakte;Q132041)
     * Schwert (Artefakte;Q12791)
+    * Sockel/Podest (Artefakte;Q12014132)
     * Stoff (Artefakte;Q5849500)
     * Vase (Artefakte;Q191851)
     * Wage (Artefakte;Q134566)
@@ -782,6 +801,7 @@ The type of frame, defined based on its position relative to other elements of t
     * Weintraube (Flora;Q10978)
     * Weinblätter (Flora;Q33971)
     * Weinstock (Flora;Q2135068)
+    * Wurzel (Flora;Q41500)
     * Burg (Bauwerke;Q23413)
     * Brücke (Bauwerke;Q12280)
     * Dock (Bauwerke;Q124282)

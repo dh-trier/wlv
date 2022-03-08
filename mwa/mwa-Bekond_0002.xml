@@ -12,12 +12,24 @@
         <frame frameStyle="band" frameColor="white" frameType="outer" />
         <frame frameStyle="band" frameColor="black" frameType="inner" />
         <frame frameStyle="floral" frameColor="green, black and yellow" frameType="inner">Grüne Weinrebe mit gelben Weintrauben auf dem schwarzen Hintergrund.</frame>
-        <background backgroundStyle="color">white</background>
-        <figure figureType="realistic" figureNum="1">Landschaft: Hügel, Fluss, ein kleines Boot, Schloss, grüne Weinblätter</figure>
-        <figure figureType="realistic" figureNum="2">Eine schwarze Säule umflochten mit grünen Strähnen und mit gelben Weintrauben drauf.</figure>
+        <background backgroundStyle="color" backgroundColor="white"></background>
+        <figure figureType="realistic" figureNum="1">
+          <figureItem itemData="Fluss (Landschaft;Q4022)"></figureItem>
+          <figureItem itemData="Hügel (Landschaft;Q54050)"></figureItem>
+          <figureItem itemData="Boot (Artefakte;Q35872)"></figureItem>
+          <figureItem itemData="Burg (Bauwerke;Q23413)"></figureItem>
+          <figureItem itemData="Weinblätter (Flora;Q33971)"></figureItem>
+        </figure>
+        <figure figureType="realistic" figureNum="2">
+          <figureItem itemData="Säule (Artefakte;Q4817)"></figureItem>
+          <figureItem itemData="Ornament (Artefakte;Q335261)"></figureItem>
+          <figureItem itemData="Weintraube (Flora;Q10978)"></figureItem>
+        </figure>
       </visual>
       <textual>
-        <wineName wineNameType="locality / Ortsname" fontColor="black">Brauneberger</wineName>
+        <wineName wineNameType="locality / Ortsname" fontColor="black">Brauneberger
+        <location locationType="locality / Leitgemeinde" locationNorm="Brauneberg" ref="Wikidata:Q567156"></location>
+      </wineName>
       </textual>
     </label>
 </wlv>

@@ -411,15 +411,36 @@
       <name ns="">background</name>
       <text />
       <ref name="backgroundStyle" />
+      <optional>
+        <ref name="backgroundColor" />
+      </optional>
     </element>
   </define>
   <define name="backgroundStyle">
+    <a:documentation>The kind of background, whether a pattern, a flat color plane, or an absence of any pattern or color.</a:documentation>
     <attribute>
       <name ns="">backgroundStyle</name>
       <choice>
         <value>pattern</value>
         <value>color</value>
         <value>none</value>
+      </choice>
+    </attribute>
+  </define>
+  <define name="backgroundColor">
+    <a:documentation>The dominant color tone, whether it is strong or faint.</a:documentation>
+    <attribute>
+      <name ns="">backgroundColor</name>
+      <choice>
+        <value>red</value>
+        <value>blue</value>
+        <value>green</value>
+        <value>yellow</value>
+        <value>grey</value>
+        <value>white</value>
+        <value>black</value>
+        <value>gold</value>
+        <text />
       </choice>
     </attribute>
   </define>
@@ -504,6 +525,7 @@
       <name ns="">itemData</name>
       <choice>
         <value>Banderole (Artefakte;Q2689628)</value>
+        <value>Becher (Artefakte;Q81727)</value>
         <value>Brezel (Artefakte;Q160525)</value>
         <value>Boot (Artefakte;Q35872)</value>
         <value>Globus (Artefakte;Q133792)</value>
@@ -517,13 +539,16 @@
         <value>Krug (Artefakte;Q766983)</value>
         <value>Medaille (Artefakte;Q131647)</value>
         <value>Musikinstrument (Artefakte;Q)</value>
+        <value>Ornament (Artefakte;Q335261)</value>
         <value>Pfeil (Artefakte;Q45922)</value>
         <value>Rad (Artefakte;Q446)</value>
+        <value>Säule (Artefakte;Q4817)</value>
         <value>Schiff (Artefakte;Q11446)</value>
         <value>Siegel (Artefakte;Q162919)</value>
         <value>Schild (Artefakte;Q131559)</value>
         <value>Schlüssel (Artefakte;Q132041)</value>
         <value>Schwert (Artefakte;Q12791)</value>
+        <value>Sockel/Podest (Artefakte;Q12014132)</value>
         <value>Stoff (Artefakte;Q5849500)</value>
         <value>Vase (Artefakte;Q191851)</value>
         <value>Wage (Artefakte;Q134566)</value>
@@ -551,6 +576,7 @@
         <value>Weintraube (Flora;Q10978)</value>
         <value>Weinblätter (Flora;Q33971)</value>
         <value>Weinstock (Flora;Q2135068)</value>
+        <value>Wurzel (Flora;Q41500)</value>
         <value>Burg (Bauwerke;Q23413)</value>
         <value>Brücke (Bauwerke;Q12280)</value>
         <value>Dock (Bauwerke;Q124282)</value>
