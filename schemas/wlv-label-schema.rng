@@ -1251,14 +1251,23 @@
     </attribute>
   </define>
   <define name="locationNorm">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name of the location in a normalized form, with its type, and (if available) with authority data (Wikidata ID). The syntax for these normed entries is as follows: "normed name (type;WikidataID)".</a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name of the location in a normalized form, with its type, and (if available) with authority data (Wikidata ID and/or Reg-Nr.).</a:documentation>
     <attribute>
       <name ns="">locationNorm</name>
       <choice>
+        <!-- Leitgemeinden -->
         <value>Bernkastel-Kues (Leitgemeinde;Q643228)</value>
         <value>Brauneberg (Leitgemeinde;Q567156)</value>
+        <value>Wiltingen (Leitgemeinde;Q161930)</value>
+        <value>Winningen (Leitgemeinde;Q822358)</value>
+        <value>Zell (Leitgemeinde;Q187500)</value>
+        <!-- Andere Orte -->
         <value>Filzen (Ort;Q47087896)</value>
+        <value>Freudenberg am Main (Ort;Q61827)</value>
         <value>Graach (Ort;Q648808)</value>
+        <!-- Großlagen / Einzellagen / Parzellen -->
+        <value>Schwarze Katz (Großlage;Q2253665)</value>
+        <value>Vollmühle (Parzelle)</value>
         <value>other</value>
         <text />
       </choice>

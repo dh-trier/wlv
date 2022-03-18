@@ -15,9 +15,9 @@
       <textual>
         <location locationType="region / Gebiet" fontStyle="all-caps">Mosel-Saar-Ruwer</location>
         <wineMillesime wineMillesimeNorm="1957">1957er</wineMillesime>
-        <wineName wineNameType="vineyard / Großlage">Zeller schwarze Katz
-          <location locationType="vineyard / Großlage" ref="RegNr=6.3.4"></location>
-          <location locationType="locality / Leitgemeinde" ref="Wikidata:Q187500"></location>
+        <wineName wineNameType="vineyard / Großlage">
+          <location locationNorm="Zell (Leitgemeinde;Q187500)">Zeller</location>
+          <location locationNorm="Schwarze Katz (Großlage;Q2253665;RN6.3.4)">Schwarze Katz</location>
           <location locationType="country / Land">Deutschland</location>
         </wineName>
       </textual>
