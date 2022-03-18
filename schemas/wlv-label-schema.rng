@@ -785,7 +785,9 @@
     <element>
       <name ns="">wineName</name>
       <text />
-      <ref name="wineNameType" />
+      <zeroOrMore>
+        <ref name="agent" />
+      </zeroOrMore>
       <zeroOrMore>
         <ref name="location" />
       </zeroOrMore>
@@ -801,6 +803,9 @@
       <zeroOrMore>
         <ref name="wineGrapes" />
       </zeroOrMore>
+      <optional>
+        <ref name="wineNameType" />
+      </optional>
       <optional>
         <ref name="wineNameNorm" />
       </optional>
@@ -885,11 +890,12 @@
     </element>
   </define>
   <define name="wineGrapesNorm">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indication of the grape variety, with a normalized German name and, in brackets, the color of the grape and the Wikidata identifier.</a:documentation>
     <attribute>
       <name ns="">wineGrapesNorm</name>
       <choice>
-        <value>Riesling</value>
-        <value>Müller-Thurgau/Rivaner</value>
+        <value>Riesling (weiss;Q456471)</value>
+        <value>Müller-Thurgau / Rivaner (weiss;Q681670)</value>
         <value>Elbling</value>
         <value>Spätburgunder</value>
         <value>Grauburgunder</value>
@@ -1139,7 +1145,12 @@
     <element>
       <name ns="">agent</name>
       <text />
+      <optional>
       <ref name="agentRole" />
+      </optional>
+      <optional>
+        <ref name="agentNorm" />
+      </optional>
       <optional>
         <ref name="ref" />
       </optional>
@@ -1148,6 +1159,17 @@
       </optional>
       <ref name="fontAttributes" />
     </element>
+  </define>
+  <define name="agentNorm">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The normalized form of the agent's name, together with a category and a Wikidata identifier in brackets.</a:documentation>
+    <attribute>
+      <name ns="">agentNorm</name>
+      <choice>
+        <value>Weingut Maximin Grünhaus (Weingut;Q2556072)</value>
+        <value>Name (Q)</value>
+        <text/>
+      </choice>
+    </attribute>
   </define>
   <define name="agentRole">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The particular role of the agent, as far as it can be determined from the label itself or from contextual information. (TODO: authority data and definitions for these roles.)</a:documentation>
@@ -1170,7 +1192,9 @@
     <element>
       <name ns="">location</name>
       <text />
-      <ref name="locationType" />
+      <optional>
+        <ref name="locationType" />
+      </optional>
       <optional>
         <ref name="locationRole" />
       </optional>
@@ -1227,10 +1251,17 @@
     </attribute>
   </define>
   <define name="locationNorm">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name of the location in a normalized form.</a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name of the location in a normalized form, with its type, and (if available) with authority data (Wikidata ID). The syntax for these normed entries is as follows: "normed name (type;WikidataID)".</a:documentation>
     <attribute>
       <name ns="">locationNorm</name>
-      <text />
+      <choice>
+        <value>Bernkastel-Kues (Leitgemeinde;Q643228)</value>
+        <value>Brauneberg (Leitgemeinde;Q567156)</value>
+        <value>Filzen (Ort;Q47087896)</value>
+        <value>Graach (Ort;Q648808)</value>
+        <value>other</value>
+        <text />
+      </choice>
     </attribute>
   </define>
   <define name="locationRegNr">

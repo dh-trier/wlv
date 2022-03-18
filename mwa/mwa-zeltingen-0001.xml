@@ -17,9 +17,11 @@
             </visual>
             <textual>
               <wineMillesime wineMillesimeNorm="1868">1868er</wineMillesime>
-              <wineName wineNameType="locality / Ortsname" ref="wikidata:Q189241">Zeltinger.</wineName>
-              <agent agentRole="other">Salomon Loeb</agent>
-              <location locationType="locality / Ortsname" locationRole="other">in Trier.</location>
+              <wineName>
+                <location locationNorm="Zeltingen (Ort;Q189241)">Zeltinger.</location>
+              </wineName>
+              <agent agentRole="other / andere">Salomon Loeb</agent>
+              <location locationType="locality / Ortsname" locationRole="other / andere">in Trier.</location>
             </textual>
     </label>
 </wlv>
