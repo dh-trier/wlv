@@ -31,11 +31,13 @@
       <textual>
         <otherText textType="vineyard (Lage)" textPosition="stand-alone" fontStyle="small-caps">Brauneberg</otherText>
         <wineMillesime wineMillesimeNorm="1921" fontType="Antiqua-Sans" fontSize="larger">1921er</wineMillesime>
-        <wineName wineNameType="vineyard / Großlage" fontType="Antiqua-Sans" fontColor="black">Brauneberger Hasenläufer</wineName>
-          <location locationNorm="Brauneberg" locationType="locality / Ortsname"></location>
+        <wineName wineNameType="vineyard / Großlage" fontType="Antiqua-Sans" fontColor="black">Brauneberger Hasenläufer
+          <location locationNorm="Brauneberg" locationType="locality / Ortsname"/>
+          <location locationType="vineyard / Einzellage" locationNorm="Brauneberger Hasenläufer (Einzellage;Q1234567;RN1.2.3.4)"/>
+        </wineName>
         <qualityProduction>Original-Kellerabzug</qualityProduction>
         <agent agentRole="production / Weinbau">Weingut P.Licht-Bergweiler</agent>
-        <location locationType="locality / Ortsname" locationRole="production / Weinbau">Filzen</location>
+        <location locationType="locality / Ortsname" locationNorm="Filzen (Ort;Q47087896)">Filzen</location>
       </textual>
     </label>
 </wlv>
