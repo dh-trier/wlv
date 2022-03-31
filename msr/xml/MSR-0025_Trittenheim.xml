@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="MSR-0025">
+  <metadata>
+    <collection collectionID="MSR"></collection>
+    <curation curatorID="#cs" curationDate="2022-03-30"></curation>
+    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"></licence>
+  </metadata>
+    <label labelPosition="front">
+      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+      <visual>
+        <background backgroundStyle="none" backgroundColor="yellow"></background>
+        <frame frameType="inner" frameStyle="band" frameColor="orange"></frame>
+        <figure figureNum="1" figurePosition="12346789" figureType="abstract"></figure>
+        <figure figureNum="2" figurePosition="5" figureType="coat-of-arms">
+            <figureItem itemData="Stern (Sonstiges;Q523)"></figureItem>
+            <figureItem itemData="Helm (Artefakte;Q910873)"></figureItem>
+        </figure>
+      </visual>
+      <textual>
+          <wineName>
+              <location locationNorm="Trittenheim (Ort;Q662479)" locationRole="production / Weinbau">Trittenheimer</location>
+          </wineName>
+          <agent>Carl Pauli, Weinbau und Weinhandel, G.m.b.H.</agent>
+          <location locationRole="multiple / verschiedene" locationNorm="Ober-Ingelheim (Ort;Q2008825)">Ober-Ingelheim a. Rh.</location>
+      </textual>
+      <provenance>
+          <dating notAfter="1950" notBefore="1900" certainty="low"></dating>
+          <scan scanID="MSR-0025"></scan>
+          <conservation conservationNorm="good"></conservation>
+      </provenance>
+    </label>
+</wlv>

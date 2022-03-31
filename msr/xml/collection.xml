@@ -24,5 +24,7 @@
     <label labelID="MSR-0004_Ediger" />
     <label labelID="MSR-0006_Zell" />
     <label labelID="MSR-0008_Ürzig" />
+    <!-- -->
+    <label labelID="MSR-0025" />
   </labels>
 </wlv>
