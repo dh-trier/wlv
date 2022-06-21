@@ -18,6 +18,12 @@
       </choice>
     </element>
   </define>
+  <define name="ID">
+    <attribute>
+      <name ns="">ID</name>
+        <text/>
+    </attribute>
+  </define>
   <define name="labelID">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A unique identifier for the label.</a:documentation>
     <attribute>
@@ -194,6 +200,9 @@
       </choice>
     </attribute>
   </define>
+  <!--
+  === LABEL === 
+  -->
   <define name="labelGroup">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A container element to group physically separate labels belonging to one bottle. A label group must have at least one label, but can contain several labels. (If only one label is present, it is recommended not to use labelGroup.)</a:documentation>
     <element>
@@ -241,6 +250,9 @@
       <ref name="physical" />
       <ref name="visual" />
       <ref name="textual" />
+      <optional>
+        <ref name="relations" />
+      </optional>
       <optional>
         <ref name="comments" />
       </optional>
@@ -457,6 +469,9 @@
       <zeroOrMore>
         <ref name="figureItem" />
       </zeroOrMore>
+      <optional>
+        <ref name="ID" />
+      </optional>
     </element>
   </define>
   <define name="figureNum">
@@ -517,6 +532,9 @@
     <element>
       <name ns="">figureItem</name>
       <ref name="itemData" />
+      <optional>
+        <ref name="ID" />
+      </optional>
     </element>
   </define>
   <define name="itemData">
@@ -698,6 +716,11 @@
       </attribute>
     </optional>
   </define>
+  <!--
+  ===============
+  === TEXTUAL ===
+  ===============
+  -->
   <define name="textual">
     <element>
       <name ns="">textual</name>
@@ -772,6 +795,9 @@
       <text />
       <ref name="wineMillesimeNorm" />
       <ref name="fontAttributes" />
+        <optional>
+          <ref name="ID" />
+        </optional>
     </element>
   </define>
   <define name="wineMillesimeNorm">
@@ -820,6 +846,9 @@
       </optional>
       <optional>
         <ref name="fontAttributes" />
+      </optional>
+      <optional>
+        <ref name="ID" />
       </optional>
     </element>
   </define>
@@ -1158,7 +1187,10 @@
         <ref name="uri" />
       </optional>
       <ref name="fontAttributes" />
-    </element>
+       <optional>
+        <ref name="ID" />
+      </optional>
+   </element>
   </define>
   <define name="agentNorm">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The normalized form of the agent's name, together with a category and a Wikidata identifier in brackets.</a:documentation>
@@ -1214,6 +1246,9 @@
         <ref name="uri" />
       </optional>
       <ref name="fontAttributes" />
+      <optional>
+        <ref name="ID" />
+      </optional>
     </element>
   </define>
   <define name="locationRole">
@@ -1500,6 +1535,40 @@
         <value>damaged</value>
         <value>incomplete</value>
       </choice>
+    </attribute>
+  </define>
+  <define name="relations">
+    <element>
+      <name ns="">relations</name>
+      <ref name="relation" />
+    </element>
+  </define>
+  <define name="relation">
+    <element>
+      <name ns="">relation</name>
+      <ref name="relType" />
+      <ref name="relItems" />
+      <optional>
+        <ref name="ID" />
+      </optional>
+    </element>
+  </define>
+  <define name="relType">
+    <attribute>
+      <name ns="">relType</name>
+      <choice>
+        <value>equivalence</value>
+        <value>similarity</value>
+        <value>contrast</value>
+        <value>other</value>
+        <text/>
+      </choice>
+    </attribute>
+  </define>
+  <define name="relItems">
+    <attribute>
+      <name ns="">relItems</name>
+        <text/>
     </attribute>
   </define>
 </grammar>

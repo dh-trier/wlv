@@ -3,23 +3,30 @@
 <wlv labelID="MSR-0014">
   <metadata>
     <collection collectionID="MSR"></collection>
-    <curation curatorID="#cs" curationDate="2022-02-22"></curation>
-    <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"></licence>
+    <curation curatorID="#cs" curationDate="2022-02-22" curationUpdate="2022-06-21"></curation>
+    <licence licenceScope="all" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"></licence>
   </metadata>
     <label labelPosition="front">
       <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
       <visual>
-        <frame frameStyle="other" frameColor="gold" frameType="outer">Linie mit Ornamenten an den Ecken.</frame>
-        <background backgroundStyle="pattern"></background>
+        <frame frameStyle="other" frameColor="gold" frameType="outer" />
+        <background backgroundStyle="pattern" />
+        <figure ID="v3" figureNum="1" figurePosition="25" figureType="realistic">
+        <figureItem ID="v3-1" itemData="Katze (Fauna;Q146)"/>
+        <figureItem ID="v3-2" itemData="Schatten"/>
+        <figureItem ID="v3-3" itemData="Weinfass (Artefakte;Q10289)"/>
+        </figure>
       </visual>
       <textual>
-        <location locationType="region / Gebiet" fontStyle="all-caps">Mosel-Saar-Ruwer</location>
-        <wineMillesime wineMillesimeNorm="1957">1957er</wineMillesime>
-        <wineName wineNameType="vineyard / Großlage">
-          <location locationNorm="Zell (Leitgemeinde;Q187500)">Zeller</location>
-          <location locationNorm="Schwarze Katz (Großlage;Q2253665;RN6.3.4)">Schwarze Katz</location>
-          <location locationType="country / Land">Deutschland</location>
+        <location ID="t1" locationType="region / Gebiet" fontStyle="all-caps">Mosel-Saar-Ruwer</location>
+        <wineMillesime ID="t2" wineMillesimeNorm="1957">1957er</wineMillesime>
+        <wineName ID="t3" wineNameType="vineyard / Großlage">
+          <location ID="t3-1" locationNorm="Zell (Leitgemeinde;Q187500)">Zeller</location>
+          <location ID="t3-2" locationNorm="Schwarze Katz (Großlage;Q2253665;RN6.3.4)">schwarze Katz</location>
         </wineName>
       </textual>
+      <relations>
+        <relation ID="r1" relType="equivalence" relItems="#v3-1 #t1"/>
+      </relations>
     </label>
 </wlv>
