@@ -10,24 +10,27 @@
       <physical sizeH="137" sizeV="89" shape="rectangle" material="paper" />
       <visual>
         <background backgroundStyle="color">uniform light green</background>
-        <figure figureType="coat-of-arms" figureNum="1" figurePosition="upper-center">
-          <figureItem itemData="Wappen (Artefakte;Q14659)"></figureItem>
-          <figureItem itemData="Schwert (Artefakte;Q12791)"></figureItem>
-          <figureItem itemData="Weinblätter (Flora;Q33971)"></figureItem>
-          <figureItem itemData="Flügel (Fauna;Q161358)"></figureItem>
+        <figure ID="v2" figureType="coat-of-arms" figureNum="1" figurePosition="upper-center">
+          <figureItem ID="v2-1" itemData="Wappen (Artefakte;Q14659)"></figureItem>
+          <figureItem ID="v2-2" itemData="Schwert (Artefakte;Q12791)"></figureItem>
+          <figureItem ID="v2-3" itemData="Weinblätter (Flora;Q33971)"></figureItem>
+          <figureItem ID="v2-4" itemData="Flügel (Fauna;Q161358)"></figureItem>
         </figure>
       </visual>
       <textual>
         <otherText textType="coat-text" textPosition="in-figure" fontType="Antiqua-Sans" fontStyle="all-caps">seit 1846</otherText>
-        <location locationType="region / Gebiet" fontType="Antiqua-Sans">Mosel-Saar-Ruwer</location>
-        <wineMillesime wineMillesimeNorm="1939" fontStyle="italics" fontType="Cursive" fontSize="larger">1939er</wineMillesime>
-        <wineName>
-          <location locationNorm="Wiltingen (Leitgemeinde;Q161930)">Wiltinger</location>
+        <location ID="t2" locationType="region / Gebiet" fontType="Antiqua-Sans">Mosel-Saar-Ruwer</location>
+        <wineMillesime ID="t3" wineMillesimeNorm="1939" fontStyle="italics" fontType="Cursive" fontSize="larger">1939er</wineMillesime>
+        <wineName ID="t4">
+          <location ID="t4-1" locationNorm="Wiltingen (Leitgemeinde;Q161930)">Wiltinger</location>
         </wineName>
-        <agent agentRole="distribution / Vertrieb">Karl Ziegler, Weinhandlung</agent>
-        <location locationRole="distribution / Vertrieb" locationType="locality / Ortsname">Freudenberg</location>
-        <agent agentRole="printer / Drucker" fontSize="smaller">Bastian</agent>
-        <location locationNorm="Winningen (Ort;Q822358)" locationRole="printer / Drucker">Winningen</location>
+        <agent ID="t5" agentRole="distribution / Vertrieb">Karl Ziegler, Weinhandlung</agent>
+        <location ID="t6" locationRole="distribution / Vertrieb" locationType="locality / Ortsname">Freudenberg</location>
+        <agent ID="t7" agentRole="printer / Drucker" fontSize="smaller">Bastian</agent>
+        <location ID="t8" locationNorm="Winningen (Ort;Q822358)" locationRole="printer / Drucker">Winningen</location>
       </textual>
+      <relations>
+        <relation ID="r1" relType="equivalence" relItems="#v2-1 #t4-1" />
+      </relations>
     </label>
 </wlv>
