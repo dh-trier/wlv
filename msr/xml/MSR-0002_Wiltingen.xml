@@ -31,6 +31,7 @@
       </textual>
       <relations>
         <relation ID="r1" relType="equivalence" relItems="#v2-1 #t4-1" />
+        <!-- This relation is in fact inaccurate: the coat of arms shown above is not the one of Wiltingen (nor of Freudenberg, for that matter). -->
       </relations>
     </label>
 </wlv>
