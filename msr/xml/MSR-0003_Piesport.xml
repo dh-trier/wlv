@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <wlv labelID="MSR-0003">
   <metadata>
   <collection collectionID="MSR"/>
@@ -12,31 +12,32 @@
         <frame frameStyle="band" frameColor="gold" frameType="outer"></frame>
         <frame frameStyle="lines" frameColor="black" frameType="outer"></frame>
         <background backgroundStyle="pattern">light pattern</background>
-        <figure figureType="realistic" figureNum="1" figurePosition="123">
-          <figureItem itemData="Fluss (Landschaft;Q4022)"></figureItem>
-          <figureItem itemData="Weinberg (Landschaft;Q22715)"></figureItem>
-          <figureItem itemData="Dorf (Bauwerke;Q532)"></figureItem>
+        <figure ID="v4" figureType="realistic" figureNum="1" figurePosition="123">
+          <figureItem ID="v4-1" norm="Landschaft: Fluss (Q4022)"></figureItem>
+          <figureItem ID="v4-2" norm="Landschaft: Weinberg (Q22715)"></figureItem>
+          <figureItem ID="v4-3" norm="Bauwerk: Dorf (Q532)"></figureItem>
         </figure>
-        <figure figureType="coat-of-arms" figureNum="2">
-          <figureItem itemData="Wappen (Artefakte;Q14659)"></figureItem>
+        <figure ID="v5" figureType="coat-of-arms" figureNum="2">
+          <figureItem ID="v5-1" norm="Artefakt: Wappen (Q14659)"></figureItem>
         </figure>
-        <figure figureType="symbolic" figureNum="3">
-          <figureItem itemData="Weinblätter (Flora;Q33971)"></figureItem>
+        <figure ID="v6" figureType="symbolic" figureNum="3">
+          <figureItem ID="v6-1" norm="Flora: Weinblätter (Q33971)"></figureItem>
         </figure>
       </visual>
       <textual>
-        <location locationType="area / Bereich">Mosel - Saar - Ruwer</location>
+        <location ID="t1" locationType="area / Bereich" norm="Bereich: Mosel-Saar-Ruwer (Q672776)">Mosel - Saar - Ruwer</location>
         <otherText textPosition="stand-alone" textType="coat-text">Wappen der Gemeinde Minheim seit 1575</otherText>
-        <wineName wineNameType="vineyard / Großlage">Piesporter Lay
-          <location locationType="locality / Leitgemeinde" locationNorm="Piesport" ref="Wikidata=Q375762"></location>
+        <wineName ID="t3" wineNameType="vineyard / Großlage">
+          <location ID="t3-1" locationType="locality / Leitgemeinde" norm="Ort: Piesport (Q375762)">Piesporter</location>
+          <location ID="t3-2" locationType="vineyard / Einzellage" norm="Lage: Piesporter Lay (Q375762)">Lay</location>
         </wineName>
-        <qualityGrapes qualityGrapesNorm="Auslese">Auslese</qualityGrapes>
+        <qualityGrapes norm="Traubenqualität: Auslese">Auslese</qualityGrapes>
         <qualityGrapes>naturrein</qualityGrapes>
         <qualityProduction>Eigenes Wachstum - Original=Abfüllung</qualityProduction>
         <agent agentRole="production / Weinbau">Joh. Koenen-Veit, Weinbau - Weinversand</agent>
-        <location locationType="locality / Ortsname"  ref="Wikidata=Q524796">Minheim/Mosel</location>
+        <location locationType="locality / Ortsname" norm="Ort: Minheim / Mosel (Q524796)">Minheim/Mosel</location>
         <agent agentRole="printer / Drucker">Verlag Bastian</agent>
-        <location locationType="locality / Ortsname" locationRole="printer / Drucker" locationNorm="Neumagen-Drohn" ref="Wikidata=Q572352">Neumagen</location>
+        <location locationType="locality / Ortsname" locationRole="printer / Drucker" norm="Ort: Neumagen-Drohn (Q572352)">Neumagen</location>
       </textual>
     <provenance>
     <dating notBefore="1945" notAfter="1975" certainty="estimate">Impression from design.</dating>

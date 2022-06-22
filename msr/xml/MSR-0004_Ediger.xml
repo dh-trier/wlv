@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../schemas/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <wlv labelID="MSR-0004">
   <metadata>
   <collection collectionID="MSR"></collection>
@@ -9,12 +9,13 @@
     <label labelPosition="front">
       <physical sizeH="130" sizeV="89" shape="rectangle" material="paper"/>
       <visual>
-          <frame frameStyle="other" frameColor="gold" frameType="outer">Linie mit Ornamenten an den Ecken.</frame>
+          <frame frameStyle="other" frameColor="gold" frameType="outer" />
       </visual>
       <textual>
           <location locationType="region / Gebiet" fontStyle="all-caps">Mosel-Saar-Ruwer</location>
-          <wineName wineNameType="vineyard / historischer Lagenname">Ediger Pfefferberg
-            <location locationType="locality / Leitgemeinde" locationNorm="Ediger" ref="Wikidata=Q547805"></location>
+          <wineName>
+            <location locationType="locality / Leitgemeinde" norm="Ort: Ediger (Q547805)">Ediger</location>
+            <location locationType="vineyard / historischer Lagenname">Pfefferberg</location>
           </wineName>
       </textual>
     </label>

@@ -31,18 +31,189 @@
       <text />
     </attribute>
   </define>
-  <define name="ref">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) Contains authority file data, norm data, other stable and unique identifiers. Sources include: Wikidata, Register-Nummer der Weinlagen, Gemeinsame Normdaten-Datei.</a:documentation>
+  <!--
+  ========================================
+  ======      NORMDATEN              =====
+  ========================================  
+  -->
+  <define name="norm">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(normalized data) Contains authority file data and other stable and unique identifiers. Sources include: Wikidata, Register-Nummer der Weinlagen, Gemeinsame Normdaten-Datei, and others. Can relate to locations, agents, vineyards, items depicted in visual form, and other standardized vocabulary. </a:documentation>
     <attribute>
-      <name ns="">ref</name>
+      <name ns="">norm</name>
       <choice>
+        <!-- Bildelemente: Artefakte, Personen, Fauna, Flora, Bauwerke, Landschaft, Sonstiges -->
+        <value>Artefakt: Banderole (Q2689628)</value>
+        <value>Artefakt: Becher (Q81727)</value>
+        <value>Artefakt: Brezel (Q160525)</value>
+        <value>Artefakt: Boot (Q35872)</value>
+        <value>Artefakt: Globus (Q133792)</value>
+        <value>Artefakt: Gemälde (Q3305213)</value>
+        <value>Artefakt: Fahrzeug (Q42889)</value>
+        <value>Artefakt: Harfe (Q47369)</value>
+        <value>Artefakt: Harpune (Q207574)</value>
+        <value>Artefakt: Helm (Q910873)</value>
+        <value>Artefakt: Hut (Q80151)</value>
+        <value>Artefakt: Krone (Q170984)</value>
+        <value>Artefakt: Krug (Q766983)</value>
+        <value>Artefakt: Medaille (Q131647)</value>
+        <value>Artefakt: Musikinstrument (Q)</value>
+        <value>Artefakt: Ornament (Q335261)</value>
+        <value>Artefakt: Pfeil (Q45922)</value>
+        <value>Artefakt: Rad (Q446)</value>
+        <value>Artefakt: Säule (Q4817)</value>
+        <value>Artefakt: Schiff (Q11446)</value>
+        <value>Artefakt: Siegel (Q162919)</value>
+        <value>Artefakt: Schild (Q131559)</value>
+        <value>Artefakt: Schlüssel (Q132041)</value>
+        <value>Artefakt: Schwert (Q12791)</value>
+        <value>Artefakt: Sockel/Podest (Q12014132)</value>
+        <value>Artefakt: Stoff (Q5849500)</value>
+        <value>Artefakt: Vase (Q191851)</value>
+        <value>Artefakt: Wage (Q134566)</value>
+        <value>Artefakt: Wappen (Q14659)</value>
+        <value>Artefakt: Weinglas (Q1531435)</value>
+        <value>Artefakt: Weinflasche (Q23490)</value>
+        <value>Artefakt: Weinfass (Q10289)</value>
+        <value>Artefakt: Trichter ( Q29957)</value>
+        <value>Artefakt: Lampe, inkl. Laterne (Q1138737)</value>    
+        <value>Artefakt: Stiefel (Q190868)</value>
+        <value>Artefakt: Siegel (Q162919)</value>
+        <value>Artefakt: Stempel (Q57305415)</value>
+        <value>Artefakt: Schnur (Q31029)</value>
+        <value>Artefakt: Etikett (Q722218)</value>
+        <value>Artefakt: Gitarre, inkl. Mandoline (Q6607)</value>
+        <value>Artefakt: Kostüm, inkl. Tracht (Q1410477)</value>
+        <value>Fauna: Hase (Q46076)</value>
+        <value>Fauna: Adler (Q2092297)</value>
+        <value>Fauna: Bär (Q30090244)</value>
+        <value>Fauna: Feder (Q81025)</value>
+        <value>Fauna: Flügel (Q161358)</value>
+        <value>Fauna: Hund (Q144)</value>
+        <value>Fauna: Katze (Q146)</value>
+        <value>Fauna: Katze (Q146)</value>
+        <value>Fauna: Löwe (Q140)</value>
+        <value>Fauna: Pferd (Q726)</value>
+        <value>Fauna: Ochse (Q473194)</value>
+        <value>Fauna: Reh/Hirsch (Q29838690)</value>
+        <value>Fauna: Schaf (Q7368)</value>
+        <value>Fauna: Spinne (Q1357)</value>
+        <value>Fauna: Vogel (Q5113)</value>
+        <value>Flora: Baum (Q10884)</value>
+        <value>Flora: Blume (Q886167)</value>
+        <value>Flora: Blüte (Q506)</value>
+        <value>Flora: Pflanze (Q756)</value>
+        <value>Flora: Weintraube (Q10978)</value>
+        <value>Flora: Weinblätter (Q33971)</value>
+        <value>Flora: Weinstock (Q2135068)</value>
+        <value>Flora: Wurzel (Q41500)</value>
+        <value>Bauwerk: Burg (Q23413)</value>
+        <value>Bauwerk: Brücke (Q12280)</value>
+        <value>Bauwerk: Dock (Q124282)</value>
+        <value>Bauwerk: Dorf (Q532)</value>
+        <value>Bauwerk: Gebäude (Q41176)</value>
+        <value>Bauwerk: Fenster (Q35473)</value>
+        <value>Bauwerk: Interieur (Q2998430)</value>
+        <value>Bauwerk: Keller (Q43275450)</value>
+        <value>Bauwerk: Kirchengebäude (Q16970)</value>
+        <value>Bauwerk: Mauer (Q42948)</value>
+        <value>Bauwerk: Stadt (Q532)</value>
+        <value>Bauwerk: Straße (Q34442)</value>
+        <value>Bauwerk: Tor/Türe (Q36794)</value>
+        <value>Bauwerk: Treppe (Q12511)</value>
+        <value>Bauwerk: Turm (Q12518)</value>
+        <value>Bauwerk: Zaun (Q148571)</value>
+        <value>Landschaft: Ufer (Q468756)</value>
+        <value>Landschaft: Fluss (Q4022)</value>
+        <value>Landschaft: Hügel (Q54050)</value>
+        <value>Landschaft: Weinberg (Q22715)</value>
+        <value>Person: Mann (Q8441)</value>
+        <value>Person: Frau (Q467)</value>
+        <value>Person: Kind (Q7569)</value>
+        <value>Person: Mensch (Q5)</value>
+        <value>Person: Minnesänger (Q841192)</value>
+        <value>Person: Personengruppe (Q16334295)</value>
+        <value>Sonstiges: Ritter (Q102083)</value>
+        <value>Sonstiges: Satyr (Q163709)</value>
+        <value>Sonstiges: Engel (Q235113)</value>
+        <value>Sonstiges: Drache (Q7559)</value>
+        <value>Sonstiges: Stern (Q523)</value>
+        <value>Sonstiges: Mond (Q405)</value>
+        <value>Sonstiges: Sonne (Q525)</value>
+        <value>Sonstiges: Schatten (Q160020)</value>
+        <!-- QualityGrapes -->
+        <value>QualityGrapes: Kabinett</value>
+        <value>QualityGrapes: Spätlese</value>
+        <value>QualityGrapes: Auslese</value>
+        <value>QualityGrapes: Beerenauslese</value>
+        <value>QualityGrapes: Trockenbeerenauslese (Q1639847)</value>
+        <value>QualityGrapes: Eiswein</value>
+        <value>QualityGrapes: other</value>
+        <!-- Bereiche -->
+        <value>Bereich: Mosel-Saar-Ruwer (Q672776)</value>
+        <!-- Leitgemeinden -->
+        <value>Leitgemeinde: Bernkastel-Kues (Q643228)</value>
+        <value>Leitgemeinde: Brauneberg (Q567156)</value>
+        <value>Leitgemeinde: Wiltingen (Q161930)</value>
+        <value>Leitgemeinde: Winningen (Q822358)</value>
+        <value>Leitgemeinde: Zell (Q187500)</value>
+        <!-- Andere Orte -->
+        <value>Ort: Filzen (Q47087896)</value>
+        <value>Ort: Freudenberg am Main (Q61827)</value>
+        <value>Ort: Graach (Q648808)</value>
+        <value>Ort: Ober-Ingelheim (Q2008825)</value>
+        <value>Ort: Trittenheim (Q662479)</value>
+        <!-- Großlagen / Einzellagen / Parzellen -->
+        <value>Großlage: Schwarze Katz (Q2253665)</value>
+        <value>Parzelle: Vollmühle</value>
+        <value>Einzellage: Deutschherrenberg</value>
+        <!-- Millesime / Jahrgang -->
+        <value>Jahrgang: ####</value>
+        <!-- Rebsorten -->
+        <value>Rebsorte (weiss): Riesling (Q456471)</value>
+        <value>Rebsorte (weiss): Müller-Thurgau / Rivaner (Q681670)</value>
+        <value>Rebsorte (weiss): Sauvignon Blanc</value>
+        <value>Rebsorte (weiss): Elbling</value>
+        <value>Rebsorte (weiss): Grauburgunder</value>
+        <value>Rebsorte (weiss): Chardonnay</value>
+        <value>Rebsorte (weiss): Auxerrois</value>
+        <value>Rebsorte (weiss): Weißburgunder</value>
+        <value>Rebsorte (weiss): other</value>
+        <value>Rebsorte (rot): Spätburgunder</value>
+        <value>Rebsorte (rot): other</value>
+        <!-- Weinfarbe (wine color) -->
+        <value>Weinfarbe: Rotwein</value>
+        <value>Weinfarbe: Weisswein</value>
+        <value>Weinfarbe: Rosé/Rotling</value>
+        <value>Weinfarbe: other</value>
+        <!-- Weingeschmack (wine taste) -->
+        <value>Geschmack: dry (trocken)</value>
+        <value>Geschmack: semi-dry (halbtrocken / feinherb)</value>
+        <value>Geschmack: semi-sweet (lieblich)</value>
+        <value>Geschmack: sweet (süß)</value>
+        <value>Geschmack: other</value>
+        <!-- Weinlagerung oder -ausbau (wine aging) -->
+        <value>WineAging: Barrique-Ausbau</value>
+        <value>WineAging: Flaschengärung</value>
+        <!-- Weinqualität (wine quality) -->
+        <value>Weinqualität: Prädikatswein</value>
+        <value>Weinqualität: Tafelwein/Wein</value>
+        <value>Weinqualität: Landwein</value>
+        <value>Weinqualität: Qualitätswein</value>
+        <value>other</value>
+        <!-- Traubenqualität (quality of the grapes) -->
+        <value>Traubenqualität: Kabinett</value>
+        <value>Traubenqualität: Spätlese</value>
+        <value>Traubenqualität: Auslese</value>
+        <value>Traubenqualität: Beerenauslese</value>
+        <value>Traubenqualität: Trockenbeerenauslese</value>
+        <value>Traubenqualität: Eiswein</value>
+        <value>Traubenqualität: other</value>
+        <!-- Agent: Weingut -->
+        <value>Weingut: Weingut Maximin Grünhaus (Q2556072)</value>
+        <value>Weingut: #### (Q)</value>
+        <!-- Agent: Vertrieb -->
+        <value>Vertrieb: Karl Ziegler</value>
         <text />
-        <value>RegNr:</value>
-        <value>Wikidata:</value>
-        <value>GND:</value>
-        <value>enwiki:</value>
-        <value>dewiki:</value>
-        <value>frwiki:</value>
       </choice>
     </attribute>
   </define>
@@ -57,6 +228,11 @@
       </choice>
     </attribute>
   </define>
+  <!--
+  ========================================
+  ======        METADATEN            =====
+  ========================================  
+  -->
   <define name="metadata">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">One of two mandatory top-level elements. Contains metadata related to the label description itself.</a:documentation>
     <element>
@@ -201,7 +377,9 @@
     </attribute>
   </define>
   <!--
-  === LABEL === 
+  ========================================
+  ======        LABEL                =====
+  ========================================  
   -->
   <define name="labelGroup">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A container element to group physically separate labels belonging to one bottle. A label group must have at least one label, but can contain several labels. (If only one label is present, it is recommended not to use labelGroup.)</a:documentation>
@@ -274,6 +452,11 @@
       </choice>
     </attribute>
   </define>
+  <!--
+  ========================================
+  ======        PHYSICAL             =====
+  ========================================  
+  -->
   <define name="physical">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information regarding the physical aspects of the label, in particular shape, size and material.</a:documentation>
     <element>
@@ -301,6 +484,7 @@
         <value>octogon</value>
         <value>circular</value>
         <value>ellipsoid</value>
+        <value>polygon</value>
         <value>other</value>
       </choice>
     </attribute>
@@ -316,7 +500,7 @@
     </attribute>
   </define>
   <define name="sizeV">
-  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The width of the label measured in millimeters. (This attribute is mandatory, but can also take the value "tbc" if the size data is not available.)</a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The width of the label measured in millimeters. (This attribute is mandatory, but can also take the value "tbc" if the size data is not available.)</a:documentation>
     <attribute>
       <name ns="">sizeV</name>
       <choice>
@@ -350,6 +534,11 @@
       </choice>
     </attribute>
   </define>
+  <!--
+  ========================================
+  ======        VISUAL               =====
+  ========================================  
+  -->
   <define name="visual">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Any visual and non-textual or non-linguistic elements discernible on the label.</a:documentation>
     <element>
@@ -531,119 +720,19 @@
     <a:documentation>(figure item) A visual element or depicted object that can be identified in the figure.</a:documentation>
     <element>
       <name ns="">figureItem</name>
-      <ref name="itemData" />
+      <optional>
+        <ref name="norm" />
+      </optional>
       <optional>
         <ref name="ID" />
       </optional>
     </element>
   </define>
-  <define name="itemData">
-    <a:documentation>(item data) This attribute provides a fixed vocabulary, in German only, with a very broad category system (Artefakte, Fauna, Flora, Gebäude, Landschaft, Personen, Sonstiges) and a Wikidata identifier in brackets, to name the figure item. (No text content is allowed here. If there is text on a coat of arms or a banderole, it needs to be added under the heading 'textual'.)</a:documentation>
-    <attribute>
-      <name ns="">itemData</name>
-      <choice>
-        <value>Banderole (Artefakte;Q2689628)</value>
-        <value>Artefakte: Banderole (Q2689628)</value>
-        <value>Becher (Artefakte;Q81727)</value>
-        <value>Brezel (Artefakte;Q160525)</value>
-        <value>Boot (Artefakte;Q35872)</value>
-        <value>Globus (Artefakte;Q133792)</value>
-        <value>Gemälde (Artefakte;Q3305213)</value>
-        <value>Fahrzeug (Artefakte;Q42889)</value>
-        <value>Harfe (Artefakte;Q47369)</value>
-        <value>Harpune (Artefakte;Q207574)</value>
-        <value>Helm (Artefakte;Q910873)</value>
-        <value>Hut (Artefakte;Q80151)</value>
-        <value>Krone (Artefakte;Q170984)</value>
-        <value>Krug (Artefakte;Q766983)</value>
-        <value>Medaille (Artefakte;Q131647)</value>
-        <value>Musikinstrument (Artefakte;Q)</value>
-        <value>Ornament (Artefakte;Q335261)</value>
-        <value>Pfeil (Artefakte;Q45922)</value>
-        <value>Rad (Artefakte;Q446)</value>
-        <value>Säule (Artefakte;Q4817)</value>
-        <value>Schiff (Artefakte;Q11446)</value>
-        <value>Siegel (Artefakte;Q162919)</value>
-        <value>Schild (Artefakte;Q131559)</value>
-        <value>Schlüssel (Artefakte;Q132041)</value>
-        <value>Schwert (Artefakte;Q12791)</value>
-        <value>Sockel/Podest (Artefakte;Q12014132)</value>
-        <value>Stoff (Artefakte;Q5849500)</value>
-        <value>Vase (Artefakte;Q191851)</value>
-        <value>Wage (Artefakte;Q134566)</value>
-        <value>Wappen (Artefakte;Q14659)</value>
-        <value>Weinglas (Artefakte;Q1531435)</value>
-        <value>Weinflasche (Artefakte;Q23490)</value>
-        <value>Weinfass (Artefakte;Q10289)</value>
-        <value>Adler (Fauna;Q2092297)</value>
-        <value>Bär (Fauna;Q30090244)</value>
-        <value>Feder (Fauna;Q81025)</value>
-        <value>Flügel (Fauna;Q161358)</value>
-        <value>Hund (Fauna;Q144)</value>
-        <value>Katze (Fauna;Q146)</value>
-        <value>Fauna: Katze (Q146)</value>
-        <value>Löwe (Fauna;Q140)</value>
-        <value>Pferd (Fauna;Q726)</value>
-        <value>Ochse (Fauna;Q473194)</value>
-        <value>Reh/Hirsch (Fauna;Q29838690)</value>
-        <value>Schaf (Fauna;Q7368)</value>
-        <value>Spinne (Fauna;Q1357)</value>
-        <value>Vogel (Fauna;Q5113)</value>
-        <value>Baum (Flora;Q10884)</value>
-        <value>Blume (Flora;Q886167)</value>
-        <value>Blüte (Flora;Q506)</value>
-        <value>Pflanze (Flora;Q756)</value>
-        <value>Weintraube (Flora;Q10978)</value>
-        <value>Weinblätter (Flora;Q33971)</value>
-        <value>Weinstock (Flora;Q2135068)</value>
-        <value>Wurzel (Flora;Q41500)</value>
-        <value>Burg (Bauwerke;Q23413)</value>
-        <value>Brücke (Bauwerke;Q12280)</value>
-        <value>Dock (Bauwerke;Q124282)</value>
-        <value>Dorf (Bauwerke;Q532)</value>
-        <value>Gebäude (Bauwerke;Q41176)</value>
-        <value>Fenster (Bauwerke;Q35473)</value>
-        <value>Interieur (Bauwerke;Q2998430)</value>
-        <value>Keller (Bauwerke;Q43275450)</value>
-        <value>Kirchengebäude (Bauwerke;Q16970)</value>
-        <value>Mauer (Bauwerke;Q42948)</value>
-        <value>Stadt (Bauwerke;Q532)</value>
-        <value>Straße (Bauwerke;Q34442)</value>
-        <value>Tor/Türe (Bauwerke;Q36794)</value>
-        <value>Treppe (Bauwerke;Q12511)</value>
-        <value>Turm (Bauwerke;Q12518)</value>
-        <value>Zaun (Bauwerke;Q148571)</value>
-        <value>Ufer (Landschaft;Q468756)</value>
-        <value>Fluss (Landschaft;Q4022)</value>
-        <value>Hügel (Landschaft;Q54050)</value>
-        <value>Weinberg (Landschaft;Q22715)</value>
-        <value>Mann (Personen;Q8441)</value>
-        <value>Frau (Personen;Q467)</value>
-        <value>Kind (Personen;Q7569)</value>
-        <value>Mensch (Personen;Q5)</value>
-        <value>Personengruppe (Personen;Q16334295)</value>
-        <value>Ritter (Sonstiges;Q102083)</value>
-        <value>Satyr (Sonstiges;Q163709)</value>
-        <value>Engel (Sonstiges;Q235113)</value>
-        <value>Drache (Sonstiges;Q7559)</value>
-        <value>Stern (Sonstiges;Q523)</value>
-        <value>Mond (Sonstiges;Q405)</value>
-        <value>Sonne (Sonstiges;Q525)</value>
-        <value>Trichter (Artefakte; Q29957)</value>
-        <value>Lampe, inkl. Laterne (Artefakte;Q1138737)</value>    
-        <value>Stiefel (Artefakte;Q190868)</value>
-        <value>Siegel (Artefakte;Q162919)</value>
-        <value>Stempel (Artefakte;Q57305415)</value>
-        <value>Schnur (Artefakte;Q31029)</value>
-        <value>Hase (Fauna;Q46076)</value>
-        <value>Etikett (Artefakte;Q722218)</value>
-        <value>Minnesänger (Person;Q841192)</value>
-        <value>Gitarre, inkl. Mandoline (Artefakt;Q6607)</value>
-        <value>Kostüm, inkl. Tracht (Artefakte;Q1410477)</value>
-        <text />
-      </choice>
-    </attribute>
-  </define>
+  <!--
+  ===========================
+  ===== FONT ATTRIBUTES =====
+  ===========================
+  -->
   <define name="fontAttributes">
     <optional>
       <attribute>
@@ -719,9 +808,9 @@
     </optional>
   </define>
   <!--
-  ===============
-  === TEXTUAL ===
-  ===============
+  =====================
+  =====  TEXTUAL  =====
+  =====================
   -->
   <define name="textual">
     <element>
@@ -795,18 +884,14 @@
     <element>
       <name ns="">wineMillesime</name>
       <text />
-      <ref name="wineMillesimeNorm" />
+      <optional>
+        <ref name="norm" />
+      </optional>
+      <optional>
+        <ref name="ID" />
+      </optional>
       <ref name="fontAttributes" />
-        <optional>
-          <ref name="ID" />
-        </optional>
     </element>
-  </define>
-  <define name="wineMillesimeNorm">
-    <attribute>
-      <name ns="">wineMillesimeNorm</name>
-      <data type="int" />
-    </attribute>
   </define>
   <define name="wineName">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name of the wine. Typically printed in a somewhat larger font size than other information. For historical wine labels of the Mosel region, the wine name is typically composed of a location  (Ort, Gemeinde, Leitgemeinde) and the name or nickname of the specific vineyard belonging to that location. Note that the element 'wineName' has, as a consequence, an empty child element 'location' that can appear more than once and may hold information about the location and the vineyard separately.</a:documentation>
@@ -835,10 +920,7 @@
         <ref name="wineNameType" />
       </optional>
       <optional>
-        <ref name="wineNameNorm" />
-      </optional>
-      <optional>
-        <ref name="ref" />
+        <ref name="norm" />
       </optional>
       <optional>
         <ref name="uri" />
@@ -873,119 +955,58 @@
       </choice>
     </attribute>
   </define>
-  <define name="wineNameNorm">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name of the wine in normalized form.</a:documentation>
-    <attribute>
-      <name ns="">wineNameNorm</name>
-      <text />
-    </attribute>
-  </define>
   <define name="wineColor">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The color of the name as mentioned on the label.</a:documentation>
     <element>
       <name ns="">wineColor</name>
       <text />
-      <ref name="wineColorNorm" />
       <optional>
-        <ref name="ref" />
+        <ref name="norm" />
       </optional>
       <optional>
         <ref name="wdw" />
       </optional>
       <ref name="fontAttributes" />
     </element>
-  </define>
-  <define name="wineColorNorm">
-    <attribute>
-      <name ns="">wineColorNorm</name>
-      <choice>
-        <value>red (Rotwein)</value>
-        <value>white (Weisswein)</value>
-        <value>rose (Rosé/Rotling)</value>
-        <value>other</value>
-      </choice>
-    </attribute>
   </define>
   <define name="wineGrapes">
     <element>
       <name ns="">wineGrapes</name>
       <text />
-      <ref name="wineGrapesNorm" />
       <optional>
-        <ref name="ref" />
+        <ref name="norm" />
       </optional>
       <optional>
         <ref name="wdw" />
       </optional>
       <ref name="fontAttributes" />
     </element>
-  </define>
-  <define name="wineGrapesNorm">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indication of the grape variety, with a normalized German name and, in brackets, the color of the grape and the Wikidata identifier.</a:documentation>
-    <attribute>
-      <name ns="">wineGrapesNorm</name>
-      <choice>
-        <value>Riesling (weiss;Q456471)</value>
-        <value>Müller-Thurgau / Rivaner (weiss;Q681670)</value>
-        <value>Elbling</value>
-        <value>Spätburgunder</value>
-        <value>Grauburgunder</value>
-        <value>Chardonnay</value>
-        <value>Auxerrois</value>
-        <value>Weißburgunder</value>
-        <value>other</value>
-        <text />
-      </choice>
-    </attribute>
   </define>
   <define name="wineTaste">
     <element>
       <name ns="">wineTaste</name>
       <text />
-      <ref name="wineTasteNorm" />
       <optional>
-        <ref name="ref" />
+        <ref name="norm" />
       </optional>
       <optional>
         <ref name="wdw" />
       </optional>
       <ref name="fontAttributes" />
     </element>
-  </define>
-  <define name="wineTasteNorm">
-    <attribute>
-      <name ns="">tasteGroupNorm</name>
-      <choice>
-        <value>dry (trocken)</value>
-        <value>semi-dry (halbtrocken feinherb)</value>
-        <value>semi-sweet (lieblich)</value>
-        <value>sweet (süß)</value>
-        <value>other</value>
-      </choice>
-    </attribute>
   </define>
   <define name="wineAging">
     <element>
       <name ns="">wineAging</name>
       <text />
-      <ref name="wineAgingNorm" />
       <optional>
-        <ref name="ref" />
+        <ref name="norm" />
       </optional>
       <optional>
         <ref name="wdw" />
       </optional>
       <ref name="fontAttributes" />
     </element>
-  </define>
-  <define name="wineAgingNorm">
-    <attribute>
-      <name ns="">wineAgingNorm</name>
-      <choice>
-        <value>barrique</value>
-        <value>other</value>
-      </choice>
-    </attribute>
   </define>
   <define name="wineOther">
     <element>
@@ -995,7 +1016,7 @@
         <ref name="wineOtherType" />
       </optional>
       <optional>
-        <ref name="ref" />
+        <ref name="norm" />
       </optional>
       <ref name="fontAttributes" />
     </element>
@@ -1025,30 +1046,13 @@
       <name ns="">qualityGrapes</name>
       <text />
       <optional>
-        <ref name="ref" />
+        <ref name="norm" />
       </optional>
       <optional>
         <ref name="wdw" />
       </optional>
-      <optional>
-        <ref name="qualityGrapesNorm" />
-      </optional>
       <ref name="fontAttributes" />
     </element>
-  </define>
-  <define name="qualityGrapesNorm">
-    <attribute>
-      <name ns="">qualityGrapesNorm</name>
-      <choice>
-        <value>Kabinett</value>
-        <value>Spätlese</value>
-        <value>Auslese</value>
-        <value>Beerenauslese</value>
-        <value>Trockenbeerenauslese</value>
-        <value>Eiswein</value>
-        <value>other</value>
-      </choice>
-    </attribute>
   </define>
   <define name="qualityLevel">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indications referring to the official quality level of the wine, like "Qualitätswein" or "Prädikatswein".</a:documentation>
@@ -1056,28 +1060,13 @@
       <name ns="">qualityLevel</name>
       <text />
       <optional>
-        <ref name="ref" />
+        <ref name="norm" />
       </optional>
       <optional>
         <ref name="wdw" />
       </optional>
-      <optional>
-        <ref name="qualityLevelNorm" />
-      </optional>
       <ref name="fontAttributes" />
     </element>
-  </define>
-  <define name="qualityLevelNorm">
-    <attribute>
-      <name ns="">qualityLevelNorm</name>
-      <choice>
-        <value>Tafelwein/Wein</value>
-        <value>Landwein</value>
-        <value>Qualitätswein</value>
-        <value>Prädikatswein</value>
-        <value>other</value>
-      </choice>
-    </attribute>
   </define>
   <define name="qualityAward">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indications referring to an award obtained by the wine.</a:documentation>
@@ -1085,7 +1074,7 @@
       <name ns="">qualityAward</name>
       <text />
       <optional>
-        <ref name="ref" />
+        <ref name="norm" />
       </optional>
       <optional>
         <ref name="wdw" />
@@ -1111,7 +1100,7 @@
       <name ns="">qualityLabel</name>
       <text />
       <optional>
-        <ref name="ref" />
+        <ref name="norm" />
       </optional>
       <optional>
         <ref name="wdw" />
@@ -1138,7 +1127,7 @@
       <name ns="">qualityProduction</name>
       <text />
       <optional>
-        <ref name="ref" />
+        <ref name="norm" />
       </optional>
       <optional>
         <ref name="wdw" />
@@ -1166,7 +1155,7 @@
         <ref name="wdw" />
       </optional>
       <optional>
-        <ref name="ref" />
+        <ref name="norm" />
       </optional>
       <ref name="fontAttributes" />
     </element>
@@ -1180,30 +1169,18 @@
       <ref name="agentRole" />
       </optional>
       <optional>
-        <ref name="agentNorm" />
-      </optional>
-      <optional>
-        <ref name="ref" />
+        <ref name="norm" />
       </optional>
       <optional>
         <ref name="uri" />
       </optional>
-      <ref name="fontAttributes" />
+      <optional>
+        <ref name="fontAttributes" />
+      </optional>
        <optional>
         <ref name="ID" />
       </optional>
    </element>
-  </define>
-  <define name="agentNorm">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The normalized form of the agent's name, together with a category and a Wikidata identifier in brackets.</a:documentation>
-    <attribute>
-      <name ns="">agentNorm</name>
-      <choice>
-        <value>Weingut Maximin Grünhaus (Weingut;Q2556072)</value>
-        <value>Name (Q)</value>
-        <text/>
-      </choice>
-    </attribute>
   </define>
   <define name="agentRole">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The particular role of the agent, as far as it can be determined from the label itself or from contextual information. (TODO: authority data and definitions for these roles.)</a:documentation>
@@ -1242,7 +1219,7 @@
         <ref name="figureNum" />
       </optional>
       <optional>
-        <ref name="ref" />
+        <ref name="norm" />
       </optional>
       <optional>
         <ref name="uri" />
@@ -1359,7 +1336,7 @@
       <name ns="">controlNumber</name>
       <text />
       <optional>
-        <ref name="ref" />
+        <ref name="norm" />
       </optional>
       <optional>
         <ref name="controlNumberType" />
