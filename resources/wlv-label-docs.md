@@ -97,9 +97,9 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 
 ### Quicklinks
 
-**Elements**: [agent](#agent), [alcohol](#alcohol), [background](#background), [barrelNumber](#barrelNumber), [collection](#collection), [collectionContext](#collectionContext), [comments](#comments), [conservation](#conservation), [controlNumber](#controlNumber), [curation](#curation), [dating](#dating), [figure](#figure), [figureItem](#figureItem), [frame](#frame), [label](#label), [labelGroup](#labelGroup), [labelNumber](#labelNumber), [licence](#licence), [location](#location), [metadata](#metadata), [otherText](#otherText), [physical](#physical), [provenance](#provenance), [qualityAward](#qualityAward), [qualityGrapes](#qualityGrapes), [qualityHistorical](#qualityHistorical), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [qualityProduction](#qualityProduction), [scan](#scan), [source](#source), [textual](#textual), [visual](#visual), [volume](#volume), [wineAging](#wineAging), [wineColor](#wineColor), [wineGrapes](#wineGrapes), [wineMillesime](#wineMillesime), [wineName](#wineName), [wineOther](#wineOther), [wineTaste](#wineTaste), [wlv](#wlv)
+**Elements**: [agent](#agent), [alcohol](#alcohol), [background](#background), [barrelNumber](#barrelNumber), [collection](#collection), [collectionContext](#collectionContext), [comments](#comments), [conservation](#conservation), [controlNumber](#controlNumber), [curation](#curation), [dating](#dating), [figure](#figure), [figureItem](#figureItem), [frame](#frame), [label](#label), [labelGroup](#labelGroup), [labelNumber](#labelNumber), [licence](#licence), [location](#location), [metadata](#metadata), [otherText](#otherText), [physical](#physical), [provenance](#provenance), [qualityAward](#qualityAward), [qualityGrapes](#qualityGrapes), [qualityHistorical](#qualityHistorical), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [qualityProduction](#qualityProduction), [relation](#relation), [relations](#relations), [scan](#scan), [source](#source), [textual](#textual), [visual](#visual), [volume](#volume), [wineAging](#wineAging), [wineColor](#wineColor), [wineGrapes](#wineGrapes), [wineMillesime](#wineMillesime), [wineName](#wineName), [wineOther](#wineOther), [wineTaste](#wineTaste), [wlv](#wlv)
 
-**Attributes**: [agentRole](#agentRole), [alcoholNorm](#alcoholNorm), [backgroundColor](#backgroundColor), [backgroundStyle](#backgroundStyle), [certainty](#certainty), [collectionID](#collectionID), [conservationNorm](#conservationNorm), [controlNumberType](#controlNumberType), [curationDate](#curationDate), [curationUpdate](#curationUpdate), [curatorID](#curatorID), [figureNum](#figureNum), [figurePosition](#figurePosition), [figureType](#figureType), [fontColor](#fontColor), [fontInitials](#fontInitials), [fontManner](#fontManner), [fontSize](#fontSize), [fontStyle](#fontStyle), [fontType](#fontType), [frameColor](#frameColor), [frameStyle](#frameStyle), [frameType](#frameType), [itemData](#itemData), [labelID](#labelID), [labelPosition](#labelPosition), [labelType](#labelType), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [locationRole](#locationRole), [locationType](#locationType), [material](#material), [notAfter](#notAfter), [notBefore](#notBefore), [pageID](#pageID), [printingTechnique](#printingTechnique), [qualityAwardNorm](#qualityAwardNorm), [qualityGrapesNorm](#qualityGrapesNorm), [qualityLabelType](#qualityLabelType), [qualityLevelNorm](#qualityLevelNorm), [qualityProductionNorm](#qualityProductionNorm), [ref](#ref), [scanID](#scanID), [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [tasteGroupNorm](#tasteGroupNorm), [textPosition](#textPosition), [textType](#textType), [uri](#uri), [volumeNorm](#volumeNorm), [wdw](#wdw), [wineAgingNorm](#wineAgingNorm), [wineColorNorm](#wineColorNorm), [wineGrapesNorm](#wineGrapesNorm), [wineMillesimeNorm](#wineMillesimeNorm), [wineNameNorm](#wineNameNorm), [wineNameType](#wineNameType), [wineOtherType](#wineOtherType), [year](#year)
+**Attributes**: [ID](#ID), [agentNorm](#agentNorm), [agentRole](#agentRole), [alcoholNorm](#alcoholNorm), [backgroundColor](#backgroundColor), [backgroundStyle](#backgroundStyle), [certainty](#certainty), [collectionID](#collectionID), [conservationNorm](#conservationNorm), [controlNumberType](#controlNumberType), [curationDate](#curationDate), [curationUpdate](#curationUpdate), [curatorID](#curatorID), [figureNum](#figureNum), [figurePosition](#figurePosition), [figureType](#figureType), [fontColor](#fontColor), [fontInitials](#fontInitials), [fontManner](#fontManner), [fontSize](#fontSize), [fontStyle](#fontStyle), [fontType](#fontType), [frameColor](#frameColor), [frameStyle](#frameStyle), [frameType](#frameType), [itemData](#itemData), [labelID](#labelID), [labelPosition](#labelPosition), [labelType](#labelType), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [locationRole](#locationRole), [locationType](#locationType), [material](#material), [notAfter](#notAfter), [notBefore](#notBefore), [pageID](#pageID), [printingTechnique](#printingTechnique), [qualityAwardNorm](#qualityAwardNorm), [qualityGrapesNorm](#qualityGrapesNorm), [qualityLabelType](#qualityLabelType), [qualityLevelNorm](#qualityLevelNorm), [qualityProductionNorm](#qualityProductionNorm), [ref](#ref), [relItems](#relItems), [relType](#relType), [scanID](#scanID), [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [tasteGroupNorm](#tasteGroupNorm), [textPosition](#textPosition), [textType](#textType), [uri](#uri), [volumeNorm](#volumeNorm), [wdw](#wdw), [wineAgingNorm](#wineAgingNorm), [wineColorNorm](#wineColorNorm), [wineGrapesNorm](#wineGrapesNorm), [wineMillesimeNorm](#wineMillesimeNorm), [wineNameNorm](#wineNameNorm), [wineNameType](#wineNameType), [wineOtherType](#wineOtherType), [year](#year)
 
 ### Elements
 #### agent
@@ -108,9 +108,9 @@ Any agent, whether a person (like a wine-maker or trader) or an organization (li
 
 - Status: Optional.
 - Frequency: Zero, once or several times.
-- Contained by element(s): [textual](#textual).
+- Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
-- Has attribute(s): [agentRole](#agentRole), [ref](#ref), [uri](#uri).
+- Has attribute(s): [agentRole](#agentRole), [agentNorm](#agentNorm), [ref](#ref), [uri](#uri), [ID](#ID).
 
 #### alcohol
 
@@ -220,7 +220,7 @@ Information regarding the supposed time of production of the label (especially r
 - Frequency: Zero, once or several times.
 - Contained by element(s): [visual](#visual).
 - Contains element(s): [figureItem](#figureItem).
-- Has attribute(s): [figureNum](#figureNum), [figureType](#figureType), [figurePosition](#figurePosition).
+- Has attribute(s): [figureNum](#figureNum), [figureType](#figureType), [figurePosition](#figurePosition), [ID](#ID).
 
 #### figureItem
 
@@ -230,7 +230,7 @@ Information regarding the supposed time of production of the label (especially r
 - Frequency: Zero, once or several times.
 - Contained by element(s): [figure](#figure).
 - Contains element(s): This element has no children.
-- Has attribute(s): [itemData](#itemData).
+- Has attribute(s): [itemData](#itemData), [ID](#ID).
 
 #### frame
 
@@ -249,7 +249,7 @@ Information about the frame of the label.
 - Status: Optional.
 - Frequency: Once at most.
 - Contained by element(s): [wlv](#wlv), [labelGroup](#labelGroup).
-- Contains element(s): [physical](#physical), [visual](#visual), [textual](#textual), [comments](#comments), [provenance](#provenance).
+- Contains element(s): [physical](#physical), [visual](#visual), [textual](#textual), [relations](#relations), [comments](#comments), [provenance](#provenance).
 - Has attribute(s): [labelPosition](#labelPosition).
 
 #### labelGroup
@@ -290,7 +290,7 @@ Any location, such as the name of a region, city, village, or vineyard mentioned
 - Frequency: Zero, once or several times.
 - Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
-- Has attribute(s): [locationType](#locationType), [locationRole](#locationRole), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [figureNum](#figureNum), [ref](#ref), [uri](#uri).
+- Has attribute(s): [locationType](#locationType), [locationRole](#locationRole), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [figureNum](#figureNum), [ref](#ref), [uri](#uri), [ID](#ID).
 
 #### metadata
 
@@ -392,6 +392,26 @@ Any information describing specific steps in or aspects of the production of the
 - Contains element(s): This element has no children.
 - Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityProductionNorm](#qualityProductionNorm).
 
+#### relation
+
+(no data)
+
+- Status: Mandatory.
+- Frequency: Exactly once.
+- Contained by element(s): [relations](#relations).
+- Contains element(s): This element has no children.
+- Has attribute(s): [relType](#relType), [relItems](#relItems), [ID](#ID).
+
+#### relations
+
+(no data)
+
+- Status: Optional.
+- Frequency: Once at most.
+- Contained by element(s): [label](#label).
+- Contains element(s): [relation](#relation).
+- Has attribute(s): This element has no attributes.
+
 #### scan
 
 (no data)
@@ -480,7 +500,7 @@ The year that the wine was harvested in.
 - Frequency: Once at most.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [wineMillesimeNorm](#wineMillesimeNorm).
+- Has attribute(s): [wineMillesimeNorm](#wineMillesimeNorm), [ID](#ID).
 
 #### wineName
 
@@ -489,8 +509,8 @@ The name of the wine. Typically printed in a somewhat larger font size than othe
 - Status: Optional.
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
-- Contains element(s): [location](#location), [qualityGrapes](#qualityGrapes), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [wineGrapes](#wineGrapes).
-- Has attribute(s): [wineNameType](#wineNameType), [wineNameNorm](#wineNameNorm), [ref](#ref), [uri](#uri), [wdw](#wdw).
+- Contains element(s): [agent](#agent), [location](#location), [qualityGrapes](#qualityGrapes), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [wineGrapes](#wineGrapes).
+- Has attribute(s): [wineNameType](#wineNameType), [wineNameNorm](#wineNameNorm), [ref](#ref), [uri](#uri), [wdw](#wdw), [ID](#ID).
 
 #### wineOther
 
@@ -525,10 +545,31 @@ The root element in a label description using the Wine Label Vocabulary.
 ### Attributes
 
 
+#### ID
+(no data)
+
+- Status: Optional.
+- Contained by element: 
+    * [figure](#figure)
+    * [figureItem](#figureItem)
+    * [wineMillesime](#wineMillesime)
+    * [wineName](#wineName)
+    * [agent](#agent)
+    * [location](#location)
+    * [relation](#relation).
+- Possible values: This element has no default values.
+
+#### agentNorm
+The normalized form of the agent's name, together with a category and a Wikidata identifier in brackets.
+
+- Status: Optional.
+- Contained by element: [agent](#agent).
+- Possible values: Weingut Maximin Grünhaus (Weingut;Q2556072), Name (Q).
+
 #### agentRole
 The particular role of the agent, as far as it can be determined from the label itself or from contextual information. (TODO: authority data and definitions for these roles.)
 
-- Status: Mandatory.
+- Status: Optional.
 - Contained by element: [agent](#agent).
 - Possible values: 
     * cultivation / Anbau
@@ -900,11 +941,24 @@ The scope of the licence: The part or aspect of the label or label description t
     * textual.
 
 #### locationNorm
-The name of the location in a normalized form.
+The name of the location in a normalized form, with its type, and (if available) with authority data (Wikidata ID and/or Reg-Nr.).
 
 - Status: Optional.
 - Contained by element: [location](#location).
-- Possible values: This element has no default values.
+- Possible values: 
+    * Bernkastel-Kues (Leitgemeinde;Q643228)
+    * Brauneberg (Leitgemeinde;Q567156)
+    * Wiltingen (Leitgemeinde;Q161930)
+    * Winningen (Leitgemeinde;Q822358)
+    * Zell (Leitgemeinde;Q187500)
+    * Filzen (Ort;Q47087896)
+    * Freudenberg am Main (Ort;Q61827)
+    * Graach (Ort;Q648808)
+    * Ober-Ingelheim (Ort;Q2008825)
+    * Trittenheim (Ort;Q662479)
+    * Schwarze Katz (Großlage;Q2253665)
+    * Vollmühle (Parzelle)
+    * other.
 
 #### locationRegNr
 The numerical identifier of a vineyard contained in the official "Lagenliste".
@@ -931,7 +985,7 @@ The role of the location.
 #### locationType
 The type of the location, in particular with respect to the broader or narrower geographical scope. (Note that when this is part of the wine name, it is correlated, in German wine law, with quality levels.)
 
-- Status: Mandatory.
+- Status: Optional.
 - Contained by element: [location](#location).
 - Possible values: 
     * country / Land
@@ -1061,6 +1115,20 @@ The technical printing process used for printing the visual and/or textual infor
     * dewiki:
     * frwiki:.
 
+#### relItems
+(no data)
+
+- Status: Mandatory.
+- Contained by element: [relation](#relation).
+- Possible values: This element has no default values.
+
+#### relType
+(no data)
+
+- Status: Mandatory.
+- Contained by element: [relation](#relation).
+- Possible values: equivalence, similarity, contrast, other.
+
 #### scanID
 (no data)
 
@@ -1180,13 +1248,13 @@ The indication of the volume of wine, expressed as a number (integer of millilit
 - Possible values: red (Rotwein), white (Weisswein), rose (Rosé/Rotling), other.
 
 #### wineGrapesNorm
-(no data)
+Indication of the grape variety, with a normalized German name and, in brackets, the color of the grape and the Wikidata identifier.
 
 - Status: Mandatory.
 - Contained by element: [wineGrapes](#wineGrapes).
 - Possible values: 
-    * Riesling
-    * Müller-Thurgau/Rivaner
+    * Riesling (weiss;Q456471)
+    * Müller-Thurgau / Rivaner (weiss;Q681670)
     * Elbling
     * Spätburgunder
     * Grauburgunder
@@ -1212,7 +1280,7 @@ The name of the wine in normalized form.
 #### wineNameType
 (no data)
 
-- Status: Mandatory.
+- Status: Optional.
 - Contained by element: [wineName](#wineName).
 - Possible values: 
     * country / Land

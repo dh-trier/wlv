@@ -317,9 +317,9 @@ def main():
     """
     Coordinates the process.
     """
-    mdfile = join("wlv-introduction.md")
-    rngfile = join("wlv-label-schema.rng")
-    docsfile = join("wlv-label-docs.md")
+    mdfile = join("schemas", "wlv-introduction.md")
+    rngfile = join("schemas", "wlv-label-schema.rng")
+    docsfile = join("schemas", "wlv-label-docs.md")
     ns = {'rng':'http://relaxng.org/ns/structure/1.0',
           'a':'http://relaxng.org/ns/compatibility/annotations/1.0'}
     rng = open_file(rngfile) 
