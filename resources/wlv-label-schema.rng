@@ -543,6 +543,7 @@
       <name ns="">itemData</name>
       <choice>
         <value>Banderole (Artefakte;Q2689628)</value>
+        <value>Artefakte: Banderole (Q2689628)</value>
         <value>Becher (Artefakte;Q81727)</value>
         <value>Brezel (Artefakte;Q160525)</value>
         <value>Boot (Artefakte;Q35872)</value>
@@ -580,6 +581,7 @@
         <value>Flügel (Fauna;Q161358)</value>
         <value>Hund (Fauna;Q144)</value>
         <value>Katze (Fauna;Q146)</value>
+        <value>Fauna: Katze (Q146)</value>
         <value>Löwe (Fauna;Q140)</value>
         <value>Pferd (Fauna;Q726)</value>
         <value>Ochse (Fauna;Q473194)</value>
@@ -1296,6 +1298,7 @@
         <value>Wiltingen (Leitgemeinde;Q161930)</value>
         <value>Winningen (Leitgemeinde;Q822358)</value>
         <value>Zell (Leitgemeinde;Q187500)</value>
+        <value>Leitgemeinde: Zell (Q187500)</value>
         <!-- Andere Orte -->
         <value>Filzen (Ort;Q47087896)</value>
         <value>Freudenberg am Main (Ort;Q61827)</value>
@@ -1304,6 +1307,7 @@
         <value>Trittenheim (Ort;Q662479)</value>
         <!-- Großlagen / Einzellagen / Parzellen -->
         <value>Schwarze Katz (Großlage;Q2253665)</value>
+        <value>Großlage: Schwarze Katz (Q2253665)</value>
         <value>Vollmühle (Parzelle)</value>
         <value>other</value>
         <text />
