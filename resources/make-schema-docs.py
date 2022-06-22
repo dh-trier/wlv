@@ -152,6 +152,9 @@ def extract_elminfo(rng, elm_names, ns, att_names):
             elif result == "zeroOrMore": 
                 status = "Optional"
                 frequency = "Zero, once or several times"
+            elif result == "oneOrMore": 
+                status = "Mandatory"
+                frequency = "Once or several times"
             #print("1", elm, frequency)
             elements[elm]["status"] = status
             elements[elm]["frequency"] = frequency
@@ -317,9 +320,9 @@ def main():
     """
     Coordinates the process.
     """
-    mdfile = join("schemas", "wlv-introduction.md")
-    rngfile = join("schemas", "wlv-label-schema.rng")
-    docsfile = join("schemas", "wlv-label-docs.md")
+    mdfile = join("resources", "wlv-introduction.md")
+    rngfile = join("resources", "wlv-label-schema.rng")
+    docsfile = join("resources", "wlv-label-docs.md")
     ns = {'rng':'http://relaxng.org/ns/structure/1.0',
           'a':'http://relaxng.org/ns/compatibility/annotations/1.0'}
     rng = open_file(rngfile) 

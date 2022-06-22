@@ -397,7 +397,7 @@ Any information describing specific steps in or aspects of the production of the
 (no data)
 
 - Status: Mandatory.
-- Frequency: Exactly once.
+- Frequency: Once or several times.
 - Contained by element(s): [relations](#relations).
 - Contains element(s): This element has no children.
 - Has attribute(s): [relType](#relType), [relItems](#relItems), [ID](#ID).

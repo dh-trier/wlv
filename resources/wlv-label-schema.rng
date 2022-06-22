@@ -1540,7 +1540,9 @@
   <define name="relations">
     <element>
       <name ns="">relations</name>
-      <ref name="relation" />
+      <oneOrMore>
+        <ref name="relation" />
+      </oneOrMore>
     </element>
   </define>
   <define name="relation">
