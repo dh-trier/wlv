@@ -99,7 +99,7 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 
 **Elements**: [agent](#agent), [alcohol](#alcohol), [background](#background), [barrelNumber](#barrelNumber), [collection](#collection), [collectionContext](#collectionContext), [comments](#comments), [conservation](#conservation), [controlNumber](#controlNumber), [curation](#curation), [dating](#dating), [figure](#figure), [figureItem](#figureItem), [frame](#frame), [label](#label), [labelGroup](#labelGroup), [labelNumber](#labelNumber), [licence](#licence), [location](#location), [metadata](#metadata), [otherText](#otherText), [physical](#physical), [provenance](#provenance), [qualityAward](#qualityAward), [qualityGrapes](#qualityGrapes), [qualityHistorical](#qualityHistorical), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [qualityProduction](#qualityProduction), [relation](#relation), [relations](#relations), [scan](#scan), [source](#source), [textual](#textual), [visual](#visual), [volume](#volume), [wineAging](#wineAging), [wineColor](#wineColor), [wineGrapes](#wineGrapes), [wineMillesime](#wineMillesime), [wineName](#wineName), [wineOther](#wineOther), [wineTaste](#wineTaste), [wlv](#wlv)
 
-**Attributes**: [ID](#ID), [agentNorm](#agentNorm), [agentRole](#agentRole), [alcoholNorm](#alcoholNorm), [backgroundColor](#backgroundColor), [backgroundStyle](#backgroundStyle), [certainty](#certainty), [collectionID](#collectionID), [conservationNorm](#conservationNorm), [controlNumberType](#controlNumberType), [curationDate](#curationDate), [curationUpdate](#curationUpdate), [curatorID](#curatorID), [figureNum](#figureNum), [figurePosition](#figurePosition), [figureType](#figureType), [fontColor](#fontColor), [fontInitials](#fontInitials), [fontManner](#fontManner), [fontSize](#fontSize), [fontStyle](#fontStyle), [fontType](#fontType), [frameColor](#frameColor), [frameStyle](#frameStyle), [frameType](#frameType), [itemData](#itemData), [labelID](#labelID), [labelPosition](#labelPosition), [labelType](#labelType), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [locationRole](#locationRole), [locationType](#locationType), [material](#material), [notAfter](#notAfter), [notBefore](#notBefore), [pageID](#pageID), [printingTechnique](#printingTechnique), [qualityAwardNorm](#qualityAwardNorm), [qualityGrapesNorm](#qualityGrapesNorm), [qualityLabelType](#qualityLabelType), [qualityLevelNorm](#qualityLevelNorm), [qualityProductionNorm](#qualityProductionNorm), [ref](#ref), [relItems](#relItems), [relType](#relType), [scanID](#scanID), [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [tasteGroupNorm](#tasteGroupNorm), [textPosition](#textPosition), [textType](#textType), [uri](#uri), [volumeNorm](#volumeNorm), [wdw](#wdw), [wineAgingNorm](#wineAgingNorm), [wineColorNorm](#wineColorNorm), [wineGrapesNorm](#wineGrapesNorm), [wineMillesimeNorm](#wineMillesimeNorm), [wineNameNorm](#wineNameNorm), [wineNameType](#wineNameType), [wineOtherType](#wineOtherType), [year](#year)
+**Attributes**: [ID](#ID), [agentRole](#agentRole), [alcoholNorm](#alcoholNorm), [backgroundColor](#backgroundColor), [backgroundStyle](#backgroundStyle), [certainty](#certainty), [collectionID](#collectionID), [conservationNorm](#conservationNorm), [controlNumberType](#controlNumberType), [curationDate](#curationDate), [curationUpdate](#curationUpdate), [curatorID](#curatorID), [figureNum](#figureNum), [figurePosition](#figurePosition), [figureType](#figureType), [fontColor](#fontColor), [fontInitials](#fontInitials), [fontManner](#fontManner), [fontSize](#fontSize), [fontStyle](#fontStyle), [fontType](#fontType), [frameColor](#frameColor), [frameStyle](#frameStyle), [frameType](#frameType), [labelID](#labelID), [labelPosition](#labelPosition), [labelType](#labelType), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [locationRole](#locationRole), [locationType](#locationType), [material](#material), [norm](#norm), [notAfter](#notAfter), [notBefore](#notBefore), [pageID](#pageID), [printingTechnique](#printingTechnique), [qualityAwardNorm](#qualityAwardNorm), [qualityLabelType](#qualityLabelType), [qualityProductionNorm](#qualityProductionNorm), [relItems](#relItems), [relType](#relType), [scanID](#scanID), [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [textPosition](#textPosition), [textType](#textType), [uri](#uri), [volumeNorm](#volumeNorm), [wdw](#wdw), [wineNameType](#wineNameType), [wineOtherType](#wineOtherType), [year](#year)
 
 ### Elements
 #### agent
@@ -110,7 +110,7 @@ Any agent, whether a person (like a wine-maker or trader) or an organization (li
 - Frequency: Zero, once or several times.
 - Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
-- Has attribute(s): [agentRole](#agentRole), [agentNorm](#agentNorm), [ref](#ref), [uri](#uri), [ID](#ID).
+- Has attribute(s): [agentRole](#agentRole), [norm](#norm), [uri](#uri), [ID](#ID).
 
 #### alcohol
 
@@ -190,7 +190,7 @@ The control number that is required for more recent labels.
 - Frequency: Once at most.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [ref](#ref), [controlNumberType](#controlNumberType).
+- Has attribute(s): [norm](#norm), [controlNumberType](#controlNumberType).
 
 #### curation
 
@@ -230,7 +230,7 @@ Information regarding the supposed time of production of the label (especially r
 - Frequency: Zero, once or several times.
 - Contained by element(s): [figure](#figure).
 - Contains element(s): This element has no children.
-- Has attribute(s): [itemData](#itemData), [ID](#ID).
+- Has attribute(s): [norm](#norm), [ID](#ID).
 
 #### frame
 
@@ -290,7 +290,7 @@ Any location, such as the name of a region, city, village, or vineyard mentioned
 - Frequency: Zero, once or several times.
 - Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
-- Has attribute(s): [locationType](#locationType), [locationRole](#locationRole), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [figureNum](#figureNum), [ref](#ref), [uri](#uri), [ID](#ID).
+- Has attribute(s): [locationType](#locationType), [locationRole](#locationRole), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [figureNum](#figureNum), [norm](#norm), [uri](#uri), [ID](#ID).
 
 #### metadata
 
@@ -340,7 +340,7 @@ Indications referring to an award obtained by the wine.
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityAwardNorm](#qualityAwardNorm).
+- Has attribute(s): [norm](#norm), [wdw](#wdw), [qualityAwardNorm](#qualityAwardNorm).
 
 #### qualityGrapes
 
@@ -350,7 +350,7 @@ Indications referring to the quality of the grapes, like "Spätlese",  "Auslese"
 - Frequency: Zero, once or several times.
 - Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
-- Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityGrapesNorm](#qualityGrapesNorm).
+- Has attribute(s): [norm](#norm), [wdw](#wdw).
 
 #### qualityHistorical
 
@@ -360,7 +360,7 @@ Indications referring to the quality of the grapes, like "Spätlese",  "Auslese"
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [wdw](#wdw), [ref](#ref).
+- Has attribute(s): [wdw](#wdw), [norm](#norm).
 
 #### qualityLabel
 
@@ -370,7 +370,7 @@ Indications referring to the quality of the grapes, like "Spätlese",  "Auslese"
 - Frequency: Zero, once or several times.
 - Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
-- Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityLabelType](#qualityLabelType).
+- Has attribute(s): [norm](#norm), [wdw](#wdw), [qualityLabelType](#qualityLabelType).
 
 #### qualityLevel
 
@@ -380,7 +380,7 @@ Indications referring to the official quality level of the wine, like "Qualität
 - Frequency: Zero, once or several times.
 - Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
-- Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityLevelNorm](#qualityLevelNorm).
+- Has attribute(s): [norm](#norm), [wdw](#wdw).
 
 #### qualityProduction
 
@@ -390,7 +390,7 @@ Any information describing specific steps in or aspects of the production of the
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [ref](#ref), [wdw](#wdw), [qualityProductionNorm](#qualityProductionNorm).
+- Has attribute(s): [norm](#norm), [wdw](#wdw), [qualityProductionNorm](#qualityProductionNorm).
 
 #### relation
 
@@ -470,7 +470,7 @@ Information regarding the volume of the wine.
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [wineAgingNorm](#wineAgingNorm), [ref](#ref), [wdw](#wdw).
+- Has attribute(s): [norm](#norm), [wdw](#wdw).
 
 #### wineColor
 
@@ -480,7 +480,7 @@ The color of the name as mentioned on the label.
 - Frequency: Zero, once or several times.
 - Contained by element(s): [(no data)](#(no data)).
 - Contains element(s): This element has no children.
-- Has attribute(s): [wineColorNorm](#wineColorNorm), [ref](#ref), [wdw](#wdw).
+- Has attribute(s): [norm](#norm), [wdw](#wdw).
 
 #### wineGrapes
 
@@ -490,7 +490,7 @@ The color of the name as mentioned on the label.
 - Frequency: Zero, once or several times.
 - Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
-- Has attribute(s): [wineGrapesNorm](#wineGrapesNorm), [ref](#ref), [wdw](#wdw).
+- Has attribute(s): [norm](#norm), [wdw](#wdw).
 
 #### wineMillesime
 
@@ -500,7 +500,7 @@ The year that the wine was harvested in.
 - Frequency: Once at most.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [wineMillesimeNorm](#wineMillesimeNorm), [ID](#ID).
+- Has attribute(s): [norm](#norm), [ID](#ID).
 
 #### wineName
 
@@ -510,7 +510,7 @@ The name of the wine. Typically printed in a somewhat larger font size than othe
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): [agent](#agent), [location](#location), [qualityGrapes](#qualityGrapes), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [wineGrapes](#wineGrapes).
-- Has attribute(s): [wineNameType](#wineNameType), [wineNameNorm](#wineNameNorm), [ref](#ref), [uri](#uri), [wdw](#wdw), [ID](#ID).
+- Has attribute(s): [wineNameType](#wineNameType), [norm](#norm), [uri](#uri), [wdw](#wdw), [ID](#ID).
 
 #### wineOther
 
@@ -520,7 +520,7 @@ The name of the wine. Typically printed in a somewhat larger font size than othe
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [wineOtherType](#wineOtherType), [ref](#ref).
+- Has attribute(s): [wineOtherType](#wineOtherType), [norm](#norm).
 
 #### wineTaste
 
@@ -530,7 +530,7 @@ The name of the wine. Typically printed in a somewhat larger font size than othe
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [ref](#ref), [wdw](#wdw).
+- Has attribute(s): [norm](#norm), [wdw](#wdw).
 
 #### wlv
 
@@ -558,13 +558,6 @@ The root element in a label description using the Wine Label Vocabulary.
     * [location](#location)
     * [relation](#relation).
 - Possible values: This element has no default values.
-
-#### agentNorm
-The normalized form of the agent's name, together with a category and a Wikidata identifier in brackets.
-
-- Status: Optional.
-- Contained by element: [agent](#agent).
-- Possible values: Weingut Maximin Grünhaus (Weingut;Q2556072), Name (Q).
 
 #### agentRole
 The particular role of the agent, as far as it can be determined from the label itself or from contextual information. (TODO: authority data and definitions for these roles.)
@@ -784,109 +777,6 @@ The type of frame, defined based on its position relative to other elements of t
 - Contained by element: [frame](#frame).
 - Possible values: outer, inner, other.
 
-#### itemData
-(item data) This attribute provides a fixed vocabulary, in German only, with a very broad category system (Artefakte, Fauna, Flora, Gebäude, Landschaft, Personen, Sonstiges) and a Wikidata identifier in brackets, to name the figure item. (No text content is allowed here. If there is text on a coat of arms or a banderole, it needs to be added under the heading 'textual'.)
-
-- Status: Mandatory.
-- Contained by element: [figureItem](#figureItem).
-- Possible values: 
-    * Banderole (Artefakte;Q2689628)
-    * Becher (Artefakte;Q81727)
-    * Brezel (Artefakte;Q160525)
-    * Boot (Artefakte;Q35872)
-    * Globus (Artefakte;Q133792)
-    * Gemälde (Artefakte;Q3305213)
-    * Fahrzeug (Artefakte;Q42889)
-    * Harfe (Artefakte;Q47369)
-    * Harpune (Artefakte;Q207574)
-    * Helm (Artefakte;Q910873)
-    * Hut (Artefakte;Q80151)
-    * Krone (Artefakte;Q170984)
-    * Krug (Artefakte;Q766983)
-    * Medaille (Artefakte;Q131647)
-    * Musikinstrument (Artefakte;Q)
-    * Ornament (Artefakte;Q335261)
-    * Pfeil (Artefakte;Q45922)
-    * Rad (Artefakte;Q446)
-    * Säule (Artefakte;Q4817)
-    * Schiff (Artefakte;Q11446)
-    * Siegel (Artefakte;Q162919)
-    * Schild (Artefakte;Q131559)
-    * Schlüssel (Artefakte;Q132041)
-    * Schwert (Artefakte;Q12791)
-    * Sockel/Podest (Artefakte;Q12014132)
-    * Stoff (Artefakte;Q5849500)
-    * Vase (Artefakte;Q191851)
-    * Wage (Artefakte;Q134566)
-    * Wappen (Artefakte;Q14659)
-    * Weinglas (Artefakte;Q1531435)
-    * Weinflasche (Artefakte;Q23490)
-    * Weinfass (Artefakte;Q10289)
-    * Adler (Fauna;Q2092297)
-    * Bär (Fauna;Q30090244)
-    * Feder (Fauna;Q81025)
-    * Flügel (Fauna;Q161358)
-    * Hund (Fauna;Q144)
-    * Katze (Fauna;Q146)
-    * Löwe (Fauna;Q140)
-    * Pferd (Fauna;Q726)
-    * Ochse (Fauna;Q473194)
-    * Reh/Hirsch (Fauna;Q29838690)
-    * Schaf (Fauna;Q7368)
-    * Spinne (Fauna;Q1357)
-    * Vogel (Fauna;Q5113)
-    * Baum (Flora;Q10884)
-    * Blume (Flora;Q886167)
-    * Blüte (Flora;Q506)
-    * Pflanze (Flora;Q756)
-    * Weintraube (Flora;Q10978)
-    * Weinblätter (Flora;Q33971)
-    * Weinstock (Flora;Q2135068)
-    * Wurzel (Flora;Q41500)
-    * Burg (Bauwerke;Q23413)
-    * Brücke (Bauwerke;Q12280)
-    * Dock (Bauwerke;Q124282)
-    * Dorf (Bauwerke;Q532)
-    * Gebäude (Bauwerke;Q41176)
-    * Fenster (Bauwerke;Q35473)
-    * Interieur (Bauwerke;Q2998430)
-    * Keller (Bauwerke;Q43275450)
-    * Kirchengebäude (Bauwerke;Q16970)
-    * Mauer (Bauwerke;Q42948)
-    * Stadt (Bauwerke;Q532)
-    * Straße (Bauwerke;Q34442)
-    * Tor/Türe (Bauwerke;Q36794)
-    * Treppe (Bauwerke;Q12511)
-    * Turm (Bauwerke;Q12518)
-    * Zaun (Bauwerke;Q148571)
-    * Ufer (Landschaft;Q468756)
-    * Fluss (Landschaft;Q4022)
-    * Hügel (Landschaft;Q54050)
-    * Weinberg (Landschaft;Q22715)
-    * Mann (Personen;Q8441)
-    * Frau (Personen;Q467)
-    * Kind (Personen;Q7569)
-    * Mensch (Personen;Q5)
-    * Personengruppe (Personen;Q16334295)
-    * Ritter (Sonstiges;Q102083)
-    * Satyr (Sonstiges;Q163709)
-    * Engel (Sonstiges;Q235113)
-    * Drache (Sonstiges;Q7559)
-    * Stern (Sonstiges;Q523)
-    * Mond (Sonstiges;Q405)
-    * Sonne (Sonstiges;Q525)
-    * Trichter (Artefakte; Q29957)
-    * Lampe, inkl. Laterne (Artefakte;Q1138737)
-    * Stiefel (Artefakte;Q190868)
-    * Siegel (Artefakte;Q162919)
-    * Stempel (Artefakte;Q57305415)
-    * Schnur (Artefakte;Q31029)
-    * Hase (Fauna;Q46076)
-    * Etikett (Artefakte;Q722218)
-    * Minnesänger (Person;Q841192)
-    * Gitarre, inkl. Mandoline (Artefakt;Q6607)
-    * Kostüm, inkl. Tracht (Artefakte;Q1410477).
-
 #### labelID
 A unique identifier for the label.
 
@@ -951,12 +841,14 @@ The name of the location in a normalized form, with its type, and (if available)
     * Wiltingen (Leitgemeinde;Q161930)
     * Winningen (Leitgemeinde;Q822358)
     * Zell (Leitgemeinde;Q187500)
+    * Leitgemeinde: Zell (Q187500)
     * Filzen (Ort;Q47087896)
     * Freudenberg am Main (Ort;Q61827)
     * Graach (Ort;Q648808)
     * Ober-Ingelheim (Ort;Q2008825)
     * Trittenheim (Ort;Q662479)
     * Schwarze Katz (Großlage;Q2253665)
+    * Großlage: Schwarze Katz (Q2253665)
     * Vollmühle (Parzelle)
     * other.
 
@@ -1006,6 +898,187 @@ The material from which the label is made (in most cases, this is paper).
 - Contained by element: [physical](#physical).
 - Possible values: paper, plastic, metal.
 
+#### norm
+(normalized data) Contains authority file data and other stable and unique identifiers. Sources include: Wikidata, Register-Nummer der Weinlagen, Gemeinsame Normdaten-Datei, and others. Can relate to locations, agents, vineyards, items depicted in visual form, and other standardized vocabulary. 
+
+- Status: Optional.
+- Contained by element: 
+    * [figureItem](#figureItem)
+    * [wineMillesime](#wineMillesime)
+    * [wineName](#wineName)
+    * [wineColor](#wineColor)
+    * [wineGrapes](#wineGrapes)
+    * [wineTaste](#wineTaste)
+    * [wineAging](#wineAging)
+    * [wineOther](#wineOther)
+    * [qualityGrapes](#qualityGrapes)
+    * [qualityLevel](#qualityLevel)
+    * [qualityAward](#qualityAward)
+    * [qualityLabel](#qualityLabel)
+    * [qualityProduction](#qualityProduction)
+    * [qualityHistorical](#qualityHistorical)
+    * [agent](#agent)
+    * [location](#location)
+    * [controlNumber](#controlNumber).
+- Possible values: 
+    * Artefakt: Banderole (Q2689628)
+    * Artefakt: Becher (Q81727)
+    * Artefakt: Brezel (Q160525)
+    * Artefakt: Boot (Q35872)
+    * Artefakt: Globus (Q133792)
+    * Artefakt: Gemälde (Q3305213)
+    * Artefakt: Fahrzeug (Q42889)
+    * Artefakt: Harfe (Q47369)
+    * Artefakt: Harpune (Q207574)
+    * Artefakt: Helm (Q910873)
+    * Artefakt: Hut (Q80151)
+    * Artefakt: Krone (Q170984)
+    * Artefakt: Krug (Q766983)
+    * Artefakt: Medaille (Q131647)
+    * Artefakt: Musikinstrument (Q)
+    * Artefakt: Ornament (Q335261)
+    * Artefakt: Pfeil (Q45922)
+    * Artefakt: Rad (Q446)
+    * Artefakt: Säule (Q4817)
+    * Artefakt: Schiff (Q11446)
+    * Artefakt: Siegel (Q162919)
+    * Artefakt: Schild (Q131559)
+    * Artefakt: Schlüssel (Q132041)
+    * Artefakt: Schwert (Q12791)
+    * Artefakt: Sockel/Podest (Q12014132)
+    * Artefakt: Stoff (Q5849500)
+    * Artefakt: Vase (Q191851)
+    * Artefakt: Wage (Q134566)
+    * Artefakt: Wappen (Q14659)
+    * Artefakt: Weinglas (Q1531435)
+    * Artefakt: Weinflasche (Q23490)
+    * Artefakt: Weinfass (Q10289)
+    * Artefakt: Trichter ( Q29957)
+    * Artefakt: Lampe, inkl. Laterne (Q1138737)
+    * Artefakt: Stiefel (Q190868)
+    * Artefakt: Siegel (Q162919)
+    * Artefakt: Stempel (Q57305415)
+    * Artefakt: Schnur (Q31029)
+    * Artefakt: Etikett (Q722218)
+    * Artefakt: Gitarre, inkl. Mandoline (Q6607)
+    * Artefakt: Kostüm, inkl. Tracht (Q1410477)
+    * Fauna: Hase (Q46076)
+    * Fauna: Adler (Q2092297)
+    * Fauna: Bär (Q30090244)
+    * Fauna: Feder (Q81025)
+    * Fauna: Flügel (Q161358)
+    * Fauna: Hund (Q144)
+    * Fauna: Katze (Q146)
+    * Fauna: Katze (Q146)
+    * Fauna: Löwe (Q140)
+    * Fauna: Pferd (Q726)
+    * Fauna: Ochse (Q473194)
+    * Fauna: Reh/Hirsch (Q29838690)
+    * Fauna: Schaf (Q7368)
+    * Fauna: Spinne (Q1357)
+    * Fauna: Vogel (Q5113)
+    * Flora: Baum (Q10884)
+    * Flora: Blume (Q886167)
+    * Flora: Blüte (Q506)
+    * Flora: Pflanze (Q756)
+    * Flora: Weintraube (Q10978)
+    * Flora: Weinblätter (Q33971)
+    * Flora: Weinstock (Q2135068)
+    * Flora: Wurzel (Q41500)
+    * Bauwerk: Burg (Q23413)
+    * Bauwerk: Brücke (Q12280)
+    * Bauwerk: Dock (Q124282)
+    * Bauwerk: Dorf (Q532)
+    * Bauwerk: Gebäude (Q41176)
+    * Bauwerk: Fenster (Q35473)
+    * Bauwerk: Interieur (Q2998430)
+    * Bauwerk: Keller (Q43275450)
+    * Bauwerk: Kirchengebäude (Q16970)
+    * Bauwerk: Mauer (Q42948)
+    * Bauwerk: Stadt (Q532)
+    * Bauwerk: Straße (Q34442)
+    * Bauwerk: Tor/Türe (Q36794)
+    * Bauwerk: Treppe (Q12511)
+    * Bauwerk: Turm (Q12518)
+    * Bauwerk: Zaun (Q148571)
+    * Landschaft: Ufer (Q468756)
+    * Landschaft: Fluss (Q4022)
+    * Landschaft: Hügel (Q54050)
+    * Landschaft: Weinberg (Q22715)
+    * Person: Mann (Q8441)
+    * Person: Frau (Q467)
+    * Person: Kind (Q7569)
+    * Person: Mensch (Q5)
+    * Person: Minnesänger (Q841192)
+    * Person: Personengruppe (Q16334295)
+    * Sonstiges: Ritter (Q102083)
+    * Sonstiges: Satyr (Q163709)
+    * Sonstiges: Engel (Q235113)
+    * Sonstiges: Drache (Q7559)
+    * Sonstiges: Stern (Q523)
+    * Sonstiges: Mond (Q405)
+    * Sonstiges: Sonne (Q525)
+    * Sonstiges: Schatten (Q160020)
+    * QualityGrapes: Kabinett
+    * QualityGrapes: Spätlese
+    * QualityGrapes: Auslese
+    * QualityGrapes: Beerenauslese
+    * QualityGrapes: Trockenbeerenauslese (Q1639847)
+    * QualityGrapes: Eiswein
+    * QualityGrapes: other
+    * Bereich: Mosel-Saar-Ruwer (Q672776)
+    * Leitgemeinde: Bernkastel-Kues (Q643228)
+    * Leitgemeinde: Brauneberg (Q567156)
+    * Leitgemeinde: Wiltingen (Q161930)
+    * Leitgemeinde: Winningen (Q822358)
+    * Leitgemeinde: Zell (Q187500)
+    * Ort: Filzen (Q47087896)
+    * Ort: Freudenberg am Main (Q61827)
+    * Ort: Graach (Q648808)
+    * Ort: Ober-Ingelheim (Q2008825)
+    * Ort: Trittenheim (Q662479)
+    * Großlage: Schwarze Katz (Q2253665)
+    * Parzelle: Vollmühle
+    * Einzellage: Deutschherrenberg
+    * Jahrgang: ####
+    * Rebsorte (weiss): Riesling (Q456471)
+    * Rebsorte (weiss): Müller-Thurgau / Rivaner (Q681670)
+    * Rebsorte (weiss): Sauvignon Blanc
+    * Rebsorte (weiss): Elbling
+    * Rebsorte (weiss): Grauburgunder
+    * Rebsorte (weiss): Chardonnay
+    * Rebsorte (weiss): Auxerrois
+    * Rebsorte (weiss): Weißburgunder
+    * Rebsorte (weiss): other
+    * Rebsorte (rot): Spätburgunder
+    * Rebsorte (rot): other
+    * Weinfarbe: Rotwein
+    * Weinfarbe: Weisswein
+    * Weinfarbe: Rosé/Rotling
+    * Weinfarbe: other
+    * Geschmack: dry (trocken)
+    * Geschmack: semi-dry (halbtrocken / feinherb)
+    * Geschmack: semi-sweet (lieblich)
+    * Geschmack: sweet (süß)
+    * Geschmack: other
+    * WineAging: Barrique-Ausbau
+    * WineAging: Flaschengärung
+    * Weinqualität: Prädikatswein
+    * Weinqualität: Tafelwein/Wein
+    * Weinqualität: Landwein
+    * Weinqualität: Qualitätswein
+    * other
+    * Traubenqualität: Kabinett
+    * Traubenqualität: Spätlese
+    * Traubenqualität: Auslese
+    * Traubenqualität: Beerenauslese
+    * Traubenqualität: Trockenbeerenauslese
+    * Traubenqualität: Eiswein
+    * Traubenqualität: other
+    * Weingut: Weingut Maximin Grünhaus (Q2556072)
+    * Weingut: #### (Q)
+    * Vertrieb: Karl Ziegler.
+
 #### notAfter
 (no data)
 
@@ -1047,20 +1120,6 @@ The technical printing process used for printing the visual and/or textual infor
 - Contained by element: [qualityAward](#qualityAward).
 - Possible values: Weinprämierung, Gütezeichen, other.
 
-#### qualityGrapesNorm
-(no data)
-
-- Status: Optional.
-- Contained by element: [qualityGrapes](#qualityGrapes).
-- Possible values: 
-    * Kabinett
-    * Spätlese
-    * Auslese
-    * Beerenauslese
-    * Trockenbeerenauslese
-    * Eiswein
-    * other.
-
 #### qualityLabelType
 (no data)
 
@@ -1068,52 +1127,12 @@ The technical printing process used for printing the visual and/or textual infor
 - Contained by element: [qualityLabel](#qualityLabel).
 - Possible values: vineyard, grapes, other.
 
-#### qualityLevelNorm
-(no data)
-
-- Status: Optional.
-- Contained by element: [qualityLevel](#qualityLevel).
-- Possible values: 
-    * Tafelwein/Wein
-    * Landwein
-    * Qualitätswein
-    * Prädikatswein
-    * other.
-
 #### qualityProductionNorm
 (no data)
 
 - Status: Optional.
 - Contained by element: [qualityProduction](#qualityProduction).
 - Possible values: on-location, other.
-
-#### ref
-(reference) Contains authority file data, norm data, other stable and unique identifiers. Sources include: Wikidata, Register-Nummer der Weinlagen, Gemeinsame Normdaten-Datei.
-
-- Status: Optional.
-- Contained by element: 
-    * [wineName](#wineName)
-    * [wineColor](#wineColor)
-    * [wineGrapes](#wineGrapes)
-    * [wineTaste](#wineTaste)
-    * [wineAging](#wineAging)
-    * [wineOther](#wineOther)
-    * [qualityGrapes](#qualityGrapes)
-    * [qualityLevel](#qualityLevel)
-    * [qualityAward](#qualityAward)
-    * [qualityLabel](#qualityLabel)
-    * [qualityProduction](#qualityProduction)
-    * [qualityHistorical](#qualityHistorical)
-    * [agent](#agent)
-    * [location](#location)
-    * [controlNumber](#controlNumber).
-- Possible values: 
-    * RegNr:
-    * Wikidata:
-    * GND:
-    * enwiki:
-    * dewiki:
-    * frwiki:.
 
 #### relItems
 (no data)
@@ -1151,6 +1170,7 @@ Information regarding the shape of the physical label.
     * octogon
     * circular
     * ellipsoid
+    * polygon
     * other.
 
 #### sizeH
@@ -1166,13 +1186,6 @@ The width of the label measured in millimeters. (This attribute is mandatory, bu
 - Status: Mandatory.
 - Contained by element: [physical](#physical).
 - Possible values: tbc.
-
-#### tasteGroupNorm
-(no data)
-
-- Status: Mandatory.
-- Contained by element: .
-- Possible values: This element has no default values.
 
 #### textPosition
 (no data)
@@ -1232,50 +1245,6 @@ The indication of the volume of wine, expressed as a number (integer of millilit
     * [qualityProduction](#qualityProduction)
     * [qualityHistorical](#qualityHistorical).
 - Possible values: http://wdw.uni-trier.de/onlinewb/index.php3?ID.
-
-#### wineAgingNorm
-(no data)
-
-- Status: Mandatory.
-- Contained by element: [wineAging](#wineAging).
-- Possible values: barrique, other.
-
-#### wineColorNorm
-(no data)
-
-- Status: Mandatory.
-- Contained by element: [wineColor](#wineColor).
-- Possible values: red (Rotwein), white (Weisswein), rose (Rosé/Rotling), other.
-
-#### wineGrapesNorm
-Indication of the grape variety, with a normalized German name and, in brackets, the color of the grape and the Wikidata identifier.
-
-- Status: Mandatory.
-- Contained by element: [wineGrapes](#wineGrapes).
-- Possible values: 
-    * Riesling (weiss;Q456471)
-    * Müller-Thurgau / Rivaner (weiss;Q681670)
-    * Elbling
-    * Spätburgunder
-    * Grauburgunder
-    * Chardonnay
-    * Auxerrois
-    * Weißburgunder
-    * other.
-
-#### wineMillesimeNorm
-(no data)
-
-- Status: Mandatory.
-- Contained by element: [wineMillesime](#wineMillesime).
-- Possible values: This element has no default values.
-
-#### wineNameNorm
-The name of the wine in normalized form.
-
-- Status: Optional.
-- Contained by element: [wineName](#wineName).
-- Possible values: This element has no default values.
 
 #### wineNameType
 (no data)
