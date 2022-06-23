@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <wlv labelID="MSR-0008">
   <metadata>
   <collection collectionID="MSR"></collection>
@@ -9,24 +9,26 @@
   <label labelPosition="front">
       <physical sizeH="130" sizeV="89" shape="rectangle" material="paper"/>
       <visual>
-          <frame frameStyle="other" frameColor="gold" frameType="outer">Linie mit Ornamenten an den Ecken.</frame>
+        <background backgroundColor="white"></background>
+        <frame frameStyle="ornamental line(s)" frameColor="gold" frameType="outer"></frame>
       </visual>
       <textual>
           <location locationType="region / Gebiet" fontStyle="all-caps">Mosel Saar Ruwer</location>
           <otherText textType="other" textPosition="stand-alone">1742</otherText>
-          <wineMillesime wineMillesimeNorm="1983">1983er</wineMillesime>
-          <wineName wineNameType="vineyard / Großlage" ref="RegNr:6.1.8">Ürziger Schwarzlay
-            <location locationType="locality / Leitgemeinde" locationNorm="Ürzig" ref="Wikidata:Q335018"></location>
+          <wineMillesime norm="Jahrgang: 1983">1983er</wineMillesime>
+          <wineName wineNameType="vineyard / Großlage" norm="RegNr:6.1.8">
+            <location locationType="locality / Leitgemeinde" norm="Ort: Ürzig (Q335018)">Ürziger</location>
+            <location locationType="vineyard / Großlage" norm="Schwarzlay">Schwarzlay</location>
+            <qualityGrapes norm="QualityGrapes: Kabinett">Kabinett</qualityGrapes>
           </wineName>
-          <qualityGrapes qualityGrapesNorm="Kabinett">Kabinett</qualityGrapes>
-          <wineGrapes wineGrapesNorm="Riesling">Riesling</wineGrapes>
-          <qualityLevel qualityLevelNorm="Prädikatswein">Qualitätswein mit Prädikat</qualityLevel>
+          <wineGrapes norm="Rebsorte (weiss): Riesling (Q456471)">Riesling</wineGrapes>
+          <qualityLevel norm="Weinqualität: Prädikatswein">Qualitätswein mit Prädikat</qualityLevel>
           <controlNumber>Amtliche Prüfungsnummer 1 907 135 072 84</controlNumber>
           <alcohol alcoholNorm="7">Alc. 7,2% by Vol.</alcohol>
           <volume volumeNorm="700">e 0,7 L</volume>
-          <location locationNorm="DEU" locationType="country / Land">Deutschland</location>
-          <agent agentRole="production / Weinbau" ref="">Abfüller: Weinbau Mergler &amp; Engel Wein-Kellerei</agent>
-          <location locationType="locality / Leitgemeinde" locationNorm="Pünderich" ref="Wikidata:Q567287">Pünderich/Mosel</location>
+          <location norm="Land: Deutschland (Q183)">Deutschland</location>
+          <agent agentRole="production / Weinbau">Abfüller: Weinbau Mergler &amp; Engel Wein-Kellerei</agent>
+          <location locationType="locality / Leitgemeinde" norm="Ort: Pünderich (Q567287)">Pünderich/Mosel</location>
       </textual>
   </label>
 </wlv>

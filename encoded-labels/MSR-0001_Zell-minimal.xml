@@ -9,6 +9,7 @@
     <label labelPosition="front">
       <physical shape="rectangle"/>
       <visual>
+        <background backgroundColor="white"></background>
         <figure>
           <figureItem norm="Fauna: Katze (Q146)"/>
         </figure>

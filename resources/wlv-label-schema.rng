@@ -16,6 +16,15 @@
         <ref name="labelGroup" />
         <ref name="label" />
       </choice>
+      <optional>
+        <ref name="comments" />
+      </optional>
+      <optional>
+        <ref name="provenance" />
+      </optional>
+      <optional>
+        <ref name="relations" />
+      </optional>
     </element>
   </define>
   <define name="ID">
@@ -148,6 +157,8 @@
         <value>QualityGrapes: Trockenbeerenauslese (Q1639847)</value>
         <value>QualityGrapes: Eiswein</value>
         <value>QualityGrapes: other</value>
+        <!-- Länder -->
+        <value>Land: Deutschland (Q183)</value>
         <!-- Bereiche -->
         <value>Bereich: Mosel-Saar-Ruwer (Q672776)</value>
         <!-- Leitgemeinden -->
@@ -162,6 +173,7 @@
         <value>Ort: Graach (Q648808)</value>
         <value>Ort: Ober-Ingelheim (Q2008825)</value>
         <value>Ort: Trittenheim (Q662479)</value>
+        <value>Ort: Pünderich (Q567287)</value>
         <!-- Großlagen / Einzellagen / Parzellen -->
         <value>Großlage: Schwarze Katz (Q2253665)</value>
         <value>Parzelle: Vollmühle</value>
@@ -433,12 +445,6 @@
       <optional>
         <ref name="relations" />
       </optional>
-      <optional>
-        <ref name="comments" />
-      </optional>
-      <optional>
-        <ref name="provenance" />
-      </optional>
     </element>
   </define>
   <define name="labelPosition">
@@ -558,9 +564,9 @@
         <zeroOrMore>
           <ref name="frame" />
         </zeroOrMore>
-        <zeroOrMore>
+        <oneOrMore>
           <ref name="background" />
-        </zeroOrMore>
+        </oneOrMore>
         <zeroOrMore>
           <ref name="figure" />
         </zeroOrMore>
@@ -590,10 +596,11 @@
     <attribute>
       <name ns="">frameStyle</name>
       <choice>
-        <value>lines</value>
+        <value>line(s)</value>
+        <value>band</value>
         <value>floral</value>
         <value>pattern</value>
-        <value>band</value>
+        <value>ornamental line(s)</value>
         <value>other</value>
       </choice>
     </attribute>
@@ -629,14 +636,12 @@
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information about the background of the label. Needs to be filled in only if there is some special background, other than the blank paper, to the visual and/or textual information provided.</a:documentation>
     <element>
       <name ns="">background</name>
+      <ref name="backgroundColor" />
       <optional>
         <ref name="ID" />
       </optional>
       <optional>
         <ref name="backgroundStyle" />
-      </optional>
-      <optional>
-        <ref name="backgroundColor" />
       </optional>
     </element>
   </define>
@@ -803,20 +808,20 @@
     </optional>
   </define>
   <!--
-  =====================
-  =====  TEXTUAL  =====
-  =====================
+  =====================================
+  ======         TEXTUAL          =====
+  =====================================
   -->
   <define name="textual">
     <element>
       <name ns="">textual</name>
       <interleave>
-        <optional>
-          <ref name="wineMillesime" />
-        </optional>
-        <zeroOrMore>
-          <ref name="wineName" />
-        </zeroOrMore>
+        <oneOrMore>
+          <choice>
+            <ref name="wineMillesime" />
+            <ref name="wineName" />
+          </choice>
+        </oneOrMore>
         <zeroOrMore>
           <ref name="wineGrapes" />
         </zeroOrMore>
@@ -948,6 +953,7 @@
         <value>locality / Leitgemeinde</value>
         <value>winery / Weingut</value>
         <value>vineyard / historischer Lagenname</value>
+        <value>vineyard / Lage</value>
         <value>vineyard / Großlage</value>
         <value>vineyard / Einzellage</value>
         <value>variety / Rebsorte</value>
@@ -965,6 +971,9 @@
         <ref name="norm" />
       </optional>
       <optional>
+        <ref name="position" />
+      </optional>
+      <optional>
         <ref name="wdw" />
       </optional>
       <ref name="fontAttributes" />
@@ -976,6 +985,9 @@
       <text />
       <optional>
         <ref name="norm" />
+      </optional>
+      <optional>
+        <ref name="position" />
       </optional>
       <optional>
         <ref name="wdw" />
@@ -991,6 +1003,9 @@
         <ref name="norm" />
       </optional>
       <optional>
+        <ref name="position" />
+      </optional>
+      <optional>
         <ref name="wdw" />
       </optional>
       <ref name="fontAttributes" />
@@ -1002,6 +1017,9 @@
       <text />
       <optional>
         <ref name="norm" />
+      </optional>
+      <optional>
+        <ref name="position" />
       </optional>
       <optional>
         <ref name="wdw" />
@@ -1018,6 +1036,9 @@
       </optional>
       <optional>
         <ref name="norm" />
+      <optional>
+        <ref name="position" />
+      </optional>
       </optional>
       <ref name="fontAttributes" />
     </element>
@@ -1047,6 +1068,9 @@
       <name ns="">qualityGrapes</name>
       <text />
       <optional>
+        <ref name="position" />
+      </optional>
+      <optional>
         <ref name="norm" />
       </optional>
       <optional>
@@ -1061,6 +1085,9 @@
       <name ns="">qualityLevel</name>
       <text />
       <optional>
+        <ref name="position" />
+      </optional>
+      <optional>
         <ref name="norm" />
       </optional>
       <optional>
@@ -1074,6 +1101,9 @@
     <element>
       <name ns="">qualityAward</name>
       <text />
+      <optional>
+        <ref name="position" />
+      </optional>
       <optional>
         <ref name="norm" />
       </optional>
@@ -1100,6 +1130,9 @@
     <element>
       <name ns="">qualityLabel</name>
       <text />
+      <optional>
+        <ref name="position" />
+      </optional>
       <optional>
         <ref name="norm" />
       </optional>
@@ -1128,6 +1161,9 @@
       <name ns="">qualityProduction</name>
       <text />
       <optional>
+        <ref name="position" />
+      </optional>
+      <optional>
         <ref name="norm" />
       </optional>
       <optional>
@@ -1152,11 +1188,14 @@
     <element>
       <name ns="">qualityHistorical</name>
       <text />
-      <optional>
-        <ref name="wdw" />
+       <optional>
+        <ref name="position" />
+      </optional>
+     <optional>
+        <ref name="norm" />
       </optional>
       <optional>
-        <ref name="norm" />
+        <ref name="wdw" />
       </optional>
       <ref name="fontAttributes" />
     </element>
@@ -1169,6 +1208,9 @@
       <optional>
       <ref name="agentRole" />
       </optional>
+       <optional>
+        <ref name="position" />
+      </optional>
       <optional>
         <ref name="norm" />
       </optional>
@@ -1180,9 +1222,6 @@
       </optional>
        <optional>
         <ref name="ID" />
-      </optional>
-      <optional>
-        <ref name="position" />
       </optional>
    </element>
   </define>
@@ -1212,12 +1251,6 @@
       </optional>
       <optional>
         <ref name="locationRole" />
-      </optional>
-      <optional>
-        <ref name="locationNorm" />
-      </optional>
-      <optional>
-        <ref name="locationRegNr" />
       </optional>
       <optional>
         <ref name="norm" />
@@ -1264,42 +1297,10 @@
         <value>vineyard / historischer Lagenname</value>
         <value>vineyard / Großlage</value>
         <value>vineyard / Einzellage</value>
+        <value>vineyard / Lage</value>
+        <value>vineyard / Parzelle</value>
         <value>other</value>
       </choice>
-    </attribute>
-  </define>
-  <define name="locationNorm">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name of the location in a normalized form, with its type, and (if available) with authority data (Wikidata ID and/or Reg-Nr.).</a:documentation>
-    <attribute>
-      <name ns="">locationNorm</name>
-      <choice>
-        <!-- Leitgemeinden -->
-        <value>Bernkastel-Kues (Leitgemeinde;Q643228)</value>
-        <value>Brauneberg (Leitgemeinde;Q567156)</value>
-        <value>Wiltingen (Leitgemeinde;Q161930)</value>
-        <value>Winningen (Leitgemeinde;Q822358)</value>
-        <value>Zell (Leitgemeinde;Q187500)</value>
-        <value>Leitgemeinde: Zell (Q187500)</value>
-        <!-- Andere Orte -->
-        <value>Filzen (Ort;Q47087896)</value>
-        <value>Freudenberg am Main (Ort;Q61827)</value>
-        <value>Graach (Ort;Q648808)</value>
-        <value>Ober-Ingelheim (Ort;Q2008825)</value>
-        <value>Trittenheim (Ort;Q662479)</value>
-        <!-- Großlagen / Einzellagen / Parzellen -->
-        <value>Schwarze Katz (Großlage;Q2253665)</value>
-        <value>Großlage: Schwarze Katz (Q2253665)</value>
-        <value>Vollmühle (Parzelle)</value>
-        <value>other</value>
-        <text />
-      </choice>
-    </attribute>
-  </define>
-  <define name="locationRegNr">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The numerical identifier of a vineyard contained in the official "Lagenliste".</a:documentation>
-    <attribute>
-      <name ns="">locationRegNr</name>
-      <text />
     </attribute>
   </define>
   <define name="alcohol">
@@ -1307,6 +1308,9 @@
     <element>
       <name ns="">alcohol</name>
       <text />
+       <optional>
+        <ref name="position" />
+      </optional>
       <ref name="alcoholNorm" />
       <ref name="fontAttributes" />
     </element>
@@ -1323,7 +1327,12 @@
     <element>
       <name ns="">volume</name>
       <text />
+       <optional>
+        <ref name="position" />
+      </optional>
+       <optional>
       <ref name="volumeNorm" />
+      </optional>
       <ref name="fontAttributes" />
     </element>
   </define>
@@ -1339,6 +1348,9 @@
     <element>
       <name ns="">controlNumber</name>
       <text />
+      <optional>
+        <ref name="position" />
+      </optional>
       <optional>
         <ref name="norm" />
       </optional>
@@ -1366,6 +1378,12 @@
     <element>
       <name ns="">barrelNumber</name>
       <text />
+      <optional>
+        <ref name="ID" />
+      </optional>
+      <optional>
+        <ref name="position" />
+      </optional>
       <ref name="fontAttributes" />
     </element>
   </define>
@@ -1374,13 +1392,25 @@
     <element>
       <name ns="">labelNumber</name>
       <text />
+      <optional>
+        <ref name="ID" />
+      </optional>
+      <optional>
+        <ref name="position" />
+      </optional>
       <ref name="fontAttributes" />
     </element>
   </define>
   <define name="otherText">
     <element>
       <name ns="">otherText</name>
+      <optional>
+        <ref name="ID" />
+      </optional>
       <ref name="textType" />
+      <optional>
+        <ref name="position" />
+      </optional>
       <ref name="textPosition" />
       <text />
       <ref name="fontAttributes" />
@@ -1397,6 +1427,9 @@
         <value>statement</value>
         <value>copyright</value>
         <value>vineyard (Lage)</value>
+        <value>website</value>
+        <value>recommendation</value>
+        <value>warning</value>
         <value>other</value>
       </choice>
     </attribute>
@@ -1410,6 +1443,11 @@
       </choice>
     </attribute>
   </define>
+  <!--
+  =====================================
+  ======         PROVENANCE       =====
+  =====================================
+  -->
   <define name="provenance">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information regarding the provenance of the label, in prose. This information can be derived either from the label itself, or from contextual or otherwise external information.</a:documentation>
     <element>
@@ -1544,6 +1582,9 @@
         <value>equivalence</value>
         <value>similarity</value>
         <value>contrast</value>
+        <value>text-in-image</value>
+        <value>image-in-text</value>
+        <value>image-in-image</value>
         <value>other</value>
         <text/>
       </choice>

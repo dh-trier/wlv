@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <wlv labelID="MSR-0014">
   <metadata>
     <collection collectionID="MSR"></collection>
@@ -7,18 +7,18 @@
     <licence licenceScope="all" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"></licence>
   </metadata>
     <label labelPosition="front">
-      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+      <physical sizeH="124" sizeV="84" material="paper" shape="rectangle"/>
       <visual>
-        <frame frameStyle="other" frameColor="gold" frameType="outer" />
-        <background backgroundStyle="pattern" />
-        <figure ID="v3" figureNum="1" figurePosition="25" figureType="realistic">
+        <frame frameColor="gold" frameType="outer" />
+        <background backgroundColor="white" />
+        <figure ID="v3" position="25" figureType="realistic">
         <figureItem ID="v3-1" norm="Fauna: Katze (Q146)"/>
         <figureItem ID="v3-2" norm="Sonstiges: Schatten (Q160020)"/>
         <figureItem ID="v3-3" norm="Artefakt: Weinfass (Q10289)"/>
         </figure>
       </visual>
       <textual>
-        <location ID="t1" locationType="region / Gebiet" fontStyle="all-caps" norm="Bereich: Mosel-Saar-Ruwer (Q672776)">Mosel-Saar-Ruwer</location>
+        <location ID="t1" locationType="region / Gebiet" norm="Bereich: Mosel-Saar-Ruwer (Q672776)">Mosel-Saar-Ruwer</location>
         <wineMillesime ID="t2" norm="Jahrgang: 1957">1957er</wineMillesime>
         <wineName ID="t3" wineNameType="vineyard / Großlage">
           <location ID="t3-1" norm="Leitgemeinde: Zell (Q187500)">Zeller</location>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <wlv labelID="MSR-0003">
   <metadata>
   <collection collectionID="MSR"/>
@@ -9,18 +9,18 @@
     <label labelPosition="front">
       <physical sizeH="158" sizeV="89" shape="rectangle" material="paper" />
       <visual>
-        <frame frameStyle="band" frameColor="gold" frameType="outer"></frame>
-        <frame frameStyle="lines" frameColor="black" frameType="outer"></frame>
-        <background backgroundStyle="pattern">light pattern</background>
-        <figure ID="v4" figureType="realistic" figureNum="1" figurePosition="123">
+        <frame ID="v1" frameStyle="band" frameColor="gold" frameType="outer"></frame>
+        <frame ID="v2" frameStyle="lines" frameColor="black" frameType="outer"></frame>
+        <background ID="v3" backgroundColor="white" backgroundStyle="pattern"></background>
+        <figure ID="v4" figureType="realistic" position="123">
           <figureItem ID="v4-1" norm="Landschaft: Fluss (Q4022)"></figureItem>
           <figureItem ID="v4-2" norm="Landschaft: Weinberg (Q22715)"></figureItem>
           <figureItem ID="v4-3" norm="Bauwerk: Dorf (Q532)"></figureItem>
         </figure>
-        <figure ID="v5" figureType="coat-of-arms" figureNum="2">
+        <figure ID="v5" figureType="coat-of-arms">
           <figureItem ID="v5-1" norm="Artefakt: Wappen (Q14659)"></figureItem>
         </figure>
-        <figure ID="v6" figureType="symbolic" figureNum="3">
+        <figure ID="v6" figureType="symbolic">
           <figureItem ID="v6-1" norm="Flora: Weinblätter (Q33971)"></figureItem>
         </figure>
       </visual>
@@ -39,8 +39,8 @@
         <agent agentRole="printer / Drucker">Verlag Bastian</agent>
         <location locationType="locality / Ortsname" locationRole="printer / Drucker" norm="Ort: Neumagen-Drohn (Q572352)">Neumagen</location>
       </textual>
-    <provenance>
+  </label>
+  <provenance>
     <dating notBefore="1945" notAfter="1975" certainty="estimate">Impression from design.</dating>
   </provenance>
-  </label>
 </wlv>

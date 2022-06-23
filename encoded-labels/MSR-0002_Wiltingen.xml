@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <wlv labelID="MSR-0002">
   <metadata>
     <collection collectionID="MSR"/>
@@ -9,8 +9,8 @@
     <label labelPosition="front">
       <physical sizeH="137" sizeV="89" shape="rectangle" material="paper" />
       <visual>
-        <background backgroundStyle="color">uniform light green</background>
-        <figure ID="v2" figureType="coat-of-arms" figureNum="1" figurePosition="upper-center">
+        <background ID="v1" backgroundStyle="color" backgroundColor="green" />
+        <figure ID="v2" figureType="coat-of-arms" position="2">
           <figureItem ID="v2-1" norm="Artefakt: Wappen (Q14659)"></figureItem>
           <figureItem ID="v2-2" norm="Artefakt: Schwert (Q12791)"></figureItem>
           <figureItem ID="v2-3" norm="Flora: Weinblätter (Q33971)"></figureItem>
@@ -29,9 +29,5 @@
         <agent ID="t7" agentRole="printer / Drucker" fontSize="smaller">Bastian</agent>
         <location ID="t8" norm="Ort: Winningen (Q822358)" locationRole="printer / Drucker">Winningen</location>
       </textual>
-      <relations>
-        <relation ID="r1" relType="equivalence" relItems="#v2-1 #t4-1" />
-        <!-- This relation is in fact inaccurate: the coat of arms shown above is not the one of Wiltingen (nor of Freudenberg, for that matter). -->
-      </relations>
     </label>
 </wlv>

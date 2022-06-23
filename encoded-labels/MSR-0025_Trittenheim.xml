@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <wlv labelID="MSR-0025">
   <metadata>
     <collection collectionID="MSR"></collection>
@@ -7,27 +7,28 @@
     <licence licenceScope="metadata" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/"></licence>
   </metadata>
     <label labelPosition="front">
-      <physical sizeH="tbc" sizeV="tbc" shape="rectangle" material="paper"/>
+      <physical sizeH="130" sizeV="90" shape="rectangle" material="paper"/>
       <visual>
         <background backgroundStyle="none" backgroundColor="yellow"></background>
         <frame frameType="inner" frameStyle="band" frameColor="orange"></frame>
-        <figure figureNum="1" figurePosition="12346789" figureType="abstract"></figure>
-        <figure figureNum="2" figurePosition="5" figureType="coat-of-arms">
-            <figureItem itemData="Stern (Sonstiges;Q523)"></figureItem>
-            <figureItem itemData="Helm (Artefakte;Q910873)"></figureItem>
+        <figure ID="v3" position="12346789" figureType="abstract">
+          <figureItem ID="v3-1" norm="Flora: Weinblätter (Q33971)" />
+        </figure>
+        <figure ID="v4" position="5" figureType="coat-of-arms">
+            <figureItem ID="v4-1" norm="Sonstiges: Stern (Q523)" />
+            <figureItem ID="v4-2" norm="Artefakt: Helm (Q910873)" />
         </figure>
       </visual>
       <textual>
           <wineName>
-              <location locationNorm="Trittenheim (Ort;Q662479)" locationRole="production / Weinbau">Trittenheimer</location>
+              <location norm="Ort: Trittenheim (Q662479)" locationRole="production / Weinbau">Trittenheimer</location>
           </wineName>
           <agent>Carl Pauli, Weinbau und Weinhandel, G.m.b.H.</agent>
-          <location locationRole="multiple / verschiedene" locationNorm="Ober-Ingelheim (Ort;Q2008825)">Ober-Ingelheim a. Rh.</location>
+          <location locationRole="multiple / verschiedene" norm="Ort: Ober-Ingelheim (Q2008825)">Ober-Ingelheim a. Rh.</location>
       </textual>
-      <provenance>
-          <dating notAfter="1950" notBefore="1900" certainty="low"></dating>
-          <scan scanID="MSR-0025"></scan>
-          <conservation conservationNorm="good"></conservation>
-      </provenance>
     </label>
+    <provenance>
+      <dating notAfter="1950" notBefore="1900" certainty="low"></dating>
+      <conservation conservationNorm="good"></conservation>
+    </provenance>
 </wlv>

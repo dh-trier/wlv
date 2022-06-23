@@ -8,7 +8,11 @@
   </metadata>
   <label>
   <physical shape="rectangle"></physical>
-  <visual></visual>
-  <textual></textual>
+  <visual>
+    <background backgroundColor="white"></background>
+  </visual>
+  <textual>
+    <wineName>Zeller schwarze Katz</wineName>
+  </textual>
   </label>
 </wlv>
