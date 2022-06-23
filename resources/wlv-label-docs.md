@@ -99,7 +99,7 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 
 **Elements**: [agent](#agent), [alcohol](#alcohol), [background](#background), [barrelNumber](#barrelNumber), [collection](#collection), [collectionContext](#collectionContext), [comments](#comments), [conservation](#conservation), [controlNumber](#controlNumber), [curation](#curation), [dating](#dating), [figure](#figure), [figureItem](#figureItem), [frame](#frame), [label](#label), [labelGroup](#labelGroup), [labelNumber](#labelNumber), [licence](#licence), [location](#location), [metadata](#metadata), [otherText](#otherText), [physical](#physical), [provenance](#provenance), [qualityAward](#qualityAward), [qualityGrapes](#qualityGrapes), [qualityHistorical](#qualityHistorical), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [qualityProduction](#qualityProduction), [relation](#relation), [relations](#relations), [scan](#scan), [source](#source), [textual](#textual), [visual](#visual), [volume](#volume), [wineAging](#wineAging), [wineColor](#wineColor), [wineGrapes](#wineGrapes), [wineMillesime](#wineMillesime), [wineName](#wineName), [wineOther](#wineOther), [wineTaste](#wineTaste), [wlv](#wlv)
 
-**Attributes**: [ID](#ID), [agentRole](#agentRole), [alcoholNorm](#alcoholNorm), [backgroundColor](#backgroundColor), [backgroundStyle](#backgroundStyle), [certainty](#certainty), [collectionID](#collectionID), [conservationNorm](#conservationNorm), [controlNumberType](#controlNumberType), [curationDate](#curationDate), [curationUpdate](#curationUpdate), [curatorID](#curatorID), [figureNum](#figureNum), [figurePosition](#figurePosition), [figureType](#figureType), [fontColor](#fontColor), [fontInitials](#fontInitials), [fontManner](#fontManner), [fontSize](#fontSize), [fontStyle](#fontStyle), [fontType](#fontType), [frameColor](#frameColor), [frameStyle](#frameStyle), [frameType](#frameType), [labelID](#labelID), [labelPosition](#labelPosition), [labelType](#labelType), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [locationRole](#locationRole), [locationType](#locationType), [material](#material), [norm](#norm), [notAfter](#notAfter), [notBefore](#notBefore), [pageID](#pageID), [printingTechnique](#printingTechnique), [qualityAwardNorm](#qualityAwardNorm), [qualityLabelType](#qualityLabelType), [qualityProductionNorm](#qualityProductionNorm), [relItems](#relItems), [relType](#relType), [scanID](#scanID), [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [textPosition](#textPosition), [textType](#textType), [uri](#uri), [volumeNorm](#volumeNorm), [wdw](#wdw), [wineNameType](#wineNameType), [wineOtherType](#wineOtherType), [year](#year)
+**Attributes**: [ID](#ID), [agentRole](#agentRole), [alcoholNorm](#alcoholNorm), [backgroundColor](#backgroundColor), [backgroundStyle](#backgroundStyle), [certainty](#certainty), [collectionID](#collectionID), [conservationNorm](#conservationNorm), [controlNumberType](#controlNumberType), [curationDate](#curationDate), [curationUpdate](#curationUpdate), [curatorID](#curatorID), [figureType](#figureType), [fontColor](#fontColor), [fontInitials](#fontInitials), [fontManner](#fontManner), [fontSize](#fontSize), [fontStyle](#fontStyle), [fontType](#fontType), [frameColor](#frameColor), [frameStyle](#frameStyle), [frameType](#frameType), [labelID](#labelID), [labelPosition](#labelPosition), [labelType](#labelType), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope), [locationRole](#locationRole), [locationType](#locationType), [material](#material), [norm](#norm), [notAfter](#notAfter), [notBefore](#notBefore), [pageID](#pageID), [position](#position), [printingTechnique](#printingTechnique), [qualityAwardNorm](#qualityAwardNorm), [qualityLabelType](#qualityLabelType), [qualityProductionNorm](#qualityProductionNorm), [relItems](#relItems), [relType](#relType), [scanID](#scanID), [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [textPosition](#textPosition), [textType](#textType), [uri](#uri), [volumeNorm](#volumeNorm), [wdw](#wdw), [wineNameType](#wineNameType), [wineOtherType](#wineOtherType), [year](#year)
 
 ### Elements
 #### agent
@@ -110,7 +110,7 @@ Any agent, whether a person (like a wine-maker or trader) or an organization (li
 - Frequency: Zero, once or several times.
 - Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
-- Has attribute(s): [agentRole](#agentRole), [norm](#norm), [uri](#uri), [ID](#ID).
+- Has attribute(s): [agentRole](#agentRole), [position](#position), [norm](#norm), [uri](#uri), [ID](#ID).
 
 #### alcohol
 
@@ -120,17 +120,17 @@ Information relevant to the alcohol content of the wine.
 - Frequency: Once at most.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [alcoholNorm](#alcoholNorm).
+- Has attribute(s): [position](#position), [alcoholNorm](#alcoholNorm).
 
 #### background
 
 Information about the background of the label. Needs to be filled in only if there is some special background, other than the blank paper, to the visual and/or textual information provided.
 
-- Status: Optional.
-- Frequency: Once at most.
+- Status: Mandatory.
+- Frequency: Once or several times.
 - Contained by element(s): [visual](#visual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [backgroundStyle](#backgroundStyle), [backgroundColor](#backgroundColor).
+- Has attribute(s): [backgroundColor](#backgroundColor), [ID](#ID), [backgroundStyle](#backgroundStyle).
 
 #### barrelNumber
 
@@ -140,7 +140,7 @@ The number of the barrel as mentioned on the label.
 - Frequency: Once at most.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): This element has no attributes.
+- Has attribute(s): [ID](#ID), [position](#position).
 
 #### collection
 
@@ -168,7 +168,7 @@ Any comment on the label or the label description, written in prose by the curat
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): [metadata](#metadata), [labelGroup](#labelGroup), [label](#label).
+- Contained by element(s): [wlv](#wlv), [metadata](#metadata), [labelGroup](#labelGroup).
 - Contains element(s): This element has no children.
 - Has attribute(s): This element has no attributes.
 
@@ -190,7 +190,7 @@ The control number that is required for more recent labels.
 - Frequency: Once at most.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [norm](#norm), [controlNumberType](#controlNumberType).
+- Has attribute(s): [position](#position), [norm](#norm), [controlNumberType](#controlNumberType).
 
 #### curation
 
@@ -220,14 +220,14 @@ Information regarding the supposed time of production of the label (especially r
 - Frequency: Zero, once or several times.
 - Contained by element(s): [visual](#visual).
 - Contains element(s): [figureItem](#figureItem).
-- Has attribute(s): [figureNum](#figureNum), [figureType](#figureType), [figurePosition](#figurePosition), [ID](#ID).
+- Has attribute(s): [figureType](#figureType), [position](#position), [ID](#ID).
 
 #### figureItem
 
 (figure item) A visual element or depicted object that can be identified in the figure.
 
-- Status: Optional.
-- Frequency: Zero, once or several times.
+- Status: Mandatory.
+- Frequency: Once or several times.
 - Contained by element(s): [figure](#figure).
 - Contains element(s): This element has no children.
 - Has attribute(s): [norm](#norm), [ID](#ID).
@@ -240,7 +240,7 @@ Information about the frame of the label.
 - Frequency: Zero, once or several times.
 - Contained by element(s): [visual](#visual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [frameType](#frameType), [frameStyle](#frameStyle), [frameColor](#frameColor).
+- Has attribute(s): [ID](#ID), [frameType](#frameType), [frameStyle](#frameStyle), [frameColor](#frameColor).
 
 #### label
 
@@ -249,7 +249,7 @@ Information about the frame of the label.
 - Status: Optional.
 - Frequency: Once at most.
 - Contained by element(s): [wlv](#wlv), [labelGroup](#labelGroup).
-- Contains element(s): [physical](#physical), [visual](#visual), [textual](#textual), [relations](#relations), [comments](#comments), [provenance](#provenance).
+- Contains element(s): [physical](#physical), [visual](#visual), [textual](#textual), [relations](#relations).
 - Has attribute(s): [labelPosition](#labelPosition).
 
 #### labelGroup
@@ -270,7 +270,7 @@ The number or identifyer of the label usually assigned by the printer.
 - Frequency: Once at most.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): This element has no attributes.
+- Has attribute(s): [ID](#ID), [position](#position).
 
 #### licence
 
@@ -290,7 +290,7 @@ Any location, such as the name of a region, city, village, or vineyard mentioned
 - Frequency: Zero, once or several times.
 - Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
-- Has attribute(s): [locationType](#locationType), [locationRole](#locationRole), [locationNorm](#locationNorm), [locationRegNr](#locationRegNr), [figureNum](#figureNum), [norm](#norm), [uri](#uri), [ID](#ID).
+- Has attribute(s): [locationType](#locationType), [locationRole](#locationRole), [norm](#norm), [uri](#uri), [ID](#ID), [position](#position).
 
 #### metadata
 
@@ -310,7 +310,7 @@ One of two mandatory top-level elements. Contains metadata related to the label 
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [textType](#textType), [textPosition](#textPosition), [figureNum](#figureNum).
+- Has attribute(s): [ID](#ID), [textType](#textType), [position](#position), [textPosition](#textPosition).
 
 #### physical
 
@@ -328,7 +328,7 @@ Information regarding the provenance of the label, in prose. This information ca
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): [labelGroup](#labelGroup), [label](#label).
+- Contained by element(s): [wlv](#wlv), [labelGroup](#labelGroup).
 - Contains element(s): [dating](#dating), [source](#source), [scan](#scan), [conservation](#conservation).
 - Has attribute(s): This element has no attributes.
 
@@ -340,7 +340,7 @@ Indications referring to an award obtained by the wine.
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [norm](#norm), [wdw](#wdw), [qualityAwardNorm](#qualityAwardNorm).
+- Has attribute(s): [position](#position), [norm](#norm), [wdw](#wdw), [qualityAwardNorm](#qualityAwardNorm).
 
 #### qualityGrapes
 
@@ -350,7 +350,7 @@ Indications referring to the quality of the grapes, like "Spätlese",  "Auslese"
 - Frequency: Zero, once or several times.
 - Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
-- Has attribute(s): [norm](#norm), [wdw](#wdw).
+- Has attribute(s): [position](#position), [norm](#norm), [wdw](#wdw).
 
 #### qualityHistorical
 
@@ -360,7 +360,7 @@ Indications referring to the quality of the grapes, like "Spätlese",  "Auslese"
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [wdw](#wdw), [norm](#norm).
+- Has attribute(s): [position](#position), [norm](#norm), [wdw](#wdw).
 
 #### qualityLabel
 
@@ -370,7 +370,7 @@ Indications referring to the quality of the grapes, like "Spätlese",  "Auslese"
 - Frequency: Zero, once or several times.
 - Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
-- Has attribute(s): [norm](#norm), [wdw](#wdw), [qualityLabelType](#qualityLabelType).
+- Has attribute(s): [position](#position), [norm](#norm), [wdw](#wdw), [qualityLabelType](#qualityLabelType).
 
 #### qualityLevel
 
@@ -380,7 +380,7 @@ Indications referring to the official quality level of the wine, like "Qualität
 - Frequency: Zero, once or several times.
 - Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
-- Has attribute(s): [norm](#norm), [wdw](#wdw).
+- Has attribute(s): [position](#position), [norm](#norm), [wdw](#wdw).
 
 #### qualityProduction
 
@@ -390,7 +390,7 @@ Any information describing specific steps in or aspects of the production of the
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [norm](#norm), [wdw](#wdw), [qualityProductionNorm](#qualityProductionNorm).
+- Has attribute(s): [position](#position), [norm](#norm), [wdw](#wdw), [qualityProductionNorm](#qualityProductionNorm).
 
 #### relation
 
@@ -408,7 +408,7 @@ Any information describing specific steps in or aspects of the production of the
 
 - Status: Optional.
 - Frequency: Once at most.
-- Contained by element(s): [label](#label).
+- Contained by element(s): [wlv](#wlv), [label](#label).
 - Contains element(s): [relation](#relation).
 - Has attribute(s): This element has no attributes.
 
@@ -460,7 +460,7 @@ Information regarding the volume of the wine.
 - Frequency: Once at most.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [volumeNorm](#volumeNorm).
+- Has attribute(s): [position](#position), [volumeNorm](#volumeNorm).
 
 #### wineAging
 
@@ -470,17 +470,17 @@ Information regarding the volume of the wine.
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [norm](#norm), [wdw](#wdw).
+- Has attribute(s): [norm](#norm), [position](#position), [wdw](#wdw).
 
 #### wineColor
 
 The color of the name as mentioned on the label.
 
-- Status: Optional.
-- Frequency: Zero, once or several times.
+- Status: Mandatory.
+- Frequency: Exactly once.
 - Contained by element(s): [(no data)](#(no data)).
 - Contains element(s): This element has no children.
-- Has attribute(s): [norm](#norm), [wdw](#wdw).
+- Has attribute(s): [norm](#norm), [position](#position), [wdw](#wdw).
 
 #### wineGrapes
 
@@ -490,27 +490,27 @@ The color of the name as mentioned on the label.
 - Frequency: Zero, once or several times.
 - Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
-- Has attribute(s): [norm](#norm), [wdw](#wdw).
+- Has attribute(s): [norm](#norm), [position](#position), [wdw](#wdw).
 
 #### wineMillesime
 
 The year that the wine was harvested in.
 
-- Status: Optional.
-- Frequency: Once at most.
-- Contained by element(s): [textual](#textual).
+- Status: Mandatory.
+- Frequency: Exactly once.
+- Contained by element(s): [(no data)](#(no data)).
 - Contains element(s): This element has no children.
-- Has attribute(s): [norm](#norm), [ID](#ID).
+- Has attribute(s): [norm](#norm), [ID](#ID), [position](#position).
 
 #### wineName
 
 The name of the wine. Typically printed in a somewhat larger font size than other information. For historical wine labels of the Mosel region, the wine name is typically composed of a location  (Ort, Gemeinde, Leitgemeinde) and the name or nickname of the specific vineyard belonging to that location. Note that the element 'wineName' has, as a consequence, an empty child element 'location' that can appear more than once and may hold information about the location and the vineyard separately.
 
-- Status: Optional.
-- Frequency: Zero, once or several times.
-- Contained by element(s): [textual](#textual).
+- Status: Mandatory.
+- Frequency: Exactly once.
+- Contained by element(s): [(no data)](#(no data)).
 - Contains element(s): [agent](#agent), [location](#location), [qualityGrapes](#qualityGrapes), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [wineGrapes](#wineGrapes).
-- Has attribute(s): [wineNameType](#wineNameType), [norm](#norm), [uri](#uri), [wdw](#wdw), [ID](#ID).
+- Has attribute(s): [wineNameType](#wineNameType), [norm](#norm), [position](#position), [uri](#uri), [wdw](#wdw), [ID](#ID).
 
 #### wineOther
 
@@ -520,7 +520,7 @@ The name of the wine. Typically printed in a somewhat larger font size than othe
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [wineOtherType](#wineOtherType), [norm](#norm).
+- Has attribute(s): [wineOtherType](#wineOtherType), [norm](#norm), [position](#position).
 
 #### wineTaste
 
@@ -530,7 +530,7 @@ The name of the wine. Typically printed in a somewhat larger font size than othe
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [norm](#norm), [wdw](#wdw).
+- Has attribute(s): [norm](#norm), [position](#position), [wdw](#wdw).
 
 #### wlv
 
@@ -539,7 +539,7 @@ The root element in a label description using the Wine Label Vocabulary.
 - Status: (no data).
 - Frequency: (no data).
 - Contained by element(s): This is the root element.
-- Contains element(s): [metadata](#metadata), [labelGroup](#labelGroup), [label](#label).
+- Contains element(s): [metadata](#metadata), [labelGroup](#labelGroup), [label](#label), [comments](#comments), [provenance](#provenance), [relations](#relations).
 - Has attribute(s): [labelID](#labelID), [labelType](#labelType).
 
 ### Attributes
@@ -550,12 +550,17 @@ The root element in a label description using the Wine Label Vocabulary.
 
 - Status: Optional.
 - Contained by element: 
+    * [frame](#frame)
+    * [background](#background)
     * [figure](#figure)
     * [figureItem](#figureItem)
     * [wineMillesime](#wineMillesime)
     * [wineName](#wineName)
     * [agent](#agent)
     * [location](#location)
+    * [barrelNumber](#barrelNumber)
+    * [labelNumber](#labelNumber)
+    * [otherText](#otherText)
     * [relation](#relation).
 - Possible values: This element has no default values.
 
@@ -584,7 +589,7 @@ The percentage of alcohol, expressed as number (float).
 #### backgroundColor
 The dominant color tone, whether it is strong or faint.
 
-- Status: Optional.
+- Status: Mandatory.
 - Contained by element: [background](#background).
 - Possible values: 
     * red
@@ -599,7 +604,7 @@ The dominant color tone, whether it is strong or faint.
 #### backgroundStyle
 The kind of background, whether a pattern, a flat color plane, or an absence of any pattern or color.
 
-- Status: Mandatory.
+- Status: Optional.
 - Contained by element: [background](#background).
 - Possible values: pattern, color, none.
 
@@ -659,40 +664,10 @@ A unique identifier for the person that has curated the wine label description.
 - Contained by element: [curation](#curation).
 - Possible values: This element has no default values.
 
-#### figureNum
-(figure number) Allows to number several figures for better identification.
-
-- Status: Mandatory.
-- Contained by element: [figure](#figure).
-- Possible values: This element has no default values.
-
-#### figurePosition
-(figure position) The position of the figure on the label surface, in a grid of nine quadrants. The quadrants are numbered like on the number-pad of a phone, starting at the top left with 1 and ending at the bottom right with 9. Any quadrant that the figure covers to a significant extent is included in the position description. (The textual designators are still valid, but will be deprecated.)
-
-- Status: Optional.
-- Contained by element: [figure](#figure).
-- Possible values: 
-    * upper-left
-    * upper-right
-    * upper-center
-    * upper-across
-    * center-left
-    * center-right
-    * center-center
-    * center-across
-    * lower-left
-    * lower-right
-    * lower-center
-    * lower-across
-    * left-across
-    * center-across
-    * right-across
-    * full-size.
-
 #### figureType
 (figure type) Allows a simple classification of figures into common types.
 
-- Status: Mandatory.
+- Status: Optional.
 - Contained by element: [figure](#figure).
 - Possible values: 
     * symbolic
@@ -747,13 +722,14 @@ A unique identifier for the person that has curated the wine label description.
 #### frameColor
 The color of the frame.
 
-- Status: Mandatory.
+- Status: Optional.
 - Contained by element: [frame](#frame).
 - Possible values: 
     * black
     * grey
     * gold
     * red
+    * orange
     * green
     * blue
     * silver.
@@ -761,19 +737,20 @@ The color of the frame.
 #### frameStyle
 The visual style of the frame.
 
-- Status: Mandatory.
+- Status: Optional.
 - Contained by element: [frame](#frame).
 - Possible values: 
-    * lines
+    * line(s)
+    * band
     * floral
     * pattern
-    * band
+    * ornamental line(s)
     * other.
 
 #### frameType
 The type of frame, defined based on its position relative to other elements of the label. The value 'outer' means all other elements are within the frame. The value 'inner' means some of the other elements of the label are within, others are outside the frame.
 
-- Status: Mandatory.
+- Status: Optional.
 - Contained by element: [frame](#frame).
 - Possible values: outer, inner, other.
 
@@ -787,7 +764,7 @@ A unique identifier for the label.
 #### labelPosition
 The position of the label on the bottle, used in particular as a way to disinguish the different labels in a label group.
 
-- Status: Mandatory.
+- Status: Optional.
 - Contained by element: [label](#label).
 - Possible values: 
     * front
@@ -830,35 +807,6 @@ The scope of the licence: The part or aspect of the label or label description t
     * metadata
     * textual.
 
-#### locationNorm
-The name of the location in a normalized form, with its type, and (if available) with authority data (Wikidata ID and/or Reg-Nr.).
-
-- Status: Optional.
-- Contained by element: [location](#location).
-- Possible values: 
-    * Bernkastel-Kues (Leitgemeinde;Q643228)
-    * Brauneberg (Leitgemeinde;Q567156)
-    * Wiltingen (Leitgemeinde;Q161930)
-    * Winningen (Leitgemeinde;Q822358)
-    * Zell (Leitgemeinde;Q187500)
-    * Leitgemeinde: Zell (Q187500)
-    * Filzen (Ort;Q47087896)
-    * Freudenberg am Main (Ort;Q61827)
-    * Graach (Ort;Q648808)
-    * Ober-Ingelheim (Ort;Q2008825)
-    * Trittenheim (Ort;Q662479)
-    * Schwarze Katz (Großlage;Q2253665)
-    * Großlage: Schwarze Katz (Q2253665)
-    * Vollmühle (Parzelle)
-    * other.
-
-#### locationRegNr
-The numerical identifier of a vineyard contained in the official "Lagenliste".
-
-- Status: Optional.
-- Contained by element: [location](#location).
-- Possible values: This element has no default values.
-
 #### locationRole
 The role of the location.
 
@@ -889,37 +837,28 @@ The type of the location, in particular with respect to the broader or narrower 
     * vineyard / historischer Lagenname
     * vineyard / Großlage
     * vineyard / Einzellage
+    * vineyard / Lage
+    * vineyard / Parzelle
     * other.
 
 #### material
 The material from which the label is made (in most cases, this is paper).
 
-- Status: Mandatory.
+- Status: Optional.
 - Contained by element: [physical](#physical).
-- Possible values: paper, plastic, metal.
+- Possible values: 
+    * paper
+    * plastic
+    * metal
+    * mixed
+    * undetermined
+    * other.
 
 #### norm
 (normalized data) Contains authority file data and other stable and unique identifiers. Sources include: Wikidata, Register-Nummer der Weinlagen, Gemeinsame Normdaten-Datei, and others. Can relate to locations, agents, vineyards, items depicted in visual form, and other standardized vocabulary. 
 
-- Status: Optional.
-- Contained by element: 
-    * [figureItem](#figureItem)
-    * [wineMillesime](#wineMillesime)
-    * [wineName](#wineName)
-    * [wineColor](#wineColor)
-    * [wineGrapes](#wineGrapes)
-    * [wineTaste](#wineTaste)
-    * [wineAging](#wineAging)
-    * [wineOther](#wineOther)
-    * [qualityGrapes](#qualityGrapes)
-    * [qualityLevel](#qualityLevel)
-    * [qualityAward](#qualityAward)
-    * [qualityLabel](#qualityLabel)
-    * [qualityProduction](#qualityProduction)
-    * [qualityHistorical](#qualityHistorical)
-    * [agent](#agent)
-    * [location](#location)
-    * [controlNumber](#controlNumber).
+- Status: Mandatory.
+- Contained by element: [figureItem](#figureItem).
 - Possible values: 
     * Artefakt: Banderole (Q2689628)
     * Artefakt: Becher (Q81727)
@@ -1026,20 +965,659 @@ The material from which the label is made (in most cases, this is paper).
     * QualityGrapes: Trockenbeerenauslese (Q1639847)
     * QualityGrapes: Eiswein
     * QualityGrapes: other
+    * Land: Deutschland (Q183)
     * Bereich: Mosel-Saar-Ruwer (Q672776)
-    * Leitgemeinde: Bernkastel-Kues (Q643228)
-    * Leitgemeinde: Brauneberg (Q567156)
-    * Leitgemeinde: Wiltingen (Q161930)
-    * Leitgemeinde: Winningen (Q822358)
-    * Leitgemeinde: Zell (Q187500)
+    * Ort (Leitgemeinde): Alf (Q568556)
+    * Ort (Leitgemeinde): Alken (Q305288)
+    * Ort (Leitgemeinde): Andel (Q155622)
+    * Ort (Leitgemeinde): Ayl (Q186199)
+    * Ort (Leitgemeinde): Bausendorf (Q569296)
+    * Ort (Leitgemeinde): Beilstein (Q652238)
+    * Ort (Leitgemeinde): Bekond (Q569708)
+    * Ort (Leitgemeinde): Bernkastel (Q155622)
+    * Ort (Leitgemeinde): Biewer (Q245974)
+    * Ort (Leitgemeinde): Brauneberg (Q567156)
+    * Ort (Leitgemeinde): Bremm (Q113378)
+    * Ort (Leitgemeinde): Briedel (Q565192)
+    * Ort (Leitgemeinde): Briedern (Q1517)
+    * Ort (Leitgemeinde): Brodenbach (Q168070)
+    * Ort (Leitgemeinde): Bruttig-Fankel (Q574161)
+    * Ort (Leitgemeinde): Bruttig (Q574161)
+    * Ort (Leitgemeinde): Bullay (Q546257)
+    * Ort (Leitgemeinde): Burgen (Q679415)
+    * Ort (Leitgemeinde): Burg (Q658530)
+    * Ort (Leitgemeinde): Cochem (Q502749)
+    * Ort (Leitgemeinde): Cond (Q502749)
+    * Ort (Leitgemeinde): Detzem (Q553394)
+    * Ort (Leitgemeinde): Dhron (Q572352)
+    * Ort (Leitgemeinde): Dieblich (Q565313)
+    * Ort (Leitgemeinde): Dreis (Q563974)
+    * Ort (Leitgemeinde): Ediger (Q547805)
+    * Ort (Leitgemeinde): Eitelsbach (Q316811)
+    * Ort (Leitgemeinde): Ellenz-Polterdorf (Q566958)
+    * Ort (Leitgemeinde): Ellenz (Q566958)
+    * Ort (Leitgemeinde): Eller (Q547805)
+    * Ort (Leitgemeinde): Enkirch (Q553838)
+    * Ort (Leitgemeinde): Ensch (Q660477)
+    * Ort (Leitgemeinde): Erden (Q565749)
+    * Ort (Leitgemeinde): Ernst (Q567608)
+    * Ort (Leitgemeinde): Falkenstein (Q818576)
+    * Ort (Leitgemeinde): Fankel (Q574161)
+    * Ort (Leitgemeinde): Fellerich (Q1404048)
+    * Ort (Leitgemeinde): Fell (Q659890)
+    * Ort (Leitgemeinde): Filzen (Q47087896)
+    * Ort (Leitgemeinde): Gondorf (Q553347)
+    * Ort (Leitgemeinde): Graach (Q648808)
+    * Ort (Leitgemeinde): Güls (Q1777938)
+    * Ort (Leitgemeinde): Hatzenport (Q554243)
+    * Ort (Leitgemeinde): Helfant (Q636128)
+    * Ort (Leitgemeinde): Hupperath (Q565320)
+    * Ort (Leitgemeinde): Igel (Q543497)
+    * Ort (Leitgemeinde): Kaimt (Q187500)
+    * Ort (Leitgemeinde): Kanzem (Q569862)
+    * Ort (Leitgemeinde): Karden (Q656110)
+    * Ort (Leitgemeinde): Kasel (Q659935)
+    * Ort (Leitgemeinde): Kastel-Staadt (Q553490)
+    * Ort (Leitgemeinde): Kattenes (Q1736818)
+    * Ort (Leitgemeinde): Kenn (Q174435)
+    * Ort (Leitgemeinde): Kernscheid (Q650102)
+    * Ort (Leitgemeinde): Kesten (Q569300)
+    * Ort (Leitgemeinde): Kinheim (Q656236)
+    * Ort (Leitgemeinde): Klotten (Q269397)
+    * Ort (Leitgemeinde): Klüsserath (Q569589)
+    * Ort (Leitgemeinde): Kobern (Q553347)
+    * Ort (Leitgemeinde): Könen (Q1795916)
+    * Ort (Leitgemeinde): Konz (Q503185)
+    * Ort (Leitgemeinde): Kövenig (Q1796794)
+    * Ort (Leitgemeinde): Köwerich (Q657740)
+    * Ort (Leitgemeinde): Krettnach (Q503185)
+    * Ort (Leitgemeinde): Kreuzweiler (Q636128)
+    * Ort (Leitgemeinde): Kröv (Q553171)
+    * Ort (Leitgemeinde): Kues (Q155622)
+    * Ort (Leitgemeinde): Kürenz (Q883351)
+    * Ort (Leitgemeinde): Langsur (Q610893)
+    * Ort (Leitgemeinde): Lay (Q1328018)
+    * Ort (Leitgemeinde): Lehmen (Q567585)
+    * Ort (Leitgemeinde): Leiwen (Q681047)
+    * Ort (Leitgemeinde): Liersberg (Q20820333)
+    * Ort (Leitgemeinde): Lieser (Q646892)
+    * Ort (Leitgemeinde): Löf (Q553970)
+    * Ort (Leitgemeinde): Longuich (Q569606)
+    * Ort (Leitgemeinde): Lösnich (Q510820)
+    * Ort (Leitgemeinde): Maring-Noviand (Q566744)
+    * Ort (Leitgemeinde): Matthias (Q877660)
+    * Ort (Leitgemeinde): Maximin Grünhaus (Q659878)
+    * Ort (Leitgemeinde): Mehring (Q543574)
+    * Ort (Leitgemeinde): Merl (Q1921880)
+    * Ort (Leitgemeinde): Mertesdorf (Q659878)
+    * Ort (Leitgemeinde): Mesenich (Q610893)
+    * Ort (Leitgemeinde): Minheim (Q524796)
+    * Ort (Leitgemeinde): Monzel (Q648793)
+    * Ort (Leitgemeinde): Morscheid (Q656840)
+    * Ort (Leitgemeinde): Moselkern (Q651263)
+    * Ort (Leitgemeinde): Müden (Q680967)
+    * Ort (Leitgemeinde): Mühlheim (Q667192)
+    * Ort (Leitgemeinde): Neef (Q572494)
+    * Ort (Leitgemeinde): Nehren (Q572471)
+    * Ort (Leitgemeinde): Nennig (Q316804)
+    * Ort (Leitgemeinde): Neumagen (Q572352)
+    * Ort (Leitgemeinde): Niederemmel (Q375762)
+    * Ort (Leitgemeinde): Niederfell (Q553445)
+    * Ort (Leitgemeinde): Niederleuken (Q543639)
+    * Ort (Leitgemeinde): Niedermennig (Q503185)
+    * Ort (Leitgemeinde): Nittel (Q594609)
+    * Ort (Leitgemeinde): Oberbillig (Q636185)
+    * Ort (Leitgemeinde): Oberemmel (Q47037444)
+    * Ort (Leitgemeinde): Oberfell (Q647068)
+    * Ort (Leitgemeinde): Ockfen (Q643198)
+    * Ort (Leitgemeinde): Olewig (Q885323)
+    * Ort (Leitgemeinde): Osann (Q648793)
+    * Ort (Leitgemeinde): Palzem (Q636128)
+    * Ort (Leitgemeinde): Pellingen (Q655962)
+    * Ort (Leitgemeinde): Perl (Q662505)
+    * Ort (Leitgemeinde): Piesport (Q375762)
+    * Ort (Leitgemeinde): Pölich (Q553412)
+    * Ort (Leitgemeinde): Pommern (Q665867)
+    * Ort (Leitgemeinde): Pünderich (Q567287)
+    * Ort (Leitgemeinde): Rehlingen (Q594609)
+    * Ort (Leitgemeinde): Reil (Q656264)
+    * Ort (Leitgemeinde): Riol (Q553441)
+    * Ort (Leitgemeinde): Rivenich (Q552448)
+    * Ort (Leitgemeinde): Ruwer (Q316811)
+    * Ort (Leitgemeinde): Saarburg (Q543639)
+    * Ort (Leitgemeinde): Schleich (Q660583)
+    * Ort (Leitgemeinde): Schoden (Q646456)
+    * Ort (Leitgemeinde): Schweich (Q212570)
+    * Ort (Leitgemeinde): Sehl (Q502749)
+    * Ort (Leitgemeinde): Sehndorf (Q2266381)
+    * Ort (Leitgemeinde): Senheim (Q653097)
+    * Ort (Leitgemeinde): Serrig (Q656819)
+    * Ort (Leitgemeinde): Sommerau (Q631137)
+    * Ort (Leitgemeinde): Springiersbach (Q547805)
+    * Ort (Leitgemeinde): St. Aldegund (Q653902)
+    * Ort (Leitgemeinde): Starkenburg (Q682031)
+    * Ort (Leitgemeinde): Tarforst (Q328287)
+    * Ort (Leitgemeinde): Temmels (Q636175)
+    * Ort (Leitgemeinde): Thörnich (Q591473)
+    * Ort (Leitgemeinde): Traben (Q540919)
+    * Ort (Leitgemeinde): Trais (Q6566110)
+    * Ort (Leitgemeinde): Trarbach (Q540919)
+    * Ort (Leitgemeinde): Trier (Q3138)
+    * Ort (Leitgemeinde): Trittenheim (Q662479)
+    * Ort (Leitgemeinde): Ürzig (Q335018)
+    * Ort (Leitgemeinde): Valwig (Q656297)
+    * Ort (Leitgemeinde): Veldenz (Q569812)
+    * Ort (Leitgemeinde): Waldrach (Q569807)
+    * Ort (Leitgemeinde): Wasserliesch (Q553357)
+    * Ort (Leitgemeinde): Wawern (Q565310)
+    * Ort (Leitgemeinde): Wehlen (Q155622)
+    * Ort (Leitgemeinde): Wehr (Q636128)
+    * Ort (Leitgemeinde): Wellen (Q636208)
+    * Ort (Leitgemeinde): Wiltingen (Q161930)
+    * Ort (Leitgemeinde): Wincheringen (Q543611)
+    * Ort (Leitgemeinde): Winningen (Q822358)
+    * Ort (Leitgemeinde): Wintrich (Q373778)
+    * Ort (Leitgemeinde): Wittlich (Q559514)
+    * Ort (Leitgemeinde): Wolf (Q1563313)
+    * Ort (Leitgemeinde): Zell (Q187500)
+    * Ort (Leitgemeinde): Zeltingen (Q189241)
+    * Ort (Leitgemeinde): Bernkastel-Kues (Q643228)
+    * Ort (Leitgemeinde): Brauneberg (Q567156)
+    * Ort (Leitgemeinde): Wiltingen (Q161930)
+    * Ort (Leitgemeinde): Winningen (Q822358)
+    * Ort (Leitgemeinde): Zell (Q187500)
+    * Ort (Leitgemeinde): Trittenheim (Q662479)
     * Ort: Filzen (Q47087896)
     * Ort: Freudenberg am Main (Q61827)
-    * Ort: Graach (Q648808)
     * Ort: Ober-Ingelheim (Q2008825)
     * Ort: Trittenheim (Q662479)
-    * Großlage: Schwarze Katz (Q2253665)
-    * Parzelle: Vollmühle
-    * Einzellage: Deutschherrenberg
+    * Ort: Pünderich (Q567287)
+    * Lage: Abteiberg [Rosenhang] (6.3.3.073)
+    * Lage: Abtei Kloster Stuben [Rosenhang] (6.3.3.059)
+    * Lage: Abtei [Münzlay] (6.1.4.090)
+    * Lage: Abtsberg [großlagenfrei] (6.4.1.009)
+    * Lage: Abtsberg [Münzlay] (6.1.4.079)
+    * Lage: Adler [Schwarze Katz] (6.3.4.097)
+    * Lage: Agritiusberg [Scharzberg] (6.5.1.025)
+    * Lage: Albachtaler [Gipfel] (6.2.1.015)
+    * Lage: Altarberg [Goldbäumchen] (6.3.1.011)
+    * Lage: Altärchen [Michelsberg] (6.1.3.072)
+    * Lage: Alte Badstube am Doktorberg [Badstube] (6.1.1.006)
+    * Lage: Altenberg [Gipfel] (6.2.1.018)
+    * Lage: Altenberg [Römerlay] (6.1.10.189)
+    * Lage: Altenberg [Scharzberg / Kanzem] (6.5.1.013)
+    * Lage: Altenberg [Scharzberg / Krettnach] (6.5.1.021)
+    * Lage: Altenberg [Scharzberg / Oberemmel] (6.5.1.026)
+    * Lage: Amtgarten [Kurfürstenlay] (6.1.2.028)
+    * Lage: Andreasberg [Römerlay] (6.1.10.190)
+    * Lage: Annaberg [Propstberg] (6.1.6.104)
+    * Lage: Antoniusberg [Scharzberg] (6.5.1.042)
+    * Lage: Antoniusbrunnen [Scharzberg] (6.5.1.033)
+    * Lage: Apotheke [Michelsberg] (6.1.3.073)
+    * Lage: Arzlay [Rosenhang] (6.3.3.068)
+    * Lage: Auf der Heide [Schwarzlay] (6.1.8.153)
+    * Lage: Auf der Wiltinger Kupp [Scharzberg] (6.5.1.017)
+    * Lage: Augenscheiner [Römerlay] (6.1.10.191)
+    * Lage: Ausoniusstein [Weinhex] (6.3.5.124)
+    * Lage: Badstube (Großlage) (6.1.1)
+    * Lage: Batterieberg [Schwarzlay] (6.1.8.135)
+    * Lage: Benediktinerberg [Römerlay] (6.1.10.192)
+    * Lage: Bergschlößchen [Scharzberg] (6.5.1.034)
+    * Lage: Bienengarten [Rosenhang] (6.3.3.076)
+    * Lage: Bienengarten [Weinhex] (6.3.5.108)
+    * Lage: Bienenlay [Grafschaft] (6.3.2.042)
+    * Lage: Bischofsstuhl [Goldbäumchen] (6.3.1.003)
+    * Lage: Bischofstein [Weinhex] (6.3.5.106)
+    * Lage: Blattenberg [St. Michael] (6.1.7.114)
+    * Lage: Bleidenberg [Weinhex] (6.3.5.103)
+    * Lage: Blümchen [Gipfel] (6.2.1.005)
+    * Lage: Bockstein [Scharzberg] (6.5.1.031)
+    * Lage: Bottchen [Schwarzlay] (6.1.8.170)
+    * Lage: Bratenhöfchen [Badstube] (6.1.1.001)
+    * Lage: Brauneberg [Goldbäumchen] (6.3.1.014)
+    * Lage: Brauneberg [Michelsberg] (6.1.3.068)
+    * Lage: Brauneberg [St. Michael] (6.1.7.107)
+    * Lage: Brauneberg [Weinhex] (6.3.5.133)
+    * Lage: Braune Kupp [Scharzberg] (6.5.1.054)
+    * Lage: Braunfels [Scharzberg] (6.5.1.055)
+    * Lage: Brautrock [Grafschaft] (6.3.2.038)
+    * Lage: Brückstück [Weinhex] (6.3.5.135)
+    * Lage: Bruderberg [großlagenfrei] (6.4.1.010)
+    * Lage: Brüderberg [Königsberg] (6.2.2.022)
+    * Lage: Bruderschaft [St. Michael] (6.1.7.112)
+    * Lage: Burgberg [Römerlay] (6.1.10.193)
+    * Lage: Burgberg [Schwarzlay] (6.1.8.150)
+    * Lage: Burgberg [Schwarzlay] (6.1.8.154)
+    * Lage: Burgberg [Weinhex] (6.3.5.104)
+    * Lage: Burg Bischofstein [Weinhex] (6.3.5.111)
+    * Lage: Burg Coreidelsteiner [Goldbäumchen] (6.3.1.015)
+    * Lage: Burggraf [Grafschaft] (6.3.2.028)
+    * Lage: Burglay-Felsen [Schwarze Katz] (6.3.4.087)
+    * Lage: Burglay [Michelsberg] (6.1.3.050)
+    * Lage: Burglay [Nacktarsch] (6.1.5.092)
+    * Lage: Burgmauer [Propstberg] (6.1.6.105)
+    * Lage: Burg Warsberg [Gipfel] (6.2.1.019)
+    * Lage: Busslay [Schwarzlay] (6.1.8.143)
+    * Lage: Calmont [Grafschaft] (6.3.2.034)
+    * Lage: Carlsberg [Kurfürstenlay] (6.1.2.036)
+    * Lage: Carlsfelsen [Gipfel] (6.2.1.011)
+    * Lage: Dechantsberg [Goldbäumchen] (6.3.1.023)
+    * Lage: Deuslay [Rosenhang] (6.3.3.074)
+    * Lage: Deutschherrenberg [Münzlay] (6.1.4.085)
+    * Lage: Deutschherrenberg [Römerlay] (6.1.10.194)
+    * Lage: Deutschherrenköpfchen [Römerlay] (6.1.10.195)
+    * Lage: Doctor [Badstube] (6.1.1.002)
+    * Lage: Domgarten [Weinhex] (6.3.5.136)
+    * Lage: Domherrenberg [Goldbäumchen] (6.3.1.010)
+    * Lage: Domherrenberg [Römerlay] (6.1.10.196)
+    * Lage: Domherrenberg [Schwarze Katz] (6.3.4.088)
+    * Lage: Domherr [Michelsberg] (6.1.3.061)
+    * Lage: Dominikanerberg [großlagenfrei] (6.4.1.001)
+    * Lage: Domprobst [Münzlay] (6.1.4.080)
+    * Lage: Dullgärten [Königsberg] (6.2.2.021)
+    * Lage: Edelberg [Schwarzlay] (6.1.8.136)
+    * Lage: Ehrenberg [großlagenfrei] (6.4.1.015)
+    * Lage: Elisenberg [Kurfürstenlay] (6.1.2.029)
+    * Lage: Ellergrub [Schwarzlay] (6.1.8.137)
+    * Lage: Elzhofberg [Grafschaft] (6.3.2.043)
+    * Lage: Engelgrube [Michelsberg] (6.1.3.053)
+    * Lage: Engelströpfchen [Grafschaft] (6.3.2.044)
+    * Lage: Enggaß [St. Michael] (6.1.7.120)
+    * Lage: Euchariusberg [Scharzberg] (6.5.1.018)
+    * Lage: Euchariusberg [Scharzberg] (6.5.1.022)
+    * Lage: Fächern [Weinhex] (6.3.5.130)
+    * Lage: Fahrberg [Weinhex] (6.3.5.115)
+    * Lage: Fahrberg [Weinhex] (6.3.5.116)
+    * Lage: Falkenberg [Michelsberg] (6.1.3.062)
+    * Lage: Falklay [Schwarzlay] (6.1.8.129)
+    * Lage: Falklay [Vom heißen Stein] (6.1.9.185)
+    * Lage: Felsenkopf [Michelsberg] (6.1.3.074)
+    * Lage: Felsentreppchen [Schwarzlay] (6.1.8.171)
+    * Lage: Felslay [großlagenfrei] (6.4.1.007)
+    * Lage: Fels [Scharzberg] (6.5.1.015)
+    * Lage: Fettgarten [Schwarze Katz] (6.3.4.098)
+    * Lage: Feuerberg [Goldbäumchen] (6.3.1.012)
+    * Lage: Feuerberg [Grafschaft] (6.3.2.045)
+    * Lage: Frauenberg [Grafschaft] (6.3.2.037)
+    * Lage: Fuchshöhle [Weinhex] (6.3.5.117)
+    * Lage: Fuchs [Scharzberg] (6.5.1.036)
+    * Lage: Funkenberg [Goldbäumchen] (6.3.1.019)
+    * Lage: Fürsterlay [Schwarzlay] (6.1.8.151)
+    * Lage: Gaispfad [Schwarzlay] (6.1.8.155)
+    * Lage: Gäns [Weinhex] (6.3.5.118)
+    * Lage: Gärtchen [Michelsberg] (6.1.3.063)
+    * Lage: Geierslay [Kurfürstenlay] (6.1.2.044)
+    * Lage: Geisberg [Michelsberg] (6.1.3.069)
+    * Lage: Geisberg [Scharzberg] (6.5.1.032)
+    * Lage: Geisberg [Schwarze Katz] (6.3.4.089)
+    * Lage: Gipfel (Großlage) (6.2.1.003)
+    * Lage: Gipfel (Großlage) (6.2.1)
+    * Lage: Goldbäumchen (Großlage) (6.3.1.001)
+    * Lage: Goldberg [Goldbäumchen] (6.3.1.021)
+    * Lage: Goldberg [Scharzberg] (6.5.1.050)
+    * Lage: Goldblume [Weinhex] (6.3.5.128)
+    * Lage: Goldgrübchen [Rosenhang] (6.3.3.075)
+    * Lage: Goldgrube [Schwarzlay] (6.1.8.156)
+    * Lage: Goldkupp [St. Michael] (6.1.7.115)
+    * Lage: Goldlay [Vom heißen Stein] (6.1.9.181)
+    * Lage: Goldlay [Vom heißen Stein] (6.1.9.186)
+    * Lage: Goldlay [Weinhex] (6.3.5.131)
+    * Lage: Goldschatz [Kurfürstenlay] (6.1.2.048)
+    * Lage: Goldtröpfchen [Michelsberg] (6.1.3.064)
+    * Lage: Goldwingert [Schwarzlay] (6.1.8.174)
+    * Lage: Götterlay [Goldbäumchen] (6.3.1.002)
+    * Lage: Gottesfuß [Scharzberg] (6.5.1.056)
+    * Lage: Graben [Badstube] (6.1.1.003)
+    * Lage: Graf Beyßel-Herrenberg [Grafschaft] (6.3.2.039)
+    * Lage: Grafenberg [Michelsberg] (6.1.3.054)
+    * Lage: Grafschafter Sonnenberg [Kurfürstenlay] (6.1.2.037)
+    * Lage: Grafschaft (Großlage) (6.3.2.056)
+    * Lage: Grafschaft (Großlage) (6.3.2)
+    * Lage: Greth [Rosenhang] (6.3.3.080)
+    * Lage: Großer Hengelberg [Michelsberg] (6.1.3.055)
+    * Lage: Großer Herrgott [Kurfürstenlay] (6.1.2.040)
+    * Lage: großlagenfrei (Großlage) (6.4.1.)
+    * Lage: Günterslay [Michelsberg] (6.1.3.065)
+    * Lage: Hahnenschrittchen [Schwarzlay] (6.1.8.130)
+    * Lage: Hälle [Grafschaft] (6.3.2.030)
+    * Lage: Hammerstein [Römerlay] (6.1.10.197)
+    * Lage: Hamm [Weinhex] (6.3.5.122)
+    * Lage: Hamm [Weinhex] (6.3.5.137)
+    * Lage: Häs'chen [Michelsberg] (6.1.3.077)
+    * Lage: Hasenberg [Schloß Bübingen] (6.6.1.525)
+    * Lage: Hasenläufer [Kurfürstenlay] (6.1.2.017)
+    * Lage: Heilgraben [Weinhex] (6.3.5.107)
+    * Lage: Heiligenborn [Scharzberg] (6.5.1.043)
+    * Lage: Held [Königsberg] (6.2.2.024)
+    * Lage: Held [Propstberg] (6.1.6.099)
+    * Lage: Held [St. Michael] (6.1.7.117)
+    * Lage: Held [St. Michael] (6.1.7.125)
+    * Lage: Helenenkloster [Kurfürstenlay] (6.1.2.030)
+    * Lage: Herrenberger [Scharzberg] (6.5.1.051)
+    * Lage: Herrenberg [Goldbäumchen] (6.3.1.004)
+    * Lage: Herrenberg [Grafschaft] (6.3.2.029)
+    * Lage: Herrenberg [großlagenfrei] (6.4.1.002)
+    * Lage: Herrenberg [großlagenfrei] (6.4.1.011)
+    * Lage: Herrenberg [Kurfürstenlay] (6.1.2.020)
+    * Lage: Herrenberg [Nacktarsch] (6.1.5.093)
+    * Lage: Herrenberg [Propstberg] (6.1.6.106)
+    * Lage: Herrenberg [Römerlay] (6.1.10.198)
+    * Lage: Herrenberg [Rosenhang] (6.3.3.083)
+    * Lage: Herrenberg [Scharzberg] (6.5.1.001)
+    * Lage: Herrenberg [Scharzberg] (6.5.1.004)
+    * Lage: Herrenberg [Scharzberg] (6.5.1.023)
+    * Lage: Herrenberg [Scharzberg] (6.5.1.040)
+    * Lage: Herrenberg [Scharzberg] (6.5.1.044)
+    * Lage: Herrenberg [Schwarzlay] (6.1.8.138)
+    * Lage: Herrenberg [Schwarzlay] (6.1.8.144)
+    * Lage: Herrgottsrock [Scharzberg] (6.5.1.064)
+    * Lage: Herzchen [Vom heißen Stein] (6.1.9.176)
+    * Lage: Herzlay [Schwarzlay] (6.1.8.128)
+    * Lage: Himmelreich [Grafschaft] (6.3.2.053)
+    * Lage: Himmelreich [Münzlay] (6.1.4.081)
+    * Lage: Himmelreich [Münzlay] (6.1.4.086)
+    * Lage: Hirschlay [Propstberg] (6.1.6.101)
+    * Lage: Hirtengarten [Gipfel] (6.2.1.008)
+    * Lage: Hitzlay [großlagenfrei] (6.4.1.003)
+    * Lage: Hochlay [Goldbäumchen] (6.3.1.005)
+    * Lage: Hofberger [Michelsberg] (6.1.3.056)
+    * Lage: Hofberg [Scharzberg] (6.5.1.019)
+    * Lage: Hölle [Scharzberg] (6.5.1.057)
+    * Lage: Höll [Grafschaft] (6.3.2.046)
+    * Lage: Honigberg [Kurfürstenlay] (6.1.2.024)
+    * Lage: Hörecker [Scharzberg] (6.5.1.010)
+    * Lage: Hubertusberg [Gipfel] (6.2.1.010)
+    * Lage: Hubertusborn [Weinhex] (6.3.5.123)
+    * Lage: Hubertuslay [Schwarzlay] (6.1.8.148)
+    * Lage: Hühnerberg [Schwarzlay] (6.1.8.157)
+    * Lage: Hunnenstein [Weinhex] (6.3.5.105)
+    * Lage: Hütte [Scharzberg] (6.5.1.027)
+    * Lage: Jesuitenberg [Scharzberg] (6.5.1.052)
+    * Lage: Jesuitengarten [großlagenfrei] (6.4.1.016)
+    * Lage: Jesuitenwingert [Römerlay] (6.1.10.199)
+    * Lage: Johannisberg [Schwarzlay] (6.1.8.134)
+    * Lage: Johannisbrünnchen [Kurfürstenlay] (6.1.2.008)
+    * Lage: Josephshöfer [Münzlay] (6.1.4.082)
+    * Lage: Juffer [Kurfürstenlay] (6.1.2.012)
+    * Lage: Juffermauer [Goldbäumchen] (6.3.1.024)
+    * Lage: Juffer Sonnenuhr [Kurfürstenlay] (6.1.2.013)
+    * Lage: Kahllay [Weinhex] (6.3.5.132)
+    * Lage: Kammer [Kurfürstenlay] (6.1.2.014)
+    * Lage: Känigsberg [Schwarzlay] (6.1.8.159)
+    * Lage: Kapellchen [Michelsberg] (6.1.3.051)
+    * Lage: Kapellenberg [Gipfel] (6.2.1.002)
+    * Lage: Kapellenberg [Gipfel] (6.2.1.013)
+    * Lage: Kapellenberg [Grafschaft] (6.3.2.031)
+    * Lage: Kapellenberg [Rosenhang] (6.3.3.060)
+    * Lage: Kapellenberg [Rosenhang] (6.3.3.063)
+    * Lage: Kapellenberg [Rosenhang] (6.3.3.081)
+    * Lage: Kapplay [Grafschaft] (6.3.2.057)
+    * Lage: Kardinalsberg [Kurfürstenlay] (6.1.2.009)
+    * Lage: Karlsberg [Scharzberg] (6.5.1.028)
+    * Lage: Karthäuserhofberg [großlagenfrei] (6.4.1.021)
+    * Lage: Karthäuser Klosterberg [Scharzberg] (6.5.1.020)
+    * Lage: Kätzchen [Kurfürstenlay] (6.1.2.032)
+    * Lage: Katzenkopf [Grafschaft] (6.3.2.032)
+    * Lage: Kehrberg [Weinhex] (6.3.5.119)
+    * Lage: Kehrnagel [großlagenfrei] (6.4.1.004)
+    * Lage: Kirchberg [Kurfürstenlay] (6.1.2.018)
+    * Lage: Kirchberg [Kurfürstenlay] (6.1.2.038)
+    * Lage: Kirchberg [Scharzberg] (6.5.1.016)
+    * Lage: Kirchberg [Weinhex] (6.3.5.112)
+    * Lage: Kirchlay [Goldbäumchen] (6.3.1.013)
+    * Lage: Kirchlay [Kurfürstenlay] (6.1.2.033)
+    * Lage: Kirchlay [Nacktarsch] (6.1.5.094)
+    * Lage: Klosterberg [Kurfürstenlay] (6.1.2.025)
+    * Lage: Klosterberg [Münzlay] (6.1.4.089)
+    * Lage: Klosterberg [Scharzberg] (6.5.1.037)
+    * Lage: Klosterberg [Scharzberg] (6.5.1.058)
+    * Lage: Klosterberg [Schloß Bübingen] (6.6.1.522)
+    * Lage: Klosterberg [Schwarze Katz] (6.3.4.099)
+    * Lage: Klosterberg [Schwarzlay] (6.1.8.152)
+    * Lage: Klosterberg [Schwarzlay] (6.1.8.158)
+    * Lage: Klosterberg [St. Michael] (6.1.7.118)
+    * Lage: Klosterberg [Weinhex] (6.3.5.125)
+    * Lage: Klostergarten [Goldbäumchen] (6.3.1.006)
+    * Lage: Klostergarten [Kurfürstenlay] (6.1.2.015)
+    * Lage: Klostergarten [St. Michael] (6.1.7.126)
+    * Lage: Klosterkammer [Grafschaft] (6.3.2.054)
+    * Lage: Klosterweg [Schwarzlay] (6.1.8.147)
+    * Lage: Königsberg (Großlage) (6.2.2.020)
+    * Lage: Königsberg (Großlage) (6.2.2)
+    * Lage: Königsberg [historische Lage / Detzem]
+    * Lage: Königsfels [Weinhex] (6.3.5.109)
+    * Lage: Königslay-Terrassen [Schwarze Katz] (6.3.4.100)
+    * Lage: Kräuterhaus [Schwarzlay] (6.1.8.160)
+    * Lage: Kreuzlay [Schwarze Katz] (6.3.4.090)
+    * Lage: Kreuzwingert [Michelsberg] (6.1.3.076)
+    * Lage: Kroneberg [Grafschaft] (6.3.2.040)
+    * Lage: Krone [großlagenfrei] (6.4.1.017)
+    * Lage: Kronenberg [Grafschaft] (6.3.2.033)
+    * Lage: Kupp [Scharzberg] (6.5.1.002)
+    * Lage: Kupp [Scharzberg] (6.5.1.038)
+    * Lage: Kupp [Scharzberg] (6.5.1.045)
+    * Lage: Kupp [Scharzberg] (6.5.1.059)
+    * Lage: Kurfürstenhofberg [Römerlay] (6.1.10.200)
+    * Lage: Kurfürstenlay (Großlage) (6.1.2.047)
+    * Lage: Kurfürstenlay (Großlage) (6.1.2)
+    * Lage: Kurfürst [Goldbäumchen] (6.3.1.026)
+    * Lage: Lambertuslay [Kurfürstenlay] (6.1.2.049)
+    * Lage: Laudamusberg [Michelsberg] (6.1.3.057)
+    * Lage: Laurentiusberg [Grafschaft] (6.3.2.035)
+    * Lage: Laurentiusberg [großlagenfrei] (6.4.1.018)
+    * Lage: Laurentiusberg [Scharzberg] (6.5.1.065)
+    * Lage: Laurentiuslay [St. Michael] (6.1.7.113)
+    * Lage: Laurentiuslay [St. Michael] (6.1.7.127)
+    * Lage: Lay [Badstube] (6.1.1.004)
+    * Lage: Layenberg [Rosenhang] (6.3.3.064)
+    * Lage: Lay [Gipfel] (6.2.1.012)
+    * Lage: Lay [Rosenhang] (6.3.3.086)
+    * Lage: Lay [Schwarzlay] (6.1.8.172)
+    * Lage: Lay [Weinhex] (6.3.5.126)
+    * Lage: Leiterchen [Gipfel] (6.2.1.006)
+    * Lage: Leiterchen [Michelsberg] (6.1.3.075)
+    * Lage: Letterlay [Nacktarsch] (6.1.5.095)
+    * Lage: Mandelgraben [Kurfürstenlay] (6.1.2.016)
+    * Lage: Marienberg [Schloß Bübingen] (6.2.1.164)
+    * Lage: Marienberg [Weinhex] (6.3.5.110)
+    * Lage: Marienburger [Schwarze Katz] (6.3.4.094)
+    * Lage: Marienburg [Vom heißen Stein] (6.1.9.182)
+    * Lage: Marienholz [Römerlay] (6.4.1.013)
+    * Lage: Matheisbildchen [Badstube] (6.1.1.005)
+    * Lage: Mäuerchen [großlagenfrei] (6.4.1.008)
+    * Lage: Maximiner Burgberg [Propstberg] (6.1.6.098)
+    * Lage: Maximiner [großlagenfrei] (6.4.1.014)
+    * Lage: Maximiner Herrenberg [Propstberg] (6.1.6.102)
+    * Lage: Maximiner Hofgarten [Propstberg] (6.1.6.100)
+    * Lage: Maximiner Klosterlay [St. Michael] (6.1.7.123)
+    * Lage: Maximiner Prälat [Scharzberg] (6.5.1.014)
+    * Lage: Meisenberg [Römerlay] (6.4.1.019)
+    * Lage: Michelsberg (Großlage) (6.1.3)
+    * Lage: Monteneubel [Schwarzlay] (6.1.8.139)
+    * Lage: Moullay-Hofberg [Vom heißen Stein] (6.1.9.187)
+    * Lage: Mühlberg [Kurfürstenlay] (6.1.2.039)
+    * Lage: Mühlenberg [St. Michael] (6.1.7.109)
+    * Lage: Münsterberg [Goldbäumchen] (6.3.1.025)
+    * Lage: Münzlay (Großlage) (6.1.4)
+    * Lage: Nacktarsch (Großlage) (6.1.5)
+    * Lage: Neuwingert [Weinhex] (6.3.5.139)
+    * Lage: Niederberg-Helden [Kurfürstenlay] (6.1.2.046)
+    * Lage: Niederberg [Michelsberg] (6.1.3.070)
+    * Lage: Nies'chen [großlagenfrei] (6.4.1.005)
+    * Lage: Nikolausberg [Rosenhang] (6.3.3.069)
+    * Lage: Nonnenberg [Münzlay] (6.1.4.083)
+    * Lage: Nonnengarten [Vom heißen Stein] (6.1.9.177)
+    * Lage: Nonnengarten [Vom heißen Stein] (6.1.9.183)
+    * Lage: Nussberg [Schwarze Katz] (6.3.4.091)
+    * Lage: Nußwingert [Michelsberg] (6.1.3.078)
+    * Lage: Ohligsberg [Kurfürstenlay] (6.1.2.041)
+    * Lage: Osterlämmchen [Grafschaft] (6.3.2.047)
+    * Lage: Palmberg-Terrassen [Grafschaft] (6.3.2.055)
+    * Lage: Paradies [Nacktarsch] (6.1.5.096)
+    * Lage: Paulinsberg [Kurfürstenlay] (6.1.2.021)
+    * Lage: Paulinshofberger [Kurfürstenlay] (6.1.2.022)
+    * Lage: Paulinslay [Kurfürstenlay] (6.1.2.034)
+    * Lage: Petersberg [Grafschaft] (6.3.2.050)
+    * Lage: Petersborn-Kabertchen [Schwarze Katz] (6.3.4.092)
+    * Lage: Pfarrgarten [Rosenhang] (6.3.3.067)
+    * Lage: Pfirsichgarten [Grafschaft] (6.3.2.048)
+    * Lage: Pilgerberg [Königsberg] (6.2.2.023)
+    * Lage: Pinnerkreuzberg [Goldbäumchen] (6.3.1.007)
+    * Lage: Pommerell [Schwarze Katz] (6.3.4.093)
+    * Lage: Portnersberg [Schwarzlay] (6.1.8.173)
+    * Lage: Prälat [Schwarzlay] (6.1.8.145)
+    * Lage: Propstberg (Großlage) (6.1.6)
+    * Lage: Pulchen [Scharzberg] (6.5.1.005)
+    * Lage: Quiriniusberg [Schloß Bübingen] (6.6.1.524)
+    * Lage: Rathausberg [Rosenhang] (6.3.3.065)
+    * Lage: Raul [Scharzberg] (6.5.1.029)
+    * Lage: Rausch [Scharzberg] (6.5.1.039)
+    * Lage: Reinig auf der Burg [Gipfel] (6.2.1.016)
+    * Lage: Ritsch [St. Michael] (6.1.7.121)
+    * Lage: Ritterpfad [Scharzberg] (6.5.1.053)
+    * Lage: Rochusfels [Gipfel] (6.2.1.007)
+    * Lage: Römerberg [Gipfel] (6.2.1.009)
+    * Lage: Römerberg [Grafschaft] (6.3.2.052)
+    * Lage: Römerberg [Kurfürstenlay] (6.1.2.019)
+    * Lage: Römerberg [Propstberg] (6.1.6.103)
+    * Lage: Römerberg [Schloß Bübingen] (6.6.1.521)
+    * Lage: Römergarten [Rosenhang] (6.3.3.061)
+    * Lage: Römerhang [Schwarzlay] (6.1.8.175)
+    * Lage: Römerlay (Großlage) (6.1.10.208)
+    * Lage: Römerlay (Großlage) (6.1.10)
+    * Lage: Römerpfad [Kurfürstenlay] (6.1.2.026)
+    * Lage: Römerquelle [Schwarze Katz] (6.3.4.095)
+    * Lage: Rosenberg [Gipfel] (6.2.1.017)
+    * Lage: Rosenberg [Goldbäumchen] (6.3.1.016)
+    * Lage: Rosenberg [Goldbäumchen] (6.3.1.017)
+    * Lage: Rosenberg [Grafschaft] (6.3.2.051)
+    * Lage: Rosenberg [Kurfürstenlay] (6.1.2.010)
+    * Lage: Rosenberg [Kurfürstenlay] (6.1.2.035)
+    * Lage: Rosenberg [Michelsberg] (6.1.3.052)
+    * Lage: Rosenberg [Michelsberg] (6.1.3.071)
+    * Lage: Rosenberg [Münzlay] (6.1.4.091)
+    * Lage: Rosenberg [Rosenhang] (6.3.3.066)
+    * Lage: Rosenberg [Rosenhang] (6.3.3.070)
+    * Lage: Rosenberg [Rosenhang] (6.3.3.077)
+    * Lage: Rosenberg [Scharzberg] (6.5.1.030)
+    * Lage: Rosenberg [Scharzberg] (6.5.1.060)
+    * Lage: Rosenberg [Schwarzlay] (6.1.8.149)
+    * Lage: Rosenberg [Vom heißen Stein] (6.1.9.184)
+    * Lage: Rosenberg [Weinhex] (6.3.5.134)
+    * Lage: Rosenborn [Schwarze Katz] (6.3.4.096)
+    * Lage: Rosengärtchen [Michelsberg] (6.1.3.058)
+    * Lage: Rosengarten [Schwarzlay] (6.1.8.161)
+    * Lage: Rosenhang (Großlage) (6.3.3)
+    * Lage: Rosenlay [Kurfürstenlay] (6.1.2.045)
+    * Lage: Roterd [Michelsberg] (6.1.3.059)
+    * Lage: Röttgen [Weinhex] (6.3.5.138)
+    * Lage: Saarfeilser Marienberg [Scharzberg] (6.5.1.041)
+    * Lage: Schäferlay [Vom heißen Stein] (6.1.9.178)
+    * Lage: Scharzberg (Großlage) (6.5.1.061)
+    * Lage: Scharzberg (Großlage) (6.5.1)
+    * Lage: Schatzgarten [Schwarzlay] (6.1.8.162)
+    * Lage: Scheidterberg [Scharzberg] (6.5.1.003)
+    * Lage: Schelm [Vom heißen Stein] (6.1.9.179)
+    * Lage: Schießlay [St. Michael] (6.1.7.122)
+    * Lage: Schlangengraben [Scharzberg] (6.5.1.062)
+    * Lage: Schleidberg [Gipfel] (6.2.1.001)
+    * Lage: Schlemmertröpfchen [Grafschaft] (6.3.2.036)
+    * Lage: Schloßberg [Goldbäumchen] (6.3.1.008)
+    * Lage: Schloßberg [großlagenfrei] (6.4.1.012)
+    * Lage: Schloßberg [Kurfürstenlay] (6.1.2.007)
+    * Lage: Schloßberg [Kurfürstenlay] (6.1.2.023)
+    * Lage: Schloßberg [Münzlay] (6.1.4.087)
+    * Lage: Schloßberg [Rosenhang] (6.3.3.058)
+    * Lage: Schloßberg [Scharzberg] (6.5.1.011)
+    * Lage: Schloßberg [Scharzberg] (6.5.1.035)
+    * Lage: Schloßberg [Scharzberg] (6.5.1.063)
+    * Lage: Schloßberg [Schloß Bübingen] (6.6.1.520)
+    * Lage: Schloßberg [Schwarzlay] (6.1.8.131)
+    * Lage: Schloßberg [Schwarzlay] (6.1.8.163)
+    * Lage: Schloßberg [St. Michael] (6.1.7.108)
+    * Lage: Schloßberg [Weinhex] (6.3.5.120)
+    * Lage: Schloß Bübingen (Großlage) (6.6.1.)
+    * Lage: Schloß Saarsteiner [Scharzberg] (6.5.1.046)
+    * Lage: Schloß Saarsteiner Schloßberg [Scharzberg] (6.5.1.047)
+    * Lage: Schloß Thorner Kupp [Gipfel] (6.2.1.004)
+    * Lage: Schubertslay [Michelsberg] (6.1.3.066)
+    * Lage: Schützenlay [Grafschaft] (6.3.2.049)
+    * Lage: Schwarze Katz (Großlage) (6.3.4)
+    * Lage: Schwarzenberg [Rosenhang] (6.3.3.084)
+    * Lage: Schwarzlay (Großlage) (6.1.8)
+    * Lage: Servatiusberg [Rosenhang] (6.3.3.062)
+    * Lage: Silberberg [Rosenhang] (6.3.3.071)
+    * Lage: Sonneck [Grafschaft] (6.3.2.041)
+    * Lage: Sonneck [Schwarze Katz] (6.3.4.102)
+    * Lage: Sonnenberg [Goldbäumchen] (6.3.1.009)
+    * Lage: Sonnenberg [großlagenfrei] (6.4.1.020)
+    * Lage: Sonnenberg [Scharzberg] (6.5.1.009)
+    * Lage: Sonnenberg [Scharzberg] (6.5.1.012)
+    * Lage: Sonnenberg [Scharzberg] (6.5.1.024)
+    * Lage: Sonnenberg [St. Michael] (6.1.7.119)
+    * Lage: Sonnenlay [Kurfürstenlay] (6.1.2.031)
+    * Lage: Sonnenlay [Schwarzlay] (6.1.8.164)
+    * Lage: Sonnenlay [St. Michael] (6.1.7.111)
+    * Lage: Sonnenring [Weinhex] (6.3.5.129)
+    * Lage: Sonnenuhr [Goldbäumchen] (6.3.1.022)
+    * Lage: Sonnenuhr [Kurfürstenlay] (6.1.2.027)
+    * Lage: Sonnenuhr [Michelsberg] (6.1.3.060)
+    * Lage: Sonnenuhr [Münzlay] (6.1.4.084)
+    * Lage: Sonnenuhr [Münzlay] (6.1.4.088)
+    * Lage: Sorentberg [Vom heißen Stein] (6.1.9.188)
+    * Lage: St. Castorhöhle [Goldbäumchen] (6.3.1.020)
+    * Lage: Stefanslay [Kurfürstenlay] (6.1.2.042)
+    * Lage: Steffensberg [Nacktarsch] (6.1.5.097)
+    * Lage: Steffensberg [Schwarzlay] (6.1.8.140)
+    * Lage: Steinberger [Scharzberg] (6.5.1.006)
+    * Lage: Steinchen [Weinhex] (6.3.5.114)
+    * Lage: Stephansberg [Schwarze Katz] (6.3.4.101)
+    * Lage: Stephanus-Rosengärtchen [Kurfürstenlay] (6.1.2.043)
+    * Lage: St. Georgshof [Gipfel] (6.2.1.014)
+    * Lage: Stirn [Scharzberg] (6.5.1.066)
+    * Lage: St. Martiner Hofberg [Römerlay] (6.1.10.201)
+    * Lage: St. Martiner Klosterberg [Römerlay] (6.1.10.207)
+    * Lage: St. Martin [St. Michael] (6.1.7.110)
+    * Lage: St. Matheiser [Römerlay] (6.1.10.202)
+    * Lage: St. Maximiner Kreuzberg [Römerlay] (6.1.10.203)
+    * Lage: St. Michael (Großlage) (6.1.7)
+    * Lage: Stolzenberg [Weinhex] (6.3.5.113)
+    * Lage: St. Petrusberg [Römerlay] (6.1.10.204)
+    * Lage: Stubener Klostersegen [Rosenhang] (6.3.3.085)
+    * Lage: Taubenhaus [Schwarzlay] (6.1.8.165)
+    * Lage: Thiergarten Felsköpfchen [Römerlay] (6.1.10.206)
+    * Lage: Thiergarten Unterm Kreuz [Römerlay] (6.1.10.205)
+    * Lage: Thomasberg [Schwarzlay] (6.1.8.132)
+    * Lage: Timpert [großlagenfrei] (6.4.1.006)
+    * Lage: Treppchen [Michelsberg] (6.1.3.067)
+    * Lage: Treppchen [Rosenhang] (6.3.3.082)
+    * Lage: Treppchen [Schwarzlay] (6.1.8.146)
+    * Lage: Übereltzer [Goldbäumchen] (6.3.1.018)
+    * Lage: Uhlen [Weinhex] (6.3.5.140)
+    * Lage: Ungsberg [Schwarzlay] (6.1.8.166)
+    * Lage: Unterberg [Scharzberg] (6.5.1.007)
+    * Lage: Urbelt [Scharzberg] (6.5.1.008)
+    * Lage: Vogelsang [Scharzberg] (6.5.1.048)
+    * Lage: Vogteiberg [Rosenhang] (6.3.3.078)
+    * Lage: Vom heißen Stein (Großlage) (6.1.9)
+    * Lage: Wahrsager [Rosenhang] (6.3.3.079)
+    * Lage: Weinhex (Großlage) (6.3.5)
+    * Lage: Weinkammer [Schwarzlay] (6.1.8.141)
+    * Lage: Weisenstein [Kurfürstenlay] (6.1.2.011)
+    * Lage: Weißenberg [Weinhex] (6.3.5.121)
+    * Lage: Weisser Berg [Vom heißen Stein] (6.1.9.180)
+    * Lage: Wendelstück [Schwarzlay] (6.1.8.133)
+    * Lage: Woogberg [Rosenhang] (6.3.3.072)
+    * Lage: Würtzberg [Scharzberg] (6.5.1.049)
+    * Lage: Würzgarten [Schwarzlay] (6.1.8.167)
+    * Lage: Würzgarten [Schwarzlay] (6.1.8.169)
+    * Lage: Würzgarten [St. Michael] (6.1.7.124)
+    * Lage: Würzlay [Weinhex] (6.3.5.127)
+    * Lage: Zeisel [Goldbäumchen] (6.3.1.027)
+    * Lage: Zellerberg [St. Michael] (6.1.7.116)
+    * Lage: Zeppwingert [Schwarzlay] (6.1.8.142)
+    * Lage: Zollturm [Schwarzlay] (6.1.8.168)
+    * Lage (Großlage): Schwarze Katz (6.3.4)
     * Jahrgang: ####
     * Rebsorte (weiss): Riesling (Q456471)
     * Rebsorte (weiss): Müller-Thurgau / Rivaner (Q681670)
@@ -1067,7 +1645,6 @@ The material from which the label is made (in most cases, this is paper).
     * Weinqualität: Tafelwein/Wein
     * Weinqualität: Landwein
     * Weinqualität: Qualitätswein
-    * other
     * Traubenqualität: Kabinett
     * Traubenqualität: Spätlese
     * Traubenqualität: Auslese
@@ -1077,7 +1654,8 @@ The material from which the label is made (in most cases, this is paper).
     * Traubenqualität: other
     * Weingut: Weingut Maximin Grünhaus (Q2556072)
     * Weingut: #### (Q)
-    * Vertrieb: Karl Ziegler.
+    * Vertrieb: Karl Ziegler
+    * other.
 
 #### notAfter
 (no data)
@@ -1100,6 +1678,34 @@ The material from which the label is made (in most cases, this is paper).
 - Contained by element: [collectionContext](#collectionContext).
 - Possible values: This element has no default values.
 
+#### position
+(position) The position of a visual or textual element on the label surface, in a grid of nine quadrants. The quadrants are numbered like on the number-pad of a phone, starting at the top left with 1 and ending at the bottom right with 9. Any quadrant that the figure covers to a significant extent is included in the position description. 
+
+- Status: Optional.
+- Contained by element: 
+    * [figure](#figure)
+    * [wineMillesime](#wineMillesime)
+    * [wineName](#wineName)
+    * [wineColor](#wineColor)
+    * [wineGrapes](#wineGrapes)
+    * [wineTaste](#wineTaste)
+    * [wineAging](#wineAging)
+    * [qualityGrapes](#qualityGrapes)
+    * [qualityLevel](#qualityLevel)
+    * [qualityAward](#qualityAward)
+    * [qualityLabel](#qualityLabel)
+    * [qualityProduction](#qualityProduction)
+    * [qualityHistorical](#qualityHistorical)
+    * [agent](#agent)
+    * [location](#location)
+    * [alcohol](#alcohol)
+    * [volume](#volume)
+    * [controlNumber](#controlNumber)
+    * [barrelNumber](#barrelNumber)
+    * [labelNumber](#labelNumber)
+    * [otherText](#otherText).
+- Possible values: This element has no default values.
+
 #### printingTechnique
 The technical printing process used for printing the visual and/or textual information onto the base material.
 
@@ -1111,6 +1717,7 @@ The technical printing process used for printing the visual and/or textual infor
     * moving-type
     * litho+type
     * mixed
+    * undetermined
     * other.
 
 #### qualityAwardNorm
@@ -1146,7 +1753,17 @@ The technical printing process used for printing the visual and/or textual infor
 
 - Status: Mandatory.
 - Contained by element: [relation](#relation).
-- Possible values: equivalence, similarity, contrast, other.
+- Possible values: 
+    * equivalence
+    * similarity
+    * contrast
+    * text-in-image
+    * text-in-frame
+    * text-as-frame
+    * image-in-text
+    * image-in-image
+    * image-in-frame
+    * other.
 
 #### scanID
 (no data)
@@ -1171,21 +1788,22 @@ Information regarding the shape of the physical label.
     * circular
     * ellipsoid
     * polygon
+    * free-form
     * other.
 
 #### sizeH
 The height of the label measured in millimeters. (This attribute is mandatory, but can also take the value "tbc" if the size data is not available.)
 
-- Status: Mandatory.
+- Status: Optional.
 - Contained by element: [physical](#physical).
-- Possible values: tbc.
+- Possible values: This element has no default values.
 
 #### sizeV
 The width of the label measured in millimeters. (This attribute is mandatory, but can also take the value "tbc" if the size data is not available.)
 
-- Status: Mandatory.
+- Status: Optional.
 - Contained by element: [physical](#physical).
-- Possible values: tbc.
+- Possible values: This element has no default values.
 
 #### textPosition
 (no data)
@@ -1207,6 +1825,9 @@ The width of the label measured in millimeters. (This attribute is mandatory, bu
     * statement
     * copyright
     * vineyard (Lage)
+    * website
+    * recommendation
+    * warning
     * other.
 
 #### uri
@@ -1224,7 +1845,7 @@ The width of the label measured in millimeters. (This attribute is mandatory, bu
 #### volumeNorm
 The indication of the volume of wine, expressed as a number (integer of milliliters).
 
-- Status: Mandatory.
+- Status: Optional.
 - Contained by element: [volume](#volume).
 - Possible values: This element has no default values.
 
@@ -1259,6 +1880,7 @@ The indication of the volume of wine, expressed as a number (integer of millilit
     * locality / Leitgemeinde
     * winery / Weingut
     * vineyard / historischer Lagenname
+    * vineyard / Lage
     * vineyard / Großlage
     * vineyard / Einzellage
     * variety / Rebsorte
