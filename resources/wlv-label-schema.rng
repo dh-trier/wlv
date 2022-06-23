@@ -424,10 +424,12 @@
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(label) Any single label or physically separate part of a label group.</a:documentation>
     <element>
       <name ns="">label</name>
-      <ref name="labelPosition" />
       <ref name="physical" />
       <ref name="visual" />
       <ref name="textual" />
+      <optional>
+        <ref name="labelPosition" />
+      </optional>
       <optional>
         <ref name="relations" />
       </optional>
@@ -462,9 +464,15 @@
     <element>
       <name ns="">physical</name>
       <ref name="shape" />
+      <optional>
       <ref name="sizeH" />
+      </optional>
+      <optional>
       <ref name="sizeV" />
+      </optional>
+      <optional>
       <ref name="material" />
+      </optional>
       <optional>
         <ref name="printingTechnique" />
       </optional>
@@ -485,6 +493,7 @@
         <value>circular</value>
         <value>ellipsoid</value>
         <value>polygon</value>
+        <value>free-form</value>
         <value>other</value>
       </choice>
     </attribute>
@@ -495,7 +504,6 @@
       <name ns="">sizeH</name>
       <choice>
         <data type="int" />
-        <value>tbc</value>
       </choice>
     </attribute>
   </define>
@@ -505,7 +513,6 @@
       <name ns="">sizeV</name>
       <choice>
         <data type="int" />
-        <value>tbc</value>
       </choice>
     </attribute>
   </define>
@@ -517,6 +524,9 @@
         <value>paper</value>
         <value>plastic</value>
         <value>metal</value>
+        <value>mixed</value>
+        <value>undetermined</value>
+        <value>other</value>
       </choice>
     </attribute>
   </define>
@@ -530,6 +540,7 @@
         <value>moving-type</value>
         <value>litho+type</value>
         <value>mixed</value>
+        <value>undetermined</value>
         <value>other</value>
       </choice>
     </attribute>
@@ -547,9 +558,9 @@
         <zeroOrMore>
           <ref name="frame" />
         </zeroOrMore>
-        <optional>
+        <zeroOrMore>
           <ref name="background" />
-        </optional>
+        </zeroOrMore>
         <zeroOrMore>
           <ref name="figure" />
         </zeroOrMore>
@@ -560,10 +571,18 @@
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information about the frame of the label.</a:documentation>
     <element>
       <name ns="">frame</name>
-      <text />
-      <ref name="frameType" />
-      <ref name="frameStyle" />
-      <ref name="frameColor" />
+      <optional>
+        <ref name="ID" />
+      </optional>
+      <optional>
+        <ref name="frameType" />
+      </optional>
+      <optional>
+       <ref name="frameStyle" />
+      </optional>
+      <optional>
+        <ref name="frameColor" />
+      </optional>
     </element>
   </define>
   <define name="frameStyle">
@@ -610,8 +629,12 @@
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information about the background of the label. Needs to be filled in only if there is some special background, other than the blank paper, to the visual and/or textual information provided.</a:documentation>
     <element>
       <name ns="">background</name>
-      <text />
-      <ref name="backgroundStyle" />
+      <optional>
+        <ref name="ID" />
+      </optional>
+      <optional>
+        <ref name="backgroundStyle" />
+      </optional>
       <optional>
         <ref name="backgroundColor" />
       </optional>
@@ -649,26 +672,19 @@
     <a:documentation>(figure) Any visual, figurative element on the label. The label is classified as to its type and position using the attributes. It can be described in the element content using a simple list of terms mentioning each recognizable element of the figure. (In a future iteration of WLV, a controlled vocabulary of visual elements commonly found on wine labels will be made available for this purpose.)</a:documentation>
     <element>
       <name ns="">figure</name>
-      <text />
-      <ref name="figureNum" />
-      <ref name="figureType" />
-      <optional>
-        <ref name="figurePosition" />
-      </optional>
-      <zeroOrMore>
+      <oneOrMore>
         <ref name="figureItem" />
-      </zeroOrMore>
+      </oneOrMore>
+      <optional>
+      <ref name="figureType" />
+      </optional>
+      <optional>
+        <ref name="position" />
+      </optional>
       <optional>
         <ref name="ID" />
       </optional>
     </element>
-  </define>
-  <define name="figureNum">
-    <a:documentation>(figure number) Allows to number several figures for better identification.</a:documentation>
-    <attribute>
-      <name ns="">figureNum</name>
-      <data type="int" />
-    </attribute>
   </define>
   <define name="figureType">
     <a:documentation>(figure type) Allows a simple classification of figures into common types.</a:documentation>
@@ -690,39 +706,18 @@
       </choice>
     </attribute>
   </define>
-  <define name="figurePosition">
-    <a:documentation>(figure position) The position of the figure on the label surface, in a grid of nine quadrants. The quadrants are numbered like on the number-pad of a phone, starting at the top left with 1 and ending at the bottom right with 9. Any quadrant that the figure covers to a significant extent is included in the position description. (The textual designators are still valid, but will be deprecated.)</a:documentation>
+  <define name="position">
+    <a:documentation>(position) The position of a visual or textual element on the label surface, in a grid of nine quadrants. The quadrants are numbered like on the number-pad of a phone, starting at the top left with 1 and ending at the bottom right with 9. Any quadrant that the figure covers to a significant extent is included in the position description. </a:documentation>
     <attribute>
-      <name ns="">figurePosition</name>
-      <choice>
-        <data type="int" />
-        <a:documentation>(figurePosition: integer) Numbers of quadrants covered by the figure.</a:documentation>
-        <value>upper-left</value>
-        <value>upper-right</value>
-        <value>upper-center</value>
-        <value>upper-across</value>
-        <value>center-left</value>
-        <value>center-right</value>
-        <value>center-center</value>
-        <value>center-across</value>
-        <value>lower-left</value>
-        <value>lower-right</value>
-        <value>lower-center</value>
-        <value>lower-across</value>
-        <value>left-across</value>
-        <value>center-across</value>
-        <value>right-across</value>
-        <value>full-size</value>
-      </choice>
+      <name ns="">position</name>
+      <data type="int" />
     </attribute>
   </define>
   <define name="figureItem">
     <a:documentation>(figure item) A visual element or depicted object that can be identified in the figure.</a:documentation>
     <element>
       <name ns="">figureItem</name>
-      <optional>
-        <ref name="norm" />
-      </optional>
+      <ref name="norm" />
       <optional>
         <ref name="ID" />
       </optional>
@@ -890,6 +885,9 @@
       <optional>
         <ref name="ID" />
       </optional>
+      <optional>
+        <ref name="position" />
+      </optional>
       <ref name="fontAttributes" />
     </element>
   </define>
@@ -921,6 +919,9 @@
       </optional>
       <optional>
         <ref name="norm" />
+      </optional>
+      <optional>
+        <ref name="position" />
       </optional>
       <optional>
         <ref name="uri" />
@@ -1180,6 +1181,9 @@
        <optional>
         <ref name="ID" />
       </optional>
+      <optional>
+        <ref name="position" />
+      </optional>
    </element>
   </define>
   <define name="agentRole">
@@ -1216,9 +1220,6 @@
         <ref name="locationRegNr" />
       </optional>
       <optional>
-        <ref name="figureNum" />
-      </optional>
-      <optional>
         <ref name="norm" />
       </optional>
       <optional>
@@ -1227,6 +1228,9 @@
       <ref name="fontAttributes" />
       <optional>
         <ref name="ID" />
+      </optional>
+      <optional>
+        <ref name="position" />
       </optional>
     </element>
   </define>
@@ -1379,9 +1383,6 @@
       <ref name="textType" />
       <ref name="textPosition" />
       <text />
-      <optional>
-        <ref name="figureNum" />
-      </optional>
       <ref name="fontAttributes" />
     </element>
   </define>
