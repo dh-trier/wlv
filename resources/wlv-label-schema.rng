@@ -817,8 +817,6 @@
         <value>Lage: Zeppwingert [Schwarzlay] (6.1.8.142)</value>
         <value>Lage: Zollturm [Schwarzlay] (6.1.8.168)</value>
         <value>Lage (Großlage): Schwarze Katz (6.3.4)</value>
-        <value>Lage (Einzellage): Deutschherrenberg [Trier] (6.1.10.194)</value>
-        <value>Lage (Einzellage): Deutschherrenberg [Zeltingen] (6.1.4.085)</value>
         <!-- Millesime / Jahrgang -->
         <value>Jahrgang: ####</value>
         <!-- Rebsorten -->
@@ -852,7 +850,6 @@
         <value>Weinqualität: Tafelwein/Wein</value>
         <value>Weinqualität: Landwein</value>
         <value>Weinqualität: Qualitätswein</value>
-        <value>other</value>
         <!-- Traubenqualität (quality of the grapes) -->
         <value>Traubenqualität: Kabinett</value>
         <value>Traubenqualität: Spätlese</value>
@@ -866,6 +863,7 @@
         <value>Weingut: #### (Q)</value>
         <!-- Agent: Vertrieb -->
         <value>Vertrieb: Karl Ziegler</value>
+        <value>other</value>
         <text />
       </choice>
     </attribute>
