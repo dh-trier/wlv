@@ -157,27 +157,668 @@
         <value>QualityGrapes: Trockenbeerenauslese (Q1639847)</value>
         <value>QualityGrapes: Eiswein</value>
         <value>QualityGrapes: other</value>
-        <!-- Länder -->
+        <!-- Länder und Bereiche -->
         <value>Land: Deutschland (Q183)</value>
-        <!-- Bereiche -->
         <value>Bereich: Mosel-Saar-Ruwer (Q672776)</value>
-        <!-- Leitgemeinden -->
-        <value>Leitgemeinde: Bernkastel-Kues (Q643228)</value>
-        <value>Leitgemeinde: Brauneberg (Q567156)</value>
-        <value>Leitgemeinde: Wiltingen (Q161930)</value>
-        <value>Leitgemeinde: Winningen (Q822358)</value>
-        <value>Leitgemeinde: Zell (Q187500)</value>
+        <!-- Orte mit Leitgemeinden -->
+        <value>Ort (Leitgemeinde): Alf (Q568556)</value>
+        <value>Ort (Leitgemeinde): Alken (Q305288)</value>
+        <value>Ort (Leitgemeinde): Andel (Q155622)</value>
+        <value>Ort (Leitgemeinde): Ayl (Q186199)</value>
+        <value>Ort (Leitgemeinde): Bausendorf (Q569296)</value>
+        <value>Ort (Leitgemeinde): Beilstein (Q652238)</value>
+        <value>Ort (Leitgemeinde): Bekond (Q569708)</value>
+        <value>Ort (Leitgemeinde): Bernkastel (Q155622)</value>
+        <value>Ort (Leitgemeinde): Biewer (Q245974)</value>
+        <value>Ort (Leitgemeinde): Brauneberg (Q567156)</value>
+        <value>Ort (Leitgemeinde): Bremm (Q113378)</value>
+        <value>Ort (Leitgemeinde): Briedel (Q565192)</value>
+        <value>Ort (Leitgemeinde): Briedern (Q1517)</value>
+        <value>Ort (Leitgemeinde): Brodenbach (Q168070)</value>
+        <value>Ort (Leitgemeinde): Bruttig-Fankel (Q574161)</value>
+        <value>Ort (Leitgemeinde): Bruttig (Q574161)</value>
+        <value>Ort (Leitgemeinde): Bullay (Q546257)</value>
+        <value>Ort (Leitgemeinde): Burgen (Q679415)</value>
+        <value>Ort (Leitgemeinde): Burg (Q658530)</value>
+        <value>Ort (Leitgemeinde): Cochem (Q502749)</value>
+        <value>Ort (Leitgemeinde): Cond (Q502749)</value>
+        <value>Ort (Leitgemeinde): Detzem (Q553394)</value>
+        <value>Ort (Leitgemeinde): Dhron (Q572352)</value>
+        <value>Ort (Leitgemeinde): Dieblich (Q565313)</value>
+        <value>Ort (Leitgemeinde): Dreis (Q563974)</value>
+        <value>Ort (Leitgemeinde): Ediger (Q547805)</value>
+        <value>Ort (Leitgemeinde): Eitelsbach (Q316811)</value>
+        <value>Ort (Leitgemeinde): Ellenz-Polterdorf (Q566958)</value>
+        <value>Ort (Leitgemeinde): Ellenz (Q566958)</value>
+        <value>Ort (Leitgemeinde): Eller (Q547805)</value>
+        <value>Ort (Leitgemeinde): Enkirch (Q553838)</value>
+        <value>Ort (Leitgemeinde): Ensch (Q660477)</value>
+        <value>Ort (Leitgemeinde): Erden (Q565749)</value>
+        <value>Ort (Leitgemeinde): Ernst (Q567608)</value>
+        <value>Ort (Leitgemeinde): Falkenstein (Q818576)</value>
+        <value>Ort (Leitgemeinde): Fankel (Q574161)</value>
+        <value>Ort (Leitgemeinde): Fellerich (Q1404048)</value>
+        <value>Ort (Leitgemeinde): Fell (Q659890)</value>
+        <value>Ort (Leitgemeinde): Filzen (Q47087896)</value>
+        <value>Ort (Leitgemeinde): Gondorf (Q553347)</value>
+        <value>Ort (Leitgemeinde): Graach (Q648808)</value>
+        <value>Ort (Leitgemeinde): Güls (Q1777938)</value>
+        <value>Ort (Leitgemeinde): Hatzenport (Q554243)</value>
+        <value>Ort (Leitgemeinde): Helfant (Q636128)</value>
+        <value>Ort (Leitgemeinde): Hupperath (Q565320)</value>
+        <value>Ort (Leitgemeinde): Igel (Q543497)</value>
+        <value>Ort (Leitgemeinde): Kaimt (Q187500)</value>
+        <value>Ort (Leitgemeinde): Kanzem (Q569862)</value>
+        <value>Ort (Leitgemeinde): Karden (Q656110)</value>
+        <value>Ort (Leitgemeinde): Kasel (Q659935)</value>
+        <value>Ort (Leitgemeinde): Kastel-Staadt (Q553490)</value>
+        <value>Ort (Leitgemeinde): Kattenes (Q1736818)</value>
+        <value>Ort (Leitgemeinde): Kenn (Q174435)</value>
+        <value>Ort (Leitgemeinde): Kernscheid (Q650102)</value>
+        <value>Ort (Leitgemeinde): Kesten (Q569300)</value>
+        <value>Ort (Leitgemeinde): Kinheim (Q656236)</value>
+        <value>Ort (Leitgemeinde): Klotten (Q269397)</value>
+        <value>Ort (Leitgemeinde): Klüsserath (Q569589)</value>
+        <value>Ort (Leitgemeinde): Kobern (Q553347)</value>
+        <value>Ort (Leitgemeinde): Könen (Q1795916)</value>
+        <value>Ort (Leitgemeinde): Konz (Q503185)</value>
+        <value>Ort (Leitgemeinde): Kövenig (Q1796794)</value>
+        <value>Ort (Leitgemeinde): Köwerich (Q657740)</value>
+        <value>Ort (Leitgemeinde): Krettnach (Q503185)</value>
+        <value>Ort (Leitgemeinde): Kreuzweiler (Q636128)</value>
+        <value>Ort (Leitgemeinde): Kröv (Q553171)</value>
+        <value>Ort (Leitgemeinde): Kues (Q155622)</value>
+        <value>Ort (Leitgemeinde): Kürenz (Q883351)</value>
+        <value>Ort (Leitgemeinde): Langsur (Q610893)</value>
+        <value>Ort (Leitgemeinde): Lay (Q1328018)</value>
+        <value>Ort (Leitgemeinde): Lehmen (Q567585)</value>
+        <value>Ort (Leitgemeinde): Leiwen (Q681047)</value>
+        <value>Ort (Leitgemeinde): Liersberg (Q20820333)</value>
+        <value>Ort (Leitgemeinde): Lieser (Q646892)</value>
+        <value>Ort (Leitgemeinde): Löf (Q553970)</value>
+        <value>Ort (Leitgemeinde): Longuich (Q569606)</value>
+        <value>Ort (Leitgemeinde): Lösnich (Q510820)</value>
+        <value>Ort (Leitgemeinde): Maring-Noviand (Q566744)</value>
+        <value>Ort (Leitgemeinde): Matthias (Q877660)</value>
+        <value>Ort (Leitgemeinde): Maximin Grünhaus (Q659878)</value>
+        <value>Ort (Leitgemeinde): Mehring (Q543574)</value>
+        <value>Ort (Leitgemeinde): Merl (Q1921880)</value>
+        <value>Ort (Leitgemeinde): Mertesdorf (Q659878)</value>
+        <value>Ort (Leitgemeinde): Mesenich (Q610893)</value>
+        <value>Ort (Leitgemeinde): Minheim (Q524796)</value>
+        <value>Ort (Leitgemeinde): Monzel (Q648793)</value>
+        <value>Ort (Leitgemeinde): Morscheid (Q656840)</value>
+        <value>Ort (Leitgemeinde): Moselkern (Q651263)</value>
+        <value>Ort (Leitgemeinde): Müden (Q680967)</value>
+        <value>Ort (Leitgemeinde): Mühlheim (Q667192)</value>
+        <value>Ort (Leitgemeinde): Neef (Q572494)</value>
+        <value>Ort (Leitgemeinde): Nehren (Q572471)</value>
+        <value>Ort (Leitgemeinde): Nennig (Q316804)</value>
+        <value>Ort (Leitgemeinde): Neumagen (Q572352)</value>
+        <value>Ort (Leitgemeinde): Niederemmel (Q375762)</value>
+        <value>Ort (Leitgemeinde): Niederfell (Q553445)</value>
+        <value>Ort (Leitgemeinde): Niederleuken (Q543639)</value>
+        <value>Ort (Leitgemeinde): Niedermennig (Q503185)</value>
+        <value>Ort (Leitgemeinde): Nittel (Q594609)</value>
+        <value>Ort (Leitgemeinde): Oberbillig (Q636185)</value>
+        <value>Ort (Leitgemeinde): Oberemmel (Q47037444)</value>
+        <value>Ort (Leitgemeinde): Oberfell (Q647068)</value>
+        <value>Ort (Leitgemeinde): Ockfen (Q643198)</value>
+        <value>Ort (Leitgemeinde): Olewig (Q885323)</value>
+        <value>Ort (Leitgemeinde): Osann (Q648793)</value>
+        <value>Ort (Leitgemeinde): Palzem (Q636128)</value>
+        <value>Ort (Leitgemeinde): Pellingen (Q655962)</value>
+        <value>Ort (Leitgemeinde): Perl (Q662505)</value>
+        <value>Ort (Leitgemeinde): Piesport (Q375762)</value>
+        <value>Ort (Leitgemeinde): Pölich (Q553412)</value>
+        <value>Ort (Leitgemeinde): Pommern (Q665867)</value>
+        <value>Ort (Leitgemeinde): Pünderich (Q567287)</value>
+        <value>Ort (Leitgemeinde): Rehlingen (Q594609)</value>
+        <value>Ort (Leitgemeinde): Reil (Q656264)</value>
+        <value>Ort (Leitgemeinde): Riol (Q553441)</value>
+        <value>Ort (Leitgemeinde): Rivenich (Q552448)</value>
+        <value>Ort (Leitgemeinde): Ruwer (Q316811)</value>
+        <value>Ort (Leitgemeinde): Saarburg (Q543639)</value>
+        <value>Ort (Leitgemeinde): Schleich (Q660583)</value>
+        <value>Ort (Leitgemeinde): Schoden (Q646456)</value>
+        <value>Ort (Leitgemeinde): Schweich (Q212570)</value>
+        <value>Ort (Leitgemeinde): Sehl (Q502749)</value>
+        <value>Ort (Leitgemeinde): Sehndorf (Q2266381)</value>
+        <value>Ort (Leitgemeinde): Senheim (Q653097)</value>
+        <value>Ort (Leitgemeinde): Serrig (Q656819)</value>
+        <value>Ort (Leitgemeinde): Sommerau (Q631137)</value>
+        <value>Ort (Leitgemeinde): Springiersbach (Q547805)</value>
+        <value>Ort (Leitgemeinde): St. Aldegund (Q653902)</value>
+        <value>Ort (Leitgemeinde): Starkenburg (Q682031)</value>
+        <value>Ort (Leitgemeinde): Tarforst (Q328287)</value>
+        <value>Ort (Leitgemeinde): Temmels (Q636175)</value>
+        <value>Ort (Leitgemeinde): Thörnich (Q591473)</value>
+        <value>Ort (Leitgemeinde): Traben (Q540919)</value>
+        <value>Ort (Leitgemeinde): Trais (Q6566110)</value>
+        <value>Ort (Leitgemeinde): Trarbach (Q540919)</value>
+        <value>Ort (Leitgemeinde): Trier (Q3138)</value>
+        <value>Ort (Leitgemeinde): Trittenheim (Q662479)</value>
+        <value>Ort (Leitgemeinde): Ürzig (Q335018)</value>
+        <value>Ort (Leitgemeinde): Valwig (Q656297)</value>
+        <value>Ort (Leitgemeinde): Veldenz (Q569812)</value>
+        <value>Ort (Leitgemeinde): Waldrach (Q569807)</value>
+        <value>Ort (Leitgemeinde): Wasserliesch (Q553357)</value>
+        <value>Ort (Leitgemeinde): Wawern (Q565310)</value>
+        <value>Ort (Leitgemeinde): Wehlen (Q155622)</value>
+        <value>Ort (Leitgemeinde): Wehr (Q636128)</value>
+        <value>Ort (Leitgemeinde): Wellen (Q636208)</value>
+        <value>Ort (Leitgemeinde): Wiltingen (Q161930)</value>
+        <value>Ort (Leitgemeinde): Wincheringen (Q543611)</value>
+        <value>Ort (Leitgemeinde): Winningen (Q822358)</value>
+        <value>Ort (Leitgemeinde): Wintrich (Q373778)</value>
+        <value>Ort (Leitgemeinde): Wittlich (Q559514)</value>
+        <value>Ort (Leitgemeinde): Wolf (Q1563313)</value>
+        <value>Ort (Leitgemeinde): Zell (Q187500)</value>
+        <value>Ort (Leitgemeinde): Zeltingen (Q189241)</value>
+        <value>Ort (Leitgemeinde): Bernkastel-Kues (Q643228)</value>
+        <value>Ort (Leitgemeinde): Brauneberg (Q567156)</value>
+        <value>Ort (Leitgemeinde): Wiltingen (Q161930)</value>
+        <value>Ort (Leitgemeinde): Winningen (Q822358)</value>
+        <value>Ort (Leitgemeinde): Zell (Q187500)</value>
+        <value>Ort (Leitgemeinde): Trittenheim (Q662479)</value>
         <!-- Andere Orte -->
         <value>Ort: Filzen (Q47087896)</value>
         <value>Ort: Freudenberg am Main (Q61827)</value>
-        <value>Ort: Graach (Q648808)</value>
         <value>Ort: Ober-Ingelheim (Q2008825)</value>
         <value>Ort: Trittenheim (Q662479)</value>
         <value>Ort: Pünderich (Q567287)</value>
-        <!-- Großlagen / Einzellagen / Parzellen -->
-        <value>Großlage: Schwarze Katz (Q2253665)</value>
-        <value>Parzelle: Vollmühle</value>
-        <value>Einzellage: Deutschherrenberg</value>
+        <!-- Lagen: Großlagen / Einzellagen : 
+        Der Identifier ist die Reg.Nr. der offiziellen Lagenliste. 
+        Es ist jeweils der Name der Einzellage und die Großlage in Klammern angegeben,
+        außer bei Großlagen, die als solche charakterisiert werden. 
+        -->
+        <value>Lage: Abteiberg [Rosenhang] (6.3.3.073)</value>
+        <value>Lage: Abtei Kloster Stuben [Rosenhang] (6.3.3.059)</value>
+        <value>Lage: Abtei [Münzlay] (6.1.4.090)</value>
+        <value>Lage: Abtsberg [großlagenfrei] (6.4.1.009)</value>
+        <value>Lage: Abtsberg [Münzlay] (6.1.4.079)</value>
+        <value>Lage: Adler [Schwarze Katz] (6.3.4.097)</value>
+        <value>Lage: Agritiusberg [Scharzberg] (6.5.1.025)</value>
+        <value>Lage: Albachtaler [Gipfel] (6.2.1.015)</value>
+        <value>Lage: Altarberg [Goldbäumchen] (6.3.1.011)</value>
+        <value>Lage: Altärchen [Michelsberg] (6.1.3.072)</value>
+        <value>Lage: Alte Badstube am Doktorberg [Badstube] (6.1.1.006)</value>
+        <value>Lage: Altenberg [Gipfel] (6.2.1.018)</value>
+        <value>Lage: Altenberg [Römerlay] (6.1.10.189)</value>
+        <value>Lage: Altenberg [Scharzberg / Kanzem] (6.5.1.013)</value>
+        <value>Lage: Altenberg [Scharzberg / Krettnach] (6.5.1.021)</value>
+        <value>Lage: Altenberg [Scharzberg / Oberemmel] (6.5.1.026)</value>
+        <value>Lage: Amtgarten [Kurfürstenlay] (6.1.2.028)</value>
+        <value>Lage: Andreasberg [Römerlay] (6.1.10.190)</value>
+        <value>Lage: Annaberg [Propstberg] (6.1.6.104)</value>
+        <value>Lage: Antoniusberg [Scharzberg] (6.5.1.042)</value>
+        <value>Lage: Antoniusbrunnen [Scharzberg] (6.5.1.033)</value>
+        <value>Lage: Apotheke [Michelsberg] (6.1.3.073)</value>
+        <value>Lage: Arzlay [Rosenhang] (6.3.3.068)</value>
+        <value>Lage: Auf der Heide [Schwarzlay] (6.1.8.153)</value>
+        <value>Lage: Auf der Wiltinger Kupp [Scharzberg] (6.5.1.017)</value>
+        <value>Lage: Augenscheiner [Römerlay] (6.1.10.191)</value>
+        <value>Lage: Ausoniusstein [Weinhex] (6.3.5.124)</value>
+        <value>Lage: Badstube (Großlage) (6.1.1)</value>
+        <value>Lage: Batterieberg [Schwarzlay] (6.1.8.135)</value>
+        <value>Lage: Benediktinerberg [Römerlay] (6.1.10.192)</value>
+        <value>Lage: Bergschlößchen [Scharzberg] (6.5.1.034)</value>
+        <value>Lage: Bienengarten [Rosenhang] (6.3.3.076)</value>
+        <value>Lage: Bienengarten [Weinhex] (6.3.5.108)</value>
+        <value>Lage: Bienenlay [Grafschaft] (6.3.2.042)</value>
+        <value>Lage: Bischofsstuhl [Goldbäumchen] (6.3.1.003)</value>
+        <value>Lage: Bischofstein [Weinhex] (6.3.5.106)</value>
+        <value>Lage: Blattenberg [St. Michael] (6.1.7.114)</value>
+        <value>Lage: Bleidenberg [Weinhex] (6.3.5.103)</value>
+        <value>Lage: Blümchen [Gipfel] (6.2.1.005)</value>
+        <value>Lage: Bockstein [Scharzberg] (6.5.1.031)</value>
+        <value>Lage: Bottchen [Schwarzlay] (6.1.8.170)</value>
+        <value>Lage: Bratenhöfchen [Badstube] (6.1.1.001)</value>
+        <value>Lage: Brauneberg [Goldbäumchen] (6.3.1.014)</value>
+        <value>Lage: Brauneberg [Michelsberg] (6.1.3.068)</value>
+        <value>Lage: Brauneberg [St. Michael] (6.1.7.107)</value>
+        <value>Lage: Brauneberg [Weinhex] (6.3.5.133)</value>
+        <value>Lage: Braune Kupp [Scharzberg] (6.5.1.054)</value>
+        <value>Lage: Braunfels [Scharzberg] (6.5.1.055)</value>
+        <value>Lage: Brautrock [Grafschaft] (6.3.2.038)</value>
+        <value>Lage: Brückstück [Weinhex] (6.3.5.135)</value>
+        <value>Lage: Bruderberg [großlagenfrei] (6.4.1.010)</value>
+        <value>Lage: Brüderberg [Königsberg] (6.2.2.022)</value>
+        <value>Lage: Bruderschaft [St. Michael] (6.1.7.112)</value>
+        <value>Lage: Burgberg [Römerlay] (6.1.10.193)</value>
+        <value>Lage: Burgberg [Schwarzlay] (6.1.8.150)</value>
+        <value>Lage: Burgberg [Schwarzlay] (6.1.8.154)</value>
+        <value>Lage: Burgberg [Weinhex] (6.3.5.104)</value>
+        <value>Lage: Burg Bischofstein [Weinhex] (6.3.5.111)</value>
+        <value>Lage: Burg Coreidelsteiner [Goldbäumchen] (6.3.1.015)</value>
+        <value>Lage: Burggraf [Grafschaft] (6.3.2.028)</value>
+        <value>Lage: Burglay-Felsen [Schwarze Katz] (6.3.4.087)</value>
+        <value>Lage: Burglay [Michelsberg] (6.1.3.050)</value>
+        <value>Lage: Burglay [Nacktarsch] (6.1.5.092)</value>
+        <value>Lage: Burgmauer [Propstberg] (6.1.6.105)</value>
+        <value>Lage: Burg Warsberg [Gipfel] (6.2.1.019)</value>
+        <value>Lage: Busslay [Schwarzlay] (6.1.8.143)</value>
+        <value>Lage: Calmont [Grafschaft] (6.3.2.034)</value>
+        <value>Lage: Carlsberg [Kurfürstenlay] (6.1.2.036)</value>
+        <value>Lage: Carlsfelsen [Gipfel] (6.2.1.011)</value>
+        <value>Lage: Dechantsberg [Goldbäumchen] (6.3.1.023)</value>
+        <value>Lage: Deuslay [Rosenhang] (6.3.3.074)</value>
+        <value>Lage: Deutschherrenberg [Münzlay] (6.1.4.085)</value>
+        <value>Lage: Deutschherrenberg [Römerlay] (6.1.10.194)</value>
+        <value>Lage: Deutschherrenköpfchen [Römerlay] (6.1.10.195)</value>
+        <value>Lage: Doctor [Badstube] (6.1.1.002)</value>
+        <value>Lage: Domgarten [Weinhex] (6.3.5.136)</value>
+        <value>Lage: Domherrenberg [Goldbäumchen] (6.3.1.010)</value>
+        <value>Lage: Domherrenberg [Römerlay] (6.1.10.196)</value>
+        <value>Lage: Domherrenberg [Schwarze Katz] (6.3.4.088)</value>
+        <value>Lage: Domherr [Michelsberg] (6.1.3.061)</value>
+        <value>Lage: Dominikanerberg [großlagenfrei] (6.4.1.001)</value>
+        <value>Lage: Domprobst [Münzlay] (6.1.4.080)</value>
+        <value>Lage: Dullgärten [Königsberg] (6.2.2.021)</value>
+        <value>Lage: Edelberg [Schwarzlay] (6.1.8.136)</value>
+        <value>Lage: Ehrenberg [großlagenfrei] (6.4.1.015)</value>
+        <value>Lage: Elisenberg [Kurfürstenlay] (6.1.2.029)</value>
+        <value>Lage: Ellergrub [Schwarzlay] (6.1.8.137)</value>
+        <value>Lage: Elzhofberg [Grafschaft] (6.3.2.043)</value>
+        <value>Lage: Engelgrube [Michelsberg] (6.1.3.053)</value>
+        <value>Lage: Engelströpfchen [Grafschaft] (6.3.2.044)</value>
+        <value>Lage: Enggaß [St. Michael] (6.1.7.120)</value>
+        <value>Lage: Euchariusberg [Scharzberg] (6.5.1.018)</value>
+        <value>Lage: Euchariusberg [Scharzberg] (6.5.1.022)</value>
+        <value>Lage: Fächern [Weinhex] (6.3.5.130)</value>
+        <value>Lage: Fahrberg [Weinhex] (6.3.5.115)</value>
+        <value>Lage: Fahrberg [Weinhex] (6.3.5.116)</value>
+        <value>Lage: Falkenberg [Michelsberg] (6.1.3.062)</value>
+        <value>Lage: Falklay [Schwarzlay] (6.1.8.129)</value>
+        <value>Lage: Falklay [Vom heißen Stein] (6.1.9.185)</value>
+        <value>Lage: Felsenkopf [Michelsberg] (6.1.3.074)</value>
+        <value>Lage: Felsentreppchen [Schwarzlay] (6.1.8.171)</value>
+        <value>Lage: Felslay [großlagenfrei] (6.4.1.007)</value>
+        <value>Lage: Fels [Scharzberg] (6.5.1.015)</value>
+        <value>Lage: Fettgarten [Schwarze Katz] (6.3.4.098)</value>
+        <value>Lage: Feuerberg [Goldbäumchen] (6.3.1.012)</value>
+        <value>Lage: Feuerberg [Grafschaft] (6.3.2.045)</value>
+        <value>Lage: Frauenberg [Grafschaft] (6.3.2.037)</value>
+        <value>Lage: Fuchshöhle [Weinhex] (6.3.5.117)</value>
+        <value>Lage: Fuchs [Scharzberg] (6.5.1.036)</value>
+        <value>Lage: Funkenberg [Goldbäumchen] (6.3.1.019)</value>
+        <value>Lage: Fürsterlay [Schwarzlay] (6.1.8.151)</value>
+        <value>Lage: Gaispfad [Schwarzlay] (6.1.8.155)</value>
+        <value>Lage: Gäns [Weinhex] (6.3.5.118)</value>
+        <value>Lage: Gärtchen [Michelsberg] (6.1.3.063)</value>
+        <value>Lage: Geierslay [Kurfürstenlay] (6.1.2.044)</value>
+        <value>Lage: Geisberg [Michelsberg] (6.1.3.069)</value>
+        <value>Lage: Geisberg [Scharzberg] (6.5.1.032)</value>
+        <value>Lage: Geisberg [Schwarze Katz] (6.3.4.089)</value>
+        <value>Lage: Gipfel (Großlage) (6.2.1.003)</value>
+        <value>Lage: Gipfel (Großlage) (6.2.1)</value>
+        <value>Lage: Goldbäumchen (Großlage) (6.3.1.001)</value>
+        <value>Lage: Goldberg [Goldbäumchen] (6.3.1.021)</value>
+        <value>Lage: Goldberg [Scharzberg] (6.5.1.050)</value>
+        <value>Lage: Goldblume [Weinhex] (6.3.5.128)</value>
+        <value>Lage: Goldgrübchen [Rosenhang] (6.3.3.075)</value>
+        <value>Lage: Goldgrube [Schwarzlay] (6.1.8.156)</value>
+        <value>Lage: Goldkupp [St. Michael] (6.1.7.115)</value>
+        <value>Lage: Goldlay [Vom heißen Stein] (6.1.9.181)</value>
+        <value>Lage: Goldlay [Vom heißen Stein] (6.1.9.186)</value>
+        <value>Lage: Goldlay [Weinhex] (6.3.5.131)</value>
+        <value>Lage: Goldschatz [Kurfürstenlay] (6.1.2.048)</value>
+        <value>Lage: Goldtröpfchen [Michelsberg] (6.1.3.064)</value>
+        <value>Lage: Goldwingert [Schwarzlay] (6.1.8.174)</value>
+        <value>Lage: Götterlay [Goldbäumchen] (6.3.1.002)</value>
+        <value>Lage: Gottesfuß [Scharzberg] (6.5.1.056)</value>
+        <value>Lage: Graben [Badstube] (6.1.1.003)</value>
+        <value>Lage: Graf Beyßel-Herrenberg [Grafschaft] (6.3.2.039)</value>
+        <value>Lage: Grafenberg [Michelsberg] (6.1.3.054)</value>
+        <value>Lage: Grafschafter Sonnenberg [Kurfürstenlay] (6.1.2.037)</value>
+        <value>Lage: Grafschaft (Großlage) (6.3.2.056)</value>
+        <value>Lage: Grafschaft (Großlage) (6.3.2)</value>
+        <value>Lage: Greth [Rosenhang] (6.3.3.080)</value>
+        <value>Lage: Großer Hengelberg [Michelsberg] (6.1.3.055)</value>
+        <value>Lage: Großer Herrgott [Kurfürstenlay] (6.1.2.040)</value>
+        <value>Lage: großlagenfrei (Großlage) (6.4.1.)</value>
+        <value>Lage: Günterslay [Michelsberg] (6.1.3.065)</value>
+        <value>Lage: Hahnenschrittchen [Schwarzlay] (6.1.8.130)</value>
+        <value>Lage: Hälle [Grafschaft] (6.3.2.030)</value>
+        <value>Lage: Hammerstein [Römerlay] (6.1.10.197)</value>
+        <value>Lage: Hamm [Weinhex] (6.3.5.122)</value>
+        <value>Lage: Hamm [Weinhex] (6.3.5.137)</value>
+        <value>Lage: Häs'chen [Michelsberg] (6.1.3.077)</value>
+        <value>Lage: Hasenberg [Schloß Bübingen] (6.6.1.525)</value>
+        <value>Lage: Hasenläufer [Kurfürstenlay] (6.1.2.017)</value>
+        <value>Lage: Heilgraben [Weinhex] (6.3.5.107)</value>
+        <value>Lage: Heiligenborn [Scharzberg] (6.5.1.043)</value>
+        <value>Lage: Held [Königsberg] (6.2.2.024)</value>
+        <value>Lage: Held [Propstberg] (6.1.6.099)</value>
+        <value>Lage: Held [St. Michael] (6.1.7.117)</value>
+        <value>Lage: Held [St. Michael] (6.1.7.125)</value>
+        <value>Lage: Helenenkloster [Kurfürstenlay] (6.1.2.030)</value>
+        <value>Lage: Herrenberger [Scharzberg] (6.5.1.051)</value>
+        <value>Lage: Herrenberg [Goldbäumchen] (6.3.1.004)</value>
+        <value>Lage: Herrenberg [Grafschaft] (6.3.2.029)</value>
+        <value>Lage: Herrenberg [großlagenfrei] (6.4.1.002)</value>
+        <value>Lage: Herrenberg [großlagenfrei] (6.4.1.011)</value>
+        <value>Lage: Herrenberg [Kurfürstenlay] (6.1.2.020)</value>
+        <value>Lage: Herrenberg [Nacktarsch] (6.1.5.093)</value>
+        <value>Lage: Herrenberg [Propstberg] (6.1.6.106)</value>
+        <value>Lage: Herrenberg [Römerlay] (6.1.10.198)</value>
+        <value>Lage: Herrenberg [Rosenhang] (6.3.3.083)</value>
+        <value>Lage: Herrenberg [Scharzberg] (6.5.1.001)</value>
+        <value>Lage: Herrenberg [Scharzberg] (6.5.1.004)</value>
+        <value>Lage: Herrenberg [Scharzberg] (6.5.1.023)</value>
+        <value>Lage: Herrenberg [Scharzberg] (6.5.1.040)</value>
+        <value>Lage: Herrenberg [Scharzberg] (6.5.1.044)</value>
+        <value>Lage: Herrenberg [Schwarzlay] (6.1.8.138)</value>
+        <value>Lage: Herrenberg [Schwarzlay] (6.1.8.144)</value>
+        <value>Lage: Herrgottsrock [Scharzberg] (6.5.1.064)</value>
+        <value>Lage: Herzchen [Vom heißen Stein] (6.1.9.176)</value>
+        <value>Lage: Herzlay [Schwarzlay] (6.1.8.128)</value>
+        <value>Lage: Himmelreich [Grafschaft] (6.3.2.053)</value>
+        <value>Lage: Himmelreich [Münzlay] (6.1.4.081)</value>
+        <value>Lage: Himmelreich [Münzlay] (6.1.4.086)</value>
+        <value>Lage: Hirschlay [Propstberg] (6.1.6.101)</value>
+        <value>Lage: Hirtengarten [Gipfel] (6.2.1.008)</value>
+        <value>Lage: Hitzlay [großlagenfrei] (6.4.1.003)</value>
+        <value>Lage: Hochlay [Goldbäumchen] (6.3.1.005)</value>
+        <value>Lage: Hofberger [Michelsberg] (6.1.3.056)</value>
+        <value>Lage: Hofberg [Scharzberg] (6.5.1.019)</value>
+        <value>Lage: Hölle [Scharzberg] (6.5.1.057)</value>
+        <value>Lage: Höll [Grafschaft] (6.3.2.046)</value>
+        <value>Lage: Honigberg [Kurfürstenlay] (6.1.2.024)</value>
+        <value>Lage: Hörecker [Scharzberg] (6.5.1.010)</value>
+        <value>Lage: Hubertusberg [Gipfel] (6.2.1.010)</value>
+        <value>Lage: Hubertusborn [Weinhex] (6.3.5.123)</value>
+        <value>Lage: Hubertuslay [Schwarzlay] (6.1.8.148)</value>
+        <value>Lage: Hühnerberg [Schwarzlay] (6.1.8.157)</value>
+        <value>Lage: Hunnenstein [Weinhex] (6.3.5.105)</value>
+        <value>Lage: Hütte [Scharzberg] (6.5.1.027)</value>
+        <value>Lage: Jesuitenberg [Scharzberg] (6.5.1.052)</value>
+        <value>Lage: Jesuitengarten [großlagenfrei] (6.4.1.016)</value>
+        <value>Lage: Jesuitenwingert [Römerlay] (6.1.10.199)</value>
+        <value>Lage: Johannisberg [Schwarzlay] (6.1.8.134)</value>
+        <value>Lage: Johannisbrünnchen [Kurfürstenlay] (6.1.2.008)</value>
+        <value>Lage: Josephshöfer [Münzlay] (6.1.4.082)</value>
+        <value>Lage: Juffer [Kurfürstenlay] (6.1.2.012)</value>
+        <value>Lage: Juffermauer [Goldbäumchen] (6.3.1.024)</value>
+        <value>Lage: Juffer Sonnenuhr [Kurfürstenlay] (6.1.2.013)</value>
+        <value>Lage: Kahllay [Weinhex] (6.3.5.132)</value>
+        <value>Lage: Kammer [Kurfürstenlay] (6.1.2.014)</value>
+        <value>Lage: Känigsberg [Schwarzlay] (6.1.8.159)</value>
+        <value>Lage: Kapellchen [Michelsberg] (6.1.3.051)</value>
+        <value>Lage: Kapellenberg [Gipfel] (6.2.1.002)</value>
+        <value>Lage: Kapellenberg [Gipfel] (6.2.1.013)</value>
+        <value>Lage: Kapellenberg [Grafschaft] (6.3.2.031)</value>
+        <value>Lage: Kapellenberg [Rosenhang] (6.3.3.060)</value>
+        <value>Lage: Kapellenberg [Rosenhang] (6.3.3.063)</value>
+        <value>Lage: Kapellenberg [Rosenhang] (6.3.3.081)</value>
+        <value>Lage: Kapplay [Grafschaft] (6.3.2.057)</value>
+        <value>Lage: Kardinalsberg [Kurfürstenlay] (6.1.2.009)</value>
+        <value>Lage: Karlsberg [Scharzberg] (6.5.1.028)</value>
+        <value>Lage: Karthäuserhofberg [großlagenfrei] (6.4.1.021)</value>
+        <value>Lage: Karthäuser Klosterberg [Scharzberg] (6.5.1.020)</value>
+        <value>Lage: Kätzchen [Kurfürstenlay] (6.1.2.032)</value>
+        <value>Lage: Katzenkopf [Grafschaft] (6.3.2.032)</value>
+        <value>Lage: Kehrberg [Weinhex] (6.3.5.119)</value>
+        <value>Lage: Kehrnagel [großlagenfrei] (6.4.1.004)</value>
+        <value>Lage: Kirchberg [Kurfürstenlay] (6.1.2.018)</value>
+        <value>Lage: Kirchberg [Kurfürstenlay] (6.1.2.038)</value>
+        <value>Lage: Kirchberg [Scharzberg] (6.5.1.016)</value>
+        <value>Lage: Kirchberg [Weinhex] (6.3.5.112)</value>
+        <value>Lage: Kirchlay [Goldbäumchen] (6.3.1.013)</value>
+        <value>Lage: Kirchlay [Kurfürstenlay] (6.1.2.033)</value>
+        <value>Lage: Kirchlay [Nacktarsch] (6.1.5.094)</value>
+        <value>Lage: Klosterberg [Kurfürstenlay] (6.1.2.025)</value>
+        <value>Lage: Klosterberg [Münzlay] (6.1.4.089)</value>
+        <value>Lage: Klosterberg [Scharzberg] (6.5.1.037)</value>
+        <value>Lage: Klosterberg [Scharzberg] (6.5.1.058)</value>
+        <value>Lage: Klosterberg [Schloß Bübingen] (6.6.1.522)</value>
+        <value>Lage: Klosterberg [Schwarze Katz] (6.3.4.099)</value>
+        <value>Lage: Klosterberg [Schwarzlay] (6.1.8.152)</value>
+        <value>Lage: Klosterberg [Schwarzlay] (6.1.8.158)</value>
+        <value>Lage: Klosterberg [St. Michael] (6.1.7.118)</value>
+        <value>Lage: Klosterberg [Weinhex] (6.3.5.125)</value>
+        <value>Lage: Klostergarten [Goldbäumchen] (6.3.1.006)</value>
+        <value>Lage: Klostergarten [Kurfürstenlay] (6.1.2.015)</value>
+        <value>Lage: Klostergarten [St. Michael] (6.1.7.126)</value>
+        <value>Lage: Klosterkammer [Grafschaft] (6.3.2.054)</value>
+        <value>Lage: Klosterweg [Schwarzlay] (6.1.8.147)</value>
+        <value>Lage: Königsberg (Großlage) (6.2.2.020)</value>
+        <value>Lage: Königsberg (Großlage) (6.2.2)</value>
+        <value>Lage: Königsfels [Weinhex] (6.3.5.109)</value>
+        <value>Lage: Königslay-Terrassen [Schwarze Katz] (6.3.4.100)</value>
+        <value>Lage: Kräuterhaus [Schwarzlay] (6.1.8.160)</value>
+        <value>Lage: Kreuzlay [Schwarze Katz] (6.3.4.090)</value>
+        <value>Lage: Kreuzwingert [Michelsberg] (6.1.3.076)</value>
+        <value>Lage: Kroneberg [Grafschaft] (6.3.2.040)</value>
+        <value>Lage: Krone [großlagenfrei] (6.4.1.017)</value>
+        <value>Lage: Kronenberg [Grafschaft] (6.3.2.033)</value>
+        <value>Lage: Kupp [Scharzberg] (6.5.1.002)</value>
+        <value>Lage: Kupp [Scharzberg] (6.5.1.038)</value>
+        <value>Lage: Kupp [Scharzberg] (6.5.1.045)</value>
+        <value>Lage: Kupp [Scharzberg] (6.5.1.059)</value>
+        <value>Lage: Kurfürstenhofberg [Römerlay] (6.1.10.200)</value>
+        <value>Lage: Kurfürstenlay (Großlage) (6.1.2.047)</value>
+        <value>Lage: Kurfürstenlay (Großlage) (6.1.2)</value>
+        <value>Lage: Kurfürst [Goldbäumchen] (6.3.1.026)</value>
+        <value>Lage: Lambertuslay [Kurfürstenlay] (6.1.2.049)</value>
+        <value>Lage: Laudamusberg [Michelsberg] (6.1.3.057)</value>
+        <value>Lage: Laurentiusberg [Grafschaft] (6.3.2.035)</value>
+        <value>Lage: Laurentiusberg [großlagenfrei] (6.4.1.018)</value>
+        <value>Lage: Laurentiusberg [Scharzberg] (6.5.1.065)</value>
+        <value>Lage: Laurentiuslay [St. Michael] (6.1.7.113)</value>
+        <value>Lage: Laurentiuslay [St. Michael] (6.1.7.127)</value>
+        <value>Lage: Lay [Badstube] (6.1.1.004)</value>
+        <value>Lage: Layenberg [Rosenhang] (6.3.3.064)</value>
+        <value>Lage: Lay [Gipfel] (6.2.1.012)</value>
+        <value>Lage: Lay [Rosenhang] (6.3.3.086)</value>
+        <value>Lage: Lay [Schwarzlay] (6.1.8.172)</value>
+        <value>Lage: Lay [Weinhex] (6.3.5.126)</value>
+        <value>Lage: Leiterchen [Gipfel] (6.2.1.006)</value>
+        <value>Lage: Leiterchen [Michelsberg] (6.1.3.075)</value>
+        <value>Lage: Letterlay [Nacktarsch] (6.1.5.095)</value>
+        <value>Lage: Mandelgraben [Kurfürstenlay] (6.1.2.016)</value>
+        <value>Lage: Marienberg [Schloß Bübingen] (6.2.1.164)</value>
+        <value>Lage: Marienberg [Weinhex] (6.3.5.110)</value>
+        <value>Lage: Marienburger [Schwarze Katz] (6.3.4.094)</value>
+        <value>Lage: Marienburg [Vom heißen Stein] (6.1.9.182)</value>
+        <value>Lage: Marienholz [Römerlay] (6.4.1.013)</value>
+        <value>Lage: Matheisbildchen [Badstube] (6.1.1.005)</value>
+        <value>Lage: Mäuerchen [großlagenfrei] (6.4.1.008)</value>
+        <value>Lage: Maximiner Burgberg [Propstberg] (6.1.6.098)</value>
+        <value>Lage: Maximiner [großlagenfrei] (6.4.1.014)</value>
+        <value>Lage: Maximiner Herrenberg [Propstberg] (6.1.6.102)</value>
+        <value>Lage: Maximiner Hofgarten [Propstberg] (6.1.6.100)</value>
+        <value>Lage: Maximiner Klosterlay [St. Michael] (6.1.7.123)</value>
+        <value>Lage: Maximiner Prälat [Scharzberg] (6.5.1.014)</value>
+        <value>Lage: Meisenberg [Römerlay] (6.4.1.019)</value>
+        <value>Lage: Michelsberg (Großlage) (6.1.3)</value>
+        <value>Lage: Monteneubel [Schwarzlay] (6.1.8.139)</value>
+        <value>Lage: Moullay-Hofberg [Vom heißen Stein] (6.1.9.187)</value>
+        <value>Lage: Mühlberg [Kurfürstenlay] (6.1.2.039)</value>
+        <value>Lage: Mühlenberg [St. Michael] (6.1.7.109)</value>
+        <value>Lage: Münsterberg [Goldbäumchen] (6.3.1.025)</value>
+        <value>Lage: Münzlay (Großlage) (6.1.4)</value>
+        <value>Lage: Nacktarsch (Großlage) (6.1.5)</value>
+        <value>Lage: Neuwingert [Weinhex] (6.3.5.139)</value>
+        <value>Lage: Niederberg-Helden [Kurfürstenlay] (6.1.2.046)</value>
+        <value>Lage: Niederberg [Michelsberg] (6.1.3.070)</value>
+        <value>Lage: Nies'chen [großlagenfrei] (6.4.1.005)</value>
+        <value>Lage: Nikolausberg [Rosenhang] (6.3.3.069)</value>
+        <value>Lage: Nonnenberg [Münzlay] (6.1.4.083)</value>
+        <value>Lage: Nonnengarten [Vom heißen Stein] (6.1.9.177)</value>
+        <value>Lage: Nonnengarten [Vom heißen Stein] (6.1.9.183)</value>
+        <value>Lage: Nussberg [Schwarze Katz] (6.3.4.091)</value>
+        <value>Lage: Nußwingert [Michelsberg] (6.1.3.078)</value>
+        <value>Lage: Ohligsberg [Kurfürstenlay] (6.1.2.041)</value>
+        <value>Lage: Osterlämmchen [Grafschaft] (6.3.2.047)</value>
+        <value>Lage: Palmberg-Terrassen [Grafschaft] (6.3.2.055)</value>
+        <value>Lage: Paradies [Nacktarsch] (6.1.5.096)</value>
+        <value>Lage: Paulinsberg [Kurfürstenlay] (6.1.2.021)</value>
+        <value>Lage: Paulinshofberger [Kurfürstenlay] (6.1.2.022)</value>
+        <value>Lage: Paulinslay [Kurfürstenlay] (6.1.2.034)</value>
+        <value>Lage: Petersberg [Grafschaft] (6.3.2.050)</value>
+        <value>Lage: Petersborn-Kabertchen [Schwarze Katz] (6.3.4.092)</value>
+        <value>Lage: Pfarrgarten [Rosenhang] (6.3.3.067)</value>
+        <value>Lage: Pfirsichgarten [Grafschaft] (6.3.2.048)</value>
+        <value>Lage: Pilgerberg [Königsberg] (6.2.2.023)</value>
+        <value>Lage: Pinnerkreuzberg [Goldbäumchen] (6.3.1.007)</value>
+        <value>Lage: Pommerell [Schwarze Katz] (6.3.4.093)</value>
+        <value>Lage: Portnersberg [Schwarzlay] (6.1.8.173)</value>
+        <value>Lage: Prälat [Schwarzlay] (6.1.8.145)</value>
+        <value>Lage: Propstberg (Großlage) (6.1.6)</value>
+        <value>Lage: Pulchen [Scharzberg] (6.5.1.005)</value>
+        <value>Lage: Quiriniusberg [Schloß Bübingen] (6.6.1.524)</value>
+        <value>Lage: Rathausberg [Rosenhang] (6.3.3.065)</value>
+        <value>Lage: Raul [Scharzberg] (6.5.1.029)</value>
+        <value>Lage: Rausch [Scharzberg] (6.5.1.039)</value>
+        <value>Lage: Reinig auf der Burg [Gipfel] (6.2.1.016)</value>
+        <value>Lage: Ritsch [St. Michael] (6.1.7.121)</value>
+        <value>Lage: Ritterpfad [Scharzberg] (6.5.1.053)</value>
+        <value>Lage: Rochusfels [Gipfel] (6.2.1.007)</value>
+        <value>Lage: Römerberg [Gipfel] (6.2.1.009)</value>
+        <value>Lage: Römerberg [Grafschaft] (6.3.2.052)</value>
+        <value>Lage: Römerberg [Kurfürstenlay] (6.1.2.019)</value>
+        <value>Lage: Römerberg [Propstberg] (6.1.6.103)</value>
+        <value>Lage: Römerberg [Schloß Bübingen] (6.6.1.521)</value>
+        <value>Lage: Römergarten [Rosenhang] (6.3.3.061)</value>
+        <value>Lage: Römerhang [Schwarzlay] (6.1.8.175)</value>
+        <value>Lage: Römerlay (Großlage) (6.1.10.208)</value>
+        <value>Lage: Römerlay (Großlage) (6.1.10)</value>
+        <value>Lage: Römerpfad [Kurfürstenlay] (6.1.2.026)</value>
+        <value>Lage: Römerquelle [Schwarze Katz] (6.3.4.095)</value>
+        <value>Lage: Rosenberg [Gipfel] (6.2.1.017)</value>
+        <value>Lage: Rosenberg [Goldbäumchen] (6.3.1.016)</value>
+        <value>Lage: Rosenberg [Goldbäumchen] (6.3.1.017)</value>
+        <value>Lage: Rosenberg [Grafschaft] (6.3.2.051)</value>
+        <value>Lage: Rosenberg [Kurfürstenlay] (6.1.2.010)</value>
+        <value>Lage: Rosenberg [Kurfürstenlay] (6.1.2.035)</value>
+        <value>Lage: Rosenberg [Michelsberg] (6.1.3.052)</value>
+        <value>Lage: Rosenberg [Michelsberg] (6.1.3.071)</value>
+        <value>Lage: Rosenberg [Münzlay] (6.1.4.091)</value>
+        <value>Lage: Rosenberg [Rosenhang] (6.3.3.066)</value>
+        <value>Lage: Rosenberg [Rosenhang] (6.3.3.070)</value>
+        <value>Lage: Rosenberg [Rosenhang] (6.3.3.077)</value>
+        <value>Lage: Rosenberg [Scharzberg] (6.5.1.030)</value>
+        <value>Lage: Rosenberg [Scharzberg] (6.5.1.060)</value>
+        <value>Lage: Rosenberg [Schwarzlay] (6.1.8.149)</value>
+        <value>Lage: Rosenberg [Vom heißen Stein] (6.1.9.184)</value>
+        <value>Lage: Rosenberg [Weinhex] (6.3.5.134)</value>
+        <value>Lage: Rosenborn [Schwarze Katz] (6.3.4.096)</value>
+        <value>Lage: Rosengärtchen [Michelsberg] (6.1.3.058)</value>
+        <value>Lage: Rosengarten [Schwarzlay] (6.1.8.161)</value>
+        <value>Lage: Rosenhang (Großlage) (6.3.3)</value>
+        <value>Lage: Rosenlay [Kurfürstenlay] (6.1.2.045)</value>
+        <value>Lage: Roterd [Michelsberg] (6.1.3.059)</value>
+        <value>Lage: Röttgen [Weinhex] (6.3.5.138)</value>
+        <value>Lage: Saarfeilser Marienberg [Scharzberg] (6.5.1.041)</value>
+        <value>Lage: Schäferlay [Vom heißen Stein] (6.1.9.178)</value>
+        <value>Lage: Scharzberg (Großlage) (6.5.1.061)</value>
+        <value>Lage: Scharzberg (Großlage) (6.5.1)</value>
+        <value>Lage: Schatzgarten [Schwarzlay] (6.1.8.162)</value>
+        <value>Lage: Scheidterberg [Scharzberg] (6.5.1.003)</value>
+        <value>Lage: Schelm [Vom heißen Stein] (6.1.9.179)</value>
+        <value>Lage: Schießlay [St. Michael] (6.1.7.122)</value>
+        <value>Lage: Schlangengraben [Scharzberg] (6.5.1.062)</value>
+        <value>Lage: Schleidberg [Gipfel] (6.2.1.001)</value>
+        <value>Lage: Schlemmertröpfchen [Grafschaft] (6.3.2.036)</value>
+        <value>Lage: Schloßberg [Goldbäumchen] (6.3.1.008)</value>
+        <value>Lage: Schloßberg [großlagenfrei] (6.4.1.012)</value>
+        <value>Lage: Schloßberg [Kurfürstenlay] (6.1.2.007)</value>
+        <value>Lage: Schloßberg [Kurfürstenlay] (6.1.2.023)</value>
+        <value>Lage: Schloßberg [Münzlay] (6.1.4.087)</value>
+        <value>Lage: Schloßberg [Rosenhang] (6.3.3.058)</value>
+        <value>Lage: Schloßberg [Scharzberg] (6.5.1.011)</value>
+        <value>Lage: Schloßberg [Scharzberg] (6.5.1.035)</value>
+        <value>Lage: Schloßberg [Scharzberg] (6.5.1.063)</value>
+        <value>Lage: Schloßberg [Schloß Bübingen] (6.6.1.520)</value>
+        <value>Lage: Schloßberg [Schwarzlay] (6.1.8.131)</value>
+        <value>Lage: Schloßberg [Schwarzlay] (6.1.8.163)</value>
+        <value>Lage: Schloßberg [St. Michael] (6.1.7.108)</value>
+        <value>Lage: Schloßberg [Weinhex] (6.3.5.120)</value>
+        <value>Lage: Schloß Bübingen (Großlage) (6.6.1.)</value>
+        <value>Lage: Schloß Saarsteiner [Scharzberg] (6.5.1.046)</value>
+        <value>Lage: Schloß Saarsteiner Schloßberg [Scharzberg] (6.5.1.047)</value>
+        <value>Lage: Schloß Thorner Kupp [Gipfel] (6.2.1.004)</value>
+        <value>Lage: Schubertslay [Michelsberg] (6.1.3.066)</value>
+        <value>Lage: Schützenlay [Grafschaft] (6.3.2.049)</value>
+        <value>Lage: Schwarze Katz (Großlage) (6.3.4)</value>
+        <value>Lage: Schwarzenberg [Rosenhang] (6.3.3.084)</value>
+        <value>Lage: Schwarzlay (Großlage) (6.1.8)</value>
+        <value>Lage: Servatiusberg [Rosenhang] (6.3.3.062)</value>
+        <value>Lage: Silberberg [Rosenhang] (6.3.3.071)</value>
+        <value>Lage: Sonneck [Grafschaft] (6.3.2.041)</value>
+        <value>Lage: Sonneck [Schwarze Katz] (6.3.4.102)</value>
+        <value>Lage: Sonnenberg [Goldbäumchen] (6.3.1.009)</value>
+        <value>Lage: Sonnenberg [großlagenfrei] (6.4.1.020)</value>
+        <value>Lage: Sonnenberg [Scharzberg] (6.5.1.009)</value>
+        <value>Lage: Sonnenberg [Scharzberg] (6.5.1.012)</value>
+        <value>Lage: Sonnenberg [Scharzberg] (6.5.1.024)</value>
+        <value>Lage: Sonnenberg [St. Michael] (6.1.7.119)</value>
+        <value>Lage: Sonnenlay [Kurfürstenlay] (6.1.2.031)</value>
+        <value>Lage: Sonnenlay [Schwarzlay] (6.1.8.164)</value>
+        <value>Lage: Sonnenlay [St. Michael] (6.1.7.111)</value>
+        <value>Lage: Sonnenring [Weinhex] (6.3.5.129)</value>
+        <value>Lage: Sonnenuhr [Goldbäumchen] (6.3.1.022)</value>
+        <value>Lage: Sonnenuhr [Kurfürstenlay] (6.1.2.027)</value>
+        <value>Lage: Sonnenuhr [Michelsberg] (6.1.3.060)</value>
+        <value>Lage: Sonnenuhr [Münzlay] (6.1.4.084)</value>
+        <value>Lage: Sonnenuhr [Münzlay] (6.1.4.088)</value>
+        <value>Lage: Sorentberg [Vom heißen Stein] (6.1.9.188)</value>
+        <value>Lage: St. Castorhöhle [Goldbäumchen] (6.3.1.020)</value>
+        <value>Lage: Stefanslay [Kurfürstenlay] (6.1.2.042)</value>
+        <value>Lage: Steffensberg [Nacktarsch] (6.1.5.097)</value>
+        <value>Lage: Steffensberg [Schwarzlay] (6.1.8.140)</value>
+        <value>Lage: Steinberger [Scharzberg] (6.5.1.006)</value>
+        <value>Lage: Steinchen [Weinhex] (6.3.5.114)</value>
+        <value>Lage: Stephansberg [Schwarze Katz] (6.3.4.101)</value>
+        <value>Lage: Stephanus-Rosengärtchen [Kurfürstenlay] (6.1.2.043)</value>
+        <value>Lage: St. Georgshof [Gipfel] (6.2.1.014)</value>
+        <value>Lage: Stirn [Scharzberg] (6.5.1.066)</value>
+        <value>Lage: St. Martiner Hofberg [Römerlay] (6.1.10.201)</value>
+        <value>Lage: St. Martiner Klosterberg [Römerlay] (6.1.10.207)</value>
+        <value>Lage: St. Martin [St. Michael] (6.1.7.110)</value>
+        <value>Lage: St. Matheiser [Römerlay] (6.1.10.202)</value>
+        <value>Lage: St. Maximiner Kreuzberg [Römerlay] (6.1.10.203)</value>
+        <value>Lage: St. Michael (Großlage) (6.1.7)</value>
+        <value>Lage: Stolzenberg [Weinhex] (6.3.5.113)</value>
+        <value>Lage: St. Petrusberg [Römerlay] (6.1.10.204)</value>
+        <value>Lage: Stubener Klostersegen [Rosenhang] (6.3.3.085)</value>
+        <value>Lage: Taubenhaus [Schwarzlay] (6.1.8.165)</value>
+        <value>Lage: Thiergarten Felsköpfchen [Römerlay] (6.1.10.206)</value>
+        <value>Lage: Thiergarten Unterm Kreuz [Römerlay] (6.1.10.205)</value>
+        <value>Lage: Thomasberg [Schwarzlay] (6.1.8.132)</value>
+        <value>Lage: Timpert [großlagenfrei] (6.4.1.006)</value>
+        <value>Lage: Treppchen [Michelsberg] (6.1.3.067)</value>
+        <value>Lage: Treppchen [Rosenhang] (6.3.3.082)</value>
+        <value>Lage: Treppchen [Schwarzlay] (6.1.8.146)</value>
+        <value>Lage: Übereltzer [Goldbäumchen] (6.3.1.018)</value>
+        <value>Lage: Uhlen [Weinhex] (6.3.5.140)</value>
+        <value>Lage: Ungsberg [Schwarzlay] (6.1.8.166)</value>
+        <value>Lage: Unterberg [Scharzberg] (6.5.1.007)</value>
+        <value>Lage: Urbelt [Scharzberg] (6.5.1.008)</value>
+        <value>Lage: Vogelsang [Scharzberg] (6.5.1.048)</value>
+        <value>Lage: Vogteiberg [Rosenhang] (6.3.3.078)</value>
+        <value>Lage: Vom heißen Stein (Großlage) (6.1.9)</value>
+        <value>Lage: Wahrsager [Rosenhang] (6.3.3.079)</value>
+        <value>Lage: Weinhex (Großlage) (6.3.5)</value>
+        <value>Lage: Weinkammer [Schwarzlay] (6.1.8.141)</value>
+        <value>Lage: Weisenstein [Kurfürstenlay] (6.1.2.011)</value>
+        <value>Lage: Weißenberg [Weinhex] (6.3.5.121)</value>
+        <value>Lage: Weisser Berg [Vom heißen Stein] (6.1.9.180)</value>
+        <value>Lage: Wendelstück [Schwarzlay] (6.1.8.133)</value>
+        <value>Lage: Woogberg [Rosenhang] (6.3.3.072)</value>
+        <value>Lage: Würtzberg [Scharzberg] (6.5.1.049)</value>
+        <value>Lage: Würzgarten [Schwarzlay] (6.1.8.167)</value>
+        <value>Lage: Würzgarten [Schwarzlay] (6.1.8.169)</value>
+        <value>Lage: Würzgarten [St. Michael] (6.1.7.124)</value>
+        <value>Lage: Würzlay [Weinhex] (6.3.5.127)</value>
+        <value>Lage: Zeisel [Goldbäumchen] (6.3.1.027)</value>
+        <value>Lage: Zellerberg [St. Michael] (6.1.7.116)</value>
+        <value>Lage: Zeppwingert [Schwarzlay] (6.1.8.142)</value>
+        <value>Lage: Zollturm [Schwarzlay] (6.1.8.168)</value>
+        <value>Lage (Großlage): Schwarze Katz (6.3.4)</value>
+        <value>Lage (Einzellage): Deutschherrenberg [Trier] (6.1.10.194)</value>
+        <value>Lage (Einzellage): Deutschherrenberg [Zeltingen] (6.1.4.085)</value>
         <!-- Millesime / Jahrgang -->
         <value>Jahrgang: ####</value>
         <!-- Rebsorten -->
