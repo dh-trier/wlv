@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="SMW-0001">
+  <metadata>
+    <collection collectionID="SMW"></collection>
+    <curation curatorID="#cs" curationDate="2022-06-23" />
+    <licence licenceScope="all" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label>
+  <physical shape="rectangle"></physical>
+  <visual>
+    <background ID="v1" backgroundColor="white"></background>
+    <frame ID="v2" frameColor="orange green" frameStyle="ornamental line(s)" frameType="outer"></frame>
+    <figure ID="v3">
+      <figureItem ID="v3-1" norm="Person: Mann (Q8441)"></figureItem>
+      <figureItem ID="v3-2" norm="Artefakt: Weinglas (Q1531435)"></figureItem>
+    </figure>
+  </visual>
+  <textual>
+    <wineMillesime ID="t1" norm="Jahrgang: 1921">1921er</wineMillesime>
+    <wineName ID="t2">
+      <location ID="t2-1" norm="Ort (Leitgemeinde): Kasel (Q659935)">Caseler</location>
+      <location ID="t2-2" norm="Lage: Dominikanerberg [großlagenfrei] (6.4.1.001)">Dominikaner-Berg</location>
+    </wineName>
+    <barrelNumber ID="t3">Fuder Nr. 47</barrelNumber>
+    <agent ID="t4">Wachstum Geh.Regierungsrat Landrat v. Nell.</agent>
+  </textual>
+  <relations>
+    <relation relType="image-in-text" relItems="t2-2 v3-1"></relation>
+  </relations>
+  </label>
+  <comments>Die Lage Dominikanerberg wird in der Lagenliste Morscheid im Ruwertal zugerechnet, nicht Kasel (ebenfalls im Ruwertal). Vermutlich eine historisch abweichende Zuordnung. | Das initiale "D" in "Dominikaner-Berg" bildet den Rahmen für die bildliche Darstellung des Mannes / Mönches.</comments>
+</wlv>

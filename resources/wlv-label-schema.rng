@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="relaxng.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
   <start>
     <ref name="wlv" />
@@ -584,6 +585,7 @@
         <value>Lage: Klosterweg [Schwarzlay] (6.1.8.147)</value>
         <value>Lage: Königsberg (Großlage) (6.2.2.020)</value>
         <value>Lage: Königsberg (Großlage) (6.2.2)</value>
+        <value>Lage: Königsberg [historische Lage / Detzem]</value>
         <value>Lage: Königsfels [Weinhex] (6.3.5.109)</value>
         <value>Lage: Königslay-Terrassen [Schwarze Katz] (6.3.4.100)</value>
         <value>Lage: Kräuterhaus [Schwarzlay] (6.1.8.160)</value>
@@ -1264,6 +1266,7 @@
         <value>grey</value>
         <value>gold</value>
         <value>red</value>
+        <value>orange</value>
         <value>green</value>
         <value>blue</value>
         <value>silver</value>
@@ -2222,8 +2225,11 @@
         <value>similarity</value>
         <value>contrast</value>
         <value>text-in-image</value>
+        <value>text-in-frame</value>
+        <value>text-as-frame</value>
         <value>image-in-text</value>
         <value>image-in-image</value>
+        <value>image-in-frame</value>
         <value>other</value>
         <text/>
       </choice>
