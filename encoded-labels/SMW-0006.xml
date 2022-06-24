@@ -16,6 +16,7 @@
     <figure ID="v5">
       <figureItem norm="Artefakt: Wappen (Q14659)"></figureItem>
       <figureItem norm="Fauna: Adler (Q2092297)"></figureItem>
+      <figureItem norm="Flora: Weintraube (Q10978)"></figureItem>
     </figure>
     <figure ID="v6">
       <figureItem norm="Bauwerk: Brücke (Q12280)"></figureItem>
@@ -27,14 +28,25 @@
     </figure>
   </visual>
   <textual>
-    <wineMillesime>1931er</wineMillesime>
+    <wineMillesime ID="t1">1931er</wineMillesime>
     <wineName>
       <location>Berncasteler</location>
       <location>Rosenberg</location>
     </wineName>
     <qualityHistorical>Original-Kellerabzug</qualityHistorical>
-    <agent>Joh.Jos. Prüm, S.A. Prüm-Erben,</agent>
-    <location>Wehlen a.d. Mosel</location>
+    <agent ID="t3">Joh.Jos. Prüm, S.A. Prüm-Erben,</agent>
+    <location ID="t4">Wehlen a.d. Mosel</location>
+    <agent ID="t5">Verband deutscher Naturwein-Versteigerer e.V.</agent>
+    <otherText ID="t6" textType="other" textPosition="in-figure">V D N V</otherText>
+    <otherText ID="t7" textType="statement">Unsere Mitglieder besitzen Lagen von Weltruf.</otherText>
+    <otherText ID="t8" textType="statement">Dieses Zeichen in Verbindung mit dem Korkbrand verbürgt naturreinen Wein.</otherText>
+    <agent ID="t9">Trierer Verein von Weingutsbesitzern der Mosel, Saar und Ruwer</agent>
+    <location ID="t10" norm="Bereich: Mosel-Saar-Ruwer (Q672776)"></location>
   </textual>
+  <relations>
+    <relation relType="equivalence" relItems="v5 t8"></relation>
+    <relation relType="text-in-image" relItems="t6 v5"></relation>
+    <relation relType="equivalence" relItems="t5 v5"></relation>
+  </relations>
   </label>
 </wlv>
