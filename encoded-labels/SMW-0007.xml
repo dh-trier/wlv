@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="SMW-0007">
+  <metadata>
+    <collection collectionID="SMW"></collection>
+    <curation curatorID="#cs" curationDate="2022-06-24" />
+    <licence licenceScope="all" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label>
+  <physical shape="rectangle"></physical>
+  <visual>
+    <background ID="v1" backgroundColor="white"></background>
+    <frame frameColor="yellow" frameType="outer" frameStyle="ornamental band(s)"></frame>
+    <figure figureType="coat-of-arms" position="1">
+      <figureItem norm="Artefakt: Helm (Q910873)"></figureItem>
+    </figure>
+    <figure figureType="coat-of-arms" position="3">
+      <figureItem norm="Artefakt: Weinglas (Q1531435)"></figureItem>
+    </figure>
+    <figure figureType="realistic" position="25">
+      <figureItem norm="Artefakt: Krug (Q766983)"></figureItem>
+      <figureItem norm="Flora: Weintraube (Q10978)"></figureItem>
+    </figure>
+    <figure>
+      <figureItem norm="Flora: Weintraube (Q10978)"></figureItem>
+      <figureItem norm="Flora: Weinblätter (Q33971)"></figureItem>
+      <figureItem norm="Flora: Weinstock (Q2135068)"></figureItem>
+    </figure>
+  </visual>
+  <textual>
+    <location>Mosel-Saar u. Ruwer</location>
+    <qualityLabel norm="Weinqualität: Prädikatswein">Qualitätswein mit Prädikat</qualityLabel>
+    <controlNumber controlNumberType="Amtliche Prüfnummer (Q480240)">A. P. Nr. 3 561 018 1 73</controlNumber>
+    <wineName>
+      <location norm="Ort (Leitgemeinde): Trier (Q3138)">Trierer</location>
+      <location norm="Lage: Deutschherrenberg [Römerlay] (6.1.10.194)">Deutschherrenberg</location>
+      <qualityGrapes norm="Traubenqualität: Spätlese">Spätlese</qualityGrapes>
+    </wineName>
+    <qualityHistorical>Erzeugerabfüllung</qualityHistorical>
+    <agent>Josef Dostert, Trier=Olewig</agent>
+    <location>Im Abt 7</location>
+    <otherText textType="other">Tel 3 11 88</otherText>
+  </textual>
+  </label>
+</wlv>

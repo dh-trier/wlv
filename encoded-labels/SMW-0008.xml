@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="SMW-0008">
+  <metadata>
+    <collection collectionID="SMW"></collection>
+    <curation curatorID="#cs" curationDate="2022-06-24" />
+    <licence licenceScope="all" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label>
+  <physical shape="rectangle"></physical>
+  <visual>
+    <background ID="v1" backgroundColor="white"></background>
+    <figure position="1346789">
+      <figureItem norm="Artefakt: Weinglas (Q1531435)"></figureItem>
+      <figureItem norm="Flora: Weinblätter (Q33971)"></figureItem>
+      <figureItem norm="Flora: Weinstock (Q2135068)"></figureItem>
+    </figure>
+    <frame frameType="outer" frameStyle="floral" frameColor="brown green"></frame>
+  </visual>
+  <textual>
+    <wineMillesime norm="Jahrgang: 1865">1865r.</wineMillesime>
+    <wineName>
+      <location norm="Ort (Leitgemeinde): Brauneberg (Q567156)">Brauneberger</location>
+    </wineName>
+  </textual>
+  </label>
+</wlv>
