@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="SMW-00XX">
+  <metadata>
+    <collection collectionID="SMW"></collection>
+    <curation curatorID="#cs" curationDate="2022-06-24" />
+    <licence licenceScope="all" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label>
+  <physical shape="rectangle"></physical>
+  <visual>
+    <background ID="v1" backgroundColor="yellow"></background>
+  </visual>
+  <textual>
+    <location ID="t1" norm="Bereich: Mosel-Saar-Ruwer (Q672776)">Weinbaugebiet: Mosel-Saar-Ruwer</location>
+    <wineName ID="t2">
+      <wineMillesime norm="Jahrgang: 1959">1959er</wineMillesime>
+      <location norm="Ort (Leitgemeinde): Nittel (Q594609)">Nitteler</location>
+      <location norm="Lage: Gipfel (Großlage / Nittel) (6.2.1)">Gipfel</location>
+    </wineName>
+    <wineGrapes norm="Rebsorte (weiss): Auxerrois">Auxerrois</wineGrapes>
+    <otherText textType="typography">=</otherText>
+    <wineGrapes norm="Rul">Ruländer</wineGrapes>
+    <agent>Wachstum und Original=Abfüllung Hubertus Apel, Nittel</agent>
+    <agent>B. M. Apel &amp; Sohn, Weinbau-Weineinkauf, Nittel/Mosel</agent>
+  </textual>
+  </label>
+</wlv>

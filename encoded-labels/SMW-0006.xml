@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="SMW-0006">
+  <metadata>
+    <collection collectionID="SMW"></collection>
+    <curation curatorID="#cs" curationDate="2022-06-24" />
+    <licence licenceScope="all" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <label>
+  <physical shape="rectangle"></physical>
+  <visual>
+    <background ID="v1" backgroundColor="white"></background>
+    <frame ID="v2" frameColor="gold" frameStyle="band(s)" frameType="outer"></frame>
+    <frame ID="v3" frameColor="black" frameStyle="line(s)" frameType="inner"></frame>
+    <frame ID="v4" frameColor="black" frameStyle="line(s)" frameType="inner"></frame>
+    <figure ID="v5">
+      <figureItem norm="Artefakt: Wappen (Q14659)"></figureItem>
+      <figureItem norm="Fauna: Adler (Q2092297)"></figureItem>
+    </figure>
+    <figure ID="v6">
+      <figureItem norm="Bauwerk: Brücke (Q12280)"></figureItem>
+      <figureItem norm="Landschaft: Fluss (Q4022)"></figureItem>
+      <figureItem norm="Bauwerk: Gebäude (Q41176)"></figureItem>
+      <figureItem norm="Bauwerk: Brücke (Q12280)"></figureItem>
+      <figureItem norm="Person: Mensch (Q5)"></figureItem>
+      <figureItem norm="Berg"></figureItem>
+    </figure>
+  </visual>
+  <textual>
+    <wineMillesime>1931er</wineMillesime>
+    <wineName>
+      <location>Berncasteler</location>
+      <location>Rosenberg</location>
+    </wineName>
+    <qualityHistorical>Original-Kellerabzug</qualityHistorical>
+    <agent>Joh.Jos. Prüm, S.A. Prüm-Erben,</agent>
+    <location>Wehlen a.d. Mosel</location>
+  </textual>
+  </label>
+</wlv>

@@ -398,10 +398,11 @@
       <name ns="">frameStyle</name>
       <choice>
         <value>line(s)</value>
-        <value>band</value>
+        <value>band(s)</value>
         <value>floral</value>
         <value>pattern</value>
         <value>ornamental line(s)</value>
+        <value>ornamental band(s)</value>
         <value>other</value>
       </choice>
     </attribute>
@@ -703,11 +704,15 @@
     <element>
       <name ns="">wineName</name>
       <text />
+      <interleave>
       <zeroOrMore>
         <ref name="agent" />
       </zeroOrMore>
       <zeroOrMore>
         <ref name="location" />
+      </zeroOrMore>
+      <zeroOrMore>
+        <ref name="wineMillesime" />
       </zeroOrMore>
       <zeroOrMore>
         <ref name="qualityGrapes" />
@@ -742,6 +747,7 @@
       <optional>
         <ref name="ID" />
       </optional>
+      </interleave>
     </element>
   </define>
   <define name="wineNameType">
@@ -1213,7 +1219,9 @@
       <optional>
         <ref name="position" />
       </optional>
-      <ref name="textPosition" />
+      <optional>
+        <ref name="textPosition" />
+      </optional>
       <text />
       <ref name="fontAttributes" />
     </element>
@@ -1229,6 +1237,7 @@
         <value>statement</value>
         <value>copyright</value>
         <value>vineyard (Lage)</value>
+        <value>typography</value>
         <value>website</value>
         <value>recommendation</value>
         <value>warning</value>
@@ -1811,8 +1820,8 @@
         <value>Lage: Geisberg [Michelsberg] (6.1.3.069)</value>
         <value>Lage: Geisberg [Scharzberg] (6.5.1.032)</value>
         <value>Lage: Geisberg [Schwarze Katz] (6.3.4.089)</value>
-        <value>Lage: Gipfel (Großlage) (6.2.1.003)</value>
-        <value>Lage: Gipfel (Großlage) (6.2.1)</value>
+        <value>Lage: Gipfel (unbenannte Einzellage) (6.2.1.003)</value>
+        <value>Lage: Gipfel (Großlage / Nittel) (6.2.1)</value>
         <value>Lage: Goldbäumchen (Großlage) (6.3.1.001)</value>
         <value>Lage: Goldberg [Goldbäumchen] (6.3.1.021)</value>
         <value>Lage: Goldberg [Scharzberg] (6.5.1.050)</value>
@@ -2178,21 +2187,20 @@
         <value>Lage: Zellerberg [St. Michael] (6.1.7.116)</value>
         <value>Lage: Zeppwingert [Schwarzlay] (6.1.8.142)</value>
         <value>Lage: Zollturm [Schwarzlay] (6.1.8.168)</value>
-        <value>Lage (Großlage): Schwarze Katz (6.3.4)</value>
         <!-- Millesime / Jahrgang -->
         <value>Jahrgang: ####</value>
         <!-- Rebsorten -->
-        <value>Rebsorte (weiss): Riesling (Q456471)</value>
-        <value>Rebsorte (weiss): Müller-Thurgau / Rivaner (Q681670)</value>
-        <value>Rebsorte (weiss): Sauvignon Blanc</value>
-        <value>Rebsorte (weiss): Elbling</value>
-        <value>Rebsorte (weiss): Grauburgunder</value>
-        <value>Rebsorte (weiss): Chardonnay</value>
-        <value>Rebsorte (weiss): Auxerrois</value>
-        <value>Rebsorte (weiss): Weißburgunder</value>
-        <value>Rebsorte (weiss): other</value>
-        <value>Rebsorte (rot): Spätburgunder</value>
-        <value>Rebsorte (rot): other</value>
+        <value>Rebsorte: Riesling [weiss] (Q456471)</value>
+        <value>Rebsorte: Müller-Thurgau / Rivaner [weiss] (Q681670)</value>
+        <value>Rebsorte: Sauvignon Blanc [weiss] (Q44542)</value>
+        <value>Rebsorte: Elbling [weiss] (Q1325364)</value>
+        <value>Rebsorte: Grauburgunder / Ruländer / Pinot Gris [weiss] (Q778601)</value>
+        <value>Rebsorte: Chardonnay [weiss] (Q213332)</value>
+        <value>Rebsorte: Auxerrois / Malbec [weiss] (Q1414045)</value>
+        <value>Rebsorte: Weißburgunder / Pinot blanc [weiss] (Q950514)</value>
+        <value>Rebsorte: Spätburgunder / Pinot noir [rot] (Q223701)</value>
+        <value>Rebsorte: other [weiss]</value>
+        <value>Rebsorte: other [rot]</value>
         <!-- Weinfarbe (wine color) -->
         <value>Weinfarbe: Rotwein</value>
         <value>Weinfarbe: Weisswein</value>
