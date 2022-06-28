@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="MSR-0033">
+  <metadata>
+    <collection collectionID="MSR"></collection>
+    <curation curatorID="#cs" curationDate="2022-06-28" />
+    <licence licenceScope="all" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+  </metadata>
+  <labelGroup>
+    <label labelPosition="front">
+      <physical shape="rectangle"></physical>
+      <visual>
+        <background backgroundColor="yellow"></background>
+        <figure figureType="coat-of-arms">
+          <figureItem norm="Sonstiges: Ritter (Q102083)"></figureItem>
+          <figureItem norm="Fauna: Pferd (Q726)"></figureItem>
+        </figure>
+      </visual>
+      <textual>
+        <agent>Deutschherren-Hof</agent>
+        <wineMillesime norm="Jahrgang: 2003">2003</wineMillesime>
+        <wineName>
+          <location norm="Ort (Leitgemeinde): Trier (Q3138)">Trierer</location>
+          <location norm="Lage: Deutschherrenberg [Römerlay] (6.1.10.194)">Deutschherrenberg</location>
+          <wineGrapes norm="Rebsorte: Riesling [weiss] (Q456471)">Riesling</wineGrapes>
+          <qualityGrapes norm="Traubenqualität: Eiswein">Eiswein</qualityGrapes>
+        </wineName>
+        <location norm="Bereich: Mosel-Saar-Ruwer (Q672776)">Mosel-Saar-Ruwer</location>
+      </textual>
+    </label>
+    <label labelPosition="back">
+      <physical shape="rectangle"></physical>
+      <visual>
+        <background backgroundColor="yellow"></background>
+      </visual>
+      <textual>
+        <agent>Deutschherren-Hof</agent>
+        <wineMillesime norm="Jahrgang: 2003">2003</wineMillesime>
+        <wineName>
+          <location norm="Ort (Leitgemeinde): Trier (Q3138)">Trierer</location>
+          <location norm="Lage: Deutschherrenberg [Römerlay] (6.1.10.194)">Deutschherrenberg</location>
+          <wineGrapes norm="Rebsorte: Riesling [weiss] (Q456471)">Riesling -</wineGrapes>
+          <qualityGrapes norm="Traubenqualität: Eiswein">Eiswein</qualityGrapes>
+        </wineName>
+        <alcohol alcoholNorm="6.5">6,5%</alcohol>
+        <qualityProduction norm="Gutsabfüllung">Gutsabfüllung</qualityProduction>
+        <volume volumeNorm="375">0,375 l</volume>
+        <qualityLevel norm="Weinqualität: Prädikatswein">Qualitätswein mit Prädikat</qualityLevel>
+        <controlNumber controlNumberType="Amtliche Prüfnummer (Q480240)">AP. Nr. 3561025/07/04</controlNumber>
+        <agent agentRole="cultivation / Anbau">Albert Oberbillig - </agent>
+        <location norm="Ort (Leitgemeinde): Trier (Q3138)">54296 Trier</location>
+        <otherText textType="website">www.weingut-deutschherrenhof.de</otherText>
+      </textual>
+    </label>
+  </labelGroup>
+</wlv>

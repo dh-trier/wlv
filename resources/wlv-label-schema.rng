@@ -1519,6 +1519,9 @@
         <value>Sonstiges: Mond (Q405)</value>
         <value>Sonstiges: Sonne (Q525)</value>
         <value>Sonstiges: Schatten (Q160020)</value>
+        <value>Sonstiges: Abstrakte Form</value>
+        <value>Sonstiges: Barcode (Q856)</value>
+        <value>Sonstiges: QR-Code (Q12203)</value>
         <!-- QualityGrapes -->
         <value>QualityGrapes: Kabinett</value>
         <value>QualityGrapes: Spätlese</value>
