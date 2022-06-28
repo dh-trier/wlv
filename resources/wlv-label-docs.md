@@ -4,8 +4,7 @@ The following document has two parts: First, a prose description of collections 
 
 The Wine Label Vocabulary (WLV) is formally defined in a Relax NG Schema, where all definitions of elements and attributes, with their rules of location and frequency of occurrence, their datatypes, their rules for acceptable values and similar information are documented. This document notably also includes a rather extensive list of names of relevant vineyards and localities with their authority data. 
 
-Generally speaking, a collection of wine labels described using the WLV has two groups of files: One single file describing the collection of labels (see: element [collection](#collection), and a set of individual files each describing one label (see: element [label](#label) or a group of labels (see: element [labelGroup](#labelGroup).  
-
+Generally speaking, a collection of wine labels described using the WLV has two groups of files: One single file describing the collection of labels (see: element [collection](#collection), and a set of individual files each describing one label (see: element [label](#label) or a group of labels (see: element [labelGroup](#labelGroup). 
 
 ## Coding the collection file
 
@@ -32,7 +31,9 @@ The metadata for a label names the collection the label belongs to, provides inf
 
 #### The labels
 
-Each XML document includes only the information pertaining to the label (or label parts) pertaining to one wine. A collection typically contains more than one wine label. The labels (and their files) are hence always connected to their concerning collection (via the metadata).
+Each XML document includes only the information pertaining to the label (or label parts) pertaining to one wine. A collection typically contains more than one wine label. The labels (and their files) are hence always connected to their concerning collection (via the metadata). 
+
+The data model for the wine labels follows a small number of general assumptions or principles. First, the assumption that a label can be usefully described at three distinct levels, namely the physical, visual and textual properties. (In addition, relations between multiple elements at the same or at different levels can be described.) Second, the idea to provide each piece of information with a standardized label and/or authority data to make it clearly identifiable. Third, the principle that element content is only included when that (textual) content is visible on the label described. (All other information is recorded using attributes. This principle does not apply to the comments element.) Fourth, the principle that only very few pieces of information are mandatory, but that a lot of details can optionally be recorded, if that is desired. Finally, the principle that although the WLV is currently used only for labels from the German Mosel wine region, the WLV should be sufficiently flexible and expressive enough to be easily used also for labels from other regions. (A limitation to this rule lies in the authority data, which is currently only provided for the Mosel region.)   
 
 #### The parts of a label
 
@@ -960,6 +961,9 @@ The material from which the label is made (in most cases, this is paper).
     * Sonstiges: Mond (Q405)
     * Sonstiges: Sonne (Q525)
     * Sonstiges: Schatten (Q160020)
+    * Sonstiges: Abstrakte Form
+    * Sonstiges: Barcode (Q856)
+    * Sonstiges: QR-Code (Q12203)
     * QualityGrapes: Kabinett
     * QualityGrapes: Spätlese
     * QualityGrapes: Auslese
