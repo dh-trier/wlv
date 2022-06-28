@@ -10,28 +10,28 @@
       <physical sizeH="127" sizeV="85" shape="rectangle" material="paper"/>
       <visual>
         <background ID="v1" backgroundColor="white"></background>
-        <frame ID="v2" frameColor="gold" frameStyle="band" frameType="outer"></frame>
-        <frame ID="v3" frameColor="black" frameStyle="lines" frameType="inner"></frame>
+        <frame ID="v2" frameColor="gold" frameStyle="band(s)" frameType="outer"></frame>
+        <frame ID="v3" frameColor="black" frameStyle="line(s)" frameType="inner"></frame>
         <figure ID="v4" position="123" figureType="realistic">
-          <figureItem ID="v4-2" norm="Flora: Weinstock (Q2135068)"></figureItem>
-          <figureItem ID="v4-1" norm="Flora: Weintraube (Q10978)"></figureItem>
-          <figureItem ID="v4-2" norm="Flora: Weinblätter (Q33971)"></figureItem>
-          <figureItem ID="v4-3" norm="Fauna: Katze (Q146)"></figureItem>
-          <figureItem ID="v4-4" norm="Artefakt: Weinfass (Q10289)"></figureItem>
+          <figureItem ID="v4-2" norm="Bild: Weinstock [Flora] (Q2135068)"></figureItem>
+          <figureItem ID="v4-1" norm="Bild: Weintraube [Flora] (Q10978)"></figureItem>
+          <figureItem ID="v4-2" norm="Bild: Weinblätter [Flora] (Q33971)"></figureItem>
+          <figureItem ID="v4-3" norm="Bild: Katze [Fauna] (Q146)"></figureItem>
+          <figureItem ID="v4-4" norm="Bild: Weinfass [Artefakt] (Q10289)"></figureItem>
         </figure>
         <figure ID="v5">
-          <figureItem ID="v5-1" norm="Artefakt: Wappen (Q14659)"></figureItem>
+          <figureItem ID="v5-1" norm="Bild: Wappen [Artefakt] (Q14659)"></figureItem>
         </figure>
       </visual>
       <textual>
         <location ID="t1" locationType="region / Gebiet">Mosel-Saar-Ruwer</location>
-        <wineMillesime ID="t2" fontType="Antiqua-Sans" fontManner="stamped" norm="Jahrgang: 1937">1937er</wineMillesime>
+        <wineMillesime ID="t2" fontType="Antiqua-Sans" fontManner="stamped" numNorm="1937">1937er</wineMillesime>
         <wineName ID="t3" wineNameType="vineyard / Großlage" fontType="Fraktur" fontSize="larger">
-          <location ID="t3-1" locationType="locality / Leitgemeinde" norm="Leitgemeinde: Zell (Q187500)">Zeller</location>
-          <location ID="t3-2" norm="Großlage: Schwarze Katz (Q2253665)">schwarze Katz</location>
+          <location ID="t3-1" locationType="locality / Leitgemeinde" norm="Ort: Zell (Q187500)">Zeller</location>
+          <location ID="t3-2" norm="Lage: Schwarze Katz (Großlage) (6.3.4)">schwarze Katz</location>
         </wineName>
         <agent ID="t4" agentRole="distribution / Vertrieb" uri="https://www.alrich.eu/seite/394272/p.html">Planitzer Likörfabrik</agent>
-        <agent ID="t5" agentRole="distribution / Vertrieb" norm="Q2098230">Johann Formanowski, Planitz/Sa.</agent>
+        <agent ID="t5" agentRole="distribution / Vertrieb">Johann Formanowski, Planitz/Sa.</agent>
         <agent ID="t6" agentRole="printer / Drucker" fontSize="smaller">Illert</agent>
         <labelNumber ID="t7" fontSize="smaller">No.7526</labelNumber>
       </textual>
@@ -39,4 +39,5 @@
         <relation ID="r1" relType="image-in-image" relItems="v5 v4"></relation>
       </relations>
   </label>
+  <comments>Die Likörfabrik könnte folgende Wikidata ID haben: Q2098230.</comments>
 </wlv>

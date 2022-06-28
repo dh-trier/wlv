@@ -11,16 +11,16 @@
   <visual>
     <background ID="v1" backgroundColor="white"></background>
     <figure position="1346789">
-      <figureItem norm="Artefakt: Weinglas (Q1531435)"></figureItem>
-      <figureItem norm="Flora: Weinblätter (Q33971)"></figureItem>
-      <figureItem norm="Flora: Weinstock (Q2135068)"></figureItem>
+      <figureItem norm="Bild: Weinglas [Artefakt] (Q1531435)"></figureItem>
+      <figureItem norm="Bild: Weinblätter [Flora] (Q33971)"></figureItem>
+      <figureItem norm="Bild: Weinstock [Flora] (Q2135068)"></figureItem>
     </figure>
     <frame frameType="outer" frameStyle="floral" frameColor="brown green"></frame>
   </visual>
   <textual>
-    <wineMillesime norm="Jahrgang: 1865">1865r.</wineMillesime>
+    <wineMillesime numNorm="1865">1865r.</wineMillesime>
     <wineName>
-      <location norm="Ort (Leitgemeinde): Brauneberg (Q567156)">Brauneberger</location>
+      <location norm="Ort: Brauneberg (Q567156)">Brauneberger</location>
     </wineName>
   </textual>
   </label>

@@ -15,8 +15,8 @@
   <textual>
     <wineMillesime>1880er</wineMillesime>
     <wineName>
-      <location norm="Ort (Leitgemeinde): Brauneberg (Q567156)">Brauneberger-</location>
-      <qualityGrapes norm="Traubenqualität: Auslese">Auslese</qualityGrapes>
+      <location norm="Ort: Brauneberg (Q567156)">Brauneberger-</location>
+      <qualityGrapes norm="qualityGrapes: Auslese (Q426856)">Auslese</qualityGrapes>
     </wineName>
   </textual>
   </label>

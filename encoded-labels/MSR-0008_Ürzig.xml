@@ -15,17 +15,17 @@
       <textual>
           <location locationType="region / Gebiet" fontStyle="all-caps">Mosel Saar Ruwer</location>
           <otherText textType="other" textPosition="stand-alone">1742</otherText>
-          <wineMillesime norm="Jahrgang: 1983">1983er</wineMillesime>
-          <wineName wineNameType="vineyard / Großlage" norm="RegNr:6.1.8">
+          <wineMillesime numNorm="1983">1983er</wineMillesime>
+          <wineName wineNameType="vineyard / Großlage">
             <location locationType="locality / Leitgemeinde" norm="Ort: Ürzig (Q335018)">Ürziger</location>
-            <location locationType="vineyard / Großlage" norm="Schwarzlay">Schwarzlay</location>
-            <qualityGrapes norm="QualityGrapes: Kabinett">Kabinett</qualityGrapes>
+            <location locationType="vineyard / Großlage" norm="Lage: Schwarzlay (Großlage) (6.1.8)">Schwarzlay</location>
+            <qualityGrapes norm="qualityGrapes: Kabinett">Kabinett</qualityGrapes>
           </wineName>
-          <wineGrapes norm="Rebsorte (weiss): Riesling (Q456471)">Riesling</wineGrapes>
-          <qualityLevel norm="Weinqualität: Prädikatswein">Qualitätswein mit Prädikat</qualityLevel>
-          <controlNumber>Amtliche Prüfungsnummer 1 907 135 072 84</controlNumber>
-          <alcohol alcoholNorm="7">Alc. 7,2% by Vol.</alcohol>
-          <volume volumeNorm="700">e 0,7 L</volume>
+          <wineGrapes norm="Rebsorte: Riesling [weiss] (Q456471)">Riesling</wineGrapes>
+          <qualityLevel norm="qualityLevel: Prädikatswein">Qualitätswein mit Prädikat</qualityLevel>
+          <controlNumber numNorm="190713507284">Amtliche Prüfungsnummer 1 907 135 072 84</controlNumber>
+          <alcohol numNorm="7.2">Alc. 7,2% by Vol.</alcohol>
+          <volume numNorm="700">e 0,7 L</volume>
           <location norm="Land: Deutschland (Q183)">Deutschland</location>
           <agent agentRole="production / Weinbau">Abfüller: Weinbau Mergler &amp; Engel Wein-Kellerei</agent>
           <location locationType="locality / Leitgemeinde" norm="Ort: Pünderich (Q567287)">Pünderich/Mosel</location>

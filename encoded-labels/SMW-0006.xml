@@ -14,17 +14,17 @@
     <frame ID="v3" frameColor="black" frameStyle="line(s)" frameType="inner"></frame>
     <frame ID="v4" frameColor="black" frameStyle="line(s)" frameType="inner"></frame>
     <figure ID="v5">
-      <figureItem norm="Artefakt: Wappen (Q14659)"></figureItem>
-      <figureItem norm="Fauna: Adler (Q2092297)"></figureItem>
-      <figureItem norm="Flora: Weintraube (Q10978)"></figureItem>
+      <figureItem norm="Bild: Wappen [Artefakt] (Q14659)"></figureItem>
+      <figureItem norm="Bild: Adler [Fauna] (Q2092297)"></figureItem>
+      <figureItem norm="Bild: Weintraube [Flora] (Q10978)"></figureItem>
     </figure>
     <figure ID="v6">
-      <figureItem norm="Bauwerk: Brücke (Q12280)"></figureItem>
-      <figureItem norm="Landschaft: Fluss (Q4022)"></figureItem>
-      <figureItem norm="Bauwerk: Gebäude (Q41176)"></figureItem>
-      <figureItem norm="Bauwerk: Brücke (Q12280)"></figureItem>
-      <figureItem norm="Person: Mensch (Q5)"></figureItem>
-      <figureItem norm="Berg"></figureItem>
+      <figureItem norm="Bild: Brücke [Bauwerk] (Q12280)"></figureItem>
+      <figureItem norm="Bild: Fluss [Landschaft] (Q4022)"></figureItem>
+      <figureItem norm="Bild: Gebäude [Bauwerk] (Q41176)"></figureItem>
+      <figureItem norm="Bild: Brücke [Bauwerk] (Q12280)"></figureItem>
+      <figureItem norm="Bild: Mensch [Person] (Q5)"></figureItem>
+      <figureItem norm="Bild: Weinberg [Landschaft] (Q22715)"></figureItem>
     </figure>
   </visual>
   <textual>

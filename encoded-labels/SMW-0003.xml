@@ -14,13 +14,13 @@
   <textual>
     <location ID="t1" norm="Bereich: Mosel-Saar-Ruwer (Q672776)">Weinbaugebiet: Mosel-Saar-Ruwer</location>
     <wineName ID="t2">
-      <wineMillesime norm="Jahrgang: 1959">1959er</wineMillesime>
-      <location norm="Ort (Leitgemeinde): Nittel (Q594609)">Nitteler</location>
+      <wineMillesime numNorm="1959">1959er</wineMillesime>
+      <location norm="Ort: Nittel (Q594609)">Nitteler</location>
       <location norm="Lage: Gipfel (Großlage / Nittel) (6.2.1)">Gipfel</location>
     </wineName>
-    <wineGrapes norm="Rebsorte (weiss): Auxerrois">Auxerrois</wineGrapes>
+    <wineGrapes norm="Rebsorte: Auxerrois / Malbec [weiss] (Q1414045)">Auxerrois</wineGrapes>
     <otherText textType="typography">=</otherText>
-    <wineGrapes norm="Rul">Ruländer</wineGrapes>
+    <wineGrapes norm="Rebsorte: Grauburgunder / Ruländer / Pinot Gris [weiss] (Q778601)">Ruländer</wineGrapes>
     <agent>Wachstum und Original=Abfüllung Hubertus Apel, Nittel</agent>
     <agent>B. M. Apel &amp; Sohn, Weinbau-Weineinkauf, Nittel/Mosel</agent>
   </textual>

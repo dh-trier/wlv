@@ -10,13 +10,13 @@
       <physical sizeH="130" sizeV="90" shape="rectangle" material="paper"/>
       <visual>
         <background backgroundStyle="none" backgroundColor="yellow"></background>
-        <frame frameType="inner" frameStyle="band" frameColor="orange"></frame>
+        <frame frameType="inner" frameStyle="band(s)" frameColor="orange"></frame>
         <figure ID="v3" position="12346789" figureType="abstract">
-          <figureItem ID="v3-1" norm="Flora: Weinblätter (Q33971)" />
+          <figureItem ID="v3-1" norm="Bild: Weinblätter [Flora] (Q33971)" />
         </figure>
         <figure ID="v4" position="5" figureType="coat-of-arms">
-            <figureItem ID="v4-1" norm="Sonstiges: Stern (Q523)" />
-            <figureItem ID="v4-2" norm="Artefakt: Helm (Q910873)" />
+            <figureItem ID="v4-1" norm="Bild: Stern [Sonstiges] (Q523)" />
+            <figureItem ID="v4-2" norm="Bild: Helm [Artefakt] (Q910873)" />
         </figure>
       </visual>
       <textual>

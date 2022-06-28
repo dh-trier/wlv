@@ -10,24 +10,23 @@
   <physical shape="rectangle"></physical>
   <visual>
     <background ID="v1" backgroundColor="white"></background>
-    <frame frameColor="blue gold" frameType="outer" frameStyle="band"></frame>
+    <frame frameColor="blue gold" frameType="outer" frameStyle="band(s)"></frame>
     <figure>
-      <figureItem norm="Artefakt: Weinglas (Q1531435)"></figureItem>
-      <figureItem norm="Person: Kind (Q7569)"></figureItem>
-      <figureItem norm="Artefakt: Krone (Q170984)"></figureItem>
-      <figureItem norm="Flora: Weinblätter (Q33971)"></figureItem>
-      <figureItem norm="Flora: Weintraube (Q10978)"></figureItem>
-      <figureItem norm="Flora: Weinstock (Q2135068)"></figureItem>
+      <figureItem norm="Bild: Weinglas [Artefakt] (Q1531435)"></figureItem>
+      <figureItem norm="Bild: Kind [Person] (Q7569)"></figureItem>
+      <figureItem norm="Bild: Weinblätter [Flora] (Q33971)"></figureItem>
+      <figureItem norm="Bild: Weintraube [Flora] (Q10978)"></figureItem>
+      <figureItem norm="Bild: Weinstock [Flora] (Q2135068)"></figureItem>
     </figure>
   </visual>
   <textual>
     <wineName>
-      <wineMillesime norm="Jahrgang: 1868">1868r.</wineMillesime>
+      <wineMillesime numNorm="1868">1868r.</wineMillesime>
       <location norm="Lage: Agritiusberg [Scharzberg] (6.5.1.025)">Agritiusberger.</location>
     </wineName>
     <otherText textType="other">Creszenz von</otherText>
     <agent agentRole="cultivation / Anbau">L.R. Mohr</agent>
-    <location norm="Ort (Leitgemeinde): Trier (Q3138)">in Trier</location>
+    <location norm="Ort: Trier (Q3138)">in Trier</location>
   </textual>
   </label>
 </wlv>

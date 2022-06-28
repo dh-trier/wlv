@@ -688,7 +688,7 @@
       <name ns="">wineMillesime</name>
       <text />
       <optional>
-        <ref name="norm" />
+        <ref name="numNorm" />
       </optional>
       <optional>
         <ref name="ID" />
@@ -977,20 +977,8 @@
       <optional>
         <ref name="wdw" />
       </optional>
-      <optional>
-        <ref name="qualityProductionNorm" />
-      </optional>
       <ref name="fontAttributes" />
     </element>
-  </define>
-  <define name="qualityProductionNorm">
-    <attribute>
-      <name ns="">qualityProductionNorm</name>
-      <choice>
-        <value>on-location</value>
-        <value>other</value>
-      </choice>
-    </attribute>
   </define>
   <define name="qualityHistorical">
     <element>
@@ -1119,14 +1107,16 @@
        <optional>
         <ref name="position" />
       </optional>
-      <ref name="alcoholNorm" />
+      <optional>
+        <ref name="numNorm" />
+      </optional>
       <ref name="fontAttributes" />
     </element>
   </define>
-  <define name="alcoholNorm">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The percentage of alcohol, expressed as number (float).</a:documentation>
+  <define name="numNorm">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A normalized expression of the number present on the label, as float (or an integer).</a:documentation>
     <attribute>
-      <name ns="">alcoholNorm</name>
+      <name ns="">numNorm</name>
       <data type="float" />
     </attribute>
   </define>
@@ -1138,18 +1128,11 @@
        <optional>
         <ref name="position" />
       </optional>
-       <optional>
-      <ref name="volumeNorm" />
+      <optional>
+        <ref name="numNorm" />
       </optional>
       <ref name="fontAttributes" />
     </element>
-  </define>
-  <define name="volumeNorm">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The indication of the volume of wine, expressed as a number (integer of milliliters).</a:documentation>
-    <attribute>
-      <name ns="">volumeNorm</name>
-      <data type="int" />
-    </attribute>
   </define>
   <define name="controlNumber">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The control number that is required for more recent labels.</a:documentation>
@@ -1157,10 +1140,13 @@
       <name ns="">controlNumber</name>
       <text />
       <optional>
+        <ref name="ID" />
+      </optional>
+      <optional>
         <ref name="position" />
       </optional>
       <optional>
-        <ref name="norm" />
+        <ref name="numNorm" />
       </optional>
       <optional>
         <ref name="controlNumberType" />
@@ -1192,6 +1178,9 @@
       <optional>
         <ref name="position" />
       </optional>
+      <optional>
+        <ref name="numNorm" />
+      </optional>
       <ref name="fontAttributes" />
     </element>
   </define>
@@ -1205,6 +1194,9 @@
       </optional>
       <optional>
         <ref name="position" />
+      </optional>
+      <optional>
+        <ref name="numNorm" />
       </optional>
       <ref name="fontAttributes" />
     </element>
@@ -1421,279 +1413,279 @@
       <name ns="">norm</name>
       <choice>
         <!-- Bildelemente: Artefakte, Personen, Fauna, Flora, Bauwerke, Landschaft, Sonstiges -->
-        <value>Artefakt: Banderole (Q2689628)</value>
-        <value>Artefakt: Becher (Q81727)</value>
-        <value>Artefakt: Brezel (Q160525)</value>
-        <value>Artefakt: Boot (Q35872)</value>
-        <value>Artefakt: Globus (Q133792)</value>
-        <value>Artefakt: Gemälde (Q3305213)</value>
-        <value>Artefakt: Fahrzeug (Q42889)</value>
-        <value>Artefakt: Harfe (Q47369)</value>
-        <value>Artefakt: Harpune (Q207574)</value>
-        <value>Artefakt: Helm (Q910873)</value>
-        <value>Artefakt: Hut (Q80151)</value>
-        <value>Artefakt: Krone (Q170984)</value>
-        <value>Artefakt: Krug (Q766983)</value>
-        <value>Artefakt: Medaille (Q131647)</value>
-        <value>Artefakt: Musikinstrument (Q)</value>
-        <value>Artefakt: Ornament (Q335261)</value>
-        <value>Artefakt: Pfeil (Q45922)</value>
-        <value>Artefakt: Rad (Q446)</value>
-        <value>Artefakt: Säule (Q4817)</value>
-        <value>Artefakt: Schiff (Q11446)</value>
-        <value>Artefakt: Siegel (Q162919)</value>
-        <value>Artefakt: Schild (Q131559)</value>
-        <value>Artefakt: Schlüssel (Q132041)</value>
-        <value>Artefakt: Schwert (Q12791)</value>
-        <value>Artefakt: Sockel/Podest (Q12014132)</value>
-        <value>Artefakt: Stoff (Q5849500)</value>
-        <value>Artefakt: Vase (Q191851)</value>
-        <value>Artefakt: Wage (Q134566)</value>
-        <value>Artefakt: Wappen (Q14659)</value>
-        <value>Artefakt: Weinglas (Q1531435)</value>
-        <value>Artefakt: Weinflasche (Q23490)</value>
-        <value>Artefakt: Weinfass (Q10289)</value>
-        <value>Artefakt: Trichter ( Q29957)</value>
-        <value>Artefakt: Lampe, inkl. Laterne (Q1138737)</value>    
-        <value>Artefakt: Stiefel (Q190868)</value>
-        <value>Artefakt: Siegel (Q162919)</value>
-        <value>Artefakt: Stempel (Q57305415)</value>
-        <value>Artefakt: Schnur (Q31029)</value>
-        <value>Artefakt: Etikett (Q722218)</value>
-        <value>Artefakt: Gitarre, inkl. Mandoline (Q6607)</value>
-        <value>Artefakt: Kostüm, inkl. Tracht (Q1410477)</value>
-        <value>Fauna: Hase (Q46076)</value>
-        <value>Fauna: Adler (Q2092297)</value>
-        <value>Fauna: Bär (Q30090244)</value>
-        <value>Fauna: Feder (Q81025)</value>
-        <value>Fauna: Flügel (Q161358)</value>
-        <value>Fauna: Hund (Q144)</value>
-        <value>Fauna: Katze (Q146)</value>
-        <value>Fauna: Katze (Q146)</value>
-        <value>Fauna: Löwe (Q140)</value>
-        <value>Fauna: Pferd (Q726)</value>
-        <value>Fauna: Ochse (Q473194)</value>
-        <value>Fauna: Reh/Hirsch (Q29838690)</value>
-        <value>Fauna: Schaf (Q7368)</value>
-        <value>Fauna: Spinne (Q1357)</value>
-        <value>Fauna: Vogel (Q5113)</value>
-        <value>Flora: Baum (Q10884)</value>
-        <value>Flora: Blume (Q886167)</value>
-        <value>Flora: Blüte (Q506)</value>
-        <value>Flora: Pflanze (Q756)</value>
-        <value>Flora: Weintraube (Q10978)</value>
-        <value>Flora: Weinblätter (Q33971)</value>
-        <value>Flora: Weinstock (Q2135068)</value>
-        <value>Flora: Wurzel (Q41500)</value>
-        <value>Bauwerk: Burg (Q23413)</value>
-        <value>Bauwerk: Brücke (Q12280)</value>
-        <value>Bauwerk: Dock (Q124282)</value>
-        <value>Bauwerk: Dorf (Q532)</value>
-        <value>Bauwerk: Gebäude (Q41176)</value>
-        <value>Bauwerk: Fenster (Q35473)</value>
-        <value>Bauwerk: Interieur (Q2998430)</value>
-        <value>Bauwerk: Keller (Q43275450)</value>
-        <value>Bauwerk: Kirchengebäude (Q16970)</value>
-        <value>Bauwerk: Mauer (Q42948)</value>
-        <value>Bauwerk: Stadt (Q532)</value>
-        <value>Bauwerk: Straße (Q34442)</value>
-        <value>Bauwerk: Tor/Türe (Q36794)</value>
-        <value>Bauwerk: Treppe (Q12511)</value>
-        <value>Bauwerk: Turm (Q12518)</value>
-        <value>Bauwerk: Zaun (Q148571)</value>
-        <value>Landschaft: Ufer (Q468756)</value>
-        <value>Landschaft: Fluss (Q4022)</value>
-        <value>Landschaft: Hügel (Q54050)</value>
-        <value>Landschaft: Weinberg (Q22715)</value>
-        <value>Person: Mann (Q8441)</value>
-        <value>Person: Frau (Q467)</value>
-        <value>Person: Kind (Q7569)</value>
-        <value>Person: Mensch (Q5)</value>
-        <value>Person: Minnesänger (Q841192)</value>
-        <value>Person: Personengruppe (Q16334295)</value>
-        <value>Sonstiges: Ritter (Q102083)</value>
-        <value>Sonstiges: Satyr (Q163709)</value>
-        <value>Sonstiges: Engel (Q235113)</value>
-        <value>Sonstiges: Drache (Q7559)</value>
-        <value>Sonstiges: Stern (Q523)</value>
-        <value>Sonstiges: Mond (Q405)</value>
-        <value>Sonstiges: Sonne (Q525)</value>
-        <value>Sonstiges: Schatten (Q160020)</value>
-        <value>Sonstiges: Abstrakte Form</value>
-        <value>Sonstiges: Barcode (Q856)</value>
-        <value>Sonstiges: QR-Code (Q12203)</value>
+        <value>Bild: Banderole [Artefakt] (Q2689628)</value>
+        <value>Bild: Becher [Artefakt] (Q81727)</value>
+        <value>Bild: Brezel [Artefakt] (Q160525)</value>
+        <value>Bild: Boot [Artefakt] (Q35872)</value>
+        <value>Bild: Globus [Artefakt] (Q133792)</value>
+        <value>Bild: Gemälde [Artefakt] (Q3305213)</value>
+        <value>Bild: Fahrzeug [Artefakt] (Q42889)</value>
+        <value>Bild: Harfe [Artefakt] (Q47369)</value>
+        <value>Bild: Harpune [Artefakt] (Q207574)</value>
+        <value>Bild: Helm [Artefakt] (Q910873)</value>
+        <value>Bild: Hut [Artefakt] (Q80151)</value>
+        <value>Bild: Krone [Artefakt] (Q170984)</value>
+        <value>Bild: Krug [Artefakt] (Q766983)</value>
+        <value>Bild: Medaille [Artefakt] (Q131647)</value>
+        <value>Bild: Musikinstrument [Artefakt] (Q)</value>
+        <value>Bild: Ornament [Artefakt] (Q335261)</value>
+        <value>Bild: Pfeil [Artefakt] (Q45922)</value>
+        <value>Bild: Rad [Artefakt] (Q446)</value>
+        <value>Bild: Säule [Artefakt] (Q4817)</value>
+        <value>Bild: Schiff [Artefakt] (Q11446)</value>
+        <value>Bild: Siegel [Artefakt] (Q162919)</value>
+        <value>Bild: Schild [Artefakt] (Q131559)</value>
+        <value>Bild: Schlüssel [Artefakt] (Q132041)</value>
+        <value>Bild: Schwert [Artefakt] (Q12791)</value>
+        <value>Bild: Sockel/Podest [Artefakt] (Q12014132)</value>
+        <value>Bild: Stoff [Artefakt] (Q5849500)</value>
+        <value>Bild: Vase [Artefakt] (Q191851)</value>
+        <value>Bild: Wage [Artefakt] (Q134566)</value>
+        <value>Bild: Wappen [Artefakt] (Q14659)</value>
+        <value>Bild: Weinglas [Artefakt] (Q1531435)</value>
+        <value>Bild: Weinflasche [Artefakt] (Q23490)</value>
+        <value>Bild: Weinfass [Artefakt] (Q10289)</value>
+        <value>Bild: Trichter [Artefakt] ( Q29957)</value>
+        <value>Bild: Lampe, inkl. Laterne [Artefakt] (Q1138737)</value>    
+        <value>Bild: Stiefel [Artefakt] (Q190868)</value>
+        <value>Bild: Siegel [Artefakt] (Q162919)</value>
+        <value>Bild: Stempel [Artefakt] (Q57305415)</value>
+        <value>Bild: Schnur [Artefakt] (Q31029)</value>
+        <value>Bild: Etikett [Artefakt] (Q722218)</value>
+        <value>Bild: Gitarre, inkl. Mandoline [Artefakt] (Q6607)</value>
+        <value>Bild: Kostüm, inkl. Tracht [Artefakt] (Q1410477)</value>
+        <value>Bild: Hase [Fauna] (Q46076)</value>
+        <value>Bild: Adler [Fauna] (Q2092297)</value>
+        <value>Bild: Bär [Fauna] (Q30090244)</value>
+        <value>Bild: Feder [Fauna] (Q81025)</value>
+        <value>Bild: Flügel [Fauna] (Q161358)</value>
+        <value>Bild: Hund [Fauna] (Q144)</value>
+        <value>Bild: Katze [Fauna] (Q146)</value>
+        <value>Bild: Katze [Fauna] (Q146)</value>
+        <value>Bild: Löwe [Fauna] (Q140)</value>
+        <value>Bild: Pferd [Fauna] (Q726)</value>
+        <value>Bild: Ochse [Fauna] (Q473194)</value>
+        <value>Bild: Reh/Hirsch [Fauna] (Q29838690)</value>
+        <value>Bild: Schaf [Fauna] (Q7368)</value>
+        <value>Bild: Spinne [Fauna] (Q1357)</value>
+        <value>Bild: Vogel [Fauna] (Q5113)</value>
+        <value>Bild: Baum [Flora] (Q10884)</value>
+        <value>Bild: Blume [Flora] (Q886167)</value>
+        <value>Bild: Blüte [Flora] (Q506)</value>
+        <value>Bild: Pflanze [Flora] (Q756)</value>
+        <value>Bild: Weintraube [Flora] (Q10978)</value>
+        <value>Bild: Weinblätter [Flora] (Q33971)</value>
+        <value>Bild: Weinstock [Flora] (Q2135068)</value>
+        <value>Bild: Wurzel [Flora] (Q41500)</value>
+        <value>Bild: Burg [Bauwerk] (Q23413)</value>
+        <value>Bild: Brücke [Bauwerk] (Q12280)</value>
+        <value>Bild: Dock [Bauwerk] (Q124282)</value>
+        <value>Bild: Dorf [Bauwerk] (Q532)</value>
+        <value>Bild: Gebäude [Bauwerk] (Q41176)</value>
+        <value>Bild: Fenster [Bauwerk] (Q35473)</value>
+        <value>Bild: Interieur [Bauwerk] (Q2998430)</value>
+        <value>Bild: Keller [Bauwerk] (Q43275450)</value>
+        <value>Bild: Kirchengebäude [Bauwerk] (Q16970)</value>
+        <value>Bild: Mauer [Bauwerk] (Q42948)</value>
+        <value>Bild: Stadt [Bauwerk] (Q532)</value>
+        <value>Bild: Straße [Bauwerk] (Q34442)</value>
+        <value>Bild: Tor/Türe [Bauwerk] (Q36794)</value>
+        <value>Bild: Treppe [Bauwerk] (Q12511)</value>
+        <value>Bild: Turm [Bauwerk] (Q12518)</value>
+        <value>Bild: Zaun [Bauwerk] (Q148571)</value>
+        <value>Bild: Ufer [Landschaft] (Q468756)</value>
+        <value>Bild: Fluss [Landschaft] (Q4022)</value>
+        <value>Bild: Hügel [Landschaft] (Q54050)</value>
+        <value>Bild: Weinberg [Landschaft] (Q22715)</value>
+        <value>Bild: Mann [Person] (Q8441)</value>
+        <value>Bild: Frau [Person] (Q467)</value>
+        <value>Bild: Kind [Person] (Q7569)</value>
+        <value>Bild: Mensch [Person] (Q5)</value>
+        <value>Bild: Minnesänger [Person] (Q841192)</value>
+        <value>Bild: Personengruppe [Person] (Q16334295)</value>
+        <value>Bild: Ritter [Sonstiges] (Q102083)</value>
+        <value>Bild: Satyr [Sonstiges] (Q163709)</value>
+        <value>Bild: Engel [Sonstiges] (Q235113)</value>
+        <value>Bild: Drache [Sonstiges] (Q7559)</value>
+        <value>Bild: Stern [Sonstiges] (Q523)</value>
+        <value>Bild: Mond [Sonstiges] (Q405)</value>
+        <value>Bild: Sonne [Sonstiges] (Q525)</value>
+        <value>Bild: Schatten [Sonstiges] (Q160020)</value>
+        <value>Bild: Abstrakte Form [Sonstiges]</value>
+        <value>Bild: Barcode [Sonstiges] (Q856)</value>
+        <value>Bild: QR-Code [Sonstiges] (Q12203)</value>
         <!-- QualityGrapes -->
-        <value>QualityGrapes: Kabinett</value>
-        <value>QualityGrapes: Spätlese</value>
-        <value>QualityGrapes: Auslese</value>
-        <value>QualityGrapes: Beerenauslese</value>
-        <value>QualityGrapes: Trockenbeerenauslese (Q1639847)</value>
-        <value>QualityGrapes: Eiswein</value>
-        <value>QualityGrapes: other</value>
+        <value>qualityGrapes: Kabinett</value>
+        <value>qualityGrapes: Spätlese</value>
+        <value>qualityGrapes: Auslese (Q426856)</value>
+        <value>qualityGrapes: Beerenauslese</value>
+        <value>qualityGrapes: Trockenbeerenauslese (Q1639847)</value>
+        <value>qualityGrapes: Eiswein</value>
+        <value>qualityGrapes: other</value>
         <!-- Länder und Bereiche -->
         <value>Land: Deutschland (Q183)</value>
         <value>Bereich: Mosel-Saar-Ruwer (Q672776)</value>
         <!-- Orte mit Leitgemeinden -->
-        <value>Ort (Leitgemeinde): Alf (Q568556)</value>
-        <value>Ort (Leitgemeinde): Alken (Q305288)</value>
-        <value>Ort (Leitgemeinde): Andel (Q155622)</value>
-        <value>Ort (Leitgemeinde): Ayl (Q186199)</value>
-        <value>Ort (Leitgemeinde): Bausendorf (Q569296)</value>
-        <value>Ort (Leitgemeinde): Beilstein (Q652238)</value>
-        <value>Ort (Leitgemeinde): Bekond (Q569708)</value>
-        <value>Ort (Leitgemeinde): Bernkastel (Q155622)</value>
-        <value>Ort (Leitgemeinde): Biewer (Q245974)</value>
-        <value>Ort (Leitgemeinde): Brauneberg (Q567156)</value>
-        <value>Ort (Leitgemeinde): Bremm (Q113378)</value>
-        <value>Ort (Leitgemeinde): Briedel (Q565192)</value>
-        <value>Ort (Leitgemeinde): Briedern (Q1517)</value>
-        <value>Ort (Leitgemeinde): Brodenbach (Q168070)</value>
-        <value>Ort (Leitgemeinde): Bruttig-Fankel (Q574161)</value>
-        <value>Ort (Leitgemeinde): Bruttig (Q574161)</value>
-        <value>Ort (Leitgemeinde): Bullay (Q546257)</value>
-        <value>Ort (Leitgemeinde): Burgen (Q679415)</value>
-        <value>Ort (Leitgemeinde): Burg (Q658530)</value>
-        <value>Ort (Leitgemeinde): Cochem (Q502749)</value>
-        <value>Ort (Leitgemeinde): Cond (Q502749)</value>
-        <value>Ort (Leitgemeinde): Detzem (Q553394)</value>
-        <value>Ort (Leitgemeinde): Dhron (Q572352)</value>
-        <value>Ort (Leitgemeinde): Dieblich (Q565313)</value>
-        <value>Ort (Leitgemeinde): Dreis (Q563974)</value>
-        <value>Ort (Leitgemeinde): Ediger (Q547805)</value>
-        <value>Ort (Leitgemeinde): Eitelsbach (Q316811)</value>
-        <value>Ort (Leitgemeinde): Ellenz-Polterdorf (Q566958)</value>
-        <value>Ort (Leitgemeinde): Ellenz (Q566958)</value>
-        <value>Ort (Leitgemeinde): Eller (Q547805)</value>
-        <value>Ort (Leitgemeinde): Enkirch (Q553838)</value>
-        <value>Ort (Leitgemeinde): Ensch (Q660477)</value>
-        <value>Ort (Leitgemeinde): Erden (Q565749)</value>
-        <value>Ort (Leitgemeinde): Ernst (Q567608)</value>
-        <value>Ort (Leitgemeinde): Falkenstein (Q818576)</value>
-        <value>Ort (Leitgemeinde): Fankel (Q574161)</value>
-        <value>Ort (Leitgemeinde): Fellerich (Q1404048)</value>
-        <value>Ort (Leitgemeinde): Fell (Q659890)</value>
-        <value>Ort (Leitgemeinde): Filzen (Q47087896)</value>
-        <value>Ort (Leitgemeinde): Gondorf (Q553347)</value>
-        <value>Ort (Leitgemeinde): Graach (Q648808)</value>
-        <value>Ort (Leitgemeinde): Güls (Q1777938)</value>
-        <value>Ort (Leitgemeinde): Hatzenport (Q554243)</value>
-        <value>Ort (Leitgemeinde): Helfant (Q636128)</value>
-        <value>Ort (Leitgemeinde): Hupperath (Q565320)</value>
-        <value>Ort (Leitgemeinde): Igel (Q543497)</value>
-        <value>Ort (Leitgemeinde): Kaimt (Q187500)</value>
-        <value>Ort (Leitgemeinde): Kanzem (Q569862)</value>
-        <value>Ort (Leitgemeinde): Karden (Q656110)</value>
-        <value>Ort (Leitgemeinde): Kasel (Q659935)</value>
-        <value>Ort (Leitgemeinde): Kastel-Staadt (Q553490)</value>
-        <value>Ort (Leitgemeinde): Kattenes (Q1736818)</value>
-        <value>Ort (Leitgemeinde): Kenn (Q174435)</value>
-        <value>Ort (Leitgemeinde): Kernscheid (Q650102)</value>
-        <value>Ort (Leitgemeinde): Kesten (Q569300)</value>
-        <value>Ort (Leitgemeinde): Kinheim (Q656236)</value>
-        <value>Ort (Leitgemeinde): Klotten (Q269397)</value>
-        <value>Ort (Leitgemeinde): Klüsserath (Q569589)</value>
-        <value>Ort (Leitgemeinde): Kobern (Q553347)</value>
-        <value>Ort (Leitgemeinde): Könen (Q1795916)</value>
-        <value>Ort (Leitgemeinde): Konz (Q503185)</value>
-        <value>Ort (Leitgemeinde): Kövenig (Q1796794)</value>
-        <value>Ort (Leitgemeinde): Köwerich (Q657740)</value>
-        <value>Ort (Leitgemeinde): Krettnach (Q503185)</value>
-        <value>Ort (Leitgemeinde): Kreuzweiler (Q636128)</value>
-        <value>Ort (Leitgemeinde): Kröv (Q553171)</value>
-        <value>Ort (Leitgemeinde): Kues (Q155622)</value>
-        <value>Ort (Leitgemeinde): Kürenz (Q883351)</value>
-        <value>Ort (Leitgemeinde): Langsur (Q610893)</value>
-        <value>Ort (Leitgemeinde): Lay (Q1328018)</value>
-        <value>Ort (Leitgemeinde): Lehmen (Q567585)</value>
-        <value>Ort (Leitgemeinde): Leiwen (Q681047)</value>
-        <value>Ort (Leitgemeinde): Liersberg (Q20820333)</value>
-        <value>Ort (Leitgemeinde): Lieser (Q646892)</value>
-        <value>Ort (Leitgemeinde): Löf (Q553970)</value>
-        <value>Ort (Leitgemeinde): Longuich (Q569606)</value>
-        <value>Ort (Leitgemeinde): Lösnich (Q510820)</value>
-        <value>Ort (Leitgemeinde): Maring-Noviand (Q566744)</value>
-        <value>Ort (Leitgemeinde): Matthias (Q877660)</value>
-        <value>Ort (Leitgemeinde): Maximin Grünhaus (Q659878)</value>
-        <value>Ort (Leitgemeinde): Mehring (Q543574)</value>
-        <value>Ort (Leitgemeinde): Merl (Q1921880)</value>
-        <value>Ort (Leitgemeinde): Mertesdorf (Q659878)</value>
-        <value>Ort (Leitgemeinde): Mesenich (Q610893)</value>
-        <value>Ort (Leitgemeinde): Minheim (Q524796)</value>
-        <value>Ort (Leitgemeinde): Monzel (Q648793)</value>
-        <value>Ort (Leitgemeinde): Morscheid (Q656840)</value>
-        <value>Ort (Leitgemeinde): Moselkern (Q651263)</value>
-        <value>Ort (Leitgemeinde): Müden (Q680967)</value>
-        <value>Ort (Leitgemeinde): Mühlheim (Q667192)</value>
-        <value>Ort (Leitgemeinde): Neef (Q572494)</value>
-        <value>Ort (Leitgemeinde): Nehren (Q572471)</value>
-        <value>Ort (Leitgemeinde): Nennig (Q316804)</value>
-        <value>Ort (Leitgemeinde): Neumagen (Q572352)</value>
-        <value>Ort (Leitgemeinde): Niederemmel (Q375762)</value>
-        <value>Ort (Leitgemeinde): Niederfell (Q553445)</value>
-        <value>Ort (Leitgemeinde): Niederleuken (Q543639)</value>
-        <value>Ort (Leitgemeinde): Niedermennig (Q503185)</value>
-        <value>Ort (Leitgemeinde): Nittel (Q594609)</value>
-        <value>Ort (Leitgemeinde): Oberbillig (Q636185)</value>
-        <value>Ort (Leitgemeinde): Oberemmel (Q47037444)</value>
-        <value>Ort (Leitgemeinde): Oberfell (Q647068)</value>
-        <value>Ort (Leitgemeinde): Ockfen (Q643198)</value>
-        <value>Ort (Leitgemeinde): Olewig (Q885323)</value>
-        <value>Ort (Leitgemeinde): Osann (Q648793)</value>
-        <value>Ort (Leitgemeinde): Palzem (Q636128)</value>
-        <value>Ort (Leitgemeinde): Pellingen (Q655962)</value>
-        <value>Ort (Leitgemeinde): Perl (Q662505)</value>
-        <value>Ort (Leitgemeinde): Piesport (Q375762)</value>
-        <value>Ort (Leitgemeinde): Pölich (Q553412)</value>
-        <value>Ort (Leitgemeinde): Pommern (Q665867)</value>
-        <value>Ort (Leitgemeinde): Pünderich (Q567287)</value>
-        <value>Ort (Leitgemeinde): Rehlingen (Q594609)</value>
-        <value>Ort (Leitgemeinde): Reil (Q656264)</value>
-        <value>Ort (Leitgemeinde): Riol (Q553441)</value>
-        <value>Ort (Leitgemeinde): Rivenich (Q552448)</value>
-        <value>Ort (Leitgemeinde): Ruwer (Q316811)</value>
-        <value>Ort (Leitgemeinde): Saarburg (Q543639)</value>
-        <value>Ort (Leitgemeinde): Schleich (Q660583)</value>
-        <value>Ort (Leitgemeinde): Schoden (Q646456)</value>
-        <value>Ort (Leitgemeinde): Schweich (Q212570)</value>
-        <value>Ort (Leitgemeinde): Sehl (Q502749)</value>
-        <value>Ort (Leitgemeinde): Sehndorf (Q2266381)</value>
-        <value>Ort (Leitgemeinde): Senheim (Q653097)</value>
-        <value>Ort (Leitgemeinde): Serrig (Q656819)</value>
-        <value>Ort (Leitgemeinde): Sommerau (Q631137)</value>
-        <value>Ort (Leitgemeinde): Springiersbach (Q547805)</value>
-        <value>Ort (Leitgemeinde): St. Aldegund (Q653902)</value>
-        <value>Ort (Leitgemeinde): Starkenburg (Q682031)</value>
-        <value>Ort (Leitgemeinde): Tarforst (Q328287)</value>
-        <value>Ort (Leitgemeinde): Temmels (Q636175)</value>
-        <value>Ort (Leitgemeinde): Thörnich (Q591473)</value>
-        <value>Ort (Leitgemeinde): Traben (Q540919)</value>
-        <value>Ort (Leitgemeinde): Trais (Q6566110)</value>
-        <value>Ort (Leitgemeinde): Trarbach (Q540919)</value>
-        <value>Ort (Leitgemeinde): Trier (Q3138)</value>
-        <value>Ort (Leitgemeinde): Trittenheim (Q662479)</value>
-        <value>Ort (Leitgemeinde): Ürzig (Q335018)</value>
-        <value>Ort (Leitgemeinde): Valwig (Q656297)</value>
-        <value>Ort (Leitgemeinde): Veldenz (Q569812)</value>
-        <value>Ort (Leitgemeinde): Waldrach (Q569807)</value>
-        <value>Ort (Leitgemeinde): Wasserliesch (Q553357)</value>
-        <value>Ort (Leitgemeinde): Wawern (Q565310)</value>
-        <value>Ort (Leitgemeinde): Wehlen (Q155622)</value>
-        <value>Ort (Leitgemeinde): Wehr (Q636128)</value>
-        <value>Ort (Leitgemeinde): Wellen (Q636208)</value>
-        <value>Ort (Leitgemeinde): Wiltingen (Q161930)</value>
-        <value>Ort (Leitgemeinde): Wincheringen (Q543611)</value>
-        <value>Ort (Leitgemeinde): Winningen (Q822358)</value>
-        <value>Ort (Leitgemeinde): Wintrich (Q373778)</value>
-        <value>Ort (Leitgemeinde): Wittlich (Q559514)</value>
-        <value>Ort (Leitgemeinde): Wolf (Q1563313)</value>
-        <value>Ort (Leitgemeinde): Zell (Q187500)</value>
-        <value>Ort (Leitgemeinde): Zeltingen (Q189241)</value>
-        <value>Ort (Leitgemeinde): Bernkastel-Kues (Q643228)</value>
-        <value>Ort (Leitgemeinde): Brauneberg (Q567156)</value>
-        <value>Ort (Leitgemeinde): Wiltingen (Q161930)</value>
-        <value>Ort (Leitgemeinde): Winningen (Q822358)</value>
-        <value>Ort (Leitgemeinde): Zell (Q187500)</value>
-        <value>Ort (Leitgemeinde): Trittenheim (Q662479)</value>
+        <value>Ort: Alf (Q568556)</value>
+        <value>Ort: Alken (Q305288)</value>
+        <value>Ort: Andel (Q155622)</value>
+        <value>Ort: Ayl (Q186199)</value>
+        <value>Ort: Bausendorf (Q569296)</value>
+        <value>Ort: Beilstein (Q652238)</value>
+        <value>Ort: Bekond (Q569708)</value>
+        <value>Ort: Bernkastel (Q155622)</value>
+        <value>Ort: Biewer (Q245974)</value>
+        <value>Ort: Brauneberg (Q567156)</value>
+        <value>Ort: Bremm (Q113378)</value>
+        <value>Ort: Briedel (Q565192)</value>
+        <value>Ort: Briedern (Q1517)</value>
+        <value>Ort: Brodenbach (Q168070)</value>
+        <value>Ort: Bruttig-Fankel (Q574161)</value>
+        <value>Ort: Bruttig (Q574161)</value>
+        <value>Ort: Bullay (Q546257)</value>
+        <value>Ort: Burgen (Q679415)</value>
+        <value>Ort: Burg (Q658530)</value>
+        <value>Ort: Cochem (Q502749)</value>
+        <value>Ort: Cond (Q502749)</value>
+        <value>Ort: Detzem (Q553394)</value>
+        <value>Ort: Dhron (Q572352)</value>
+        <value>Ort: Dieblich (Q565313)</value>
+        <value>Ort: Dreis (Q563974)</value>
+        <value>Ort: Ediger (Q547805)</value>
+        <value>Ort: Eitelsbach (Q316811)</value>
+        <value>Ort: Ellenz-Polterdorf (Q566958)</value>
+        <value>Ort: Ellenz (Q566958)</value>
+        <value>Ort: Eller (Q547805)</value>
+        <value>Ort: Enkirch (Q553838)</value>
+        <value>Ort: Ensch (Q660477)</value>
+        <value>Ort: Erden (Q565749)</value>
+        <value>Ort: Ernst (Q567608)</value>
+        <value>Ort: Falkenstein (Q818576)</value>
+        <value>Ort: Fankel (Q574161)</value>
+        <value>Ort: Fellerich (Q1404048)</value>
+        <value>Ort: Fell (Q659890)</value>
+        <value>Ort: Filzen (Q47087896)</value>
+        <value>Ort: Gondorf (Q553347)</value>
+        <value>Ort: Graach (Q648808)</value>
+        <value>Ort: Güls (Q1777938)</value>
+        <value>Ort: Hatzenport (Q554243)</value>
+        <value>Ort: Helfant (Q636128)</value>
+        <value>Ort: Hupperath (Q565320)</value>
+        <value>Ort: Igel (Q543497)</value>
+        <value>Ort: Kaimt (Q187500)</value>
+        <value>Ort: Kanzem (Q569862)</value>
+        <value>Ort: Karden (Q656110)</value>
+        <value>Ort: Kasel (Q659935)</value>
+        <value>Ort: Kastel-Staadt (Q553490)</value>
+        <value>Ort: Kattenes (Q1736818)</value>
+        <value>Ort: Kenn (Q174435)</value>
+        <value>Ort: Kernscheid (Q650102)</value>
+        <value>Ort: Kesten (Q569300)</value>
+        <value>Ort: Kinheim (Q656236)</value>
+        <value>Ort: Klotten (Q269397)</value>
+        <value>Ort: Klüsserath (Q569589)</value>
+        <value>Ort: Kobern (Q553347)</value>
+        <value>Ort: Könen (Q1795916)</value>
+        <value>Ort: Konz (Q503185)</value>
+        <value>Ort: Kövenig (Q1796794)</value>
+        <value>Ort: Köwerich (Q657740)</value>
+        <value>Ort: Krettnach (Q503185)</value>
+        <value>Ort: Kreuzweiler (Q636128)</value>
+        <value>Ort: Kröv (Q553171)</value>
+        <value>Ort: Kues (Q155622)</value>
+        <value>Ort: Kürenz (Q883351)</value>
+        <value>Ort: Langsur (Q610893)</value>
+        <value>Ort: Lay (Q1328018)</value>
+        <value>Ort: Lehmen (Q567585)</value>
+        <value>Ort: Leiwen (Q681047)</value>
+        <value>Ort: Liersberg (Q20820333)</value>
+        <value>Ort: Lieser (Q646892)</value>
+        <value>Ort: Löf (Q553970)</value>
+        <value>Ort: Longuich (Q569606)</value>
+        <value>Ort: Lösnich (Q510820)</value>
+        <value>Ort: Maring-Noviand (Q566744)</value>
+        <value>Ort: Matthias (Q877660)</value>
+        <value>Ort: Maximin Grünhaus (Q659878)</value>
+        <value>Ort: Mehring (Q543574)</value>
+        <value>Ort: Merl (Q1921880)</value>
+        <value>Ort: Mertesdorf (Q659878)</value>
+        <value>Ort: Mesenich (Q610893)</value>
+        <value>Ort: Minheim (Q524796)</value>
+        <value>Ort: Monzel (Q648793)</value>
+        <value>Ort: Morscheid (Q656840)</value>
+        <value>Ort: Moselkern (Q651263)</value>
+        <value>Ort: Müden (Q680967)</value>
+        <value>Ort: Mühlheim (Q667192)</value>
+        <value>Ort: Neef (Q572494)</value>
+        <value>Ort: Nehren (Q572471)</value>
+        <value>Ort: Nennig (Q316804)</value>
+        <value>Ort: Neumagen (Q572352)</value>
+        <value>Ort: Niederemmel (Q375762)</value>
+        <value>Ort: Niederfell (Q553445)</value>
+        <value>Ort: Niederleuken (Q543639)</value>
+        <value>Ort: Niedermennig (Q503185)</value>
+        <value>Ort: Nittel (Q594609)</value>
+        <value>Ort: Oberbillig (Q636185)</value>
+        <value>Ort: Oberemmel (Q47037444)</value>
+        <value>Ort: Oberfell (Q647068)</value>
+        <value>Ort: Ockfen (Q643198)</value>
+        <value>Ort: Olewig (Q885323)</value>
+        <value>Ort: Osann (Q648793)</value>
+        <value>Ort: Palzem (Q636128)</value>
+        <value>Ort: Pellingen (Q655962)</value>
+        <value>Ort: Perl (Q662505)</value>
+        <value>Ort: Piesport (Q375762)</value>
+        <value>Ort: Pölich (Q553412)</value>
+        <value>Ort: Pommern (Q665867)</value>
+        <value>Ort: Pünderich (Q567287)</value>
+        <value>Ort: Rehlingen (Q594609)</value>
+        <value>Ort: Reil (Q656264)</value>
+        <value>Ort: Riol (Q553441)</value>
+        <value>Ort: Rivenich (Q552448)</value>
+        <value>Ort: Ruwer (Q316811)</value>
+        <value>Ort: Saarburg (Q543639)</value>
+        <value>Ort: Schleich (Q660583)</value>
+        <value>Ort: Schoden (Q646456)</value>
+        <value>Ort: Schweich (Q212570)</value>
+        <value>Ort: Sehl (Q502749)</value>
+        <value>Ort: Sehndorf (Q2266381)</value>
+        <value>Ort: Senheim (Q653097)</value>
+        <value>Ort: Serrig (Q656819)</value>
+        <value>Ort: Sommerau (Q631137)</value>
+        <value>Ort: Springiersbach (Q547805)</value>
+        <value>Ort: St. Aldegund (Q653902)</value>
+        <value>Ort: Starkenburg (Q682031)</value>
+        <value>Ort: Tarforst (Q328287)</value>
+        <value>Ort: Temmels (Q636175)</value>
+        <value>Ort: Thörnich (Q591473)</value>
+        <value>Ort: Traben (Q540919)</value>
+        <value>Ort: Trais (Q6566110)</value>
+        <value>Ort: Trarbach (Q540919)</value>
+        <value>Ort: Trier (Q3138)</value>
+        <value>Ort: Trittenheim (Q662479)</value>
+        <value>Ort: Ürzig (Q335018)</value>
+        <value>Ort: Valwig (Q656297)</value>
+        <value>Ort: Veldenz (Q569812)</value>
+        <value>Ort: Waldrach (Q569807)</value>
+        <value>Ort: Wasserliesch (Q553357)</value>
+        <value>Ort: Wawern (Q565310)</value>
+        <value>Ort: Wehlen (Q155622)</value>
+        <value>Ort: Wehr (Q636128)</value>
+        <value>Ort: Wellen (Q636208)</value>
+        <value>Ort: Wiltingen (Q161930)</value>
+        <value>Ort: Wincheringen (Q543611)</value>
+        <value>Ort: Winningen (Q822358)</value>
+        <value>Ort: Wintrich (Q373778)</value>
+        <value>Ort: Wittlich (Q559514)</value>
+        <value>Ort: Wolf (Q1563313)</value>
+        <value>Ort: Zell (Q187500)</value>
+        <value>Ort: Zeltingen (Q189241)</value>
+        <value>Ort: Bernkastel-Kues (Q643228)</value>
+        <value>Ort: Brauneberg (Q567156)</value>
+        <value>Ort: Wiltingen (Q161930)</value>
+        <value>Ort: Winningen (Q822358)</value>
+        <value>Ort: Zell (Q187500)</value>
+        <value>Ort: Trittenheim (Q662479)</value>
         <!-- Andere Orte -->
         <value>Ort: Filzen (Q47087896)</value>
         <value>Ort: Freudenberg am Main (Q61827)</value>
@@ -2190,8 +2182,6 @@
         <value>Lage: Zellerberg [St. Michael] (6.1.7.116)</value>
         <value>Lage: Zeppwingert [Schwarzlay] (6.1.8.142)</value>
         <value>Lage: Zollturm [Schwarzlay] (6.1.8.168)</value>
-        <!-- Millesime / Jahrgang -->
-        <value>Jahrgang: ####</value>
         <!-- Rebsorten -->
         <value>Rebsorte: Riesling [weiss] (Q456471)</value>
         <value>Rebsorte: Müller-Thurgau / Rivaner [weiss] (Q681670)</value>
@@ -2205,39 +2195,46 @@
         <value>Rebsorte: other [weiss]</value>
         <value>Rebsorte: other [rot]</value>
         <!-- Weinfarbe (wine color) -->
-        <value>Weinfarbe: Rotwein</value>
-        <value>Weinfarbe: Weisswein</value>
-        <value>Weinfarbe: Rosé/Rotling</value>
-        <value>Weinfarbe: other</value>
+        <value>Farbe: Rotwein</value>
+        <value>Farbe: Weisswein</value>
+        <value>Farbe: Rosé/Rotling</value>
+        <value>Farbe: other</value>
         <!-- Weingeschmack (wine taste) -->
-        <value>Geschmack: dry (trocken)</value>
-        <value>Geschmack: semi-dry (halbtrocken / feinherb)</value>
-        <value>Geschmack: semi-sweet (lieblich)</value>
-        <value>Geschmack: sweet (süß)</value>
-        <value>Geschmack: other</value>
+        <value>Taste: dry (trocken)</value>
+        <value>Taste: semi-dry (halbtrocken / feinherb)</value>
+        <value>Taste: semi-sweet (lieblich)</value>
+        <value>Taste: sweet (süß)</value>
+        <value>Taste: other</value>
+        <value>Taste: historical</value>
         <!-- Weinlagerung oder -ausbau (wine aging) -->
-        <value>WineAging: Barrique-Ausbau</value>
-        <value>WineAging: Flaschengärung</value>
+        <value>Aging: Barrique-Ausbau</value>
+        <value>Aging: Flaschengärung</value>
         <!-- Weinqualität (wine quality) -->
-        <value>Weinqualität: Prädikatswein</value>
-        <value>Weinqualität: Tafelwein/Wein</value>
-        <value>Weinqualität: Landwein</value>
-        <value>Weinqualität: Qualitätswein</value>
+        <value>qualityLevel: Landwein</value>
+        <value>qualityLevel: Tafelwein/Wein</value>
+        <value>qualityLevel: Qualitätswein</value>
+        <value>qualityLevel: Prädikatswein</value>
+        <value>qualityLevel: historical</value>
+        <!-- QualityProduction (quality indicators wrt production) -->
+        <value>qualityProduction: Erzeugerabfüllung</value>
+        <value>qualityProduction: Gutsabfüllung</value>
+        <value>qualityProduction: Händische Weinlese</value>
+        <value>qualityProduction: other</value>
         <!-- Traubenqualität (quality of the grapes) -->
-        <value>Traubenqualität: Kabinett</value>
-        <value>Traubenqualität: Spätlese</value>
-        <value>Traubenqualität: Auslese</value>
-        <value>Traubenqualität: Beerenauslese</value>
-        <value>Traubenqualität: Trockenbeerenauslese</value>
-        <value>Traubenqualität: Eiswein</value>
-        <value>Traubenqualität: other</value>
+        <value>qualityGrapes: Kabinett</value>
+        <value>qualityGrapes: Spätlese</value>
+        <value>qualityGrapes: Auslese</value>
+        <value>qualityGrapes: Beerenauslese</value>
+        <value>qualityGrapes: Trockenbeerenauslese</value>
+        <value>qualityGrapes: Eiswein</value>
+        <value>qualityGrapes: historical</value>
+        <value>qualityGrapes: other</value>
         <!-- Agent: Weingut -->
         <value>Weingut: Weingut Maximin Grünhaus (Q2556072)</value>
         <value>Weingut: #### (Q)</value>
         <!-- Agent: Vertrieb -->
         <value>Vertrieb: Karl Ziegler</value>
         <value>other</value>
-        <text />
       </choice>
     </attribute>
   </define>

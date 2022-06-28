@@ -12,23 +12,24 @@
     <background ID="v1" backgroundColor="white"></background>
     <frame ID="v2" frameColor="green" frameStyle="ornamental line(s)" frameType="outer"></frame>
     <figure ID="v3" position="2" figureType="realistic">
-    <figureItem ID="v3-1" norm="Artefakt: Krone (Q170984)"></figureItem>
-    <figureItem ID="v3-2" norm="Artefakt: Banderole (Q2689628)"></figureItem>
+    <figureItem ID="v3-1" norm="Bild: Krone [Artefakt] (Q170984)"></figureItem>
+    <figureItem ID="v3-2" norm="Bild: Banderole [Artefakt] (Q2689628)"></figureItem>
     </figure>
     <figure ID="v4">
-      <figureItem ID="v4-1" norm="Flora: Weintraube (Q10978)"></figureItem>
-      <figureItem ID="v4-2" norm="Flora: Weinblätter (Q33971)"></figureItem>
+      <figureItem ID="v4-1" norm="Bild: Weintraube [Flora] (Q10978)"></figureItem>
+      <figureItem ID="v4-2" norm="Bild: Weinblätter [Flora] (Q33971)"></figureItem>
     </figure>
   </visual>
   <textual>
-    <wineMillesime norm="Jahrgang: 1918">1918er</wineMillesime>
+    <wineMillesime numNorm="1918">1918er</wineMillesime>
     <wineName>
-      <location norm="Ort (Leitgemeinde): Detzem (Q553394)">Detzemer</location>
-      <location norm="Lage: Königsberg (historische Lage / Detzem)">Königsberg</location>
+      <location norm="Ort: Detzem (Q553394)">Detzemer</location>
+      <location>Königsberg</location>
     </wineName>
   </textual>
   <relations>
     <relation relType="image-in-frame" relItems="v2 v4-1 v4-2"></relation>
   </relations>
   </label>
+  <comments>Detzemer Königsberg ist eine historische Lage, die derzeit nicht in der Lagenliste enthalten ist.</comments>
 </wlv>

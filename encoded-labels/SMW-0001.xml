@@ -12,17 +12,17 @@
     <background ID="v1" backgroundColor="white"></background>
     <frame ID="v2" frameColor="orange green" frameStyle="ornamental line(s)" frameType="outer"></frame>
     <figure ID="v3">
-      <figureItem ID="v3-1" norm="Person: Mann (Q8441)"></figureItem>
-      <figureItem ID="v3-2" norm="Artefakt: Weinglas (Q1531435)"></figureItem>
+      <figureItem ID="v3-1" norm="Bild: Mann [Person] (Q8441)"></figureItem>
+      <figureItem ID="v3-2" norm="Bild: Weinglas [Artefakt] (Q1531435)"></figureItem>
     </figure>
   </visual>
   <textual>
-    <wineMillesime ID="t1" norm="Jahrgang: 1921">1921er</wineMillesime>
+    <wineMillesime ID="t1" numNorm="1921">1921er</wineMillesime>
     <wineName ID="t2">
-      <location ID="t2-1" norm="Ort (Leitgemeinde): Kasel (Q659935)">Caseler</location>
+      <location ID="t2-1" norm="Ort: Kasel (Q659935)">Caseler</location>
       <location ID="t2-2" norm="Lage: Dominikanerberg [großlagenfrei] (6.4.1.001)">Dominikaner-Berg</location>
     </wineName>
-    <barrelNumber ID="t3">Fuder Nr. 47</barrelNumber>
+    <barrelNumber ID="t3" numNorm="47">Fuder Nr. 47</barrelNumber>
     <agent ID="t4">Wachstum Geh.Regierungsrat Landrat v. Nell.</agent>
   </textual>
   <relations>

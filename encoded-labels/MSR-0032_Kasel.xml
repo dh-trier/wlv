@@ -12,23 +12,23 @@
       <visual>
         <background backgroundColor="white"></background>
         <figure position="2" figureType="coat-of-arms">
-          <figureItem norm="Flora: Weintraube (Q10978)"></figureItem>
+          <figureItem norm="Bild: Weintraube [Flora] (Q10978)"></figureItem>
         </figure>
         <figure position="5">
-          <figureItem norm="Sonstiges: Abstrakte Form"></figureItem>
+          <figureItem norm="Bild: Abstrakte Form [Sonstiges]"></figureItem>
         </figure>
       </visual>
       <textual>
         <otherText textType="other" textPosition="in-figure">WMK</otherText>
         <wineName>
-          <location norm="Ort (Leitgemeinde): Kasel (Q659935)">Kaseler</location>
+          <location norm="Ort: Kasel (Q659935)">Kaseler</location>
           <location norm="Lage: Hitzlay [großlagenfrei] (6.4.1.003)">Hitzlay</location>
         </wineName>
         <location norm="Bereich: Mosel-Saar-Ruwer (Q672776)">Ruwer</location>
         <wineGrapes norm="Rebsorte: Riesling [weiss] (Q456471)">Riesling</wineGrapes>
-        <qualityGrapes norm="Traubenqualität: Kabinett">Kabinett</qualityGrapes>
-        <wineTaste norm="Geschmack: semi-dry (halbtrocken / feinherb)">feinherb</wineTaste>
-        <wineMillesime norm="Jahrgang: 2020">2020</wineMillesime>
+        <qualityGrapes norm="qualityGrapes: Kabinett">Kabinett</qualityGrapes>
+        <wineTaste norm="Taste: semi-dry (halbtrocken / feinherb)">feinherb</wineTaste>
+        <wineMillesime numNorm="2020">2020</wineMillesime>
       </textual>
     </label>
     <label labelPosition="back">
@@ -36,34 +36,34 @@
       <visual>
         <background backgroundColor="white"></background>
         <figure position="2" figureType="coat-of-arms">
-          <figureItem norm="Flora: Weintraube (Q10978)"></figureItem>
+          <figureItem norm="Bild: Weintraube [Flora] (Q10978)"></figureItem>
         </figure>
         <figure position="9">
-          <figureItem norm="Sonstiges: Barcode (Q856)"></figureItem>
+          <figureItem norm="Bild: Barcode [Sonstiges] (Q856)"></figureItem>
         </figure>
       </visual>
       <textual>
         <agent>Weinmanufaktur Kasel</agent>
         <wineName>
-          <location norm="Ort (Leitgemeinde): Kasel (Q659935)">Kaseler</location>
+          <location norm="Ort: Kasel (Q659935)">Kaseler</location>
           <location norm="Lage: Hitzlay [großlagenfrei] (6.4.1.003)">Hitzlay</location>
         </wineName>
         <wineGrapes norm="Rebsorte: Riesling [weiss] (Q456471)">Riesling</wineGrapes>
-        <qualityGrapes norm="Traubenqualität: Kabinett">Kabinett</qualityGrapes>
-        <wineTaste norm="Geschmack: semi-dry (halbtrocken / feinherb)">feinherb</wineTaste>
-        <wineMillesime norm="Jahrgang: 2020">2020</wineMillesime>
+        <qualityGrapes norm="qualityGrapes: Kabinett">Kabinett</qualityGrapes>
+        <wineTaste norm="Taste: semi-dry (halbtrocken / feinherb)">feinherb</wineTaste>
+        <wineMillesime numNorm="2020">2020</wineMillesime>
         <otherText textType="statement">1934 gegründet, ist die Weinmanufaktur Kasel noch heute eine der kleinsten Winzergenossenschaften Deutschlands. An den steilen Hängen der Ruwer werden auf Devonschieferböden mineralische, elegante Rieslinge erzeugt. Handlese, Ertragsreduktion sowie ein schonender Ausbau der Weine sind die Grundlage für erstklassige Qualität.</otherText>
-        <qualityLevel norm="Weinqualität: Prädikatswein">Deutscher Prädikatswein</qualityLevel>
-        <qualityProduction>Erzeugerabfüllung</qualityProduction>
+        <qualityLevel norm="qualityLevel: Prädikatswein">Deutscher Prädikatswein</qualityLevel>
+        <qualityProduction norm="qualityProduction: Erzeugerabfüllung">Erzeugerabfüllung</qualityProduction>
         <agent>Weinmanufaktur Kasel e.G.</agent>
         <location>D-54317 Kasel</location>
-        <controlNumber>A.P.Nr. 3519048-07-21</controlNumber>
+        <controlNumber numNorm="35190480721">A.P.Nr. 3519048-07-21</controlNumber>
         <otherText textType="other">Enthält Sulfite</otherText>
         <otherText textType="website">www.weinmanufaktur-kasel.de</otherText>
         <location norm="Bereich: Mosel-Saar-Ruwer (Q672776)">Mosel</location>
         <otherText textType="other">Product of Germany</otherText>
-        <alcohol alcoholNorm="8.5">8,5% Vol.</alcohol>
-        <volume volumeNorm="750">750ml</volume>
+        <alcohol numNorm="8.5">8,5% Vol.</alcohol>
+        <volume numNorm="750">750ml</volume>
         <otherText textType="other">4 270001 805799 ></otherText>
       </textual>
     </label>

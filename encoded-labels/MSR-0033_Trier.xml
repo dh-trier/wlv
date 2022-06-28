@@ -12,18 +12,18 @@
       <visual>
         <background backgroundColor="yellow"></background>
         <figure figureType="coat-of-arms">
-          <figureItem norm="Sonstiges: Ritter (Q102083)"></figureItem>
-          <figureItem norm="Fauna: Pferd (Q726)"></figureItem>
+          <figureItem norm="Bild: Ritter [Sonstiges] (Q102083)"></figureItem>
+          <figureItem norm="Bild: Pferd [Fauna] (Q726)"></figureItem>
         </figure>
       </visual>
       <textual>
         <agent>Deutschherren-Hof</agent>
-        <wineMillesime norm="Jahrgang: 2003">2003</wineMillesime>
+        <wineMillesime numNorm="2003">2003</wineMillesime>
         <wineName>
-          <location norm="Ort (Leitgemeinde): Trier (Q3138)">Trierer</location>
+          <location norm="Ort: Trier (Q3138)">Trierer</location>
           <location norm="Lage: Deutschherrenberg [Römerlay] (6.1.10.194)">Deutschherrenberg</location>
           <wineGrapes norm="Rebsorte: Riesling [weiss] (Q456471)">Riesling</wineGrapes>
-          <qualityGrapes norm="Traubenqualität: Eiswein">Eiswein</qualityGrapes>
+          <qualityGrapes norm="qualityGrapes: Eiswein">Eiswein</qualityGrapes>
         </wineName>
         <location norm="Bereich: Mosel-Saar-Ruwer (Q672776)">Mosel-Saar-Ruwer</location>
       </textual>
@@ -35,20 +35,20 @@
       </visual>
       <textual>
         <agent>Deutschherren-Hof</agent>
-        <wineMillesime norm="Jahrgang: 2003">2003</wineMillesime>
+        <wineMillesime numNorm="2003">2003</wineMillesime>
         <wineName>
-          <location norm="Ort (Leitgemeinde): Trier (Q3138)">Trierer</location>
+          <location norm="Ort: Trier (Q3138)">Trierer</location>
           <location norm="Lage: Deutschherrenberg [Römerlay] (6.1.10.194)">Deutschherrenberg</location>
           <wineGrapes norm="Rebsorte: Riesling [weiss] (Q456471)">Riesling -</wineGrapes>
-          <qualityGrapes norm="Traubenqualität: Eiswein">Eiswein</qualityGrapes>
+          <qualityGrapes norm="qualityGrapes: Eiswein">Eiswein</qualityGrapes>
         </wineName>
-        <alcohol alcoholNorm="6.5">6,5%</alcohol>
-        <qualityProduction norm="Gutsabfüllung">Gutsabfüllung</qualityProduction>
-        <volume volumeNorm="375">0,375 l</volume>
-        <qualityLevel norm="Weinqualität: Prädikatswein">Qualitätswein mit Prädikat</qualityLevel>
+        <alcohol numNorm="6.5">6,5%</alcohol>
+        <qualityProduction norm="qualityProduction: Gutsabfüllung">Gutsabfüllung</qualityProduction>
+        <volume numNorm="375">0,375 l</volume>
+        <qualityLevel norm="qualityLevel: Prädikatswein">Qualitätswein mit Prädikat</qualityLevel>
         <controlNumber controlNumberType="Amtliche Prüfnummer (Q480240)">AP. Nr. 3561025/07/04</controlNumber>
         <agent agentRole="cultivation / Anbau">Albert Oberbillig - </agent>
-        <location norm="Ort (Leitgemeinde): Trier (Q3138)">54296 Trier</location>
+        <location norm="Ort: Trier (Q3138)">54296 Trier</location>
         <otherText textType="website">www.weingut-deutschherrenhof.de</otherText>
       </textual>
     </label>
