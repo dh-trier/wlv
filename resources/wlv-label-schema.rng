@@ -227,9 +227,21 @@
     </attribute>
   </define>
   <define name="comments">
-    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Any comment on the label or the label description, written in prose by the curator(s).</a:documentation>
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Groups comment on the label or the label description, written in prose by the curator(s).</a:documentation>
     <element>
       <name ns="">comments</name>
+      <oneOrMore>
+        <ref name="comment" />
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="comment">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Any comment on the label or the label description, written in prose by the curator(s).</a:documentation>
+    <element>
+      <name ns="">comment</name>
+      <optional>
+        <ref name="ID" />
+      </optional>
       <text />
     </element>
   </define>
@@ -1376,6 +1388,7 @@
     </attribute>
   </define>
   <define name="relations">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Contains one or several statements regarding a relationship between elements of the label description.</a:documentation>
     <element>
       <name ns="">relations</name>
       <oneOrMore>
@@ -1384,6 +1397,7 @@
     </element>
   </define>
   <define name="relation">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Information regarding the type of relation between two or more elements of the label description, where these elements are specified using their identifiers.</a:documentation>
     <element>
       <name ns="">relation</name>
       <ref name="relType" />

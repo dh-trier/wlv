@@ -4,7 +4,7 @@ The following document has two parts: First, a prose description of collections 
 
 The Wine Label Vocabulary (WLV) is formally defined in a Relax NG Schema, where all definitions of elements and attributes, with their rules of location and frequency of occurrence, their datatypes, their rules for acceptable values and similar information are documented. This document notably also includes a rather extensive list of names of relevant vineyards and localities with their authority data. 
 
-Generally speaking, a collection of wine labels described using the WLV has two groups of files: One single file describing the collection of labels (see: element [collection](#collection), and a set of individual files each describing one label (see: element [label](#label) or a group of labels (see: element [labelGroup](#labelGroup). 
+Generally speaking, a collection of wine labels described using the WLV has two groups of files: One single file describing the collection of labels (see: element [collection](#collection)), and a set of individual files each describing one label (see: element [label](#label)) or a group of labels (see: element [labelGroup](#labelGroup)). 
 
 ## Coding the collection file
 
@@ -12,9 +12,9 @@ The collection file describes the collection and lists its contents, i.e. label 
 
 ### The collection metadata
 
-In the collection-level [metadata](#metadata), basic information is provided about the collection at hand. We collect the data about the collection title in the element [title](#title) (which itself is attributed with text). Another element forms the [editor](#editor) who is the person that created the file for the collection. Further elements are the owner, institution, address and a date. 
+In the collection-level [metadata](#metadata), basic information is provided about the collection at hand. We collect the data about the collection title in the element [title](#title) (which itself is attributed with text). Another element forms the [editor](#editor) who is the person that created the file for the collection. Further elements include the [owner](#owner) and [institution](#institution). 
 
-To specify the collection, one can also add an address and a date for where the collection comes from and when it was collected. It is also important to mark the license. Other elements are the [curator(s)](#curator) who are responsible for describing the collection as a file. Finally, the description element provides the possibility to add a textual description of the wine label collection.
+To specify the collection, one can also add an address and a date for where the collection comes from and when it was collected. It is also important to mark the [license](#licence). Other elements are the [curator(s)](#curator) who are responsible for describing the collection as a file. Finally, the description element provides the possibility to add a textual description of the wine label collection.
 
 ### The list of labels
 
@@ -33,13 +33,19 @@ The metadata for a label names the collection the label belongs to, provides inf
 
 Each XML document includes only the information pertaining to the label (or label parts) pertaining to one wine. A collection typically contains more than one wine label. The labels (and their files) are hence always connected to their concerning collection (via the metadata). 
 
-The data model for the wine labels follows a small number of general assumptions or principles. First, the assumption that a label can be usefully described at three distinct levels, namely the physical, visual and textual properties. (In addition, relations between multiple elements at the same or at different levels can be described.) Second, the idea to provide each piece of information with a standardized label and/or authority data to make it clearly identifiable. Third, the principle that element content is only included when that (textual) content is visible on the label described. (All other information is recorded using attributes. This principle does not apply to the comments element.) Fourth, the principle that only very few pieces of information are mandatory, but that a lot of details can optionally be recorded, if that is desired. Finally, the principle that although the WLV is currently used only for labels from the German Mosel wine region, the WLV should be sufficiently flexible and expressive enough to be easily used also for labels from other regions. (A limitation to this rule lies in the authority data, which is currently only provided for the Mosel region.)   
+The data model for the wine labels follows a small number of general assumptions or principles. 
+
+* First, the assumption that a label can be usefully described at three distinct levels, namely the physical, visual and textual properties. (In addition, relations between multiple elements at the same or at different levels can be described.) 
+* Second, the idea to provide each piece of information with a standardized label and/or authority data to make it clearly identifiable and machine-readable. (This can either be a fix textual label with an identifier, or a standardized numerical indicator, depending on the element concerned.)
+* Third, the principle that element content is only included when that (textual) content is visible on the label described. (All other information is recorded using attributes. This principle does not apply to the comments element.) 
+* Fourth, the principle that only very few pieces of information are mandatory, but that a lot of details can optionally be recorded, if that is desired. (This also means simple descriptions can be expanded progressively.)
+* Finally, the principle that although the WLV is currently used only for labels from the German Mosel wine region, the WLV should be sufficiently flexible and expressive enough to be easily used also for labels from other regions. (A limitation to this rule lies in the authority data, which is currently only provided for the Mosel region.)   
 
 #### The parts of a label
 
 Any individual group of labels pertaining to one bottle can have more than one physically distinct label. In other words, all text-bearing objects found on a given bottle are considered to collectively make up the labeling of the bottle. Each of these text-bearing objects is considered to be a [label](#label) within a [labelGroup](#labelGroup). If only one label is present, the [labelGroup](#labelGroup) element is dropped. 
 
-Typical examples are labeling that consists of a front and back label, or of a front label and a top banderole. Older labeling usually consisted of only one part. Label parts are numbered using the [partNumber](#partNumber) attribute and classified using the [partType](#partType) attribute. 
+Typical examples are labeling that consists of a front and back label, or of a front label and a top banderole. Older labeling usually consisted of only one label. Labels are described using the [labelPosition](#labelPosition) attribute. 
 
 Each [label](#label) has four elements to describe it: [physical](#physical), [visual](#visual), [textual](#textual) and [relations](#relations). 
 
@@ -51,7 +57,7 @@ The physical aspects of the label are encoded as part of the element [physical](
 
 #### Visual aspects
 
-The visual aspects of the label concern any kind of visual representation, whether ornamental, symbolic or realistic. These visual elements are encoded in the element [visual](#visual) using the elements [frame](#frame), [background](#background) and [figure](#figure). 
+The visual aspects of the label concern any kind of visual representation, whether ornamental, symbolic or realistic. These visual elements are encoded in the element [visual](#visual) using the elements [frame](#frame), [background](#background) and [figure](#figure). Notably, each figure contains one or several [figureItem](#figureItem)s for different, distinguishable visual elements or depicted objects in the figure. 
 
 #### Textual aspects
 
@@ -63,7 +69,7 @@ A second major area concerns various indicators of the wine quality. This includ
 
 A third major area of the textual domain pertains to the various kinds of agents and related locations involved. This involves the [location](#location) and [agent](#agent) elements. Note that [location](#location) can be used as part of [wineName](#wineName) as well as separately. 
 
-A fourth major area of the textual domain pertains to any numerical indications included on the label, such as the [alcohol](#alcohol) level the [volume](#volume) of the bottle, any official [controlNumber](#controlNumber) or [barrelNumber](#barrelNumber) as well as any [labelNumber](#labelNumber).  
+A fourth major area of the textual domain pertains to any numerical indications included on the label, such as the [alcohol](#alcohol) level, the [volume](#volume) of the bottle, any official [controlNumber](#controlNumber) or [barrelNumber](#barrelNumber) as well as any [labelNumber](#labelNumber).  
 
 Any other text found on a label can be encoded using the element [otherText](#otherText). In particular, any text discernible in the figures included on the label will be encoded here, with a reference back to the respective figure. 
 
@@ -75,13 +81,13 @@ The [relations](#relations) element is used to encode relations between elements
 
 #### Comments for a label
 
-Any label can have a comments section for notes, commentaries, annotations in free prose. 
+Any label can have a [comments](#comments) section for notes, commentaries, annotations in free prose, using one [comment](#coment) per issue.  
 
 #### The provenance of a label
 
 The provenance of a label describes several aspects concerning the history of the label as a collection item, using the [provenance](#provenance) element. This includes the estimated date of a label, when the indication of a [wineMillesime](#wineMillesime) is not present, using the [dating](#dating) element. 
 
-Also, the collection, collector, wine maker, printer, collector of other venue where the label was obtained can be noted using the [source](#source) element. The identifier of the scan that is the origin of the digital version of the label can also be included in the [scan](#scan) element. Finally, the state of conservation can be noted using the [conservation](#conservation) element. 
+Also, the collection, collector, wine maker, printer, collector of other venue where the label was obtained can be noted using the [source](#source) element. Finally, the state of conservation can be noted using the [conservation](#conservation) element. 
 
 ---
 
@@ -100,9 +106,9 @@ For more information on the WLV, see https://github.com/dh-trier/wlv
 
 ### Quicklinks
 
-**Elements**: [agent](#agent), [alcohol](#alcohol), [background](#background), [barrelNumber](#barrelNumber), [collection](#collection), [collectionContext](#collectionContext), [comments](#comments), [conservation](#conservation), [controlNumber](#controlNumber), [curation](#curation), [dating](#dating), [figure](#figure), [figureItem](#figureItem), [frame](#frame), [label](#label), [labelGroup](#labelGroup), [labelNumber](#labelNumber), [licence](#licence), [location](#location), [metadata](#metadata), [otherText](#otherText), [physical](#physical), [provenance](#provenance), [qualityAward](#qualityAward), [qualityGrapes](#qualityGrapes), [qualityHistorical](#qualityHistorical), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [qualityProduction](#qualityProduction), [relation](#relation), [relations](#relations), [scan](#scan), [source](#source), [textual](#textual), [visual](#visual), [volume](#volume), [wineAging](#wineAging), [wineColor](#wineColor), [wineGrapes](#wineGrapes), [wineMillesime](#wineMillesime), [wineName](#wineName), [wineOther](#wineOther), [wineTaste](#wineTaste), [wlv](#wlv)
+**Elements**: [agent](#agent), [alcohol](#alcohol), [background](#background), [barrelNumber](#barrelNumber), [collection](#collection), [collectionContext](#collectionContext), [comment](#comment), [comments](#comments), [conservation](#conservation), [controlNumber](#controlNumber), [curation](#curation), [dating](#dating), [figure](#figure), [figureItem](#figureItem), [frame](#frame), [label](#label), [labelGroup](#labelGroup), [labelNumber](#labelNumber), [licence](#licence), [location](#location), [metadata](#metadata), [otherText](#otherText), [physical](#physical), [provenance](#provenance), [qualityAward](#qualityAward), [qualityGrapes](#qualityGrapes), [qualityHistorical](#qualityHistorical), [qualityLabel](#qualityLabel), [qualityLevel](#qualityLevel), [qualityProduction](#qualityProduction), [relation](#relation), [relations](#relations), [scan](#scan), [source](#source), [textual](#textual), [visual](#visual), [volume](#volume), [wineAging](#wineAging), [wineColor](#wineColor), [wineGrapes](#wineGrapes), [wineMillesime](#wineMillesime), [wineName](#wineName), [wineOther](#wineOther), [wineTaste](#wineTaste), [wlv](#wlv)
 
-**Attributes**: [ID](#ID), [agentRole](#agentRole), [alcoholNorm](#alcoholNorm), [backgroundColor](#backgroundColor), [backgroundStyle](#backgroundStyle), [certainty](#certainty), [collectionID](#collectionID), [conservationNorm](#conservationNorm), [controlNumberType](#controlNumberType), [curationDate](#curationDate), [curationUpdate](#curationUpdate), [curatorID](#curatorID), [figureType](#figureType), [fontColor](#fontColor), [fontInitials](#fontInitials), [fontManner](#fontManner), [fontSize](#fontSize), [fontStyle](#fontStyle), [fontType](#fontType), [frameColor](#frameColor), [frameStyle](#frameStyle), [frameType](#frameType), [labelID](#labelID), [labelPosition](#labelPosition), [labelType](#labelType), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope), [locationRole](#locationRole), [locationType](#locationType), [material](#material), [norm](#norm), [notAfter](#notAfter), [notBefore](#notBefore), [pageID](#pageID), [position](#position), [printingTechnique](#printingTechnique), [qualityAwardNorm](#qualityAwardNorm), [qualityLabelType](#qualityLabelType), [qualityProductionNorm](#qualityProductionNorm), [relItems](#relItems), [relType](#relType), [scanID](#scanID), [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [textPosition](#textPosition), [textType](#textType), [uri](#uri), [volumeNorm](#volumeNorm), [wdw](#wdw), [wineNameType](#wineNameType), [wineOtherType](#wineOtherType), [year](#year)
+**Attributes**: [ID](#ID), [agentRole](#agentRole), [backgroundColor](#backgroundColor), [backgroundStyle](#backgroundStyle), [certainty](#certainty), [collectionID](#collectionID), [conservationNorm](#conservationNorm), [controlNumberType](#controlNumberType), [curationDate](#curationDate), [curationUpdate](#curationUpdate), [curatorID](#curatorID), [figureType](#figureType), [fontColor](#fontColor), [fontInitials](#fontInitials), [fontManner](#fontManner), [fontSize](#fontSize), [fontStyle](#fontStyle), [fontType](#fontType), [frameColor](#frameColor), [frameStyle](#frameStyle), [frameType](#frameType), [labelID](#labelID), [labelPosition](#labelPosition), [labelType](#labelType), [licenceAbbr](#licenceAbbr), [licenceScope](#licenceScope), [locationRole](#locationRole), [locationType](#locationType), [material](#material), [norm](#norm), [notAfter](#notAfter), [notBefore](#notBefore), [numNorm](#numNorm), [pageID](#pageID), [position](#position), [printingTechnique](#printingTechnique), [qualityAwardNorm](#qualityAwardNorm), [qualityLabelType](#qualityLabelType), [relItems](#relItems), [relType](#relType), [scanID](#scanID), [shape](#shape), [sizeH](#sizeH), [sizeV](#sizeV), [textPosition](#textPosition), [textType](#textType), [uri](#uri), [wdw](#wdw), [wineNameType](#wineNameType), [wineOtherType](#wineOtherType), [year](#year)
 
 ### Elements
 #### agent
@@ -123,7 +129,7 @@ Information relevant to the alcohol content of the wine.
 - Frequency: Once at most.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [position](#position), [alcoholNorm](#alcoholNorm).
+- Has attribute(s): [ID](#ID), [position](#position), [numNorm](#numNorm).
 
 #### background
 
@@ -143,7 +149,7 @@ The number of the barrel as mentioned on the label.
 - Frequency: Once at most.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [ID](#ID), [position](#position).
+- Has attribute(s): [ID](#ID), [position](#position), [numNorm](#numNorm).
 
 #### collection
 
@@ -165,14 +171,24 @@ Any information that describes the individual label in the context of the collec
 - Contains element(s): This element has no children.
 - Has attribute(s): [pageID](#pageID), [scanID](#scanID).
 
-#### comments
+#### comment
 
 Any comment on the label or the label description, written in prose by the curator(s).
+
+- Status: Mandatory.
+- Frequency: Once or several times.
+- Contained by element(s): [comments](#comments).
+- Contains element(s): This element has no children.
+- Has attribute(s): [ID](#ID).
+
+#### comments
+
+Groups comment on the label or the label description, written in prose by the curator(s).
 
 - Status: Optional.
 - Frequency: Once at most.
 - Contained by element(s): [wlv](#wlv), [metadata](#metadata), [labelGroup](#labelGroup).
-- Contains element(s): This element has no children.
+- Contains element(s): [comment](#comment).
 - Has attribute(s): This element has no attributes.
 
 #### conservation
@@ -193,7 +209,7 @@ The control number that is required for more recent labels.
 - Frequency: Once at most.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [position](#position), [norm](#norm), [controlNumberType](#controlNumberType).
+- Has attribute(s): [ID](#ID), [position](#position), [numNorm](#numNorm), [controlNumberType](#controlNumberType).
 
 #### curation
 
@@ -243,14 +259,14 @@ Information about the frame of the label.
 - Frequency: Zero, once or several times.
 - Contained by element(s): [visual](#visual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [ID](#ID), [frameType](#frameType), [frameStyle](#frameStyle), [frameColor](#frameColor).
+- Has attribute(s): [ID](#ID), [position](#position), [frameType](#frameType), [frameStyle](#frameStyle), [frameColor](#frameColor).
 
 #### label
 
 (label) Any single label or physically separate part of a label group.
 
-- Status: Optional.
-- Frequency: Once at most.
+- Status: Mandatory.
+- Frequency: Once or several times.
 - Contained by element(s): [wlv](#wlv), [labelGroup](#labelGroup).
 - Contains element(s): [physical](#physical), [visual](#visual), [textual](#textual), [relations](#relations).
 - Has attribute(s): [labelPosition](#labelPosition).
@@ -273,7 +289,7 @@ The number or identifyer of the label usually assigned by the printer.
 - Frequency: Once at most.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [ID](#ID), [position](#position).
+- Has attribute(s): [ID](#ID), [position](#position), [numNorm](#numNorm).
 
 #### licence
 
@@ -363,7 +379,7 @@ Indications referring to the quality of the grapes, like "Spätlese",  "Auslese"
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [position](#position), [norm](#norm), [wdw](#wdw).
+- Has attribute(s): [ID](#ID), [position](#position), [norm](#norm), [wdw](#wdw).
 
 #### qualityLabel
 
@@ -393,11 +409,11 @@ Any information describing specific steps in or aspects of the production of the
 - Frequency: Zero, once or several times.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [position](#position), [norm](#norm), [wdw](#wdw), [qualityProductionNorm](#qualityProductionNorm).
+- Has attribute(s): [ID](#ID), [position](#position), [norm](#norm), [wdw](#wdw).
 
 #### relation
 
-(no data)
+Information regarding the type of relation between two or more elements of the label description, where these elements are specified using their identifiers.
 
 - Status: Mandatory.
 - Frequency: Once or several times.
@@ -407,7 +423,7 @@ Any information describing specific steps in or aspects of the production of the
 
 #### relations
 
-(no data)
+Contains one or several statements regarding a relationship between elements of the label description.
 
 - Status: Optional.
 - Frequency: Once at most.
@@ -463,7 +479,7 @@ Information regarding the volume of the wine.
 - Frequency: Once at most.
 - Contained by element(s): [textual](#textual).
 - Contains element(s): This element has no children.
-- Has attribute(s): [position](#position), [volumeNorm](#volumeNorm).
+- Has attribute(s): [ID](#ID), [position](#position), [numNorm](#numNorm).
 
 #### wineAging
 
@@ -503,7 +519,7 @@ The year that the wine was harvested in.
 - Frequency: Exactly once.
 - Contained by element(s): [wineName](#wineName).
 - Contains element(s): This element has no children.
-- Has attribute(s): [norm](#norm), [ID](#ID), [position](#position).
+- Has attribute(s): [numNorm](#numNorm), [ID](#ID), [position](#position).
 
 #### wineName
 
@@ -553,13 +569,19 @@ The root element in a label description using the Wine Label Vocabulary.
 
 - Status: Optional.
 - Contained by element: 
+    * [comment](#comment)
     * [frame](#frame)
     * [background](#background)
     * [figure](#figure)
     * [figureItem](#figureItem)
     * [wineMillesime](#wineMillesime)
+    * [qualityProduction](#qualityProduction)
+    * [qualityHistorical](#qualityHistorical)
     * [agent](#agent)
     * [location](#location)
+    * [alcohol](#alcohol)
+    * [volume](#volume)
+    * [controlNumber](#controlNumber)
     * [barrelNumber](#barrelNumber)
     * [labelNumber](#labelNumber)
     * [otherText](#otherText)
@@ -580,13 +602,6 @@ The particular role of the agent, as far as it can be determined from the label 
     * artist / Künstler/in
     * multiple / verschiedene
     * other / andere.
-
-#### alcoholNorm
-The percentage of alcohol, expressed as number (float).
-
-- Status: Mandatory.
-- Contained by element: [alcohol](#alcohol).
-- Possible values: This element has no default values.
 
 #### backgroundColor
 The dominant color tone, whether it is strong or faint.
@@ -863,276 +878,277 @@ The material from which the label is made (in most cases, this is paper).
 - Status: Mandatory.
 - Contained by element: [figureItem](#figureItem).
 - Possible values: 
-    * Artefakt: Banderole (Q2689628)
-    * Artefakt: Becher (Q81727)
-    * Artefakt: Brezel (Q160525)
-    * Artefakt: Boot (Q35872)
-    * Artefakt: Globus (Q133792)
-    * Artefakt: Gemälde (Q3305213)
-    * Artefakt: Fahrzeug (Q42889)
-    * Artefakt: Harfe (Q47369)
-    * Artefakt: Harpune (Q207574)
-    * Artefakt: Helm (Q910873)
-    * Artefakt: Hut (Q80151)
-    * Artefakt: Krone (Q170984)
-    * Artefakt: Krug (Q766983)
-    * Artefakt: Medaille (Q131647)
-    * Artefakt: Musikinstrument (Q)
-    * Artefakt: Ornament (Q335261)
-    * Artefakt: Pfeil (Q45922)
-    * Artefakt: Rad (Q446)
-    * Artefakt: Säule (Q4817)
-    * Artefakt: Schiff (Q11446)
-    * Artefakt: Siegel (Q162919)
-    * Artefakt: Schild (Q131559)
-    * Artefakt: Schlüssel (Q132041)
-    * Artefakt: Schwert (Q12791)
-    * Artefakt: Sockel/Podest (Q12014132)
-    * Artefakt: Stoff (Q5849500)
-    * Artefakt: Vase (Q191851)
-    * Artefakt: Wage (Q134566)
-    * Artefakt: Wappen (Q14659)
-    * Artefakt: Weinglas (Q1531435)
-    * Artefakt: Weinflasche (Q23490)
-    * Artefakt: Weinfass (Q10289)
-    * Artefakt: Trichter ( Q29957)
-    * Artefakt: Lampe, inkl. Laterne (Q1138737)
-    * Artefakt: Stiefel (Q190868)
-    * Artefakt: Siegel (Q162919)
-    * Artefakt: Stempel (Q57305415)
-    * Artefakt: Schnur (Q31029)
-    * Artefakt: Etikett (Q722218)
-    * Artefakt: Gitarre, inkl. Mandoline (Q6607)
-    * Artefakt: Kostüm, inkl. Tracht (Q1410477)
-    * Fauna: Hase (Q46076)
-    * Fauna: Adler (Q2092297)
-    * Fauna: Bär (Q30090244)
-    * Fauna: Feder (Q81025)
-    * Fauna: Flügel (Q161358)
-    * Fauna: Hund (Q144)
-    * Fauna: Katze (Q146)
-    * Fauna: Katze (Q146)
-    * Fauna: Löwe (Q140)
-    * Fauna: Pferd (Q726)
-    * Fauna: Ochse (Q473194)
-    * Fauna: Reh/Hirsch (Q29838690)
-    * Fauna: Schaf (Q7368)
-    * Fauna: Spinne (Q1357)
-    * Fauna: Vogel (Q5113)
-    * Flora: Baum (Q10884)
-    * Flora: Blume (Q886167)
-    * Flora: Blüte (Q506)
-    * Flora: Pflanze (Q756)
-    * Flora: Weintraube (Q10978)
-    * Flora: Weinblätter (Q33971)
-    * Flora: Weinstock (Q2135068)
-    * Flora: Wurzel (Q41500)
-    * Bauwerk: Burg (Q23413)
-    * Bauwerk: Brücke (Q12280)
-    * Bauwerk: Dock (Q124282)
-    * Bauwerk: Dorf (Q532)
-    * Bauwerk: Gebäude (Q41176)
-    * Bauwerk: Fenster (Q35473)
-    * Bauwerk: Interieur (Q2998430)
-    * Bauwerk: Keller (Q43275450)
-    * Bauwerk: Kirchengebäude (Q16970)
-    * Bauwerk: Mauer (Q42948)
-    * Bauwerk: Stadt (Q532)
-    * Bauwerk: Straße (Q34442)
-    * Bauwerk: Tor/Türe (Q36794)
-    * Bauwerk: Treppe (Q12511)
-    * Bauwerk: Turm (Q12518)
-    * Bauwerk: Zaun (Q148571)
-    * Landschaft: Ufer (Q468756)
-    * Landschaft: Fluss (Q4022)
-    * Landschaft: Hügel (Q54050)
-    * Landschaft: Weinberg (Q22715)
-    * Person: Mann (Q8441)
-    * Person: Frau (Q467)
-    * Person: Kind (Q7569)
-    * Person: Mensch (Q5)
-    * Person: Minnesänger (Q841192)
-    * Person: Personengruppe (Q16334295)
-    * Sonstiges: Ritter (Q102083)
-    * Sonstiges: Satyr (Q163709)
-    * Sonstiges: Engel (Q235113)
-    * Sonstiges: Drache (Q7559)
-    * Sonstiges: Stern (Q523)
-    * Sonstiges: Mond (Q405)
-    * Sonstiges: Sonne (Q525)
-    * Sonstiges: Schatten (Q160020)
-    * Sonstiges: Abstrakte Form
-    * Sonstiges: Barcode (Q856)
-    * Sonstiges: QR-Code (Q12203)
-    * QualityGrapes: Kabinett
-    * QualityGrapes: Spätlese
-    * QualityGrapes: Auslese
-    * QualityGrapes: Beerenauslese
-    * QualityGrapes: Trockenbeerenauslese (Q1639847)
-    * QualityGrapes: Eiswein
-    * QualityGrapes: other
+    * Bild: Banderole [Artefakt] (Q2689628)
+    * Bild: Becher [Artefakt] (Q81727)
+    * Bild: Brezel [Artefakt] (Q160525)
+    * Bild: Boot [Artefakt] (Q35872)
+    * Bild: Globus [Artefakt] (Q133792)
+    * Bild: Gemälde [Artefakt] (Q3305213)
+    * Bild: Fahrzeug [Artefakt] (Q42889)
+    * Bild: Harfe [Artefakt] (Q47369)
+    * Bild: Harpune [Artefakt] (Q207574)
+    * Bild: Helm [Artefakt] (Q910873)
+    * Bild: Hut [Artefakt] (Q80151)
+    * Bild: Krone [Artefakt] (Q170984)
+    * Bild: Krug [Artefakt] (Q766983)
+    * Bild: Medaille [Artefakt] (Q131647)
+    * Bild: Musikinstrument [Artefakt] (Q)
+    * Bild: Ornament [Artefakt] (Q335261)
+    * Bild: Pfeil [Artefakt] (Q45922)
+    * Bild: Rad [Artefakt] (Q446)
+    * Bild: Säule [Artefakt] (Q4817)
+    * Bild: Schiff [Artefakt] (Q11446)
+    * Bild: Siegel [Artefakt] (Q162919)
+    * Bild: Schild [Artefakt] (Q131559)
+    * Bild: Schlüssel [Artefakt] (Q132041)
+    * Bild: Schwert [Artefakt] (Q12791)
+    * Bild: Sockel/Podest [Artefakt] (Q12014132)
+    * Bild: Stoff [Artefakt] (Q5849500)
+    * Bild: Vase [Artefakt] (Q191851)
+    * Bild: Wage [Artefakt] (Q134566)
+    * Bild: Wappen [Artefakt] (Q14659)
+    * Bild: Weinglas [Artefakt] (Q1531435)
+    * Bild: Weinflasche [Artefakt] (Q23490)
+    * Bild: Weinfass [Artefakt] (Q10289)
+    * Bild: Trichter [Artefakt] (Q29957)
+    * Bild: Uhr [Artefakt] (Q376)
+    * Bild: Lampe, inkl. Laterne [Artefakt] (Q1138737)
+    * Bild: Stiefel [Artefakt] (Q190868)
+    * Bild: Siegel [Artefakt] (Q162919)
+    * Bild: Stempel [Artefakt] (Q57305415)
+    * Bild: Schnur [Artefakt] (Q31029)
+    * Bild: Etikett [Artefakt] (Q722218)
+    * Bild: Gitarre, inkl. Mandoline [Artefakt] (Q6607)
+    * Bild: Kostüm, inkl. Tracht [Artefakt] (Q1410477)
+    * Bild: Hase [Fauna] (Q46076)
+    * Bild: Adler [Fauna] (Q2092297)
+    * Bild: Bär [Fauna] (Q30090244)
+    * Bild: Feder [Fauna] (Q81025)
+    * Bild: Flügel [Fauna] (Q161358)
+    * Bild: Hund [Fauna] (Q144)
+    * Bild: Katze [Fauna] (Q146)
+    * Bild: Katze [Fauna] (Q146)
+    * Bild: Löwe [Fauna] (Q140)
+    * Bild: Pferd [Fauna] (Q726)
+    * Bild: Ochse [Fauna] (Q473194)
+    * Bild: Reh/Hirsch [Fauna] (Q29838690)
+    * Bild: Schaf [Fauna] (Q7368)
+    * Bild: Spinne [Fauna] (Q1357)
+    * Bild: Vogel [Fauna] (Q5113)
+    * Bild: Baum [Flora] (Q10884)
+    * Bild: Blume [Flora] (Q886167)
+    * Bild: Blüte [Flora] (Q506)
+    * Bild: Pflanze [Flora] (Q756)
+    * Bild: Weintraube [Flora] (Q10978)
+    * Bild: Weinblätter [Flora] (Q33971)
+    * Bild: Weinstock [Flora] (Q2135068)
+    * Bild: Wurzel [Flora] (Q41500)
+    * Bild: Burg [Bauwerk] (Q23413)
+    * Bild: Brücke [Bauwerk] (Q12280)
+    * Bild: Dock [Bauwerk] (Q124282)
+    * Bild: Dorf [Bauwerk] (Q532)
+    * Bild: Gebäude [Bauwerk] (Q41176)
+    * Bild: Fenster [Bauwerk] (Q35473)
+    * Bild: Interieur [Bauwerk] (Q2998430)
+    * Bild: Keller [Bauwerk] (Q43275450)
+    * Bild: Kirchengebäude [Bauwerk] (Q16970)
+    * Bild: Mauer [Bauwerk] (Q42948)
+    * Bild: Stadt [Bauwerk] (Q532)
+    * Bild: Straße [Bauwerk] (Q34442)
+    * Bild: Tor/Türe [Bauwerk] (Q36794)
+    * Bild: Treppe [Bauwerk] (Q12511)
+    * Bild: Turm [Bauwerk] (Q12518)
+    * Bild: Zaun [Bauwerk] (Q148571)
+    * Bild: Ufer [Landschaft] (Q468756)
+    * Bild: Fluss [Landschaft] (Q4022)
+    * Bild: Hügel [Landschaft] (Q54050)
+    * Bild: Weinberg [Landschaft] (Q22715)
+    * Bild: Mann [Person] (Q8441)
+    * Bild: Frau [Person] (Q467)
+    * Bild: Kind [Person] (Q7569)
+    * Bild: Mensch [Person] (Q5)
+    * Bild: Minnesänger [Person] (Q841192)
+    * Bild: Personengruppe [Person] (Q16334295)
+    * Bild: Ritter [Sonstiges] (Q102083)
+    * Bild: Satyr [Sonstiges] (Q163709)
+    * Bild: Engel [Sonstiges] (Q235113)
+    * Bild: Drache [Sonstiges] (Q7559)
+    * Bild: Stern [Sonstiges] (Q523)
+    * Bild: Mond [Sonstiges] (Q405)
+    * Bild: Sonne [Sonstiges] (Q525)
+    * Bild: Schatten [Sonstiges] (Q160020)
+    * Bild: Abstrakte Form [Sonstiges]
+    * Bild: Barcode [Sonstiges] (Q856)
+    * Bild: QR-Code [Sonstiges] (Q12203)
+    * qualityGrapes: Kabinett
+    * qualityGrapes: Spätlese
+    * qualityGrapes: Auslese (Q426856)
+    * qualityGrapes: Beerenauslese
+    * qualityGrapes: Trockenbeerenauslese (Q1639847)
+    * qualityGrapes: Eiswein
+    * qualityGrapes: other
     * Land: Deutschland (Q183)
     * Bereich: Mosel-Saar-Ruwer (Q672776)
-    * Ort (Leitgemeinde): Alf (Q568556)
-    * Ort (Leitgemeinde): Alken (Q305288)
-    * Ort (Leitgemeinde): Andel (Q155622)
-    * Ort (Leitgemeinde): Ayl (Q186199)
-    * Ort (Leitgemeinde): Bausendorf (Q569296)
-    * Ort (Leitgemeinde): Beilstein (Q652238)
-    * Ort (Leitgemeinde): Bekond (Q569708)
-    * Ort (Leitgemeinde): Bernkastel (Q155622)
-    * Ort (Leitgemeinde): Biewer (Q245974)
-    * Ort (Leitgemeinde): Brauneberg (Q567156)
-    * Ort (Leitgemeinde): Bremm (Q113378)
-    * Ort (Leitgemeinde): Briedel (Q565192)
-    * Ort (Leitgemeinde): Briedern (Q1517)
-    * Ort (Leitgemeinde): Brodenbach (Q168070)
-    * Ort (Leitgemeinde): Bruttig-Fankel (Q574161)
-    * Ort (Leitgemeinde): Bruttig (Q574161)
-    * Ort (Leitgemeinde): Bullay (Q546257)
-    * Ort (Leitgemeinde): Burgen (Q679415)
-    * Ort (Leitgemeinde): Burg (Q658530)
-    * Ort (Leitgemeinde): Cochem (Q502749)
-    * Ort (Leitgemeinde): Cond (Q502749)
-    * Ort (Leitgemeinde): Detzem (Q553394)
-    * Ort (Leitgemeinde): Dhron (Q572352)
-    * Ort (Leitgemeinde): Dieblich (Q565313)
-    * Ort (Leitgemeinde): Dreis (Q563974)
-    * Ort (Leitgemeinde): Ediger (Q547805)
-    * Ort (Leitgemeinde): Eitelsbach (Q316811)
-    * Ort (Leitgemeinde): Ellenz-Polterdorf (Q566958)
-    * Ort (Leitgemeinde): Ellenz (Q566958)
-    * Ort (Leitgemeinde): Eller (Q547805)
-    * Ort (Leitgemeinde): Enkirch (Q553838)
-    * Ort (Leitgemeinde): Ensch (Q660477)
-    * Ort (Leitgemeinde): Erden (Q565749)
-    * Ort (Leitgemeinde): Ernst (Q567608)
-    * Ort (Leitgemeinde): Falkenstein (Q818576)
-    * Ort (Leitgemeinde): Fankel (Q574161)
-    * Ort (Leitgemeinde): Fellerich (Q1404048)
-    * Ort (Leitgemeinde): Fell (Q659890)
-    * Ort (Leitgemeinde): Filzen (Q47087896)
-    * Ort (Leitgemeinde): Gondorf (Q553347)
-    * Ort (Leitgemeinde): Graach (Q648808)
-    * Ort (Leitgemeinde): Güls (Q1777938)
-    * Ort (Leitgemeinde): Hatzenport (Q554243)
-    * Ort (Leitgemeinde): Helfant (Q636128)
-    * Ort (Leitgemeinde): Hupperath (Q565320)
-    * Ort (Leitgemeinde): Igel (Q543497)
-    * Ort (Leitgemeinde): Kaimt (Q187500)
-    * Ort (Leitgemeinde): Kanzem (Q569862)
-    * Ort (Leitgemeinde): Karden (Q656110)
-    * Ort (Leitgemeinde): Kasel (Q659935)
-    * Ort (Leitgemeinde): Kastel-Staadt (Q553490)
-    * Ort (Leitgemeinde): Kattenes (Q1736818)
-    * Ort (Leitgemeinde): Kenn (Q174435)
-    * Ort (Leitgemeinde): Kernscheid (Q650102)
-    * Ort (Leitgemeinde): Kesten (Q569300)
-    * Ort (Leitgemeinde): Kinheim (Q656236)
-    * Ort (Leitgemeinde): Klotten (Q269397)
-    * Ort (Leitgemeinde): Klüsserath (Q569589)
-    * Ort (Leitgemeinde): Kobern (Q553347)
-    * Ort (Leitgemeinde): Könen (Q1795916)
-    * Ort (Leitgemeinde): Konz (Q503185)
-    * Ort (Leitgemeinde): Kövenig (Q1796794)
-    * Ort (Leitgemeinde): Köwerich (Q657740)
-    * Ort (Leitgemeinde): Krettnach (Q503185)
-    * Ort (Leitgemeinde): Kreuzweiler (Q636128)
-    * Ort (Leitgemeinde): Kröv (Q553171)
-    * Ort (Leitgemeinde): Kues (Q155622)
-    * Ort (Leitgemeinde): Kürenz (Q883351)
-    * Ort (Leitgemeinde): Langsur (Q610893)
-    * Ort (Leitgemeinde): Lay (Q1328018)
-    * Ort (Leitgemeinde): Lehmen (Q567585)
-    * Ort (Leitgemeinde): Leiwen (Q681047)
-    * Ort (Leitgemeinde): Liersberg (Q20820333)
-    * Ort (Leitgemeinde): Lieser (Q646892)
-    * Ort (Leitgemeinde): Löf (Q553970)
-    * Ort (Leitgemeinde): Longuich (Q569606)
-    * Ort (Leitgemeinde): Lösnich (Q510820)
-    * Ort (Leitgemeinde): Maring-Noviand (Q566744)
-    * Ort (Leitgemeinde): Matthias (Q877660)
-    * Ort (Leitgemeinde): Maximin Grünhaus (Q659878)
-    * Ort (Leitgemeinde): Mehring (Q543574)
-    * Ort (Leitgemeinde): Merl (Q1921880)
-    * Ort (Leitgemeinde): Mertesdorf (Q659878)
-    * Ort (Leitgemeinde): Mesenich (Q610893)
-    * Ort (Leitgemeinde): Minheim (Q524796)
-    * Ort (Leitgemeinde): Monzel (Q648793)
-    * Ort (Leitgemeinde): Morscheid (Q656840)
-    * Ort (Leitgemeinde): Moselkern (Q651263)
-    * Ort (Leitgemeinde): Müden (Q680967)
-    * Ort (Leitgemeinde): Mühlheim (Q667192)
-    * Ort (Leitgemeinde): Neef (Q572494)
-    * Ort (Leitgemeinde): Nehren (Q572471)
-    * Ort (Leitgemeinde): Nennig (Q316804)
-    * Ort (Leitgemeinde): Neumagen (Q572352)
-    * Ort (Leitgemeinde): Niederemmel (Q375762)
-    * Ort (Leitgemeinde): Niederfell (Q553445)
-    * Ort (Leitgemeinde): Niederleuken (Q543639)
-    * Ort (Leitgemeinde): Niedermennig (Q503185)
-    * Ort (Leitgemeinde): Nittel (Q594609)
-    * Ort (Leitgemeinde): Oberbillig (Q636185)
-    * Ort (Leitgemeinde): Oberemmel (Q47037444)
-    * Ort (Leitgemeinde): Oberfell (Q647068)
-    * Ort (Leitgemeinde): Ockfen (Q643198)
-    * Ort (Leitgemeinde): Olewig (Q885323)
-    * Ort (Leitgemeinde): Osann (Q648793)
-    * Ort (Leitgemeinde): Palzem (Q636128)
-    * Ort (Leitgemeinde): Pellingen (Q655962)
-    * Ort (Leitgemeinde): Perl (Q662505)
-    * Ort (Leitgemeinde): Piesport (Q375762)
-    * Ort (Leitgemeinde): Pölich (Q553412)
-    * Ort (Leitgemeinde): Pommern (Q665867)
-    * Ort (Leitgemeinde): Pünderich (Q567287)
-    * Ort (Leitgemeinde): Rehlingen (Q594609)
-    * Ort (Leitgemeinde): Reil (Q656264)
-    * Ort (Leitgemeinde): Riol (Q553441)
-    * Ort (Leitgemeinde): Rivenich (Q552448)
-    * Ort (Leitgemeinde): Ruwer (Q316811)
-    * Ort (Leitgemeinde): Saarburg (Q543639)
-    * Ort (Leitgemeinde): Schleich (Q660583)
-    * Ort (Leitgemeinde): Schoden (Q646456)
-    * Ort (Leitgemeinde): Schweich (Q212570)
-    * Ort (Leitgemeinde): Sehl (Q502749)
-    * Ort (Leitgemeinde): Sehndorf (Q2266381)
-    * Ort (Leitgemeinde): Senheim (Q653097)
-    * Ort (Leitgemeinde): Serrig (Q656819)
-    * Ort (Leitgemeinde): Sommerau (Q631137)
-    * Ort (Leitgemeinde): Springiersbach (Q547805)
-    * Ort (Leitgemeinde): St. Aldegund (Q653902)
-    * Ort (Leitgemeinde): Starkenburg (Q682031)
-    * Ort (Leitgemeinde): Tarforst (Q328287)
-    * Ort (Leitgemeinde): Temmels (Q636175)
-    * Ort (Leitgemeinde): Thörnich (Q591473)
-    * Ort (Leitgemeinde): Traben (Q540919)
-    * Ort (Leitgemeinde): Trais (Q6566110)
-    * Ort (Leitgemeinde): Trarbach (Q540919)
-    * Ort (Leitgemeinde): Trier (Q3138)
-    * Ort (Leitgemeinde): Trittenheim (Q662479)
-    * Ort (Leitgemeinde): Ürzig (Q335018)
-    * Ort (Leitgemeinde): Valwig (Q656297)
-    * Ort (Leitgemeinde): Veldenz (Q569812)
-    * Ort (Leitgemeinde): Waldrach (Q569807)
-    * Ort (Leitgemeinde): Wasserliesch (Q553357)
-    * Ort (Leitgemeinde): Wawern (Q565310)
-    * Ort (Leitgemeinde): Wehlen (Q155622)
-    * Ort (Leitgemeinde): Wehr (Q636128)
-    * Ort (Leitgemeinde): Wellen (Q636208)
-    * Ort (Leitgemeinde): Wiltingen (Q161930)
-    * Ort (Leitgemeinde): Wincheringen (Q543611)
-    * Ort (Leitgemeinde): Winningen (Q822358)
-    * Ort (Leitgemeinde): Wintrich (Q373778)
-    * Ort (Leitgemeinde): Wittlich (Q559514)
-    * Ort (Leitgemeinde): Wolf (Q1563313)
-    * Ort (Leitgemeinde): Zell (Q187500)
-    * Ort (Leitgemeinde): Zeltingen (Q189241)
-    * Ort (Leitgemeinde): Bernkastel-Kues (Q643228)
-    * Ort (Leitgemeinde): Brauneberg (Q567156)
-    * Ort (Leitgemeinde): Wiltingen (Q161930)
-    * Ort (Leitgemeinde): Winningen (Q822358)
-    * Ort (Leitgemeinde): Zell (Q187500)
-    * Ort (Leitgemeinde): Trittenheim (Q662479)
+    * Ort: Alf (Q568556)
+    * Ort: Alken (Q305288)
+    * Ort: Andel (Q155622)
+    * Ort: Ayl (Q186199)
+    * Ort: Bausendorf (Q569296)
+    * Ort: Beilstein (Q652238)
+    * Ort: Bekond (Q569708)
+    * Ort: Bernkastel (Q155622)
+    * Ort: Biewer (Q245974)
+    * Ort: Brauneberg (Q567156)
+    * Ort: Bremm (Q113378)
+    * Ort: Briedel (Q565192)
+    * Ort: Briedern (Q1517)
+    * Ort: Brodenbach (Q168070)
+    * Ort: Bruttig-Fankel (Q574161)
+    * Ort: Bruttig (Q574161)
+    * Ort: Bullay (Q546257)
+    * Ort: Burgen (Q679415)
+    * Ort: Burg (Q658530)
+    * Ort: Cochem (Q502749)
+    * Ort: Cond (Q502749)
+    * Ort: Detzem (Q553394)
+    * Ort: Dhron (Q572352)
+    * Ort: Dieblich (Q565313)
+    * Ort: Dreis (Q563974)
+    * Ort: Ediger (Q547805)
+    * Ort: Eitelsbach (Q316811)
+    * Ort: Ellenz-Polterdorf (Q566958)
+    * Ort: Ellenz (Q566958)
+    * Ort: Eller (Q547805)
+    * Ort: Enkirch (Q553838)
+    * Ort: Ensch (Q660477)
+    * Ort: Erden (Q565749)
+    * Ort: Ernst (Q567608)
+    * Ort: Falkenstein (Q818576)
+    * Ort: Fankel (Q574161)
+    * Ort: Fellerich (Q1404048)
+    * Ort: Fell (Q659890)
+    * Ort: Filzen (Q47087896)
+    * Ort: Gondorf (Q553347)
+    * Ort: Graach (Q648808)
+    * Ort: Güls (Q1777938)
+    * Ort: Hatzenport (Q554243)
+    * Ort: Helfant (Q636128)
+    * Ort: Hupperath (Q565320)
+    * Ort: Igel (Q543497)
+    * Ort: Kaimt (Q187500)
+    * Ort: Kanzem (Q569862)
+    * Ort: Karden (Q656110)
+    * Ort: Kasel (Q659935)
+    * Ort: Kastel-Staadt (Q553490)
+    * Ort: Kattenes (Q1736818)
+    * Ort: Kenn (Q174435)
+    * Ort: Kernscheid (Q650102)
+    * Ort: Kesten (Q569300)
+    * Ort: Kinheim (Q656236)
+    * Ort: Klotten (Q269397)
+    * Ort: Klüsserath (Q569589)
+    * Ort: Kobern (Q553347)
+    * Ort: Könen (Q1795916)
+    * Ort: Konz (Q503185)
+    * Ort: Kövenig (Q1796794)
+    * Ort: Köwerich (Q657740)
+    * Ort: Krettnach (Q503185)
+    * Ort: Kreuzweiler (Q636128)
+    * Ort: Kröv (Q553171)
+    * Ort: Kues (Q155622)
+    * Ort: Kürenz (Q883351)
+    * Ort: Langsur (Q610893)
+    * Ort: Lay (Q1328018)
+    * Ort: Lehmen (Q567585)
+    * Ort: Leiwen (Q681047)
+    * Ort: Liersberg (Q20820333)
+    * Ort: Lieser (Q646892)
+    * Ort: Löf (Q553970)
+    * Ort: Longuich (Q569606)
+    * Ort: Lösnich (Q510820)
+    * Ort: Maring-Noviand (Q566744)
+    * Ort: Matthias (Q877660)
+    * Ort: Maximin Grünhaus (Q659878)
+    * Ort: Mehring (Q543574)
+    * Ort: Merl (Q1921880)
+    * Ort: Mertesdorf (Q659878)
+    * Ort: Mesenich (Q610893)
+    * Ort: Minheim (Q524796)
+    * Ort: Monzel (Q648793)
+    * Ort: Morscheid (Q656840)
+    * Ort: Moselkern (Q651263)
+    * Ort: Müden (Q680967)
+    * Ort: Mühlheim (Q667192)
+    * Ort: Neef (Q572494)
+    * Ort: Nehren (Q572471)
+    * Ort: Nennig (Q316804)
+    * Ort: Neumagen (Q572352)
+    * Ort: Niederemmel (Q375762)
+    * Ort: Niederfell (Q553445)
+    * Ort: Niederleuken (Q543639)
+    * Ort: Niedermennig (Q503185)
+    * Ort: Nittel (Q594609)
+    * Ort: Oberbillig (Q636185)
+    * Ort: Oberemmel (Q47037444)
+    * Ort: Oberfell (Q647068)
+    * Ort: Ockfen (Q643198)
+    * Ort: Olewig (Q885323)
+    * Ort: Osann (Q648793)
+    * Ort: Palzem (Q636128)
+    * Ort: Pellingen (Q655962)
+    * Ort: Perl (Q662505)
+    * Ort: Piesport (Q375762)
+    * Ort: Pölich (Q553412)
+    * Ort: Pommern (Q665867)
+    * Ort: Pünderich (Q567287)
+    * Ort: Rehlingen (Q594609)
+    * Ort: Reil (Q656264)
+    * Ort: Riol (Q553441)
+    * Ort: Rivenich (Q552448)
+    * Ort: Ruwer (Q316811)
+    * Ort: Saarburg (Q543639)
+    * Ort: Schleich (Q660583)
+    * Ort: Schoden (Q646456)
+    * Ort: Schweich (Q212570)
+    * Ort: Sehl (Q502749)
+    * Ort: Sehndorf (Q2266381)
+    * Ort: Senheim (Q653097)
+    * Ort: Serrig (Q656819)
+    * Ort: Sommerau (Q631137)
+    * Ort: Springiersbach (Q547805)
+    * Ort: St. Aldegund (Q653902)
+    * Ort: Starkenburg (Q682031)
+    * Ort: Tarforst (Q328287)
+    * Ort: Temmels (Q636175)
+    * Ort: Thörnich (Q591473)
+    * Ort: Traben (Q540919)
+    * Ort: Trais (Q6566110)
+    * Ort: Trarbach (Q540919)
+    * Ort: Trier (Q3138)
+    * Ort: Trittenheim (Q662479)
+    * Ort: Ürzig (Q335018)
+    * Ort: Valwig (Q656297)
+    * Ort: Veldenz (Q569812)
+    * Ort: Waldrach (Q569807)
+    * Ort: Wasserliesch (Q553357)
+    * Ort: Wawern (Q565310)
+    * Ort: Wehlen (Q155622)
+    * Ort: Wehr (Q636128)
+    * Ort: Wellen (Q636208)
+    * Ort: Wiltingen (Q161930)
+    * Ort: Wincheringen (Q543611)
+    * Ort: Winningen (Q822358)
+    * Ort: Wintrich (Q373778)
+    * Ort: Wittlich (Q559514)
+    * Ort: Wolf (Q1563313)
+    * Ort: Zell (Q187500)
+    * Ort: Zeltingen (Q189241)
+    * Ort: Bernkastel-Kues (Q643228)
+    * Ort: Brauneberg (Q567156)
+    * Ort: Wiltingen (Q161930)
+    * Ort: Winningen (Q822358)
+    * Ort: Zell (Q187500)
+    * Ort: Trittenheim (Q662479)
     * Ort: Filzen (Q47087896)
     * Ort: Freudenberg am Main (Q61827)
     * Ort: Ober-Ingelheim (Q2008825)
@@ -1623,7 +1639,6 @@ The material from which the label is made (in most cases, this is paper).
     * Lage: Zellerberg [St. Michael] (6.1.7.116)
     * Lage: Zeppwingert [Schwarzlay] (6.1.8.142)
     * Lage: Zollturm [Schwarzlay] (6.1.8.168)
-    * Jahrgang: ####
     * Rebsorte: Riesling [weiss] (Q456471)
     * Rebsorte: Müller-Thurgau / Rivaner [weiss] (Q681670)
     * Rebsorte: Sauvignon Blanc [weiss] (Q44542)
@@ -1635,28 +1650,35 @@ The material from which the label is made (in most cases, this is paper).
     * Rebsorte: Spätburgunder / Pinot noir [rot] (Q223701)
     * Rebsorte: other [weiss]
     * Rebsorte: other [rot]
-    * Weinfarbe: Rotwein
-    * Weinfarbe: Weisswein
-    * Weinfarbe: Rosé/Rotling
-    * Weinfarbe: other
-    * Geschmack: dry (trocken)
-    * Geschmack: semi-dry (halbtrocken / feinherb)
-    * Geschmack: semi-sweet (lieblich)
-    * Geschmack: sweet (süß)
-    * Geschmack: other
-    * WineAging: Barrique-Ausbau
-    * WineAging: Flaschengärung
-    * Weinqualität: Prädikatswein
-    * Weinqualität: Tafelwein/Wein
-    * Weinqualität: Landwein
-    * Weinqualität: Qualitätswein
-    * Traubenqualität: Kabinett
-    * Traubenqualität: Spätlese
-    * Traubenqualität: Auslese
-    * Traubenqualität: Beerenauslese
-    * Traubenqualität: Trockenbeerenauslese
-    * Traubenqualität: Eiswein
-    * Traubenqualität: other
+    * Farbe: Rotwein
+    * Farbe: Weisswein
+    * Farbe: Rosé/Rotling
+    * Farbe: other
+    * Taste: dry (trocken)
+    * Taste: semi-dry (halbtrocken / feinherb)
+    * Taste: semi-sweet (lieblich)
+    * Taste: sweet (süß)
+    * Taste: other
+    * Taste: historical
+    * Aging: Barrique-Ausbau
+    * Aging: Flaschengärung
+    * qualityLevel: Landwein
+    * qualityLevel: Tafelwein/Wein
+    * qualityLevel: Qualitätswein
+    * qualityLevel: Prädikatswein
+    * qualityLevel: historical
+    * qualityProduction: Erzeugerabfüllung
+    * qualityProduction: Gutsabfüllung
+    * qualityProduction: Händische Weinlese
+    * qualityProduction: other
+    * qualityGrapes: Kabinett
+    * qualityGrapes: Spätlese
+    * qualityGrapes: Auslese
+    * qualityGrapes: Beerenauslese
+    * qualityGrapes: Trockenbeerenauslese
+    * qualityGrapes: Eiswein
+    * qualityGrapes: historical
+    * qualityGrapes: other
     * Weingut: Weingut Maximin Grünhaus (Q2556072)
     * Weingut: #### (Q)
     * Vertrieb: Karl Ziegler
@@ -1676,6 +1698,19 @@ The material from which the label is made (in most cases, this is paper).
 - Contained by element: [dating](#dating).
 - Possible values: This element has no default values.
 
+#### numNorm
+A normalized expression of the number present on the label, as float (or an integer).
+
+- Status: Optional.
+- Contained by element: 
+    * [wineMillesime](#wineMillesime)
+    * [alcohol](#alcohol)
+    * [volume](#volume)
+    * [controlNumber](#controlNumber)
+    * [barrelNumber](#barrelNumber)
+    * [labelNumber](#labelNumber).
+- Possible values: This element has no default values.
+
 #### pageID
 (no data)
 
@@ -1688,6 +1723,7 @@ The material from which the label is made (in most cases, this is paper).
 
 - Status: Optional.
 - Contained by element: 
+    * [frame](#frame)
     * [figure](#figure)
     * [wineMillesime](#wineMillesime)
     * [wineColor](#wineColor)
@@ -1737,13 +1773,6 @@ The technical printing process used for printing the visual and/or textual infor
 - Status: Optional.
 - Contained by element: [qualityLabel](#qualityLabel).
 - Possible values: vineyard, grapes, other.
-
-#### qualityProductionNorm
-(no data)
-
-- Status: Optional.
-- Contained by element: [qualityProduction](#qualityProduction).
-- Possible values: on-location, other.
 
 #### relItems
 (no data)
@@ -1841,13 +1870,6 @@ The width of the label measured in millimeters. (This attribute is mandatory, bu
 - Status: Optional.
 - Contained by element: [metadata](#metadata), [licence](#licence), [agent](#agent), [location](#location).
 - Possible values: https://creativecommons.org/licenses/by/4.0/, https://github.com/dh-trier/wlv.
-
-#### volumeNorm
-The indication of the volume of wine, expressed as a number (integer of milliliters).
-
-- Status: Optional.
-- Contained by element: [volume](#volume).
-- Possible values: This element has no default values.
 
 #### wdw
 (no data)
