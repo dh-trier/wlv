@@ -1,492 +1,499 @@
-Reg.-Nr.	Gebiet	Bereich	Leitgemeinde	Wikidata-ID (Leitgemeinde)	Großlage	Wikidata-ID (Großlage)	Einzellage	ha	über NN	Neigung	Exposition
-6								9080	65-380		
-6, 1	Mosel	Bernkastel						5984	90-320		
-6.1.1	Mosel	Bernkastel	Bernkastel	Q155622	Badstube			55	125-250		
-6.1.1.001	Mosel	Bernkastel	Bernkastel	Q155622	Badstube		Bratenhöfchen	18	130-250	hängig-steil	WSW
-6.1.1.002	Mosel	Bernkastel	Bernkastel	Q155622	Badstube		Doctor	3	125-200	steil	S-SSW
-6.1.1.003	Mosel	Bernkastel	Bernkastel	Q155622	Badstube		Graben	12	125-225	hängig-steil	WSW
-6.1.1.004	Mosel	Bernkastel	Bernkastel	Q155622	Badstube		Lay	10	115-135	steil	WSW
-6.1.1.005	Mosel	Bernkastel	Bernkastel	Q155622	Badstube		Matheisbildchen	10	135-190	hängig-steil	WSW
-6.1.1.006	Mosel	Bernkastel	Bernkastel	Q155622	Badstube		Alte Badstube am Doktorberg	2			
-6.1.2	Mosel	Bernkastel	Bernkastel	Q155622	Kurfürstenlay			1352	105-320		
-6.1.2.007	Mosel	Bernkastel	Bernkastel	Q155622	Kurfürstenlay		Schloßberg	23	120-300	hängig-steil	SW-W
-6.1.2.008	Mosel	Bernkastel	Bernkastel	Q155622	Kurfürstenlay		Johannisbrünnchen	12	150-300	steil	SWS-W
-6.1.2.009	Mosel	Bernkastel	Kues	Q155622	Kurfürstenlay		Kardinalsberg	56	110-240	hängig-steil	S
-6.1.2.010	Mosel	Bernkastel	Kues	Q155622	Kurfürstenlay		Rosenberg	6	130-250	hängig-steil	OSO
-6.1.2.011	Mosel	Bernkastel	Kues	Q155622	Kurfürstenlay		Weisenstein	15	110-150	hängig-steil	SSW
-6.1.2.012	Mosel	Bernkastel	Brauneberg	Q567156	Kurfürstenlay		Juffer	32	110-240	steil	SSO
-6.1.2.013	Mosel	Bernkastel	Brauneberg	Q567156	Kurfürstenlay		Juffer Sonnenuhr	11	110-240	steil	SSO
-6.1.2.014	Mosel	Bernkastel	Brauneberg	Q567156	Kurfürstenlay		Kammer	1	105-195	hängig-steil	SSO
-6.1.2.015	Mosel	Bernkastel	Brauneberg	Q567156	Kurfürstenlay		Klostergarten	53	160-260	hängig	W-WNW
-6.1.2.016	Mosel	Bernkastel	Brauneberg	Q567156	Kurfürstenlay		Mandelgraben	122	120-250	hängig-steil	SO
-6.1.2.017	Mosel	Bernkastel	Burgen	Q679415	Kurfürstenlay		Hasenläufer	30	180-200	hängig-steil	W
-6.1.2.018	Mosel	Bernkastel	Burgen	Q679415	Kurfürstenlay		Kirchberg	17	180-240	hängig-steil	OSO
-6.1.2.019	Mosel	Bernkastel	Burgen	Q679415	Kurfürstenlay		Römerberg	7	190-240	steil	SO
-6.1.2.020	Mosel	Bernkastel	Kesten	Q569300	Kurfürstenlay		Herrenberg	61	110-300	hängig-steil	O-S
-6.1.2.021	Mosel	Bernkastel	Kesten	Q569300	Kurfürstenlay		Paulinsberg	36	120-220	hängig-steil	O-S
-6.1.2.022	Mosel	Bernkastel	Kesten	Q569300	Kurfürstenlay		Paulinshofberger	16	125-220	steil	SSO
-6.1.2.023	Mosel	Bernkastel	Lieser	Q646892	Kurfürstenlay		Schloßberg	85	130-240	hängig-steil	SW+S+ON
-6.1.2.024	Mosel	Bernkastel	Maring-Noviand	Q566744	Kurfürstenlay		Honigberg	56	150-260	hängig-steil	SSO-SSW
-6.1.2.025	Mosel	Bernkastel	Maring-Noviand	Q566744	Kurfürstenlay		Klosterberg	27	160-260	hängig-steil	SSO
-6.1.2.026	Mosel	Bernkastel	Maring-Noviand	Q566744	Kurfürstenlay		Römerpfad	24	130-150	hängig-steil	S
-6.1.2.027	Mosel	Bernkastel	Maring-Noviand	Q566744	Kurfürstenlay		Sonnenuhr	35	140-240	hängig-steil	SW
-6.1.2.028	Mosel	Bernkastel	Mühlheim	Q667192	Kurfürstenlay		Amtgarten	1	110-113	hängig	NW
-6.1.2.029	Mosel	Bernkastel	Mühlheim	Q667192	Kurfürstenlay		Elisenberg	4	180-210	hängig-steil	SW
-6.1.2.030	Mosel	Bernkastel	Mühlheim	Q667192	Kurfürstenlay		Helenenkloster	1	125-140	hängig	SW
-6.1.2.031	Mosel	Bernkastel	Mühlheim	Q667192	Kurfürstenlay		Sonnenlay	52	130-260	hängig-steil	W
-6.1.2.032	Mosel	Bernkastel	Monzel	Q648793	Kurfürstenlay		Kätzchen	81	150-300	hängig-steil	S
-6.1.2.033	Mosel	Bernkastel	Osann	Q648793	Kurfürstenlay		Kirchlay	18	221-255	hängig-steil	S-SSW
-6.1.2.034	Mosel	Bernkastel	Monzel	Q648793	Kurfürstenlay		Paulinslay	33	160-320	hängig	NW
-6.1.2.035	Mosel	Bernkastel	Osann	Q648793	Kurfürstenlay		Rosenberg	92	160-320	hängig-steil	S-WSW
-6.1.2.036	Mosel	Bernkastel	Veldenz	Q569812	Kurfürstenlay		Carlsberg	1	140-150	hängig	SW
-6.1.2.037	Mosel	Bernkastel	Veldenz	Q569812	Kurfürstenlay		Grafschafter Sonnenberg	30	140-260	hängig-steil	O
-6.1.2.038	Mosel	Bernkastel	Veldenz	Q569812	Kurfürstenlay		Kirchberg	67	140-300	hängig-steil	S-SW
-6.1.2.039	Mosel	Bernkastel	Veldenz	Q569812	Kurfürstenlay		Mühlberg	1	180-220	steil	S-W
-6.1.2.040	Mosel	Bernkastel	Wintrich	Q373778	Kurfürstenlay		Großer Herrgott	94	120-200	hängig-steil	S-W-NW
-6.1.2.041	Mosel	Bernkastel	Wintrich	Q373778	Kurfürstenlay		Ohligsberg	7	120-220	hängig-steil	SW-W
-6.1.2.042	Mosel	Bernkastel	Wintrich	Q373778	Kurfürstenlay		Stefanslay	47	115-200	hängig	WNW
-6.1.2.043	Mosel	Bernkastel	Bernkastel	Q155622	Kurfürstenlay		Stephanus-Rosengärtchen	1	150-250	steil	SW
-6.1.2.044	Mosel	Bernkastel	Wintrich	Q373778	Kurfürstenlay		Geierslay	4	110-260	steil	W
-6.1.2.045	Mosel	Bernkastel	Lieser	Q646892	Kurfürstenlay		Rosenlay	17	110-200	hängig-steil	S-SW
-6.1.2.046	Mosel	Bernkastel	Lieser	Q646892	Kurfürstenlay		Niederberg-Helden	29	120-240	steil	SSW
-6.1.2.047	Mosel	Bernkastel			Kurfürstenlay			11	180-210	hängig-steil	SW
-6.1.2.048	Mosel	Bernkastel	Andel	Q155622	Kurfürstenlay		Goldschatz	4	110-150	hängig	NNO
-6.1.2.049	Mosel	Bernkastel	Maring-Noviand	Q566744	Kurfürstenlay		Lambertuslay	32	150-240	hängig-steil	SO
-6.1.3	Mosel	Bernkastel	Piesport	Q375762	Michelsberg			1106	110-300		
-6.1.3.050	Mosel	Bernkastel	Minheim	Q524796	Michelsberg		Burglay	17	120-260	hängig-steil	O-S
-6.1.3.051	Mosel	Bernkastel	Minheim	Q524796	Michelsberg		Kapellchen	47	120-220	hängig-steil	ONO-SO
-6.1.3.052	Mosel	Bernkastel	Minheim	Q524796	Michelsberg		Rosenberg	70	120-220	hängig-steil	SO
-6.1.3.053	Mosel	Bernkastel	Neumagen	Q572352	Michelsberg		Engelgrube	53	120-170	hängig	W
-6.1.3.054	Mosel	Bernkastel	Piesport	Q375762	Michelsberg		Grafenberg	8	120-250	steil	O-OSO
-6.1.3.055	Mosel	Bernkastel	Dhron	Q572352	Michelsberg		Großer Hengelberg	1	140-180	steil	SSW
-6.1.3.056	Mosel	Bernkastel	Dhron	Q572352	Michelsberg		Hofberger	85	120-200	steil	SW
-6.1.3.057	Mosel	Bernkastel	Neumagen	Q572352	Michelsberg		Laudamusberg	27	120-260	hängig-steil	SSW-W
-6.1.3.058	Mosel	Bernkastel	Neumagen	Q572352	Michelsberg		Rosengärtchen	26	120-265	steil	SW-W
-6.1.3.059	Mosel	Bernkastel	Dhron	Q572352	Michelsberg		Roterd	48	120-290	hängig-steil	W
-6.1.3.060	Mosel	Bernkastel	Neumagen	Q572352	Michelsberg		Sonnenuhr	1	130-170	steil	SW
-6.1.3.061	Mosel	Bernkastel	Piesport	Q375762	Michelsberg		Domherr	4	120-150	steil	SSO
-6.1.3.062	Mosel	Bernkastel	Piesport	Q375762	Michelsberg		Falkenberg	32	150-300	hängig-steil	SO-S
-6.1.3.063	Mosel	Bernkastel	Niederemmel	Q375762	Michelsberg		Gärtchen	1	190-220	steil	SW
-6.1.3.064	Mosel	Bernkastel	Piesport	Q375762	Michelsberg		Goldtröpfchen	66	125-160	steil	SO-S-SW
-6.1.3.065	Mosel	Bernkastel	Piesport	Q375762	Michelsberg		Günterslay	27	150-290	steil	S-W
-6.1.3.066	Mosel	Bernkastel	Piesport	Q375762	Michelsberg		Schubertslay	1	125-150	steil	SSO
-6.1.3.067	Mosel	Bernkastel	Piesport	Q375762	Michelsberg		Treppchen	291	120-260	hängig-steil	O-N-W
-6.1.3.068	Mosel	Bernkastel	Rivenich	Q552448	Michelsberg		Brauneberg	6	170-237	hängig-steil	SW
-6.1.3.069	Mosel	Bernkastel	Rivenich	Q552448	Michelsberg		Geisberg	6	240-300	hängig-steil	S-W
-6.1.3.070	Mosel	Bernkastel	Rivenich	Q552448	Michelsberg		Niederberg	19	140-240	hängig-steil	S-W
-6.1.3.071	Mosel	Bernkastel	Rivenich	Q552448	Michelsberg		Rosenberg	31	220-300	hängig-steil	W-NW
-6.1.3.072	Mosel	Bernkastel	Trittenheim	Q662479	Michelsberg		Altärchen	167	120-255	hängig-steil	SSO-W
-6.1.3.073	Mosel	Bernkastel	Trittenheim	Q662479	Michelsberg		Apotheke	67	120-240	hängig-steil	WSW-S-O
-6.1.3.074	Mosel	Bernkastel	Trittenheim	Q662479	Michelsberg		Felsenkopf	1	120-140	steil	WSW
-6.1.3.075	Mosel	Bernkastel	Trittenheim	Q662479	Michelsberg		Leiterchen	1	160-180	steil	W
-6.1.3.076	Mosel	Bernkastel	Niederemmel	Q375762	Michelsberg		Kreuzwingert	1	160-210	steil	SSW
-6.1.3.077	Mosel	Bernkastel	Dhron	Q572352	Michelsberg		Häs'chen	1	120-220	steil	S
-6.1.3.078	Mosel	Bernkastel	Neumagen	Q572352	Michelsberg		Nußwingert	1	110-180	steil	OSO
-6.1.4	Mosel	Bernkastel			Münzlay			353	110-220	steil	O
-6.1.4.079	Mosel	Bernkastel	Graach	Q648808	Münzlay		Abtsberg	12	260-320	steil	SSW
-6.1.4.080	Mosel	Bernkastel	Graach	Q648808	Münzlay		Domprobst	19	130-260	steil	SW
-6.1.4.081	Mosel	Bernkastel	Graach	Q648808	Münzlay		Himmelreich	76	110-260	steil	SW
-6.1.4.082	Mosel	Bernkastel	Graach	Q648808	Münzlay		Josephshöfer	5	120-170	hängig-steil	SSW
-6.1.4.083	Mosel	Bernkastel	Wehlen	Q155622	Münzlay		Nonnenberg	45	110-240	hängig-steil	NO
-6.1.4.084	Mosel	Bernkastel	Wehlen	Q155622	Münzlay		Sonnenuhr	44	109-190	steil	SSW
-6.1.4.085	Mosel	Bernkastel	Zeltingen	Q189241	Münzlay		Deutschherrenberg	12	110-240	steil	O
-6.1.4.086	Mosel	Bernkastel	Zeltingen	Q189241	Münzlay		Himmelreich	88	110-220	hängig-steil	SW-WNW
-6.1.4.087	Mosel	Bernkastel	Zeltingen	Q189241	Münzlay		Schloßberg	16	110-220	steil	SW
-6.1.4.088	Mosel	Bernkastel	Zeltingen	Q189241	Münzlay		Sonnenuhr	17	110-160	steil	SSW
-6.1.4.089	Mosel	Bernkastel	Wehlen	Q155622	Münzlay		Klosterberg	12	210-240	steil	SO-S
-6.1.4.090	Mosel	Bernkastel	Wehlen	Q155622	Münzlay		Abtei	3	110-220	hängig-steil	ONO
-6.1.4.091	Mosel	Bernkastel	Wehlen	Q155622	Münzlay		Rosenberg	4	200-280	steil	SSW
-6.1.5	Mosel	Bernkastel	Kröv	Q553171	Nacktarsch			185	100-300		
-6.1.5.092	Mosel	Bernkastel	Kövenig	Q1796794	Nacktarsch		Burglay	2	100-200	steil	O
-6.1.5.093	Mosel	Bernkastel	Kövenig	Q1796794	Nacktarsch		Herrenberg	3	110-230	hängig-steil	O
-6.1.5.094	Mosel	Bernkastel	Kröv	Q553171	Nacktarsch		Kirchlay	48	100-300	hängig-steil	SO
-6.1.5.095	Mosel	Bernkastel	Kröv	Q553171	Nacktarsch		Letterlay	21	110-170	steil	S
-6.1.5.096	Mosel	Bernkastel	Kröv	Q553171	Nacktarsch		Paradies	94	100-300	hängig-steil	SO
-6.1.5.097	Mosel	Bernkastel	Kröv	Q553171	Nacktarsch		Steffensberg	17	110-280	hängig-steil	S-SSW
-6.1.6	Mosel	Bernkastel	Longuich	Q569606	Propstberg			448	120-300		
-6.1.6.098	Mosel	Bernkastel	Fell	Q659890	Propstberg		Maximiner Burgberg	80	130-300	hängig-steil	S-WNW
-6.1.6.099	Mosel	Bernkastel	Kenn	Q174435	Propstberg		Held	9	120-180	hängig-steil	OSO
-6.1.6.100	Mosel	Bernkastel	Kenn	Q174435	Propstberg		Maximiner Hofgarten	7	140-250	steil	SW-NW
-6.1.6.101	Mosel	Bernkastel	Longuich	Q569606	Propstberg		Hirschlay	107	125-150	hängig-steil	ONO-SO
-6.1.6.102	Mosel	Bernkastel	Longuich	Q569606	Propstberg		Maximiner Herrenberg	12	125-150	steil	SW
-6.1.6.103	Mosel	Bernkastel	Riol	Q553441	Propstberg		Römerberg	140	125-260	hängig	N-NO
-6.1.6.104	Mosel	Bernkastel	Schweich	Q212570	Propstberg		Annaberg	26	120-200	hängig-steil	SSW
-6.1.6.105	Mosel	Bernkastel	Schweich	Q212570	Propstberg		Burgmauer	41	150-300	hängig-steil	S-W
-6.1.6.106	Mosel	Bernkastel	Schweich	Q212570	Propstberg		Herrenberg	26	200-300	hängig-steil	SW
-6.1.7	Mosel	Bernkastel			St. Michael			1368	120-320		
-6.1.7.107	Mosel	Bernkastel	Bekond	Q569708	St. Michael		Brauneberg	45	150-240	hängig-steil	SW
-6.1.7.108	Mosel	Bernkastel	Bekond	Q569708	St. Michael		Schloßberg	26	150-330	hängig-steil	SW
-6.1.7.109	Mosel	Bernkastel	Ensch	Q660477	St. Michael		Mühlenberg	56	120-250	hängig-steil	OSO-SSW
-6.1.7.110	Mosel	Bernkastel	Ensch	Q660477	St. Michael		St. Martin	23	120-220	hängig	O
-6.1.7.111	Mosel	Bernkastel	Ensch	Q660477	St. Michael		Sonnenlay	9	120-240	steil	SO
-6.1.7.112	Mosel	Bernkastel	Klüsserath	Q569589	St. Michael		Bruderschaft	186	120-280	hängig-steil	SSO-SW
-6.1.7.113	Mosel	Bernkastel	Köwerich	Q657740	St. Michael		Laurentiuslay	18	120-140	steil	SW-WSW
-6.1.7.114	Mosel	Bernkastel	Mehring	Q543574	St. Michael		Blattenberg	43	125-220	steil	S-SW
-6.1.7.115	Mosel	Bernkastel	Mehring	Q543574	St. Michael		Goldkupp	89	120-320	hängig-steil	S-SSW+N
-6.1.7.116	Mosel	Bernkastel	Mehring	Q543574	St. Michael		Zellerberg	122	125-309	hängig-steil	SSW
-6.1.7.117	Mosel	Bernkastel	Pölich	Q553412	St. Michael		Held	85	120-200	hängig-steil	S-O
-6.1.7.118	Mosel	Bernkastel	Schleich	Q660583	St. Michael		Klosterberg	6	122-170	hängig-steil	SO
-6.1.7.119	Mosel	Bernkastel	Schleich	Q660583	St. Michael		Sonnenberg	12	125-230	hängig-steil	O-S
-6.1.7.120	Mosel	Bernkastel	Thörnich	Q591473	St. Michael		Enggaß	9	120-250	steil	O-SO
-6.1.7.121	Mosel	Bernkastel	Thörnich	Q591473	St. Michael		Ritsch	15	120-250	steil	SSO-SW
-6.1.7.122	Mosel	Bernkastel	Thörnich	Q591473	St. Michael		Schießlay	105	120-200	hängig	WSW-NW
-6.1.7.123	Mosel	Bernkastel	Detzem	Q553394	St. Michael		Maximiner Klosterlay	43	120-175	hängig-steil	WSW-W
-6.1.7.124	Mosel	Bernkastel	Detzem	Q553394	St. Michael		Würzgarten	100	120-200	hängig-steil	WSW
-6.1.7.125	Mosel	Bernkastel	Köwerich	Q657740	St. Michael		Held	108	120-150	hängig	
-6.1.7.126	Mosel	Bernkastel	Leiwen	Q681047	St. Michael		Klostergarten	251	120-290	hängig-steil	NO-OSO
-6.1.7.127	Mosel	Bernkastel	Leiwen	Q681047	St. Michael		Laurentiuslay	17	120-140	steil	WSW-WN
-6.1.8	Mosel	Bernkastel	Ürzig	Q335018	Schwarzlay			689	100-300		
-6.1.8.128	Mosel	Bernkastel	Bausendorf	Q569296	Schwarzlay		Herzlay	1	190-290	hängig-steil	SW-SSO
-6.1.8.129	Mosel	Bernkastel	Burg	Q658530	Schwarzlay		Falklay	19	150-240	steil	WSW
-6.1.8.130	Mosel	Bernkastel	Burg	Q658530	Schwarzlay		Hahnenschrittchen	21	110-200	hängig-steil	WSW
-6.1.8.131	Mosel	Bernkastel	Burg	Q658530	Schwarzlay		Schloßberg	27	105-150	hängig	W
-6.1.8.132	Mosel	Bernkastel	Burg	Q658530	Schwarzlay		Thomasberg	2	120-240	steil	WSW
-6.1.8.133	Mosel	Bernkastel	Burg	Q658530	Schwarzlay		Wendelstück	12	120-180	steil	WSW
-6.1.8.134	Mosel	Bernkastel	Dreis	Q563974	Schwarzlay		Johannisberg	1	165-260	hängig	SO
-6.1.8.135	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		Batterieberg	1	110-200	steil	WSW
-6.1.8.136	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		Edelberg	15	110-200	hängig	W
-6.1.8.137	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		Ellergrub	7	110-280	steil	WSW-W
-6.1.8.138	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		Herrenberg	16	110-240	steil	WSW
-6.1.8.139	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		Monteneubel	14	120-240	steil	SSO-WSW
-6.1.8.140	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		Steffensberg	35	115-300	steil	S
-6.1.8.141	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		Weinkammer	1	140-260	steil	WSW+S
-6.1.8.142	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		Zeppwingert	9	110-260	steil	WSW
-6.1.8.143	Mosel	Bernkastel	Erden	Q565749	Schwarzlay		Busslay	62	110-170	hängig	NW
-6.1.8.144	Mosel	Bernkastel	Erden	Q565749	Schwarzlay		Herrenberg	12	220-300	hängig	S
-6.1.8.145	Mosel	Bernkastel	Erden	Q565749	Schwarzlay		Prälat	2	110-220	steil	S
-6.1.8.146	Mosel	Bernkastel	Erden	Q565749	Schwarzlay		Treppchen	36	110-220	hängig-steil	S
-6.1.8.147	Mosel	Bernkastel	Hupperath	Q565320	Schwarzlay		Klosterweg	12	250-310	hängig-steil	SO
-6.1.8.148	Mosel	Bernkastel	Bausendorf	Q569296	Schwarzlay		Hubertuslay	37	170-280	hängig-steil	S
-6.1.8.149	Mosel	Bernkastel	Wittlich	Q559514	Schwarzlay		Rosenberg	46	195-260	steil	OSO
-6.1.8.150	Mosel	Bernkastel	Lösnich	Q510820	Schwarzlay		Burgberg	22	100-200	hängig-steil	NO
-6.1.8.151	Mosel	Bernkastel	Lösnich	Q510820	Schwarzlay		Fürsterlay	9	120-220	hängig-steil	SW
-6.1.8.152	Mosel	Bernkastel	Wolf	Q1563313	Schwarzlay		Klosterberg	10	160-290	hängig	ONO-SSO
-6.1.8.153	Mosel	Bernkastel	Wolf	Q1563313	Schwarzlay		Auf der Heide	1	260-300	steil	WSW
-6.1.8.154	Mosel	Bernkastel	Trarbach	Q540919	Schwarzlay		Burgberg	2	120-280	steil	WSW
-6.1.8.155	Mosel	Bernkastel	Traben	Q540919	Schwarzlay		Gaispfad	3	140-320	steil	W
-6.1.8.156	Mosel	Bernkastel	Wolf	Q1563313	Schwarzlay		Goldgrube	8	120-160	steil	WSW
-6.1.8.157	Mosel	Bernkastel	Trarbach	Q540919	Schwarzlay		Hühnerberg	3	100-280	steil	SSW
-6.1.8.158	Mosel	Bernkastel	Springiersbach	Q547805	Schwarzlay		Klosterberg	15	170-210	hängig-steil	SW
-6.1.8.159	Mosel	Bernkastel	Traben	Q540919	Schwarzlay		Känigsberg	12	180-240	hängig-steil	ONO-S
-6.1.8.160	Mosel	Bernkastel	Traben	Q540919	Schwarzlay		Kräuterhaus	14	100-200	hängig	SSW
-6.1.8.161	Mosel	Bernkastel	Starkenburg	Q682031	Schwarzlay		Rosengarten	1	200-300	steil	WSW
-6.1.8.162	Mosel	Bernkastel	Wolf	Q1563313	Schwarzlay		Schatzgarten	27	140-180	hängig-steil	NO-OSO
-6.1.8.163	Mosel	Bernkastel	Trarbach	Q540919	Schwarzlay		Schloßberg	12	100-260	hängig-steil	SW-W+S
-6.1.8.164	Mosel	Bernkastel	Wolf	Q1563313	Schwarzlay		Sonnenlay	8	140-220	steil	OSO-SO
-6.1.8.165	Mosel	Bernkastel	Trarbach	Q540919	Schwarzlay		Taubenhaus	8	120-220	hängig-steil	O-OSO
-6.1.8.166	Mosel	Bernkastel	Trarbach	Q540919	Schwarzlay		Ungsberg	2	100-280	steil	SW
-6.1.8.167	Mosel	Bernkastel	Traben	Q540919	Schwarzlay		Würzgarten	30	120-220	hängig	W
-6.1.8.168	Mosel	Bernkastel	Traben	Q540919	Schwarzlay		Zollturm	3	140-320	steil	WNW
-6.1.8.169	Mosel	Bernkastel	Ürzig	Q335018	Schwarzlay		Würzgarten	52	110-220	hängig-steil	OSO-S
-6.1.8.170	Mosel	Bernkastel	Wittlich	Q559514	Schwarzlay		Bottchen	4	200-260	steil	OSO
-6.1.8.171	Mosel	Bernkastel	Wittlich	Q559514	Schwarzlay		Felsentreppchen	3	220-260	steil	OSO
-6.1.8.172	Mosel	Bernkastel	Wittlich	Q559514	Schwarzlay		Lay	10	220-260	hängig	S+W
-6.1.8.173	Mosel	Bernkastel	Wittlich	Q559514	Schwarzlay		Portnersberg	17	190-270	steil	SO-SSO
-6.1.8.174	Mosel	Bernkastel	Ürzig	Q335018	Schwarzlay		Goldwingert	1	110-150	steil	S
-6.1.8.175	Mosel	Bernkastel	Kinheim	Q656236	Schwarzlay		Römerhang	24	110-180	hängig-steil	NO
-6.1.9	Mosel	Bernkastel	Reil	Q656264	Vom heißen Stein			314	90-260		
-6.1.9.176	Mosel	Bernkastel	Briedel	Q565192	Vom heißen Stein		Herzchen	41	95-180	hängig-steil	SW-SSW
-6.1.9.177	Mosel	Bernkastel	Briedel	Q565192	Vom heißen Stein		Nonnengarten	15	120-240	hängig-steil	SO
-6.1.9.178	Mosel	Bernkastel	Briedel	Q565192	Vom heißen Stein		Schäferlay	7	90-175	hängig-steil	WSW
-6.1.9.179	Mosel	Bernkastel	Briedel	Q565192	Vom heißen Stein		Schelm	20	95-120	hängig	ONO
-6.1.9.180	Mosel	Bernkastel	Briedel	Q565192	Vom heißen Stein		Weisser Berg	38	90-175		SW
-6.1.9.181	Mosel	Bernkastel	Pünderich	Q567287	Vom heißen Stein		Goldlay	19	100-180	hängig	NO
-6.1.9.182	Mosel	Bernkastel	Pünderich	Q567287	Vom heißen Stein		Marienburg	52	98-230	hängig-steil	O-S-W
-6.1.9.183	Mosel	Bernkastel	Pünderich	Q567287	Vom heißen Stein		Nonnengarten	9	100-180	hängig-steil	SSW
-6.1.9.184	Mosel	Bernkastel	Pünderich	Q567287	Vom heißen Stein		Rosenberg	24	100-230	hängig	W
-6.1.9.185	Mosel	Bernkastel	Reil	Q656264	Vom heißen Stein		Falklay	31	110-280	hängig-steil	O
-6.1.9.186	Mosel	Bernkastel	Reil	Q656264	Vom heißen Stein		Goldlay	17	100-260	hängig-steil	W
-6.1.9.187	Mosel	Bernkastel	Reil	Q656264	Vom heißen Stein		Moullay-Hofberg	40	110-260	hängig-steil	ONO-SO
-6.1.9.188	Mosel	Bernkastel	Reil	Q656264	Vom heißen Stein		Sorentberg	1	140-260	steil	S
-6.1.10	Mosel	Bernkastel			Römerlay			114			
-6.1.10.189	Mosel	Bernkastel	Kürenz	Q883351	Römerlay		Altenberg	10	160-240	steil	S-SW
-6.1.10.190	Mosel	Bernkastel	Tarforst	Q328287	Römerlay		Andreasberg	1	190-240	hängig	SO-SW
-6.1.10.191	Mosel	Bernkastel	Biewer	Q245974	Römerlay		Augenscheiner	3	140-150	hängig	SSO
-6.1.10.192	Mosel	Bernkastel	Olewig	Q885323	Römerlay		Benediktinerberg	3	165-190	hängig-steil	SW
-6.1.10.193	Mosel	Bernkastel	Olewig	Q885323	Römerlay		Burgberg	8	160-200	hängig-steil	S-SW
-6.1.10.194	Mosel	Bernkastel	Trier	Q3138	Römerlay		Deutschherrenberg	13	160-250	hängig	S-WSW
-6.1.10.195	Mosel	Bernkastel	Trier	Q3138	Römerlay		Deutschherrenköpfchen	1	150-200	steil	S-SSW
-6.1.10.196	Mosel	Bernkastel	Ruwer	Q316811	Römerlay		Domherrenberg	11	160-250	hängig-steil	WNW-NW
-6.1.10.197	Mosel	Bernkastel	Trier	Q3138	Römerlay		Hammerstein	17	240-280	hängig-steil	SSW
-6.1.10.198	Mosel	Bernkastel	Kürenz	Q883351	Römerlay		Herrenberg	7	230-280	hängig-steil	SW
-6.1.10.199	Mosel	Bernkastel	Olewig	Q885323	Römerlay		Jesuitenwingert	10	160-200	hängig-steil	SO-SSO
-6.1.10.200	Mosel	Bernkastel	Olewig	Q885323	Römerlay		Kurfürstenhofberg	2	160-190	hängig-steil	S-SSW
-6.1.10.201	Mosel	Bernkastel	Tarforst	Q328287	Römerlay		St. Martiner Hofberg	2	180-250	steil	SW
-6.1.10.202	Mosel	Bernkastel	Matthias	Q877660	Römerlay		St. Matheiser	6	160-220	hängig	S-W
-6.1.10.203	Mosel	Bernkastel	Trier	Q3138	Römerlay		St. Maximiner Kreuzberg	12	150-230	hängig-steil	WNW
-6.1.10.204	Mosel	Bernkastel	Kernscheid	Q650102	Römerlay		St. Petrusberg	1	190-240	steil	WSW
-6.1.10.205	Mosel	Bernkastel	Olewig	Q885323	Römerlay		Thiergarten Unterm Kreuz	2	180-200	hängig-steil	S-SW
-6.1.10.206	Mosel	Bernkastel	Olewig	Q885323	Römerlay		Thiergarten Felsköpfchen	1	180-200	steil	S-SW
-6.1.10.207	Mosel	Bernkastel	Trier	Q3138	Römerlay		St. Martiner Klosterberg	2	160-200	steil	S+SO+WS
-6.1.10.208	Mosel	Bernkastel			Römerlay			2	240-280	steil	SSW
-6,2	Mosel	Obermosel						711	130-350		
-6.2.1	Mosel	Obermosel	Nittel	Q594609	Gipfel			643	130-350		
-6.2.1.001	Mosel	Obermosel	Fellerich	Q1404048	Gipfel		Schleidberg	11	266-300	hängig-steil	OSO
-6.2.1.002	Mosel	Obermosel	Helfant	Q636128	Gipfel		Kapellenberg	18	150-250	hängig	S-SO
-6.2.1.003	Mosel	Obermosel	Nittel	Q594609	Gipfel			7	130-350		
-6.2.1.004	Mosel	Obermosel	Kreuzweiler	Q636128	Gipfel		Schloß Thorner Kupp	8	150-250	hängig	SO-S
-6.2.1.005	Mosel	Obermosel	Nittel	Q594609	Gipfel		Blümchen	24	140-300	hängig-steil	SSW
-6.2.1.006	Mosel	Obermosel	Nittel	Q594609	Gipfel		Leiterchen	39	140-270	hängig-steil	SW
-6.2.1.007	Mosel	Obermosel	Nittel	Q594609	Gipfel		Rochusfels	116	140-300	hängig-steil	WNW
-6.2.1.008	Mosel	Obermosel	Oberbillig	Q636185	Gipfel		Hirtengarten	25	200-250	hängig-steil	WNW
-6.2.1.009	Mosel	Obermosel	Oberbillig	Q636185	Gipfel		Römerberg	12	150-220	hängig-steil	WNW
-6.2.1.010	Mosel	Obermosel	Nittel	Q594609	Gipfel		Hubertusberg	11	290-350	hängig-steil	SO
-6.2.1.011	Mosel	Obermosel	Palzem	Q636128	Gipfel		Carlsfelsen	33	200-250	hängig-steil	NW
-6.2.1.012	Mosel	Obermosel	Palzem	Q636128	Gipfel		Lay	69	150-200	hängig-steil	SO-SW
-6.2.1.013	Mosel	Obermosel	Rehlingen	Q594609	Gipfel		Kapellenberg	58	130-250	hängig-steil	SW-W
-6.2.1.014	Mosel	Obermosel	Temmels	Q636175	Gipfel		St. Georgshof	36	140-180	hängig-steil	WNW+SW
-6.2.1.015	Mosel	Obermosel	Wasserliesch	Q553357	Gipfel		Albachtaler	7	150-200	hängig	SO+WNW
-6.2.1.016	Mosel	Obermosel	Wasserliesch	Q553357	Gipfel		Reinig auf der Burg	7	140-150	flach	SO+WNW
-6.2.1.017	Mosel	Obermosel	Wehr	Q636128	Gipfel		Rosenberg	33	130-190	hängig-steil	S-W-WNW
-6.2.1.018	Mosel	Obermosel	Wellen	Q636208	Gipfel		Altenberg	13	140-260	hängig-steil	SW-NW
-6.2.1.019	Mosel	Obermosel	Wincheringen	Q543611	Gipfel		Burg Warsberg	115	200-250	hängig-steil	S
-6.2.2	Mosel	Obermosel	Mesenich	Q610893	Königsberg			68	130-270	hängig-steil	S
-6.2.2.020	Mosel	Obermosel	Mesenich	Q610893	Königsberg			31	130-270	hängig-steil	S
-6.2.2.021	Mosel	Obermosel	Igel	Q543497	Königsberg		Dullgärten	6	160-200	hängig-steil	SSW
-6.2.2.022	Mosel	Obermosel	Langsur	Q610893	Königsberg		Brüderberg	22	130-170	hängig-steil	S-SW
-6.2.2.023	Mosel	Obermosel	Liersberg	Q20820333	Königsberg		Pilgerberg	4	259-270	hängig-steil	SSO
-6.2.2.024	Mosel	Obermosel	Mesenich	Q610893	Königsberg		Held	5	140-240	hängig-steil	SW
-6,3	Mosel	Burg Cochem						2954	65-270		
-6.3.1.001	Mosel	Burg Cochem	Bruttig	Q574161	Goldbäumchen			313	75-260		
-6.3.1.002	Mosel	Burg Cochem	Bruttig-Fankel	Q574161	Goldbäumchen		Götterlay	10	70-160	steil	O-SO
-6.3.1.003	Mosel	Burg Cochem	Sehl	Q502749	Goldbäumchen		Bischofsstuhl	1	100-190	steil	W
-6.3.1.004	Mosel	Burg Cochem	Cochem	Q502749	Goldbäumchen		Herrenberg	4	100-200	steil	SO
-6.3.1.005	Mosel	Burg Cochem	Sehl	Q502749	Goldbäumchen		Hochlay	1	110-180	steil	OSO
-6.3.1.006	Mosel	Burg Cochem	Sehl	Q502749	Goldbäumchen		Klostergarten	7	90-200	hängig-steil	SW
-6.3.1.007	Mosel	Burg Cochem	Cochem	Q502749	Goldbäumchen		Pinnerkreuzberg	1	90-230	steil	S-SW
-6.3.1.008	Mosel	Burg Cochem	Cochem	Q502749	Goldbäumchen		Schloßberg	4	130-230	hängig-steil	SO
-6.3.1.009	Mosel	Burg Cochem	Sehl	Q502749	Goldbäumchen		Sonnenberg	2	100-190	steil	W-WNW
-6.3.1.010	Mosel	Burg Cochem	Briedern	Q1517	Goldbäumchen		Domherrenberg	19	85-170	steil	SO
-6.3.1.011	Mosel	Burg Cochem	Ellenz-Polterdorf	Q566958	Goldbäumchen		Altarberg	46	80-165	hängig-steil	S
-6.3.1.012	Mosel	Burg Cochem	Ernst	Q567608	Goldbäumchen		Feuerberg	22	80-180	hängig	W-NW
-6.3.1.013	Mosel	Burg Cochem	Ernst	Q567608	Goldbäumchen		Kirchlay	28	60-90	flach	
-6.3.1.014	Mosel	Burg Cochem	Klotten	Q269397	Goldbäumchen		Brauneberg	6	87-260	steil	S
-6.3.1.015	Mosel	Burg Cochem	Klotten	Q269397	Goldbäumchen		Burg Coreidelsteiner	11	87-187	hängig	SO
-6.3.1.016	Mosel	Burg Cochem	Klotten	Q269397	Goldbäumchen		Rosenberg	5	87-200	steil	SSO-SW
-6.3.1.017	Mosel	Burg Cochem	Pommern	Q665867	Goldbäumchen		Rosenberg	22	80-150	hängig-steil	S
-6.3.1.018	Mosel	Burg Cochem	Moselkern	Q651263	Goldbäumchen		Übereltzer	1	80-140	steil	SSO
-6.3.1.019	Mosel	Burg Cochem	Müden	Q680967	Goldbäumchen		Funkenberg	27	78-200	hängig-steil	SSO
-6.3.1.020	Mosel	Burg Cochem	Müden	Q680967	Goldbäumchen		St. Castorhöhle	11	80-160	hängig-steil	S
-6.3.1.021	Mosel	Burg Cochem	Pommern	Q665867	Goldbäumchen		Goldberg	8	80-150	hängig-steil	S
-6.3.1.022	Mosel	Burg Cochem	Pommern	Q665867	Goldbäumchen		Sonnenuhr	18	80-150	hängig-steil	S
-6.3.1.023	Mosel	Burg Cochem	Karden	Q656110	Goldbäumchen		Dechantsberg	2	80-180	steil	S
-6.3.1.024	Mosel	Burg Cochem	Karden	Q656110	Goldbäumchen		Juffermauer	2	80-150	hängig-steil	OSO
-6.3.1.025	Mosel	Burg Cochem	Karden	Q656110	Goldbäumchen		Münsterberg	1	80-200	hängig-steil	S=-S
-6.3.1.026	Mosel	Burg Cochem	Ellenz-Polterdorf	Q566958	Goldbäumchen		Kurfürst	48	80-105	hängig	SO
-6.3.1.027	Mosel	Burg Cochem	Pommern	Q665867	Goldbäumchen		Zeisel	6	80-150	hängig-steil	S
-6.3.2	Mosel	Burg Cochem	Zell	Q187500	Grafschaft			288	80-280		
-6.3.2.028	Mosel	Burg Cochem	Alf	Q568556	Grafschaft		Burggraf	5	95-150	hängig-steil	S-SSW
-6.3.2.029	Mosel	Burg Cochem	Alf	Q568556	Grafschaft		Herrenberg	3	95-150	hängig-steil	SSO
-6.3.2.030	Mosel	Burg Cochem	Alf	Q568556	Grafschaft		Hälle	3	100-120	steil	ONO
-6.3.2.031	Mosel	Burg Cochem	Alf	Q568556	Grafschaft		Kapellenberg	2	95-120	hängig-steil	O-SO
-6.3.2.032	Mosel	Burg Cochem	Alf	Q568556	Grafschaft		Katzenkopf	1	95-150	hängig-steil	SO
-6.3.2.033	Mosel	Burg Cochem	Alf	Q568556	Grafschaft		Kronenberg	2	100-180	hängig-steil	SW
-6.3.2.034	Mosel	Burg Cochem	Bremm	Q113378	Grafschaft		Calmont	19	94-280	hängig-steil	S
-6.3.2.035	Mosel	Burg Cochem	Bremm	Q113378	Grafschaft		Laurentiusberg	16	95-275	hängig-steil	NO-S
-6.3.2.036	Mosel	Burg Cochem	Bremm	Q113378	Grafschaft		Schlemmertröpfchen	12	100-280	hängig-steil	OSO
-6.3.2.037	Mosel	Burg Cochem	Bremm	Q113378	Grafschaft		Frauenberg	16	95-180	steil	SW
-6.3.2.038	Mosel	Burg Cochem	Bullay	Q546257	Grafschaft		Brautrock	11	100-210	hängig-steil	S-W
-6.3.2.039	Mosel	Burg Cochem	Bullay	Q546257	Grafschaft		Graf Beyßel-Herrenberg	6	105-240	steil	S-W
-6.3.2.040	Mosel	Burg Cochem	Bullay	Q546257	Grafschaft		Kroneberg	2	140-280	steil	SSO
-6.3.2.041	Mosel	Burg Cochem	Bullay	Q546257	Grafschaft		Sonneck	2	130-260	hängig-steil	SW
-6.3.2.042	Mosel	Burg Cochem	Eller	Q547805	Grafschaft		Bienenlay	6	80-180	hängig-steil	SSW-WS
-6.3.2.043	Mosel	Burg Cochem	Ediger	Q547805	Grafschaft		Elzhofberg	15	80-250	hängig-steil	SW
-6.3.2.044	Mosel	Burg Cochem	Eller	Q547805	Grafschaft		Engelströpfchen	2	100-200	hängig-steil	ONO-O
-6.3.2.045	Mosel	Burg Cochem	Ediger	Q547805	Grafschaft		Feuerberg	17	80-260	hängig-steil	S-SW
-6.3.2.046	Mosel	Burg Cochem	Eller	Q547805	Grafschaft		Höll	4	100-200	hängig-steil	SO
-6.3.2.047	Mosel	Burg Cochem	Ediger	Q547805	Grafschaft		Osterlämmchen	15	80-250	hängig-steil	SW
-6.3.2.048	Mosel	Burg Cochem	Eller	Q547805	Grafschaft		Pfirsichgarten	9	80-250	hängig-steil	S-WSW
-6.3.2.049	Mosel	Burg Cochem	Eller	Q547805	Grafschaft		Schützenlay	1	80-200	steil	SO
-6.3.2.050	Mosel	Burg Cochem	Neef	Q572494	Grafschaft		Petersberg	9	95-170	hängig-steil	SW
-6.3.2.051	Mosel	Burg Cochem	Neef	Q572494	Grafschaft		Rosenberg	18	95-170	hängig-steil	W
-6.3.2.052	Mosel	Burg Cochem	Nehren	Q572471	Grafschaft		Römerberg	72	90-240	hängig-steil	S-SSO
-6.3.2.053	Mosel	Burg Cochem	St. Aldegund	Q653902	Grafschaft		Himmelreich	5	95-160	steil	OSO
-6.3.2.054	Mosel	Burg Cochem	St. Aldegund	Q653902	Grafschaft		Klosterkammer	11	95-270	hängig-steil	O-SSO
-6.3.2.055	Mosel	Burg Cochem	St. Aldegund	Q653902	Grafschaft		Palmberg-Terrassen	2	95-270	steil	SO
-6.3.2.056	Mosel	Burg Cochem	Zell	Q187500	Grafschaft			1	80-280		
-6.3.2.057	Mosel	Burg Cochem	Eller	Q547805	Grafschaft		Kapplay	1	170-270	steil	SW
-6.3.3	Mosel	Burg Cochem			Rosenhang			292	80-270		
-6.3.3.058	Mosel	Burg Cochem	Beilstein	Q652238	Rosenhang		Schloßberg	3	86-240	hängig-steil	SW + WNW
-6.3.3.059	Mosel	Burg Cochem	Bremm	Q113378	Rosenhang		Abtei Kloster Stuben	14	95-180	hängig	W
-6.3.3.060	Mosel	Burg Cochem	Briedern	Q1517	Rosenhang		Kapellenberg	1	95-180	steil	SW
-6.3.3.061	Mosel	Burg Cochem	Briedern	Q1517	Rosenhang		Römergarten	36	92-110	hängig	NW
-6.3.3.062	Mosel	Burg Cochem	Briedern	Q1517	Rosenhang		Servatiusberg	6	100-120	hängig	NO
-6.3.3.063	Mosel	Burg Cochem	Bruttig-Fankel	Q574161	Rosenhang		Kapellenberg	32	100-130	hängig	WNW
-6.3.3.064	Mosel	Burg Cochem	Fankel	Q574161	Rosenhang		Layenberg	11	70-170	steil	WSW
-6.3.3.065	Mosel	Burg Cochem	Bruttig	Q574161	Rosenhang		Rathausberg	10	90-170	hängig-steil	SO-W
-6.3.3.066	Mosel	Burg Cochem	Cond	Q502749	Rosenhang		Rosenberg	3	100-200	hängig-steil	WSW
-6.3.3.067	Mosel	Burg Cochem	Bruttig	Q574161	Rosenhang		Pfarrgarten	6	70-170	steil	S-WSW
-6.3.3.068	Mosel	Burg Cochem	Cond	Q502749	Rosenhang		Arzlay	1	90-200	hängig-steil	W
-6.3.3.069	Mosel	Burg Cochem	Cond	Q502749	Rosenhang		Nikolausberg	6	90-150	hängig-steil	S
-6.3.3.070	Mosel	Burg Cochem	Fankel	Q574161	Rosenhang		Rosenberg	7	70-170	steil	SW
-6.3.3.071	Mosel	Burg Cochem	Ellenz	Q566958	Rosenhang		Silberberg	3	80-130	steil	SO
-6.3.3.072	Mosel	Burg Cochem	Ellenz	Q566958	Rosenhang		Woogberg	1	80-130	steil	SW
-6.3.3.073	Mosel	Burg Cochem	Mesenich	Q610893	Rosenhang		Abteiberg	40	89-190	hängig	WSW-WN
-6.3.3.074	Mosel	Burg Cochem	Mesenich	Q610893	Rosenhang		Deuslay	7	100-270	steil	SW
-6.3.3.075	Mosel	Burg Cochem	Mesenich	Q610893	Rosenhang		Goldgrübchen	20	100-230	hängig-steil	WSW
-6.3.3.076	Mosel	Burg Cochem	Senheim	Q653097	Rosenhang		Bienengarten	4	95-120	hängig-steil	WNW
-6.3.3.077	Mosel	Burg Cochem	Senheim	Q653097	Rosenhang		Rosenberg	9	100-140	hängig-steil	NNW
-6.3.3.078	Mosel	Burg Cochem	Senheim	Q653097	Rosenhang		Vogteiberg	2	110-160	hängig-steil	W-NW
-6.3.3.079	Mosel	Burg Cochem	Senheim	Q653097	Rosenhang		Wahrsager	3	100-140	hängig-steil	SSO
-6.3.3.080	Mosel	Burg Cochem	Trais	Q6566110	Rosenhang		Greth	1	80-220	hängig-steil	S-WSW
-6.3.3.081	Mosel	Burg Cochem	Trais	Q6566110	Rosenhang		Kapellenberg	10	80-200	hängig-steil	SO-S-NW
-6.3.3.082	Mosel	Burg Cochem	Trais	Q6566110	Rosenhang		Treppchen	2	80-165	hängig-steil	SO-S, W
-6.3.3.083	Mosel	Burg Cochem	Valwig	Q656297	Rosenhang		Herrenberg	20	90-200	hängig-steil	SO-SW
-6.3.3.084	Mosel	Burg Cochem	Valwig	Q656297	Rosenhang		Schwarzenberg	8	90-150	hängig-steil	SSO
-6.3.3.085	Mosel	Burg Cochem	Eller	Q547805	Rosenhang		Stubener Klostersegen	11	89-180	hängig-steil	NNO + S-
-6.3.3.086	Mosel	Burg Cochem	Senheim	Q653097	Rosenhang		Lay	15	89-135	hängig-steil	S-SW
-6.3.4	Mosel	Burg Cochem			Schwarze Katz	Q2253665		333	100-200		
-6.3.4.087	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	Burglay-Felsen	28	100-200	hängig-steil	SW
-6.3.4.088	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	Domherrenberg	25	100-200	hängig-steil	SO
-6.3.4.089	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	Geisberg	9	100-200	hängig-steil	SO
-6.3.4.090	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	Kreuzlay	20	100-200	hängig-steil	SSO
-6.3.4.091	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	Nussberg	10	100-200	hängig-steil	SSW
-6.3.4.092	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	Petersborn-Kabertchen	12	100-200	hängig-steil	WSW
-6.3.4.093	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	Pommerell	10	100-200	hängig-steil	WSW
-6.3.4.094	Mosel	Burg Cochem	Kaimt	Q187500	Schwarze Katz	Q2253665	Marienburger	11	100-200	hängig-steil	NNO
-6.3.4.095	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	Römerquelle	71	100-200	hängig-steil	O-SO
-6.3.4.096	Mosel	Burg Cochem	Kaimt	Q187500	Schwarze Katz	Q2253665	Rosenborn	23	100-180	hängig-steil	NO-O
-6.3.4.097	Mosel	Burg Cochem	Merl	Q1921880	Schwarze Katz	Q2253665	Adler	16	100-200	hängig-steil	S-SSW
-6.3.4.098	Mosel	Burg Cochem	Merl	Q1921880	Schwarze Katz	Q2253665	Fettgarten	18	100-200	hängig-steil	SSO
-6.3.4.099	Mosel	Burg Cochem	Merl	Q1921880	Schwarze Katz	Q2253665	Klosterberg	34	100-200	hängig-steil	SO
-6.3.4.100	Mosel	Burg Cochem	Merl	Q1921880	Schwarze Katz	Q2253665	Königslay-Terrassen	8	100-200	steil	S
-6.3.4.101	Mosel	Burg Cochem	Merl	Q1921880	Schwarze Katz	Q2253665	Stephansberg	33	100-200	hängig-steil	SSO
-6.3.4.102	Mosel	Burg Cochem	Merl	Q1921880	Schwarze Katz	Q2253665	Sonneck	5	100-160	hängig	SW
-6.3.5	Mosel	Burg Cochem	Winningen	Q822358	Weinhex			251	65-210		
-6.3.5.103	Mosel	Burg Cochem	Alken	Q305288	Weinhex		Bleidenberg	4	65-200	hängig-steil	S-WSW
-6.3.5.104	Mosel	Burg Cochem	Alken	Q305288	Weinhex		Burgberg	10	70-170	hängig-steil	WNW
-6.3.5.105	Mosel	Burg Cochem	Alken	Q305288	Weinhex		Hunnenstein	3	65-200	hängig-steil	SW-WNW
-6.3.5.106	Mosel	Burg Cochem	Burgen	Q679415	Weinhex		Bischofstein	1	85-135	hängig	SW-WNW
-6.3.5.107	Mosel	Burg Cochem	Dieblich	Q565313	Weinhex		Heilgraben	2	100-200	hängig-steil	SW
-6.3.5.108	Mosel	Burg Cochem	Güls	Q1777938	Weinhex		Bienengarten	7	80-140	hängig-steil	SO
-6.3.5.109	Mosel	Burg Cochem	Güls	Q1777938	Weinhex		Königsfels	15	65-110	hängig-steil	SO
-6.3.5.110	Mosel	Burg Cochem	Güls	Q1777938	Weinhex		Marienberg	4	75-135	hängig-steil	SO
-6.3.5.111	Mosel	Burg Cochem	Hatzenport	Q554243	Weinhex		Burg Bischofstein	5	80-200	hängig-steil	SO
-6.3.5.112	Mosel	Burg Cochem	Hatzenport	Q554243	Weinhex		Kirchberg	6	82-200	steil	S
-6.3.5.113	Mosel	Burg Cochem	Hatzenport	Q554243	Weinhex		Stolzenberg	2	82-200	steil	S
-6.3.5.114	Mosel	Burg Cochem	Kattenes	Q1736818	Weinhex		Steinchen	3	70-170	hängig-steil	OSO
-6.3.5.115	Mosel	Burg Cochem	Kattenes	Q1736818	Weinhex		Fahrberg	1	80-150	steil	O
-6.3.5.116	Mosel	Burg Cochem	Kobern	Q553347	Weinhex		Fahrberg	4	68-160	steil	SO
-6.3.5.117	Mosel	Burg Cochem	Gondorf	Q553347	Weinhex		Fuchshöhle	2	85-150	steil	SW
-6.3.5.118	Mosel	Burg Cochem	Gondorf	Q553347	Weinhex		Gäns	2	70-140	steil	SSO
-6.3.5.119	Mosel	Burg Cochem	Gondorf	Q553347	Weinhex		Kehrberg	1	90-170	steil	SSW
-6.3.5.120	Mosel	Burg Cochem	Gondorf	Q553347	Weinhex		Schloßberg	10	70-160	steil	O-S
-6.3.5.121	Mosel	Burg Cochem	Kobern	Q553347	Weinhex		Weißenberg	8	70-180	hängig-steil	SO-SSW
-6.3.5.122	Mosel	Burg Cochem	Lay	Q1328018	Weinhex		Hamm 	9	67-140	hängig-steil	WSW
-6.3.5.123	Mosel	Burg Cochem	Lay	Q1328018	Weinhex		Hubertusborn	3	75-100	hängig-steil	WSW-WN
-6.3.5.124	Mosel	Burg Cochem	Lehmen	Q567585	Weinhex		Ausoniusstein	3	80-180	hängig-steil	SO
-6.3.5.125	Mosel	Burg Cochem	Lehmen	Q567585	Weinhex		Klosterberg	10	90-170	hängig-steil	SSO
-6.3.5.126	Mosel	Burg Cochem	Lehmen	Q567585	Weinhex		Lay	2	80-150	hängig-steil	
-6.3.5.127	Mosel	Burg Cochem	Lehmen	Q567585	Weinhex		Würzlay	7	80-180	hängig-steil	O-SO
-6.3.5.128	Mosel	Burg Cochem	Löf	Q553970	Weinhex		Goldblume	4	75-170	hängig-steil	SO-S
-6.3.5.129	Mosel	Burg Cochem	Löf	Q553970	Weinhex		Sonnenring	3	75-180	hängig-steil	OSO
-6.3.5.130	Mosel	Burg Cochem	Niederfell	Q553445	Weinhex		Fächern	9	72-140	hängig-steil	W
-6.3.5.131	Mosel	Burg Cochem	Niederfell	Q553445	Weinhex		Goldlay	3	73-140	hängig-steil	WNW
-6.3.5.132	Mosel	Burg Cochem	Niederfell	Q553445	Weinhex		Kahllay	4	72-140	hängig-steil	WSW
-6.3.5.133	Mosel	Burg Cochem	Oberfell	Q647068	Weinhex		Brauneberg	1	90-200	hängig-steil	S
-6.3.5.134	Mosel	Burg Cochem	Oberfell	Q647068	Weinhex		Rosenberg	1	75-200	hängig-steil	W-NW
-6.3.5.135	Mosel	Burg Cochem	Winningen	Q822358	Weinhex		Brückstück	8	70-200	steil	SSO
-6.3.5.136	Mosel	Burg Cochem	Winningen	Q822358	Weinhex		Domgarten	56	70-170	hängig-steil	SO-S
-6.3.5.137	Mosel	Burg Cochem	Winningen	Q822358	Weinhex		Hamm	12	75-210	steil	S-SW
-6.3.5.138	Mosel	Burg Cochem	Winningen	Q822358	Weinhex		Röttgen	11	70-180	steil	SSO
-6.3.5.139	Mosel	Burg Cochem	Brodenbach	Q168070	Weinhex		Neuwingert	1	80-140	hängig	SO
-6.3.5.140	Mosel	Burg Cochem	Winningen	Q822358	Weinhex		Uhlen	14	65-210	steil	SW-S
-6,4	Mosel	Ruwertal						190	130-330		
-6.4.1.	Mosel	Ruwertal	Trier	Q3138	großlagenfrei			190	130-330		
-6.4.1.001	Mosel	Ruwertal	Morscheid	Q656840	großlagenfrei		Dominikanerberg	5	200-280	steil	SW
-6.4.1.002	Mosel	Ruwertal	Kasel	Q659935	großlagenfrei		Herrenberg	7	180-280	hängig-steil	SSO-W
-6.4.1.003	Mosel	Ruwertal	Kasel	Q659935	großlagenfrei		Hitzlay	8	210-290	hängig-steil	SO-SW
-6.4.1.004	Mosel	Ruwertal	Kasel	Q659935	großlagenfrei		Kehrnagel	12	200-300	hängig-steil	SW
-6.4.1.005	Mosel	Ruwertal	Kasel	Q659935	großlagenfrei		Nies'chen	14	170-240	hängig-steil	SSW
-6.4.1.006	Mosel	Ruwertal	Kasel	Q659935	großlagenfrei		Timpert	1	210-230	hängig	SO
-6.4.1.007	Mosel	Ruwertal	Lorenzhof	Q659878	großlagenfrei		Felslay	3	130-190	hängig-steil	WSW
-6.4.1.008	Mosel	Ruwertal	Lorenzhof	Q659878	großlagenfrei		Mäuerchen	3	130-160	hängig-steil	SW
-6.4.1.009	Mosel	Ruwertal	Maximin Grünhaus	Q659878	großlagenfrei		Abtsberg	14	180-240	hängig	SO
-6.4.1.010	Mosel	Ruwertal	Maximin Grünhaus	Q659878	großlagenfrei		Bruderberg	1	137-180	hängig	SO
-6.4.1.011	Mosel	Ruwertal	Mertesdorf	Q659878	großlagenfrei		Herrenberg	30	130-240	hängig-steil	WSW
-6.4.1.012	Mosel	Ruwertal	Sommerau	Q631137	großlagenfrei		Schloßberg	5	180-280	steil	S
-6.4.1.013	Mosel	Ruwertal	Eitelsbach	Q316811	Römerlay		Marienholz	31	170-250	hängig-steil	SW-W
-6.4.1.014	Mosel	Ruwertal	Ruwer	Q316811	großlagenfrei		Maximiner	1	170-255	steil	OSO
-6.4.1.015	Mosel	Ruwertal	Waldrach	Q569807	großlagenfrei		Ehrenberg	4	250-330	hängig	SSW-W
-6.4.1.016	Mosel	Ruwertal	Waldrach	Q569807	großlagenfrei		Jesuitengarten	1	170-230	hängig-steil	SW
-6.4.1.017	Mosel	Ruwertal	Waldrach	Q569807	großlagenfrei		Krone	12	170-320	hängig-steil	SW
-6.4.1.018	Mosel	Ruwertal	Waldrach	Q569807	großlagenfrei		Laurentiusberg	5	170-280	hängig-steil	S
-6.4.1.019	Mosel	Ruwertal	Waldrach	Q569807	Römerlay		Meisenberg	9	180-320	hängig-steil	SO-S
-6.4.1.020	Mosel	Ruwertal	Waldrach	Q569807	großlagenfrei		Sonnenberg	7	260-320	steil	SW
-6.4.1.021	Mosel	Ruwertal	Eitelsbach	Q316811	großlagenfrei		Karthäuserhofberg	17	170-250	hängig-steil	SSO-SSW
-6,5	Mosel	Saar						729			
-6.5.1	Mosel	Saar			Scharzberg			729	130-380		
-6.5.1.001	Mosel	Saar	Filzen	Q47087896	Scharzberg		Herrenberg	5	155-210	hängig-steil	WSW
-6.5.1.002	Mosel	Saar	Wiltingen	Q161930	Scharzberg		Kupp	50	135-270	hängig-steil	SW
-6.5.1.003	Mosel	Saar	Ayl	Q186199	Scharzberg		Scheidterberg	3	145-320	hängig-steil	SO-S
-6.5.1.004	Mosel	Saar	Niedermennig	Q503185	Scharzberg		Herrenberg	6	200-280	hängig-steil	SSO
-6.5.1.005	Mosel	Saar	Filzen	Q47087896	Scharzberg		Pulchen	2	142-192	hängig-steil	W
-6.5.1.006	Mosel	Saar	Filzen	Q47087896	Scharzberg		Steinberger	4	160-240	hängig-steil	SO
-6.5.1.007	Mosel	Saar	Filzen	Q47087896	Scharzberg		Unterberg	6	140-170	hängig-steil	SO-S
-6.5.1.008	Mosel	Saar	Filzen	Q47087896	Scharzberg		Urbelt	4	150-220	steil	SW
-6.5.1.009	Mosel	Saar	Kanzem	Q569862	Scharzberg		Sonnenberg	19	134-250	hängig-steil	SW-WNW
-6.5.1.010	Mosel	Saar	Kanzem	Q569862	Scharzberg		Hörecker	1	140-250	steil	SO
-6.5.1.011	Mosel	Saar	Kanzem	Q569862	Scharzberg		Schloßberg	1	134-250	hängig-steil	O
-6.5.1.012	Mosel	Saar	Niedermennig	Q503185	Scharzberg		Sonnenberg	27	200-280	hängig-steil	SW
-6.5.1.013	Mosel	Saar	Kanzem	Q569862	Scharzberg		Altenberg	19	134-250	hängig-steil	SO
-6.5.1.014	Mosel	Saar	Kastel-Staadt	Q553490	Scharzberg		Maximiner Prälat	4	150-250	steil	SO-SSO
-6.5.1.015	Mosel	Saar	Könen	Q1795916	Scharzberg		Fels	3	142-240	hängig	O
-6.5.1.016	Mosel	Saar	Könen	Q1795916	Scharzberg		Kirchberg	1	140-240	hängig	O
-6.5.1.017	Mosel	Saar	Konz	Q503185	Scharzberg		Auf der Wiltinger Kupp	10	180-250	hängig-steil	SO-SW
-6.5.1.018	Mosel	Saar	Konz	Q503185	Scharzberg		Euchariusberg	7	160-250	hängig-steil	SW
-6.5.1.019	Mosel	Saar	Falkenstein	Q818576	Scharzberg		Hofberg	14	180-240	flach	
-6.5.1.020	Mosel	Saar	Konz	Q503185	Scharzberg		Karthäuser Klosterberg	3	140-250	hängig-steil	NO
-6.5.1.021	Mosel	Saar	Krettnach	Q503185	Scharzberg		Altenberg	20	220-300	hängig-steil	
-6.5.1.022	Mosel	Saar	Krettnach	Q503185	Scharzberg		Euchariusberg	41	220-300	hängig-steil	SW-W
-6.5.1.023	Mosel	Saar	Serrig	Q656819	Scharzberg		Herrenberg	21	160-360	steil	SSW
-6.5.1.024	Mosel	Saar	Ayl	Q186199	Scharzberg		Sonnenberg	21	190-220	steil	SO-S-WS
-6.5.1.025	Mosel	Saar	Oberemmel	Q47037444	Scharzberg		Agritiusberg	3	170-180	hängig	SO
-6.5.1.026	Mosel	Saar	Oberemmel	Q47037444	Scharzberg		Altenberg	11	200-320	hängig-steil	SO
-6.5.1.027	Mosel	Saar	Oberemmel	Q47037444	Scharzberg		Hütte	5	190-230	hängig-steil	SO
-6.5.1.028	Mosel	Saar	Oberemmel	Q47037444	Scharzberg		Karlsberg	32	190-260	hängig	SW
-6.5.1.029	Mosel	Saar	Oberemmel	Q47037444	Scharzberg		Raul	2	160-180	steil	SO
-6.5.1.030	Mosel	Saar	Oberemmel	Q47037444	Scharzberg		Rosenberg	32	170-270	hängig-steil	SW
-6.5.1.031	Mosel	Saar	Ockfen	Q643198	Scharzberg		Bockstein	53	160-300	hängig-steil	S-W+O-O
-6.5.1.032	Mosel	Saar	Ockfen	Q643198	Scharzberg		Geisberg	5	200-380	hängig-steil	SSO-S
-6.5.1.033	Mosel	Saar	Saarburg	Q543639	Scharzberg		Antoniusbrunnen	7	190-290	steil	S
-6.5.1.034	Mosel	Saar	Saarburg	Q543639	Scharzberg		Bergschlößchen	3	190-280	steil	SW-SO
-6.5.1.035	Mosel	Saar	Saarburg	Q543639	Scharzberg		Schloßberg	1	160-230	steil	O
-6.5.1.036	Mosel	Saar	Saarburg	Q543639	Scharzberg		Fuchs	6	180-310	steil	SO
-6.5.1.037	Mosel	Saar	Saarburg	Q543639	Scharzberg		Klosterberg	2	150-210	hängig-steil	SW
-6.5.1.038	Mosel	Saar	Saarburg	Q543639	Scharzberg		Kupp	10	170-310	steil	SO-SW
-6.5.1.039	Mosel	Saar	Saarburg	Q543639	Scharzberg		Rausch	9	160-240	steil	SO-S
-6.5.1.040	Mosel	Saar	Schoden	Q646456	Scharzberg		Herrenberg	9	120-250	hängig-steil	W-NW
-6.5.1.041	Mosel	Saar	Schoden	Q646456	Scharzberg		Saarfeilser Marienberg	3	140-175	steil	SSO
-6.5.1.042	Mosel	Saar	Serrig	Q656819	Scharzberg		Antoniusberg	9	160-240	hängig-steil	O
-6.5.1.043	Mosel	Saar	Serrig	Q656819	Scharzberg		Heiligenborn	6	240-310	steil	SSW
-6.5.1.044	Mosel	Saar	Ayl	Q186199	Scharzberg		Herrenberg	7	200-240	steil	SW
-6.5.1.045	Mosel	Saar	Ayl	Q186199	Scharzberg		Kupp	7	170-310	steil	SO-SW
-6.5.1.046	Mosel	Saar	Serrig	Q656819	Scharzberg		Schloß Saarsteiner	8	135-235	hängig-steil	W
-6.5.1.047	Mosel	Saar	Serrig	Q656819	Scharzberg		Schloß Saarsteiner Schloßberg	6	175-240	hängig-steil	SW
-6.5.1.048	Mosel	Saar	Serrig	Q656819	Scharzberg		Vogelsang	13	140-310	hängig-steil	SO-S
-6.5.1.049	Mosel	Saar	Serrig	Q656819	Scharzberg		Würtzberg	5	160-280	steil	SO
-6.5.1.050	Mosel	Saar	Wawern	Q565310	Scharzberg		Goldberg	8	170-263	hängig-steil	S-SW
-6.5.1.051	Mosel	Saar	Wawern	Q565310	Scharzberg		Herrenberger	3	170-263	hängig-steil	S
-6.5.1.052	Mosel	Saar	Wawern	Q565310	Scharzberg		Jesuitenberg	1	180-263	hängig-steil	SSO
-6.5.1.053	Mosel	Saar	Wawern	Q565310	Scharzberg		Ritterpfad	10	170-263	hängig-steil	SO-SW
-6.5.1.054	Mosel	Saar	Wiltingen	Q161930	Scharzberg		Braune Kupp	4	135-280	hängig-steil	SSW
-6.5.1.055	Mosel	Saar	Wiltingen	Q161930	Scharzberg		Braunfels	19	150-320	hängig-steil	SW+W
-6.5.1.056	Mosel	Saar	Wiltingen	Q161930	Scharzberg		Gottesfuß	3	160-260	steil	WSW-W
-6.5.1.057	Mosel	Saar	Wiltingen	Q161930	Scharzberg		Hölle	2	135-180	hängig-steil	SSO
-6.5.1.058	Mosel	Saar	Wiltingen	Q161930	Scharzberg		Klosterberg	42	160-310	hängig-steil	SW-W
-6.5.1.059	Mosel	Saar	Serrig	Q656819	Scharzberg		Kupp	7	160-200	hängig	S
-6.5.1.060	Mosel	Saar	Wiltingen	Q161930	Scharzberg		Rosenberg	23	160-290	hängig	WSW
-6.5.1.061	Mosel	Saar			Scharzberg			28	150-200	hängig-steil	O
-6.5.1.062	Mosel	Saar	Wiltingen	Q161930	Scharzberg		Schlangengraben	27	150-230	hängig-steil	OSO-S
-6.5.1.063	Mosel	Saar	Wiltingen	Q161930	Scharzberg		Schloßberg	3	150-200	hängig-steil	O
-6.5.1.064	Mosel	Saar	Pellingen	Q655962	Scharzberg		Herrgottsrock	1	300-370	hängig-steil	SO
-6.5.1.065	Mosel	Saar	Saarburg	Q543639	Scharzberg		Laurentiusberg	1	170-210	hängig	W
-6.5.1.066	Mosel	Saar	Niederleuken	Q543639	Scharzberg		Stirn	1	170-200	steil	OSO
-6.6.	Mosel	Moseltor						113			
-6.6.1.	Mosel	Moseltor			Schloß Bübingen			111	151-275		
-6.6.1.525	Mosel	Moseltor	Perl	Q662505	Schloß Bübingen		Hasenberg	13	180-240	hängig	W
-6.6.1.524	Mosel	Moseltor	Perl	Q662505	Schloß Bübingen		Quiriniusberg	25	162-212	hängig	SW-W
-6.6.1.522	Mosel	Moseltor	Sehndorf	Q2266381	Schloß Bübingen		Klosterberg	16	162-207	hängig	S-W
-6.2.1.164	Mosel	Moseltor	Sehndorf	Q2266381	Schloß Bübingen		Marienberg	24	225-275	hängig	S-W
-6.6.1.520	Mosel	Moseltor	Nennig	Q316804	Schloß Bübingen		Schloßberg	22	151-160	hängig	
-6.6.1.521	Mosel	Moseltor	Nennig	Q316804	Schloß Bübingen		Römerberg	11	190-220	hängig	S-W
+LN	WLV-ID	Reg.-Nr.	Status	Typ	Gebiet	Bereich	Leitgemeinde	Wikidata-ID (Leitgemeinde)	Großlage	Wikidata-ID (Großlage)	Ort	Wikidata-ID (Ort)	Einzellage	ha	über NN	Neigung	Exposition
+1	wlv-600000	6	aktuell	Gebiet	Mosel	k.A.	k.A.	k.A.	k.A.		k.A.	k.A.	k.A.	9080	65-380		
+2	wlv-610000	6.1	aktuell	Bereich	Mosel	Bernkastel	k.A.	k.A.	k.A.		k.A.	k.A.	k.A.	5984	90-320		
+3	wlv-611000	6.1.1	aktuell	Großlage	Mosel	Bernkastel	Bernkastel	Q155622	Badstube		k.A.	k.A.	k.A.	55	125-250		
+4	wlv-611001	6.1.1.001	aktuell	Einzellage	Mosel	Bernkastel	Bernkastel	Q155622	Badstube		k.A.	k.A.	Bratenhöfchen	18	130-250	hängig-steil	WSW
+5	wlv-611002	6.1.1.002	aktuell	Einzellage	Mosel	Bernkastel	Bernkastel	Q155622	Badstube		k.A.	k.A.	Doctor	3	125-200	steil	S-SSW
+6	wlv-611003	6.1.1.003	aktuell	Einzellage	Mosel	Bernkastel	Bernkastel	Q155622	Badstube		k.A.	k.A.	Graben	12	125-225	hängig-steil	WSW
+7	wlv-611004	6.1.1.004	aktuell	Einzellage	Mosel	Bernkastel	Bernkastel	Q155622	Badstube		k.A.	k.A.	Lay	10	115-135	steil	WSW
+8	wlv-611005	6.1.1.005	aktuell	Einzellage	Mosel	Bernkastel	Bernkastel	Q155622	Badstube		k.A.	k.A.	Matheisbildchen	10	135-190	hängig-steil	WSW
+9	wlv-611006	6.1.1.006	aktuell	Einzellage	Mosel	Bernkastel	Bernkastel	Q155622	Badstube		k.A.	k.A.	Alte Badstube am Doktorberg	2			
+10	wlv-612000	6.1.2	aktuell	Großlage	Mosel	Bernkastel	Bernkastel	Q155622	Kurfürstenlay		k.A.	k.A.	k.A.	1352	105-320		
+11	wlv-612007	6.1.2.007	aktuell	Einzellage	Mosel	Bernkastel	Bernkastel	Q155622	Kurfürstenlay		k.A.	k.A.	Schloßberg	23	120-300	hängig-steil	SW-W
+12	wlv-612008	6.1.2.008	aktuell	Einzellage	Mosel	Bernkastel	Bernkastel	Q155622	Kurfürstenlay		k.A.	k.A.	Johannisbrünnchen	12	150-300	steil	SWS-W
+13	wlv-612009	6.1.2.009	aktuell	Einzellage	Mosel	Bernkastel	Kues	Q155622	Kurfürstenlay		k.A.	k.A.	Kardinalsberg	56	110-240	hängig-steil	S
+14	wlv-612010	6.1.2.010	aktuell	Einzellage	Mosel	Bernkastel	Kues	Q155622	Kurfürstenlay		k.A.	k.A.	Rosenberg	6	130-250	hängig-steil	OSO
+15	wlv-612011	6.1.2.011	aktuell	Einzellage	Mosel	Bernkastel	Kues	Q155622	Kurfürstenlay		k.A.	k.A.	Weisenstein	15	110-150	hängig-steil	SSW
+16	wlv-612012	6.1.2.012	aktuell	Einzellage	Mosel	Bernkastel	Brauneberg	Q567156	Kurfürstenlay		k.A.	k.A.	Juffer	32	110-240	steil	SSO
+17	wlv-612013	6.1.2.013	aktuell	Einzellage	Mosel	Bernkastel	Brauneberg	Q567156	Kurfürstenlay		k.A.	k.A.	Juffer Sonnenuhr	11	110-240	steil	SSO
+18	wlv-612014	6.1.2.014	aktuell	Einzellage	Mosel	Bernkastel	Brauneberg	Q567156	Kurfürstenlay		k.A.	k.A.	Kammer	1	105-195	hängig-steil	SSO
+19	wlv-612015	6.1.2.015	aktuell	Einzellage	Mosel	Bernkastel	Brauneberg	Q567156	Kurfürstenlay		k.A.	k.A.	Klostergarten	53	160-260	hängig	W-WNW
+20	wlv-612016	6.1.2.016	aktuell	Einzellage	Mosel	Bernkastel	Brauneberg	Q567156	Kurfürstenlay		k.A.	k.A.	Mandelgraben	122	120-250	hängig-steil	SO
+21	wlv-612017	6.1.2.017	aktuell	Einzellage	Mosel	Bernkastel	Burgen	Q679415	Kurfürstenlay		k.A.	k.A.	Hasenläufer	30	180-200	hängig-steil	W
+22	wlv-612018	6.1.2.018	aktuell	Einzellage	Mosel	Bernkastel	Burgen	Q679415	Kurfürstenlay		k.A.	k.A.	Kirchberg	17	180-240	hängig-steil	OSO
+23	wlv-612019	6.1.2.019	aktuell	Einzellage	Mosel	Bernkastel	Burgen	Q679415	Kurfürstenlay		k.A.	k.A.	Römerberg	7	190-240	steil	SO
+24	wlv-612020	6.1.2.020	aktuell	Einzellage	Mosel	Bernkastel	Kesten	Q569300	Kurfürstenlay		k.A.	k.A.	Herrenberg	61	110-300	hängig-steil	O-S
+25	wlv-612021	6.1.2.021	aktuell	Einzellage	Mosel	Bernkastel	Kesten	Q569300	Kurfürstenlay		k.A.	k.A.	Paulinsberg	36	120-220	hängig-steil	O-S
+26	wlv-612022	6.1.2.022	aktuell	Einzellage	Mosel	Bernkastel	Kesten	Q569300	Kurfürstenlay		k.A.	k.A.	Paulinshofberger	16	125-220	steil	SSO
+27	wlv-612023	6.1.2.023	aktuell	Einzellage	Mosel	Bernkastel	Lieser	Q646892	Kurfürstenlay		k.A.	k.A.	Schloßberg	85	130-240	hängig-steil	SW+S+ON
+28	wlv-612024	6.1.2.024	aktuell	Einzellage	Mosel	Bernkastel	Maring-Noviand	Q566744	Kurfürstenlay		k.A.	k.A.	Honigberg	56	150-260	hängig-steil	SSO-SSW
+29	wlv-612025	6.1.2.025	aktuell	Einzellage	Mosel	Bernkastel	Maring-Noviand	Q566744	Kurfürstenlay		k.A.	k.A.	Klosterberg	27	160-260	hängig-steil	SSO
+30	wlv-612026	6.1.2.026	aktuell	Einzellage	Mosel	Bernkastel	Maring-Noviand	Q566744	Kurfürstenlay		k.A.	k.A.	Römerpfad	24	130-150	hängig-steil	S
+31	wlv-612027	6.1.2.027	aktuell	Einzellage	Mosel	Bernkastel	Maring-Noviand	Q566744	Kurfürstenlay		k.A.	k.A.	Sonnenuhr	35	140-240	hängig-steil	SW
+32	wlv-612028	6.1.2.028	aktuell	Einzellage	Mosel	Bernkastel	Mühlheim	Q667192	Kurfürstenlay		k.A.	k.A.	Amtgarten	1	110-113	hängig	NW
+33	wlv-612029	6.1.2.029	aktuell	Einzellage	Mosel	Bernkastel	Mühlheim	Q667192	Kurfürstenlay		k.A.	k.A.	Elisenberg	4	180-210	hängig-steil	SW
+34	wlv-612030	6.1.2.030	aktuell	Einzellage	Mosel	Bernkastel	Mühlheim	Q667192	Kurfürstenlay		k.A.	k.A.	Helenenkloster	1	125-140	hängig	SW
+35	wlv-612031	6.1.2.031	aktuell	Einzellage	Mosel	Bernkastel	Mühlheim	Q667192	Kurfürstenlay		k.A.	k.A.	Sonnenlay	52	130-260	hängig-steil	W
+36	wlv-612032	6.1.2.032	aktuell	Einzellage	Mosel	Bernkastel	Monzel	Q648793	Kurfürstenlay		k.A.	k.A.	Kätzchen	81	150-300	hängig-steil	S
+37	wlv-612033	6.1.2.033	aktuell	Einzellage	Mosel	Bernkastel	Osann	Q648793	Kurfürstenlay		k.A.	k.A.	Kirchlay	18	221-255	hängig-steil	S-SSW
+38	wlv-612034	6.1.2.034	aktuell	Einzellage	Mosel	Bernkastel	Monzel	Q648793	Kurfürstenlay		k.A.	k.A.	Paulinslay	33	160-320	hängig	NW
+39	wlv-612035	6.1.2.035	aktuell	Einzellage	Mosel	Bernkastel	Osann	Q648793	Kurfürstenlay		k.A.	k.A.	Rosenberg	92	160-320	hängig-steil	S-WSW
+40	wlv-612036	6.1.2.036	aktuell	Einzellage	Mosel	Bernkastel	Veldenz	Q569812	Kurfürstenlay		k.A.	k.A.	Carlsberg	1	140-150	hängig	SW
+41	wlv-612037	6.1.2.037	aktuell	Einzellage	Mosel	Bernkastel	Veldenz	Q569812	Kurfürstenlay		k.A.	k.A.	Grafschafter Sonnenberg	30	140-260	hängig-steil	O
+42	wlv-612038	6.1.2.038	aktuell	Einzellage	Mosel	Bernkastel	Veldenz	Q569812	Kurfürstenlay		k.A.	k.A.	Kirchberg	67	140-300	hängig-steil	S-SW
+43	wlv-612039	6.1.2.039	aktuell	Einzellage	Mosel	Bernkastel	Veldenz	Q569812	Kurfürstenlay		k.A.	k.A.	Mühlberg	1	180-220	steil	S-W
+44	wlv-612040	6.1.2.040	aktuell	Einzellage	Mosel	Bernkastel	Wintrich	Q373778	Kurfürstenlay		k.A.	k.A.	Großer Herrgott	94	120-200	hängig-steil	S-W-NW
+45	wlv-612041	6.1.2.041	aktuell	Einzellage	Mosel	Bernkastel	Wintrich	Q373778	Kurfürstenlay		k.A.	k.A.	Ohligsberg	7	120-220	hängig-steil	SW-W
+46	wlv-612042	6.1.2.042	aktuell	Einzellage	Mosel	Bernkastel	Wintrich	Q373778	Kurfürstenlay		k.A.	k.A.	Stefanslay	47	115-200	hängig	WNW
+47	wlv-612043	6.1.2.043	aktuell	Einzellage	Mosel	Bernkastel	Bernkastel	Q155622	Kurfürstenlay		k.A.	k.A.	Stephanus-Rosengärtchen	1	150-250	steil	SW
+48	wlv-612044	6.1.2.044	aktuell	Einzellage	Mosel	Bernkastel	Wintrich	Q373778	Kurfürstenlay		k.A.	k.A.	Geierslay	4	110-260	steil	W
+49	wlv-612045	6.1.2.045	aktuell	Einzellage	Mosel	Bernkastel	Lieser	Q646892	Kurfürstenlay		k.A.	k.A.	Rosenlay	17	110-200	hängig-steil	S-SW
+50	wlv-612046	6.1.2.046	aktuell	Einzellage	Mosel	Bernkastel	Lieser	Q646892	Kurfürstenlay		k.A.	k.A.	Niederberg-Helden	29	120-240	steil	SSW
+51	wlv-612047	6.1.2.047	aktuell	Einzellage	Mosel	Bernkastel	k.A.	k.A.	Kurfürstenlay		k.A.	k.A.	k.A.	11	180-210	hängig-steil	SW
+52	wlv-612048	6.1.2.048	aktuell	Einzellage	Mosel	Bernkastel	Andel	Q155622	Kurfürstenlay		k.A.	k.A.	Goldschatz	4	110-150	hängig	NNO
+53	wlv-612049	6.1.2.049	aktuell	Einzellage	Mosel	Bernkastel	Maring-Noviand	Q566744	Kurfürstenlay		k.A.	k.A.	Lambertuslay	32	150-240	hängig-steil	SO
+54	wlv-613000	6.1.3	aktuell	Großlage	Mosel	Bernkastel	Piesport	Q375762	Michelsberg		k.A.	k.A.	k.A.	1106	110-300		
+55	wlv-613050	6.1.3.050	aktuell	Einzellage	Mosel	Bernkastel	Minheim	Q524796	Michelsberg		k.A.	k.A.	Burglay	17	120-260	hängig-steil	O-S
+56	wlv-613051	6.1.3.051	aktuell	Einzellage	Mosel	Bernkastel	Minheim	Q524796	Michelsberg		k.A.	k.A.	Kapellchen	47	120-220	hängig-steil	ONO-SO
+57	wlv-613052	6.1.3.052	aktuell	Einzellage	Mosel	Bernkastel	Minheim	Q524796	Michelsberg		k.A.	k.A.	Rosenberg	70	120-220	hängig-steil	SO
+58	wlv-613053	6.1.3.053	aktuell	Einzellage	Mosel	Bernkastel	Neumagen	Q572352	Michelsberg		k.A.	k.A.	Engelgrube	53	120-170	hängig	W
+59	wlv-613054	6.1.3.054	aktuell	Einzellage	Mosel	Bernkastel	Piesport	Q375762	Michelsberg		k.A.	k.A.	Grafenberg	8	120-250	steil	O-OSO
+60	wlv-613055	6.1.3.055	aktuell	Einzellage	Mosel	Bernkastel	Dhron	Q572352	Michelsberg		k.A.	k.A.	Großer Hengelberg	1	140-180	steil	SSW
+61	wlv-613056	6.1.3.056	aktuell	Einzellage	Mosel	Bernkastel	Dhron	Q572352	Michelsberg		k.A.	k.A.	Hofberger	85	120-200	steil	SW
+62	wlv-613057	6.1.3.057	aktuell	Einzellage	Mosel	Bernkastel	Neumagen	Q572352	Michelsberg		k.A.	k.A.	Laudamusberg	27	120-260	hängig-steil	SSW-W
+63	wlv-613058	6.1.3.058	aktuell	Einzellage	Mosel	Bernkastel	Neumagen	Q572352	Michelsberg		k.A.	k.A.	Rosengärtchen	26	120-265	steil	SW-W
+64	wlv-613059	6.1.3.059	aktuell	Einzellage	Mosel	Bernkastel	Dhron	Q572352	Michelsberg		k.A.	k.A.	Roterd	48	120-290	hängig-steil	W
+65	wlv-613060	6.1.3.060	aktuell	Einzellage	Mosel	Bernkastel	Neumagen	Q572352	Michelsberg		k.A.	k.A.	Sonnenuhr	1	130-170	steil	SW
+66	wlv-613061	6.1.3.061	aktuell	Einzellage	Mosel	Bernkastel	Piesport	Q375762	Michelsberg		k.A.	k.A.	Domherr	4	120-150	steil	SSO
+67	wlv-613062	6.1.3.062	aktuell	Einzellage	Mosel	Bernkastel	Piesport	Q375762	Michelsberg		k.A.	k.A.	Falkenberg	32	150-300	hängig-steil	SO-S
+68	wlv-613063	6.1.3.063	aktuell	Einzellage	Mosel	Bernkastel	Niederemmel	Q375762	Michelsberg		k.A.	k.A.	Gärtchen	1	190-220	steil	SW
+69	wlv-613064	6.1.3.064	aktuell	Einzellage	Mosel	Bernkastel	Piesport	Q375762	Michelsberg		k.A.	k.A.	Goldtröpfchen	66	125-160	steil	SO-S-SW
+70	wlv-613065	6.1.3.065	aktuell	Einzellage	Mosel	Bernkastel	Piesport	Q375762	Michelsberg		k.A.	k.A.	Günterslay	27	150-290	steil	S-W
+71	wlv-613066	6.1.3.066	aktuell	Einzellage	Mosel	Bernkastel	Piesport	Q375762	Michelsberg		k.A.	k.A.	Schubertslay	1	125-150	steil	SSO
+72	wlv-613067	6.1.3.067	aktuell	Einzellage	Mosel	Bernkastel	Piesport	Q375762	Michelsberg		k.A.	k.A.	Treppchen	291	120-260	hängig-steil	O-N-W
+73	wlv-613068	6.1.3.068	aktuell	Einzellage	Mosel	Bernkastel	Rivenich	Q552448	Michelsberg		k.A.	k.A.	Brauneberg	6	170-237	hängig-steil	SW
+74	wlv-613069	6.1.3.069	aktuell	Einzellage	Mosel	Bernkastel	Rivenich	Q552448	Michelsberg		k.A.	k.A.	Geisberg	6	240-300	hängig-steil	S-W
+75	wlv-613070	6.1.3.070	aktuell	Einzellage	Mosel	Bernkastel	Rivenich	Q552448	Michelsberg		k.A.	k.A.	Niederberg	19	140-240	hängig-steil	S-W
+76	wlv-613071	6.1.3.071	aktuell	Einzellage	Mosel	Bernkastel	Rivenich	Q552448	Michelsberg		k.A.	k.A.	Rosenberg	31	220-300	hängig-steil	W-NW
+77	wlv-613072	6.1.3.072	aktuell	Einzellage	Mosel	Bernkastel	Trittenheim	Q662479	Michelsberg		k.A.	k.A.	Altärchen	167	120-255	hängig-steil	SSO-W
+78	wlv-613073	6.1.3.073	aktuell	Einzellage	Mosel	Bernkastel	Trittenheim	Q662479	Michelsberg		k.A.	k.A.	Apotheke	67	120-240	hängig-steil	WSW-S-O
+79	wlv-613074	6.1.3.074	aktuell	Einzellage	Mosel	Bernkastel	Trittenheim	Q662479	Michelsberg		k.A.	k.A.	Felsenkopf	1	120-140	steil	WSW
+80	wlv-613075	6.1.3.075	aktuell	Einzellage	Mosel	Bernkastel	Trittenheim	Q662479	Michelsberg		k.A.	k.A.	Leiterchen	1	160-180	steil	W
+81	wlv-613076	6.1.3.076	aktuell	Einzellage	Mosel	Bernkastel	Niederemmel	Q375762	Michelsberg		k.A.	k.A.	Kreuzwingert	1	160-210	steil	SSW
+82	wlv-613077	6.1.3.077	aktuell	Einzellage	Mosel	Bernkastel	Dhron	Q572352	Michelsberg		k.A.	k.A.	Häs'chen	1	120-220	steil	S
+83	wlv-613078	6.1.3.078	aktuell	Einzellage	Mosel	Bernkastel	Neumagen	Q572352	Michelsberg		k.A.	k.A.	Nußwingert	1	110-180	steil	OSO
+84	wlv-614000	6.1.4	aktuell	Großlage	Mosel	Bernkastel			Münzlay		k.A.	k.A.	k.A.	353	110-220	steil	O
+85	wlv-614079	6.1.4.079	aktuell	Einzellage	Mosel	Bernkastel	Graach	Q648808	Münzlay		k.A.	k.A.	Abtsberg	12	260-320	steil	SSW
+86	wlv-614080	6.1.4.080	aktuell	Einzellage	Mosel	Bernkastel	Graach	Q648808	Münzlay		k.A.	k.A.	Domprobst	19	130-260	steil	SW
+87	wlv-614081	6.1.4.081	aktuell	Einzellage	Mosel	Bernkastel	Graach	Q648808	Münzlay		k.A.	k.A.	Himmelreich	76	110-260	steil	SW
+88	wlv-614082	6.1.4.082	aktuell	Einzellage	Mosel	Bernkastel	Graach	Q648808	Münzlay		k.A.	k.A.	Josephshöfer	5	120-170	hängig-steil	SSW
+89	wlv-614083	6.1.4.083	aktuell	Einzellage	Mosel	Bernkastel	Wehlen	Q155622	Münzlay		k.A.	k.A.	Nonnenberg	45	110-240	hängig-steil	NO
+90	wlv-614084	6.1.4.084	aktuell	Einzellage	Mosel	Bernkastel	Wehlen	Q155622	Münzlay		k.A.	k.A.	Sonnenuhr	44	109-190	steil	SSW
+91	wlv-614085	6.1.4.085	aktuell	Einzellage	Mosel	Bernkastel	Zeltingen	Q189241	Münzlay		k.A.	k.A.	Deutschherrenberg	12	110-240	steil	O
+92	wlv-614086	6.1.4.086	aktuell	Einzellage	Mosel	Bernkastel	Zeltingen	Q189241	Münzlay		k.A.	k.A.	Himmelreich	88	110-220	hängig-steil	SW-WNW
+93	wlv-614087	6.1.4.087	aktuell	Einzellage	Mosel	Bernkastel	Zeltingen	Q189241	Münzlay		k.A.	k.A.	Schloßberg	16	110-220	steil	SW
+94	wlv-614088	6.1.4.088	aktuell	Einzellage	Mosel	Bernkastel	Zeltingen	Q189241	Münzlay		k.A.	k.A.	Sonnenuhr	17	110-160	steil	SSW
+95	wlv-614089	6.1.4.089	aktuell	Einzellage	Mosel	Bernkastel	Wehlen	Q155622	Münzlay		k.A.	k.A.	Klosterberg	12	210-240	steil	SO-S
+96	wlv-614090	6.1.4.090	aktuell	Einzellage	Mosel	Bernkastel	Wehlen	Q155622	Münzlay		k.A.	k.A.	Abtei	3	110-220	hängig-steil	ONO
+97	wlv-614091	6.1.4.091	aktuell	Einzellage	Mosel	Bernkastel	Wehlen	Q155622	Münzlay		k.A.	k.A.	Rosenberg	4	200-280	steil	SSW
+98	wlv-615000	6.1.5	aktuell	Großlage	Mosel	Bernkastel	Kröv	Q553171	Nacktarsch		k.A.	k.A.	k.A.	185	100-300		
+99	wlv-615092	6.1.5.092	aktuell	Einzellage	Mosel	Bernkastel	Kövenig	Q1796794	Nacktarsch		k.A.	k.A.	Burglay	2	100-200	steil	O
+100	wlv-615093	6.1.5.093	aktuell	Einzellage	Mosel	Bernkastel	Kövenig	Q1796794	Nacktarsch		k.A.	k.A.	Herrenberg	3	110-230	hängig-steil	O
+101	wlv-615094	6.1.5.094	aktuell	Einzellage	Mosel	Bernkastel	Kröv	Q553171	Nacktarsch		k.A.	k.A.	Kirchlay	48	100-300	hängig-steil	SO
+102	wlv-615095	6.1.5.095	aktuell	Einzellage	Mosel	Bernkastel	Kröv	Q553171	Nacktarsch		k.A.	k.A.	Letterlay	21	110-170	steil	S
+103	wlv-615096	6.1.5.096	aktuell	Einzellage	Mosel	Bernkastel	Kröv	Q553171	Nacktarsch		k.A.	k.A.	Paradies	94	100-300	hängig-steil	SO
+104	wlv-615097	6.1.5.097	aktuell	Einzellage	Mosel	Bernkastel	Kröv	Q553171	Nacktarsch		k.A.	k.A.	Steffensberg	17	110-280	hängig-steil	S-SSW
+105	wlv-616000	6.1.6	aktuell	Großlage	Mosel	Bernkastel	Longuich	Q569606	Propstberg		k.A.	k.A.	k.A.	448	120-300		
+106	wlv-616098	6.1.6.098	aktuell	Einzellage	Mosel	Bernkastel	Fell	Q659890	Propstberg		k.A.	k.A.	Maximiner Burgberg	80	130-300	hängig-steil	S-WNW
+107	wlv-616099	6.1.6.099	aktuell	Einzellage	Mosel	Bernkastel	Kenn	Q174435	Propstberg		k.A.	k.A.	Held	9	120-180	hängig-steil	OSO
+108	wlv-616100	6.1.6.100	aktuell	Einzellage	Mosel	Bernkastel	Kenn	Q174435	Propstberg		k.A.	k.A.	Maximiner Hofgarten	7	140-250	steil	SW-NW
+109	wlv-616101	6.1.6.101	aktuell	Einzellage	Mosel	Bernkastel	Longuich	Q569606	Propstberg		k.A.	k.A.	Hirschlay	107	125-150	hängig-steil	ONO-SO
+110	wlv-616102	6.1.6.102	aktuell	Einzellage	Mosel	Bernkastel	Longuich	Q569606	Propstberg		k.A.	k.A.	Maximiner Herrenberg	12	125-150	steil	SW
+111	wlv-616103	6.1.6.103	aktuell	Einzellage	Mosel	Bernkastel	Riol	Q553441	Propstberg		k.A.	k.A.	Römerberg	140	125-260	hängig	N-NO
+112	wlv-616104	6.1.6.104	aktuell	Einzellage	Mosel	Bernkastel	Schweich	Q212570	Propstberg		k.A.	k.A.	Annaberg	26	120-200	hängig-steil	SSW
+113	wlv-616105	6.1.6.105	aktuell	Einzellage	Mosel	Bernkastel	Schweich	Q212570	Propstberg		k.A.	k.A.	Burgmauer	41	150-300	hängig-steil	S-W
+114	wlv-616106	6.1.6.106	aktuell	Einzellage	Mosel	Bernkastel	Schweich	Q212570	Propstberg		k.A.	k.A.	Herrenberg	26	200-300	hängig-steil	SW
+115	wlv-617000	6.1.7	aktuell	Großlage	Mosel	Bernkastel			St. Michael		k.A.	k.A.	k.A.	1368	120-320		
+116	wlv-617107	6.1.7.107	aktuell	Einzellage	Mosel	Bernkastel	Bekond	Q569708	St. Michael		k.A.	k.A.	Brauneberg	45	150-240	hängig-steil	SW
+117	wlv-617108	6.1.7.108	aktuell	Einzellage	Mosel	Bernkastel	Bekond	Q569708	St. Michael		k.A.	k.A.	Schloßberg	26	150-330	hängig-steil	SW
+118	wlv-617109	6.1.7.109	aktuell	Einzellage	Mosel	Bernkastel	Ensch	Q660477	St. Michael		k.A.	k.A.	Mühlenberg	56	120-250	hängig-steil	OSO-SSW
+119	wlv-617110	6.1.7.110	aktuell	Einzellage	Mosel	Bernkastel	Ensch	Q660477	St. Michael		k.A.	k.A.	St. Martin	23	120-220	hängig	O
+120	wlv-617111	6.1.7.111	aktuell	Einzellage	Mosel	Bernkastel	Ensch	Q660477	St. Michael		k.A.	k.A.	Sonnenlay	9	120-240	steil	SO
+121	wlv-617112	6.1.7.112	aktuell	Einzellage	Mosel	Bernkastel	Klüsserath	Q569589	St. Michael		k.A.	k.A.	Bruderschaft	186	120-280	hängig-steil	SSO-SW
+122	wlv-617113	6.1.7.113	aktuell	Einzellage	Mosel	Bernkastel	Köwerich	Q657740	St. Michael		k.A.	k.A.	Laurentiuslay	18	120-140	steil	SW-WSW
+123	wlv-617114	6.1.7.114	aktuell	Einzellage	Mosel	Bernkastel	Mehring	Q543574	St. Michael		k.A.	k.A.	Blattenberg	43	125-220	steil	S-SW
+124	wlv-617115	6.1.7.115	aktuell	Einzellage	Mosel	Bernkastel	Mehring	Q543574	St. Michael		k.A.	k.A.	Goldkupp	89	120-320	hängig-steil	S-SSW+N
+125	wlv-617116	6.1.7.116	aktuell	Einzellage	Mosel	Bernkastel	Mehring	Q543574	St. Michael		k.A.	k.A.	Zellerberg	122	125-309	hängig-steil	SSW
+126	wlv-617117	6.1.7.117	aktuell	Einzellage	Mosel	Bernkastel	Pölich	Q553412	St. Michael		k.A.	k.A.	Held	85	120-200	hängig-steil	S-O
+127	wlv-617118	6.1.7.118	aktuell	Einzellage	Mosel	Bernkastel	Schleich	Q660583	St. Michael		k.A.	k.A.	Klosterberg	6	122-170	hängig-steil	SO
+128	wlv-617119	6.1.7.119	aktuell	Einzellage	Mosel	Bernkastel	Schleich	Q660583	St. Michael		k.A.	k.A.	Sonnenberg	12	125-230	hängig-steil	O-S
+129	wlv-617120	6.1.7.120	aktuell	Einzellage	Mosel	Bernkastel	Thörnich	Q591473	St. Michael		k.A.	k.A.	Enggaß	9	120-250	steil	O-SO
+130	wlv-617121	6.1.7.121	aktuell	Einzellage	Mosel	Bernkastel	Thörnich	Q591473	St. Michael		k.A.	k.A.	Ritsch	15	120-250	steil	SSO-SW
+131	wlv-617122	6.1.7.122	aktuell	Einzellage	Mosel	Bernkastel	Thörnich	Q591473	St. Michael		k.A.	k.A.	Schießlay	105	120-200	hängig	WSW-NW
+132	wlv-617123	6.1.7.123	aktuell	Einzellage	Mosel	Bernkastel	Detzem	Q553394	St. Michael		k.A.	k.A.	Maximiner Klosterlay	43	120-175	hängig-steil	WSW-W
+133	wlv-617124	6.1.7.124	aktuell	Einzellage	Mosel	Bernkastel	Detzem	Q553394	St. Michael		k.A.	k.A.	Würzgarten	100	120-200	hängig-steil	WSW
+134	wlv-617125	6.1.7.125	aktuell	Einzellage	Mosel	Bernkastel	Köwerich	Q657740	St. Michael		k.A.	k.A.	Held	108	120-150	hängig	
+135	wlv-617126	6.1.7.126	aktuell	Einzellage	Mosel	Bernkastel	Leiwen	Q681047	St. Michael		k.A.	k.A.	Klostergarten	251	120-290	hängig-steil	NO-OSO
+136	wlv-617127	6.1.7.127	aktuell	Einzellage	Mosel	Bernkastel	Leiwen	Q681047	St. Michael		k.A.	k.A.	Laurentiuslay	17	120-140	steil	WSW-WN
+137	wlv-618000	6.1.8	aktuell	Großlage	Mosel	Bernkastel	Ürzig	Q335018	Schwarzlay		k.A.	k.A.	k.A.	689	100-300		
+138	wlv-618128	6.1.8.128	aktuell	Einzellage	Mosel	Bernkastel	Bausendorf	Q569296	Schwarzlay		k.A.	k.A.	Herzlay	1	190-290	hängig-steil	SW-SSO
+139	wlv-618129	6.1.8.129	aktuell	Einzellage	Mosel	Bernkastel	Burg	Q658530	Schwarzlay		k.A.	k.A.	Falklay	19	150-240	steil	WSW
+140	wlv-618130	6.1.8.130	aktuell	Einzellage	Mosel	Bernkastel	Burg	Q658530	Schwarzlay		k.A.	k.A.	Hahnenschrittchen	21	110-200	hängig-steil	WSW
+141	wlv-618131	6.1.8.131	aktuell	Einzellage	Mosel	Bernkastel	Burg	Q658530	Schwarzlay		k.A.	k.A.	Schloßberg	27	105-150	hängig	W
+142	wlv-618132	6.1.8.132	aktuell	Einzellage	Mosel	Bernkastel	Burg	Q658530	Schwarzlay		k.A.	k.A.	Thomasberg	2	120-240	steil	WSW
+143	wlv-618133	6.1.8.133	aktuell	Einzellage	Mosel	Bernkastel	Burg	Q658530	Schwarzlay		k.A.	k.A.	Wendelstück	12	120-180	steil	WSW
+144	wlv-618134	6.1.8.134	aktuell	Einzellage	Mosel	Bernkastel	Dreis	Q563974	Schwarzlay		k.A.	k.A.	Johannisberg	1	165-260	hängig	SO
+145	wlv-618135	6.1.8.135	aktuell	Einzellage	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		k.A.	k.A.	Batterieberg	1	110-200	steil	WSW
+146	wlv-618136	6.1.8.136	aktuell	Einzellage	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		k.A.	k.A.	Edelberg	15	110-200	hängig	W
+147	wlv-618137	6.1.8.137	aktuell	Einzellage	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		k.A.	k.A.	Ellergrub	7	110-280	steil	WSW-W
+148	wlv-618138	6.1.8.138	aktuell	Einzellage	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		k.A.	k.A.	Herrenberg	16	110-240	steil	WSW
+149	wlv-618139	6.1.8.139	aktuell	Einzellage	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		k.A.	k.A.	Monteneubel	14	120-240	steil	SSO-WSW
+150	wlv-618140	6.1.8.140	aktuell	Einzellage	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		k.A.	k.A.	Steffensberg	35	115-300	steil	S
+151	wlv-618141	6.1.8.141	aktuell	Einzellage	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		k.A.	k.A.	Weinkammer	1	140-260	steil	WSW+S
+152	wlv-618142	6.1.8.142	aktuell	Einzellage	Mosel	Bernkastel	Enkirch	Q553838	Schwarzlay		k.A.	k.A.	Zeppwingert	9	110-260	steil	WSW
+153	wlv-618143	6.1.8.143	aktuell	Einzellage	Mosel	Bernkastel	Erden	Q565749	Schwarzlay		k.A.	k.A.	Busslay	62	110-170	hängig	NW
+154	wlv-618144	6.1.8.144	aktuell	Einzellage	Mosel	Bernkastel	Erden	Q565749	Schwarzlay		k.A.	k.A.	Herrenberg	12	220-300	hängig	S
+155	wlv-618145	6.1.8.145	aktuell	Einzellage	Mosel	Bernkastel	Erden	Q565749	Schwarzlay		k.A.	k.A.	Prälat	2	110-220	steil	S
+156	wlv-618146	6.1.8.146	aktuell	Einzellage	Mosel	Bernkastel	Erden	Q565749	Schwarzlay		k.A.	k.A.	Treppchen	36	110-220	hängig-steil	S
+157	wlv-618147	6.1.8.147	aktuell	Einzellage	Mosel	Bernkastel	Hupperath	Q565320	Schwarzlay		k.A.	k.A.	Klosterweg	12	250-310	hängig-steil	SO
+158	wlv-618148	6.1.8.148	aktuell	Einzellage	Mosel	Bernkastel	Bausendorf	Q569296	Schwarzlay		k.A.	k.A.	Hubertuslay	37	170-280	hängig-steil	S
+159	wlv-618149	6.1.8.149	aktuell	Einzellage	Mosel	Bernkastel	Wittlich	Q559514	Schwarzlay		k.A.	k.A.	Rosenberg	46	195-260	steil	OSO
+160	wlv-618150	6.1.8.150	aktuell	Einzellage	Mosel	Bernkastel	Lösnich	Q510820	Schwarzlay		k.A.	k.A.	Burgberg	22	100-200	hängig-steil	NO
+161	wlv-618151	6.1.8.151	aktuell	Einzellage	Mosel	Bernkastel	Lösnich	Q510820	Schwarzlay		k.A.	k.A.	Fürsterlay	9	120-220	hängig-steil	SW
+162	wlv-618152	6.1.8.152	aktuell	Einzellage	Mosel	Bernkastel	Wolf	Q1563313	Schwarzlay		k.A.	k.A.	Klosterberg	10	160-290	hängig	ONO-SSO
+163	wlv-618153	6.1.8.153	aktuell	Einzellage	Mosel	Bernkastel	Wolf	Q1563313	Schwarzlay		k.A.	k.A.	Auf der Heide	1	260-300	steil	WSW
+164	wlv-618154	6.1.8.154	aktuell	Einzellage	Mosel	Bernkastel	Trarbach	Q540919	Schwarzlay		k.A.	k.A.	Burgberg	2	120-280	steil	WSW
+165	wlv-618155	6.1.8.155	aktuell	Einzellage	Mosel	Bernkastel	Traben	Q540919	Schwarzlay		k.A.	k.A.	Gaispfad	3	140-320	steil	W
+166	wlv-618156	6.1.8.156	aktuell	Einzellage	Mosel	Bernkastel	Wolf	Q1563313	Schwarzlay		k.A.	k.A.	Goldgrube	8	120-160	steil	WSW
+167	wlv-618157	6.1.8.157	aktuell	Einzellage	Mosel	Bernkastel	Trarbach	Q540919	Schwarzlay		k.A.	k.A.	Hühnerberg	3	100-280	steil	SSW
+168	wlv-618158	6.1.8.158	aktuell	Einzellage	Mosel	Bernkastel	Springiersbach	Q547805	Schwarzlay		k.A.	k.A.	Klosterberg	15	170-210	hängig-steil	SW
+169	wlv-618159	6.1.8.159	aktuell	Einzellage	Mosel	Bernkastel	Traben	Q540919	Schwarzlay		k.A.	k.A.	Känigsberg	12	180-240	hängig-steil	ONO-S
+170	wlv-618160	6.1.8.160	aktuell	Einzellage	Mosel	Bernkastel	Traben	Q540919	Schwarzlay		k.A.	k.A.	Kräuterhaus	14	100-200	hängig	SSW
+171	wlv-618161	6.1.8.161	aktuell	Einzellage	Mosel	Bernkastel	Starkenburg	Q682031	Schwarzlay		k.A.	k.A.	Rosengarten	1	200-300	steil	WSW
+172	wlv-618162	6.1.8.162	aktuell	Einzellage	Mosel	Bernkastel	Wolf	Q1563313	Schwarzlay		k.A.	k.A.	Schatzgarten	27	140-180	hängig-steil	NO-OSO
+173	wlv-618163	6.1.8.163	aktuell	Einzellage	Mosel	Bernkastel	Trarbach	Q540919	Schwarzlay		k.A.	k.A.	Schloßberg	12	100-260	hängig-steil	SW-W+S
+174	wlv-618164	6.1.8.164	aktuell	Einzellage	Mosel	Bernkastel	Wolf	Q1563313	Schwarzlay		k.A.	k.A.	Sonnenlay	8	140-220	steil	OSO-SO
+175	wlv-618165	6.1.8.165	aktuell	Einzellage	Mosel	Bernkastel	Trarbach	Q540919	Schwarzlay		k.A.	k.A.	Taubenhaus	8	120-220	hängig-steil	O-OSO
+176	wlv-618166	6.1.8.166	aktuell	Einzellage	Mosel	Bernkastel	Trarbach	Q540919	Schwarzlay		k.A.	k.A.	Ungsberg	2	100-280	steil	SW
+177	wlv-618167	6.1.8.167	aktuell	Einzellage	Mosel	Bernkastel	Traben	Q540919	Schwarzlay		k.A.	k.A.	Würzgarten	30	120-220	hängig	W
+178	wlv-618168	6.1.8.168	aktuell	Einzellage	Mosel	Bernkastel	Traben	Q540919	Schwarzlay		k.A.	k.A.	Zollturm	3	140-320	steil	WNW
+179	wlv-618169	6.1.8.169	aktuell	Einzellage	Mosel	Bernkastel	Ürzig	Q335018	Schwarzlay		k.A.	k.A.	Würzgarten	52	110-220	hängig-steil	OSO-S
+180	wlv-618170	6.1.8.170	aktuell	Einzellage	Mosel	Bernkastel	Wittlich	Q559514	Schwarzlay		k.A.	k.A.	Bottchen	4	200-260	steil	OSO
+181	wlv-618171	6.1.8.171	aktuell	Einzellage	Mosel	Bernkastel	Wittlich	Q559514	Schwarzlay		k.A.	k.A.	Felsentreppchen	3	220-260	steil	OSO
+182	wlv-618172	6.1.8.172	aktuell	Einzellage	Mosel	Bernkastel	Wittlich	Q559514	Schwarzlay		k.A.	k.A.	Lay	10	220-260	hängig	S+W
+183	wlv-618173	6.1.8.173	aktuell	Einzellage	Mosel	Bernkastel	Wittlich	Q559514	Schwarzlay		k.A.	k.A.	Portnersberg	17	190-270	steil	SO-SSO
+184	wlv-618174	6.1.8.174	aktuell	Einzellage	Mosel	Bernkastel	Ürzig	Q335018	Schwarzlay		k.A.	k.A.	Goldwingert	1	110-150	steil	S
+185	wlv-618175	6.1.8.175	aktuell	Einzellage	Mosel	Bernkastel	Kinheim	Q656236	Schwarzlay		k.A.	k.A.	Römerhang	24	110-180	hängig-steil	NO
+186	wlv-619000	6.1.9	aktuell	Großlage	Mosel	Bernkastel	Reil	Q656264	Vom heißen Stein		k.A.	k.A.	k.A.	314	90-260		
+187	wlv-619176	6.1.9.176	aktuell	Einzellage	Mosel	Bernkastel	Briedel	Q565192	Vom heißen Stein		k.A.	k.A.	Herzchen	41	95-180	hängig-steil	SW-SSW
+188	wlv-619177	6.1.9.177	aktuell	Einzellage	Mosel	Bernkastel	Briedel	Q565192	Vom heißen Stein		k.A.	k.A.	Nonnengarten	15	120-240	hängig-steil	SO
+189	wlv-619178	6.1.9.178	aktuell	Einzellage	Mosel	Bernkastel	Briedel	Q565192	Vom heißen Stein		k.A.	k.A.	Schäferlay	7	90-175	hängig-steil	WSW
+190	wlv-619179	6.1.9.179	aktuell	Einzellage	Mosel	Bernkastel	Briedel	Q565192	Vom heißen Stein		k.A.	k.A.	Schelm	20	95-120	hängig	ONO
+191	wlv-619180	6.1.9.180	aktuell	Einzellage	Mosel	Bernkastel	Briedel	Q565192	Vom heißen Stein		k.A.	k.A.	Weisser Berg	38	90-175		SW
+192	wlv-619181	6.1.9.181	aktuell	Einzellage	Mosel	Bernkastel	Pünderich	Q567287	Vom heißen Stein		k.A.	k.A.	Goldlay	19	100-180	hängig	NO
+193	wlv-619182	6.1.9.182	aktuell	Einzellage	Mosel	Bernkastel	Pünderich	Q567287	Vom heißen Stein		k.A.	k.A.	Marienburg	52	98-230	hängig-steil	O-S-W
+194	wlv-619183	6.1.9.183	aktuell	Einzellage	Mosel	Bernkastel	Pünderich	Q567287	Vom heißen Stein		k.A.	k.A.	Nonnengarten	9	100-180	hängig-steil	SSW
+195	wlv-619184	6.1.9.184	aktuell	Einzellage	Mosel	Bernkastel	Pünderich	Q567287	Vom heißen Stein		k.A.	k.A.	Rosenberg	24	100-230	hängig	W
+196	wlv-619185	6.1.9.185	aktuell	Einzellage	Mosel	Bernkastel	Reil	Q656264	Vom heißen Stein		k.A.	k.A.	Falklay	31	110-280	hängig-steil	O
+197	wlv-619186	6.1.9.186	aktuell	Einzellage	Mosel	Bernkastel	Reil	Q656264	Vom heißen Stein		k.A.	k.A.	Goldlay	17	100-260	hängig-steil	W
+198	wlv-619187	6.1.9.187	aktuell	Einzellage	Mosel	Bernkastel	Reil	Q656264	Vom heißen Stein		k.A.	k.A.	Moullay-Hofberg	40	110-260	hängig-steil	ONO-SO
+199	wlv-619188	6.1.9.188	aktuell	Einzellage	Mosel	Bernkastel	Reil	Q656264	Vom heißen Stein		k.A.	k.A.	Sorentberg	1	140-260	steil	S
+200	wlv-611000	6.1.10	aktuell	Großlage	Mosel	Bernkastel	k.A.	k.A.	Römerlay		k.A.	k.A.	k.A.	114			
+201	wlv-6110189	6.1.10.189	aktuell	Einzellage	Mosel	Bernkastel	Kürenz	Q883351	Römerlay		k.A.	k.A.	Altenberg	10	160-240	steil	S-SW
+202	wlv-6110190	6.1.10.190	aktuell	Einzellage	Mosel	Bernkastel	Tarforst	Q328287	Römerlay		k.A.	k.A.	Andreasberg	1	190-240	hängig	SO-SW
+203	wlv-6110191	6.1.10.191	aktuell	Einzellage	Mosel	Bernkastel	Biewer	Q245974	Römerlay		k.A.	k.A.	Augenscheiner	3	140-150	hängig	SSO
+204	wlv-6110192	6.1.10.192	aktuell	Einzellage	Mosel	Bernkastel	Olewig	Q885323	Römerlay		k.A.	k.A.	Benediktinerberg	3	165-190	hängig-steil	SW
+205	wlv-6110193	6.1.10.193	aktuell	Einzellage	Mosel	Bernkastel	Olewig	Q885323	Römerlay		k.A.	k.A.	Burgberg	8	160-200	hängig-steil	S-SW
+206	wlv-6110194	6.1.10.194	aktuell	Einzellage	Mosel	Bernkastel	Trier	Q3138	Römerlay		k.A.	k.A.	Deutschherrenberg	13	160-250	hängig	S-WSW
+207	wlv-6110195	6.1.10.195	aktuell	Einzellage	Mosel	Bernkastel	Trier	Q3138	Römerlay		k.A.	k.A.	Deutschherrenköpfchen	1	150-200	steil	S-SSW
+208	wlv-6110196	6.1.10.196	aktuell	Einzellage	Mosel	Bernkastel	Ruwer	Q316811	Römerlay		k.A.	k.A.	Domherrenberg	11	160-250	hängig-steil	WNW-NW
+209	wlv-6110197	6.1.10.197	aktuell	Einzellage	Mosel	Bernkastel	Trier	Q3138	Römerlay		k.A.	k.A.	Hammerstein	17	240-280	hängig-steil	SSW
+210	wlv-6110198	6.1.10.198	aktuell	Einzellage	Mosel	Bernkastel	Kürenz	Q883351	Römerlay		k.A.	k.A.	Herrenberg	7	230-280	hängig-steil	SW
+211	wlv-6110199	6.1.10.199	aktuell	Einzellage	Mosel	Bernkastel	Olewig	Q885323	Römerlay		k.A.	k.A.	Jesuitenwingert	10	160-200	hängig-steil	SO-SSO
+212	wlv-6110200	6.1.10.200	aktuell	Einzellage	Mosel	Bernkastel	Olewig	Q885323	Römerlay		k.A.	k.A.	Kurfürstenhofberg	2	160-190	hängig-steil	S-SSW
+213	wlv-6110201	6.1.10.201	aktuell	Einzellage	Mosel	Bernkastel	Tarforst	Q328287	Römerlay		k.A.	k.A.	St. Martiner Hofberg	2	180-250	steil	SW
+214	wlv-6110202	6.1.10.202	aktuell	Einzellage	Mosel	Bernkastel	Matthias	Q877660	Römerlay		k.A.	k.A.	St. Matheiser	6	160-220	hängig	S-W
+215	wlv-6110203	6.1.10.203	aktuell	Einzellage	Mosel	Bernkastel	Trier	Q3138	Römerlay		k.A.	k.A.	St. Maximiner Kreuzberg	12	150-230	hängig-steil	WNW
+216	wlv-6110204	6.1.10.204	aktuell	Einzellage	Mosel	Bernkastel	Kernscheid	Q650102	Römerlay		k.A.	k.A.	St. Petrusberg	1	190-240	steil	WSW
+217	wlv-6110205	6.1.10.205	aktuell	Einzellage	Mosel	Bernkastel	Olewig	Q885323	Römerlay		k.A.	k.A.	Thiergarten Unterm Kreuz	2	180-200	hängig-steil	S-SW
+218	wlv-6110206	6.1.10.206	aktuell	Einzellage	Mosel	Bernkastel	Olewig	Q885323	Römerlay		k.A.	k.A.	Thiergarten Felsköpfchen	1	180-200	steil	S-SW
+219	wlv-6110207	6.1.10.207	aktuell	Einzellage	Mosel	Bernkastel	Trier	Q3138	Römerlay		k.A.	k.A.	St. Martiner Klosterberg	2	160-200	steil	S+SO+WS
+220	wlv-6110208	6.1.10.208	aktuell	Einzellage	Mosel	Bernkastel	k.A.	k.A.	Römerlay		k.A.	k.A.	k.A.	2	240-280	steil	SSW
+221	wlv-620000	6.2	aktuell	Bereich	Mosel	Obermosel	k.A.	k.A.			k.A.	k.A.	k.A.	711	130-350		
+222	wlv-621000	6.2.1	aktuell	Großlage	Mosel	Obermosel	Nittel	Q594609	Gipfel		k.A.	k.A.	k.A.	643	130-350		
+223	wlv-621001	6.2.1.001	aktuell	Einzellage	Mosel	Obermosel	Fellerich	Q1404048	Gipfel		k.A.	k.A.	Schleidberg	11	266-300	hängig-steil	OSO
+224	wlv-621002	6.2.1.002	aktuell	Einzellage	Mosel	Obermosel	Helfant	Q636128	Gipfel		k.A.	k.A.	Kapellenberg	18	150-250	hängig	S-SO
+225	wlv-621003	6.2.1.003	aktuell	Einzellage	Mosel	Obermosel	Nittel	Q594609	Gipfel		k.A.	k.A.	k.A.	7	130-350		
+226	wlv-621004	6.2.1.004	aktuell	Einzellage	Mosel	Obermosel	Kreuzweiler	Q636128	Gipfel		k.A.	k.A.	Schloß Thorner Kupp	8	150-250	hängig	SO-S
+227	wlv-621005	6.2.1.005	aktuell	Einzellage	Mosel	Obermosel	Nittel	Q594609	Gipfel		k.A.	k.A.	Blümchen	24	140-300	hängig-steil	SSW
+228	wlv-621006	6.2.1.006	aktuell	Einzellage	Mosel	Obermosel	Nittel	Q594609	Gipfel		k.A.	k.A.	Leiterchen	39	140-270	hängig-steil	SW
+229	wlv-621007	6.2.1.007	aktuell	Einzellage	Mosel	Obermosel	Nittel	Q594609	Gipfel		k.A.	k.A.	Rochusfels	116	140-300	hängig-steil	WNW
+230	wlv-621008	6.2.1.008	aktuell	Einzellage	Mosel	Obermosel	Oberbillig	Q636185	Gipfel		k.A.	k.A.	Hirtengarten	25	200-250	hängig-steil	WNW
+231	wlv-621009	6.2.1.009	aktuell	Einzellage	Mosel	Obermosel	Oberbillig	Q636185	Gipfel		k.A.	k.A.	Römerberg	12	150-220	hängig-steil	WNW
+232	wlv-621010	6.2.1.010	aktuell	Einzellage	Mosel	Obermosel	Nittel	Q594609	Gipfel		k.A.	k.A.	Hubertusberg	11	290-350	hängig-steil	SO
+233	wlv-621011	6.2.1.011	aktuell	Einzellage	Mosel	Obermosel	Palzem	Q636128	Gipfel		k.A.	k.A.	Carlsfelsen	33	200-250	hängig-steil	NW
+234	wlv-621012	6.2.1.012	aktuell	Einzellage	Mosel	Obermosel	Palzem	Q636128	Gipfel		k.A.	k.A.	Lay	69	150-200	hängig-steil	SO-SW
+235	wlv-621013	6.2.1.013	aktuell	Einzellage	Mosel	Obermosel	Rehlingen	Q594609	Gipfel		k.A.	k.A.	Kapellenberg	58	130-250	hängig-steil	SW-W
+236	wlv-621014	6.2.1.014	aktuell	Einzellage	Mosel	Obermosel	Temmels	Q636175	Gipfel		k.A.	k.A.	St. Georgshof	36	140-180	hängig-steil	WNW+SW
+237	wlv-621015	6.2.1.015	aktuell	Einzellage	Mosel	Obermosel	Wasserliesch	Q553357	Gipfel		k.A.	k.A.	Albachtaler	7	150-200	hängig	SO+WNW
+238	wlv-621016	6.2.1.016	aktuell	Einzellage	Mosel	Obermosel	Wasserliesch	Q553357	Gipfel		k.A.	k.A.	Reinig auf der Burg	7	140-150	flach	SO+WNW
+239	wlv-621017	6.2.1.017	aktuell	Einzellage	Mosel	Obermosel	Wehr	Q636128	Gipfel		k.A.	k.A.	Rosenberg	33	130-190	hängig-steil	S-W-WNW
+240	wlv-621018	6.2.1.018	aktuell	Einzellage	Mosel	Obermosel	Wellen	Q636208	Gipfel		k.A.	k.A.	Altenberg	13	140-260	hängig-steil	SW-NW
+241	wlv-621019	6.2.1.019	aktuell	Einzellage	Mosel	Obermosel	Wincheringen	Q543611	Gipfel		k.A.	k.A.	Burg Warsberg	115	200-250	hängig-steil	S
+242	wlv-622000	6.2.2	aktuell	Großlage	Mosel	Obermosel	Mesenich	Q610893	Königsberg		k.A.	k.A.	k.A.	68	130-270	hängig-steil	S
+243	wlv-622020	6.2.2.020	aktuell	Einzellage	Mosel	Obermosel	Mesenich	Q610893	Königsberg		k.A.	k.A.	k.A.	31	130-270	hängig-steil	S
+244	wlv-622021	6.2.2.021	aktuell	Einzellage	Mosel	Obermosel	Igel	Q543497	Königsberg		k.A.	k.A.	Dullgärten	6	160-200	hängig-steil	SSW
+245	wlv-622022	6.2.2.022	aktuell	Einzellage	Mosel	Obermosel	Langsur	Q610893	Königsberg		k.A.	k.A.	Brüderberg	22	130-170	hängig-steil	S-SW
+246	wlv-622023	6.2.2.023	aktuell	Einzellage	Mosel	Obermosel	Liersberg	Q20820333	Königsberg		k.A.	k.A.	Pilgerberg	4	259-270	hängig-steil	SSO
+247	wlv-622024	6.2.2.024	aktuell	Einzellage	Mosel	Obermosel	Mesenich	Q610893	Königsberg		k.A.	k.A.	Held	5	140-240	hängig-steil	SW
+248	wlv-630000	6.3	aktuell	Bereich	Mosel	Burg Cochem	k.A.	k.A.	k.A.		k.A.	k.A.	k.A.	2954	65-270		
+249	wlv-631001	6.3.1.001	aktuell	Einzellage	Mosel	Burg Cochem	Bruttig	Q574161	Goldbäumchen		k.A.	k.A.	k.A.	313	75-260		
+250	wlv-631002	6.3.1.002	aktuell	Einzellage	Mosel	Burg Cochem	Bruttig-Fankel	Q574161	Goldbäumchen		k.A.	k.A.	Götterlay	10	70-160	steil	O-SO
+251	wlv-631003	6.3.1.003	aktuell	Einzellage	Mosel	Burg Cochem	Sehl	Q502749	Goldbäumchen		k.A.	k.A.	Bischofsstuhl	1	100-190	steil	W
+252	wlv-631004	6.3.1.004	aktuell	Einzellage	Mosel	Burg Cochem	Cochem	Q502749	Goldbäumchen		k.A.	k.A.	Herrenberg	4	100-200	steil	SO
+253	wlv-631005	6.3.1.005	aktuell	Einzellage	Mosel	Burg Cochem	Sehl	Q502749	Goldbäumchen		k.A.	k.A.	Hochlay	1	110-180	steil	OSO
+254	wlv-631006	6.3.1.006	aktuell	Einzellage	Mosel	Burg Cochem	Sehl	Q502749	Goldbäumchen		k.A.	k.A.	Klostergarten	7	90-200	hängig-steil	SW
+255	wlv-631007	6.3.1.007	aktuell	Einzellage	Mosel	Burg Cochem	Cochem	Q502749	Goldbäumchen		k.A.	k.A.	Pinnerkreuzberg	1	90-230	steil	S-SW
+256	wlv-631008	6.3.1.008	aktuell	Einzellage	Mosel	Burg Cochem	Cochem	Q502749	Goldbäumchen		k.A.	k.A.	Schloßberg	4	130-230	hängig-steil	SO
+257	wlv-631009	6.3.1.009	aktuell	Einzellage	Mosel	Burg Cochem	Sehl	Q502749	Goldbäumchen		k.A.	k.A.	Sonnenberg	2	100-190	steil	W-WNW
+258	wlv-631010	6.3.1.010	aktuell	Einzellage	Mosel	Burg Cochem	Briedern	Q1517	Goldbäumchen		k.A.	k.A.	Domherrenberg	19	85-170	steil	SO
+259	wlv-631011	6.3.1.011	aktuell	Einzellage	Mosel	Burg Cochem	Ellenz-Polterdorf	Q566958	Goldbäumchen		k.A.	k.A.	Altarberg	46	80-165	hängig-steil	S
+260	wlv-631012	6.3.1.012	aktuell	Einzellage	Mosel	Burg Cochem	Ernst	Q567608	Goldbäumchen		k.A.	k.A.	Feuerberg	22	80-180	hängig	W-NW
+261	wlv-631013	6.3.1.013	aktuell	Einzellage	Mosel	Burg Cochem	Ernst	Q567608	Goldbäumchen		k.A.	k.A.	Kirchlay	28	60-90	flach	
+262	wlv-631014	6.3.1.014	aktuell	Einzellage	Mosel	Burg Cochem	Klotten	Q269397	Goldbäumchen		k.A.	k.A.	Brauneberg	6	87-260	steil	S
+263	wlv-631015	6.3.1.015	aktuell	Einzellage	Mosel	Burg Cochem	Klotten	Q269397	Goldbäumchen		k.A.	k.A.	Burg Coreidelsteiner	11	87-187	hängig	SO
+264	wlv-631016	6.3.1.016	aktuell	Einzellage	Mosel	Burg Cochem	Klotten	Q269397	Goldbäumchen		k.A.	k.A.	Rosenberg	5	87-200	steil	SSO-SW
+265	wlv-631017	6.3.1.017	aktuell	Einzellage	Mosel	Burg Cochem	Pommern	Q665867	Goldbäumchen		k.A.	k.A.	Rosenberg	22	80-150	hängig-steil	S
+266	wlv-631018	6.3.1.018	aktuell	Einzellage	Mosel	Burg Cochem	Moselkern	Q651263	Goldbäumchen		k.A.	k.A.	Übereltzer	1	80-140	steil	SSO
+267	wlv-631019	6.3.1.019	aktuell	Einzellage	Mosel	Burg Cochem	Müden	Q680967	Goldbäumchen		k.A.	k.A.	Funkenberg	27	78-200	hängig-steil	SSO
+268	wlv-631020	6.3.1.020	aktuell	Einzellage	Mosel	Burg Cochem	Müden	Q680967	Goldbäumchen		k.A.	k.A.	St. Castorhöhle	11	80-160	hängig-steil	S
+269	wlv-631021	6.3.1.021	aktuell	Einzellage	Mosel	Burg Cochem	Pommern	Q665867	Goldbäumchen		k.A.	k.A.	Goldberg	8	80-150	hängig-steil	S
+270	wlv-631022	6.3.1.022	aktuell	Einzellage	Mosel	Burg Cochem	Pommern	Q665867	Goldbäumchen		k.A.	k.A.	Sonnenuhr	18	80-150	hängig-steil	S
+271	wlv-631023	6.3.1.023	aktuell	Einzellage	Mosel	Burg Cochem	Karden	Q656110	Goldbäumchen		k.A.	k.A.	Dechantsberg	2	80-180	steil	S
+272	wlv-631024	6.3.1.024	aktuell	Einzellage	Mosel	Burg Cochem	Karden	Q656110	Goldbäumchen		k.A.	k.A.	Juffermauer	2	80-150	hängig-steil	OSO
+273	wlv-631025	6.3.1.025	aktuell	Einzellage	Mosel	Burg Cochem	Karden	Q656110	Goldbäumchen		k.A.	k.A.	Münsterberg	1	80-200	hängig-steil	S=-S
+274	wlv-631026	6.3.1.026	aktuell	Einzellage	Mosel	Burg Cochem	Ellenz-Polterdorf	Q566958	Goldbäumchen		k.A.	k.A.	Kurfürst	48	80-105	hängig	SO
+275	wlv-631027	6.3.1.027	aktuell	Einzellage	Mosel	Burg Cochem	Pommern	Q665867	Goldbäumchen		k.A.	k.A.	Zeisel	6	80-150	hängig-steil	S
+276	wlv-632000	6.3.2	aktuell	Großlage	Mosel	Burg Cochem	Zell	Q187500	Grafschaft		k.A.	k.A.	k.A.	288	80-280		
+277	wlv-632028	6.3.2.028	aktuell	Einzellage	Mosel	Burg Cochem	Alf	Q568556	Grafschaft		k.A.	k.A.	Burggraf	5	95-150	hängig-steil	S-SSW
+278	wlv-632029	6.3.2.029	aktuell	Einzellage	Mosel	Burg Cochem	Alf	Q568556	Grafschaft		k.A.	k.A.	Herrenberg	3	95-150	hängig-steil	SSO
+279	wlv-632030	6.3.2.030	aktuell	Einzellage	Mosel	Burg Cochem	Alf	Q568556	Grafschaft		k.A.	k.A.	Hälle	3	100-120	steil	ONO
+280	wlv-632031	6.3.2.031	aktuell	Einzellage	Mosel	Burg Cochem	Alf	Q568556	Grafschaft		k.A.	k.A.	Kapellenberg	2	95-120	hängig-steil	O-SO
+281	wlv-632032	6.3.2.032	aktuell	Einzellage	Mosel	Burg Cochem	Alf	Q568556	Grafschaft		k.A.	k.A.	Katzenkopf	1	95-150	hängig-steil	SO
+282	wlv-632033	6.3.2.033	aktuell	Einzellage	Mosel	Burg Cochem	Alf	Q568556	Grafschaft		k.A.	k.A.	Kronenberg	2	100-180	hängig-steil	SW
+283	wlv-632034	6.3.2.034	aktuell	Einzellage	Mosel	Burg Cochem	Bremm	Q113378	Grafschaft		k.A.	k.A.	Calmont	19	94-280	hängig-steil	S
+284	wlv-632035	6.3.2.035	aktuell	Einzellage	Mosel	Burg Cochem	Bremm	Q113378	Grafschaft		k.A.	k.A.	Laurentiusberg	16	95-275	hängig-steil	NO-S
+285	wlv-632036	6.3.2.036	aktuell	Einzellage	Mosel	Burg Cochem	Bremm	Q113378	Grafschaft		k.A.	k.A.	Schlemmertröpfchen	12	100-280	hängig-steil	OSO
+286	wlv-632037	6.3.2.037	aktuell	Einzellage	Mosel	Burg Cochem	Bremm	Q113378	Grafschaft		k.A.	k.A.	Frauenberg	16	95-180	steil	SW
+287	wlv-632038	6.3.2.038	aktuell	Einzellage	Mosel	Burg Cochem	Bullay	Q546257	Grafschaft		k.A.	k.A.	Brautrock	11	100-210	hängig-steil	S-W
+288	wlv-632039	6.3.2.039	aktuell	Einzellage	Mosel	Burg Cochem	Bullay	Q546257	Grafschaft		k.A.	k.A.	Graf Beyßel-Herrenberg	6	105-240	steil	S-W
+289	wlv-632040	6.3.2.040	aktuell	Einzellage	Mosel	Burg Cochem	Bullay	Q546257	Grafschaft		k.A.	k.A.	Kroneberg	2	140-280	steil	SSO
+290	wlv-632041	6.3.2.041	aktuell	Einzellage	Mosel	Burg Cochem	Bullay	Q546257	Grafschaft		k.A.	k.A.	Sonneck	2	130-260	hängig-steil	SW
+291	wlv-632042	6.3.2.042	aktuell	Einzellage	Mosel	Burg Cochem	Eller	Q547805	Grafschaft		k.A.	k.A.	Bienenlay	6	80-180	hängig-steil	SSW-WS
+292	wlv-632043	6.3.2.043	aktuell	Einzellage	Mosel	Burg Cochem	Ediger	Q547805	Grafschaft		k.A.	k.A.	Elzhofberg	15	80-250	hängig-steil	SW
+293	wlv-632044	6.3.2.044	aktuell	Einzellage	Mosel	Burg Cochem	Eller	Q547805	Grafschaft		k.A.	k.A.	Engelströpfchen	2	100-200	hängig-steil	ONO-O
+294	wlv-632045	6.3.2.045	aktuell	Einzellage	Mosel	Burg Cochem	Ediger	Q547805	Grafschaft		k.A.	k.A.	Feuerberg	17	80-260	hängig-steil	S-SW
+295	wlv-632046	6.3.2.046	aktuell	Einzellage	Mosel	Burg Cochem	Eller	Q547805	Grafschaft		k.A.	k.A.	Höll	4	100-200	hängig-steil	SO
+296	wlv-632047	6.3.2.047	aktuell	Einzellage	Mosel	Burg Cochem	Ediger	Q547805	Grafschaft		k.A.	k.A.	Osterlämmchen	15	80-250	hängig-steil	SW
+297	wlv-632048	6.3.2.048	aktuell	Einzellage	Mosel	Burg Cochem	Eller	Q547805	Grafschaft		k.A.	k.A.	Pfirsichgarten	9	80-250	hängig-steil	S-WSW
+298	wlv-632049	6.3.2.049	aktuell	Einzellage	Mosel	Burg Cochem	Eller	Q547805	Grafschaft		k.A.	k.A.	Schützenlay	1	80-200	steil	SO
+299	wlv-632050	6.3.2.050	aktuell	Einzellage	Mosel	Burg Cochem	Neef	Q572494	Grafschaft		k.A.	k.A.	Petersberg	9	95-170	hängig-steil	SW
+300	wlv-632051	6.3.2.051	aktuell	Einzellage	Mosel	Burg Cochem	Neef	Q572494	Grafschaft		k.A.	k.A.	Rosenberg	18	95-170	hängig-steil	W
+301	wlv-632052	6.3.2.052	aktuell	Einzellage	Mosel	Burg Cochem	Nehren	Q572471	Grafschaft		k.A.	k.A.	Römerberg	72	90-240	hängig-steil	S-SSO
+302	wlv-632053	6.3.2.053	aktuell	Einzellage	Mosel	Burg Cochem	St. Aldegund	Q653902	Grafschaft		k.A.	k.A.	Himmelreich	5	95-160	steil	OSO
+303	wlv-632054	6.3.2.054	aktuell	Einzellage	Mosel	Burg Cochem	St. Aldegund	Q653902	Grafschaft		k.A.	k.A.	Klosterkammer	11	95-270	hängig-steil	O-SSO
+304	wlv-632055	6.3.2.055	aktuell	Einzellage	Mosel	Burg Cochem	St. Aldegund	Q653902	Grafschaft		k.A.	k.A.	Palmberg-Terrassen	2	95-270	steil	SO
+305	wlv-632056	6.3.2.056	aktuell	Einzellage	Mosel	Burg Cochem	Zell	Q187500	Grafschaft		k.A.	k.A.	k.A.	1	80-280		
+306	wlv-632057	6.3.2.057	aktuell	Einzellage	Mosel	Burg Cochem	Eller	Q547805	Grafschaft		k.A.	k.A.	Kapplay	1	170-270	steil	SW
+307	wlv-633000	6.3.3	aktuell	Großlage	Mosel	Burg Cochem	k.A.	k.A.	Rosenhang		k.A.	k.A.	k.A.	292	80-270		
+308	wlv-633058	6.3.3.058	aktuell	Einzellage	Mosel	Burg Cochem	Beilstein	Q652238	Rosenhang		k.A.	k.A.	Schloßberg	3	86-240	hängig-steil	SW + WNW
+309	wlv-633059	6.3.3.059	aktuell	Einzellage	Mosel	Burg Cochem	Bremm	Q113378	Rosenhang		k.A.	k.A.	Abtei Kloster Stuben	14	95-180	hängig	W
+310	wlv-633060	6.3.3.060	aktuell	Einzellage	Mosel	Burg Cochem	Briedern	Q1517	Rosenhang		k.A.	k.A.	Kapellenberg	1	95-180	steil	SW
+311	wlv-633061	6.3.3.061	aktuell	Einzellage	Mosel	Burg Cochem	Briedern	Q1517	Rosenhang		k.A.	k.A.	Römergarten	36	92-110	hängig	NW
+312	wlv-633062	6.3.3.062	aktuell	Einzellage	Mosel	Burg Cochem	Briedern	Q1517	Rosenhang		k.A.	k.A.	Servatiusberg	6	100-120	hängig	NO
+313	wlv-633063	6.3.3.063	aktuell	Einzellage	Mosel	Burg Cochem	Bruttig-Fankel	Q574161	Rosenhang		k.A.	k.A.	Kapellenberg	32	100-130	hängig	WNW
+314	wlv-633064	6.3.3.064	aktuell	Einzellage	Mosel	Burg Cochem	Fankel	Q574161	Rosenhang		k.A.	k.A.	Layenberg	11	70-170	steil	WSW
+315	wlv-633065	6.3.3.065	aktuell	Einzellage	Mosel	Burg Cochem	Bruttig	Q574161	Rosenhang		k.A.	k.A.	Rathausberg	10	90-170	hängig-steil	SO-W
+316	wlv-633066	6.3.3.066	aktuell	Einzellage	Mosel	Burg Cochem	Cond	Q502749	Rosenhang		k.A.	k.A.	Rosenberg	3	100-200	hängig-steil	WSW
+317	wlv-633067	6.3.3.067	aktuell	Einzellage	Mosel	Burg Cochem	Bruttig	Q574161	Rosenhang		k.A.	k.A.	Pfarrgarten	6	70-170	steil	S-WSW
+318	wlv-633068	6.3.3.068	aktuell	Einzellage	Mosel	Burg Cochem	Cond	Q502749	Rosenhang		k.A.	k.A.	Arzlay	1	90-200	hängig-steil	W
+319	wlv-633069	6.3.3.069	aktuell	Einzellage	Mosel	Burg Cochem	Cond	Q502749	Rosenhang		k.A.	k.A.	Nikolausberg	6	90-150	hängig-steil	S
+320	wlv-633070	6.3.3.070	aktuell	Einzellage	Mosel	Burg Cochem	Fankel	Q574161	Rosenhang		k.A.	k.A.	Rosenberg	7	70-170	steil	SW
+321	wlv-633071	6.3.3.071	aktuell	Einzellage	Mosel	Burg Cochem	Ellenz	Q566958	Rosenhang		k.A.	k.A.	Silberberg	3	80-130	steil	SO
+322	wlv-633072	6.3.3.072	aktuell	Einzellage	Mosel	Burg Cochem	Ellenz	Q566958	Rosenhang		k.A.	k.A.	Woogberg	1	80-130	steil	SW
+323	wlv-633073	6.3.3.073	aktuell	Einzellage	Mosel	Burg Cochem	Mesenich	Q610893	Rosenhang		k.A.	k.A.	Abteiberg	40	89-190	hängig	WSW-WN
+324	wlv-633074	6.3.3.074	aktuell	Einzellage	Mosel	Burg Cochem	Mesenich	Q610893	Rosenhang		k.A.	k.A.	Deuslay	7	100-270	steil	SW
+325	wlv-633075	6.3.3.075	aktuell	Einzellage	Mosel	Burg Cochem	Mesenich	Q610893	Rosenhang		k.A.	k.A.	Goldgrübchen	20	100-230	hängig-steil	WSW
+326	wlv-633076	6.3.3.076	aktuell	Einzellage	Mosel	Burg Cochem	Senheim	Q653097	Rosenhang		k.A.	k.A.	Bienengarten	4	95-120	hängig-steil	WNW
+327	wlv-633077	6.3.3.077	aktuell	Einzellage	Mosel	Burg Cochem	Senheim	Q653097	Rosenhang		k.A.	k.A.	Rosenberg	9	100-140	hängig-steil	NNW
+328	wlv-633078	6.3.3.078	aktuell	Einzellage	Mosel	Burg Cochem	Senheim	Q653097	Rosenhang		k.A.	k.A.	Vogteiberg	2	110-160	hängig-steil	W-NW
+329	wlv-633079	6.3.3.079	aktuell	Einzellage	Mosel	Burg Cochem	Senheim	Q653097	Rosenhang		k.A.	k.A.	Wahrsager	3	100-140	hängig-steil	SSO
+330	wlv-633080	6.3.3.080	aktuell	Einzellage	Mosel	Burg Cochem	Trais	Q6566110	Rosenhang		k.A.	k.A.	Greth	1	80-220	hängig-steil	S-WSW
+331	wlv-633081	6.3.3.081	aktuell	Einzellage	Mosel	Burg Cochem	Trais	Q6566110	Rosenhang		k.A.	k.A.	Kapellenberg	10	80-200	hängig-steil	SO-S-NW
+332	wlv-633082	6.3.3.082	aktuell	Einzellage	Mosel	Burg Cochem	Trais	Q6566110	Rosenhang		k.A.	k.A.	Treppchen	2	80-165	hängig-steil	SO-S, W
+333	wlv-633083	6.3.3.083	aktuell	Einzellage	Mosel	Burg Cochem	Valwig	Q656297	Rosenhang		k.A.	k.A.	Herrenberg	20	90-200	hängig-steil	SO-SW
+334	wlv-633084	6.3.3.084	aktuell	Einzellage	Mosel	Burg Cochem	Valwig	Q656297	Rosenhang		k.A.	k.A.	Schwarzenberg	8	90-150	hängig-steil	SSO
+335	wlv-633085	6.3.3.085	aktuell	Einzellage	Mosel	Burg Cochem	Eller	Q547805	Rosenhang		k.A.	k.A.	Stubener Klostersegen	11	89-180	hängig-steil	NNO + S-
+336	wlv-633086	6.3.3.086	aktuell	Einzellage	Mosel	Burg Cochem	Senheim	Q653097	Rosenhang		k.A.	k.A.	Lay	15	89-135	hängig-steil	S-SW
+337	wlv-634000	6.3.4	aktuell	Großlage	Mosel	Burg Cochem	k.A.	k.A.	Schwarze Katz	Q2253665	k.A.	k.A.	k.A.	333	100-200		
+338	wlv-634087	6.3.4.087	aktuell	Einzellage	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	k.A.	k.A.	Burglay-Felsen	28	100-200	hängig-steil	SW
+339	wlv-634088	6.3.4.088	aktuell	Einzellage	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	k.A.	k.A.	Domherrenberg	25	100-200	hängig-steil	SO
+340	wlv-634089	6.3.4.089	aktuell	Einzellage	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	k.A.	k.A.	Geisberg	9	100-200	hängig-steil	SO
+341	wlv-634090	6.3.4.090	aktuell	Einzellage	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	k.A.	k.A.	Kreuzlay	20	100-200	hängig-steil	SSO
+342	wlv-634091	6.3.4.091	aktuell	Einzellage	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	k.A.	k.A.	Nussberg	10	100-200	hängig-steil	SSW
+343	wlv-634092	6.3.4.092	aktuell	Einzellage	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	k.A.	k.A.	Petersborn-Kabertchen	12	100-200	hängig-steil	WSW
+344	wlv-634093	6.3.4.093	aktuell	Einzellage	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	k.A.	k.A.	Pommerell	10	100-200	hängig-steil	WSW
+345	wlv-634094	6.3.4.094	aktuell	Einzellage	Mosel	Burg Cochem	Kaimt	Q187500	Schwarze Katz	Q2253665	k.A.	k.A.	Marienburger	11	100-200	hängig-steil	NNO
+346	wlv-634095	6.3.4.095	aktuell	Einzellage	Mosel	Burg Cochem	Zell	Q187500	Schwarze Katz	Q2253665	k.A.	k.A.	Römerquelle	71	100-200	hängig-steil	O-SO
+347	wlv-634096	6.3.4.096	aktuell	Einzellage	Mosel	Burg Cochem	Kaimt	Q187500	Schwarze Katz	Q2253665	k.A.	k.A.	Rosenborn	23	100-180	hängig-steil	NO-O
+348	wlv-634097	6.3.4.097	aktuell	Einzellage	Mosel	Burg Cochem	Merl	Q1921880	Schwarze Katz	Q2253665	k.A.	k.A.	Adler	16	100-200	hängig-steil	S-SSW
+349	wlv-634098	6.3.4.098	aktuell	Einzellage	Mosel	Burg Cochem	Merl	Q1921880	Schwarze Katz	Q2253665	k.A.	k.A.	Fettgarten	18	100-200	hängig-steil	SSO
+350	wlv-634099	6.3.4.099	aktuell	Einzellage	Mosel	Burg Cochem	Merl	Q1921880	Schwarze Katz	Q2253665	k.A.	k.A.	Klosterberg	34	100-200	hängig-steil	SO
+351	wlv-634100	6.3.4.100	aktuell	Einzellage	Mosel	Burg Cochem	Merl	Q1921880	Schwarze Katz	Q2253665	k.A.	k.A.	Königslay-Terrassen	8	100-200	steil	S
+352	wlv-634101	6.3.4.101	aktuell	Einzellage	Mosel	Burg Cochem	Merl	Q1921880	Schwarze Katz	Q2253665	k.A.	k.A.	Stephansberg	33	100-200	hängig-steil	SSO
+353	wlv-634102	6.3.4.102	aktuell	Einzellage	Mosel	Burg Cochem	Merl	Q1921880	Schwarze Katz	Q2253665	k.A.	k.A.	Sonneck	5	100-160	hängig	SW
+354	wlv-635000	6.3.5	aktuell	Großlage	Mosel	Burg Cochem	Winningen	Q822358	Weinhex		k.A.	k.A.	k.A.	251	65-210		
+355	wlv-635103	6.3.5.103	aktuell	Einzellage	Mosel	Burg Cochem	Alken	Q305288	Weinhex		k.A.	k.A.	Bleidenberg	4	65-200	hängig-steil	S-WSW
+356	wlv-635104	6.3.5.104	aktuell	Einzellage	Mosel	Burg Cochem	Alken	Q305288	Weinhex		k.A.	k.A.	Burgberg	10	70-170	hängig-steil	WNW
+357	wlv-635105	6.3.5.105	aktuell	Einzellage	Mosel	Burg Cochem	Alken	Q305288	Weinhex		k.A.	k.A.	Hunnenstein	3	65-200	hängig-steil	SW-WNW
+358	wlv-635106	6.3.5.106	aktuell	Einzellage	Mosel	Burg Cochem	Burgen	Q679415	Weinhex		k.A.	k.A.	Bischofstein	1	85-135	hängig	SW-WNW
+359	wlv-635107	6.3.5.107	aktuell	Einzellage	Mosel	Burg Cochem	Dieblich	Q565313	Weinhex		k.A.	k.A.	Heilgraben	2	100-200	hängig-steil	SW
+360	wlv-635108	6.3.5.108	aktuell	Einzellage	Mosel	Burg Cochem	Güls	Q1777938	Weinhex		k.A.	k.A.	Bienengarten	7	80-140	hängig-steil	SO
+361	wlv-635109	6.3.5.109	aktuell	Einzellage	Mosel	Burg Cochem	Güls	Q1777938	Weinhex		k.A.	k.A.	Königsfels	15	65-110	hängig-steil	SO
+362	wlv-635110	6.3.5.110	aktuell	Einzellage	Mosel	Burg Cochem	Güls	Q1777938	Weinhex		k.A.	k.A.	Marienberg	4	75-135	hängig-steil	SO
+363	wlv-635111	6.3.5.111	aktuell	Einzellage	Mosel	Burg Cochem	Hatzenport	Q554243	Weinhex		k.A.	k.A.	Burg Bischofstein	5	80-200	hängig-steil	SO
+364	wlv-635112	6.3.5.112	aktuell	Einzellage	Mosel	Burg Cochem	Hatzenport	Q554243	Weinhex		k.A.	k.A.	Kirchberg	6	82-200	steil	S
+365	wlv-635113	6.3.5.113	aktuell	Einzellage	Mosel	Burg Cochem	Hatzenport	Q554243	Weinhex		k.A.	k.A.	Stolzenberg	2	82-200	steil	S
+366	wlv-635114	6.3.5.114	aktuell	Einzellage	Mosel	Burg Cochem	Kattenes	Q1736818	Weinhex		k.A.	k.A.	Steinchen	3	70-170	hängig-steil	OSO
+367	wlv-635115	6.3.5.115	aktuell	Einzellage	Mosel	Burg Cochem	Kattenes	Q1736818	Weinhex		k.A.	k.A.	Fahrberg	1	80-150	steil	O
+368	wlv-635116	6.3.5.116	aktuell	Einzellage	Mosel	Burg Cochem	Kobern	Q553347	Weinhex		k.A.	k.A.	Fahrberg	4	68-160	steil	SO
+369	wlv-635117	6.3.5.117	aktuell	Einzellage	Mosel	Burg Cochem	Gondorf	Q553347	Weinhex		k.A.	k.A.	Fuchshöhle	2	85-150	steil	SW
+370	wlv-635118	6.3.5.118	aktuell	Einzellage	Mosel	Burg Cochem	Gondorf	Q553347	Weinhex		k.A.	k.A.	Gäns	2	70-140	steil	SSO
+371	wlv-635119	6.3.5.119	aktuell	Einzellage	Mosel	Burg Cochem	Gondorf	Q553347	Weinhex		k.A.	k.A.	Kehrberg	1	90-170	steil	SSW
+372	wlv-635120	6.3.5.120	aktuell	Einzellage	Mosel	Burg Cochem	Gondorf	Q553347	Weinhex		k.A.	k.A.	Schloßberg	10	70-160	steil	O-S
+373	wlv-635121	6.3.5.121	aktuell	Einzellage	Mosel	Burg Cochem	Kobern	Q553347	Weinhex		k.A.	k.A.	Weißenberg	8	70-180	hängig-steil	SO-SSW
+374	wlv-635122	6.3.5.122	aktuell	Einzellage	Mosel	Burg Cochem	Lay	Q1328018	Weinhex		k.A.	k.A.	Hamm 	9	67-140	hängig-steil	WSW
+375	wlv-635123	6.3.5.123	aktuell	Einzellage	Mosel	Burg Cochem	Lay	Q1328018	Weinhex		k.A.	k.A.	Hubertusborn	3	75-100	hängig-steil	WSW-WN
+376	wlv-635124	6.3.5.124	aktuell	Einzellage	Mosel	Burg Cochem	Lehmen	Q567585	Weinhex		k.A.	k.A.	Ausoniusstein	3	80-180	hängig-steil	SO
+377	wlv-635125	6.3.5.125	aktuell	Einzellage	Mosel	Burg Cochem	Lehmen	Q567585	Weinhex		k.A.	k.A.	Klosterberg	10	90-170	hängig-steil	SSO
+378	wlv-635126	6.3.5.126	aktuell	Einzellage	Mosel	Burg Cochem	Lehmen	Q567585	Weinhex		k.A.	k.A.	Lay	2	80-150	hängig-steil	
+379	wlv-635127	6.3.5.127	aktuell	Einzellage	Mosel	Burg Cochem	Lehmen	Q567585	Weinhex		k.A.	k.A.	Würzlay	7	80-180	hängig-steil	O-SO
+380	wlv-635128	6.3.5.128	aktuell	Einzellage	Mosel	Burg Cochem	Löf	Q553970	Weinhex		k.A.	k.A.	Goldblume	4	75-170	hängig-steil	SO-S
+381	wlv-635129	6.3.5.129	aktuell	Einzellage	Mosel	Burg Cochem	Löf	Q553970	Weinhex		k.A.	k.A.	Sonnenring	3	75-180	hängig-steil	OSO
+382	wlv-635130	6.3.5.130	aktuell	Einzellage	Mosel	Burg Cochem	Niederfell	Q553445	Weinhex		k.A.	k.A.	Fächern	9	72-140	hängig-steil	W
+383	wlv-635131	6.3.5.131	aktuell	Einzellage	Mosel	Burg Cochem	Niederfell	Q553445	Weinhex		k.A.	k.A.	Goldlay	3	73-140	hängig-steil	WNW
+384	wlv-635132	6.3.5.132	aktuell	Einzellage	Mosel	Burg Cochem	Niederfell	Q553445	Weinhex		k.A.	k.A.	Kahllay	4	72-140	hängig-steil	WSW
+385	wlv-635133	6.3.5.133	aktuell	Einzellage	Mosel	Burg Cochem	Oberfell	Q647068	Weinhex		k.A.	k.A.	Brauneberg	1	90-200	hängig-steil	S
+386	wlv-635134	6.3.5.134	aktuell	Einzellage	Mosel	Burg Cochem	Oberfell	Q647068	Weinhex		k.A.	k.A.	Rosenberg	1	75-200	hängig-steil	W-NW
+387	wlv-635135	6.3.5.135	aktuell	Einzellage	Mosel	Burg Cochem	Winningen	Q822358	Weinhex		k.A.	k.A.	Brückstück	8	70-200	steil	SSO
+388	wlv-635136	6.3.5.136	aktuell	Einzellage	Mosel	Burg Cochem	Winningen	Q822358	Weinhex		k.A.	k.A.	Domgarten	56	70-170	hängig-steil	SO-S
+389	wlv-635137	6.3.5.137	aktuell	Einzellage	Mosel	Burg Cochem	Winningen	Q822358	Weinhex		k.A.	k.A.	Hamm	12	75-210	steil	S-SW
+390	wlv-635138	6.3.5.138	aktuell	Einzellage	Mosel	Burg Cochem	Winningen	Q822358	Weinhex		k.A.	k.A.	Röttgen	11	70-180	steil	SSO
+391	wlv-635139	6.3.5.139	aktuell	Einzellage	Mosel	Burg Cochem	Brodenbach	Q168070	Weinhex		k.A.	k.A.	Neuwingert	1	80-140	hängig	SO
+392	wlv-635140	6.3.5.140	aktuell	Einzellage	Mosel	Burg Cochem	Winningen	Q822358	Weinhex		k.A.	k.A.	Uhlen	14	65-210	steil	SW-S
+393	wlv-640000	6,4	aktuell	Bereich	Mosel	Ruwertal	k.A.	k.A.			k.A.	k.A.	k.A.	190	130-330		
+394	wlv-641000	6.4.1.	aktuell	Großlage	Mosel	Ruwertal	Trier	Q3138	großlagenfrei		k.A.	k.A.	k.A.	190	130-330		
+395	wlv-641001	6.4.1.001	aktuell	Einzellage	Mosel	Ruwertal	Morscheid	Q656840	großlagenfrei		k.A.	k.A.	Dominikanerberg	5	200-280	steil	SW
+396	wlv-641002	6.4.1.002	aktuell	Einzellage	Mosel	Ruwertal	Kasel	Q659935	großlagenfrei		k.A.	k.A.	Herrenberg	7	180-280	hängig-steil	SSO-W
+397	wlv-641003	6.4.1.003	aktuell	Einzellage	Mosel	Ruwertal	Kasel	Q659935	großlagenfrei		k.A.	k.A.	Hitzlay	8	210-290	hängig-steil	SO-SW
+398	wlv-641004	6.4.1.004	aktuell	Einzellage	Mosel	Ruwertal	Kasel	Q659935	großlagenfrei		k.A.	k.A.	Kehrnagel	12	200-300	hängig-steil	SW
+399	wlv-641005	6.4.1.005	aktuell	Einzellage	Mosel	Ruwertal	Kasel	Q659935	großlagenfrei		k.A.	k.A.	Nies'chen	14	170-240	hängig-steil	SSW
+400	wlv-641006	6.4.1.006	aktuell	Einzellage	Mosel	Ruwertal	Kasel	Q659935	großlagenfrei		k.A.	k.A.	Timpert	1	210-230	hängig	SO
+401	wlv-641007	6.4.1.007	aktuell	Einzellage	Mosel	Ruwertal	Lorenzhof	Q659878	großlagenfrei		k.A.	k.A.	Felslay	3	130-190	hängig-steil	WSW
+402	wlv-641008	6.4.1.008	aktuell	Einzellage	Mosel	Ruwertal	Lorenzhof	Q659878	großlagenfrei		k.A.	k.A.	Mäuerchen	3	130-160	hängig-steil	SW
+403	wlv-641009	6.4.1.009	aktuell	Einzellage	Mosel	Ruwertal	Maximin Grünhaus	Q659878	großlagenfrei		k.A.	k.A.	Abtsberg	14	180-240	hängig	SO
+404	wlv-641010	6.4.1.010	aktuell	Einzellage	Mosel	Ruwertal	Maximin Grünhaus	Q659878	großlagenfrei		k.A.	k.A.	Bruderberg	1	137-180	hängig	SO
+405	wlv-641011	6.4.1.011	aktuell	Einzellage	Mosel	Ruwertal	Mertesdorf	Q659878	großlagenfrei		k.A.	k.A.	Herrenberg	30	130-240	hängig-steil	WSW
+406	wlv-641012	6.4.1.012	aktuell	Einzellage	Mosel	Ruwertal	Sommerau	Q631137	großlagenfrei		k.A.	k.A.	Schloßberg	5	180-280	steil	S
+407	wlv-641013	6.4.1.013	aktuell	Einzellage	Mosel	Ruwertal	Eitelsbach	Q316811	Römerlay		k.A.	k.A.	Marienholz	31	170-250	hängig-steil	SW-W
+408	wlv-641014	6.4.1.014	aktuell	Einzellage	Mosel	Ruwertal	Ruwer	Q316811	großlagenfrei		k.A.	k.A.	Maximiner	1	170-255	steil	OSO
+409	wlv-641015	6.4.1.015	aktuell	Einzellage	Mosel	Ruwertal	Waldrach	Q569807	großlagenfrei		k.A.	k.A.	Ehrenberg	4	250-330	hängig	SSW-W
+410	wlv-641016	6.4.1.016	aktuell	Einzellage	Mosel	Ruwertal	Waldrach	Q569807	großlagenfrei		k.A.	k.A.	Jesuitengarten	1	170-230	hängig-steil	SW
+411	wlv-641017	6.4.1.017	aktuell	Einzellage	Mosel	Ruwertal	Waldrach	Q569807	großlagenfrei		k.A.	k.A.	Krone	12	170-320	hängig-steil	SW
+412	wlv-641018	6.4.1.018	aktuell	Einzellage	Mosel	Ruwertal	Waldrach	Q569807	großlagenfrei		k.A.	k.A.	Laurentiusberg	5	170-280	hängig-steil	S
+413	wlv-641019	6.4.1.019	aktuell	Einzellage	Mosel	Ruwertal	Waldrach	Q569807	Römerlay		k.A.	k.A.	Meisenberg	9	180-320	hängig-steil	SO-S
+414	wlv-641020	6.4.1.020	aktuell	Einzellage	Mosel	Ruwertal	Waldrach	Q569807	großlagenfrei		k.A.	k.A.	Sonnenberg	7	260-320	steil	SW
+415	wlv-641021	6.4.1.021	aktuell	Einzellage	Mosel	Ruwertal	Eitelsbach	Q316811	großlagenfrei		k.A.	k.A.	Karthäuserhofberg	17	170-250	hängig-steil	SSO-SSW
+416	wlv-650000	6,5	aktuell	Bereich	Mosel	Saar	k.A.	k.A.	k.A.		k.A.	k.A.	k.A.	729			
+417	wlv-651000	6.5.1	aktuell	Großlage	Mosel	Saar	k.A.	k.A.	Scharzberg		k.A.	k.A.	k.A.	729	130-380		
+418	wlv-651001	6.5.1.001	aktuell	Einzellage	Mosel	Saar	Filzen	Q47087896	Scharzberg		k.A.	k.A.	Herrenberg	5	155-210	hängig-steil	WSW
+419	wlv-651002	6.5.1.002	aktuell	Einzellage	Mosel	Saar	Wiltingen	Q161930	Scharzberg		k.A.	k.A.	Kupp	50	135-270	hängig-steil	SW
+420	wlv-651003	6.5.1.003	aktuell	Einzellage	Mosel	Saar	Ayl	Q186199	Scharzberg		k.A.	k.A.	Scheidterberg	3	145-320	hängig-steil	SO-S
+421	wlv-651004	6.5.1.004	aktuell	Einzellage	Mosel	Saar	Niedermennig	Q503185	Scharzberg		k.A.	k.A.	Herrenberg	6	200-280	hängig-steil	SSO
+422	wlv-651005	6.5.1.005	aktuell	Einzellage	Mosel	Saar	Filzen	Q47087896	Scharzberg		k.A.	k.A.	Pulchen	2	142-192	hängig-steil	W
+423	wlv-651006	6.5.1.006	aktuell	Einzellage	Mosel	Saar	Filzen	Q47087896	Scharzberg		k.A.	k.A.	Steinberger	4	160-240	hängig-steil	SO
+424	wlv-651007	6.5.1.007	aktuell	Einzellage	Mosel	Saar	Filzen	Q47087896	Scharzberg		k.A.	k.A.	Unterberg	6	140-170	hängig-steil	SO-S
+425	wlv-651008	6.5.1.008	aktuell	Einzellage	Mosel	Saar	Filzen	Q47087896	Scharzberg		k.A.	k.A.	Urbelt	4	150-220	steil	SW
+426	wlv-651009	6.5.1.009	aktuell	Einzellage	Mosel	Saar	Kanzem	Q569862	Scharzberg		k.A.	k.A.	Sonnenberg	19	134-250	hängig-steil	SW-WNW
+427	wlv-651010	6.5.1.010	aktuell	Einzellage	Mosel	Saar	Kanzem	Q569862	Scharzberg		k.A.	k.A.	Hörecker	1	140-250	steil	SO
+428	wlv-651011	6.5.1.011	aktuell	Einzellage	Mosel	Saar	Kanzem	Q569862	Scharzberg		k.A.	k.A.	Schloßberg	1	134-250	hängig-steil	O
+429	wlv-651012	6.5.1.012	aktuell	Einzellage	Mosel	Saar	Niedermennig	Q503185	Scharzberg		k.A.	k.A.	Sonnenberg	27	200-280	hängig-steil	SW
+430	wlv-651013	6.5.1.013	aktuell	Einzellage	Mosel	Saar	Kanzem	Q569862	Scharzberg		k.A.	k.A.	Altenberg	19	134-250	hängig-steil	SO
+431	wlv-651014	6.5.1.014	aktuell	Einzellage	Mosel	Saar	Kastel-Staadt	Q553490	Scharzberg		k.A.	k.A.	Maximiner Prälat	4	150-250	steil	SO-SSO
+432	wlv-651015	6.5.1.015	aktuell	Einzellage	Mosel	Saar	Könen	Q1795916	Scharzberg		k.A.	k.A.	Fels	3	142-240	hängig	O
+433	wlv-651016	6.5.1.016	aktuell	Einzellage	Mosel	Saar	Könen	Q1795916	Scharzberg		k.A.	k.A.	Kirchberg	1	140-240	hängig	O
+434	wlv-651017	6.5.1.017	aktuell	Einzellage	Mosel	Saar	Konz	Q503185	Scharzberg		k.A.	k.A.	Auf der Wiltinger Kupp	10	180-250	hängig-steil	SO-SW
+435	wlv-651018	6.5.1.018	aktuell	Einzellage	Mosel	Saar	Konz	Q503185	Scharzberg		k.A.	k.A.	Euchariusberg	7	160-250	hängig-steil	SW
+436	wlv-651019	6.5.1.019	aktuell	Einzellage	Mosel	Saar	Falkenstein	Q818576	Scharzberg		k.A.	k.A.	Hofberg	14	180-240	flach	
+437	wlv-651020	6.5.1.020	aktuell	Einzellage	Mosel	Saar	Konz	Q503185	Scharzberg		k.A.	k.A.	Karthäuser Klosterberg	3	140-250	hängig-steil	NO
+438	wlv-651021	6.5.1.021	aktuell	Einzellage	Mosel	Saar	Krettnach	Q503185	Scharzberg		k.A.	k.A.	Altenberg	20	220-300	hängig-steil	
+439	wlv-651022	6.5.1.022	aktuell	Einzellage	Mosel	Saar	Krettnach	Q503185	Scharzberg		k.A.	k.A.	Euchariusberg	41	220-300	hängig-steil	SW-W
+440	wlv-651023	6.5.1.023	aktuell	Einzellage	Mosel	Saar	Serrig	Q656819	Scharzberg		k.A.	k.A.	Herrenberg	21	160-360	steil	SSW
+441	wlv-651024	6.5.1.024	aktuell	Einzellage	Mosel	Saar	Ayl	Q186199	Scharzberg		k.A.	k.A.	Sonnenberg	21	190-220	steil	SO-S-WS
+442	wlv-651025	6.5.1.025	aktuell	Einzellage	Mosel	Saar	Oberemmel	Q47037444	Scharzberg		k.A.	k.A.	Agritiusberg	3	170-180	hängig	SO
+443	wlv-651026	6.5.1.026	aktuell	Einzellage	Mosel	Saar	Oberemmel	Q47037444	Scharzberg		k.A.	k.A.	Altenberg	11	200-320	hängig-steil	SO
+444	wlv-651027	6.5.1.027	aktuell	Einzellage	Mosel	Saar	Oberemmel	Q47037444	Scharzberg		k.A.	k.A.	Hütte	5	190-230	hängig-steil	SO
+445	wlv-651028	6.5.1.028	aktuell	Einzellage	Mosel	Saar	Oberemmel	Q47037444	Scharzberg		k.A.	k.A.	Karlsberg	32	190-260	hängig	SW
+446	wlv-651029	6.5.1.029	aktuell	Einzellage	Mosel	Saar	Oberemmel	Q47037444	Scharzberg		k.A.	k.A.	Raul	2	160-180	steil	SO
+447	wlv-651030	6.5.1.030	aktuell	Einzellage	Mosel	Saar	Oberemmel	Q47037444	Scharzberg		k.A.	k.A.	Rosenberg	32	170-270	hängig-steil	SW
+448	wlv-651031	6.5.1.031	aktuell	Einzellage	Mosel	Saar	Ockfen	Q643198	Scharzberg		k.A.	k.A.	Bockstein	53	160-300	hängig-steil	S-W+O-O
+449	wlv-651032	6.5.1.032	aktuell	Einzellage	Mosel	Saar	Ockfen	Q643198	Scharzberg		k.A.	k.A.	Geisberg	5	200-380	hängig-steil	SSO-S
+450	wlv-651033	6.5.1.033	aktuell	Einzellage	Mosel	Saar	Saarburg	Q543639	Scharzberg		k.A.	k.A.	Antoniusbrunnen	7	190-290	steil	S
+451	wlv-651034	6.5.1.034	aktuell	Einzellage	Mosel	Saar	Saarburg	Q543639	Scharzberg		k.A.	k.A.	Bergschlößchen	3	190-280	steil	SW-SO
+452	wlv-651035	6.5.1.035	aktuell	Einzellage	Mosel	Saar	Saarburg	Q543639	Scharzberg		k.A.	k.A.	Schloßberg	1	160-230	steil	O
+453	wlv-651036	6.5.1.036	aktuell	Einzellage	Mosel	Saar	Saarburg	Q543639	Scharzberg		k.A.	k.A.	Fuchs	6	180-310	steil	SO
+454	wlv-651037	6.5.1.037	aktuell	Einzellage	Mosel	Saar	Saarburg	Q543639	Scharzberg		k.A.	k.A.	Klosterberg	2	150-210	hängig-steil	SW
+455	wlv-651038	6.5.1.038	aktuell	Einzellage	Mosel	Saar	Saarburg	Q543639	Scharzberg		k.A.	k.A.	Kupp	10	170-310	steil	SO-SW
+456	wlv-651039	6.5.1.039	aktuell	Einzellage	Mosel	Saar	Saarburg	Q543639	Scharzberg		k.A.	k.A.	Rausch	9	160-240	steil	SO-S
+457	wlv-651040	6.5.1.040	aktuell	Einzellage	Mosel	Saar	Schoden	Q646456	Scharzberg		k.A.	k.A.	Herrenberg	9	120-250	hängig-steil	W-NW
+458	wlv-651041	6.5.1.041	aktuell	Einzellage	Mosel	Saar	Schoden	Q646456	Scharzberg		k.A.	k.A.	Saarfeilser Marienberg	3	140-175	steil	SSO
+459	wlv-651042	6.5.1.042	aktuell	Einzellage	Mosel	Saar	Serrig	Q656819	Scharzberg		k.A.	k.A.	Antoniusberg	9	160-240	hängig-steil	O
+460	wlv-651043	6.5.1.043	aktuell	Einzellage	Mosel	Saar	Serrig	Q656819	Scharzberg		k.A.	k.A.	Heiligenborn	6	240-310	steil	SSW
+461	wlv-651044	6.5.1.044	aktuell	Einzellage	Mosel	Saar	Ayl	Q186199	Scharzberg		k.A.	k.A.	Herrenberg	7	200-240	steil	SW
+462	wlv-651045	6.5.1.045	aktuell	Einzellage	Mosel	Saar	Ayl	Q186199	Scharzberg		k.A.	k.A.	Kupp	7	170-310	steil	SO-SW
+463	wlv-651046	6.5.1.046	aktuell	Einzellage	Mosel	Saar	Serrig	Q656819	Scharzberg		k.A.	k.A.	Schloß Saarsteiner	8	135-235	hängig-steil	W
+464	wlv-651047	6.5.1.047	aktuell	Einzellage	Mosel	Saar	Serrig	Q656819	Scharzberg		k.A.	k.A.	Schloß Saarsteiner Schloßberg	6	175-240	hängig-steil	SW
+465	wlv-651048	6.5.1.048	aktuell	Einzellage	Mosel	Saar	Serrig	Q656819	Scharzberg		k.A.	k.A.	Vogelsang	13	140-310	hängig-steil	SO-S
+466	wlv-651049	6.5.1.049	aktuell	Einzellage	Mosel	Saar	Serrig	Q656819	Scharzberg		k.A.	k.A.	Würtzberg	5	160-280	steil	SO
+467	wlv-651050	6.5.1.050	aktuell	Einzellage	Mosel	Saar	Wawern	Q565310	Scharzberg		k.A.	k.A.	Goldberg	8	170-263	hängig-steil	S-SW
+468	wlv-651051	6.5.1.051	aktuell	Einzellage	Mosel	Saar	Wawern	Q565310	Scharzberg		k.A.	k.A.	Herrenberger	3	170-263	hängig-steil	S
+469	wlv-651052	6.5.1.052	aktuell	Einzellage	Mosel	Saar	Wawern	Q565310	Scharzberg		k.A.	k.A.	Jesuitenberg	1	180-263	hängig-steil	SSO
+470	wlv-651053	6.5.1.053	aktuell	Einzellage	Mosel	Saar	Wawern	Q565310	Scharzberg		k.A.	k.A.	Ritterpfad	10	170-263	hängig-steil	SO-SW
+471	wlv-651054	6.5.1.054	aktuell	Einzellage	Mosel	Saar	Wiltingen	Q161930	Scharzberg		k.A.	k.A.	Braune Kupp	4	135-280	hängig-steil	SSW
+472	wlv-651055	6.5.1.055	aktuell	Einzellage	Mosel	Saar	Wiltingen	Q161930	Scharzberg		k.A.	k.A.	Braunfels	19	150-320	hängig-steil	SW+W
+473	wlv-651056	6.5.1.056	aktuell	Einzellage	Mosel	Saar	Wiltingen	Q161930	Scharzberg		k.A.	k.A.	Gottesfuß	3	160-260	steil	WSW-W
+474	wlv-651057	6.5.1.057	aktuell	Einzellage	Mosel	Saar	Wiltingen	Q161930	Scharzberg		k.A.	k.A.	Hölle	2	135-180	hängig-steil	SSO
+475	wlv-651058	6.5.1.058	aktuell	Einzellage	Mosel	Saar	Wiltingen	Q161930	Scharzberg		k.A.	k.A.	Klosterberg	42	160-310	hängig-steil	SW-W
+476	wlv-651059	6.5.1.059	aktuell	Einzellage	Mosel	Saar	Serrig	Q656819	Scharzberg		k.A.	k.A.	Kupp	7	160-200	hängig	S
+477	wlv-651060	6.5.1.060	aktuell	Einzellage	Mosel	Saar	Wiltingen	Q161930	Scharzberg		k.A.	k.A.	Rosenberg	23	160-290	hängig	WSW
+478	wlv-651061	6.5.1.061	aktuell	Einzellage	Mosel	Saar	k.A.	k.A.	Scharzberg		k.A.	k.A.	k.A.	28	150-200	hängig-steil	O
+479	wlv-651062	6.5.1.062	aktuell	Einzellage	Mosel	Saar	Wiltingen	Q161930	Scharzberg		k.A.	k.A.	Schlangengraben	27	150-230	hängig-steil	OSO-S
+480	wlv-651063	6.5.1.063	aktuell	Einzellage	Mosel	Saar	Wiltingen	Q161930	Scharzberg		k.A.	k.A.	Schloßberg	3	150-200	hängig-steil	O
+481	wlv-651064	6.5.1.064	aktuell	Einzellage	Mosel	Saar	Pellingen	Q655962	Scharzberg		k.A.	k.A.	Herrgottsrock	1	300-370	hängig-steil	SO
+482	wlv-651065	6.5.1.065	aktuell	Einzellage	Mosel	Saar	Saarburg	Q543639	Scharzberg		k.A.	k.A.	Laurentiusberg	1	170-210	hängig	W
+483	wlv-651066	6.5.1.066	aktuell	Einzellage	Mosel	Saar	Niederleuken	Q543639	Scharzberg		k.A.	k.A.	Stirn	1	170-200	steil	OSO
+484	wlv-660000	6.6.	aktuell	Bereich	Mosel	Moseltor	k.A.	k.A.			k.A.	k.A.	k.A.	113			
+485	wlv-661000	6.6.1.	aktuell	Großlage	Mosel	Moseltor	k.A.	k.A.	Schloß Bübingen		k.A.	k.A.	k.A.	111	151-275		
+486	wlv-661525	6.6.1.525	aktuell	Einzellage	Mosel	Moseltor	Perl	Q662505	Schloß Bübingen		k.A.	k.A.	Hasenberg	13	180-240	hängig	W
+487	wlv-661524	6.6.1.524	aktuell	Einzellage	Mosel	Moseltor	Perl	Q662505	Schloß Bübingen		k.A.	k.A.	Quiriniusberg	25	162-212	hängig	SW-W
+488	wlv-661522	6.6.1.522	aktuell	Einzellage	Mosel	Moseltor	Sehndorf	Q2266381	Schloß Bübingen		k.A.	k.A.	Klosterberg	16	162-207	hängig	S-W
+489	wlv-621164	6.2.1.164	aktuell	Einzellage	Mosel	Moseltor	Sehndorf	Q2266381	Schloß Bübingen		k.A.	k.A.	Marienberg	24	225-275	hängig	S-W
+490	wlv-661520	6.6.1.520	aktuell	Einzellage	Mosel	Moseltor	Nennig	Q316804	Schloß Bübingen		k.A.	k.A.	Schloßberg	22	151-160	hängig	
+491	wlv-661521	6.6.1.521	aktuell	Einzellage	Mosel	Moseltor	Nennig	Q316804	Schloß Bübingen		k.A.	k.A.	Römerberg	11	190-220	hängig	S-W
+492	wlv-h00001	keine	historisch	k.A.	Mosel	k.A.	k.A.	k.A.	k.A.	k.A.	Alf	Q568556	Gartenwingert	k.A.	k.A.	k.A.	k.A.
+493	wlv-h00002	keine	historisch	k.A.	Mosel	k.A.	k.A.	k.A.	k.A.	k.A.	Alf	Q568556	Niederberg	k.A.	k.A.	k.A.	k.A.
+494	wlv-h00003	keine	historisch	k.A.	Mosel	k.A.	k.A.	k.A.	k.A.	k.A.	Alken	Q305288	Sonnenring	k.A.	k.A.	k.A.	k.A.
+495	wlv-h00004	keine	historisch	k.A.	Mosel	k.A.	Bernkastel-Kues	Q155622	k.A.	k.A.	Andel	k.A.	Sonnseite	k.A.	k.A.	k.A.	k.A.
+496	wlv-h00005	keine	historisch	k.A.	Mosel	k.A.	Trier	Q3138	k.A.	k.A.	Avelsbach	k.A.	Thielslei	k.A.	k.A.	k.A.	k.A.
+497	wlv-h00006	keine	historisch	k.A.	Mosel	k.A.	Trier	Q3138	k.A.	k.A.	Avelsbach	k.A.	Vogelgesang	k.A.	k.A.	k.A.	k.A.
+498	wlv-h00007	keine	historisch	k.A.	Mosel	k.A.	Trier	Q3138	k.A.	k.A.	Avelsbach	k.A.	Wolfsgraben	k.A.	k.A.	k.A.	k.A.
