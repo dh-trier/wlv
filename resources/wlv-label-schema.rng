@@ -279,7 +279,7 @@
   <define name="labelStatus">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The status of the label: physically present in the collection, or only as digital copy.</a:documentation>
     <attribute>
-      <name ns="">labelPosition</name>
+      <name ns="">labelStatus</name>
       <choice>
         <value>physical label present</value>
         <value>print copy present</value>

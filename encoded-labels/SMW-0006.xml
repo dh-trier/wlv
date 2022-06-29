@@ -26,6 +26,9 @@
       <figureItem norm="Bild: Mensch [Person] (Q5)"></figureItem>
       <figureItem norm="Bild: Weinberg [Landschaft] (Q22715)"></figureItem>
     </figure>
+    <figure ID="v7">
+      <figureItem norm="Bild: Uhr [Artefakt] (Q376)"></figureItem>
+    </figure>
   </visual>
   <textual>
     <wineMillesime ID="t1">1931er</wineMillesime>
@@ -42,11 +45,13 @@
     <otherText ID="t8" textType="statement">Dieses Zeichen in Verbindung mit dem Korkbrand verbürgt naturreinen Wein.</otherText>
     <agent ID="t9">Trierer Verein von Weingutsbesitzern der Mosel, Saar und Ruwer</agent>
     <location ID="t10" norm="Bereich: Mosel-Saar-Ruwer (Q672776)"></location>
+    <agent ID="t11" position="7" agentRole="printer / Drucker">Schaar &amp; Dathe Ernst Klein A.G. Trier</agent>
   </textual>
   <relations>
     <relation relType="equivalence" relItems="v5 t8"></relation>
     <relation relType="text-in-image" relItems="t6 v5"></relation>
     <relation relType="equivalence" relItems="t5 v5"></relation>
+    <relation relType="text-in-frame" relItems="t11 v2"></relation>
   </relations>
   </label>
 </wlv>
