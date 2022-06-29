@@ -382,6 +382,9 @@
         <ref name="ID" />
       </optional>
       <optional>
+        <ref name="position" />
+      </optional>
+      <optional>
         <ref name="frameType" />
       </optional>
       <optional>
@@ -969,6 +972,9 @@
       <name ns="">qualityProduction</name>
       <text />
       <optional>
+        <ref name="ID" />
+      </optional>
+      <optional>
         <ref name="position" />
       </optional>
       <optional>
@@ -984,6 +990,9 @@
     <element>
       <name ns="">qualityHistorical</name>
       <text />
+      <optional>
+        <ref name="ID" />
+      </optional>
        <optional>
         <ref name="position" />
       </optional>
@@ -1104,6 +1113,9 @@
     <element>
       <name ns="">alcohol</name>
       <text />
+      <optional>
+        <ref name="ID" />
+      </optional>
        <optional>
         <ref name="position" />
       </optional>
@@ -1125,6 +1137,9 @@
     <element>
       <name ns="">volume</name>
       <text />
+      <optional>
+        <ref name="ID" />
+      </optional>
        <optional>
         <ref name="position" />
       </optional>
@@ -1445,7 +1460,8 @@
         <value>Bild: Weinglas [Artefakt] (Q1531435)</value>
         <value>Bild: Weinflasche [Artefakt] (Q23490)</value>
         <value>Bild: Weinfass [Artefakt] (Q10289)</value>
-        <value>Bild: Trichter [Artefakt] ( Q29957)</value>
+        <value>Bild: Trichter [Artefakt] (Q29957)</value>
+        <value>Bild: Uhr [Artefakt] (Q376)</value>
         <value>Bild: Lampe, inkl. Laterne [Artefakt] (Q1138737)</value>    
         <value>Bild: Stiefel [Artefakt] (Q190868)</value>
         <value>Bild: Siegel [Artefakt] (Q162919)</value>
