@@ -1,0 +1,51 @@
+<lagenliste>
+    <metadaten>
+        <lagenlistennamen>Lagenliste für das Anbaugebiet Mosel</lagenlistennamen>
+        <quellenverzeichnis>
+            <quelle wlvid="wlv:Fill1979">Karl Fill: Die Namen der deutschen Weinlagen, 1979.</quelle>
+            <quelle wlvid="wlv:DWI2006">Deutsches Weininstitut: Lagenliste, 2006.</quelle>
+            <quelle wlvid="wlv:LWKRLP2020">Landwirtschaftskammer Rheinland-Pfalz: Weinlagen in Rheinland-Pfalz, 2020.</quelle>
+        </quellenverzeichnis>
+        <identifier>
+            <id abkürzung="wlvid">Identifier des Wine Label Vocabulary</id>
+            <id abkürzung="wdid">Wikidata-Identifier</id>
+            <id abkürzung="regnr">Registrierungs-Nummer des Deutschen Weininstituts Mainz, 2006.</id>
+            <id abkürzung="lwkid">Lagennummer der Landwirtschaftskammer Rheinland-Pfalz, 2020.</id>
+        </identifier>
+    </metadaten>
+    <lageninfos>
+        <gebiete>
+            <gebiet>
+                <gebietsname wlvid="wlv-ge6">Mosel</gebietsname>
+                <bereiche>
+                    <bereich>
+                    <bereichsname wlvid="wlv:be61">Bernkastel</bereichsname>
+                        <grosslagen>
+                            </grosslage>
+                                <grosslagenname wlvid="wlv:gl6110">Römerlay</lagenname>
+                                <leitgemeinden>
+                                    <leitgemeinde>
+                                        <leitgemeindennamen wdid="Q987654">Trier</leitgemeindennamen>
+                                        <einzellagen>
+                                            <einzellage status="aktuell">
+                                                <einzellagenname wlvid="wlv:el6110194" wdid="" lwkid="" regnr="6.1.10.194" nachweise="#wlv:Fill1979">Deutschherrenberg</einzellagenname>
+                                                <gemarkung typ="Gemarkungsübergreifende Einzellage" nachweise="#wlv:LWKRLP2020">Trier,Olewig</gemarkung>
+                                                <ausrichtung>S-WSW</ausrichtung>
+                                                <höhe>160-250</höhe>
+                                                <neigung>hängig</neigung>
+                                                <boden wlvid="wlv:bo123">Tonschiefer</boden>
+                                                <rebfläche zeitraum="2006" nachweise="#wlv:DWI2006">13</rebfläche>
+                                                <rebfläche zeitraum="2020" nachweise="#wlv:LWKRLP2020">11</rebfläche>
+                                                <rebsorten wlvid="wlv:so456">Riesling</rebsorten>
+                                            </einzellage>
+                                        </einzellagen>
+                                    </leitgemeinde>
+                                </leitgemeinden>
+                            </grosslage>
+                        </grosslagen>
+                    </bereich>
+                </bereiche>
+            </gebiet>
+        </gebiete>
+    </lageninfos>    
+</lagenliste>
