@@ -35,7 +35,9 @@
         <relation ID="r2" relType="text-in-image" relItems="#v3 #t1" />
       </relations>
     </label>
-    <comments>Das ikonische Etikett für das Weinetiketten-Projekt.</comments>
+    <comments>
+      <comment>Das ikonische Etikett für das Weinetiketten-Projekt.</comment>
+    </comments>
     <provenance>
       <conservation conservationNorm="very good" />
     </provenance>

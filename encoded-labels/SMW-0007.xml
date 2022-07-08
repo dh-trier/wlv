@@ -37,9 +37,12 @@
       <qualityGrapes norm="qualityGrapes: Spätlese">Spätlese</qualityGrapes>
     </wineName>
     <qualityHistorical>Erzeugerabfüllung</qualityHistorical>
-    <agent>Josef Dostert, Trier=Olewig</agent>
-    <location>Im Abt 7</location>
-    <otherText textType="other">Tel 3 11 88</otherText>
+    <agent>
+      <name>Josef Dostert, </name>
+      <location>Trier=Olewig</location>
+      <location>Im Abt 7</location>
+      <otherText textType="other">Tel 3 11 88</otherText>
+    </agent>
   </textual>
   </label>
 </wlv>

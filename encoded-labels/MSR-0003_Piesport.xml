@@ -34,13 +34,18 @@
         <qualityGrapes norm="qualityGrapes: Auslese (Q426856)">Auslese</qualityGrapes>
         <qualityGrapes>naturrein</qualityGrapes>
         <qualityProduction>Eigenes Wachstum - Original=Abfüllung</qualityProduction>
-        <agent agentRole="production / Weinbau">Joh. Koenen-Veit, Weinbau - Weinversand</agent>
+        <agent agentRole="production / Weinbau">
+          <name>Joh. Koenen-Veit, </name>
+          <otherText textType="other">Weinbau - Weinversand</otherText>
+        </agent>
         <location locationType="locality / Ortsname" norm="Ort: Minheim (Q524796)">Minheim/Mosel</location>
         <agent agentRole="printer / Drucker">Verlag Bastian</agent>
         <location locationType="locality / Ortsname" locationRole="printer / Drucker" norm="Ort: Neumagen (Q572352)">Neumagen</location>
       </textual>
   </label>
-  <comments>Offenbar ist "Piesporter Lay" eine historische Lage, daher im Moment noch keine Normdaten hierfür.</comments>
+  <comments>
+    <comment>Offenbar ist "Piesporter Lay" eine historische Lage, daher im Moment noch keine Normdaten hierfür.</comment>
+  </comments>
   <provenance>
     <dating notBefore="1945" notAfter="1975" certainty="estimate">Impression from design.</dating>
   </provenance>

@@ -24,9 +24,11 @@
       <wineMillesime numNorm="1868">1868r.</wineMillesime>
       <location norm="Lage: Agritiusberg [Scharzberg] (6.5.1.025)">Agritiusberger.</location>
     </wineName>
-    <otherText textType="other">Creszenz von</otherText>
-    <agent agentRole="cultivation / Anbau">L.R. Mohr</agent>
-    <location norm="Ort: Trier (Q3138)">in Trier</location>
+    <agent agentRole="cultivation / Anbau">
+      <otherText textType="agent role">Creszenz von</otherText>
+      <name>L.R. Mohr</name>
+      <location norm="Ort: Trier (Q3138)">in Trier</location>
+    </agent>
   </textual>
   </label>
 </wlv>

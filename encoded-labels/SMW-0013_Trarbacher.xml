@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../resources/wlv-label-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<wlv labelID="SMW-0013">
+  <metadata>
+    <collection collectionID="SMW"></collection>
+    <curation curatorID="#cs" curationDate="2022-07-08" />
+    <licence licenceScope="text" licenceAbbr="Public Domain Mark"/>
+    <licence licenceScope="image" licenceAbbr="Public Domain Mark" />
+  </metadata>
+  <label>
+  <physical shape="rectangle"></physical>
+  <visual>
+    <background ID="v1" backgroundColor="yellow"></background>
+    <frame ID="v2" frameColor="blue" frameType="outer" frameStyle="band(s)"></frame>
+    <frame ID="v3" frameColor="gold" frameType="outer" frameStyle="ornamental band(s)"></frame>
+    <figure ID="v4" figureType="realistic">
+        <figureItem norm="Bild: Personengruppe [Person] (Q16334295)"></figureItem>
+        <figureItem norm="Bild: Gemälde [Artefakt] (Q3305213)"></figureItem>
+    </figure>
+    <figure ID="v5" figureType="coat-of-arms">
+        <figureItem norm="Bild: Krone [Artefakt] (Q170984)"></figureItem>
+        <figureItem norm="Bild: Baum [Flora] (Q10884)"></figureItem>
+    </figure>
+  </visual>
+  <textual>
+    <otherText ID="t1" textType="title">Goethe in Traben-Trarbach</otherText>
+    <agent ID="t2" agentRole="artist / Künstler/in">
+      <name norm="Agent: Hans W. Schmidt [Maler/Illustrator] (Q52218818)">Prof. Hans W. Schmidt,</name>
+      <location>Weimar</location>
+    </agent>
+    <wineName ID="t3">
+      <location norm="Ort: Trarbach (Q540919)">Trarbacher</location>
+      <location norm="Lage: Schloßberg [Schwarzlay] (6.1.8.163)">Schloßberg</location>
+    </wineName>
+    <qualityHistorical ID="t4">Naturwein</qualityHistorical>
+    <qualityHistorical ID="t5">Gewächs Faust</qualityHistorical>
+    <agent ID="t6" norm="Agent: Julius Kayser [Weinhändler] (Q94846673)">Julius Kayser &amp; CO. Traben-Trarbach/Mosel</agent>
+    <agent ID="t7" agentRole="printer / Drucker">
+      <name>O. Maubach &amp; Co.</name>
+      <location>Mainz</location>
+    </agent>
+  </textual>
+  <relations>
+    <relation ID="r1" relType="text-about-image" relItems="v4 t1"></relation>
+    <relation ID="r2" relType="name-image" relItems="v4 t2"></relation>
+  </relations>
+  </label>
+  <comments>
+    <comment>Das Gemälde ist gemeinfrei, weil der Künstler 1950 gestorben ist.</comment>
+  </comments>
+</wlv>

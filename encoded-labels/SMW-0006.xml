@@ -43,9 +43,14 @@
     <otherText ID="t6" textType="other" textPosition="in-figure">V D N V</otherText>
     <otherText ID="t7" textType="statement">Unsere Mitglieder besitzen Lagen von Weltruf.</otherText>
     <otherText ID="t8" textType="statement">Dieses Zeichen in Verbindung mit dem Korkbrand verbürgt naturreinen Wein.</otherText>
-    <agent ID="t9">Trierer Verein von Weingutsbesitzern der Mosel, Saar und Ruwer</agent>
+    <agent ID="t9">
+      <name>Trierer Verein von Weingutsbesitzern der Mosel, Saar und Ruwer</name>
+    </agent>
     <location ID="t10" norm="Bereich: Mosel-Saar-Ruwer (Q672776)"></location>
-    <agent ID="t11" position="7" agentRole="printer / Drucker">Schaar &amp; Dathe Ernst Klein A.G. Trier</agent>
+    <agent ID="t11" position="7" agentRole="printer / Drucker">
+      <name>Schaar &amp; Dathe Ernst Klein A.G. </name>
+      <location norm="Ort: Trier (Q3138)">Trier</location>
+    </agent>
   </textual>
   <relations>
     <relation relType="equivalence" relItems="v5 t8"></relation>

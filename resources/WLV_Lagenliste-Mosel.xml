@@ -16,19 +16,31 @@
     <lageninfos>
         <gebiete>
             <gebiet>
-                <gebietsname wlvid="wlv-ge6">Mosel</gebietsname>
+                <gebietsname wlvid="wlv-GB6">Mosel</gebietsname>
                 <bereiche>
                     <bereich>
-                    <bereichsname wlvid="wlv:be61">Bernkastel</bereichsname>
+                    <bereichsname wlvid="wlv:BR61">Bernkastel</bereichsname>
                         <grosslagen>
                             </grosslage>
-                                <grosslagenname wlvid="wlv:gl6110">Römerlay</lagenname>
+                                <grosslagenname wlvid="wlv:GL6110">Römerlay</lagenname>
                                 <leitgemeinden>
                                     <leitgemeinde>
                                         <leitgemeindennamen wdid="Q987654">Trier</leitgemeindennamen>
                                         <einzellagen>
-                                            <einzellage status="aktuell">
-                                                <einzellagenname wlvid="wlv:el6110194" wdid="" lwkid="" regnr="6.1.10.194" nachweise="#wlv:Fill1979">Deutschherrenberg</einzellagenname>
+                                            <einzellage status="aktuell" wlvid="wlv:EL6110194" wdid="" lwkid="" regnr="6.1.10.194">
+                                                <einzellagenname nachweise="#wlv:Fill1979">Deutschherrenberg</einzellagenname>
+                                                <gemarkung typ="Gemarkungsübergreifende Einzellage" nachweise="#wlv:LWKRLP2020">Trier,Olewig</gemarkung>
+                                                <gültigkeit></gültigkeit>
+                                            </einzellage>
+                                            <einzellage status="Altlage" wlvid="wlv:EL611" wdid="" lwkid="" regnr="6.1.10.194">
+                                                <einzellagenname nachweise="#wlv:Fill1979">Deutschherrenberg</einzellagenname>
+                                                <gemarkung typ="Gemarkungsübergreifende Einzellage" nachweise="#wlv:LWKRLP2020">Trier,Olewig</gemarkung>
+                                                <gültigkeit></gültigkeit>
+                                            </einzellage>
+                                            <einzellage status="aktuell" wlvid="wlv:EL6110194" wdid="" lwkid="" regnr="6.1.10.194">
+                                                <einzellagenname nachweise="#wlv:Fill1979">Deutschherrenberg</einzellagenname>
+                                                <namensvariante nachweise="">Deutscher Herrenberg</namensvariante>
+                                                <gültigkeit></gültigkeit>
                                                 <gemarkung typ="Gemarkungsübergreifende Einzellage" nachweise="#wlv:LWKRLP2020">Trier,Olewig</gemarkung>
                                                 <ausrichtung>S-WSW</ausrichtung>
                                                 <höhe>160-250</höhe>
@@ -47,5 +59,16 @@
                 </bereiche>
             </gebiet>
         </gebiete>
-    </lageninfos>    
+    </lageninfos>
+    <lagen>
+        <lage status="Altlage" wlvid="wlv:AL123">
+            <lagenname>Bei der Vollmühle</lagenname>
+            <geltung nachweis="Goldschmidt" start="" presence="1931" end="1971">vor 1971</geltung>
+            <gemarkung status="explizit" nachweis="Goldschmidt">Olewig</gemarkung>
+            <leitgemeinde status="implizit">Trier</leitgemeinde>
+            <grosslage status="implizit">Römerlay</grosslage>
+            <bereich status="implizit">Bernkastel</bereich>
+            <gebiet status="implizit">Mosel</gebiet>
+        </lage>
+    </lagen>
 </lagenliste>

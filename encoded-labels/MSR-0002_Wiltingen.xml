@@ -24,7 +24,10 @@
         <wineName ID="t4">
           <location ID="t4-1" norm="Ort: Wiltingen (Q161930)">Wiltinger</location>
         </wineName>
-        <agent ID="t5" norm="Vertrieb: Karl Ziegler" agentRole="distribution / Vertrieb">Karl Ziegler, Weinhandlung</agent>
+        <agent ID="t5" agentRole="distribution / Vertrieb">
+          <name norm="Agent: Karl Ziegler [Vertrieb]">Karl Ziegler, </name>
+          <otherText textType="agent role">Weinhandlung</otherText>
+        </agent>
         <location ID="t6" norm="Ort: Freudenberg am Main (Q61827)" locationRole="distribution / Vertrieb" locationType="locality / Ortsname">Freudenberg</location>
         <agent ID="t7" agentRole="printer / Drucker" fontSize="smaller">Bastian</agent>
         <location ID="t8" norm="Ort: Winningen (Q822358)" locationRole="printer / Drucker">Winningen</location>

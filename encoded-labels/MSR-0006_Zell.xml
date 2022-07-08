@@ -39,5 +39,7 @@
         <relation ID="r1" relType="image-in-image" relItems="v5 v4"></relation>
       </relations>
   </label>
-  <comments>Die Likörfabrik könnte folgende Wikidata ID haben: Q2098230.</comments>
+  <comments>
+    <comment>Die Likörfabrik könnte folgende Wikidata ID haben: Q2098230.</comment>
+  </comments>
 </wlv>

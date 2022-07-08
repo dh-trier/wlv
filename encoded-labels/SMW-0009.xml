@@ -4,7 +4,7 @@
   <metadata>
     <collection collectionID="SMW"></collection>
     <curation curatorID="#cs" curationDate="2022-06-29" />
-    <licence licenceScope="all" licenceAbbr="CC BY" uri="https://creativecommons.org/licenses/by/4.0/" />
+    <licence licenceScope="all" licenceAbbr="Public Domain Mark – https://creativecommons.org/publicdomain/mark/1.0/" />
   </metadata>
   <label>
   <physical shape="rectangle"></physical>
@@ -31,7 +31,9 @@
     </wineName>
     <qualityProduction ID="t4">Original-Kellerabfüllung</qualityProduction>
     <qualityHistorical ID="t5">natur</qualityHistorical>
-    <agent ID="t6">Wachstum Zach. Bergweiler-Prüm Erben (Dr. Bergweiler)</agent>
+    <agent ID="t6">
+      <name>Wachstum Zach. Bergweiler-Prüm Erben (Dr. Bergweiler)</name>
+    </agent>
     <location ID="t7" norm="Ort: Wehlen (Q155622)">Wehlen a.d. Mosel</location>
     <otherText ID="t8" textType="statement">Größter Weinbergsbesitz in der Gemarkung Wehlen mit den Lagen: Sonnenuhr Nonnenberg Rosenlay Klosterlay</otherText>
     <otherText ID="t9" textType="statement">Weingut in Bernkastel  mit den Lagen: Hofberg Schwanen</otherText>

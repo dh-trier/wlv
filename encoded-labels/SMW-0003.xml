@@ -21,8 +21,16 @@
     <wineGrapes norm="Rebsorte: Auxerrois / Malbec [weiss] (Q1414045)">Auxerrois</wineGrapes>
     <otherText textType="typography">=</otherText>
     <wineGrapes norm="Rebsorte: Grauburgunder / Ruländer / Pinot Gris [weiss] (Q778601)">Ruländer</wineGrapes>
-    <agent>Wachstum und Original=Abfüllung Hubertus Apel, Nittel</agent>
-    <agent>B. M. Apel &amp; Sohn, Weinbau-Weineinkauf, Nittel/Mosel</agent>
+    <agent>
+      <otherText textType="agent role">Wachstum und Original=Abfüllung</otherText>
+      <name>Hubertus Apel, </name>
+      <location>Nittel</location>
+    </agent>
+    <agent>
+    <name>B. M. Apel &amp; Sohn, </name>
+    <otherText textType="agent role">Weinbau-Weineinkauf, </otherText>
+    <location>Nittel/Mosel</location>
+    </agent>
   </textual>
   </label>
 </wlv>

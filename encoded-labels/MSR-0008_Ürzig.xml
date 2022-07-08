@@ -27,7 +27,11 @@
           <alcohol numNorm="7.2">Alc. 7,2% by Vol.</alcohol>
           <volume numNorm="700">e 0,7 L</volume>
           <location norm="Land: Deutschland (Q183)">Deutschland</location>
-          <agent agentRole="production / Weinbau">Abfüller: Weinbau Mergler &amp; Engel Wein-Kellerei</agent>
+          <agent agentRole="production / Weinbau">
+            <otherText textType="other">Abfüller: </otherText>
+            <name>Weinbau Mergler &amp; Engel</name>
+            <otherText textType="other">Wein-Kellerei</otherText>
+          </agent>
           <location locationType="locality / Leitgemeinde" norm="Ort: Pünderich (Q567287)">Pünderich/Mosel</location>
       </textual>
   </label>

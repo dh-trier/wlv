@@ -170,8 +170,10 @@
       <name ns="">licenceAbbr</name>
       <choice>
         <text />
-        <value>CC BY</value>
-        <value>public domain</value>
+        <value>Public Domain Mark – https://creativecommons.org/publicdomain/mark/1.0/</value>
+        <value>Creative Commons Zero – https://creativecommons.org/share-your-work/public-domain/cc0/</value>
+        <value>Creative Commons Attribution 4.0 International – https://creativecommons.org/licenses/by/4.0/</value>
+        <value>other</value>
       </choice>
     </attribute>
   </define>
@@ -186,6 +188,8 @@
         <value>visual</value>
         <value>metadata</value>
         <value>textual</value>
+        <value>comments</value>
+        <value>label</value>
       </choice>
     </attribute>
   </define>
@@ -1036,6 +1040,17 @@
     <element>
       <name ns="">agent</name>
       <text />
+      <interleave>
+        <zeroOrMore>
+          <ref name="location" />
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="name" />
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="otherText" />
+        </zeroOrMore>
+      </interleave>
       <optional>
       <ref name="agentRole" />
       </optional>
@@ -1071,6 +1086,26 @@
         <value>other / andere</value>
       </choice>
     </attribute>
+  </define>
+  <define name="name">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Any name, of a person or organization, exclusing wine names and locations.</a:documentation>
+    <element>
+      <name ns="">name</name>
+      <text />
+      <optional>
+        <ref name="norm" />
+      </optional>
+      <optional>
+        <ref name="uri" />
+      </optional>
+      <ref name="fontAttributes" />
+      <optional>
+        <ref name="ID" />
+      </optional>
+      <optional>
+        <ref name="position" />
+      </optional>
+    </element>
   </define>
   <define name="location">
     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Any location, such as the name of a region, city, village, or vineyard mentioned on the label.</a:documentation>
@@ -1274,6 +1309,9 @@
         <value>website</value>
         <value>recommendation</value>
         <value>warning</value>
+        <value>signature</value>
+        <value>title</value>
+        <value>agent role</value>
         <value>other</value>
       </choice>
     </attribute>
@@ -1428,6 +1466,8 @@
         <value>equivalence</value>
         <value>similarity</value>
         <value>contrast</value>
+        <value>name-image</value>
+        <value>text-about-image</value>
         <value>text-in-image</value>
         <value>text-in-frame</value>
         <value>text-as-frame</value>
@@ -2277,7 +2317,9 @@
         <value>Weingut: Weingut Maximin Grünhaus (Q2556072)</value>
         <value>Weingut: #### (Q)</value>
         <!-- Agent: Vertrieb -->
-        <value>Vertrieb: Karl Ziegler</value>
+        <value>Agent: Karl Ziegler [Vertrieb]</value>
+        <value>Agent: Julius Kayser [Weinhändler] (Q94846673)</value>
+        <value>Agent: Hans W. Schmidt [Maler/Illustrator] (Q52218818)</value>
         <value>other</value>
       </choice>
     </attribute>
