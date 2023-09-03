@@ -139,24 +139,66 @@ def add_piesport(mymap):
 # === Weinlagen mit Polygon ===
 
 
-def open_vineyards(): 
-    with open(join(wdir, "data", "mosel_lagen.csv"), "r", encoding="utf8") as infile: 
-        lagen = pd.read_csv(infile, sep=";", index_col=None)
-        #print(lagen.head())
-        return lagen
+def define_lagen(): 
+    lagen = [{
+        "name" : "St. Maximiner Kreuzberg (Trier)",
+        "polygon" : [
+            (49.74820954217373, 6.653151604368142), 
+            (49.746965326200566, 6.6529044777532595), 
+            (49.74677296412426, 6.653007232930956), 
+            (49.74659917041536, 6.653286013455679), 
+            (49.74521419434047, 6.651954907053104), 
+            (49.74605448666682, 6.6499571920033835),
+            (49.7464206566979, 6.649501637239448),
+            (49.74680977408599, 6.649736663564916),
+            (49.747041305872216, 6.649367729226153),
+            (49.74789390759729, 6.649854996899384),
+            (49.747786903783194, 6.650364153089779),
+            (49.74819009996053, 6.650666877957927),
+            ]},
+            {
+        "name" : "Deutschherrenberg (Trier)",
+        "polygon" : [
+            (49.74655798994467, 6.653388762929856),
+            (49.746555021572796, 6.654089103335911),
+            (49.74685457084772, 6.654871403446343),
+            (49.747157109443336, 6.655435776845783),
+            (49.747075157241895, 6.656321328196155),
+            (49.7473821113339, 6.656384952891889),
+            (49.747452007686654, 6.658078035065125),
+            (49.74774704378746, 6.659406223656299),
+            (49.74481481686979, 6.660789853396877),
+            (49.74455107832864, 6.659770309497866),
+            (49.74395303323706, 6.655578231917966),
+            (49.74458166153261, 6.6557648763329205),
+            (49.74485719079146, 6.65493854348916),
+            (49.74540939698355, 6.654671487785074),
+            (49.744542413120875, 6.653520521823592),
+            (49.74524157616657, 6.651903748173637),
+            ]},
+            {
+        "name" : "Deutschherrenköpfchen (Trier)",
+        "polygon" : [
+            (49.74540500551935, 6.654504780520199),
+            (49.74485537513191, 6.6548962301962575),
+            (49.7445681332608, 6.655704796120304),
+            (49.743914040950166, 6.655405217293984),
+            (49.744125925291186, 6.6545622228418475),
+            (49.74419328210623, 6.653935464855505),
+            (49.744547016792396, 6.653480890787323),
+            ]},
+             ]
+    return lagen
+
+
 
 
 def add_vineyards(mymap):
-    lagen = open_vineyards() 
-    for lage in lagen.iterrows(): 
-        polygon_str = lage[1]["polygon"]
-        polygon_tuples = polygon_str.split("|")
-        polygon = [item.split(",") for item in polygon_tuples]
-        print(polygon)
-        folium.Polygon(
-            list(lage[1]["polygon"]),
-            popup = lage[1]["name"], 
-            tooltip = lage[1]["name"],
+    lagen = define_lagen()
+    for lage in lagen: 
+        folium.Polygon(lage["polygon"],
+            popup = lage["name"], 
+            tooltip = lage["name"],
             color = "blue",
             weight = 4,
             fill = True, 
@@ -190,7 +232,7 @@ def main():
     for name,group in metadata_grouped: 
         print(str(len(group)) + "x", name)
         mymap = add_label(mymap, name, group.T)
-    #add_vineyards(mymap)
+    add_vineyards(mymap)
     save_map(mymap, join(wdir, "mosel-map_v4.html"))
 
 main()
