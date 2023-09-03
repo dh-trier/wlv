@@ -31,6 +31,7 @@ wdir = join(os.getcwd(), "mapping", "")
 def initialize_map(): 
     """
     Initializes an empty map with just one marker in Trier.
+    initial position is defined here. 
     All further information is added to this map.
     """
     mymap = folium.Map(location=[49.740453759157894, 6.668294112243435], zoom_start=16, tiles="OpenStreetMap")
@@ -90,7 +91,6 @@ def add_label(mymap, name, group):
 def read_winemakers(): 
     with open(join(wdir, "data", "mosel_weingueter.csv"), "r", encoding="utf8") as infile: 
         winemakers = pd.read_csv(infile, sep=";", index_col=None)
-    #print(winemakers.head())
     return winemakers
 
 
@@ -103,9 +103,35 @@ def add_winemakers(mymap):
             location = [item[1]["lat"], item[1]["long"]], 
             popup = icontext, 
             icon = icon, 
-            tooltip = icontext)
+            tooltip = icontext
+            )
         marker.add_to(mymap)
     return mymap
+
+
+
+# === Etiketten für Piesport === 
+
+def add_piesport(mymap): 
+    """
+    This function adds a marker for Piesport with several images. 
+    """
+    imagefile = join(wdir, "img", "mwa-Piesport_0001.jpg")
+    encoded = base64.b64encode(open(imagefile, 'rb').read()).decode()
+    formatstring = '<img src="data:image/png;base64,{}">'
+    html = formatstring.format
+    iframe = IFrame(html(encoded), width=700, height=500)
+    popup = folium.Popup(iframe, max_width=650)
+    icon = folium.Icon(color="red", icon="info-sign")
+    marker = folium.Marker(
+        location = (49.88023364314281, 6.924762830563002), 
+        popup = popup,
+        tooltip = "Piesport", 
+        icon=icon)
+    marker.add_to(mymap)
+    return mymap
+
+
 
 
 
@@ -113,18 +139,15 @@ def add_winemakers(mymap):
 # === Weinlagen mit Polygon ===
 
 
-
 def open_vineyards(): 
     with open(join(wdir, "data", "mosel_lagen.csv"), "r", encoding="utf8") as infile: 
         lagen = pd.read_csv(infile, sep=";", index_col=None)
         #print(lagen.head())
         return lagen
-        
 
 
 def add_vineyards(mymap):
     lagen = open_vineyards() 
-    #lagen = [{"name" : "Olewiger Deutschherrenberg", "polygon" : [(49.756667, 6.641389), (49.756667, 6.641389), (49.756667, 6.641389), (49.756667, 6.641389)]}]
     for lage in lagen.iterrows(): 
         polygon_str = lage[1]["polygon"]
         polygon_tuples = polygon_str.split("|")
@@ -144,12 +167,12 @@ def add_vineyards(mymap):
 
 
 
-def save_map(mymap): 
+def save_map(mymap, filename): 
     """
     Saves the finished map to a standalone HTML file. 
     All image information is included in this HTML file. 
     """
-    mymap.save(join(wdir, "mosel-map_v2.html"))
+    mymap.save(filename)
 
 
 # === Main === 
@@ -160,13 +183,14 @@ def main():
     Coordinates the creation of a wine label map.
     """
     mymap = initialize_map()
-    metadata = read_metadata(join(wdir, "data", "msr-metadata.csv"))
-    #metadata_grouped = metadata.groupby("wineOrigin")
-    #for name,group in metadata_grouped: 
-    #    print(str(len(group)) + "x", name)
-    #    mymap = add_label(mymap, name, group.T)
-    #add_vineyards(mymap)
     add_winemakers(mymap)
-    save_map(mymap)
+    add_piesport(mymap)
+    metadata = read_metadata(join(wdir, "data", "mosel-metadata.csv"))
+    metadata_grouped = metadata.groupby("wineOrigin")
+    for name,group in metadata_grouped: 
+        print(str(len(group)) + "x", name)
+        mymap = add_label(mymap, name, group.T)
+    #add_vineyards(mymap)
+    save_map(mymap, join(wdir, "mosel-map_v4.html"))
 
 main()
