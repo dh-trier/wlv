@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9f5d0bb84711457945bc75198127c96a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9f5d0bb84711457945bc75198127c96a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9f5d0bb84711457945bc75198127c96a = L.map(
+                "map_9f5d0bb84711457945bc75198127c96a",
+                {
+                    center: [49.740453759157894, 6.668294112243435],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6a8fb8ef4d79fda49d5a5c632eee56be = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9f5d0bb84711457945bc75198127c96a);
+        
+    
+            var marker_7e0aa00141b67e431816781013761145 = L.marker(
+                [49.756667, 6.641389],
+                {}
+            ).addTo(map_9f5d0bb84711457945bc75198127c96a);
+        
+    
+            var icon_a6ea76c38202e3411154613e63041c8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7e0aa00141b67e431816781013761145.setIcon(icon_a6ea76c38202e3411154613e63041c8c);
+        
+    
+        var popup_7d374edf5e5efc1dc70968745d104bec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89439580cbc1ad6eedc00ad9dc62755f = $(`<div id="html_89439580cbc1ad6eedc00ad9dc62755f" style="width: 100.0%; height: 100.0%;">Trier (Mosel)</div>`)[0];
+                popup_7d374edf5e5efc1dc70968745d104bec.setContent(html_89439580cbc1ad6eedc00ad9dc62755f);
+            
+        
+
+        marker_7e0aa00141b67e431816781013761145.bindPopup(popup_7d374edf5e5efc1dc70968745d104bec)
+        ;
+
+        
+    
+    
+            var marker_035a9e93ed446463e4eabfd4e52e2718 = L.marker(
+                [49.7431279625995, 6.66558846347199],
+                {}
+            ).addTo(map_9f5d0bb84711457945bc75198127c96a);
+        
+    
+            var icon_79318f906d98bff375b4f5410ab783d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_035a9e93ed446463e4eabfd4e52e2718.setIcon(icon_79318f906d98bff375b4f5410ab783d9);
+        
+    
+        var popup_f31b80b517e78f0cf67946b4367efec9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddb43578bdba1aafa8111b77b6eec000 = $(`<div id="html_ddb43578bdba1aafa8111b77b6eec000" style="width: 100.0%; height: 100.0%;">Weingut Deutschherrenhof (Olewig)</div>`)[0];
+                popup_f31b80b517e78f0cf67946b4367efec9.setContent(html_ddb43578bdba1aafa8111b77b6eec000);
+            
+        
+
+        marker_035a9e93ed446463e4eabfd4e52e2718.bindPopup(popup_f31b80b517e78f0cf67946b4367efec9)
+        ;
+
+        
+    
+    
+            marker_035a9e93ed446463e4eabfd4e52e2718.bindTooltip(
+                `<div>
+                     Weingut Deutschherrenhof (Olewig)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b9704cb08549464149a38162a1086c7 = L.marker(
+                [49.7381340708074, 6.6584330245895],
+                {}
+            ).addTo(map_9f5d0bb84711457945bc75198127c96a);
+        
+    
+            var icon_9b9779460eb19c5ebb34b96284b50731 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b9704cb08549464149a38162a1086c7.setIcon(icon_9b9779460eb19c5ebb34b96284b50731);
+        
+    
+        var popup_ce17690cfa40870f72c284472f598aaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d698fecfa2f2df0394db652802b06bb = $(`<div id="html_7d698fecfa2f2df0394db652802b06bb" style="width: 100.0%; height: 100.0%;">Weingut von Nell (Olewig)</div>`)[0];
+                popup_ce17690cfa40870f72c284472f598aaa.setContent(html_7d698fecfa2f2df0394db652802b06bb);
+            
+        
+
+        marker_6b9704cb08549464149a38162a1086c7.bindPopup(popup_ce17690cfa40870f72c284472f598aaa)
+        ;
+
+        
+    
+    
+            marker_6b9704cb08549464149a38162a1086c7.bindTooltip(
+                `<div>
+                     Weingut von Nell (Olewig)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6c1b5ab8bffdb129847d595b66d79a6 = L.marker(
+                [49.7435253070577, 6.66188269942949],
+                {}
+            ).addTo(map_9f5d0bb84711457945bc75198127c96a);
+        
+    
+            var icon_a1fc259bd11b5cc10fb6c9676d9f2606 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d6c1b5ab8bffdb129847d595b66d79a6.setIcon(icon_a1fc259bd11b5cc10fb6c9676d9f2606);
+        
+    
+        var popup_081a776ccb4589bbf879667d8e657a00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09ea3e7bc7303f18c1833677ce6ce865 = $(`<div id="html_09ea3e7bc7303f18c1833677ce6ce865" style="width: 100.0%; height: 100.0%;">Weingut Terges (Olewig)</div>`)[0];
+                popup_081a776ccb4589bbf879667d8e657a00.setContent(html_09ea3e7bc7303f18c1833677ce6ce865);
+            
+        
+
+        marker_d6c1b5ab8bffdb129847d595b66d79a6.bindPopup(popup_081a776ccb4589bbf879667d8e657a00)
+        ;
+
+        
+    
+    
+            marker_d6c1b5ab8bffdb129847d595b66d79a6.bindTooltip(
+                `<div>
+                     Weingut Terges (Olewig)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0591f93ed88a9fdb2ac385cd5e72324 = L.marker(
+                [49.7423389259226, 6.66898483939555],
+                {}
+            ).addTo(map_9f5d0bb84711457945bc75198127c96a);
+        
+    
+            var icon_b1fa46f37f629a31da02dfcc89a0f9ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a0591f93ed88a9fdb2ac385cd5e72324.setIcon(icon_b1fa46f37f629a31da02dfcc89a0f9ec);
+        
+    
+        var popup_ed2d5e138314345ffcd62bd38ffaf96c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_640ba011d9d93790a932b475e688cc31 = $(`<div id="html_640ba011d9d93790a932b475e688cc31" style="width: 100.0%; height: 100.0%;">Weingut Beckers (Olewig)</div>`)[0];
+                popup_ed2d5e138314345ffcd62bd38ffaf96c.setContent(html_640ba011d9d93790a932b475e688cc31);
+            
+        
+
+        marker_a0591f93ed88a9fdb2ac385cd5e72324.bindPopup(popup_ed2d5e138314345ffcd62bd38ffaf96c)
+        ;
+
+        
+    
+    
+            marker_a0591f93ed88a9fdb2ac385cd5e72324.bindTooltip(
+                `<div>
+                     Weingut Beckers (Olewig)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa1920b3e1cde07831922142b1a8cc6e = L.marker(
+                [49.7340991947437, 6.68067775243044],
+                {}
+            ).addTo(map_9f5d0bb84711457945bc75198127c96a);
+        
+    
+            var icon_d6691e1f127e5418cc1b198dd8038173 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fa1920b3e1cde07831922142b1a8cc6e.setIcon(icon_d6691e1f127e5418cc1b198dd8038173);
+        
+    
+        var popup_3e5704be56058a85826f15a328fdfd95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b64ee71ed46e92eaf217600be83cb0dd = $(`<div id="html_b64ee71ed46e92eaf217600be83cb0dd" style="width: 100.0%; height: 100.0%;">Weingut Schleimer (Olewig)</div>`)[0];
+                popup_3e5704be56058a85826f15a328fdfd95.setContent(html_b64ee71ed46e92eaf217600be83cb0dd);
+            
+        
+
+        marker_fa1920b3e1cde07831922142b1a8cc6e.bindPopup(popup_3e5704be56058a85826f15a328fdfd95)
+        ;
+
+        
+    
+    
+            marker_fa1920b3e1cde07831922142b1a8cc6e.bindTooltip(
+                `<div>
+                     Weingut Schleimer (Olewig)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43f31f89e9acc3d9cdf11ac4df65bf5e = L.marker(
+                [49.7434178986425, 6.66086689191924],
+                {}
+            ).addTo(map_9f5d0bb84711457945bc75198127c96a);
+        
+    
+            var icon_d3ba5a8bf55f6972150bd7ec03619cda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_43f31f89e9acc3d9cdf11ac4df65bf5e.setIcon(icon_d3ba5a8bf55f6972150bd7ec03619cda);
+        
+    
+        var popup_4e34882772aeed18a16579788fda254a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_263a60ba3e30c802f75e56ce00e73982 = $(`<div id="html_263a60ba3e30c802f75e56ce00e73982" style="width: 100.0%; height: 100.0%;">Weingut / Weinstube St. Annenhof Herrmann Oberbillig (Olewig)</div>`)[0];
+                popup_4e34882772aeed18a16579788fda254a.setContent(html_263a60ba3e30c802f75e56ce00e73982);
+            
+        
+
+        marker_43f31f89e9acc3d9cdf11ac4df65bf5e.bindPopup(popup_4e34882772aeed18a16579788fda254a)
+        ;
+
+        
+    
+    
+            marker_43f31f89e9acc3d9cdf11ac4df65bf5e.bindTooltip(
+                `<div>
+                     Weingut / Weinstube St. Annenhof Herrmann Oberbillig (Olewig)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

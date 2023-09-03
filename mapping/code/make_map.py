@@ -8,7 +8,7 @@ Requires folium, a metadata table and a set of wine label images.
 """
 
 
-# === Imports 
+# === Imports  === 
 
 import folium
 import base64
@@ -17,20 +17,23 @@ from os.path import join
 import pandas as pd
 from folium.plugins import MarkerCluster
 import glob
-
 import os
-wdir = os.getcwd()
+
+
+# === Files, folders and parameters === 
+
+wdir = join(os.getcwd(), "mapping", "")
 
 
 
-# === Functions
+# === Functions === 
 
 def initialize_map(): 
     """
     Initializes an empty map with just one marker in Trier.
     All further information is added to this map.
     """
-    mymap = folium.Map(location=[49.9, 6.7], zoom_start=10, tiles="OpenStreetMap")
+    mymap = folium.Map(location=[49.740453759157894, 6.668294112243435], zoom_start=16, tiles="OpenStreetMap")
     marker = folium.Marker(
         [49.756667, 6.641389], 
         popup="Trier (Mosel)", 
@@ -80,14 +83,63 @@ def add_label(mymap, name, group):
     return mymap
 
 
-def add_vineyards(mymap): 
-    folium.Polygon([(50.026, 7.184), (50.126, 7.284), (50.326, 7.384), (50.426, 7.484)],
-                   color = "blue",
-                   weight = 4,
-                   fill = True, 
-                   fill_color = "green", 
-                   fill_opacity = 0.4,
-                   ).add_to(mymap)
+
+# === Weingüter mit Markern === 
+
+
+def read_winemakers(): 
+    with open(join(wdir, "data", "mosel_weingueter.csv"), "r", encoding="utf8") as infile: 
+        winemakers = pd.read_csv(infile, sep=";", index_col=None)
+    #print(winemakers.head())
+    return winemakers
+
+
+def add_winemakers(mymap): 
+    winemakers = read_winemakers()
+    for item in winemakers.iterrows():
+        icon = folium.Icon(color="red", icon="info-sign")
+        icontext = item[1]["name"] + " (" + item[1]["gemeinde"] + ")"
+        marker = folium.Marker(
+            location = [item[1]["lat"], item[1]["long"]], 
+            popup = icontext, 
+            icon = icon, 
+            tooltip = icontext)
+        marker.add_to(mymap)
+    return mymap
+
+
+
+
+# === Weinlagen mit Polygon ===
+
+
+
+def open_vineyards(): 
+    with open(join(wdir, "data", "mosel_lagen.csv"), "r", encoding="utf8") as infile: 
+        lagen = pd.read_csv(infile, sep=";", index_col=None)
+        #print(lagen.head())
+        return lagen
+        
+
+
+def add_vineyards(mymap):
+    lagen = open_vineyards() 
+    #lagen = [{"name" : "Olewiger Deutschherrenberg", "polygon" : [(49.756667, 6.641389), (49.756667, 6.641389), (49.756667, 6.641389), (49.756667, 6.641389)]}]
+    for lage in lagen.iterrows(): 
+        polygon_str = lage[1]["polygon"]
+        polygon_tuples = polygon_str.split("|")
+        polygon = [item.split(",") for item in polygon_tuples]
+        print(polygon)
+        folium.Polygon(
+            list(lage[1]["polygon"]),
+            popup = lage[1]["name"], 
+            tooltip = lage[1]["name"],
+            color = "blue",
+            weight = 4,
+            fill = True, 
+            fill_color = "green", 
+            fill_opacity = 0.4,
+            ).add_to(mymap)
     return mymap
 
 
@@ -97,10 +149,10 @@ def save_map(mymap):
     Saves the finished map to a standalone HTML file. 
     All image information is included in this HTML file. 
     """
-    mymap.save(join(wdir, "msr-map.html"))
+    mymap.save(join(wdir, "mosel-map_v2.html"))
 
 
-# === Main
+# === Main === 
 
 
 def main(): 
@@ -108,12 +160,13 @@ def main():
     Coordinates the creation of a wine label map.
     """
     mymap = initialize_map()
-    metadata = read_metadata(join(wdir, "msr-metadata.csv"))
-    metadata_grouped = metadata.groupby("wineOrigin")
-    for name,group in metadata_grouped: 
-        print(str(len(group)) + "x", name)
-        mymap = add_label(mymap, name, group.T)
-    add_vineyards(mymap)
+    metadata = read_metadata(join(wdir, "data", "msr-metadata.csv"))
+    #metadata_grouped = metadata.groupby("wineOrigin")
+    #for name,group in metadata_grouped: 
+    #    print(str(len(group)) + "x", name)
+    #    mymap = add_label(mymap, name, group.T)
+    #add_vineyards(mymap)
+    add_winemakers(mymap)
     save_map(mymap)
 
 main()
